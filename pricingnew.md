@@ -82,11 +82,10 @@ banner: true
 <div class="col-lg-8">
 <h2 class="text-center mt-4">Features</h2>
 <div class="separator"></div>
-<!-- <p class="large text-center">mesibo is 100% FREE for all size enterprises!</p> -->
+<p class="large text-center">All features are included in Free and Pay as you go plan</p>
 </div>
 </div>
 <div class="row">
-<p>Mesibo offers unified pricing which is simple to understand and affordable. If you chose to go with our on-premise model, you only pay for active users per month, that's it! There are absolutely NO OTHER CHARGES - no monthly commitment, no bandwidth or storage charges or anything hidden. Our cloud plan charges are also the same, however you additionally pay for badwidth and storage you use on our cloud.  Both the plans come with generous free limits for you to get started.  </p>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
 <ul class="list-icons">
@@ -98,7 +97,6 @@ banner: true
 <li><i class="fa fa-mail-forward"></i> Message Forwarding</li>
 <li><i class="fa fa-check"></i> Read Receipts & Delivery Status</li>
 <li><i class="fa fa-vcard-o"></i> Online Status</li>
-<li><i class="fa fa-search"></i> Search Message</li>
 <li><i class="fa fa-paperclip"></i> Send Doc, Image, Audio, Video</li>
 <li><i class="fa fa-map-marker"></i> Location Sharing</li>
 </ul>
@@ -107,9 +105,8 @@ banner: true
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
 <ul class="list-icons">
+<li><i class="fa fa-search"></i> Search Message</li>
 <li><i class="fa fa-share-square-o"></i> File & Custom-Data Transfers</li>
-<li><i class="fa fa-server"></i> High-Grade HA Servers</li>
-<li><i class="fa fa-globe"></i> Geographical Redundancy</li>
 <li><i class="fa fa-toggle-down"></i> Push Notification</li>
 <li><i class="fa fa-bell"></i> Real-time Notification</li>
 <li><i class="fa fa-black-tie"></i> Profile Management</li>
@@ -124,11 +121,13 @@ banner: true
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
 <ul class="list-icons">
+<li><i class="fa fa-server"></i> High-Grade HA Servers</li>
+<li><i class="fa fa-globe"></i> Geographical Redundancy</li>
 <li><i class="fa fa-window-restore"></i> Cross Platform Sync</li>
 <li><i class="fa fa-laptop"></i> Multi Device Sync</li>
 <li><i class="fa fa-reddit-alien"></i> Bot Interface</li>
-<li><i class="fa fa-broadcast-tower"></i> Broadcast Message / Audio / Video</li>
-<li><i class="fa fa-fa-server"></i> Block User in Group/Chat Room</li>
+<li><i class="fa fa-bullhorn"></i> Broadcast Message / Audio / Video</li>
+<li><i class="fa fa-remove"></i> Block User in Group/Chat Room</li>
 <li><i class="fa fa-user-times"></i> User-to-User Blocking</li>
 <li><i class="fa fa-user-circle"></i> User Management</li>
 <li><i class="fa fa-wrench"></i> Notification Setting</li>
@@ -136,7 +135,6 @@ banner: true
 </div>
 </div>
 
-<p>Unlike other services, mesibo free plan does not impose any ridiculously low limits. In fact, many applications can operate in a production environment within mesibo free tier limits. Additionally, as your apps grow beyond free limits, mesibo offers flexible pay as you go plan as low as $0.9 for 1GB bandwidth (about 20M messages) - real-time communication was never more affordable than this.</p>
 </div>
 </div>
 </section>
