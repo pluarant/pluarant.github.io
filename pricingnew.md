@@ -135,6 +135,7 @@ banner: true
 </div>
 </div>
 
+<p>For custom features, kindly visit <a href="https://mesibo.com/documentation/support/custom-solutions/" title="Custom Solution for Chat API">custom solutions</a>.</p>
 </div>
 </div>
 </section>
