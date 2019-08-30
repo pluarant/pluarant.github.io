@@ -24,6 +24,7 @@ banner: true
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
 <h3>Free</h3>
+<h4>No any hidden charges</h4>
 <a href="#features-list">All Features Included</a>
 <div class="separator"></div>
 <ul class="list-icons">
