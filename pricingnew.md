@@ -90,17 +90,17 @@ banner: true
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
 <ul class="list-icons">
-<li><i class="fa fa-exchange"></i> 1 on 1 Messaging</li>
-<li><i class="fa fa-comments"></i> Group Chat</li>
+<li><i class="fa fa-comments"></i> 1 on 1 Messaging</li>
+<li><i class="fa fa-group"></i> Group Chat</li>
 <li><i class="fa fa-user-circle-o"></i> Chat Room</li>
 <li><i class="fa fa-video-camera"></i> Voice & Video Calls</li>
-<li><i class="fa fa-list-o"></i> Typing Indicator</li>
+<li><i class="fa fa-keyboard-o"></i> Typing Indicator</li>
 <li><i class="fa fa-mail-forward"></i> Message Forwarding</li>
 <li><i class="fa fa-check"></i> Read Receipts & Delivery Status</li>
 <li><i class="fa fa-vcard-o"></i> Online Status</li>
 <li><i class="fa fa-search"></i> Search Message</li>
-<li><i class="fa fa-file-image-o"></i> Send Image, Audio, Video</li>
-<li><i class="fa fa-black-tie"></i> Profile Management</li>
+<li><i class="fa fa-paperclip"></i> Send Doc, Image, Audio, Video</li>
+<li><i class="fa fa-map-marker"></i> Location Sharing</li>
 </ul>
 </div>
 </div>
@@ -112,7 +112,7 @@ banner: true
 <li><i class="fa fa-globe"></i> Geographical Redundancy</li>
 <li><i class="fa fa-toggle-down"></i> Push Notification</li>
 <li><i class="fa fa-bell"></i> Real-time Notification</li>
-<li><i class="fa fa-user-circle"></i> User Management</li>
+<li><i class="fa fa-black-tie"></i> Profile Management</li>
 <li><i class="fa fa-th"></i> Auto-Thumbnail Generation</li>
 <li><i class="fa fa-bar-chart"></i> Basic Statistic</li>
 <li><i class="fa fa-wechat"></i> Associative/Pair messages</li>
@@ -124,17 +124,16 @@ banner: true
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
 <ul class="list-icons">
-<li>Cross Platform Sync</li>
-<li>Multi Device Sync</li>
-<li>Bot Interface</li>
-<li>Broadcast Message to App Users</li>
-<li>Broadcast Audio to App Users</li>
-<li>Broadcast Video to App Users</li>
-<li>Block User in Group/Chat Room</li>
-<li>User-to-User Blocking</li>
-<li>Add/Remove User from Group</li>
-<li>Add/Remove User from Chat Room</li>
-<li>Notification Setting</li>
+<li><i class="fa fa-window-restore"></i> Cross Platform Sync</li>
+<li><i class="fa fa-laptop"></i> Multi Device Sync</li>
+<li><i class="fa fa-fa-server"></i> Bot Interface</li>
+<li><i class="fa fa-fa-server"></i> Broadcast Message to App Users</li>
+<li><i class="fa fa-fa-server"></i> Broadcast Audio to App Users</li>
+<li><i class="fa fa-fa-server"></i> Broadcast Video to App Users</li>
+<li><i class="fa fa-fa-server"></i> Block User in Group/Chat Room</li>
+<li><i class="fa fa-fa-server"></i> User-to-User Blocking</li>
+<li><i class="fa fa-user-circle"></i> User Management</li>
+<li><i class="fa fa-fa-server"></i> Notification Setting</li>
 </ul>
 </div>
 </div>
