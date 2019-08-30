@@ -23,7 +23,7 @@ banner: true
 <p>Mesibo offers unified pricing which is simple to understand and affordable. If you chose to go with our on-premise model, you only pay for active users per month, that's it! There are absolutely NO OTHER CHARGES - no monthly commitment, no bandwidth or storage charges or anything hidden. Our cloud plan charges are also the same, however you additionally pay for badwidth and storage you use on our cloud.  Both the plans come with generous free limits for you to get started - <strong>you only pay if you consume beyond your free tier limits</strong>.</p>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
-<h3>Free</h3>
+<h3><strong>Free</strong></h3>
 <h4>No any hidden charges</h4>
 <a href="#features-list">All Features Included</a>
 <div class="separator"></div>
@@ -42,7 +42,7 @@ banner: true
 </div>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
-<h3>CLOUD</h3>
+<h3><strong>CLOUD</strong></h3>
 <h4>Pay as you go pricing</h4>
 <a href="#features-list">All Features Included</a>
 <div class="separator"></div>
@@ -61,7 +61,7 @@ banner: true
 </div>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
-<h3>ON PREMISE</h3>
+<h3><strong>ON PREMISE</strong></h3>
 <h4>Pay as you go pricing</h4>
 <a href="#features-list">All Features Included</a>
 <div class="separator"></div>
@@ -367,4 +367,5 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 </div>
 </section>
 <!-- section end -->
+
 
