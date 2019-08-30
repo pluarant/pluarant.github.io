@@ -97,27 +97,27 @@ banner: true
 <li><i class="fa fa-list-o"></i> Typing Indicator</li>
 <li><i class="fa fa-mail-forward"></i> Message Forwarding</li>
 <li><i class="fa fa-check"></i> Read Receipts & Delivery Status</li>
-<li>Online Status</li>
-<li>Search Message</li>
-<li>Send Image, Audio, Video</li>
-<li>Profile Management</li>
+<li><i class="fa fa-vcard-o"></i> Online Status</li>
+<li><i class="fa fa-search"></i> Search Message</li>
+<li><i class="fa fa-file-image-o"></i> Send Image, Audio, Video</li>
+<li><i class="fa fa-black-tie"></i> Profile Management</li>
 </ul>
 </div>
 </div>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
-<ul class="list">
-<li>File & Custom-Data Transfers</li>
-<li>High-Grade HA Servers</li>
-<li>Geographical Redundancy</li>
-<li>Push Notification</li>
-<li>Real-time Notification</li>
-<li>User Management</li>
-<li>Auto-Thumbnail Generation</li>
-<li>Basic Statistic</li>
-<li>Associative/Pair messages</li>
-<li>Hunt Group</li>
-<li>Alias</li>
+<ul class="list-icons">
+<li><i class="fa fa-share-square-o"></i> File & Custom-Data Transfers</li>
+<li><i class="fa fa-server"></i> High-Grade HA Servers</li>
+<li><i class="fa fa-globe"></i> Geographical Redundancy</li>
+<li><i class="fa fa-toggle-down"></i> Push Notification</li>
+<li><i class="fa fa-bell"></i> Real-time Notification</li>
+<li><i class="fa fa-user-circle"></i> User Management</li>
+<li><i class="fa fa-th"></i> Auto-Thumbnail Generation</li>
+<li><i class="fa fa-bar-chart"></i> Basic Statistic</li>
+<li><i class="fa fa-wechat"></i> Associative/Pair messages</li>
+<li><i class="fa fa-group"></i> Hunt Group</li>
+<li><i class="fa fa-user-secret"></i> Alias</li>
 </ul>
 </div>
 </div>
