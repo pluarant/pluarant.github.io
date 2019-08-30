@@ -93,14 +93,14 @@ banner: true
 <li>1 on 1 Messaging</li>
 <li>Group Chat</li>
 <li>Chat Room</li>
-<li>Cross Platform Sync</li>
-<li>Multi Device Sync</li>
+<li>Voice & Video Calls</li>
 <li>Typing Indicator</li>
 <li>Message Forwarding</li>
-<li>Profile Management</li>
 <li>Read Receipts & Delivery Status</li>
 <li>Online Status</li>
 <li>Search Message</li>
+<li>Send Image, Audio, Video</li>
+<li>Profile Management</li>
 </ul>
 </div>
 </div>
@@ -111,7 +111,7 @@ banner: true
 <li>High-Grade HA Servers</li>
 <li>Geographical Redundancy</li>
 <li>Push Notification</li>
-<li>Real Time Notification</li>
+<li>Real-time Notification</li>
 <li>User Management</li>
 <li>Auto-Thumbnail Generation</li>
 <li>Basic Statistic</li>
@@ -124,8 +124,8 @@ banner: true
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
 <ul class="list-icons">
-<li>Send Image, Audio, Video</li>
-<li>Peer to Peer Voice & Video Calls</li>
+<li>Cross Platform Sync</li>
+<li>Multi Device Sync</li>
 <li>Bot Interface</li>
 <li>Broadcast Message to App Users</li>
 <li>Broadcast Audio to App Users</li>
