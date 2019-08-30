@@ -90,6 +90,7 @@ banner: true
 <section class="light-gray-bg clearfix"> 
 <div class="container">
 <div class="row justify-content-md-center">
+<a title="features-list" name="features-list"></a>
 <div class="col-lg-8">
 <h2 class="text-center mt-4">Features</h2>
 <div class="separator"></div>
@@ -103,11 +104,17 @@ banner: true
 <h3>All Features Included</h3>
 <div class="separator"></div>
 <ul class="list-icons">
-<li><i class="fa fa-envelope"></i>One on One Messaging</li>
-<li><i class="fa fa-group"></i>Group Chat</li>
-<li><i class="fa fa-video-camera"></i>Voice and Video Calling</li>
-<li><i class="fa fa-lock"></i>End to End Encryption</li>
-<li>and all other Features</li>
+<li>1 on 1 Messaging</li>
+<li>Group Chat</li>
+<li>Chat Room</li>
+<li>Cross Platform Sync</li>
+<li>Multi Device Sync</li>
+<li>Typing Indicator</li>
+<li>Message Forwarding</li>
+<li>Profile Management</li>
+<li>Read Receipts & Delivery Status</li>
+<li>Online Status</li>
+<li>Search Message</li>
 </ul>
 </div>
 </div>
@@ -116,11 +123,17 @@ banner: true
 <h3>Free Tier Limits</h3>
 <div class="separator"></div>
 <ul class="list">
-<li>MAU - <strong>1,000</strong></li>
-<li>Unlimited Concurrent Users (10% of MAU on Cloud)</li>
-<li>Unlimited Bandwidth (5GB o Cloud)</li>
-<li>Unlimited Real-time DB Storage (1 GB on Cloud)</li>
-<li><strong>Unlimited</strong> Voice/Video Calls</li>
+<li>File & Custom-Data Transfers</li>
+<li>High-Grade HA Servers</li>
+<li>Geographical Redundancy</li>
+<li>Push Notification</li>
+<li>Real Time Notification</li>
+<li>User Management</li>
+<li>Auto-Thumbnail Generation</li>
+<li>Basic Statistic</li>
+<li>Associative/Pair messages</li>
+<li>Hunt Group</li>
+<li>Alias</li>
 </ul>
 </div>
 </div>
@@ -129,9 +142,17 @@ banner: true
 <h3>Pricing</h3>
 <div class="separator"></div>
 <ul class="list-icons">
-<li><i class="fa fa-envelope"></i>$0.01 per MAU</li>
-<li><i class="fa fa-users"></i>$2.5/GB Bandwidth (Free in on-premise)</li>
-<li><i class="fa fa-phone"></i>Phone Calls (enterprise only)</li>
+<li>Send Image, Audio, Video</li>
+<li>Peer to Peer Voice & Video Calls</li>
+<li>Bot Interface</li>
+<li>Broadcast Message to App Users</li>
+<li>Broadcast Audio to App Users</li>
+<li>Broadcast Video to App Users</li>
+<li>Block User in Group/Chat Room</li>
+<li>User-to-User Blocking</li>
+<li>Add/Remove User from Group</li>
+<li>Add/Remove User from Chat Room</li>
+<li>Notification Setting</li>
 </ul>
 </div>
 </div>
