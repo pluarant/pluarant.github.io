@@ -31,7 +31,7 @@ banner: true
 <li><i class="fa fa-group"></i>Concurrent Users - 10% of MAU</li>
 <li><i class="fa fa-times-rectangle"></i>5 GB Real-time Bandwidth</li>
 <li><i class="fa fa-database"></i>1 GB Storage</li>
-<li><i class="fa fa-redo-alt"></i>2 GB TURN</li>
+<li><i class="fa fa-repeat"></i>2 GB TURN</li>
 <li><i class="fa fa-video-camera"></i>Unlimited Voice/Video Calls</li>
 <li><i class="fa fa-lock"></i>Unlimited File size</li>
 <li><i class="fa fa-envelope"></i>Unlimited message retention time</li>
@@ -48,13 +48,13 @@ banner: true
 <ul class="list-icons">
 <li><i class="fa fa-user"></i>US$ 0.01 per MAU per Month</li>
 <li><i class="fa fa-group"></i>Concurrent Users - 10% of MAU</li>
-<li><i class="far fa-boxes"></i>US$ 0.9 GB per month</li>
+<li><i class="fa fa-boxes"></i>US$ 0.9 GB per month</li>
 <li><i class="fa fa-database"></i>US$ 2.5 GB per month</li>
-<li><i class="fa fa-redo-alt"></i>US $ 0.3 GB per month</li>
+<li><i class="fa fa-repeat"></i>US $ 0.3 GB per month</li>
 <li><i class="fa fa-video-camera"></i>Unlimited Voice/Video Calls</li>
 <li><i class="fa fa-lock"></i>Unlimited File size</li>
 <li><i class="fa fa-envelope"></i>Unlimited message retention time</li>
-<li><i class="fas fa-mail-bulk"></i>Email Support</li>
+<li><i class="fa fa-envelope-open-o"></i>Email Support</li>
 </ul>
 </div>
 </div>
@@ -67,13 +67,13 @@ banner: true
 <ul class="list-icons">
 <li><i class="fa fa-user"></i>US$ 0.01 per MAU per Month</li>
 <li><i class="fa fa-group"></i>Unlimited Concurrent Users</li>
-<li><i class="far fa-boxes"></i> - NA- </li>
-<li><i class="fa fa-database"></i> - NA-  </li>
-<li><i class="fa fa-redo-alt"></i> - NA-  </li>
+<li><i class="fa fa-times-rectangle"></i> - NA- </li>
+<li><i class="fa fa-times-rectangle"></i> - NA-  </li>
+<li><i class="fa fa-times-rectangle"></i> - NA-  </li>
 <li><i class="fa fa-video-camera"></i>Unlimited Voice/Video Calls</li>
 <li><i class="fa fa-lock"></i>Unlimited File size</li>
 <li><i class="fa fa-envelope"></i>Unlimited message retention time</li>
-<li><i class="fas fa-mail-bulk"></i>Email Support</li>
+<li><i class="fa fa-support"></i>Email Support</li>
 </ul>
 </div>
 </div>
