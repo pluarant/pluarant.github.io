@@ -1,0 +1,487 @@
+<!-- Page generated 2019-08-30 11:31:27 +0530 -->
+<!-- relative link basehrefs -->
+
+	
+
+
+<!-- Logic for 'edit this button' -->
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+			
+<!-- edit url temporarily disabled Mesibo -->
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/documentation/get-started/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/mesibo-favicon.png">
+	<link rel="mesibo-favicon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
+	<!-- metadata -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-08-30T11:31:27+05:30"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesibo"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="Get Started, Part 1: How Mesibo Works?"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="1: Introduction 2: Messaging 3: Group Messaging 4: Voice &amp; Video Calls 5: UI Modules 6: Conclusion Welcome! We know you are excited to see real-time messaging in action. We..." />
+	<meta name="twitter:image:src" content="/images/docs@2x.png" />
+	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-08-30T11:31:27+05:30"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="get started, setup, orientation, quickstart, intro, concepts, containers">
+	<link rel="stylesheet" href="/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="/css/bootstrap.min.css" >
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css" >
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- SEO stuff -->
+	<title>Get Started, Part 1: How Mesibo Works? | Mesibo Documentation</title>
+<meta property="og:title" content="Get Started, Part 1: How Mesibo Works?" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Get oriented on some basics of Mesibo before diving into the walkthrough." />
+<meta property="og:description" content="Get oriented on some basics of Mesibo before diving into the walkthrough." />
+<link rel="canonical" href="/documentation/get-started/" />
+<meta property="og:url" content="/documentation/get-started/" />
+<meta property="og:site_name" content="Mesibo Documentation" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Get Started, Part 1: How Mesibo Works?","description":"Get oriented on some basics of Mesibo before diving into the walkthrough.","url":"https://docs.docker.com/documentation/get-started/"}</script>
+	<!-- END SEO STUFF -->
+	
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	</script>
+	<!-- Google Analytic Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-97488698-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytic Code --> 	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '559862854355634'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=559862854355634&ev=PageView
+		&noscript=1"/>
+		</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/mesibo-logo-white.png" alt="Mesibo Docs" title="Mesibo Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" style="visibility: hidden">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <!-- Yusuf
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mesibo latest (current)   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="/v1.0.0/">Mesibo v1.0.0</a></li>
+  </ul>
+</div>
+
+    </div>
+    -->
+</div>
+
+        </div>
+    </div>
+</nav>
+
+	</header>
+
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+							
+							<h1>Get Started, Part 1: How Mesibo Works?</h1>
+							 
+
+							 <span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    5 minutes
+  
+</span>
+
+							
+							
+							<ul class="pagination">
+  <li class="active"><a href="/documentation/get-started/">1: Introduction</a></li>
+  <li><a href="/documentation/get-started/messaging/">2: Messaging</a></li>
+  <li><a href="/documentation/get-started/group-messaging/">3: Group Messaging</a></li>
+  <li><a href="/documentation/get-started/voice-video-calls/">4: Voice &amp; Video Calls</a></li>
+  <li><a href="/documentation/get-started/ui-modules/">5: UI Modules</a></li>
+  <li><a href="/documentation/get-started/conclusion/">6: Conclusion</a></li>
+  <!-- <li ><a href="/get-started/chatbots">4: Chat Bots</a></li> -->
+</ul>
+
+<p>Welcome! We know you are excited to see real-time messaging in action. We promise that it won’t take more than an hour to build your first real-time messaging using mesibo - a powerful, yet intuitive and elegant communication platform.</p>
+
+<p>But before we begin,please ensure that you read this entire section. Also, you must have a mesibo account. This is a one-time activity, and you can use this account to build unlimited apps. Click <a href="https://mesibo.com/console/#/register">here</a> to create your account</p>
+
+<p><a href="https://mesibo.com/console/#/register" class="button outline-btn">Create Account</a></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<ol>
+  <li>Basic Concepts and How Mesibo Works (on this page)</li>
+  <li><a href="/documentation/get-started/messaging">Messaging</a></li>
+  <li><a href="/documentation/get-started/group-messaging">Group Messaging</a></li>
+  <li><a href="/documentation/get-started/voice-video-calls">Voice and Video Calls</a></li>
+  <li><a href="/documentation/get-started/ui-modules">Ready to use UI modules</a></li>
+</ol>
+
+<h2 id="mesibo-concepts">Mesibo Concepts</h2>
+
+<p>Mesibo is a platform for developers to <strong>quickly develop</strong> applications with real-time messaging, voice and video calls. However, before we go further, let’s understand, what is a <strong>Real-time Message</strong>.</p>
+
+<p>A <strong>real-time message</strong> could be anything, a few popular examples are:</p>
+
+<ul>
+  <li>You are sending ‘Hi’ to your friends over WhatsApp is a real-time message.</li>
+  <li>You are sending a photo OR a location to your friends over Telegram is a real-time message.</li>
+  <li>You are sending a request to Uber for a cab is a real-time message - it’s invisble to you but underneath what goes is a real-time message.</li>
+  <li>Subsequently, Uber sending messages to group of drivers to get you a cab is a message (group message).</li>
+  <li>Your WebRTC client sending SDP to other end is a real-time message.</li>
+</ul>
+
+<p>One of the distinguishing characteristics of real-time messaging is that messages are delivered as it happens, almost instantaneously. However, there are situations in which a real-time message may become non-real-time when one of the endpoints is offline. For example, you are sending a message to your friend in WhatsApp, here are possible outcomes:</p>
+
+<ol>
+  <li>Your friend is online and she will get your message almost instantaneously, this is a real-time message.</li>
+  <li>Your friend is offline. The server will store this message for you and it will be delivered to your friend when she is online again. This is how a real-time message (the one you sent) can become a non-real-time message.</li>
+</ol>
+
+<p>Later, we will see how to awake remote-end on need basis so that you can maximize the possibilities of delivering your messages in real-time.</p>
+
+<h3 id="how-mesibo-works">How Mesibo Works</h3>
+
+<p>Mesibo is a high performance, high-availability, asynchronous real-time messaging platform that allows your users (endpoints) to communicate with each other in real-time. Unlike other platforms, Mesibo is entirely written in C++ with state-of-the-art architecture and reliability to give you unlimited scalability from day one. Later we will see how mesibo architecture gives you an edge over homegrown implementations that are unable to scale once you reach a critical mass.</p>
+
+<p>Mesibo makes it extremely simple to enable real-time communication between your users. All you have to do is:</p>
+
+<ol>
+  <li>Let mesibo know about each of your users. Mesibo will create an access token for each user and give it to you (using mesibo Server-side Admin API)</li>
+  <li>You give respective access tokens to your users.</li>
+  <li>Your user uses this access token in Mesibo SDK to create a real-time connection with mesibo server to send and receive real-time messages, voice and video calls.</li>
+</ol>
+
+<p>Isn’t it absolutely simple? We handle all the complexities for you whether it is network conditions, reconnecting, reduandancy, latency, buffering and even user interface - mesibo SDK and backend takes care of everything for you.</p>
+
+<p><img src="/documentation/get-started/images/conceptual-arch-small.png" alt="How mesibo works" /></p>
+
+<p>A more elaborate real-life scenario below in which Alice and Bob registers which your backend, each gets real-time access token from mesibo and start communication in real-time.</p>
+
+<p><img src="/documentation/get-started/images/basic-flow.png" alt="Alice and Bob chatting using mesibo" /></p>
+
+<p>The power of mesibo is to make it extremely trivial to send and receive arbitrary real-time messages by using well-thought-of design patterns. In short,</p>
+
+<ol>
+  <li>To send a message, invoke one of the messaging APIs. You can specify the destination (a user or a group), type of message, expiry if any, and your message. That’s about it! mesibo will send a message and also inform you about the status of messages sent in real-time.</li>
+  <li>To receive messages, implement mesibo listeners (delegates in iOS). mesibo will inform you whenever you receive any messages or calls.</li>
+  <li>To send and receive files, implement mesibo file transfer handler which will upload (to send) and download (on receive) file to or from your server.</li>
+</ol>
+
+<p>That’s it. mesibo takes care of everything including connection handling, retries, error handling, flow control etc.</p>
+
+<p>mesibo delivers messages instantly if the destination user is online. If not, messages will be delivered as soon as destination user comes online. This is automatic and transparent to applications, so applications sending messages do not need to worry if the receiving applications are up and running. Conversely, receiving applications do not need to worry about the status of sending application.</p>
+
+<h3 id="what-mesibo-is-not">What Mesibo is NOT!</h3>
+<p>Mesibo is not a collection of random recipes or quick fix code. Rather, Mesibo is a solid platform which allows you to create industrial strength communication apps with right fundamentals in place and without any shortcuts. In the next few sections and tutorials, we will learn more about real-time messaging, and calls which will not only make you more knowledgeable on Mesibo but also in general about how real-time communication works.</p>
+
+<h2 id="conclusion-of-part-one">Conclusion of part one</h2>
+
+<p>In this part, we have learnt briefly about mesibo and what it can do.</p>
+
+<p>In part 2, we will learn more about messaging and key properties like destination, type of messages, expiry, message retention etc.</p>
+
+<p><a href="/documentation/get-started/messaging/" class="button outline-btn" style="margin-bottom: 30px; margin-right: 100%">On to Part 2 &gt;&gt;</a></p>
+
+							<!-- tags -->
+							
+							
+							
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=get started">get started</a>, <a href="/documentation/glossary/?term=setup">setup</a>, <a href="/documentation/glossary/?term=orientation">orientation</a>, <a href="/documentation/glossary/?term=quickstart">quickstart</a>, <a href="/documentation/glossary/?term=intro">intro</a>, <a href="/documentation/glossary/?term=concepts">concepts</a>, <a href="/documentation/glossary/?term=containers">containers</a></span>
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/documentation/get-started/";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+							<!-- removed for mesibo -->
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/documentation/get-started/#introduction" class="nomunge">Introduction</a></li>
+  <li><a href="/documentation/get-started/#mesibo-concepts" class="nomunge">Mesibo Concepts</a>
+    <ul>
+      <li><a href="/documentation/get-started/#how-mesibo-works" class="nomunge">How Mesibo Works</a></li>
+      <li><a href="/documentation/get-started/#what-mesibo-is-not" class="nomunge">What Mesibo is NOT!</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/get-started/#conclusion-of-part-one" class="nomunge">Conclusion of part one</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/">Home</a></li>
+                        <li><a href="https://mesibo.com/pricing/">Pricing</a></li>
+                        <li><a href="https://mesibo.com/use-cases/">Use Cases</a></li>
+                        <li><a href="https://mesibo.com/custom-solutions/">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/documentation/faq/">FAQ</a></li>
+                        <li><a href="https://mesibo.com/help/">Support</a></li>
+                        <li class="break"><a href="https://stackoverflow.com/questions/ask">Community</a></li>
+                        <li><a href="https://mesibo.com/documentation/">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+                        <li><a href="https://mesibo.com/career/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="https://mesibo.com/terms-of-use/#terms">Terms-of-Service</a></li>
+                        <li><a href="https://mesibo.com/terms-of-use/#privacy">Privacy Policy</a></li>
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright &copy; 2019 Mesibo. All rights reserved. </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a target="_blank" href="https://twitter.com/mesiboapi">Twitter</a></li>
+                    <li class="fa fa-youtube"><a target="_blank" href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ">Youtube</a></li>
+                    <li class="fa fa-google-plus"><a target="_blank" href="https://plus.google.com/b/107106343719610600541/107106343719610600541">Google</a></li>
+                    <li class="fa fa-github"><a target="_blank" href="https://github.com/mesibo/samples">Github</a></li>
+                    <li class="fa fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/mesibo">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a target="_blank" href="https://www.facebook.com/mesiboapi">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/documentation/get-started/';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

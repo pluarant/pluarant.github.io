@@ -1,0 +1,36 @@
+What is webhook?: |
+
+  A WebHook is an HTTP(S) URL which will be invoked with POST data in real-time by Mesibo when something happens; for example, an offline message, a user comes online or goes offline etc.
+
+
+How do I set up webhook URL for an App?: |
+
+  You can set webhook url for an App using <a href="/documentation/api/server-side-api/" target="_blank">server side API</a> or from mesibo console.
+
+What are the webhook parameters?: |
+  
+  Webhook is invoked with the following parameters:
+
+  - secret - secret which you entered in the mesibo console
+  - uid - User Id
+  - app - APP Id 
+  - src - sender
+  - dest - destination 
+  - e - logical OR combination of one of the following events
+      - 0x10 - User is Online
+      - 0x20 - User went offline
+      - 0x100 - Messages
+
+
+Can I select events for which I want to receive webhooks?: |
+
+  Yes, you can select for which events webhook should be invoked. For example, an offline message, a user comes online or goes offline etc.
+
+Is there any limit on the number of times a webhook is invoked?: |
+
+  There is no hard limit; however, Mesibo automatically optimizes and decides based on your webhook usage if the next webhook call is necessary. For example, an offline message indication for a user may not be invoked again till that user comes online or for a certain duration.
+
+
+How do I send a push notification to users?: |
+  Mesibo will automatically send push notification to offline users if there a message or a call for them. All you need to configure your Firebase Cloud Messaging and Apple Push Notification credentials in Mesibo console and rest will be taken care by Mesibo.
+

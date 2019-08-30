@@ -1,0 +1,175 @@
+What is Mesibo HTTP library?: |
+
+  `Mesibo HTTP library` is a light, super-fast cross-platform HTTP library that makes networking easier and portable across platforms as you will see from the examples below. It supports everything you need - sending REST API requests, uploads, downloads with resume, managing cache, and images, keep-alive etc. Moreover, it's not just faster than other libraries, it's blazingly fast!
+
+  `Mesibo HTTP library` is an extension of Mesibo [real-time Client APIs](/documentation/api/). The complete documentation of HTTP library is available [here](/documentation/api/http-library/).
+
+Why Mesibo HTTP library when there are other HTTP libraries like Volley, Retrofit, and AFNetworking?: |
+  Valid question! In fact, we ourselves were using `Volley` for our Android development and `AFNetworking` for iOS development before we decided to use our own library. While those are good libraries, one of the fundamental issues is that they are only available for one platform. So not only you need to learn two different libraries but maintain two completely different codebases. Although unrelated, another issue we found with AFNetworking is that it is unreasonably bloated both in size and performance and complicated to use. 
+  
+  In contrast, Mesibo HTTP is a fresh approach. It's a result of our experience using other libraries and limitations we met there. It's quite evident from two examples below that how simple, powerful and portable Mesibo HTTP library is compared to other libraries. 
+  
+  Android File Upload Example
+     
+        Mesibo.Http http = new Mesibo.Http();
+        http.url = "https://example.com";
+        http.postBundle = post;
+        http.uploadFile = filePath;
+        http.execute();
+  
+  iOS File Upload Example
+     
+        MesiboHttp *http = [MesiboHttp new];
+        http.url = @"https://example.com";
+        http.uploadFile = filePath;
+        http.postBundle = post;
+        [http execute];
+  
+  Finally, Mesibo HTTP core is written in `C/C++` and highly optimized. This makes it much faster, compact and less resource intensive compared to libraries written in Java. 
+
+Does Mesibo HTTP library supports HTTPS?: |
+  yes, it automatically detects http or https depending on the URL. 
+
+How to invoke a REST API with Mesibo HTTP?: |
+  Invoking REST API is as easy as creating a http object, adding parameters to Bunlde(Android) or NSDictionary(iOS) and invoke `execute` function of http object. Mesibo HTTP library takes care of URL encoding, etc. 
+
+  Android Example
+
+        Mesibo.init(content); //one time initialization
+
+        // populate a Bundle with all the post parameters
+        Bundle post = new Bundle();
+        post.putString("name", "John");
+        post.putInt("age", 30);
+        post.putString("token", "some token");
+     
+        Mesibo.Http http = new Mesibo.Http();
+        http.url = "https://example.com";
+        http.postBundle = post;
+        http.execute();
+  
+  iOS Example
+
+        NSMutableDictionary *post = [[NSMutableDictionary alloc] init];
+          
+        [post setValue:@"John" forKey:@"name"];
+        [post setValue:[@(30) stringValue] forKey:@"age"];
+        [post setValue:token forKey:@"token"];
+
+        MesiboHttp *http = [MesiboHttp new];
+        http.url = @"https://example.com";
+        http.postBundle = post;
+        [http execute];
+
+  isn't it simple?
+
+How do I upload a file?: |
+
+  Same as above, just pass file path to the http object and execute.
+
+  Android File Upload Example
+     
+        Mesibo.Http http = new Mesibo.Http();
+        http.url = "https://example.com";
+        http.uploadFile = filePath;
+        http.execute();
+  
+  iOS File Upload Example
+     
+        MesiboHttp *http = [MesiboHttp new];
+        http.url = @"https://example.com";
+        http.uploadFile = filePath;
+        [http execute];
+
+Can do I upload a file and send post data together (multipart form-data)? : |
+
+  Absolutely, just add `postBundle` in addition to `uploadFile`. Internally, it will be converted into multipart form-data when both `uploadFile` and `postBundle` data is present. 
+  
+  Android File Upload with POST data Example
+     
+        Mesibo.Http http = new Mesibo.Http();
+        http.url = "https://example.com";
+        http.postBundle = post;
+        http.uploadFile = filePath;
+        http.execute();
+  
+  iOS File Upload with POST data Example
+     
+        MesiboHttp *http = [MesiboHttp new];
+        http.url = @"https://example.com";
+        http.uploadFile = filePath;
+        http.postBundle = post;
+        [http execute];
+
+How do I download a file?: |
+
+  Same as above, just pass URL and file save path to the http object and execute.
+
+  Android File Download Example
+     
+        Mesibo.Http http = new Mesibo.Http();
+        http.url = "https://example.com";
+        http.downloadFile = filePath;
+        http.resume = true;
+        http.execute();
+  
+  iOS File Download Example
+     
+        MesiboHttp *http = [MesiboHttp new];
+        http.url = @"https://example.com";
+        http.downloadFile = filePath;
+        http.resume = YES;
+        [http execute];
+
+How to resume broken downloads?: |
+  Just add a flag `resume` and Mesibo HTTP library will resume any broken downloads. Refer to example above. You can also disable this feature and force entire download by initializing it to `false`. 
+
+How to decode JSON data?: |
+
+  Both Android and iOS platforms make it super easy to decode JSON data. 
+
+  Android Example
+      String data = http.getDataString();
+      try {
+          Response resp = mGson.fromJson(data, Response.class);
+      } catch (Exception e) {}
+   
+  
+  [Complete Code on GitHub](https://github.com/Mesibo/messenger-app-android/blob/master/app/src/main/java/org/Mesibo/messenger/MesiboFileTransferHelper.java)
+
+  iOS Example
+      NSError *jsonerror = nil;
+                  
+      NSData *data = [[http getDataString] dataUsingEncoding:NSUTF8StringEncoding];
+      id jsonObject = [NSJSONSerialization JSONObjectWithData:data 
+                                 options:NSJSONReadingAllowFragments error:&jsonerror];
+
+  [Complete Code on GitHub](https://github.com/Mesibo/messenger-app-ios/blob/master/MesiboApplication/SampleAppFileTransferHandler.m)
+      
+How to make a synchronous request?: |
+
+  To make a synchronous request, invoke `executeAndWait` instead of `execute` function.
+
+Can I control timeouts?: |
+  Absolutely, in fact, HTTP library can let you control timeout at various states; timeout to connect, timeout to receive headers, timeout to receive the body, as shown below.
+
+      http.connectionTimeout = 15000; // 15 seconds
+      http.headerTimeout = 10000; // 10 seconds
+      http.bodyTimeout = 10000; // 10 seconds for every chunk of body packet
+  
+  Refer to [HTTP Library documentation](/documentation/api/http-library/) for all the options.
+
+How to enable Caching?: |
+  By default, the cache is enabled and the responses are cached adhering to standard and server response. Mesibo will not cache if the server has restricted response from being cached. It also re-validates the cached objects as recommended by the server in its cache control response headers.
+
+  You can, however, override this default behavior per request using various caching options in HTTP object; for example, forced caching or forced reading from the cache without revalidating. 
+  
+      http.updateCacheForced = true; 
+  
+  For more details, refer to `Cache Control Fields` section in HTTP Library documentation.
+
+How to enable Persistent Connections (Keep-Alive) and Requests Pipelining?: |
+  By default, mesibo enables intelligent Keep-Alive and request pipelining for effective resource utilization and to get faster responses. You can, however, turn off this behavior per request by setting the ‘persistent’ field to false in the HTTP object.
+
+Can I send custom/additional HTTP headers?: |
+  Of course you can, refer to [HTTP Library documentation](/documentation/api/http-library/) for all the options.

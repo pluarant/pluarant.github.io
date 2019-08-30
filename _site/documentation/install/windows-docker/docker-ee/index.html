@@ -1,0 +1,707 @@
+<!-- Page generated 2019-08-30 11:31:27 +0530 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+			
+<!-- edit url temporarily disabled Mesibo -->
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/documentation/install/windows-docker/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/mesibo-favicon.png">
+	<link rel="mesibo-favicon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
+	<!-- metadata -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-08-30T11:31:27+05:30"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesibo"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="Install Docker Engine - Enterprise on Windows Servers"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="Docker Engine - Enterprise enables native Docker containers on Windows Server. Windows Server 2016 and later versions are supported. The Docker Engine - Enterprise installation package includes everything you need..." />
+	<meta name="twitter:image:src" content="/images/docs@2x.png" />
+	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-08-30T11:31:27+05:30"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Windows, Windows Server, install, download, ucp, Docker Engine - Enterprise">
+	<link rel="stylesheet" href="/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="/css/bootstrap.min.css" >
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css" >
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- SEO stuff -->
+	<title>Install Docker Engine - Enterprise on Windows Servers | Mesibo Documentation</title>
+<meta property="og:title" content="Install Docker Engine - Enterprise on Windows Servers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How to install Docker Engine - Enterprise for Windows Server" />
+<meta property="og:description" content="How to install Docker Engine - Enterprise for Windows Server" />
+<link rel="canonical" href="/documentation/install/windows-docker/docker-ee/" />
+<meta property="og:url" content="/documentation/install/windows-docker/docker-ee/" />
+<meta property="og:site_name" content="Mesibo Documentation" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Install Docker Engine - Enterprise on Windows Servers","description":"How to install Docker Engine - Enterprise for Windows Server","url":"https://docs.docker.com/documentation/install/windows-docker/docker-ee/"}</script>
+	<!-- END SEO STUFF -->
+	
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	</script>
+	<!-- Google Analytic Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-97488698-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytic Code --> 	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '559862854355634'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=559862854355634&ev=PageView
+		&noscript=1"/>
+		</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/mesibo-logo-white.png" alt="Mesibo Docs" title="Mesibo Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" style="visibility: hidden">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <!-- Yusuf
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mesibo latest (current)   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="/v1.0.0/">Mesibo v1.0.0</a></li>
+  </ul>
+</div>
+
+    </div>
+    -->
+</div>
+
+        </div>
+    </div>
+</nav>
+
+	</header>
+
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+							
+							<h1>Install Docker Engine - Enterprise on Windows Servers</h1>
+							 
+
+							 <span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    6 minutes
+  
+</span>
+
+							
+							
+							
+<p>Docker Engine - Enterprise enables native Docker containers on Windows Server. Windows Server 2016 and later versions are supported. The Docker Engine - Enterprise installation package includes everything you need to run Docker on Windows Server.  This topic describes pre-install considerations, and how to download and install Docker Engine - Enterprise.</p>
+
+<blockquote>
+  <p>Release notes</p>
+
+  <p><a href="/release-notes/">Release notes for all versions</a></p>
+</blockquote>
+
+<h2 id="system-requirements">System requirements</h2>
+
+<p>Windows OS requirements around specific CPU and RAM requirements also need to be met as specified 
+in the <a href="https://docs.microsoft.com/en-us/windows-server/get-started/system-requirements">Windows Server Requirements</a>.
+This provides information for specific CPU and memory specs and capabilities (instruction sets like CMPXCHG16b, 
+LAHF/SAHF, and PrefetchW, security: DEP/NX, etc.).</p>
+
+<ul>
+  <li>OS Versions: Server 2016 (Core and GUI), 1709 and 1803</li>
+  <li>RAM: 4GB</li>
+  <li>Disk space: <a href="https://docs.microsoft.com/en-us/windows-server/get-started/system
+requirements">32 GB minimum recommendation for Windows</a>. An additional 32 GB of Space is recommended for base images for ServerCore and NanoServer along with buffer
+space for workload containers running IIS, SQL Server and .Net apps.</li>
+</ul>
+
+<h2 id="install-docker-engine---enterprise">Install Docker Engine - Enterprise</h2>
+
+<p>Docker Engine - Enterprise requires Windows Server 2016, 1703, or 1803. See
+<a href="#what-to-know-before-you-install">What to know before you install</a> for a
+full list of prerequisites.</p>
+
+<ol>
+  <li>
+    <p>Open a PowerShell command prompt, and type the following commands.</p>
+
+    <pre><code class="language-PowerShell">Install-Module DockerMsftProvider -Force
+Install-Package Docker -ProviderName DockerMsftProvider -Force
+</code></pre>
+  </li>
+  <li>
+    <p>Check if a reboot is required, and if yes, restart your instance:</p>
+
+    <pre><code class="language-PowerShell">(Install-WindowsFeature Containers).RestartNeeded
+</code></pre>
+    <p>If the output of this command is <strong>Yes</strong>, then restart the server with:</p>
+
+    <pre><code class="language-PowerShell">Restart-Computer
+</code></pre>
+  </li>
+  <li>
+    <p>Test your Docker Engine - Enterprise installation by running the 
+<code class="highlighter-rouge">hello-world</code> container.</p>
+
+    <pre><code class="language-PowerShell">docker run hello-world:nanoserver
+
+Unable to find image 'hello-world:nanoserver' locally
+nanoserver: Pulling from library/hello-world
+bce2fbc256ea: Pull complete
+3ac17e2e6106: Pull complete
+8cac44e17f16: Pull complete
+5e160e4d8db3: Pull complete
+Digest: sha256:25eac12ba40f7591969085ab3fb9772e8a4307553c14ea72d0e6f98b2c8ced9d
+Status: Downloaded newer image for hello-world:nanoserver
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+</code></pre>
+  </li>
+</ol>
+
+<h3 id="optional-make-sure-you-have-all-required-updates">(optional) Make sure you have all required updates</h3>
+
+<p>Some advanced Docker features, such as swarm mode, require the fixes included in
+<a href="https://support.microsoft.com/en-us/help/4015217/windows-10-update-kb4015217">KB4015217</a>
+(or a later cumulative patch).</p>
+
+<pre><code class="language-PowerShell">sconfig
+</code></pre>
+
+<p>Select option <code class="highlighter-rouge">6) Download and Install Updates</code>.</p>
+
+<h3 id="fips-140-2-cryptographic-module-support">FIPS 140-2 cryptographic module support</h3>
+
+<p><a href="https://csrc.nist.gov/csrc/media/publications/fips/140/2/final/documents/fips1402.pdf">Federal Information Processing Standards (FIPS) Publication 140-2</a> is a United States Federal security requirement for cryptographic modules.</p>
+
+<p>With Docker EE Basic license for versions 18.09 and later, Docker provides FIPS 140-2 support in Windows Server 2016. This includes a FIPS supported cryptographic module. If the Windows implementation already has FIPS support enabled, FIPS is automatically enabled in the Docker engine.</p>
+
+<p><strong>NOTE:</strong> FIPS 140-2 is only supported in the Docker EE engine. UCP and DTR currently do not have support for FIPS 140-2.</p>
+
+<p>To enable FIPS 140-2 compliance on a system that is not in FIPS 140-2 mode, do the following in PowerShell:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[System.Environment]::SetEnvironmentVariable("DOCKER_FIPS", "1", "Machine") 
+</code></pre></div></div>
+
+<p>Restart the Docker service by running the following command.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net stop docker
+net start docker
+</code></pre></div></div>
+
+<p>To confirm Docker is running with FIPS-140-2 enabled, run the <code class="highlighter-rouge">docker info</code> command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Labels:    
+ com.docker.security.fips=enabled 
+</code></pre></div></div>
+
+<p><strong>NOTE:</strong> If the system has the FIPS-140-2 cryptographic module installed on the operating system, it is possible to disable FIPS-140-2 compliance. To disable FIPS-140-2 in Docker but not the operating system, set the value <code class="highlighter-rouge">"DOCKER_FIPS","0"</code> in the <code class="highlighter-rouge">[System.Environment]</code>.`</p>
+
+<h2 id="use-a-script-to-install-docker-ee">Use a script to install Docker EE</h2>
+
+<p>Use the following steps when you want to install manually, script automated
+installs, or install on air-gapped systems.</p>
+
+<ol>
+  <li>
+    <p>In a PowerShell command prompt, download the installer archive on a machine
+that has a connection.</p>
+
+    <pre><code class="language-PowerShell"># On an online machine, download the zip file.
+invoke-webrequest -UseBasicparsing -Outfile .zip https://download.docker.com/components/engine/windows-server/2.1/.zip
+</code></pre>
+  </li>
+  <li>
+    <p>Copy the zip file to the machine where you want to install Docker. In a
+PowerShell command prompt, use the following commands to extract the archive,
+register, and start the Docker service.</p>
+
+    <pre><code class="language-PowerShell">#Stop Docker service
+Stop-Service docker
+    
+# Extract the archive.
+Expand-Archive .zip -DestinationPath $Env:ProgramFiles -Force
+
+# Clean up the zip file.
+Remove-Item -Force .zip
+
+# Install Docker. This requires rebooting.
+$null = Install-WindowsFeature containers
+
+# Add Docker to the path for the current session.
+$env:path += ";$env:ProgramFiles\docker"
+
+# Optionally, modify PATH to persist across sessions.
+$newPath = "$env:ProgramFiles\docker;" +
+[Environment]::GetEnvironmentVariable("PATH",
+[EnvironmentVariableTarget]::Machine)
+
+[Environment]::SetEnvironmentVariable("PATH", $newPath,
+[EnvironmentVariableTarget]::Machine)
+
+# Register the Docker daemon as a service.
+dockerd --register-service
+
+# Start the Docker service.
+Start-Service docker
+</code></pre>
+  </li>
+  <li>
+    <p>Test your Docker EE installation by running the <code class="highlighter-rouge">hello-world</code> container.</p>
+
+    <pre><code class="language-PowerShell">docker container run hello-world:nanoserver
+</code></pre>
+  </li>
+</ol>
+
+<h2 id="install-a-specific-version">Install a specific version</h2>
+
+<p>To install a specific version, use the <code class="highlighter-rouge">RequiredVersion</code> flag:</p>
+
+<pre><code class="language-PowerShell">Install-Package -Name docker -ProviderName DockerMsftProvider -Force -RequiredVersion 18.09
+...
+Name                      Version               Source           Summary
+----                      -------               ------           -------
+Docker                    18.09.0               Docker           Contains Docker Engine - Enterprise for use with Windows Server...
+</code></pre>
+
+<h3 id="updating-the-dockermsftprovider">Updating the DockerMsftProvider</h3>
+<p>Installing specific Docker EE versions may require an update to previously installed DockerMsftProvider modules. To update:</p>
+
+<pre><code class="language-PowerShell">Update-Module DockerMsftProvider
+</code></pre>
+
+<p>Then open a new Powershell session for the update to take effect.</p>
+
+<h2 id="update-docker-engine---enterprise">Update Docker Engine - Enterprise</h2>
+
+<p>To update Docker Engine - Enterprise to the most recent release, specify the <code class="highlighter-rouge">-RequiredVersion</code> and <code class="highlighter-rouge">-Update</code> flags:</p>
+
+<pre><code class="language-PowerShell">Install-Package -Name docker -ProviderName DockerMsftProvider -RequiredVersion 18.09 -Update -Force
+</code></pre>
+<p>The required version must match any of the versions available in this json file: https://dockermsft.blob.core.windows.net/dockercontainer/DockerMsftIndex.json</p>
+
+<h2 id="uninstall-docker-ee">Uninstall Docker EE</h2>
+
+<p>Use the following commands to completely remove the Docker Engine - Enterprise from a Windows Server:</p>
+
+<ol>
+  <li>Leave any active Docker Swarm
+    <pre><code class="language-PowerShell"> docker swarm leave --force
+</code></pre>
+  </li>
+  <li>
+    <p>Remove all running and stopped containers</p>
+
+    <pre><code class="language-PowerShell"> docker rm -f $(docker ps --all --quiet)
+</code></pre>
+  </li>
+  <li>Prune container data
+    <pre><code class="language-PowerShell"> docker system prune --all --volumes
+</code></pre>
+  </li>
+  <li>Uninstall Docker PowerShell Package and Module
+    <pre><code class="language-PowerShell"> Uninstall-Package -Name docker -ProviderName DockerMsftProvider
+ Uninstall-Module -Name DockerMsftProvider
+</code></pre>
+  </li>
+  <li>Clean up Windows Networking and file system
+    <pre><code class="language-PowerShell"> Get-HNSNetwork | Remove-HNSNetwork
+ Remove-Item -Path "C:\ProgramData\Docker" -Recurse -Force
+</code></pre>
+  </li>
+</ol>
+
+<h2 id="preparing-a-docker-ee-engine-for-use-with-ucp">Preparing a Docker EE Engine for use with UCP</h2>
+
+<p>Run the
+<a href="/datacenter/ucp/3.0/guides/admin/configure/join-windows-worker-nodes/#run-the-windows-node-setup-script">UCP installation script for Windows</a>.</p>
+
+<p>Start the Docker service:</p>
+
+<pre><code class="language-PowerShell">Start-Service Docker
+</code></pre>
+
+<ul>
+  <li><strong>What the Docker Engine - Enterprise  install includes</strong>: The installation
+provides <a href="/engine/userguide/intro.md">Docker Engine</a> and the
+<a href="/engine/reference/commandline/cli.md">Docker CLI client</a>.</li>
+</ul>
+
+<h2 id="about-docker-engine---enterprise-containers-and-windows-server">About Docker Engine - Enterprise containers and Windows Server</h2>
+
+<p>Looking for information on using Docker Engine - Enterprise containers?</p>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/docker/labs/blob/master/windows/windows-containers/README.md">Getting Started with Windows Containers (Lab)</a>
+provides a tutorial on how to set up and run Windows containers on Windows 10
+or Windows Server 2016. It shows you how to use a MusicStore application with
+Windows containers.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/docker/labs/blob/master/windows/windows-containers/Setup-Server2016.md">Setup - Windows Server 2016 (Lab)</a>
+describes environment setup in detail.</p>
+  </li>
+  <li>
+    <p>Docker Container Platform for Windows Server <a href="https://www.docker.com/microsoft/">articles and blog
+posts</a> on the Docker website.</p>
+  </li>
+</ul>
+
+<h2 id="where-to-go-next">Where to go next</h2>
+
+<ul>
+  <li>
+    <p><a href="/docker-for-windows/index.md">Getting started</a> provides an overview of
+Docker for Windows, basic Docker command examples, how to get help or give
+feedback, and links to all topics in the Docker for Windows guide.</p>
+  </li>
+  <li>
+    <p><a href="/docker-for-windows/faqs.md">FAQs</a> provides answers to frequently asked
+questions.</p>
+  </li>
+  <li>
+    <p><a href="/docker-for-windows/release-notes.md">Release Notes</a> lists component
+updates, new features, and improvements associated with Stable and Edge
+releases.</p>
+  </li>
+  <li>
+    <p><a href="/learn.md">Learn Docker</a> provides general Docker tutorials.</p>
+  </li>
+  <li>
+    <p><a href="https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server">Windows Containers on Windows Server</a>
+is the official Microsoft documentation.</p>
+  </li>
+</ul>
+
+							<!-- tags -->
+							
+							
+							
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=Windows">Windows</a>, <a href="/documentation/glossary/?term=Windows Server">Windows Server</a>, <a href="/documentation/glossary/?term=install">install</a>, <a href="/documentation/glossary/?term=download">download</a>, <a href="/documentation/glossary/?term=ucp">ucp</a>, <a href="/documentation/glossary/?term=Docker Engine - Enterprise">Docker Engine - Enterprise</a></span>
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/documentation/install/windows-docker/docker-ee/";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+							<!-- removed for mesibo -->
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/documentation/install/windows-docker/docker-ee/#system-requirements" class="nomunge">System requirements</a></li>
+  <li><a href="/documentation/install/windows-docker/docker-ee/#install-docker-engine---enterprise" class="nomunge">Install Docker Engine - Enterprise</a>
+    <ul>
+      <li><a href="/documentation/install/windows-docker/docker-ee/#optional-make-sure-you-have-all-required-updates" class="nomunge">(optional) Make sure you have all required updates</a></li>
+      <li><a href="/documentation/install/windows-docker/docker-ee/#fips-140-2-cryptographic-module-support" class="nomunge">FIPS 140-2 cryptographic module support</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/install/windows-docker/docker-ee/#use-a-script-to-install-docker-ee" class="nomunge">Use a script to install Docker EE</a></li>
+  <li><a href="/documentation/install/windows-docker/docker-ee/#install-a-specific-version" class="nomunge">Install a specific version</a>
+    <ul>
+      <li><a href="/documentation/install/windows-docker/docker-ee/#updating-the-dockermsftprovider" class="nomunge">Updating the DockerMsftProvider</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/install/windows-docker/docker-ee/#update-docker-engine---enterprise" class="nomunge">Update Docker Engine - Enterprise</a></li>
+  <li><a href="/documentation/install/windows-docker/docker-ee/#uninstall-docker-ee" class="nomunge">Uninstall Docker EE</a></li>
+  <li><a href="/documentation/install/windows-docker/docker-ee/#preparing-a-docker-ee-engine-for-use-with-ucp" class="nomunge">Preparing a Docker EE Engine for use with UCP</a></li>
+  <li><a href="/documentation/install/windows-docker/docker-ee/#about-docker-engine---enterprise-containers-and-windows-server" class="nomunge">About Docker Engine - Enterprise containers and Windows Server</a></li>
+  <li><a href="/documentation/install/windows-docker/docker-ee/#where-to-go-next" class="nomunge">Where to go next</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/">Home</a></li>
+                        <li><a href="https://mesibo.com/pricing/">Pricing</a></li>
+                        <li><a href="https://mesibo.com/use-cases/">Use Cases</a></li>
+                        <li><a href="https://mesibo.com/custom-solutions/">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/documentation/faq/">FAQ</a></li>
+                        <li><a href="https://mesibo.com/help/">Support</a></li>
+                        <li class="break"><a href="https://stackoverflow.com/questions/ask">Community</a></li>
+                        <li><a href="https://mesibo.com/documentation/">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+                        <li><a href="https://mesibo.com/career/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="https://mesibo.com/terms-of-use/#terms">Terms-of-Service</a></li>
+                        <li><a href="https://mesibo.com/terms-of-use/#privacy">Privacy Policy</a></li>
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright &copy; 2019 Mesibo. All rights reserved. </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a target="_blank" href="https://twitter.com/mesiboapi">Twitter</a></li>
+                    <li class="fa fa-youtube"><a target="_blank" href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ">Youtube</a></li>
+                    <li class="fa fa-google-plus"><a target="_blank" href="https://plus.google.com/b/107106343719610600541/107106343719610600541">Google</a></li>
+                    <li class="fa fa-github"><a target="_blank" href="https://github.com/mesibo/samples">Github</a></li>
+                    <li class="fa fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/mesibo">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a target="_blank" href="https://www.facebook.com/mesiboapi">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/documentation/install/windows-docker/docker-ee/';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

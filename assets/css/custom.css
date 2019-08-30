@@ -1,0 +1,28 @@
+/*
+ * Version: 2.1.1
+ * File Description: Place here your custom CSS styles
+ */
+
+.use-cases {
+	min-height: 250px !important;
+}
+
+.help-box {
+	min-height: 100px !important;
+}
+
+.techsupport-box {
+	min-height: 90px !important;
+}
+
+.customsol-box {
+	min-height: 130px !important;
+}
+
+.what-box {
+	min-height: 180px !important;
+}
+
+.doc-box {
+	min-height: 100px !important;
+}

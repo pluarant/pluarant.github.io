@@ -1,0 +1,27 @@
+<div style="background:#00868b; height:100%" ng-controller="loginController">
+    <div class="padding-15">
+
+        <div class="login-box" >
+            <div class="dashboard-logo">
+                <a href="https://mesibo.com"><img src="assets/images/rectangle_logo_white.png" alt="Mesibo logo" /></a>
+            </div>
+            <!-- login form -->
+			<form class="sky-form boxed">
+                
+				<fieldset>
+
+                   <p>An activation email with instructions to activate your account has been sent to <strong>{{appdata.email != ''?appdata.email:'your email address'}}</strong></p>
+                   <p>Please check your Junk/Spam Folder if you don't find it in your inbox</p>
+				   
+				</fieldset>   
+                <footer>
+                    <a href="#login" class="btn btn-primary pull-right">CONTINUE</a>
+                    
+                </footer>
+			</form>	
+            <!-- /login form -->
+
+        </div>
+	</div>
+</div>
+   

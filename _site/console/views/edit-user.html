@@ -1,0 +1,256 @@
+<!-- Breadcrumb Start -->	
+<header id="page-header">
+   <h1>Edit User</h1>
+   <ol class="breadcrumb">
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#appsettings/{{user.app.name}}">{{user.app.name}}</a></li>
+      <li><a href="#appsettings/{{user.app.name}}">App Settings</a></li>
+      <li><a href="#appsettings/{{user.app.name}}/users">User</a></li>
+     <li class="active"><strong>{{user.user.address}}</strong></li>
+   </ol>
+</header>
+<!-- Breadcrumb End -->
+<div id="content" class="padding-20" ng-controller="usercontroller">
+   <!-- Delete Token Start -->
+   <div class="modal fade bs-example-modal-sm margin-top-50" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-sm" style="margin:auto;">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h4 class="modal-title" id="mySmallModalLabel">Delete Token</h4>
+            </div>
+            <div class="modal-body">
+               Are you sure you want to delete?
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-primary" data-dismiss="modal">Delete</button>
+               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Delete Token End -->
+   
+   <!-- Delete User Start -->
+   <div class="modal fade margin-top-50" id="myModal2" role="dialog">
+      <div class="modal-sm" style="margin:auto;">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h4 class="modal-title" id="mySmallModalLabel">Delete User</h4>
+            </div>
+            <div class="modal-body">
+               Are you sure you want to delete?
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-primary" data-dismiss="modal">Delete</button>
+               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Delete User End -->
+   
+   <!-- Delete Auth Token Start -->
+   <div class="modal fade margin-top-50" id="myModal3" role="dialog">
+      <div class="modal-sm" style="margin:auto;">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h4 class="modal-title" id="mySmallModalLabel">Regenerate Auth Token</h4>
+            </div>
+            <div class="modal-body">
+               Are you sure to regenerate Auth Token? 
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
+               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Delete User End -->
+   
+   <!-- Generate Auth Token Start --> 
+   <div class="pull-right margin-bottom-20">
+      <a class="btn btn-primary btn-sm opt panel_colapse" onclick="genAuthToken()" ng-hide="user.user.token.length"><i class="" aria-hidden="true" ></i>GENERATE AUTH TOKEN</a>
+ 	  <a class="btn btn-info btn-sm opt panel_colapse" ng-click="user_save()">SAVE</a>
+    </div>
+   <div id="genAuthTokenDIV" class="padding-20" style="display: none;">
+      <div class="padding-20">Generate an auth token which you can use it from mesibo client API.</div>
+      <div class="col-md-6 form-group">
+         <div class="col-md-4 form-group padding-0">
+            <label class="size-16">Platform</label>
+            <select class="form-control" ng-init="appdata.platform='1'" ng-model="appdata.platform">
+               <option value="1" selected>Android</option>
+               <option value="2">iOS</option>
+               <option value="3">Web</option>
+            </select>
+         </div>
+         <br>
+         <div class="col-md-10 form-group padding-0">										
+            <label class="size-16">App ID</label>    
+            <input value="" type="text" ng-model="appdata.newappid" placeholder="" class="form-control required" ng-show="appdata.platform == 1 || appdata.platform == 2">  
+         </div>
+      </div>
+      <div class="col-md-12 margin-bottom-20">
+         <button ng-click="user_gentoken()" ng-disabled="appdata.newappid.length < 2" class="btn btn-primary opt panel_colapse" onclick="genAuthToken()">Generate</button>
+         <button type="reset" class="btn btn-default opt panel_colapse" onclick="genAuthToken()">Cancel</button>
+      </div>
+   </div>
+   <!-- Generate Auth Token End -->
+   
+   <!-- Auth Token Start --> 
+   <div class="panel-body fullwidth" style="display:inline-block;">
+      <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+         <thead>
+            <tr>
+               <th>Auth Token</th>
+               <th style="text-align:center" ng-show="user.user.token.length">APP ID</th>
+               <th style="text-align:center" ng-show="user.user.token.length">Regenerate</th>
+               <th style="text-align:center" ng-show="user.user.token.length">Delete</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>
+                  {{user.user.token.length?user.user.token:'Not generated - click \'Generate\' button to create a new token'}}
+               </td>
+               <td style="text-align:center" ng-show="user.user.token.length">
+                  {{user.user.appid}}
+               </td>
+               <td style="text-align:center" ng-show="user.user.token.length">
+                  <button ng-click="user_regentoken()"  type="button" class="btn btn-primary btn-xs">Regenerate</button>
+               </td>
+               <td style="text-align:center" ng-show="user.user.token.length">
+                  <a><i ng-click="user_deltoken()" class="fa fa-trash size-16"></i> </a>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <!-- Auth Token End --> 
+   
+   <!-- Offline Message Start --> 
+   <div class="panel-body" style="margin-top:5px;">
+      <div class="panel-default">
+         <div class="row">
+            <div id="" class="col-md-4">
+               <h4 class="nomargin padding-bottom-5">Offline Messages</h4>
+            </div>
+            <div id="" class="col-md-3">
+               <label class="checkbox">
+               <input type="checkbox" ng-bits-complement-model="user.user.flag" ng-bits-complement-flag="1">
+               <i></i> Storage
+               </label>
+               <label class="checkbox">
+               <input type="checkbox" ng-bits-model="user.user.flag" ng-bits-flag="2">
+               <i></i> Webhook
+               </label>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Offline Message-End --> 
+   
+   <!-- Server Side Message Start --> 
+   <div class="panel-body" style="margin-top:10px;">
+      <div class="panel-default">
+         <div class="row">
+            <div id="" class="col-md-4">
+               <h4 class="nomargin padding-bottom-5">Server Side Message Retention</h4>
+            </div>
+            <div id="" class="col-md-3">
+               <label class="checkbox">
+               <input type="checkbox" ng-bits-model="user.user.flag" ng-bits-flag="16">
+               <i></i> Enable
+               </label>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Server Side Message End --> 
+   
+   <!-- Incoming Message Start --> 
+   <div class="panel-body" style="margin-top:10px;">
+      <div class="panel-default">
+         <div class="row">
+            <div id="" class="col-md-4">
+               <h4 class="nomargin padding-bottom-5">Incoming Messages</h4>
+            </div>
+            <div id="" class="col-md-3">
+               <label class="checkbox">
+               <input type="checkbox" ng-bits-complement-model="user.user.flag" ng-bits-complement-flag="8" >
+               <i></i> Enable
+               </label>
+            </div>
+         </div>
+		 <div class="row">
+            <div id="" class="col-md-4">
+               <h4 class="nomargin padding-bottom-5">Outgoing Messages</h4>
+            </div>
+            <div id="" class="col-md-3">
+               <label class="checkbox">
+               <input type="checkbox" ng-bits-complement-model="user.user.flag" ng-bits-complement-flag="4" >
+               <i></i> Enable
+               </label>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Server Side Message End --> 
+   
+   <!-- Presence Start --> 
+   <!--
+   <div class="panel-body" style="margin-top:5px;">
+      <div class="panel-default">
+         <div class="row">
+            <div id="" class="col-md-4">
+               <h4 class="nomargin padding-bottom-5">Presence Auto Send</h4>
+            </div>
+            <div id="" class="col-md-3">
+               <label class="checkbox">
+               <input type="checkbox" ng-bits-complement-model="user.user.flag" ng-bits-complement-flag="1">
+               <i></i> Online Status
+               </label>
+               <label class="checkbox">
+               <input type="checkbox" ng-bits-model="user.user.flag" ng-bits-flag="2">
+               <i></i> Offline status
+               </label>
+            </div>
+         </div>
+      </div>
+   </div>
+   -->
+   <!-- Presence End --> 
+   
+   <!-- Message User Form Start --> 
+   <div id="panel-2"  ng-hide="user.user.flag == '8'" class="panel-body panel panel-default margin-top-10">
+      <div class="row">
+         <div class="col-md-6">
+            <h4 class="nomargin padding-bottom-20">Message User</h4>
+            <div class="form-group">
+               <label class="control-label" for="profileFirstName">From (must be an other  valid user)</label>
+               <div class="">
+					<autocomplete ng-model="appdata.msgfrom" data="fromusers" on-type="update_fromusers"></autocomplete>
+               </div>
+            </div>
+			<div class="form-group">
+               <div>
+			    <label class="checkbox" ><input type="checkbox" class="form-control" ng-checked="false"/> <i></i>Create This User</label>
+               </div>
+            </div>
+            <div class="form-group">
+               <label class="control-label" for="profileLastName">Message</label>
+               <div class="">
+                  <textarea placeholder="Type Message" ng-model="appdata.message" style="height:150px; width:100%; text-align:left; float:left; padding:10px;"></textarea>
+               </div>
+            </div>
+            <div class="form-group">
+               <button ng-click="user_message()" class="btn btn-success margin-top-20" ng-disabled="appdata.msgfrom.length < 2 || appdata.message.length < 2">Send</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Message User Form End -->
+</div>

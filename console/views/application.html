@@ -1,0 +1,126 @@
+<!-- Breadcrumb Start -->
+ <header id="page-header">
+	<h1>Application</h1>
+	 <ol class="breadcrumb">
+		<li><a href="#dashboard">Dashboard</a></li>
+		<li class="active">Application</li>
+	</ol>
+</header>
+<!-- Breadcrumb End -->
+<!-- Content Main Start -->
+<div id="content" class="padding-20" ng-controller="dashboardController">
+  <div class="row">
+	<!-- Create Your First App Start -->			
+                  <div class="col-md-12" ng-hide="user.apps.length">
+                     <div id="panel-2" class="panel panel-default">
+                        <div class="panel-body">
+                           <div class="col-md-12 text-center">
+                              <h3>{{strings.createfirstapp}}</h3>
+                           </div>
+                           <div class="col-md-12 text-center">
+                              <a class="btn btn-primary btn-lg opt panel_colapse" onclick="newAppFormFirst()"><i class="fa fa-plus" aria-hidden="true"></i>CREATE YOUR FIRST APP</a>
+                           </div>
+                           <div id="newAppFormFirstDIV" class="margin-top-50" style="display: none;">
+                              <div class="col-md-6 form-group nopadding-left">
+                                 <label class="size-16">Name</label>    
+                                 <input type="text" ng-model="appdata.appname" placeholder="Application Name" value="" class="form-control required" />                                    
+                              </div>
+                              <div class="col-md-12 margin-bottom-20 nopadding-left">
+                                 <button type="submit" class="btn btn-primary opt panel_colapse" ng-click="appadd(); toggleVisibility('newAppFormFirstDIV')" ng-disabled="appdata.appname.length < 2">Create</button>
+                                 <button type="reset" class="btn btn-default opt panel_colapse" onclick="newAppFormFirst()">Cancel</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>			
+			<!-- Create Your First App End -->
+			<!-- My Apps Start -->
+                  <div class="col-md-12" ng-show="user.apps.length">
+                     <div id="panel-2" class="panel panel-default">
+                        <div class="panel-heading">
+                           <span class="title elipsis size-17">
+                              <strong>My Applications</strong>
+							</span>
+						   
+                        </div>
+						<div class="panel-body fullwidth" style="display:inline-block;">
+						  <div class="col-md-12 nopadding">
+							<p class="nomargin padding-bottom-0 padding-top-0">{{strings.myapplication}}</p>
+						  </div>
+					   </div>
+												
+                        <div class="panel-body min-height-500">
+						
+                           <div class="pull-right margin-bottom-20">
+                              <a class="btn btn-primary btn-sm opt panel_colapse" onclick="toggleVisibility('newAppFormDIV')"><i class="fa fa-plus" aria-hidden="true"></i>CREATE NEW APPLICATION</a>
+                           </div>
+                           <div id="newAppFormDIV" class="padding-top-20" style="display: none;">
+                              <div class="col-md-6 form-group nopadding-left">
+                                 <label class="size-16">Name</label>    
+                                 <input type="text" ng-model="appdata.appname" placeholder="Application Name" value="" class="form-control required" /> 
+                              </div>
+                              <div class="col-md-12 margin-bottom-20 nopadding-left">
+                                 <button type="submit" class="btn btn-primary opt panel_colapse" ng-click="appadd();" onclick="toggleVisibility('newAppFormDIV')" ng-disabled="appdata.appname.length < 2">Create</button>
+                                 <button type="reset" class="btn btn-default opt panel_colapse" onclick="toggleVisibility('newAppFormDIV')">Cancel</button>
+                              </div>
+                           </div>
+                           <div class="panel-body fullwidth padding-0" style="display:inline-block;">
+							<div class="table-responsive">
+                              <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+                                 <thead>
+                                    <tr>
+                                       <th>Name</th>
+                                       <th>Token</th>
+                                       <th style="text-align:center">Regenerate Token </th>
+                                       <th style="text-align:center">Settings</th>
+                                       <th style="text-align:center">Delete</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr ng-repeat="app in user.apps" >
+                                       <td>
+                                          <a href="#appsettings/{{app.name}}/general">{{app.name}}</a>
+                                       </td>
+                                       <td>
+											{{app.token}}
+                                       </td>
+                                       <td style="text-align:center">
+                                          <button type="button" ng-click="regenerate_apptoken(app)" class="btn btn-primary btn-xs">Regenerate Token</button>
+                                       </td>
+                                       <td style="text-align:center">
+                                          <a href="#appsettings/{{app.name}}/general">
+                                          <i class="fa fa-cog size-16"></i></a>
+                                       </td>
+                                       <td style="text-align:center">
+                                          <a><i class="fa fa-trash size-16" ng-click="app_delete(app)"></i> </a>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+							 </div>
+                           </div>
+                        </div>
+                     </div>
+			</div>	
+			 <!----Delete-Apps-Start------->			 
+               <div class="modal fade bs-example-modal-sm margin-top-50" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                  <div class="modal-sm" style="margin:auto;">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                           <h4 class="modal-title" id="mySmallModalLabel">Delete App</h4>
+                        </div>
+                        <div class="modal-body">
+                           Are you sure you want to delete? 
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-primary" data-dismiss="modal">Delete</button>	
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+			   
+             <!----Delete-Apps-End------->
+            </div>
+            </div>

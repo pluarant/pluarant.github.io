@@ -1,0 +1,9 @@
+<ul class="pagination">
+  <li {% if include.selected=="prep"%}class="active"{% endif %}><a href="{{ '/documentation/tutorials/first-app/' | relative_url }}">1: Preparation</a></li>
+  <li {% if include.selected=="android"%}class="active"{% endif %}><a href="{{ '/documentation/tutorials/first-app/android/' | relative_url }}">2: Android</a></li>
+  <li {% if include.selected=="ios"%}class="active"{% endif %}><a href="{{ '/documentation/tutorials/first-app/ios/' | relative_url }}">3: iOS</a></li>
+  <li {% if include.selected=="js"%}class="active"{% endif %}><a href="{{ '/documentation/tutorials/first-app/js/' | relative_url }}">4: Javascript</a></li>
+  <li {% if include.selected=="files"%}class="active"{% endif %}><a href="{{ '/documentation/tutorials/first-app/file-transfer/' | relative_url }}">5: File Transfer</a></li>
+  <li {% if include.selected=="ui"%}class="active"{% endif %}><a href="{{ '/documentation/tutorials/first-app/ui-modules/' | relative_url }}">6: UI Modules</a></li>
+  <li {% if include.selected=="calls"%}class="active"{% endif %}><a href="{{ '/documentation/tutorials/first-app/voice-video-calls/' | relative_url }}">7: Voice and Video Calls</a></li>
+</ul>

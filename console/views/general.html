@@ -1,0 +1,35 @@
+<!-- General Content Start -->
+<div class="app-settings-main">
+   <div class="tab-pane margin-top-20">
+      <h3 class="margin-bottom-0">General</h3>
+      <p>{{strings.general}}</p>
+      <div class="row">
+         <div id="" class="col-md-6 form-group">
+            <label class="size-16">App Name</label>
+            <input type="text" ng-model="user.app.name" class="form-control required">
+         </div>
+      </div>
+      <div class="row margin-top-20">
+         <div id="" class="col-md-6 form-group">
+            <label class="size-16">Users Limit (0 for unlimited)</label>
+            <input type="text" ng-model="user.app.q_users" class="form-control required" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+         </div>
+      </div>
+	  <div class="row margin-top-20">
+         <div id="" class="col-md-6 form-group">
+            <label class="size-16">Group Limit (0 for unlimited)</label>
+            <input type="text" ng-model="user.app.q_groups" class="form-control required" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+         </div>
+      </div>
+      <div class="row margin-top-20">
+         <div id="" class="col-md-6 form-group">
+            <label class="size-16">Messages Limit (0 for unlimited)</label>
+            <input type="text" ng-model="user.app.q_msgs" class="form-control required" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+         </div>
+         <div class="col-md-9 margin-top-20">
+            <button ng-click="save_general(); save()" ng-disabled="user.app.name.length < 2" class="btn btn-info">SAVE</button>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- General Content End -->

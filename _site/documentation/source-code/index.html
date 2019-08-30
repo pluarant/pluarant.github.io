@@ -1,0 +1,476 @@
+<!-- Page generated 2019-08-30 11:31:27 +0530 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+			
+<!-- edit url temporarily disabled Mesibo -->
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/documentation/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/mesibo-favicon.png">
+	<link rel="mesibo-favicon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
+	<!-- metadata -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-08-30T11:31:27+05:30"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesibo"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="Mesibo Source Code"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="Mesibo Messenger is an open-source app with real-time messaging, voice and video call features. We have released the entire source code of Mesibo Android and iOS Apps on GitHub, where..." />
+	<meta name="twitter:image:src" content="/images/docs@2x.png" />
+	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-08-30T11:31:27+05:30"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="open, source, contributing, overview">
+	<link rel="stylesheet" href="/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="/css/bootstrap.min.css" >
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css" >
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- SEO stuff -->
+	<title>Mesibo Source Code | Mesibo Documentation</title>
+<meta property="og:title" content="Mesibo Source Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Mesibo Source Code" />
+<meta property="og:description" content="Mesibo Source Code" />
+<link rel="canonical" href="/documentation/source-code/" />
+<meta property="og:url" content="/documentation/source-code/" />
+<meta property="og:site_name" content="Mesibo Documentation" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo Source Code","description":"Mesibo Source Code","url":"https://docs.docker.com/documentation/source-code/"}</script>
+	<!-- END SEO STUFF -->
+	
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	</script>
+	<!-- Google Analytic Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-97488698-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytic Code --> 	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '559862854355634'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=559862854355634&ev=PageView
+		&noscript=1"/>
+		</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/mesibo-logo-white.png" alt="Mesibo Docs" title="Mesibo Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" style="visibility: hidden">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <!-- Yusuf
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mesibo latest (current)   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="/v1.0.0/">Mesibo v1.0.0</a></li>
+  </ul>
+</div>
+
+    </div>
+    -->
+</div>
+
+        </div>
+    </div>
+</nav>
+
+	</header>
+
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+							
+							<h1>Mesibo Source Code</h1>
+							 
+
+							 <span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    2 minutes
+  
+</span>
+
+							
+							
+							<p>Mesibo Messenger is an open-source app with real-time messaging, voice and video call features. We have released the entire source code of Mesibo Android and iOS Apps on GitHub, where it can be continuously updated. You can download entire source code, and customize it to suit your needs.</p>
+
+<h3 id="features">Features</h3>
+<ul>
+  <li>One-on-one messaging and Group chat</li>
+  <li>High quality voice and video calling</li>
+  <li>Rich messaging (text, picture, video, audio, other files)</li>
+  <li>Encryption</li>
+  <li>Location sharing</li>
+  <li>Message status and typing indicators</li>
+  <li>Online status (presence) and real-time profile update</li>
+  <li>Push notifications</li>
+</ul>
+
+<p>If you prefer to try Mesibo apps without building it, you can quickly download it from the Apple or Google app store.</p>
+
+<p><a href="https://itunes.apple.com/us/app/mesibo-realtime-messaging-voice-video/id1222921751"><img src="/images/iphone-app.png" align="left" hspace="20" /></a>
+<a href="https://play.google.com/store/apps/details?id=com.mesibo.mesiboapplication"><img src="/images/android-app.png" align="left" hspace="20" /></a>
+<br /><br /></p>
+<p>
+&nbsp;
+</p>
+
+<h3 id="mesibo-android-app-source-code">Mesibo Android App Source Code</h3>
+<p><a href="https://github.com/mesibo/messenger-app-android/">https://github.com/mesibo/messenger-app-android/</a>.</p>
+
+<h3 id="mesibo-ios-app-source-code">Mesibo iOS App Source Code</h3>
+
+<p><a href="https://github.com/mesibo/messenger-app-ios/">https://github.com/mesibo/messenger-app-ios/</a>.</p>
+
+<p>You may</p>
+<ul>
+  <li>Re-use source code in parts, OR</li>
+  <li>Rebrand it entirely and publish under your brand</li>
+</ul>
+
+<p>Whatever you do, our team is here for all the assistance you need.</p>
+
+<h3 id="build-instructions--running-the-app">Build Instructions &amp; Running the App</h3>
+<p>Read this <a href="/documentation/tutorials/open-source-whatsapp-clone/">Tutorial</a> to known more about compiling the code, customization and other internals.</p>
+
+<h3 id="resources-and-guidance">Resources and guidance</h3>
+<p>We are here to help. Visit our <a href="/documentation/support/">Support Page</a> if 
+you need any assistance with source code OR in general, any questions related to mesibo.</p>
+
+<p>If you are interested in using the source code, but don’t feel ready to dive in on 
+coding, our <a href="/documentation/support/custom-solutions/">Custom Solutions</a> team can help get you up and running.</p>
+
+<h3 id="contributing">Contributing</h3>
+<p>Contributing to the Mesibo source code can be a rewarding experience. When you
+offer feedback, questions, edits, or new content, you help us, the projects you
+work on, and the larger Mesibo community.</p>
+
+<p>We will definitely provide due credits your contribution in source code.</p>
+
+<p>We also welcome your participation to help make the documentation better!</p>
+
+<p>There are many ways to contribute:</p>
+
+<ul>
+  <li>
+    <p>File a code or documentation issue on GitHub at
+<a href="https://github.com/mesibo/samples/issues">https://github.com/mesibo/samples/issues</a>.</p>
+  </li>
+  <li>
+    <p>Fork the repository, make changes or add new content on your local
+branch, and submit a pull request (PR) to the master branch for the samples.</p>
+  </li>
+</ul>
+
+
+							<!-- tags -->
+							
+							
+							
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=open">open</a>, <a href="/documentation/glossary/?term=source">source</a>, <a href="/documentation/glossary/?term=contributing">contributing</a>, <a href="/documentation/glossary/?term=overview">overview</a></span>
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/documentation/source-code/";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+							<!-- removed for mesibo -->
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/documentation/source-code/#features" class="nomunge">Features</a>
+    <ul>
+      <li><a href="/documentation/source-code/#mesibo-android-app-source-code" class="nomunge">Mesibo Android App Source Code</a></li>
+      <li><a href="/documentation/source-code/#mesibo-ios-app-source-code" class="nomunge">Mesibo iOS App Source Code</a></li>
+      <li><a href="/documentation/source-code/#build-instructions--running-the-app" class="nomunge">Build Instructions &amp; Running the App</a></li>
+      <li><a href="/documentation/source-code/#resources-and-guidance" class="nomunge">Resources and guidance</a></li>
+      <li><a href="/documentation/source-code/#contributing" class="nomunge">Contributing</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/">Home</a></li>
+                        <li><a href="https://mesibo.com/pricing/">Pricing</a></li>
+                        <li><a href="https://mesibo.com/use-cases/">Use Cases</a></li>
+                        <li><a href="https://mesibo.com/custom-solutions/">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/documentation/faq/">FAQ</a></li>
+                        <li><a href="https://mesibo.com/help/">Support</a></li>
+                        <li class="break"><a href="https://stackoverflow.com/questions/ask">Community</a></li>
+                        <li><a href="https://mesibo.com/documentation/">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+                        <li><a href="https://mesibo.com/career/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="https://mesibo.com/terms-of-use/#terms">Terms-of-Service</a></li>
+                        <li><a href="https://mesibo.com/terms-of-use/#privacy">Privacy Policy</a></li>
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright &copy; 2019 Mesibo. All rights reserved. </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a target="_blank" href="https://twitter.com/mesiboapi">Twitter</a></li>
+                    <li class="fa fa-youtube"><a target="_blank" href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ">Youtube</a></li>
+                    <li class="fa fa-google-plus"><a target="_blank" href="https://plus.google.com/b/107106343719610600541/107106343719610600541">Google</a></li>
+                    <li class="fa fa-github"><a target="_blank" href="https://github.com/mesibo/samples">Github</a></li>
+                    <li class="fa fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/mesibo">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a target="_blank" href="https://www.facebook.com/mesiboapi">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/documentation/source-code/';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

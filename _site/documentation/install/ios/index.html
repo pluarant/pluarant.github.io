@@ -1,0 +1,556 @@
+<!-- Page generated 2019-08-30 11:31:27 +0530 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+			
+<!-- edit url temporarily disabled Mesibo -->
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/documentation/install/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/mesibo-favicon.png">
+	<link rel="mesibo-favicon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
+	<!-- metadata -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-08-30T11:31:27+05:30"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesibo"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="Getting Started with Mesibo on iOS"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="The Mesibo SDKs for iOS are available as CocoaPods pods OR individual frameworks that can be installed manually. CocoaPods is an open source dependency manager for Swift and Objective-C Cocoa..." />
+	<meta name="twitter:image:src" content="/images/docs@2x.png" />
+	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-08-30T11:31:27+05:30"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="mesibo, installation, ios">
+	<link rel="stylesheet" href="/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="/css/bootstrap.min.css" >
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css" >
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- SEO stuff -->
+	<title>Getting Started with Mesibo on iOS | Mesibo Documentation</title>
+<meta property="og:title" content="Getting Started with Mesibo on iOS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Getting Started with Mesibo on iOS" />
+<meta property="og:description" content="Getting Started with Mesibo on iOS" />
+<link rel="canonical" href="/documentation/install/ios/" />
+<meta property="og:url" content="/documentation/install/ios/" />
+<meta property="og:site_name" content="Mesibo Documentation" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Getting Started with Mesibo on iOS","description":"Getting Started with Mesibo on iOS","url":"https://docs.docker.com/documentation/install/ios/"}</script>
+	<!-- END SEO STUFF -->
+	
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	</script>
+	<!-- Google Analytic Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-97488698-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytic Code --> 	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '559862854355634'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=559862854355634&ev=PageView
+		&noscript=1"/>
+		</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/mesibo-logo-white.png" alt="Mesibo Docs" title="Mesibo Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" style="visibility: hidden">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <!-- Yusuf
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mesibo latest (current)   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="/v1.0.0/">Mesibo v1.0.0</a></li>
+  </ul>
+</div>
+
+    </div>
+    -->
+</div>
+
+        </div>
+    </div>
+</nav>
+
+	</header>
+
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+							
+							<h1>Getting Started with Mesibo on iOS</h1>
+							 
+
+							 <span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    4 minutes
+  
+</span>
+
+							
+							
+							<p>The Mesibo SDKs for iOS are available as CocoaPods pods OR individual frameworks that can be installed manually.</p>
+
+<p><a href="http://cocoapods.org">CocoaPods</a> is an open source dependency manager for Swift and Objective-C Cocoa projects, which automates the process of using 3rd-party libraries like Mesibo in your projects. For details, see the <a href="https://guides.cocoapods.org/using/getting-started.html">CocoaPods Getting Started guide</a>.</p>
+
+<p>If you prefer to install manually, you can click <a href="#install-manually">here</a>.</p>
+
+<h2 id="install-using-cocoapods">Install Using CocoaPods</h2>
+<p>If you already have the CocoaPods tool, skip to Step 2.</p>
+
+<h3 id="step-1-install-cocoapods">Step 1: Install CocoaPods</h3>
+
+<p><a href="http://cocoapods.org">CocoaPods</a> is an open source dependency manager for Swift and Objective-C Cocoa projects, which automates the process of using 3rd-party libraries like Mesibo in your projects. For details, see the <a href="https://guides.cocoapods.org/using/getting-started.html">CocoaPods Getting Started guide</a>.</p>
+
+<p>You can install CocoaPods by running the following commands in Terminal.app:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo gem install cocoapods
+$ pod setup
+</code></pre></div></div>
+
+<blockquote>
+  <p>Depending on your Ruby installation, you may not have to run as <code class="highlighter-rouge">sudo</code> to install the cocoapods gem.</p>
+</blockquote>
+
+<h3 id="step-2-create-a-podfile">Step 2: Create a Podfile</h3>
+
+<p>Project dependencies to be managed by CocoaPods are specified in a file name <code class="highlighter-rouge">Podfile</code>. Create this file in the same directory as your Xcode project (<code class="highlighter-rouge">.xcodeproj</code>) file and Copy and paste the following lines into it:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>target "YourTargetName" do
+    source 'https://github.com/CocoaPods/Specs.git'
+    pod 'mesibo'
+end
+</code></pre></div></div>
+
+<p>This will install mesibo core API framework into your project.</p>
+
+<h3 id="step-3-install-mesibo-core-api-framework">Step 3: Install Mesibo Core API Framework</h3>
+
+<p>Now you can install mesibo the dependencies in your project:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ pod install
+</code></pre></div></div>
+
+<p>From now on, be sure to always open the generated Xcode workspace (<code class="highlighter-rouge">.xcworkspace</code>) instead of the project file when building your project:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ open &lt;YourProjectName&gt;.xcworkspace
+</code></pre></div></div>
+
+<h3 id="step-4-install-mesibo-ui-and-calls-framework">Step 4: Install Mesibo UI and Calls Framework</h3>
+
+<p>Similarly, you can also install mesibo-ui and mesibo-calls framework as following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>target "YourTargetName" do
+    source 'https://github.com/CocoaPods/Specs.git'
+    pod 'mesibo-ui'
+    pod 'mesibo-calls'
+end
+</code></pre></div></div>
+
+<h3 id="step-4-thats-all">Step 4: That’s All!</h3>
+
+<p>At this point, everything’s in place for you to start using Mesibo. Just <code class="highlighter-rouge">#import</code> the headers for the classes you need and start coding!</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#import &lt;Mesibo/Mesibo.h&gt;
+#import &lt;MesiboUI/MesiboUI.h&gt;
+#import &lt;MesiboCall/MesiboCall.h&gt;
+</code></pre></div></div>
+
+<h2 id="install-manually">Install Manually</h2>
+<p>You can add mesibo frameworks manually to your project.</p>
+
+<p>You can download all the Mesibo frameworks for iOS from <a href="https://github.com/mesibo/mesiboframeworks">GitHub</a> OR by by running the following commands in Terminal.app:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git lfs install
+$ git clone https://github.com/mesibo/mesiboframeworks.git
+</code></pre></div></div>
+
+<p>If you are using, Mesibo Call framework, you also need to download Mesibo WebRTC framework by downloading from <a href="https://github.com/mesibo/mesibowebrtcframework">GitHub</a> OR by by running the following commands in Terminal.app:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git lfs install
+$ git clone https://github.com/mesibo/mesibowebrtcframework.git
+</code></pre></div></div>
+
+<h3 id="mesibo-core-api-framework">Mesibo Core API Framework</h3>
+<ol>
+  <li>
+    <p>Drag <code class="highlighter-rouge">mesibo.framework</code> to your xcode project. Xcode will prompt you for various options - make sure to select <strong>Copy items if needed</strong></p>
+  </li>
+  <li>
+    <p>Import header in your project</p>
+  </li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#import &lt;Mesibo/Mesibo.h&gt;
+</code></pre></div></div>
+
+<h3 id="mesibo-ui-framework">Mesibo UI Framework</h3>
+<ol>
+  <li>
+    <p>Drag <code class="highlighter-rouge">messaging.framework</code> to your xcode project. Xcode will prompt you for various options - make sure to select <strong>Copy items if needed</strong></p>
+  </li>
+  <li>
+    <p>Right-click <code class="highlighter-rouge">messaging.framework</code> in your project, and select “Show In Finder”.</p>
+  </li>
+  <li>
+    <p>Drag the <code class="highlighter-rouge">messagingui.bundle</code> from the Resources folder into your project. When prompted, ensure that <em>Copy items into destination</em> group’s folder is <strong>NOT</strong> selected.</p>
+  </li>
+  <li>
+    <p>Import header in your project</p>
+  </li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#import &lt;MesiboUI/MesiboUI.h&gt;
+</code></pre></div></div>
+
+<blockquote>
+  <p>Mesibo UI SDK uses google map and place API to send location. Hence, in order to use this feature, you must be having Google map and place framework and also your Google API key in the info.plist - refer <a href="https://developers.google.com/places/ios-api/start#step-2-install-the-api">how to get your google map api key and install it</a>.</p>
+</blockquote>
+
+<h3 id="mesibo-voice-and-video-call-framework">Mesibo Voice and Video Call Framework</h3>
+<ol>
+  <li>
+    <p>Drag <code class="highlighter-rouge">mesibocall.framework</code> to your xcode project. Xcode will prompt you for various options - make sure to select <strong>Copy items if needed</strong></p>
+  </li>
+  <li>
+    <p>Right-click <code class="highlighter-rouge">mesibocall.framework</code> in your project, and select “Show In Finder”.</p>
+  </li>
+  <li>
+    <p>Drag the <code class="highlighter-rouge">MesiboCallBundle.bundle</code> from the Resources folder into your project. When prompted, ensure that <em>Copy items into destination</em> group’s folder is <strong>NOT</strong> selected.</p>
+  </li>
+  <li>
+    <p>Import header in your project</p>
+  </li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#import &lt;MesiboCall/MesiboCall.h&gt;
+</code></pre></div></div>
+
+<p>You can now begin developing features with mesibo. Be sure you update these frameworks each time mesibo is updated.</p>
+
+
+							<!-- tags -->
+							
+							
+							
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=installation">installation</a>, <a href="/documentation/glossary/?term=ios">ios</a></span>
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/documentation/install/ios/";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+							<!-- removed for mesibo -->
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/documentation/install/ios/#install-using-cocoapods" class="nomunge">Install Using CocoaPods</a>
+    <ul>
+      <li><a href="/documentation/install/ios/#step-1-install-cocoapods" class="nomunge">Step 1: Install CocoaPods</a></li>
+      <li><a href="/documentation/install/ios/#step-2-create-a-podfile" class="nomunge">Step 2: Create a Podfile</a></li>
+      <li><a href="/documentation/install/ios/#step-3-install-mesibo-core-api-framework" class="nomunge">Step 3: Install Mesibo Core API Framework</a></li>
+      <li><a href="/documentation/install/ios/#step-4-install-mesibo-ui-and-calls-framework" class="nomunge">Step 4: Install Mesibo UI and Calls Framework</a></li>
+      <li><a href="/documentation/install/ios/#step-4-thats-all" class="nomunge">Step 4: That’s All!</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/install/ios/#install-manually" class="nomunge">Install Manually</a>
+    <ul>
+      <li><a href="/documentation/install/ios/#mesibo-core-api-framework" class="nomunge">Mesibo Core API Framework</a></li>
+      <li><a href="/documentation/install/ios/#mesibo-ui-framework" class="nomunge">Mesibo UI Framework</a></li>
+      <li><a href="/documentation/install/ios/#mesibo-voice-and-video-call-framework" class="nomunge">Mesibo Voice and Video Call Framework</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/">Home</a></li>
+                        <li><a href="https://mesibo.com/pricing/">Pricing</a></li>
+                        <li><a href="https://mesibo.com/use-cases/">Use Cases</a></li>
+                        <li><a href="https://mesibo.com/custom-solutions/">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/documentation/faq/">FAQ</a></li>
+                        <li><a href="https://mesibo.com/help/">Support</a></li>
+                        <li class="break"><a href="https://stackoverflow.com/questions/ask">Community</a></li>
+                        <li><a href="https://mesibo.com/documentation/">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+                        <li><a href="https://mesibo.com/career/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="https://mesibo.com/terms-of-use/#terms">Terms-of-Service</a></li>
+                        <li><a href="https://mesibo.com/terms-of-use/#privacy">Privacy Policy</a></li>
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright &copy; 2019 Mesibo. All rights reserved. </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a target="_blank" href="https://twitter.com/mesiboapi">Twitter</a></li>
+                    <li class="fa fa-youtube"><a target="_blank" href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ">Youtube</a></li>
+                    <li class="fa fa-google-plus"><a target="_blank" href="https://plus.google.com/b/107106343719610600541/107106343719610600541">Google</a></li>
+                    <li class="fa fa-github"><a target="_blank" href="https://github.com/mesibo/samples">Github</a></li>
+                    <li class="fa fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/mesibo">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a target="_blank" href="https://www.facebook.com/mesiboapi">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/documentation/install/ios/';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>
