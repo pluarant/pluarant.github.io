@@ -101,8 +101,6 @@ banner: true
 <p>Mesibo offers unified pricing which is simple to understand and affordable. If you chose to go with our on-premise model, you only pay for active users per month, that's it! There are absolutely NO OTHER CHARGES - no monthly commitment, no bandwidth or storage charges or anything hidden. Our cloud plan charges are also the same, however you additionally pay for badwidth and storage you use on our cloud.  Both the plans come with generous free limits for you to get started.  </p>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
-<h3>All Features Included</h3>
-<div class="separator"></div>
 <ul class="list-icons">
 <li>1 on 1 Messaging</li>
 <li>Group Chat</li>
@@ -120,8 +118,6 @@ banner: true
 </div>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
-<h3>Free Tier Limits</h3>
-<div class="separator"></div>
 <ul class="list">
 <li>File & Custom-Data Transfers</li>
 <li>High-Grade HA Servers</li>
@@ -139,8 +135,6 @@ banner: true
 </div>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
-<h3>Pricing</h3>
-<div class="separator"></div>
 <ul class="list-icons">
 <li>Send Image, Audio, Video</li>
 <li>Peer to Peer Voice & Video Calls</li>
