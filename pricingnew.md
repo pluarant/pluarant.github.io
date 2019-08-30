@@ -41,7 +41,7 @@ banner: true
 <h3><strong>ON PREMISE PRICING</strong></h3>
 <div class="separator"></div>
 <ul class="list-icons">
-<li><i class="fa fa-user"></li> US$ 0.01 per MAU per Month</li>
+<li><i class="fa fa-user"></i> US$ 0.01 per MAU per Month</li>
 <li><strong>Unlimited</strong> Concurrent Users</li>
 <li><i class="fa fa-server"></i> <strong>Unlimited</strong>  Real-time Bandwidth </li>
 <li><i class="fa fa-database"></i> <strong>Unlimited</strong> d Storage </li>
