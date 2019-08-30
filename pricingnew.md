@@ -82,7 +82,7 @@ banner: true
 <div class="col-lg-8">
 <h2 class="text-center mt-4">Features</h2>
 <div class="separator"></div>
-<p class="large text-center">All features are included in Free and Pay as you go plan</p>
+<p class="large text-center">All features are included in Free and Pay As You Go plan</p>
 </div>
 </div>
 <div class="row">
