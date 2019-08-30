@@ -126,14 +126,12 @@ banner: true
 <ul class="list-icons">
 <li><i class="fa fa-window-restore"></i> Cross Platform Sync</li>
 <li><i class="fa fa-laptop"></i> Multi Device Sync</li>
-<li><i class="fa fa-fa-server"></i> Bot Interface</li>
-<li><i class="fa fa-fa-server"></i> Broadcast Message to App Users</li>
-<li><i class="fa fa-fa-server"></i> Broadcast Audio to App Users</li>
-<li><i class="fa fa-fa-server"></i> Broadcast Video to App Users</li>
+<li><i class="fa fa-reddit-alien"></i> Bot Interface</li>
+<li><i class="fa fa-broadcast-tower"></i> Broadcast Message / Audio / Video</li>
 <li><i class="fa fa-fa-server"></i> Block User in Group/Chat Room</li>
-<li><i class="fa fa-fa-server"></i> User-to-User Blocking</li>
+<li><i class="fa fa-user-times"></i> User-to-User Blocking</li>
 <li><i class="fa fa-user-circle"></i> User Management</li>
-<li><i class="fa fa-fa-server"></i> Notification Setting</li>
+<li><i class="fa fa-wrench"></i> Notification Setting</li>
 </ul>
 </div>
 </div>
