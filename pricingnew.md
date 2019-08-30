@@ -24,53 +24,45 @@ banner: true
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
 <h3><strong>FREE</strong></h3>
-<a href="#features-list">All Features Included</a>
 <div class="separator"></div>
 <ul class="list-icons">
 <li>1000 MAU</li>
 <li>Concurrent Users - 10% of MAU</li>
 <li>Real-time Bandwidth - 5 GB</li>
 <li>Storage - 1 GB </li>
-<li>TURN - 2 GB </li>
 <li>Unlimited Voice/Video Calls</li>
 <li>Unlimited File size</li>
 <li>Unlimited message retention time</li>
-<li>Community Support</li>
 </ul>
 </div>
 </div>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
-<h3><strong>PAY AS YOU GO</strong></h3>
-<h4>CLOUD PRICING</h4>
-<a href="#features-list">All Features Included</a>
+<h3><strong>CLOUD PRICING</strong></h3>
 <div class="separator"></div>
 <ul class="list-icons">
 <li>US$ 0.01 per MAU per Month</li>
 <li>Concurrent Users - 10% of MAU</li>
 <li>Real-time Bandwidth - US$ 0.9 GB per month</li>
 <li>Storage - US$ 2.5 GB per month</li>
-<li>TURN - US $ 0.3 GB per month</li>
 <li>Unlimited Voice/Video Calls</li>
 <li>Unlimited File size</li>
 <li>Unlimited message retention time</li>
-<li>Email Support</li>
 </ul>
 </div>
 </div>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
-<h3><strong>ON PREMISE</strong></h3>
-<h4>Pay as you go pricing</h4>
-<a href="#features-list">All Features Included</a>
+<h3><strong>ON PREMISE PRICING</strong></h3>
 <div class="separator"></div>
 <ul class="list-icons">
 <li>US$ 0.01 per MAU per Month</li>
 <li>Unlimited Concurrent Users</li>
+<li>Unlimited Real-time Bandwidth </li>
+<li>Unlimited Storage </li>
 <li>Unlimited Voice/Video Calls</li>
 <li>Unlimited File size</li>
 <li>Unlimited message retention time</li>
-<li>Email Support</li>
 </ul>
 </div>
 </div>
@@ -366,4 +358,5 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 </div>
 </section>
 <!-- section end -->
+
 
