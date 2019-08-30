@@ -23,7 +23,7 @@ banner: true
 <p>Mesibo offers unified pricing which is simple to understand and affordable. If you chose to go with our on-premise model, you only pay for active users per month, that's it! There are absolutely NO OTHER CHARGES - no monthly commitment, no bandwidth or storage charges or anything hidden. Our cloud plan charges are also the same, however you additionally pay for badwidth and storage you use on our cloud.  Both the plans come with generous free limits for you to get started - <strong>you only pay if you consume beyond your free tier limits</strong>.</p>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
-<h3><strong>FREE</strong></h3>
+<h3 class="text-center"><strong>FREE</strong></h3>
 <h4>No any hidden charges</h4>
 <a href="#features-list">All Features Included</a>
 <div class="separator"></div>
