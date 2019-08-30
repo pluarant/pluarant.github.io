@@ -23,40 +23,57 @@ banner: true
 <p>Mesibo offers unified pricing which is simple to understand and affordable. If you chose to go with our on-premise model, you only pay for active users per month, that's it! There are absolutely NO OTHER CHARGES - no monthly commitment, no bandwidth or storage charges or anything hidden. Our cloud plan charges are also the same, however you additionally pay for badwidth and storage you use on our cloud.  Both the plans come with generous free limits for you to get started - <strong>you only pay if you consume beyond your free tier limits</strong>.</p>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
-<h3>All Features Included</h3>
+<h3>Free</h3>
+<a href="#features-list">All Features Included</a>
 <div class="separator"></div>
 <ul class="list-icons">
-<li><i class="fa fa-envelope"></i>One on One Messaging</li>
-<li><i class="fa fa-group"></i>Group Chat</li>
-<li><i class="fa fa-video-camera"></i>Voice and Video Calling</li>
-<li><i class="fa fa-lock"></i>End to End Encryption</li>
-<li>and all other Features</li>
+<li><i class="fa fa-user"></i>1000 MAU</li>
+<li><i class="fa fa-group"></i>Concurrent Users - 10% of MAU</li>
+<li><i class="fa fa-boxes"></i>5 GB Real-time Bandwidth</li>
+<li><i class="fa fa-database"></i>1 GB Storage</li>
+<li><i class="fa fa-redo-alt"></i>2 GB TURN</li>
+<li><i class="fa fa-video-camera"></i>Unlimited Voice/Video Calls</li>
+<li><i class="fa fa-lock"></i>Unlimited File size</li>
+<li><i class="fa fa-envelope"></i>Unlimited message retention time</li>
+<li><i class="far fa-city"></i>Community</li>
 </ul>
 </div>
 </div>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
-<h3>On-Premise Pricing</h3>
+<h3>CLOUD</h3>
+<h4>Pay as you go pricing</h4>
+<a href="#features-list">All Features Included</a>
 <div class="separator"></div>
 <ul class="list-icons">
-<li><i class="fa fa-users"></i>$0.01 per MAU (1000 Free)</li>
-<li><strong>Unlimited</strong> Concurrent Users</li>
-<li><strong>Unlimited</strong> Bandwidth</li>
-<li><strong>Unlimited</strong> Real-time DB Storage</li>
-<li><strong>Unlimited</strong> Voice/Video Calls</li>
+<li><i class="fa fa-user"></i>US$ 0.01 per MAU per Month</li>
+<li><i class="fa fa-group"></i>Concurrent Users - 10% of MAU</li>
+<li><i class="fa fa-boxes"></i>US$ 0.9 GB per month</li>
+<li><i class="fa fa-database"></i>US$ 2.5 GB per month</li>
+<li><i class="fa fa-redo-alt"></i>US $ 0.3 GB per month</li>
+<li><i class="fa fa-video-camera"></i>Unlimited Voice/Video Calls</li>
+<li><i class="fa fa-lock"></i>Unlimited File size</li>
+<li><i class="fa fa-envelope"></i>Unlimited message retention time</li>
+<li><i class="fas fa-mail-bulk"></i>Email Support</li>
 </ul>
 </div>
 </div>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
-<h3>Cloud Pricing</h3>
+<h3>ON PREMISE</h3>
+<h4>Pay as you go pricing</h4>
+<a href="#features-list">All Features Included</a>
 <div class="separator"></div>
 <ul class="list-icons">
-<li><i class="fa fa-users"></i>$0.01 per MAU (1000 Free)</li>
-<li><i class="fa fa-users"></i>$2.5/GB Bandwidth (5GB Free)</li>
-<li><i class="fa fa-users"></i>$0.9/GB Storage (1GB Free)</li>
-<li><strong>Unlimited</strong> Concurrent Users</li>
-<li><strong>Unlimited</strong> Voice/Video Calls</li>
+<li><i class="fa fa-user"></i>US$ 0.01 per MAU per Month</li>
+<li><i class="fa fa-group"></i>Unlimited Concurrent Users</li>
+<li><i class="fa fa-boxes"></i> - NA- </li>
+<li><i class="fa fa-database"></i> - NA-  </li>
+<li><i class="fa fa-redo-alt"></i> - NA-  </li>
+<li><i class="fa fa-video-camera"></i>Unlimited Voice/Video Calls</li>
+<li><i class="fa fa-lock"></i>Unlimited File size</li>
+<li><i class="fa fa-envelope"></i>Unlimited message retention time</li>
+<li><i class="fas fa-mail-bulk"></i></i>Email Support</li>
 </ul>
 </div>
 </div>
@@ -337,5 +354,4 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 </div>
 </section>
 <!-- section end -->
-
 
