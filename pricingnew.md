@@ -3,7 +3,7 @@ layout: mesibo
 description: Free to start and Pay as you grow. Pricing you just can't beat. flexible pricing for all.
 keywords: mesibo pricing
 title: Mesibo Pricing
-subtitle: Pay as you go - No Commitment or Upfront Charges!
+subtitle: On-Premise and Cloud Deployment Pricing
 category: pricing
 banner: true
 ---
@@ -14,13 +14,15 @@ banner: true
 <div class="container">
 <div class="row justify-content-md-center">
 <div class="col-lg-8">
-<h2 class="text-center mt-4">Simple and Affordable for all</h2>
+<h2 class="text-center mt-4">Pay as you go Pricing</h2>
 <div class="separator"></div>
-<!-- <p class="large text-center">mesibo is 100% FREE for all size enterprises!</p> -->
+<!-- <p class="large text-center">Simple and Transparent</p> -->
 </div>
 </div>
 <div class="row">
-<p>Mesibo offers unified pricing which is simple to understand and affordable. If you chose to go with our on-premise model, you only pay for active users per month, that's it! There are absolutely NO OTHER CHARGES - no monthly commitment, no bandwidth or storage charges or anything hidden. Our cloud plan charges are also the same, however you additionally pay for badwidth and storage you use on our cloud.  Both the plans come with generous free limits for you to get started - <strong>you only pay if you consume beyond your free tier limits</strong>.</p>
+<p>
+Mesibo offers you a <strong>pay as you go pricing</strong> for both its On-Premise and Cloud offerings. That means you only pay for the services you consume, and once you stop using them, there are no charges or termination fees. Mesibo pricing is easy to understand and completely transparent. If you choose to go with our <strong>On-premise offerings</strong>, you only pay for the number of active users per month. There are absolutely <strong>NO OTHER CHARGES</strong> - no monthly commitment, no bandwidth charges, no storage charges, or any other hidden charges. Our <strong>Cloud offering</strong> charges are also the same. However, you additionally pay for the bandwidth and the storage you use on our cloud. Both the plans come with generous free limits for you to get started - <strong>you only pay if you consume beyond your free tier limits</strong>.
+</p>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
 <h3><strong>FREE</strong></h3>
@@ -28,7 +30,7 @@ banner: true
 <ul class="list-icons">
 <li><i class="fa fa-group"></i> 1000 MAU</li>
 <li><i class="fa fa-server"></i> Real-time Bandwidth - 5 GB</li>
-<li><i class="fa fa-database"></i> Storage - 1 GB </li>
+<li><i class="fa fa-database"></i> Real-time Storage - 1 GB </li>
 <li>Concurrent Users - 10% of MAU</li>
 <li><strong>Unlimited</strong> Voice/Video Calls</li>
 <li><strong>Unlimited</strong> File size</li>
@@ -38,12 +40,12 @@ banner: true
 </div>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
-<h3><strong>ON PREMISE PRICING</strong></h3>
+<h3><strong>ON-PREMISE PRICING</strong></h3>
 <div class="separator"></div>
 <ul class="list-icons">
-<li><i class="fa fa-group"></i> US$ 0.01 per MAU per Month</li>
-<li><i class="fa fa-server"></i> <strong>Unlimited</strong>  Real-time Bandwidth </li>
-<li><i class="fa fa-database"></i> <strong>Unlimited</strong> d Storage </li>
+<li><i class="fa fa-group"></i> US$ 0.01 per MAU per month</li>
+<li><strong>Unlimited</strong> Real-time Bandwidth </li>
+<li><strong>Unlimited</strong> Real-time Storage </li>
 <li><strong>Unlimited</strong> Concurrent Users</li>
 <li><strong>Unlimited</strong> Voice/Video Calls</li>
 <li><strong>Unlimited</strong> File size</li>
@@ -56,9 +58,9 @@ banner: true
 <h3><strong>CLOUD PRICING</strong></h3>
 <div class="separator"></div>
 <ul class="list-icons">
-<li><i class="fa fa-group"></i> US$ 0.01 per MAU per Month</li>
+<li><i class="fa fa-group"></i> US$ 0.01 per MAU per month</li>
 <li><i class="fa fa-server"></i> Real-time Bandwidth - US$ 0.9 GB per month</li>
-<li><i class="fa fa-database"></i> Storage - US$ 2.5 GB per month</li>
+<li><i class="fa fa-database"></i> Real-time Storage - US$ 2.5 GB per month</li>
 <li>Concurrent Users - 10% of MAU</li>
 <li><strong>Unlimited</strong> Voice/Video Calls</li>
 <li><strong>Unlimited</strong> File size</li>
@@ -67,7 +69,7 @@ banner: true
 </div>
 </div>
 
-<p>Unlike other services, mesibo free plan does not impose any ridiculously low limits. In fact, many applications can operate in a production environment within mesibo free tier limits. Additionally, as your apps grow beyond free limits, mesibo offers flexible pay as you go plan as low as $0.9 for 1GB bandwidth (about 20M messages) - real-time communication was never more affordable than this.</p>
+<!-- <p>Unlike other services, mesibo free plan does not impose any ridiculously low limits. In fact, many applications can operate in a production environment within mesibo free tier limits. Additionally, as your apps grow beyond free limits, mesibo offers flexible pay as you go plan as low as $0.9 for 1GB bandwidth (about 20M messages) - real-time communication was never more affordable than this.</p> -->
 </div>
 </div>
 </section>
@@ -82,19 +84,19 @@ banner: true
 <div class="col-lg-8">
 <h2 class="text-center mt-4">Features</h2>
 <div class="separator"></div>
-<p class="large text-center">All features are included in Free and Pay As You Go plan</p>
 </div>
 </div>
 <div class="row">
+<p>Both Free and Pay-As-You-Go plan includes all the features. However, there are some features which are exclusive to On-Premise offerings since they can not be deployed in the Cloud, for example, dynamically loadable modules, scripting, etc. If you require custom features, visit <a href="/documentation/support/custom-solutions/" title="Custom Solutions for Chat API">custom solutions</a>.</p>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
 <ul class="list-icons">
 <li><i class="fa fa-comments"></i> 1 on 1 Messaging</li>
 <li><i class="fa fa-group"></i> Group Chat</li>
-<li><i class="fa fa-user-circle-o"></i> Chat Room</li>
 <li><i class="fa fa-video-camera"></i> Voice & Video Calls</li>
+<li><i class="fa fa-key"></i> End-to-End Encryption</li>
+<li><i class="fa fa-user-circle-o"></i> Chat Room</li>
 <li><i class="fa fa-keyboard-o"></i> Typing Indicator</li>
-<li><i class="fa fa-mail-forward"></i> Message Forwarding</li>
 <li><i class="fa fa-check"></i> Read Receipts & Delivery Status</li>
 <li><i class="fa fa-vcard-o"></i> Online Status</li>
 <li><i class="fa fa-paperclip"></i> Send Doc, Image, Audio, Video</li>
@@ -105,12 +107,12 @@ banner: true
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
 <ul class="list-icons">
+<li><i class="fa fa-mail-forward"></i> Message Forwarding</li>
 <li><i class="fa fa-search"></i> Search Message</li>
 <li><i class="fa fa-share-square-o"></i> File & Custom-Data Transfers</li>
 <li><i class="fa fa-toggle-down"></i> Push Notification</li>
 <li><i class="fa fa-bell"></i> Real-time Notification</li>
 <li><i class="fa fa-black-tie"></i> Profile Management</li>
-<li><i class="fa fa-th"></i> Auto-Thumbnail Generation</li>
 <li><i class="fa fa-bar-chart"></i> Basic Statistic</li>
 <li><i class="fa fa-wechat"></i> Associative/Pair messages</li>
 <li><i class="fa fa-group"></i> Hunt Group</li>
@@ -135,12 +137,10 @@ banner: true
 </div>
 </div>
 
-<p class="large text-center">For custom features, kindly visit <a href="/documentation/support/custom-solutions/" title="Custom Solutions for Chat API">custom solutions</a>.</p>
 </div>
 </div>
 </section>
 <!-- section end -->
-
 
 <!-- section -->
 <!-- ================ -->
@@ -153,12 +153,12 @@ banner: true
 <fieldset>
 <div class="form-group has-feedback">
 <label for="c_mau">Monthly Active Users</label>
-<input type="text" class="form-control" id="c_mau" value="50000">
+<input type="text" class="form-control" id="c_mau" value="10000">
 <i class="fa fa-users form-control-feedback"></i>
 </div>
 <div class="form-group has-feedback">
 <label for="c_msg">Messages per Month</label>
-<input type="text" class="form-control" id="c_msg" value="100000">
+<input type="text" class="form-control" id="c_msg" value="120000000">
 <i class="fa fa-envelope form-control-feedback"></i>
 </div>
 <div class="form-group has-feedback">
@@ -166,10 +166,15 @@ banner: true
 <input type="text" id="c_msgsize" class="form-control" value="50">
 <i class="fa fa-balance-scale form-control-feedback"></i>
 </div>
-<div class="form-group">
-<button type="button" class="btn btn-default" onclick="calculate_rate(); return false; /*ga('send', 'event', 'calculate', 'click', 'pricing'); */">Calculate</button> <span class="pull-right size-20 mt-20"><strong>Amount: </strong>$ <span id="c_val">-</span></span>
+<div class="form-group has-feedback">
+<input type="radio" name="c_onp" value="1" onclick="calculate_rate(); return true;" checked> On-Premise Deployment<br>
+<input type="radio" name="c_onp" value="0" onclick="calculate_rate(); return true;"> Cloud Deployment<br>
+<i class="fa fa-server form-control-feedback"></i>
 </div>
-<p>Note: Calculation does not reflect minimum commitment and overheads.</p>
+<div class="form-group">
+<button type="button" class="btn btn-default" onclick="calculate_rate(); return false; /*ga('send', 'event', 'calculate', 'click', 'pricing'); */">Calculate</button> <span class="pull-right size-20 mt-20"><strong>Amount: </strong>US$ <span id="c_val" class="large">-</span></span>
+</div>
+<p>Note: Calculation does not reflect protocol overheads.</p>
 </fieldset>
 </form>
 </div>
@@ -177,9 +182,21 @@ banner: true
 <h2 class="mt-4">How will you be <strong>Billed</strong>?</h2>
 <div class="separator-2"></div>
 <p>
-Assume that your application has 100K monthly active users (MAU) and sends 120 million messages of average 50 bytes (utilising about 6 GB bandwidth). mesibo offers you a free quota of 20K MAU and 5GB bandwidth. Hence, mesibo will only charge for extra MAU and extra bandwidth over the free tier limits.</p>
+Assume that your application has 10,000 monthly active users (MAU) and sends 120 million messages of average 50 bytes (utilizing about 6 GB bandwidth). Let's calculate what will be the monthly cost for On-premise and Cloud deployment.
+</p>
+<p>
+Since Mesibo offers 1,000 free MAU, the chargeable MAU will be <strong>(10,000-1,000)=9,000</strong>. Hence, the total cost for 9,000 MAU will be <strong>9,000*0.01=$90</strong> per month.
+</p>
+<p>
+- For <strong>On-premise</strong> deployment, there are no other charges, and hence, the total cost will be only <strong>$90</strong> per month as calculated above.
+</p>
 
-<p>In this case, the total cost is $80.90 per month ($80 for (100K-20K = 80K) MAU, $0.9 for (6GB-5GB = 1GB) bandwidth). Use <strong>Pricing Calculator</strong> to get an estimate for different resource requirements, during monthly billing period.
+<p>
+- For <strong>Cloud deployment</strong>, there will be an additional cost for bandwidth and storage. In this case, additional $0.9 for (6GB-5GB = 1GB) bandwidth).  Hence, the total cost will be  <strong>$90+0.9=$90.9</strong> per month.
+</p>
+
+<p>
+Use the <strong>Pricing Calculator</strong> to get an estimate for different resource requirements, during the monthly billing period.
 </p>
 
 <p>
@@ -213,11 +230,11 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 <p >You can get started with mesibo and use it for free. Upon sign-up, your account will be added with sufficient free quota to use mesibo up to a great extent. You can use these free tier limits forever without paying a single penny until your usage grows and you wish to switch to Pay-As-You-Go (PAYG) plan. </p>				
 
 <h4><strong>Pay-As-You-Go (PAYG) Plan</strong></h4>
-<p >You can switch to PAYG plan anytime by adding the credit balance in your <a href="/console/#/login" target="_blank">account</a> subject to minimum monthly commitment of US$ 49. Note that, you cannot switch back to a Free plan once switched to PAYG plan.</p>
+<p >You can switch to PAYG plan anytime by adding the credit balance in your <a href="/console/#/login" target="_blank">account</a>.</p>
 <p class="margin-top-20">It is worth noting that you will continue to enjoy your free quota even in PAYG plan.</p>
 
 <h4><strong>PAYG Credits</strong></h4>
-<p >You can add PAYG credit balance as low as US$ 50 in your account whenever you need to. Your usage charges (minimum US$ 49) will be deducted from the credit balance at the end of a monthly billing cycle and the remaining credit will be carried forward for the next billing period. You can check your credit balance in ‘My Account’ section of the <a href="/console/#/login" target="_blank">console</a>.</p>
+<p >You can add PAYG credit balance as low as US$ 50 in your account whenever you need to. Your usage charges will be deducted from the credit balance at the end of a monthly billing cycle and the remaining credit will be carried forward for the next billing period. You can check your credit balance in ‘My Account’ section of the <a href="/console/#/login" target="_blank">console</a>.</p>
 
 <h4><strong>Limits, Quotas and Constraints</strong></h4>
 <p >mesibo offers free quota for both free and PAYG subscription. If you exceed these limits, add credits into your account to prevent any interruption of service. We count, quota as defined below.</p>
@@ -226,7 +243,7 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 <p >MAU is counted when a user connects to mesibo server within monthly billing period. To further clarify, it will be only counted as one when a unique user connects to mesibo server multiple times within monthly billing period.</p>
 </li>
 <li class="margin-bottom-10"><strong>Concurrent Users (or peak connections or simultaneous connection)</strong>
-<p >Concurrent users limit will be 10% of the MAU. In our experience, simultaneous users are generally less than 5% of MAU and hence you unlikely to cross that limit. However, in case you cross 10% limit, it will be compensated by billing you for  MAU = ( concurrent users X 10).</p>
+<p >Concurrent users limit will be 10% of the MAU in the Cloud deployment. In our experience, simultaneous users are generally less than 5% of MAU and hence you unlikely to cross that limit. However, in case you cross 10% limit, it will be compensated by billing you for  MAU = ( concurrent users X 10).</p>
 </li>
 
 <li class="margin-bottom-10"><strong>Messages</strong>
@@ -260,7 +277,7 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 </li>
 
 <li class="margin-bottom-10"><strong>Audio/Video calling</strong>
-<p >Audio and Video calling minutes are unlimited in both free and paid plans. Typically, 5 to 8 messages are exchanged to setup or re-connect a voice or a video call. In addition to that, minimal messages are exchanged from each end every few seconds to keep call alive, exchange quality and control information etc. Only those messages will be counted in your billing. There are no other charges for the duration of the call or the bandwidth unless you use our TURN (relay) service.</p>
+<p >Audio and Video calling minutes are unlimited in both free and paid plans. Typically, 5 to 8 messages are exchanged to setup or re-connect a voice or a video call. In addition to that, minimal messages are exchanged from each end every few seconds to keep call alive, exchange quality and control information etc. The bandwidth consumed by those messages will be counted in your billing (approx ~50 Kbytes). There are no other charges for the duration of the call or the bandwidth unless you use our TURN (relay) service.</p>
 </li>
 <li class="margin-bottom-10"><strong>File Transfer, Cloud storage & File size</strong>
 <p >mesibo allows you to use your own file servers or cloud services like Amazon AWS, Amazon S3, Google Cloud Storage, Microsoft Azure etc.., for file storage. Hence, mesibo has no restriction on file size. You can send files of unlimited size using mesibo. Also, unlike other services which charges premium for secure/encrypted file transfer, mesibo allows you to encrypt each and every message without any additional charges.</p>
@@ -274,8 +291,8 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 <p class="margin-bottom-10">Your account will be billed at the Pay-As-You-Go rates for the following resources. Usage charges start from the billing date and consist of charge for the following resources consumed in a calendar month.</p>
 <ol>
 <li>MAU</li>
-<li>Bandwidth</li>
-<li>Storage</li>
+<li>Bandwidth (For Cloud deployment only)</li>
+<li>Storage (For Cloud deployment only)</li>
 <li>TURN</li>
 </ol>
 
