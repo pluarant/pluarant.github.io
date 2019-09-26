@@ -119,8 +119,7 @@ h6 a {
 
 h1 {
   font-size: 33px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 500;
 }
 
 h1.logo-font {
@@ -138,7 +137,6 @@ h1.large {
 h2 {
   font-size: 28px;
   margin-bottom: 15px;
-  text-transform: uppercase;
 }
 
 h2.logo-font {
