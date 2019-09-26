@@ -1,4 +1,4 @@
-<!-- Page generated 2019-08-30 11:31:27 +0530 -->
+<!-- Page generated 2019-09-24 22:04:48 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -75,7 +75,7 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-08-30T11:31:27+05:30"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-09-24T22:04:48+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
@@ -85,7 +85,7 @@
 	<meta name="twitter:description" property="og:description" itemprop="description" content="The mesibo server side REST API allows you to administer your account, manage apps, manage users and groups, send messages etc. mesibo API URL https://api.mesibo.com/api.php For maintaining privacy and security,..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-08-30T11:31:27+05:30"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-09-24T22:04:48+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="mesibo, installation, ios, address, peer">
@@ -216,7 +216,7 @@
   <span class="reading-time-label">Estimated reading time: </span>
   
   
-    5 minutes
+    6 minutes
   
 </span>
 
@@ -281,7 +281,7 @@
 
 <p>Following are the list of Mesibo REST APIs.</p>
 
-<h2 id="mesibo-user-management-apis">Mesibo User Management APIs</h2>
+<h2 id="user-management-apis">User Management APIs</h2>
 
 <h3 id="add-a-user--regenerate-access-token">Add a User / Regenerate access token</h3>
 <p>To enable real-time communication between your users, you need to let mesibo know about each of your users. Mesibo will create an access token for each user and give it to you which you can send it to your users. Your user can then use this access token in real-time API using <code class="highlighter-rouge">setAccessToken</code> function.</p>
@@ -343,7 +343,7 @@ response[‘user’][‘token’] = User Access Token
   <li><strong>count</strong> = max number of users to get. Max 20</li>
 </ul>
 
-<h2 id="mesibo-group-management-apis">Mesibo Group Management APIs</h2>
+<h2 id="group-management-apis">Group Management APIs</h2>
 
 <h3 id="add-a-group">Add a Group</h3>
 <p>Add a group to enable real-time group communication between your users. Mesibo will create a group ID (GID) which you can use to add/remove members. Your users can use GID in various real-time API to send messages to the group.</p>
@@ -419,9 +419,27 @@ response[‘user’][‘token’] = User Access Token
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>response[‘members’] = Group Members
 </code></pre></div></div>
 
+<h2 id="message-api">Message API</h2>
+<p>You can send messages to one of your users or group using server-side API.</p>
+
+<p>To send a message, you need to invoke this API with following parameters:</p>
+
+<ul>
+  <li><strong>op</strong> = “message”</li>
+  <li><strong>token</strong> = Application Token obtained from mesibo console</li>
+  <li><strong>from</strong> = From Address [MUST be a valid user]</li>
+  <li><strong>to</strong> = To Address</li>
+  <li><strong>gid</strong> = Group ID [Optional, either this or <code class="highlighter-rouge">to</code> field needs to be present]</li>
+  <li><strong>type</strong> = Message Type</li>
+  <li><strong>expiry</strong> = Expiry in seconds, default 1 year</li>
+  <li><strong>msg</strong> = Message</li>
+</ul>
+
+<p>The response could be <code class="highlighter-rouge">OK</code> or <code class="highlighter-rouge">FAIL</code>.</p>
+
 <h3 id="php-helper-sdk">PHP Helper SDK</h3>
 
-<p>A PHP helper class for mesibo REST API is available at <strong>&lt; link &gt;</strong>.</p>
+<p>A PHP helper class for mesibo REST API is available <a href="https://github.com/mesibo/samples/tree/master/php">here</a></p>
 
 
 							<!-- tags -->
@@ -501,7 +519,7 @@ response[‘user’][‘token’] = User Access Token
     </ul>
   </li>
   <li><a href="/documentation/api/server-side-api/#sample-api-request-and-response" class="nomunge">Sample API Request and Response</a></li>
-  <li><a href="/documentation/api/server-side-api/#mesibo-user-management-apis" class="nomunge">Mesibo User Management APIs</a>
+  <li><a href="/documentation/api/server-side-api/#user-management-apis" class="nomunge">User Management APIs</a>
     <ul>
       <li><a href="/documentation/api/server-side-api/#add-a-user--regenerate-access-token" class="nomunge">Add a User / Regenerate access token</a></li>
       <li><a href="/documentation/api/server-side-api/#edit-a-user" class="nomunge">Edit a User</a></li>
@@ -510,13 +528,17 @@ response[‘user’][‘token’] = User Access Token
       <li><a href="/documentation/api/server-side-api/#get-users" class="nomunge">Get Users</a></li>
     </ul>
   </li>
-  <li><a href="/documentation/api/server-side-api/#mesibo-group-management-apis" class="nomunge">Mesibo Group Management APIs</a>
+  <li><a href="/documentation/api/server-side-api/#group-management-apis" class="nomunge">Group Management APIs</a>
     <ul>
       <li><a href="/documentation/api/server-side-api/#add-a-group" class="nomunge">Add a Group</a></li>
       <li><a href="/documentation/api/server-side-api/#edit-a-group" class="nomunge">Edit a Group</a></li>
       <li><a href="/documentation/api/server-side-api/#delete-a-group" class="nomunge">Delete a Group</a></li>
       <li><a href="/documentation/api/server-side-api/#add-or-remove-group-members" class="nomunge">Add or Remove Group Members</a></li>
       <li><a href="/documentation/api/server-side-api/#get-group-members" class="nomunge">Get Group Members</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/api/server-side-api/#message-api" class="nomunge">Message API</a>
+    <ul>
       <li><a href="/documentation/api/server-side-api/#php-helper-sdk" class="nomunge">PHP Helper SDK</a></li>
     </ul>
   </li>

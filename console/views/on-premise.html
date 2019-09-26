@@ -40,9 +40,9 @@
         	                	<input type="text" ng-model="user.app.server" name="" placeholder="Not Running" class="form-control required" readonly>	
                 		 </div>
 				 <div id="" class="form-group">
-	                        	<label class="size-16">Hostname</label>	
+	                        	<label class="size-16">Hostname <span style="color:red">{{onp.hosterror}}</span></label>	
 	                        	<label class="size-12"> - all your users will connect using this hostname and hence ensure that it is valid.</label>	
-        	                	<input type="text" ng-model="user.onp.hostname" name="hostname" placeholder="Hostname of the server where you are running mesibo on-premse server" class="form-control required">	
+        	                	<input type="text" ng-model="user.onp.hostname" name="hostname" placeholder="Hostname of the server where you are running mesibo on-premise server" class="form-control required">	
                 		 </div>
 				 
 				 <div id="" class="form-group">
@@ -58,13 +58,15 @@
         	                	<input type="text" ng-model="user.onp.dbpass" name="dbpass" placeholder="Your database password" class="form-control required">	
                 		 </div>
 				 <div id="" class="form-group">
-	                        	<label class="size-16">Database Host</label>	
+	                        	<label class="size-16">Database Host <span style="color:red">{{onp.dbhosterror}}</span></label>	
         	                	<input type="text" ng-model="user.onp.dbhost" name="dbhost" placeholder="Your database hostname" class="form-control required">	
                 		 </div>
+				 <!--
 				 <div id="" class="form-group">
 	                        	<label class="size-16">TLS/SSL Certificate Path</label>	
         	                	<input type="text" ng-model="user.onp.sslpath" name="sslpath" placeholder="TLS/SSL Certificate Path on your host" class="form-control required">	
                 		 </div>
+				 -->
 				 <div id="" class="form-group">
 	                        	<label>
                                  	<input type="checkbox" ng-bits-model="user.app.flag" ng-bits-flag="512" ng-click="toggle_flag(512)">
@@ -74,12 +76,12 @@
 				 <div id="" class="form-group">
 	                        	<label>
                                  	<input type="checkbox" ng-bits-model="user.app.flag" ng-bits-flag="2048" ng-click="toggle_flag(2048)">
-					<i></i> Auto fallback to cloud if your premise/datacenter having issues. Any offline messages stored on your premise maynot be delivered. Storage/bandwidth charges will apply.
+					<i></i> Auto fallback to cloud if your premise/datacenter having any issues. Any offline messages stored on your premise maynot be delivered. Storage/bandwidth charges will apply.
 					</label>
                 		 </div>
                      
                      		<div class="margin-top-10">
-		                        <button ng-click="save_onp();" class="btn btn-info">SAVE</button>
+		                        <button ng-click="save_onp();" ng-disabled="!validate_onp()" class="btn btn-info">SAVE</button>
                 		</div>
                               </div>
                            </div>

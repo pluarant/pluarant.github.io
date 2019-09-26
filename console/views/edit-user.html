@@ -230,14 +230,14 @@
          <div class="col-md-6">
             <h4 class="nomargin padding-bottom-20">Message User</h4>
             <div class="form-group">
-               <label class="control-label" for="profileFirstName">From (must be an other  valid user)</label>
+               <label class="control-label" for="profileFirstName">From (must be a valid user)</label>
                <div class="">
 					<autocomplete ng-model="appdata.msgfrom" data="fromusers" on-type="update_fromusers"></autocomplete>
                </div>
             </div>
 			<div class="form-group">
                <div>
-			    <label class="checkbox" ><input type="checkbox" class="form-control" ng-checked="false"/> <i></i>Create This User</label>
+			    <label class="checkbox" ><input ng-bits-model="appdata.force_create_user" ng-bits-flag="1" type="checkbox" class="form-control" /> <i></i>Create user (if required)</label>
                </div>
             </div>
             <div class="form-group">

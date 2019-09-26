@@ -64,6 +64,15 @@ Building the code is as simple as:
 
 Log in using your phone number. You can even start using the app you've just built to communicate with your family and friends. Cool isn't it?
 
+### If you receive linker errors
+If you receive linker errors, it means that **your download was incomplete**. One of the likely reason is that you forgot to issue `git lfs install`. There are two ways to fix:
+  - Delete entire repository and download again (do not forget `git lfs install`, as instructed above). Note that enabling `git lfs install` after partial download does not seem to work as expected. 
+  - OR, run `fetch_broken_download.sh` script 
+
+  ```
+  ./fetch_broken_download.sh
+  ```
+
 ## Conclusion of part three
 
 In this part, we have built and run the iOS Messenger app. 

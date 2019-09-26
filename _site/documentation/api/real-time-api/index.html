@@ -1,4 +1,4 @@
-<!-- Page generated 2019-08-30 11:31:27 +0530 -->
+<!-- Page generated 2019-09-24 22:04:48 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -75,7 +75,7 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-08-30T11:31:27+05:30"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-09-24T22:04:48+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
@@ -85,7 +85,7 @@
 	<meta name="twitter:description" property="og:description" itemprop="description" content="Mesibo real-time API allows users to communicate in real-time by providing APIs for 1-to-1 messaging group messaging voice and video calls. In this section, we will explore these real-time APIs..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-08-30T11:31:27+05:30"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-09-24T22:04:48+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="mesibo, real-time">
@@ -216,7 +216,7 @@
   <span class="reading-time-label">Estimated reading time: </span>
   
   
-    8 minutes
+    11 minutes
   
 </span>
 
@@ -274,7 +274,7 @@
   <tbody>
     <tr>
       <td>init</td>
-      <td>[Android Only] This is the first API function you must call before you use any other mesibo API.</td>
+      <td><strong>[Android Only]</strong> This is the first API function you must call before you use any other mesibo API.</td>
       <td>Application Context</td>
     </tr>
     <tr>
@@ -325,11 +325,49 @@
   </tbody>
 </table>
 
+<p>Android Example</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="n">Mesibo</span> <span class="n">api</span> <span class="o">=</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">getInstance</span><span class="o">();</span>
+        <span class="n">api</span><span class="o">.</span><span class="na">init</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+
+        <span class="c1">// set path for storing DB and messaging files</span>
+        <span class="n">Mesibo</span><span class="o">.</span><span class="na">setPath</span><span class="o">(</span><span class="n">Environment</span><span class="o">.</span><span class="na">getExternalStorageDirectory</span><span class="o">().</span><span class="na">getAbsolutePath</span><span class="o">());</span>
+
+        <span class="c1">// add listener</span>
+        <span class="n">Mesibo</span><span class="o">.</span><span class="na">addListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+
+        <span class="c1">// set access token</span>
+        <span class="k">if</span><span class="o">(</span><span class="mi">0</span> <span class="o">!=</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">setAccessToken</span><span class="o">(</span><span class="n">accessToken</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="c1">// set database after setting access token so that it's associated with the user</span>
+        <span class="n">Mesibo</span><span class="o">.</span><span class="na">setDatabase</span><span class="o">(</span><span class="s">"mesibo.db"</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+
+        <span class="c1">// Now start mesibo</span>
+        <span class="k">if</span><span class="o">(</span><span class="mi">0</span> <span class="o">!=</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">start</span><span class="o">())</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="o">}</span>
+</code></pre></div></div>
+
+<p>iOS Example</p>
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="p">[</span><span class="n">MesiboInstance</span> <span class="nf">setPath</span><span class="p">:</span><span class="n">appdir</span><span class="p">];</span>
+
+    <span class="p">[</span><span class="n">MesiboInstance</span> <span class="nf">addListener</span><span class="p">:</span><span class="n">self</span><span class="p">];</span>
+
+    <span class="p">[</span><span class="n">MesiboInstance</span> <span class="nf">setAccessToken</span><span class="p">:</span><span class="n">accessToken</span><span class="p">];</span>
+    <span class="p">[</span><span class="n">MesiboInstance</span> <span class="nf">setDatabase</span><span class="p">:</span><span class="s">@"mesibo.db"</span><span class="p">]</span> <span class="p">;</span> 
+
+    <span class="p">[</span><span class="n">MesiboInstance</span> <span class="nf">start</span><span class="p">];</span>
+</code></pre></div></div>
+
 <h2 id="messaging">Messaging</h2>
 
 <p>Sending messages using mesibo API only requires initializing MesssageParams object and invoke one of the messaging API with it, message id and message itself.</p>
 
-<p>Message ID is 32-bit unique id. It will be converted into a 64-bit globally unique id by the system. The id which you have originally passed will be preserved in the lower 32-bit of the globally unique id.  For example, if you send a message with id 0x12345678, it will be converted into global id 0xXXXXXXXX12345678 while sending message to the receiver.</p>
+<p>You should use a unique message ID for sending each message so that you can identify the message when the message status is received. Message ID is 32-bit unique id. It will be converted into a 64-bit globally unique id by the system. The id which you have originally passed will be preserved in the lower 32-bit of the globally unique id.  For example, if you send a message with id 0x12345678, it will be converted into global id 0xXXXXXXXX12345678 while sending message to the receiver.</p>
+
+<p>Each message has an expiry after which it will be discarded</p>
 
 <table>
   <thead>
@@ -367,31 +405,70 @@
     </tr>
     <tr>
       <td>cancel</td>
-      <td>Cancel a messageMessage can not be canceled if already sent &amp; delivered</td>
+      <td>Cancel a message. Message can not be canceled if already sent &amp; delivered</td>
       <td>1. MessageParams									2. Message ID</td>
     </tr>
     <tr>
-      <td>newMessageID</td>
+      <td>random</td>
       <td>Returns a new unique message ID</td>
       <td>void</td>
     </tr>
   </tbody>
 </table>
 
+<p>Android Example</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Mesibo</span><span class="o">.</span><span class="na">MessageParams</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">MessageParams</span><span class="o">(</span><span class="n">to</span><span class="o">,</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">FLAG_DEFAULT</span><span class="o">);</span>
+
+<span class="kt">int</span> <span class="n">rv</span> <span class="o">=</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">sendMessage</span><span class="o">(</span><span class="n">p</span><span class="o">,</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">random</span><span class="o">(),</span> <span class="s">"A Test Message"</span><span class="o">);</span>
+<span class="k">if</span><span class="o">(</span><span class="n">Mesibo</span><span class="o">.</span><span class="na">RESULT_OK</span> <span class="o">==</span> <span class="n">rv</span><span class="o">)</span> <span class="o">{</span>
+	<span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">"Message sent"</span><span class="o">);</span>
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+	<span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">"Message failed: "</span> <span class="o">+</span> <span class="n">rv</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>iOS Example</p>
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MesiboParams</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="p">[</span><span class="n">MesiboParams</span> <span class="nf">new</span><span class="p">];</span>
+
+<span class="p">[</span><span class="n">p</span> <span class="nf">setPeer</span><span class="p">:</span><span class="n">to</span><span class="p">];</span>
+<span class="p">[</span><span class="n">p</span> <span class="nf">setFlag</span><span class="p">:</span><span class="n">MESIBO_FLAG_READRECEIPT</span><span class="o">|</span><span class="n">MESIBO_FLAG_DELIVERYRECEIPT</span><span class="p">];</span>
+<span class="p">[</span><span class="n">p</span> <span class="nf">setExpiry</span><span class="p">:</span><span class="mi">3600</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">7</span><span class="p">];</span>
+
+<span class="kt">uint32_t</span> <span class="n">mid</span> <span class="o">=</span> <span class="p">[</span><span class="n">MesiboInstance</span> <span class="nf">random</span><span class="p">];</span>
+<span class="p">[</span><span class="n">MesiboInstance</span> <span class="nf">sendMessage</span><span class="p">:</span><span class="n">params</span> <span class="nf">msgid</span><span class="p">:</span><span class="n">mid</span> <span class="n">string</span><span class="o">:</span><span class="s">@"A Test Message"</span><span class="p">];</span>
+</code></pre></div></div>
+
 <h2 id="message-management">Message Management</h2>
 
-<p>These set of APIs deal with managing stored messages in the database and sending read receipts.</p>
+<p>These set of APIs deal with stored messages in the database and sending read receipts.</p>
 
-<p>To read stored messages from the database, you need to tell mesibo about a set of messages you need to read; for example, all messages, OR messages from a sender, OR for a particular group, OR messages matching a search query etc. This can be achieved by setting a read session. Once you set a read session, you can start reading messages by calling read() api.</p>
+<p>To read stored messages from the database, you need to create a read session and set the criteria to read messages; for example, all messages, OR messages from a sender, OR for a particular group, OR messages matching a search query, etc. Once you set a read session, you can start reading messages by calling read() API.</p>
 
-<p>You can enable automatic sending of read receipts every time you read a message. This can be achieved by setting a read session with READ_RECEIPT flag. On reading or receiving a message, read receipts will be be automatically send if</p>
-<ol type="I">
-- Sending Read Receipt is enabled while setting reading session, AND
-- Read receipt requested by the sender, AND
-- A new real-time or database message matches the read session.
-</ol>
+<p>You can enable automatic sending of read-receipts every time you read a message. This can be achieved by enabling read-receipt for the read session. On reading or receiving a message, read receipts will be automatically sent if</p>
 
-<p>Any messages read will have the status READ instead of NEW.</p>
+<ul>
+  <li>Sending Read Receipt is enabled for the reading session, AND</li>
+  <li>Read receipt requested by the sender, AND</li>
+  <li>A new real-time or database message matches the read session.</li>
+</ul>
+
+<p>For example, to read all the messages for a user having address ‘from’</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Mesibo</span><span class="o">.</span><span class="na">ReadDbSession</span> <span class="n">mReadSession</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">ReadDbSession</span><span class="o">(</span><span class="n">from</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="k">this</span><span class="o">);</span>
+<span class="n">mReadSession</span><span class="o">.</span><span class="na">enableReadReceipt</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+<span class="n">mReadSession</span><span class="o">.</span><span class="na">enableMissedCalls</span><span class="o">(</span><span class="n">mShowMissedCalls</span><span class="o">);</span>
+<span class="n">mReadSession</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="mi">100</span><span class="o">);</span>
+</code></pre></div></div>
+
+<p>To read last message from each user (summary)</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Mesibo</span><span class="o">.</span><span class="na">ReadDbSession</span> <span class="n">mReadSession</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">ReadDbSession</span><span class="o">(</span><span class="kc">null</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="k">this</span><span class="o">);</span>
+<span class="n">mDbSession</span><span class="o">.</span><span class="na">enableSummary</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+<span class="n">mReadSession</span><span class="o">.</span><span class="na">enableReadReceipt</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+<span class="n">mReadSession</span><span class="o">.</span><span class="na">enableMissedCalls</span><span class="o">(</span><span class="n">mShowMissedCalls</span><span class="o">);</span>
+<span class="n">mReadSession</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="mi">100</span><span class="o">);</span>
+</code></pre></div></div>
+<p>In addition to read session, there are a few other APIs to delete one or more messages.</p>
 
 <table>
   <thead>
@@ -403,21 +480,6 @@
   </thead>
   <tbody>
     <tr>
-      <td>setReadingSession</td>
-      <td>Set a reading session</td>
-      <td>- MessageParams									- Flag</td>
-    </tr>
-    <tr>
-      <td>endReadingSession</td>
-      <td>End reading session.Automatic read receipt will not be send.</td>
-      <td>void</td>
-    </tr>
-    <tr>
-      <td>read</td>
-      <td>Read messages. All subsequent read() will read next messages.</td>
-      <td>Number of messages to be read</td>
-    </tr>
-    <tr>
       <td>deleteMessage</td>
       <td>Delete a message</td>
       <td>Message ID</td>
@@ -425,16 +487,6 @@
     <tr>
       <td>deleteMessages</td>
       <td>Delete messages matching criteria</td>
-      <td>MessageParams</td>
-    </tr>
-    <tr>
-      <td>sendReadReceipt</td>
-      <td>Manually send a read receipt</td>
-      <td>1. MessageParams								2. Message ID</td>
-    </tr>
-    <tr>
-      <td>isReading</td>
-      <td>Check if a reading session is set</td>
       <td>MessageParams</td>
     </tr>
   </tbody>

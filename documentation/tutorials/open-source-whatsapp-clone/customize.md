@@ -27,6 +27,8 @@ The first screen you see in the Mesibo Messenger right after the welcome screen 
 
 The phone verification is usually an expensive process, as it requires sending SMS or making calls to verify phone number, often international numbers. However, thanks to the Facebook Account Kit, this entire process is automated and made available free (well, almost).  Account Kit lets your quickly register for and log in to your app by using just their phone number or email address — no password needed. It's reliable, easy to use and gives you a choice about how you sign up for apps - by using the phone, email or optionally, your Facebook account.
 
+> Facebook has recently discontinued Account Kit. The existing accounts will work till March 9, 2019. However, for the new installations, you need to have your own verification method.
+
 To use Account Kit, you need to create an App and generate an Account Kit client token. The entire process takes less than 5 minutes. 
 
  1. Go to [Facebook App Page](https://developers.facebook.com/apps/)

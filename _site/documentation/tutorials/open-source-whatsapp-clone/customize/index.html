@@ -1,4 +1,4 @@
-<!-- Page generated 2019-08-30 11:31:27 +0530 -->
+<!-- Page generated 2019-09-24 22:04:48 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -79,17 +79,17 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-08-30T11:31:27+05:30"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-09-24T22:04:48+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
 	<meta name="twitter:site" content="@mesibo"/>
 	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
 	<meta name="twitter:title" itemprop="title name" content="Customize Android and iOS Messenger"/>
-	<meta name="twitter:description" property="og:description" itemprop="description" content="1: Introduction 2: Android App 3: iOS App 4: Customizing 5: Backend 6: Conclusion In this part, we will customize the Android and iOS messenger apps we just built. Let’s..." />
+	<meta name="twitter:description" property="og:description" itemprop="description" content="1: Introduction 2: Android App 3: iOS App 4: Customizing 5: Hosting APIs 6: On-Premise Deployment 7: Conclusion In this part, we will customize the Android and iOS messenger apps..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-08-30T11:31:27+05:30"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-09-24T22:04:48+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="open, source, whatsapp, mesibo, ios, overview">
@@ -231,8 +231,9 @@
   <li><a href="/documentation/tutorials/open-source-whatsapp-clone/android/">2: Android App</a></li>
   <li><a href="/documentation/tutorials/open-source-whatsapp-clone/ios/">3: iOS App</a></li>
   <li class="active"><a href="/documentation/tutorials/open-source-whatsapp-clone/customize/">4: Customizing</a></li>
-  <li><a href="/documentation/tutorials/open-source-whatsapp-clone/backend/">5: Backend</a></li>
-  <li><a href="/documentation/tutorials/open-source-whatsapp-clone/conclusion/">6: Conclusion</a></li>
+  <li><a href="/documentation/tutorials/open-source-whatsapp-clone/backend/">5: Hosting APIs</a></li>
+  <li><a href="/documentation/tutorials/open-source-whatsapp-clone/on-premise/">6: On-Premise Deployment</a></li>
+  <li><a href="/documentation/tutorials/open-source-whatsapp-clone/conclusion/">7: Conclusion</a></li>
 </ul>
 
 <p>In this part, we will customize the Android and iOS messenger apps we just built.</p>
@@ -258,6 +259,10 @@
 <p><img src="/images/app/ios/mesibo_account_kit_ios.jpg" alt="" /></p>
 
 <p>The phone verification is usually an expensive process, as it requires sending SMS or making calls to verify phone number, often international numbers. However, thanks to the Facebook Account Kit, this entire process is automated and made available free (well, almost).  Account Kit lets your quickly register for and log in to your app by using just their phone number or email address — no password needed. It’s reliable, easy to use and gives you a choice about how you sign up for apps - by using the phone, email or optionally, your Facebook account.</p>
+
+<blockquote>
+  <p>Facebook has recently discontinued Account Kit. The existing accounts will work till March 9, 2019. However, for the new installations, you need to have your own verification method.</p>
+</blockquote>
 
 <p>To use Account Kit, you need to create an App and generate an Account Kit client token. The entire process takes less than 5 minutes.</p>
 

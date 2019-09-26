@@ -5,7 +5,17 @@ title: Backend for Open Source Android and iOS Messenger
 ---
 {% include_relative nav.html selected="backend" %}
 
-In this part, we will describe how to host backend on your infrastructure. 
+Previously, you have used the backend which is already hosted by Mesibo so that you can quickly play with the apps. In this and the next part, we will learn about hosting the entire backend on your infrastructure.
+
+There are two types of backends you may host:
+ 1. Backend APIs for administrative tasks. You apps communicate with your backend API for administrative functions like login, contact synchronization, getting profile and group information, etc.
+ 2. Real-time Mesibo server which handles real-time messaging, voice and video calls.
+
+In this part, we will describe how to host backend API on your infrastructure. You apps communicate with your backend API for administrative functions like login. For example, when a new user signs-up up with your services, your app will communicate with your backend API for the login and verification. Your backend verifies the new sign-in (say, using username/password, or OTP, etc.). If successful, it saves the user in a database and then registers this user with Mesibo. Mesibo returns a token for this use which you can give it to your app so that your app can communicate in real-time.
+
+![How mesibo works](/documentation/get-started/images/conceptual-arch-small.png)
+
+Refer, [Getting Started](/documentation/get-started/) guide for for more details. 
 
 ## Prerequisites
 Before we dive into setting up the backend for the Messenger apps, please ensure that the following servers are running.
@@ -59,12 +69,12 @@ The next step is to create the database schema using the supplied SQL file `mysq
     $ mysql -h <host> -u <username> -p <password> <dbname> < mysql-schema.sql
 
 ## Push Notifications
-The last set of information you need is to enable push notification for Android and iOS. You will need the following:
+The last set of information you need is to enable push notification for Android and iOS. You will need the following credentials:
 
  - Google FCM/GCM Key for Android Push notification.
  - Apple VoIP Certificate and passphrase.
 
-Refer to Google FCM and Apple push notification document to get above credentials.
+Refer to Google FCM and Apple push notification document to get above credentials. Once you get them, you need to configure Push Notification credentials in Mesibo Console by clicking on your App and then in  `Push Notifications` tab.
 
 ## Configuring the Backend
 We now have all the information to configure and go live with backend on your own servers.
@@ -75,8 +85,6 @@ Open `config.php` in the backend code and enter all the information we have obta
  - Facebook Account Kit AppID, and Secret
  - Google Maps key
  - Mesibo API Key, and App Token
- - Google GCM/FCM Key
- - Apple VoIP certificate, and Passphrase
 
 You will also need to set `files_path` and `files_tn_path` to valid paths on your server where backend will store the profile pictures.
 
@@ -116,7 +124,7 @@ You can now see any new user and groups you create in the Mesibo console along w
 
 ## Conclusion of part five
 
-In this part, we have learnt about hosting backend on your own infrastructure.   
+In this part, we have learnt about hosting backend API on your own infrastructure. In the next part, we will learn about how to host Mesibo real-time server on your own premise. 
 
 
 [On to Part 6 >>](conclusion.md){: class="button outline-btn" style="margin-bottom: 30px; margin-right: 100%"}

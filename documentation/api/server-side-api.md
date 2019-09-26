@@ -57,7 +57,7 @@ Mesibo admin API is broadly categorized into two categories:
 
 Following are the list of Mesibo REST APIs.
 
-## Mesibo User Management APIs
+## User Management APIs
 
 ### Add a User / Regenerate access token
 To enable real-time communication between your users, you need to let mesibo know about each of your users. Mesibo will create an access token for each user and give it to you which you can send it to your users. Your user can then use this access token in real-time API using `setAccessToken` function. 
@@ -108,7 +108,7 @@ Get users for an application. This API is only for development purpose and hence
 - **addr** = get users marching address. Wildcard (\*) allowed
 - **count** = max number of users to get. Max 20
 
-## Mesibo Group Management APIs
+## Group Management APIs
 
 ### Add a Group 
 Add a group to enable real-time group communication between your users. Mesibo will create a group ID (GID) which you can use to add/remove members. Your users can use GID in various real-time API to send messages to the group.
@@ -171,7 +171,23 @@ Response Fields
 
     response[‘members’] = Group Members
 
+## Message API
+You can send messages to one of your users or group using server-side API. 
+
+To send a message, you need to invoke this API with following parameters:
+
+- **op** = "message"
+- **token** = Application Token obtained from mesibo console
+- **from** = From Address [MUST be a valid user]
+- **to** = To Address
+- **gid** = Group ID [Optional, either this or `to` field needs to be present]
+- **type** = Message Type
+- **expiry** = Expiry in seconds, default 1 year
+- **msg** = Message
+
+The response could be `OK` or `FAIL`.
+
 ### PHP Helper SDK
 
-A PHP helper class for mesibo REST API is available at **< link >**.
+A PHP helper class for mesibo REST API is available [here](https://github.com/mesibo/samples/tree/master/php)
 

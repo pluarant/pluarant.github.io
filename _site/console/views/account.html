@@ -150,7 +150,7 @@
 		 <div id="panel-2" class="panel panel-default col-md-6">
             <div class="panel-heading">
                <span class="title elipsis size-17"><strong>PAY AS YOU GO PRICE</strong></span>
-			   <span class="pull-right"><strong>Min. Billing/ Month</strong>: US$ {{user.r.b_minpay}}</p>
+			   <span class="pull-right" ng-show="user.r.b_minpay != '0'"><strong>Min. Billing/ Month</strong>: US$ {{user.r.b_minpay}}</p>
             </div>
 			
             <div class="panel-body">
@@ -179,6 +179,7 @@
                                  <td>Real-time DB Storage</td>
                                  <td>US$ {{user.r.r_db}} per GB</td>
 				 </tr>
+				 <!--
 				 <tr>
                                  <td>Real-time DB Read Ops</td>
                                  <td>US$ {{user.r.r_dbreads}} per {{user.q.q_dbreads}}</td>
@@ -187,6 +188,7 @@
                                  <td>Real-time DB Write Ops</td>
                                  <td>US$ {{user.r.r_dbwrites}} per {{user.q.q_dbwrites}}</td>
 				 </tr>
+				 -->
 
 								
 								<tr>
@@ -201,8 +203,8 @@
 								
                            </tbody>
                         </table>
-						<p class="margin-bottom-0"><strong>*</strong> Pay as you go rates will be applied only when you cross the free tier limit during each billing period, subject to monthly commitment of US$ {{user.r.b_minpay}}. For more information, see the pricing <a href="../pricing.html#pricing-notes" target="_blank"><strong>Notes</strong></a> and <a href="../pricing.html#pricing-faq" target="_blank"><strong>FAQs</strong></a></p>
-						<p class="margin-bottom-0"><strong>**</strong> Concurrent users limit will be 10% of MAU. However, in case you cross 10% limit, it will be compensated by billing you for MAU = ( concurrent users X 10).</p>
+						<p class="margin-bottom-0"><strong>*</strong> Pay as you go rates will be applied only when you cross the free tier limit during each billing period. For more information, see the pricing <a href="../pricing.html#pricing-notes" target="_blank"><strong>Notes</strong></a> and <a href="../pricing.html#pricing-faq" target="_blank"><strong>FAQs</strong></a></p>
+						<p class="margin-bottom-0"><strong>**</strong> Concurrent users limit will be 10% of MAU (unlimited in On-Premise). However, in case you cross the limit, it will be compensated by billing you for MAU = ( concurrent users X 10).</p>
 						
 						<p><a href="#payment"><button type="button" class="btn btn-primary btn-sm pull-right" ng-hide="false">ADD CREDITS</button></a></p>
 						

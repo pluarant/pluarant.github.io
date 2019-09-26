@@ -29,8 +29,8 @@ Mesibo offers you a <strong>pay as you go pricing</strong> for both its On-Premi
 <div class="separator"></div>
 <ul class="list-icons">
 <li><i class="fa fa-group"></i> 1000 MAU</li>
-<li><i class="fa fa-server"></i> Real-time Bandwidth - 5 GB</li>
-<li><i class="fa fa-database"></i> Real-time Storage - 1 GB </li>
+<li><i class="fa fa-server"></i> Real-time Bandwidth - 5 GB **</li>
+<li><i class="fa fa-database"></i> Real-time Storage - 1 GB **</li>
 <li>Concurrent Users - 10% of MAU</li>
 <li><strong>Unlimited</strong> Voice/Video Calls</li>
 <li><strong>Unlimited</strong> File size</li>
@@ -69,7 +69,7 @@ Mesibo offers you a <strong>pay as you go pricing</strong> for both its On-Premi
 </div>
 </div>
 
-<!-- <p>Unlike other services, mesibo free plan does not impose any ridiculously low limits. In fact, many applications can operate in a production environment within mesibo free tier limits. Additionally, as your apps grow beyond free limits, mesibo offers flexible pay as you go plan as low as $0.9 for 1GB bandwidth (about 20M messages) - real-time communication was never more affordable than this.</p> -->
+<p>** - no limits in free on-premise deployment</p>
 </div>
 </div>
 </section>
@@ -243,7 +243,7 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 <p >MAU is counted when a user connects to mesibo server within monthly billing period. To further clarify, it will be only counted as one when a unique user connects to mesibo server multiple times within monthly billing period.</p>
 </li>
 <li class="margin-bottom-10"><strong>Concurrent Users (or peak connections or simultaneous connection)</strong>
-<p >Concurrent users limit will be 10% of the MAU in the Cloud deployment. In our experience, simultaneous users are generally less than 5% of MAU and hence you unlikely to cross that limit. However, in case you cross 10% limit, it will be compensated by billing you for  MAU = ( concurrent users X 10).</p>
+<p >There is no-limit on concurrent users in on-premise deployment. In Cloud deployment, the concurrent users limit will be 10% of the MAU. In our experience, simultaneous users are generally less than 5% of MAU and hence you unlikely to cross that limit. However, in case you cross 10% limit, it will be compensated by billing you for  MAU = ( concurrent users X 10).</p>
 </li>
 
 <li class="margin-bottom-10"><strong>Messages</strong>

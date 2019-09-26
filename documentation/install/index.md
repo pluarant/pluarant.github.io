@@ -2,8 +2,6 @@
 title: Download and Install Mesibo
 description: Download and Install Mesibo
 keywords: mesibo, installation
-redirect_from:
-- /installation/
 ---
 
 Mesibo supports almost all popular platforms and languages for you to quickly build your applications. Whether you are developing mobile apps (Android, iOS, Java, Objective-C, C++), web apps (Javascript), integrating with backend (Linux, MacOS, Windows, Python, C++) or creating cool devices using Raspberry PI, mesibo has APIs for you.
@@ -22,6 +20,12 @@ Below is links to installation instructions for each platforms:
 | Platform                                                                    
 |:----------------------------------------------------------------------------
 | [Mesibo for Javascript]({{ '/documentation/install/javascript/' | relative_url }})                        
+
+#### IoT
+
+| Platform                                                                    
+|:----------------------------------------------------------------------------
+| [Mesibo for Raspberry Pi]({{ '/documentation/install/raspberrypi/' | relative_url }})                        
 
 #### Servers / Backend /Desktop
 

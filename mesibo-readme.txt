@@ -19,6 +19,9 @@ horizontalnav defines all the horizontal navs.
   hide: yes
   resetnav: yes
 
+./_includes/global-header.html
+This defines menu on documentation home
+
 1) For each node, it then makes vertical nav, so it is mandatory to have
 horizontal nav to have vertical nav. We have added option to hide (default no)
 so that we can generate vertical nav while hiding horizontal

@@ -19,7 +19,7 @@ Now let's quickly start coding:
 Add mesibo API for javascript in your code:
 
 {% highlight javascript %}
-<script type="text/javascript" src="https://mesibo.com/mesiboapi.js"></script>
+<script type="text/javascript" src="https://api.mesibo.com/mesibo.js"></script>
 {% endhighlight %}
 
 

@@ -156,9 +156,20 @@ routerApp.controller('appcontroller', ['$scope', '$window', '$state', '$statePar
     $scope.appdata.search = '';
     $scope.appdata.message = '';
     $scope.appdata.newuseraddr = '';
+    
+    $scope.onp = new Array();
+    $scope.onp.dbhosterror = '';
+    $scope.onp.hosterror = '';
 
     var name = $stateParams.name;
     mesibo_select_app(name);
+
+    $scope.appdata.showonpenable = true;
+    /*
+
+    console.log($scope.user.app);
+	*/
+
    // alert('app: ' + name);
     
     $scope.save_general = function() {
@@ -191,9 +202,36 @@ routerApp.controller('appcontroller', ['$scope', '$window', '$state', '$statePar
 	    $scope.user.app.flag ^= flag;
 	    mesibo_appflags($scope.user.app.token, $scope.user.app.flag);
     }
+
+    $scope.is_validhost = function(host) {
+	var pat = /^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$/;
+	return pat.test(host);
+    }
+
+    $scope.validate_onp = function() {
+    	$scope.onp.dbhosterror = '';
+	$scope.onp.hosterror = '';
+	var pass = true;
+	if(!$scope.is_validhost($scope.user.onp.dbhost)) {
+		if($scope.user.onp.dbhost.length > 0)
+			$scope.onp.dbhosterror = 'Invalid Hostname';
+		pass = false;
+	}
+	if(!$scope.is_validhost($scope.user.onp.hostname)) {
+		if($scope.user.onp.hostname.length > 0)
+			$scope.onp.hosterror = 'Invalid Hostname';
+		pass = false;
+	}
+
+	if($scope.user.onp.dbname.length == 0 || $scope.user.onp.dbuser.length == 0 || $scope.user.onp.dbpass.length == 0)
+		return false;
+
+	return pass;
+    }
     
     $scope.save_onp = function() {
-	 mesibo_onpset($scope.user.app.token, $scope.user.onp.dbhost, $scope.user.onp.dbname, $scope.user.onp.dbuser, $scope.user.onp.dbpass, $scope.user.onp.hostname, $scope.user.onp.sslpath);
+
+	mesibo_onpset($scope.user.app.token, $scope.user.onp.dbhost, $scope.user.onp.dbname, $scope.user.onp.dbuser, $scope.user.onp.dbpass, $scope.user.onp.hostname, $scope.user.onp.sslpath);
 
     }
     
@@ -219,7 +257,9 @@ routerApp.controller('appcontroller', ['$scope', '$window', '$state', '$statePar
     };
 	 
     mesibo_appstats(function(res, o, none) {
-			}, 
+    			//if($scope.user.app.server.length == 0 && 0 == ($scope.user.app.flag&256))
+		    	//	$scope.appdata.showonpenable = false;
+		    }, 
 			$scope.user.app.token);
     
 }]);
@@ -442,6 +482,7 @@ routerApp.controller('usercontroller', ['$scope', '$window', '$state', '$statePa
 
     $scope.appdata.newappid = $scope.user.user.appid;
     $scope.appdata.message = '';
+    $scope.appdata.force_create_user = 1;
 
     $scope.user_gentoken = function() {
 	 //"uid", "storage", "ssr", "active", "pinned"
@@ -484,7 +525,7 @@ routerApp.controller('usercontroller', ['$scope', '$window', '$state', '$statePa
                      }
            },
 
-			$scope.user.app.token, $scope.appdata.msgfrom, $scope.user.user.address, '', $scope.appdata.message);
+			$scope.user.app.token, $scope.appdata.msgfrom, $scope.user.user.address, '', $scope.appdata.message, $scope.appdata.force_create_user);
 			
     };
 

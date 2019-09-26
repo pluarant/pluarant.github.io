@@ -42,10 +42,14 @@ guides:
 
 - path: /documentation/install/
   title: Download Mesibo SDK
+- path: /documentation/on-premise/
+  title: On-Premise Deployment
 - path: /documentation/api/
   title: API Reference Manual
 - path: /documentation/source-code/
   title: Source Code
+- path: /documentation/ui-modules/
+  title: UI Modules
 - path: /documentation/tutorials/
   title: Tutorials
 - path: /documentation/demo-apps/
@@ -66,6 +70,8 @@ install:
     title: iOS
   - path: /documentation/install/javascript/
     title: Javascript
+  - path: /documentation/install/raspberrypi/
+    title: Raspberry Pi
   - path: /documentation/install/linux/
     title: Linux
   - path: /documentation/install/mac/
@@ -104,6 +110,10 @@ tutorials:
     title: iOS
   - path: /documentation/tutorials/open-source-whatsapp-clone/customize/
     title: Customize
+  - path: /documentation/tutorials/open-source-whatsapp-clone/backend/
+    title: Hosting APIs
+  - path: /documentation/tutorials/open-source-whatsapp-clone/on-premise/
+    title: Hosting Mesibo Server
   - path: /documentation/tutorials/open-source-whatsapp-clone/conclusion/
     title: Conclusion
 
@@ -115,7 +125,7 @@ api:
   - path: /documentation/api/real-time-api/
     title: Real-time API
   - path: /documentation/api/data-structures/
-    title: Data Strunctures
+    title: Data Structures
   - path: /documentation/api/listeners/
     title: Listeners
 - path: /documentation/api/server-side-api/

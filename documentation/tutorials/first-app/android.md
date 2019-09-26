@@ -102,3 +102,5 @@ That's it! Try it out by creating two instances of the app and send message to e
 ## Download Sample Application
 
 You can download the entire sample application from **[GitHub](https://github.com/mesibo/samples)**
+
+[On to Part 4 >>](ios.md){: class="button outline-btn" style="margin-bottom: 30px; margin-right: 100%"}

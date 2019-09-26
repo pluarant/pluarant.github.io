@@ -1,4 +1,4 @@
-<!-- Page generated 2019-08-30 11:31:27 +0530 -->
+<!-- Page generated 2019-09-24 22:04:48 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -62,17 +62,17 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-08-30T11:31:27+05:30"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-09-24T22:04:48+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
 	<meta name="twitter:site" content="@mesibo"/>
 	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
 	<meta name="twitter:title" itemprop="title name" content="Write your First mesibo Enabled Application"/>
-	<meta name="twitter:description" property="og:description" itemprop="description" content="1: Preparation 2: Android 3: iOS 4: Javascript 5: File Transfer 6: UI Modules 7: Voice and Video Calls Excited to see real-time messaging in action? We are too. In..." />
+	<meta name="twitter:description" property="og:description" itemprop="description" content="Preparation Anatomy Android iOS Javascript C++ Python File Transfer UI Modules Voice and Video Calls Are you excited to see real-time messaging in action? We are too. In this first..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-08-30T11:31:27+05:30"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-09-24T22:04:48+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="mesibo, android, ios">
@@ -87,13 +87,13 @@
 	<title>Write your First mesibo Enabled Application | Mesibo Documentation</title>
 <meta property="og:title" content="Write your First mesibo Enabled Application" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Write your First mesibo Enabled Application" />
-<meta property="og:description" content="Write your First mesibo Enabled Application" />
+<meta name="description" content="Write your First Mesibo Enabled Application" />
+<meta property="og:description" content="Write your First Mesibo Enabled Application" />
 <link rel="canonical" href="/documentation/tutorials/first-app/" />
 <meta property="og:url" content="/documentation/tutorials/first-app/" />
 <meta property="og:site_name" content="Mesibo Documentation" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"Write your First mesibo Enabled Application","description":"Write your First mesibo Enabled Application","url":"https://docs.docker.com/documentation/tutorials/first-app/"}</script>
+{"@context":"http://schema.org","@type":"WebPage","headline":"Write your First mesibo Enabled Application","description":"Write your First Mesibo Enabled Application","url":"https://docs.docker.com/documentation/tutorials/first-app/"}</script>
 	<!-- END SEO STUFF -->
 	
 	<script language="javascript">
@@ -203,67 +203,77 @@
   <span class="reading-time-label">Estimated reading time: </span>
   
   
-    3 minutes
+    4 minutes
   
 </span>
 
 							
 							
 							<ul class="pagination">
-  <li class="active"><a href="/documentation/tutorials/first-app/">1: Preparation</a></li>
-  <li><a href="/documentation/tutorials/first-app/android/">2: Android</a></li>
-  <li><a href="/documentation/tutorials/first-app/ios/">3: iOS</a></li>
-  <li><a href="/documentation/tutorials/first-app/js/">4: Javascript</a></li>
-  <li><a href="/documentation/tutorials/first-app/file-transfer/">5: File Transfer</a></li>
-  <li><a href="/documentation/tutorials/first-app/ui-modules/">6: UI Modules</a></li>
-  <li><a href="/documentation/tutorials/first-app/voice-video-calls/">7: Voice and Video Calls</a></li>
+  <li class="active"><a href="/documentation/tutorials/first-app/">Preparation</a></li>
+  <li><a href="/documentation/tutorials/first-app/anatomy/">Anatomy</a></li>
+  <li><a href="/documentation/tutorials/first-app/android/">Android</a></li>
+  <li><a href="/documentation/tutorials/first-app/ios/">iOS</a></li>
+  <li><a href="/documentation/tutorials/first-app/js/">Javascript</a></li>
+  <li><a href="/documentation/tutorials/first-app/cpp/">C++</a></li>
+  <li><a href="/documentation/tutorials/first-app/python/">Python</a></li>
+  <li><a href="/documentation/tutorials/first-app/file-transfer/">File Transfer</a></li>
+  <li><a href="/documentation/tutorials/first-app/ui-modules/">UI Modules</a></li>
+  <li><a href="/documentation/tutorials/first-app/voice-video-calls/">Voice and Video Calls</a></li>
 </ul>
 
-<p>Excited to see real-time messaging in action? We are too. In this first tutorial, we will create a simple real-time app for Android, iOS and Web.</p>
+<p>Are you excited to see real-time messaging in action? We are too. In this first tutorial, we will create a simple real-time app using Mesibo API for various platforms including <code class="highlighter-rouge">Android</code>, <code class="highlighter-rouge">iOS</code>, <code class="highlighter-rouge">Web (JavaScript)</code>, <code class="highlighter-rouge">C++ (Linux, Mac, Raspberry Pi)</code>, and <code class="highlighter-rouge">Python</code>. We will cover the following:</p>
+
+<ul>
+  <li>Basic Mesibo Settings common across all the platforms (on this page)</li>
+  <li><a href="/documentation/tutorials/first-app/anatomy/">Anatomy of a Mesibo App</a> - essential elements of a Mesibo App and design pattern which are common across all the platforms.</li>
+  <li>Platform-specific tutorials - Android, iOS, Web (JavaScript), C++ (Linux, Mac, Raspberry Pi), and Python.</li>
+  <li>Other topics</li>
+</ul>
 
 <h2 id="prerequisites">Prerequisites</h2>
-<p>You MUST go through following prerequisites before you read further.</p>
+<p>Ensure that you have gone through following prerequisites before you read further.</p>
 
 <ul>
   <li>Read the <a href="/documentation/get-started/">Get Started</a> Guide.</li>
   <li>Read about <a href="/documentation/api/">Type of APIs</a></li>
   <li>Read about <a href="/documentation/api/server-side-api/">Admin API</a></li>
-  <li>Logged-in to <a href="https://mesibo.com/console">Mesibo Account</a></li>
+  <li>Signed-up and Logged-in to <a href="https://mesibo.com/console">Mesibo Console</a> <strong>(It’s free)</strong></li>
 </ul>
 
 <p>You are not required to go through <a href="/documentation/api/real-time-api/">Real-time API</a> for now.</p>
 
 <h2 id="preparation">Preparation</h2>
 
-<p>Before we start coding our first Android, iOS or web application - we need to perform a few steps that are common across platforms. You need to be logged-in to Mesibo console to perform these steps.</p>
+<p>Before we start coding our first Mesibo Application, we need to perform a few steps that are common across platforms. You need to be logged-in to Mesibo console to perform these steps.</p>
 
-<p>Let’s say you are creating a new app <strong>BingoMessage</strong> for Android, iOS and web. You first need to let mesibo know about this application. You can do it by creating a new application from the <a href="https://mesibo.com/console">Mesibo console</a>.</p>
+<p>Let’s say you are creating a new app <strong>BingoMessage</strong> for Android, iOS, and web. You first need to create a <code class="highlighter-rouge">Mesibo Application</code> which will contain of your <strong>BingoMessage</strong>  users, groups, setting, etc. You can create a new Application from the <a href="https://mesibo.com/console">Mesibo console</a>.</p>
 
 <p><img src="/documentation/tutorials/first-app/images/app-token.jpg" alt="mesibo-api-key" /></p>
 
-<p>Once your application is created, note down the App token. The App Token looks like following:</p>
+<p>Once your <code class="highlighter-rouge">Mesibo Application</code> is created, note down the <code class="highlighter-rouge">App token</code>. The App Token looks like the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>**cn9cvk6gnm15e7lrjb2k7ggggax5h90n5x7dp4sam6kwitl2hmg4cmwabet4zgdw**
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cn9cvk6gnm15e7lrjb2k7ggggax5h90n5x7dp4sam6kwitl2hmg4cmwabet4zgdw
 </code></pre></div></div>
 
-<p>We will need this application token to create users and groups for this application.</p>
+<p>We will need this <code class="highlighter-rouge">app token</code> to create users and groups for this <code class="highlighter-rouge">Application</code>.</p>
 
 <h2 id="create-users-endpoints">Create Users (Endpoints)</h2>
 
-<p>Once you have created your Application, it’s time to add users and groups.  Typically, you will add users and groups dynamically on need basis. However, for this sample app, you can create a few users and groups manually so that you can test messaging between them.</p>
+<p>Once you have created your Application, it’s time to add users and groups.  Typically, you will add users and groups dynamically on a need basis. However, for this sample app, you can create a few users and groups manually so that you can test messaging between them.</p>
 
 <blockquote>
-  <p>Note that all your users and groups are local and confined to an Application. So there is no conflict when same user is created by another application.</p>
+  <p>Note that all your users and groups are local and confined to an <code class="highlighter-rouge">Application</code>. So there is no conflict when the same user is created by another application.</p>
 </blockquote>
 
-<p>Now we will create two users by using Mesibo Admin API and the app token obtained in the previous step.</p>
+<p>Now we will create two users by using Mesibo Admin API and the app token obtained in the previous step. The <code class="highlighter-rouge">user</code> is a string. It is not neccessary to use phone number, you can use whatever suits your app, as long as it’s a unquie across your Application.</p>
 
 <ul>
   <li>18005550001</li>
   <li>18005550002</li>
 </ul>
 
-<p>Note that, you also need to pass the Android app id (bundle id in iOS), for example com.mesibo.demoapp while creating users. This is a security feature that restricts your users from using the user access token on intended platforms only.</p>
+<p>Note that, you also need to pass the Android app id (bundle id in iOS), for example, com.mesibo.demoapp while creating users. This is a security feature that restricts your users from using the user access token on intended platforms only.</p>
 
 <p><strong>User Creation Request</strong></p>
 
@@ -272,7 +282,7 @@
 <p>Where</p>
 <ul>
   <li><strong>token</strong> = Application Token</li>
-  <li><strong>appid</strong> = Android or iOS app id (for example, com.mesibo.xxx). In case of web, just pass, ‘web’ as appid. Note that, for security reasons, the token generated for a particular appid will only be usable on app matching that appid.</li>
+  <li><strong>appid</strong> = Android or iOS app id (for example, com.mesibo.xxx). In case of C++, Python and Javascript, pass whatever appid you prefer (which you need to pass in <code class="highlighter-rouge">setAppName</code> API call). Note that, for security reasons, the token generated for a particular appid will only be usable on app matching that appid.</li>
   <li><strong>addr</strong> = end point address, for example, a user phone number.</li>
 </ul>
 
@@ -282,9 +292,9 @@
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">{</span><span class="s2">"user"</span><span class="p">:{</span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"5302"</span><span class="p">,</span><span class="s2">"token"</span><span class="p">:</span><span class="s2">"89314021d442c8169b2f3baf71c79caa3b026c16daedd3ee9"</span><span class="p">},</span><span class="s2">"op"</span><span class="p">:</span><span class="s2">"useradd"</span><span class="p">,</span><span class="s2">"result"</span><span class="p">:</span><span class="kc">true</span><span class="p">}</span></code></pre></figure>
 
-<p>The above API returns JSON response with access token, that will be used by real-time API to connect to mesibo real-time server (using <code class="highlighter-rouge">setAccessToken</code> API).</p>
+<p>The <code class="highlighter-rouge">token</code> returned in the above API JSON response is the <code class="highlighter-rouge">access token</code>, that will be used by real-time API to connect to Mesibo real-time server (using <code class="highlighter-rouge">setAccessToken</code> API).</p>
 
-<p>You can now create more users in similar fashion so that you test messaging between them. You can also send messages to a particular user from console from ‘Users’ section.</p>
+<p>You can now create more users in a similar fashion so that you can test messaging between them. You can also send messages to a particular user using the console in ‘Users’ section.</p>
 
 <blockquote>
   <p>You can also create users from the console by clicking on ‘New User’ button from the Application settings page.</p>
@@ -292,7 +302,7 @@
 
 <p>We are now all set to create our first mobile app which can send and receive real-time messages.</p>
 
-<p>In next section, we will learn to create a basic Android application.</p>
+<p>In the next section, we will learn to create a basic Android application.</p>
 
 <p><a href="/documentation/tutorials/first-app/android/" class="button outline-btn" style="margin-bottom: 30px; margin-right: 100%">On to Part 2 &gt;&gt;</a></p>
 

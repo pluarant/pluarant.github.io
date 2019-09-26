@@ -22,9 +22,9 @@ This guide provides a brief introduction to mesibo, how it works, various featur
 
 ## Get Mesibo
 
-Get mesibo SDK for Android, iOS, Linux, Mac and Windows. Mesibo SDK will quickly enable your apps to send and receive real-time messages and make and receive voice and video calls.   
+Get Mesibo SDK for Android, iOS, Linux, Mac, Raspberry Pi and Python. Mesibo SDK will quickly enable your apps to send and receive real-time messages and make and receive voice and video calls.   
 
-[Download Mesibo]({{ "/documentation//install/" | relative_url }}){: class="button outline-btn" onclick="ga('send', 'event', 'EE Trial Referral', 'Front Page', 'Click');"}
+[Download Mesibo]({{ "/documentation/install/" | relative_url }}){: class="button outline-btn" onclick="ga('send', 'event', 'EE Trial Referral', 'Front Page', 'Click');"}
 
 </div>
 </div>

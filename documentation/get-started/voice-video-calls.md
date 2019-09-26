@@ -1,7 +1,7 @@
 ---
 title: "Get Started, Part 4: Voice and Video Calling"
 keywords: voice calls, video calls, webrtc, stun, turn, sdk
-description: Learn how to create clusters of Dockerized machines.
+description: how to add voice and video calling in your app
 ---
 {% include_relative nav.html selected="calls" %}
 

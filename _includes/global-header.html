@@ -5,12 +5,14 @@
             <nav class="nav-primary">
                 <div class="container-fluid">
                     <div class="navbar-header">
+                            <a href="/">
                         <img class="logo" src="{{ '/images/mesibo-logo-white.png' | relative_url }}" alt="Mesibo Docs" title="Mesibo Docs">
+			</a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="primary nav navbar-nav">
-                            <li><a href="https://mesibo.com">Home</a></li>
-                            <li><a href="https://mesibo.com/pricing.html">Pricing</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/pricing/">Pricing</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Mesibo <span class="caret"></span></a>
                                 <ul class="dropdown-menu nav-main">
@@ -18,7 +20,9 @@
                                     <li><a href="{{ '/documentation/install/android/' | relative_url }}">Android</a></li>
                                     <li><a href="{{ '/documentation/install/ios/' | relative_url }}">iOS</a></li>
                                     <h6 class="dropdown-header">For Websites</h6>
-                                    <li><a href="{{ '/documentation//install/javascript/' | relative_url }}">Javascript</a></li>
+                                    <li><a href="{{ '/documentation/install/javascript/' | relative_url }}">Javascript</a></li>
+                                    <h6 class="dropdown-header">For IoT Devices</h6>
+                                    <li><a href="{{ '/documentation/install/raspberrypi/' | relative_url }}">Raspberry Pi</a></li>
                                     <h6 class="dropdown-header">For Servers / Backend</h6>
                                     <li><a href="{{ '/documentation/install/linux/' | relative_url }}">Linux</a></li>
                                     <li><a href="{{ '/documentation/install/mac/' | relative_url }}">Mac</a></li>
@@ -30,16 +34,9 @@
 				    -->
                                 </ul>
                             </li>
-                            <li><a href="{{ '/documentation/' | relative_url }}">Docs</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact<span class="caret"></span></a>
-                                <ul class="dropdown-menu nav-main">
-                                    <li><a href="{{ '/documentation/support/technical-support/' | relative_url }}">Help</a></li>
-                                    <li><a href="{{ '/documentation/support/' | relative_url }}">Contact us</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="https://mesibo.com/console/#/register">Create Mesibo ID</a></li>
-                            <li><a href="https://mesibo.com/console/#/login">Sign In</a></li>
+                            <li><a href="{{ '/documentation/' | relative_url }}">Documenattion</a></li>
+                            <li><a href="/help/">Contact Us</a></li>
+                            <li><a href="https://mesibo.com/console/">Sign In</a></li>
                         </ul>
                         </div>
                     <!--/.nav-collapse -->

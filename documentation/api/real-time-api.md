@@ -47,7 +47,7 @@ You need to call one or more initialization API before using any other mesibo AP
 
 |Method|Description|Parameters| 
 |-----------------------------------|-----------------|---------------------|
-|init|[Android Only] This is the first API function you must call before you use any other mesibo API.|Application Context|
+|init|**[Android Only]** This is the first API function you must call before you use any other mesibo API.|Application Context|
 |setAccessToken|Set access token for the user.|Access Token|                           
 |setPath(Optional)|Path where all the databases and files will be stored. Default Path will be used if this API is not called.|Path|                           
 |setDatabase(Optional)|Enable local database to store messages, and other information.If setDatabase is called before setAccessToken(), same database will be used for all the users. It is recommended to call it after setAccessToken() API.|Name or complete path of the database. If path is not specified, the database will be stored in the default path or the path set by setPath API.|
@@ -58,11 +58,51 @@ You need to call one or more initialization API before using any other mesibo AP
 |start|Start mesibo connection establishment. mesibo will not establish network connection till the start() is called. However, once the start() is called, mesibo will automatically manage any future reconnections till stop() is called.|Void|
 |stop|Disconnect any existing connection and also prevent future reconnections.|Void|                           
 
+Android Example
+
+```java
+	Mesibo api = Mesibo.getInstance();
+        api.init(context);
+
+        // set path for storing DB and messaging files
+        Mesibo.setPath(Environment.getExternalStorageDirectory().getAbsolutePath());
+
+        // add listener
+        Mesibo.addListener(this);
+
+        // set access token
+        if(0 != Mesibo.setAccessToken(accessToken) {
+            return false;
+        }
+
+        // set database after setting access token so that it's associated with the user
+        Mesibo.setDatabase("mesibo.db", 0);
+
+        // Now start mesibo
+        if(0 != Mesibo.start()) {
+            return false;
+        }
+```
+
+iOS Example
+```objc
+    [MesiboInstance setPath:appdir];
+
+    [MesiboInstance addListener:self];
+
+    [MesiboInstance setAccessToken:accessToken];
+    [MesiboInstance setDatabase:@"mesibo.db"] ; 
+
+    [MesiboInstance start];
+```
+
 ## Messaging
 
 Sending messages using mesibo API only requires initializing MesssageParams object and invoke one of the messaging API with it, message id and message itself.
 
-Message ID is 32-bit unique id. It will be converted into a 64-bit globally unique id by the system. The id which you have originally passed will be preserved in the lower 32-bit of the globally unique id.  For example, if you send a message with id 0x12345678, it will be converted into global id 0xXXXXXXXX12345678 while sending message to the receiver.
+You should use a unique message ID for sending each message so that you can identify the message when the message status is received. Message ID is 32-bit unique id. It will be converted into a 64-bit globally unique id by the system. The id which you have originally passed will be preserved in the lower 32-bit of the globally unique id.  For example, if you send a message with id 0x12345678, it will be converted into global id 0xXXXXXXXX12345678 while sending message to the receiver.
+
+Each message has an expiry after which it will be discarded
 
 |API Function|Description|Parameters                           
 |------
@@ -71,34 +111,69 @@ Message ID is 32-bit unique id. It will be converted into a 64-bit globally uniq
 |sendLocation|Send a location|1. MessageParams									2. Message ID									3. Location|                           
 |forwardMessage|Forward a message.|1. MessageParams									2. Message ID									3. ID of message to be forwared|                           
 |resend|Resend a failed message|1. MessageParams									2. Message ID of failed message|                           
-|cancel|Cancel a messageMessage can not be canceled if already sent &amp; delivered|1. MessageParams									2. Message ID|                           
-|newMessageID|Returns a new unique message ID|void|                           
+|cancel|Cancel a message. Message can not be canceled if already sent &amp; delivered|1. MessageParams									2. Message ID|                           
+|random|Returns a new unique message ID|void|                           
+
+Android Example
+
+```java
+Mesibo.MessageParams p = new Mesibo.MessageParams(to, Mesibo.FLAG_DEFAULT);
+
+int rv = Mesibo.sendMessage(p, Mesibo.random(), "A Test Message");
+if(Mesibo.RESULT_OK == rv) {
+	Log.d(TAG, "Message sent");
+} else {
+	Log.d(TAG, "Message failed: " + rv);
+}
+```
+
+iOS Example
+```objc
+MesiboParams *p = [MesiboParams new];
+
+[p setPeer:to];
+[p setFlag:MESIBO_FLAG_READRECEIPT|MESIBO_FLAG_DELIVERYRECEIPT];
+[p setExpiry:3600*24*7];
+
+uint32_t mid = [MesiboInstance random];
+[MesiboInstance sendMessage:params msgid:mid string:@"A Test Message"];
+```
 
 ## Message Management
 
-These set of APIs deal with managing stored messages in the database and sending read receipts.
+These set of APIs deal with stored messages in the database and sending read receipts.
 
-To read stored messages from the database, you need to tell mesibo about a set of messages you need to read; for example, all messages, OR messages from a sender, OR for a particular group, OR messages matching a search query etc. This can be achieved by setting a read session. Once you set a read session, you can start reading messages by calling read() api.
+To read stored messages from the database, you need to create a read session and set the criteria to read messages; for example, all messages, OR messages from a sender, OR for a particular group, OR messages matching a search query, etc. Once you set a read session, you can start reading messages by calling read() API.
 
-You can enable automatic sending of read receipts every time you read a message. This can be achieved by setting a read session with READ_RECEIPT flag. On reading or receiving a message, read receipts will be be automatically send if
-<ol type="I">
-- Sending Read Receipt is enabled while setting reading session, AND
+You can enable automatic sending of read-receipts every time you read a message. This can be achieved by enabling read-receipt for the read session. On reading or receiving a message, read receipts will be automatically sent if
+
+- Sending Read Receipt is enabled for the reading session, AND
 - Read receipt requested by the sender, AND
 - A new real-time or database message matches the read session.
-</ol>
 
+For example, to read all the messages for a user having address 'from'
 
-Any messages read will have the status READ instead of NEW.
+```java
+Mesibo.ReadDbSession mReadSession = new Mesibo.ReadDbSession(from, 0, null, this);
+mReadSession.enableReadReceipt(true);
+mReadSession.enableMissedCalls(mShowMissedCalls);
+mReadSession.read(100);
+```
+
+To read last message from each user (summary) 
+```java
+Mesibo.ReadDbSession mReadSession = new Mesibo.ReadDbSession(null, 0, null, this);
+mDbSession.enableSummary(true);
+mReadSession.enableReadReceipt(false);
+mReadSession.enableMissedCalls(mShowMissedCalls);
+mReadSession.read(100);
+```
+In addition to read session, there are a few other APIs to delete one or more messages. 
 
 |API Function|Description|Parameters                           
 |------
-|setReadingSession|Set a reading session|																	- MessageParams									- Flag|                           
-|endReadingSession|End reading session.Automatic read receipt will not be send.|void|                           
-|read|Read messages. All subsequent read() will read next messages.|Number of messages to be read|                           
 |deleteMessage|Delete a message|Message ID|                           
 |deleteMessages|Delete messages matching criteria|MessageParams|                           
-|sendReadReceipt|Manually send a read receipt|1. MessageParams								2. Message ID|                           
-|isReading|Check if a reading session is set|MessageParams|                           
 
 ## File Transfer
 

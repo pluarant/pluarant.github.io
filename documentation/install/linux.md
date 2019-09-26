@@ -40,6 +40,6 @@ Please note the following points:
 
 ## Next steps
 
-- Continue to [Download Sample Code for Linux](https://github.com/mesibo/samples/)
+- Continue to [Writing App for Linux]('/documentation/tutorials/first-app/cpp/')
 
 - Continue with the [User Guide]({{ '/documentation/get-started/' | relative_url }}).

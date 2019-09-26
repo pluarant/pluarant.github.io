@@ -64,10 +64,24 @@ var pages = [
 }
 ,
 {
+"url":"/;",
+"title":"Mesibo Pricing",
+"description":"Free to start and Pay as you grow. Pricing you just can't beat. flexible pricing for all.",
+"keywords":"mesibo pricing"
+}
+,
+{
 "url":"/about-us/",
 "title":"About Us",
 "description":"mesibo is a cloud communication platform that makes it remarkably simple to add real-time communication to mobile apps, and websites, in just a few hours.",
 "keywords":"mesibo, India"
+}
+,
+{
+"url":"/documentation/tutorials/first-app/anatomy/",
+"title":"Anatomy of a Mesibo Application",
+"description":"Anatomy of a Mesibo Application",
+"keywords":"mesibo, android, ios, cpp, c++, python, javascript"
 }
 ,
 {
@@ -99,10 +113,10 @@ var pages = [
 }
 ,
 {
-"url":"/documentation/install/linux-docker/docker-ce/binaries/",
-"title":"Install Docker CE from binaries",
-"description":"Instructions for installing Docker as a binary. Mostly meant for hackers who want to try out Docker on a variety of environments.",
-"keywords":"binaries, installation, docker, documentation, linux"
+"url":"/documentation/ui-modules/android/calls/",
+"title":"Using Mesibo UI Modules for Android - Voice and Video Calls",
+"description":"Using Mesibo UI Modules for Android - Voice and Video Calls",
+"keywords":"open, source, on-premise, messaging, chat, voice, video"
 }
 ,
 {
@@ -113,31 +127,10 @@ var pages = [
 }
 ,
 {
-"url":"/documentation/install/linux-docker/docker-ce/centos/",
-"title":"Get Docker CE for CentOS",
-"description":"Instructions for installing Docker CE on CentOS",
-"keywords":"requirements, apt, installation, centos, rpm, install, uninstall, upgrade, update"
-}
-,
-{
-"url":"/documentation/install/linux-docker/docker-ee/centos/",
-"title":"Get Docker EE for CentOS",
-"description":"Instructions for installing Docker EE on CentOS",
-"keywords":"requirements, apt, installation, centos, rpm, install, uninstall, upgrade, update"
-}
-,
-{
 "url":"/chat-api-features/",
 "title":"Chat API & Messaging SDK Features for Android, iOS & Website",
 "description":"Powerful chat API and messaging SDK features for android and ios to build real-time chat, voice and video in your mobile apps and websites. Use all features for FREE!",
 "keywords":"chat api features, chat sdk features, messaging sdk features, chat api features for android, chat api features for ios, messaging sdk features for ios, messaging sdk for android, chat api, messaging api, messaging sdk, chat sdk, features, android, ios, websites"
-}
-,
-{
-"url":"/documentation/tutorials/open-source-whatsapp-clone/conclusion/",
-"title":"Conclusion",
-"description":"Conclusion",
-"keywords":null
 }
 ,
 {
@@ -148,10 +141,24 @@ var pages = [
 }
 ,
 {
+"url":"/documentation/tutorials/open-source-whatsapp-clone/conclusion/",
+"title":"Conclusion",
+"description":"Conclusion",
+"keywords":null
+}
+,
+{
 "url":"/contact/",
 "title":"Contact",
 "description":"Welcome to mesibo contact.",
 "keywords":"mesibo contact"
+}
+,
+{
+"url":"/documentation/tutorials/first-app/cpp/",
+"title":"Write your First mesibo Enabled Application - C/C++",
+"description":"Write your First mesibo Enabled Application - C/C++",
+"keywords":"mesibo, android, ios, cpp, c++, c"
 }
 ,
 {
@@ -190,13 +197,6 @@ var pages = [
 }
 ,
 {
-"url":"/documentation/install/linux-docker/docker-ce/debian/",
-"title":"Get Docker CE for Debian",
-"description":"Instructions for installing Docker CE on Debian",
-"keywords":"requirements, apt, installation, debian, install, uninstall, upgrade, update"
-}
-,
-{
 "url":"/documentation/demo-apps/",
 "title":"Mesibo Demo Apps for Android and iOS",
 "description":"Mesibo Demo Apps - Android and iOS",
@@ -204,31 +204,10 @@ var pages = [
 }
 ,
 {
-"url":"/documentation/install/windows-docker/docker-ee/",
-"title":"Install Docker Engine - Enterprise on Windows Servers",
-"description":"How to install Docker Engine - Enterprise for Windows Server",
-"keywords":"Windows, Windows Server, install, download, ucp, Docker Engine - Enterprise"
-}
-,
-{
 "url":"/documentation/docsarchive/",
 "title":"View the mesibo docs archives",
 "description":null,
 "keywords":null
-}
-,
-{
-"url":"/documentation/install/windows-docker/ee-preview/",
-"title":"Preview Docker for Windows Server 1709 and Windows 10 Fall Creators Update",
-"description":"How to install Docker on Windows Server 1709 and Windows 10 Fall Creators Update",
-"keywords":"Windows, Windows Server, install, download, Docker EE, preview, Windows 1709"
-}
-,
-{
-"url":"/documentation/install/linux-docker/docker-ce/fedora/",
-"title":"Get Docker CE for Fedora",
-"description":"Instructions for installing Docker CE on Fedora",
-"keywords":"requirements, apt, installation, fedora, rpm, install, uninstall, upgrade, update"
 }
 ,
 {
@@ -295,52 +274,10 @@ var pages = [
 }
 ,
 {
-"url":"/",
-"title":"Chat API and Messaging SDK for Android & iOS Apps and Website",
-"description":"mesibo is a cloud communication platform, provides chat API and messaging SDK to add chat, voice and video in Android & iOS apps and websites. It is Free for all!",
-"keywords":"chat api, messaging api, chat sdk, messaging sdk, android chat sdk, iOS chat sdk, chat api for android, chat api for ios, android chat api, ios chat api, android messaging sdk, ios messaging sdk, messaging sdk for android, messaging sdk for ios, chat api for websites, messaging sdk for websites"
-}
-,
-{
-"url":"/documentation/faq/",
-"title":"You have questions, we have the answers. Read our FAQ!",
-"description":"Frequently Asked Questions",
-"keywords":"get started, setup, orientation, mesibo, chat, GDPR"
-}
-,
-{
-"url":"/documentation/opensource/",
-"title":"Contribute to documentation",
-"description":"Overview of contributing",
-"keywords":"open, source, contributing, overview"
-}
-,
-{
-"url":"/samples/",
-"title":"Samples",
-"description":null,
-"keywords":null
-}
-,
-{
-"url":"/documentation/support/",
-"title":"Welcome to Mesibo Support Center",
-"description":"Welcome to Mesibo Support Center",
-"keywords":"mesibo, support"
-}
-,
-{
-"url":"/documentation/",
-"title":"Mesibo Documentation",
-"description":"Home page for Mesibo's documentation",
-"keywords":"Mesibo, documentation, manual, guide, reference, api, samples"
-}
-,
-{
-"url":"/documentation/tutorials/",
-"title":"Mesibo Tutorials",
-"description":"Mesibo Tutorials",
-"keywords":"mesibo, open, source, tutorials, overview"
+"url":"/documentation/install/",
+"title":"Download and Install Mesibo",
+"description":"Download and Install Mesibo",
+"keywords":"mesibo, installation"
 }
 ,
 {
@@ -351,10 +288,52 @@ var pages = [
 }
 ,
 {
-"url":"/documentation/install/",
-"title":"Download and Install Mesibo",
-"description":"Download and Install Mesibo",
-"keywords":"mesibo, installation"
+"url":"/documentation/support/",
+"title":"Welcome to Mesibo Support Center",
+"description":"Welcome to Mesibo Support Center",
+"keywords":"mesibo, support"
+}
+,
+{
+"url":"/",
+"title":"Chat API and Messaging SDK for Android & iOS Apps and Website",
+"description":"mesibo is a cloud communication platform, provides chat API and messaging SDK to add chat, voice and video in Android & iOS apps and websites. It is Free for all!",
+"keywords":"chat api, messaging api, chat sdk, messaging sdk, android chat sdk, iOS chat sdk, chat api for android, chat api for ios, android chat api, ios chat api, android messaging sdk, ios messaging sdk, messaging sdk for android, messaging sdk for ios, chat api for websites, messaging sdk for websites"
+}
+,
+{
+"url":"/documentation/tutorials/first-app/",
+"title":"Write your First mesibo Enabled Application",
+"description":"Write your First Mesibo Enabled Application",
+"keywords":"mesibo, android, ios"
+}
+,
+{
+"url":"/documentation/opensource/",
+"title":"Contribute to documentation",
+"description":"Overview of contributing",
+"keywords":"open, source, contributing, overview"
+}
+,
+{
+"url":"/documentation/tutorials/open-source-whatsapp-clone/",
+"title":"Create an Open Source WhatsApp clone app using Mesibo",
+"description":"Create Open Source WhatsApp clone using Mesibo",
+"keywords":"open, source, whatsapp, mesibo, overview"
+}
+,
+{
+"url":"/documentation/tutorials/",
+"title":"Mesibo Tutorials",
+"description":"Mesibo Tutorials",
+"keywords":"mesibo, open, source, tutorials, overview"
+}
+,
+{
+"url":"/documentation/faq/",
+"title":"You have questions, we have the answers. Read our FAQ!",
+"description":"Frequently Asked Questions",
+"keywords":"get started, setup, orientation, mesibo, chat, GDPR"
 }
 ,
 {
@@ -365,17 +344,24 @@ var pages = [
 }
 ,
 {
-"url":"/documentation/tutorials/first-app/",
-"title":"Write your First mesibo Enabled Application",
-"description":"Write your First mesibo Enabled Application",
-"keywords":"mesibo, android, ios"
+"url":"/documentation/",
+"title":"Mesibo Documentation",
+"description":"Home page for Mesibo's documentation",
+"keywords":"Mesibo, documentation, manual, guide, reference, api, samples"
 }
 ,
 {
-"url":"/documentation/tutorials/open-source-whatsapp-clone/",
-"title":"Create an Open Source WhatsApp clone app using Mesibo",
-"description":"Create Open Source WhatsApp clone using Mesibo",
-"keywords":"open, source, whatsapp, mesibo, overview"
+"url":"/documentation/ui-modules/",
+"title":"Mesibo UI Modules",
+"description":"Mesibo UI Modules",
+"keywords":"mesibo, ui-modules, ui, messaging, voice, video, call"
+}
+,
+{
+"url":"/samples/",
+"title":"Samples",
+"description":null,
+"keywords":null
 }
 ,
 {
@@ -414,13 +400,6 @@ var pages = [
 }
 ,
 {
-"url":"/documentation/install/linux-docker/linux-postinstall/",
-"title":"Post-installation steps for Linux",
-"description":"Optional post-installation steps for Linux",
-"keywords":"Docker, Docker documentation, requirements, apt, installation, ubuntu, install, uninstall, upgrade, update"
-}
-,
-{
 "url":"/documentation/install/linux/",
 "title":"Instructions for installing Mesibo on Linux",
 "description":"Instructions for installing Mesibo on Linux",
@@ -449,6 +428,13 @@ var pages = [
 }
 ,
 {
+"url":"/documentation/ui-modules/android/messaging/",
+"title":"Using Mesibo UI Modules for Android - Messaging",
+"description":"Using Mesibo UI Modules for Android - Messaging",
+"keywords":"open, source, on-premise, messaging, chat, voice, video"
+}
+,
+{
 "url":"/documentation/get-started/messaging/",
 "title":"Get Started, Part 2: Messaging",
 "description":"Learn about real-time messaging and it's properties.",
@@ -463,24 +449,17 @@ var pages = [
 }
 ,
 {
+"url":"/documentation/tutorials/open-source-whatsapp-clone/on-premise/",
+"title":"Backend for Open Source Android and iOS Messenger",
+"description":"Backend for Open Source Android and iOS Messenger",
+"keywords":"open, source, whatsapp, mesibo, ios, backend"
+}
+,
+{
 "url":"/documentation/on-premise/",
-"title":"Installing & Running Mesibo On-Premise Server",
-"description":"Mesibo On-Premise Server",
-"keywords":"open, source, contributing, overview, on-premise"
-}
-,
-{
-"url":"/documentation/install/linux-docker/docker-ee/oracle/",
-"title":"Get Docker EE for Oracle Linux",
-"description":"Instructions for installing Docker EE on Oracle Linux",
-"keywords":"requirements, installation, oracle, ol, rpm, install, uninstall, upgrade, update"
-}
-,
-{
-"url":"/documentation/get-started/other-features/",
-"title":"Get Started, Part 6: Deploy your app",
-"description":"Deploy your app to production using Docker CE or EE.",
-"keywords":"deploy, production, datacenter, cloud, aws, azure, provider, admin, enterprise"
+"title":"Installing & Running Mesibo On-Premise Platform",
+"description":"Installing & Running Mesibo On-Premise Platform",
+"keywords":"open, source, on-premise, messaging, chat, voice, video"
 }
 ,
 {
@@ -491,15 +470,15 @@ var pages = [
 }
 ,
 {
-"url":"/documentation/install/overview/",
-"title":"Overview of Docker editions",
-"description":"Learn about the two Docker editions available, Docker Enterprise Edition, and Docker Community Edition.",
-"keywords":"editions, ee, ce,"
+"url":"/documentation/faq/platform/",
+"title":"Frequently Asked Questions - Platform",
+"description":"Frequently Asked Questions",
+"keywords":"get started, setup, orientation, mesibo, chat, GDPR"
 }
 ,
 {
-"url":"/documentation/faq/platform/",
-"title":"Frequently Asked Questions - Platform",
+"url":"/documentation/faq/pricing/",
+"title":"FAQ - Pricing, customization and terms",
 "description":"Frequently Asked Questions",
 "keywords":"get started, setup, orientation, mesibo, chat, GDPR"
 }
@@ -512,24 +491,24 @@ var pages = [
 }
 ,
 {
-"url":"/documentation/faq/pricing/",
-"title":"FAQ - Pricing, customization and terms",
-"description":"Frequently Asked Questions",
-"keywords":"get started, setup, orientation, mesibo, chat, GDPR"
+"url":"/documentation/install/python/",
+"title":"Mesibo for Python - Real-time Messaging API for Python",
+"description":"Mesibo for Python - Real-time Messaging API for Python",
+"keywords":"mesibo, install, python, real-time"
 }
 ,
 {
-"url":"/pricing2/",
-"title":"Mesibo Pricing",
-"description":"Free to start and Pay as you grow. Pricing you just can't beat. flexible pricing for all.",
-"keywords":"mesibo pricing"
+"url":"/documentation/tutorials/first-app/python/",
+"title":"Write your First mesibo Enabled Application - Python",
+"description":"Write your First mesibo Enabled Application - Python",
+"keywords":"mesibo, android, ios, cpp, python"
 }
 ,
 {
-"url":"/pricingnew/",
-"title":"Mesibo Pricing",
-"description":"Free to start and Pay as you grow. Pricing you just can't beat. flexible pricing for all.",
-"keywords":"mesibo pricing"
+"url":"/documentation/install/raspberrypi/",
+"title":"Instructions for installing Mesibo on Raspberry Pi",
+"description":"Instructions for installing Mesibo on Raspberry Pi",
+"keywords":"mesibo, install, raspberry pi, raspberrypi"
 }
 ,
 {
@@ -544,13 +523,6 @@ var pages = [
 "title":"Reference documentation",
 "description":null,
 "keywords":null
-}
-,
-{
-"url":"/documentation/install/linux-docker/docker-ee/rhel/",
-"title":"Get Docker EE for Red Hat Enterprise Linux",
-"description":"Instructions for installing Docker EE on RHEL",
-"keywords":"requirements, installation, rhel, rpm, install, uninstall, upgrade, update"
 }
 ,
 {
@@ -610,10 +582,10 @@ var pages = [
 }
 ,
 {
-"url":"/documentation/install/linux-docker/docker-ee/suse/",
-"title":"Get Docker EE for SLES",
-"description":"Instructions for installing Docker EE on SLES",
-"keywords":"requirements, apt, installation, suse, opensuse, sles, rpm, install, uninstall, upgrade, update"
+"url":"/techcrunch-disrupt-sf-2019/",
+"title":"Meet Mesibo at TechCrunch Disrupt SF 2019",
+"description":"Meet Mesibo at TechCrunch Disrupt SF 2019",
+"keywords":"sales, mesibo"
 }
 ,
 {
@@ -624,17 +596,17 @@ var pages = [
 }
 ,
 {
-"url":"/technical-support/",
-"title":"Mesibo Technical Support",
-"description":"Reach out to our Sales team directly for immediate assistance with all sales and business development related inquiries.",
-"keywords":"sales, mesibo"
-}
-,
-{
 "url":"/documentation/support/technical-support/",
 "title":"Mesibo Technical Support",
 "description":"Mesibo Technical Support",
 "keywords":null
+}
+,
+{
+"url":"/technical-support/",
+"title":"Mesibo Technical Support",
+"description":"Reach out to our Sales team directly for immediate assistance with all sales and business development related inquiries.",
+"keywords":"sales, mesibo"
 }
 ,
 {
@@ -645,24 +617,17 @@ var pages = [
 }
 ,
 {
-"url":"/thank-you-subscribing-docker-weekly/",
-"title":"Thank you for subscribing to Docker weekly",
+"url":"/thank-you-subscribing-mesibo/",
+"title":"Thank you for subscribing to mesibo weekly",
 "description":"We've sent you a welcome email with links to previous newsletters.",
-"keywords":"Docker, documentation, manual, guide, reference, api"
+"keywords":"mesibo, documentation, manual, guide, reference, api"
 }
 ,
 {
-"url":"/documentation/install/linux-docker/docker-ee/ubuntu/",
-"title":"Get Docker EE for Ubuntu",
-"description":"Instructions for installing Docker EE on Ubuntu",
-"keywords":"requirements, apt, installation, ubuntu, install, uninstall, upgrade, update"
-}
-,
-{
-"url":"/documentation/install/linux-docker/docker-ce/ubuntu/",
-"title":"Get Docker CE for Ubuntu",
-"description":"Instructions for installing Docker CE on Ubuntu",
-"keywords":"requirements, apt, installation, ubuntu, install, uninstall, upgrade, update"
+"url":"/documentation/get-started/ui-modules/",
+"title":"Get Started, Part 6: Ready to Use UI Modules",
+"description":"Read to Use UI Modules from Mesibo",
+"keywords":"voice calls, video calls, webrtc, stun, turn, sdk"
 }
 ,
 {
@@ -673,10 +638,10 @@ var pages = [
 }
 ,
 {
-"url":"/documentation/get-started/ui-modules/",
-"title":"Get Started, Part 6: Ready to Use UI Modules",
-"description":"Read to Use UI Modules from Mesibo",
-"keywords":"voice calls, video calls, webrtc, stun, turn, sdk"
+"url":"/unsubscribe/",
+"title":"Unsubscribe",
+"description":"Unsubscribe",
+"keywords":null
 }
 ,
 {
@@ -689,7 +654,7 @@ var pages = [
 {
 "url":"/documentation/get-started/voice-video-calls/",
 "title":"Get Started, Part 4: Voice and Video Calling",
-"description":"Learn how to create clusters of Dockerized machines.",
+"description":"how to add voice and video calling in your app",
 "keywords":"voice calls, video calls, webrtc, stun, turn, sdk"
 }
 ,
@@ -698,13 +663,6 @@ var pages = [
 "title":"Write your First mesibo Enabled Application",
 "description":"Write your First mesibo Enabled Application",
 "keywords":"mesibo, android, ios"
-}
-,
-{
-"url":"/documentation/opensource/ways/",
-"title":"Other ways to contribute",
-"description":"How to support the Docker community, organize meetups, or become a mentor",
-"keywords":"meetups, community, mentoring"
 }
 ,
 {

@@ -1,11 +1,11 @@
 //rates
-var r_mau = 0.001;
+var r_mau = 0.01;
 var r_bw = 0.9;
 var r_db = 2.5;
-var b_minpay = 49;
+var b_minpay = 0;
 
 //quota
-var q_mau = 20000;
+var q_mau = 1000;
 var q_db = 1000000000;
 var q_bw = 5000000000;
 
@@ -27,6 +27,18 @@ function calculate_rate() {
 	var mau = document.getElementById("c_mau").value;
 	var msg = document.getElementById("c_msg").value;
 	var msgsize = document.getElementById("c_msgsize").value;
+	var onp = 0;
+	var onps = document.getElementsByName("c_onp");
+
+	for(var i = 0; i < onps.length; i++) {
+		if(onps[i].checked) {
+			onp = onps[i].value;
+			break;
+		}
+	}
+
+
+
 	if(mau == '' || msg == '' || msgsize == '') {
 		alert("Enter all values to get an estimate");
 		return false;
@@ -37,9 +49,11 @@ function calculate_rate() {
 		amount += parseFloat((mau-q_mau)*r_mau);
 	}
 
-	var bw = msg*msgsize;
-	if(bw > q_bw) {
-		amount += parseFloat(((bw-q_bw)/1000000000)*r_bw);
+	if('1' != onp) {
+		var bw = msg*msgsize;
+		if(bw > q_bw) {
+			amount += parseFloat(((bw-q_bw)/1000000000)*r_bw);
+		}
 	}
 
 	amount = toFixed(amount, 2);

@@ -10,7 +10,7 @@ redirect_from:
 The easiest way to install Mesibo Javascript SDK is to just include following in your code:
 
 {% highlight javascript %}
-<script type="text/javascript" src="https://mesibo.com/mesiboapi.js"></script>
+<script type="text/javascript" src="https://api.mesibo.com/mesibo.js"></script>
 {% endhighlight %}
 
 You can also use `async` and `defer` attributes inside `script` tag if requires.

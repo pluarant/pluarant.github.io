@@ -1,0 +1,596 @@
+<!-- Page generated 2019-09-24 22:04:48 +0530 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+			
+<!-- edit url temporarily disabled Mesibo -->
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/documentation/tutorials/first-app/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/mesibo-favicon.png">
+	<link rel="mesibo-favicon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
+	<!-- metadata -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-09-24T22:04:48+05:30"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesibo"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="Write your First mesibo Enabled Application - C/C++"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="Preparation Anatomy Android iOS Javascript C++ Python File Transfer UI Modules Voice and Video Calls In this part, we will create a simple real-time app using Mesibo C/C++ API. The..." />
+	<meta name="twitter:image:src" content="/images/docs@2x.png" />
+	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-09-24T22:04:48+05:30"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="mesibo, android, ios, cpp, c++, c">
+	<link rel="stylesheet" href="/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="/css/bootstrap.min.css" >
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css" >
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- SEO stuff -->
+	<title>Write your First mesibo Enabled Application - C/C++ | Mesibo Documentation</title>
+<meta property="og:title" content="Write your First mesibo Enabled Application - C/C++" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write your First mesibo Enabled Application - C/C++" />
+<meta property="og:description" content="Write your First mesibo Enabled Application - C/C++" />
+<link rel="canonical" href="/documentation/tutorials/first-app/cpp/" />
+<meta property="og:url" content="/documentation/tutorials/first-app/cpp/" />
+<meta property="og:site_name" content="Mesibo Documentation" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Write your First mesibo Enabled Application - C/C++","description":"Write your First mesibo Enabled Application - C/C++","url":"https://docs.docker.com/documentation/tutorials/first-app/cpp/"}</script>
+	<!-- END SEO STUFF -->
+	
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	</script>
+	<!-- Google Analytic Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-97488698-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytic Code --> 	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '559862854355634'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=559862854355634&ev=PageView
+		&noscript=1"/>
+		</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/mesibo-logo-white.png" alt="Mesibo Docs" title="Mesibo Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" style="visibility: hidden">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <!-- Yusuf
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mesibo latest (current)   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="/v1.0.0/">Mesibo v1.0.0</a></li>
+  </ul>
+</div>
+
+    </div>
+    -->
+</div>
+
+        </div>
+    </div>
+</nav>
+
+	</header>
+
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+							
+							<h1>Write your First mesibo Enabled Application - C/C++</h1>
+							 
+
+							 <span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    6 minutes
+  
+</span>
+
+							
+							
+							<ul class="pagination">
+  <li><a href="/documentation/tutorials/first-app/">Preparation</a></li>
+  <li><a href="/documentation/tutorials/first-app/anatomy/">Anatomy</a></li>
+  <li><a href="/documentation/tutorials/first-app/android/">Android</a></li>
+  <li><a href="/documentation/tutorials/first-app/ios/">iOS</a></li>
+  <li><a href="/documentation/tutorials/first-app/js/">Javascript</a></li>
+  <li class="active"><a href="/documentation/tutorials/first-app/cpp/">C++</a></li>
+  <li><a href="/documentation/tutorials/first-app/python/">Python</a></li>
+  <li><a href="/documentation/tutorials/first-app/file-transfer/">File Transfer</a></li>
+  <li><a href="/documentation/tutorials/first-app/ui-modules/">UI Modules</a></li>
+  <li><a href="/documentation/tutorials/first-app/voice-video-calls/">Voice and Video Calls</a></li>
+</ul>
+
+<p>In this part, we will create a simple real-time app using Mesibo C/C++ API. The Mesibo C/C++ SDK allows you to create real-time application on <code class="highlighter-rouge">Linux</code>, <code class="highlighter-rouge">Mac OS</code>, and <code class="highlighter-rouge">Raspberry Pi</code> platforms. Mesio C/C++ API is the low-level API which is extremely powerful, efficient, and light-weight.</p>
+
+<p>Mesibo C/C++ library is available as a shared library(libmesibo.so) which can be seamlessly integrated into any application by compile time linking or by loading it dynamically. You can even use it from other languages of your choice like Python, PHP, Matlab, etc. as all of these languages allow interfacing with C/C++ libraries.</p>
+
+<h3 id="supported-platforms">Supported Platforms</h3>
+<ul>
+  <li>CentOS / RedHat 7.x or above</li>
+  <li>Debian / Ubuntu</li>
+  <li>Mac OS</li>
+  <li>Raspberry Pi</li>
+</ul>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<ul>
+  <li>
+    <p>Installed the Mesibo Real-Time C/C++ Library. If not, refer installation instructions <a href="/documentation/install/linux/">here</a></p>
+  </li>
+  <li>
+    <p>Read the <a href="/documentation/tutorials/first-app/">Preparation Guide</a></p>
+  </li>
+  <li>
+    <p>Read the <a href="/documentation/tutorials/first-app/anatomy/">Anatomy of a Mesibo Application</a></p>
+  </li>
+  <li>
+    <p>Basic knowledge of writing and compiling C/C++ code</p>
+  </li>
+</ul>
+
+<h3 id="first-cc-app">First C/C++ App</h3>
+
+<p>Now let’s quickly start coding:</p>
+
+<ol>
+  <li>Open a code editor</li>
+  <li>include <code class="highlighter-rouge">mesibo.h</code> in your code</li>
+  <li>Create a class derived from the <code class="highlighter-rouge">CMesiboNotify</code> class to listen to all the message and call events.</li>
+  <li>Initialize mesibo using the user token and listener.</li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;mesibo.h&gt;
+</span></code></pre></div></div>
+
+<p>Below is Mesibo Event Listener</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">CNotify</span> <span class="o">:</span> <span class="k">public</span> <span class="n">CMesiboNotify</span> <span class="p">{</span>
+	<span class="k">public</span><span class="o">:</span>
+
+	<span class="c1">// You will receive the connection status here
+</span>	<span class="kt">int</span> <span class="n">on_status</span><span class="p">(</span><span class="kt">int</span> <span class="n">status</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">substatus</span><span class="p">,</span> <span class="kt">uint8_t</span> <span class="n">channel</span><span class="p">,</span>
+			<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">from</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">ERRORLOG</span><span class="p">(</span><span class="s">"===&gt; on_status: %u %u</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">status</span><span class="p">,</span> <span class="n">substatus</span><span class="p">);</span>
+		<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="p">}</span>
+
+
+	<span class="c1">// Invoked on receiving a new message or reading database messages
+</span>	<span class="c1">// You will receive messages here.
+</span>	<span class="kt">int</span> <span class="n">on_message</span><span class="p">(</span><span class="n">tMessageParams</span> <span class="o">*</span> <span class="n">p</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">from</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span>
+			<span class="kt">uint32_t</span> <span class="n">len</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">ERRORLOG</span><span class="p">(</span>
+				
+			<span class="s">"===&gt; test app message received: uid %u status %d channel %d type %u "</span>
+			<span class="s">"id %"</span> <span class="n">PRIx64</span> <span class="s">" refid %lu groupid %u, when %"</span> <span class="n">PRIu64</span>
+			<span class="s">" from %s, flag: %x len %d: %.*s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span>
+			<span class="n">p</span><span class="o">-&gt;</span><span class="n">uid</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">status</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">channel</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">refid</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">groupid</span><span class="p">,</span>
+			<span class="n">p</span><span class="o">-&gt;</span><span class="n">when</span><span class="p">,</span> <span class="n">from</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">flag</span><span class="p">,</span> <span class="n">len</span><span class="p">,</span> <span class="n">printlen</span><span class="p">,</span> <span class="n">data</span><span class="p">);</span>
+
+		<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+
+	<span class="p">}</span>
+
+	<span class="c1">// Invoked when the status of the outgoing or sent message is changed
+</span>	<span class="c1">// You will receive the status of sent messages here
+</span>	<span class="kt">int</span> <span class="n">on_messagestatus</span><span class="p">(</span><span class="n">tMessageParams</span> <span class="o">*</span> <span class="n">p</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">from</span><span class="p">,</span> <span class="kt">int</span> <span class="n">last</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">ERRORLOG</span><span class="p">(</span>
+			<span class="s">"===&gt; on_messagestatus status %u id %u when %u ms (%u %u) from: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span>
+			<span class="n">p</span><span class="o">-&gt;</span><span class="n">status</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">,</span> <span class="n">m_api</span><span class="o">-&gt;</span><span class="n">timestamp</span><span class="p">()</span> <span class="o">-</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">when</span><span class="p">,</span> <span class="n">m_api</span><span class="o">-&gt;</span><span class="n">timestamp</span><span class="p">(),</span>
+			<span class="n">p</span><span class="o">-&gt;</span><span class="n">when</span><span class="p">,</span> <span class="n">from</span> <span class="o">?</span> <span class="n">from</span> <span class="o">:</span> <span class="s">""</span><span class="p">);</span>
+		<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">};</span>
+
+</code></pre></div></div>
+
+<p>Following is the Mesibo Initialization code.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">mesibo_init</span><span class="p">(){</span>
+	
+	<span class="c1">// Create a Mesibo Instance
+</span>	<span class="n">IMesibo</span> <span class="o">*</span><span class="n">m_api</span> <span class="o">=</span> <span class="n">query_mesibo</span><span class="p">(</span><span class="s">"/tmp"</span><span class="p">);</span>  
+
+	<span class="c1">// Add Listener
+</span>	<span class="n">CNotify</span> <span class="o">*</span><span class="n">n</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CNotify</span><span class="p">();</span>
+	<span class="n">m_api</span><span class="o">-&gt;</span><span class="n">set_notify</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+
+	<span class="c1">// Set your AUTH_TOKEN obtained from the Mesibo Console
+</span>	<span class="n">m_api</span><span class="o">-&gt;</span><span class="n">set_credentials</span><span class="p">(</span><span class="s">"aea59d3713701704bed9fd5952d9419ba8c4209a335e664ef2g"</span><span class="p">);</span>
+
+	<span class="c1">// set the name of the database
+</span>	<span class="k">if</span> <span class="p">(</span><span class="mi">0</span> <span class="o">!=</span> <span class="n">m_api</span><span class="o">-&gt;</span><span class="n">set_database</span><span class="p">(</span><span class="s">"mesibo.db"</span><span class="p">))</span> <span class="p">{</span>
+		<span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"Database failed</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+		<span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="c1">// Set  APP_ID which you used to create AUTH_TOKEN 
+</span>	<span class="n">m_api</span><span class="o">-&gt;</span><span class="n">set_device</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">"MyDeviceId"</span><span class="p">,</span> <span class="n">appid</span><span class="p">,</span> <span class="s">"1.0.0"</span><span class="p">);</span>
+
+	<span class="c1">// start mesibo
+</span>	<span class="n">m_api</span><span class="o">-&gt;</span><span class="n">start</span><span class="p">();</span>
+
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>That’s it - you are now ready to receive your first real-time message.</p>
+
+<h2 id="compiling-and-running-sample-cc-application">Compiling and Running sample C/C++ application</h2>
+
+<p>It is recommended that you use a modern C/C++ compiler such as gcc (GCC 4.x or above) or clang. You can compile your code by linking the Mesibo Library as shown below:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ my_first_app.cpp <span class="nt">-o</span> myfirstapp <span class="nt">-lmesibo</span>
+</code></pre></div></div>
+
+<p>Run the output executable</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./myfirstapp
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p><code class="highlighter-rouge">on_status</code> should cycle through various status information. Finally, you should receive status=1 which indicates that your app is successfully connected to the mesibo real-time server and ready to send and receive real-time messages.</p>
+  </li>
+  <li>
+    <p>Since we do not have any other users right now, we will use <strong>mesibo console</strong> to send a test message. In a later section, we will learn how to send messages from the code itself.</p>
+  </li>
+</ol>
+
+<ul>
+  <li>
+    <p>Go to <strong>Console -&gt;Application-&gt;Users</strong>. You should see the user you have created.</p>
+  </li>
+  <li>
+    <p>Go to user details by clicking the <code class="highlighter-rouge">Edit</code> button. Scroll down, you will see a section to <code class="highlighter-rouge">Message User</code>
+Enter 1000 (or anything) in <code class="highlighter-rouge">From</code> field, check <code class="highlighter-rouge">Create This User</code> checkbox, type message and click on <code class="highlighter-rouge">Send</code>.</p>
+  </li>
+</ul>
+
+<ol>
+  <li>You will instantly receive this message in your console/terminal in <code class="highlighter-rouge">on_message</code> listener.</li>
+</ol>
+
+<h2 id="sending-messages">Sending Messages</h2>
+<p>In the previous section, we have used mesibo console to send a message. Now we will quickly learn how to send messages from the code itself. To send messages, we will use <code class="highlighter-rouge">message</code> real-time API for which we will need destination user, message-id and the message itself.</p>
+
+<p>Invoke the following function anywhere from your code to send a text message.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">send_text_message</span><span class="p">(</span><span class="n">IMesibo</span><span class="o">*</span> <span class="n">m_api</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">to</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">message</span><span class="p">){</span>
+
+	<span class="n">tMessageParams</span> <span class="n">p</span> <span class="o">=</span> <span class="p">{};</span>
+	<span class="n">p</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">m_api</span><span class="o">-&gt;</span><span class="n">random32</span><span class="p">();</span>
+	<span class="n">p</span><span class="p">.</span><span class="n">expiry</span> <span class="o">=</span> <span class="mi">3600</span><span class="p">;</span>
+
+	<span class="n">m_api</span><span class="o">-&gt;</span><span class="n">message</span><span class="p">(</span><span class="o">&amp;</span><span class="n">p</span><span class="p">,</span> <span class="n">to</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">message</span><span class="p">));</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>That’s it! Try it out by creating two users and send messages to each other by using the above function.</p>
+
+							<!-- tags -->
+							
+							
+							
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=android">android</a>, <a href="/documentation/glossary/?term=ios">ios</a>, <a href="/documentation/glossary/?term=cpp">cpp</a>, <a href="/documentation/glossary/?term=c++">c++</a>, <a href="/documentation/glossary/?term=c">c</a></span>
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/documentation/tutorials/first-app/cpp/";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+							<!-- removed for mesibo -->
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/documentation/tutorials/first-app/cpp/#supported-platforms" class="nomunge">Supported Platforms</a>
+    <ul>
+      <li><a href="/documentation/tutorials/first-app/cpp/#prerequisites" class="nomunge">Prerequisites</a></li>
+      <li><a href="/documentation/tutorials/first-app/cpp/#first-cc-app" class="nomunge">First C/C++ App</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/tutorials/first-app/cpp/#compiling-and-running-sample-cc-application" class="nomunge">Compiling and Running sample C/C++ application</a></li>
+  <li><a href="/documentation/tutorials/first-app/cpp/#sending-messages" class="nomunge">Sending Messages</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/">Home</a></li>
+                        <li><a href="https://mesibo.com/pricing/">Pricing</a></li>
+                        <li><a href="https://mesibo.com/use-cases/">Use Cases</a></li>
+                        <li><a href="https://mesibo.com/custom-solutions/">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/documentation/faq/">FAQ</a></li>
+                        <li><a href="https://mesibo.com/help/">Support</a></li>
+                        <li class="break"><a href="https://stackoverflow.com/questions/ask">Community</a></li>
+                        <li><a href="https://mesibo.com/documentation/">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+                        <li><a href="https://mesibo.com/career/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="https://mesibo.com/terms-of-use/#terms">Terms-of-Service</a></li>
+                        <li><a href="https://mesibo.com/terms-of-use/#privacy">Privacy Policy</a></li>
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright &copy; 2019 Mesibo. All rights reserved. </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a target="_blank" href="https://twitter.com/mesiboapi">Twitter</a></li>
+                    <li class="fa fa-youtube"><a target="_blank" href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ">Youtube</a></li>
+                    <li class="fa fa-google-plus"><a target="_blank" href="https://plus.google.com/b/107106343719610600541/107106343719610600541">Google</a></li>
+                    <li class="fa fa-github"><a target="_blank" href="https://github.com/mesibo/samples">Github</a></li>
+                    <li class="fa fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/mesibo">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a target="_blank" href="https://www.facebook.com/mesiboapi">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/documentation/tutorials/first-app/cpp/';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

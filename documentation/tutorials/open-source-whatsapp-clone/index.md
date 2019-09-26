@@ -51,7 +51,7 @@ This tutorial is broken into multiple parts. Instead of making you wait till the
 - In the next part, we will download the source code for Android App, build and run it.
 - We will then download the source code for iOS App, build and run it.
 - In the fourth part, we will learn about customizing both the apps.
-- In the fifth part, we will learn about push notifications for Android and iOS.
+- In the fifth and sixth part, we will learn about hosting entire platform on your own-premise.
 - Finally, we will discuss contributing and requesting support if you need any help.
 
 

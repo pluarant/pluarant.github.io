@@ -13,9 +13,9 @@ What are the webhook parameters?: |
 
   - secret - secret which you entered in the mesibo console
   - uid - User Id
-  - app - APP Id 
-  - src - sender
-  - dest - destination 
+  - aid - APP Id 
+  - from - sender
+  - to - destination 
   - e - logical OR combination of one of the following events
       - 0x10 - User is Online
       - 0x20 - User went offline
