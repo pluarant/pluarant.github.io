@@ -33,14 +33,14 @@ banner: true
 <div class="use-cases pv-30 ph-20 hc-item-box bordered hc-shadow text-center hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
 <h3>Group Chat</h3>
 <div class="separator clearfix"></div>
-<p>Make your app or web a global platform for interacting with like minded or closely related. Integrate mesibo’s group chat API and start texting and messaging with one to many.</p>
+<p>Make your app or web a global platform for interacting with like-minded or closely related people. Integrate mesibo’s group chat APIs and start texting and messaging, one to many.</p>
 </div>
 </div>
 <div class="col-lg-4">
 <div class="use-cases pv-30 ph-20 hc-item-box bordered hc-shadow text-center hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
 <h3>Voice & Video Call</h3>
 <div class="separator clearfix"></div>
-<p>Use mesibo’s voice and video APIs to enable users to make live audio and video conversation.</p>
+<p>Use mesibo’s voice and video APIs to enable users to make live audio and video conversations.</p>
 </div>
 </div>
 </div>
@@ -57,7 +57,7 @@ banner: true
 <div class="col-lg-8">
 <h2 class="text-center mt-4">Enterprise & Team Communication </h2>
 <div class="separator"></div>
-<p class="large text-center">Branded communication apps for your small-to-large enterprises and team with your own enterprise authentication.</p>
+<p class="large text-center">Branded communication apps for your small-to-large enterprises team using your own enterprise authentication.</p>
 </div>
 </div>
 <div class="row">
@@ -80,7 +80,7 @@ banner: true
 <div class="use-cases pv-30 ph-20 hc-item-box bordered hc-shadow text-center hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
 <h3>Use App Stores</h3>
 <div class="separator clearfix"></div>
-<p>Unlike other apps like Slack where you have to use their app, mesibo gives your own app which you can even upload to various app stores like Apple, Google, Amazon for your employees to download in the most obvious manner.</p>
+<p>Unlike other apps like Slack where you have to use their app, mesibo gives you your own app which you can even upload to various app stores like Apple, Google, Amazon for your employees to download in the most user-friendly manner.</p>
 </div>
 </div>
 </div>
@@ -106,7 +106,7 @@ banner: true
 <!-- <span class="icon default-bg circle"><i class="fa fa-diamond"></i></span> -->
 <h3>WebRTC Signalling</h3>
 <div class="separator clearfix"></div>
-<p>WebRTC is an amazing way to add voice and video to your app. However to setup a WebRTC session, it requires signalling channel to exchange session control messages (SDPs). mesibo's low latency, reliable messaging provides an ideal signalling platform for WebRTC.</p>
+<p>WebRTC is an amazing way to add voice and video to your app. However to setup a WebRTC session, it requires a signaling channel to exchange session control messages (SDPs). mesibo's low latency, reliable messaging provides an ideal signaling platform for WebRTC.</p>
 </div>
 </div>
 <div class="col-lg-6">
@@ -139,7 +139,7 @@ banner: true
 <!-- <span class="icon default-bg circle"><i class="fa fa-diamond"></i></span> -->
 <h3>Connect your data source in real-time</h3>
 <div class="separator clearfix"></div>
-<p>Machine learning and artificial intelligence are transforming almost every field; customer support, predictions, search, etc.., and open solutions from Google, Amazon, Microsoft makes it even easier for apps to integrate AI in their own system. Most AI services are meaningful when they process real-time input data and send processed output data in real-time. This is where mesibo helps, by delivering input data from your users to your AI backend and back with ultra low latency and guaranteed delivery.</p>
+<p>Machine learning and artificial intelligence are transforming almost every field; customer support, predictions, search, etc.., and open solutions from Google, Amazon, Microsoft make it even easier for apps to integrate AI in their own system. Most AI services are meaningful when they process real-time input data and send processed output data in real-time. This is where mesibo helps, by delivering input data from your users to your AI backend and back with ultra-low latency and guaranteed delivery.</p>
 </div>
 </div>
 </div>
@@ -156,14 +156,14 @@ banner: true
 <div class="col-lg-8">
 <h2 class="text-center mt-4">Sales & Customer support</h2>
 <div class="separator"></div>
-<p class="large text-center">Increase the team productivity and customer satisfaction</p>
+<p class="large text-center">Increase team productivity and customer satisfaction</p>
 </div>
 </div>
 <div class="row">
 <div class="col-lg-6">
 <div class="use-cases pv-30 ph-20 hc-item-box bordered hc-shadow text-center hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
 <!-- <span class="icon default-bg circle"><i class="fa fa-diamond"></i></span> -->
-<h3>Pre and Post Sales Support</h3>
+<h3>Pre &amp; Post Sales Support</h3>
 <div class="separator clearfix"></div>
 <p>It was found that live chat has the highest satisfaction levels (73%) compared to any other customer service channel, 63% for email and 44% of the phone. Adding it to your website and app will certainly make your buyer feel more confident in pre-sales as well as post-sales support.</p>
 </div>
@@ -172,7 +172,7 @@ banner: true
 <div class="use-cases pv-30 ph-20 hc-item-box bordered hc-shadow text-center hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
 <h3>Purchase Assistance</h3>
 <div class="separator clearfix"></div>
-<p>Help with your online buyers in making informed decisions by live chat, voice or video interactions. It was also found effective to offer live chat proactively if customers linger on the page.</p>
+<p>Help your online buyers in making informed decisions by live chat, voice or video interactions. It was also found effective to offer live chat proactively if customers linger on the page.</p>
 </div>
 </div>
 </div>
@@ -198,7 +198,7 @@ banner: true
 <!-- <span class="icon default-bg circle"><i class="fa fa-diamond"></i></span> -->
 <h3>Paired/Associative Chat</h3>
 <div class="separator clearfix"></div>
-<p>Allowing communication only if both the parties agree to chat and continue to agree.</p>
+<p>Allowing communication only if both the parties agree to chat.</p>
 </div>
 </div>
 <div class="col-lg-4">
@@ -212,7 +212,7 @@ banner: true
 <div class="use-cases pv-30 ph-20 hc-item-box bordered hc-shadow text-center hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
 <h3>Location Based Matching</h3>
 <div class="separator clearfix"></div>
-<p>Let the user find the other one based on location proximity.</p>
+<p>Let a user find the other user based on location proximity.</p>
 </div>
 </div>
 </div>
@@ -271,14 +271,14 @@ banner: true
 <!-- <span class="icon default-bg circle"><i class="fa fa-diamond"></i></span> -->
 <h3>Player Chat</h3>
 <div class="separator clearfix"></div>
-<p>Add more excitement and make your virtual game a live playground for players. Allow real-time chat among one on one or one to many players to feel the thrill. </p>
+<p>Add more excitement by making your virtual game a live playground for players. Allow real-time chat between one-on-one or one-to-many players to feel the thrill. </p>
 </div>
 </div>
 <div class="col-lg-6">
 <div class="use-cases pv-30 ph-20 hc-item-box bordered hc-shadow text-center hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
 <h3>Multiplayer</h3>
 <div class="separator clearfix"></div>
-<p>Enable multiplayer capabilities in your games by sending and receiving player action in real-time, for example, shooting, chess moves, coordinates etc.</p>
+<p>Enable multiplayer capabilities in your games by sending and receiving player action in real-time, for example, shooting, chess moves, coordinates, etc.</p>
 </div>
 </div>
 </div>
@@ -304,7 +304,7 @@ banner: true
 <!-- <span class="icon default-bg circle"><i class="fa fa-diamond"></i></span> -->
 <h3>Virtual Learning</h3>
 <div class="separator clearfix"></div>
-<p>Use mesibo’s API to transmit multimedia class content in real-time to students having mobiles, tablets, computers etc.</p>
+<p>Use mesibo’s API to transmit multimedia class content in real-time to students having mobiles, tablets, computers, etc.</p>
 </div>
 </div>
 <div class="col-lg-4">
@@ -319,7 +319,7 @@ banner: true
 <!-- <span class="icon default-bg circle"><i class="fa fa-diamond"></i></span> -->
 <h3>Recorded Broadcasting</h3>
 <div class="separator clearfix"></div>
-<p>Not all students learn at the same pace or having same timeslots. Allow your students to access recorded sessions from whatever device they are using .</p>
+<p>Not all students learn at the same pace or are available at the same timeslot. Allow your students to access recorded sessions from whatever device they are using at their own pace.</p>
 </div>
 </div>
 </div>
@@ -345,7 +345,7 @@ banner: true
 <!-- <span class="icon default-bg circle"><i class="fa fa-diamond"></i></span> -->
 <h3>Across the World</h3>
 <div class="separator clearfix"></div>
-<p>Provide a platform for doctors and patient to interact face-to-face across the world using mesibo's chat, voice and video API. </p>
+<p>Provide a platform for doctors and patients to interact face-to-face across the globe using mesibo's chat, voice, and video API. </p>
 </div>
 </div>
 <div class="col-lg-4">
@@ -377,7 +377,8 @@ banner: true
 <div class="col-lg-8">
 <h2 class="text-center mt-4">Banking & Financial Services </h2>
 <div class="separator"></div>
-<p class="large text-center">Provide a highly secured environment for financial transactions</p>
+<p class="large text-center">Provide a highly secured environment for financial transactions. With on-premise installation, you get full control of your user data and complete security of for every user interaction.
+</p>
 </div>
 </div>
 <div class="row">
@@ -393,7 +394,7 @@ banner: true
 <div class="use-cases pv-30 ph-20 hc-item-box bordered hc-shadow text-center hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
 <h3>Transaction Notifications</h3>
 <div class="separator clearfix"></div>
-<p>Keep your customers safe. Update your customers with the real-time transaction alert as and when they transact.</p>
+<p>Keep your customers safe. Update your customers with real-time transaction alerts, as and when they transact.</p>
 </div>
 </div>
 
@@ -434,7 +435,7 @@ banner: true
 <div class="use-cases pv-30 ph-20 hc-item-box bordered hc-shadow text-center hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="150">
 <h3>Personalised Shopping</h3>
 <div class="separator clearfix"></div>
-<p>Help with your online buyers in making informed decisions by live chat, voice or video interactions. It was also found effective to offer live chat proactively if customers linger on the page.</p>
+<p>Help your online buyers in making informed decisions through live chat, voice or video interactions. It was also found effective to offer live chat proactively if customers linger on the page.</p>
 </div>
 </div>
 </div>
@@ -500,7 +501,7 @@ banner: true
 <!-- <span class="icon default-bg circle"><i class="fa fa-diamond"></i></span> -->
 <h3>Live Matches</h3>
 <div class="separator clearfix"></div>
-<p>Broadcast live streaming of the sport events to keep your users engaged.</p>
+<p>Broadcast live streaming of sport events to keep your users engaged.</p>
 </div>
 </div>
 <div class="col-lg-4">

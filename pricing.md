@@ -21,7 +21,7 @@ banner: true
 </div>
 <div class="row">
 <p>
-Mesibo offers you a <strong>pay as you go pricing</strong> for both its On-Premise and Cloud offerings. That means you only pay for the services you consume, and once you stop using them, there are no charges or termination fees. Mesibo pricing is easy to understand and completely transparent. If you choose to go with our <strong>On-premise offerings</strong>, you only pay for the number of active users per month. There are absolutely <strong>NO OTHER CHARGES</strong> - no monthly commitment, no bandwidth charges, no storage charges, or any other hidden charges. Our <strong>Cloud offering</strong> charges are also the same. However, you additionally pay for the bandwidth and the storage you use on our cloud. Both the plans come with generous free limits for you to get started - <strong>you only pay if you consume beyond your free tier limits</strong>.
+Mesibo offers you <strong>pay as you go pricing</strong> for both its On-Premise and Cloud offerings. That means you only pay for the services you consume, and once you stop using them, there are no charges or termination fees. Mesibo pricing is easy to understand and completely transparent. If you choose to go with our <strong>On-premise offerings</strong>, you only pay for the number of active users per month. There are absolutely <strong>NO OTHER CHARGES</strong> - no monthly commitment, no bandwidth charges, no storage charges, or any other hidden charges. Our <strong>Cloud offering</strong> charges are also the same. However, you additionally pay for the bandwidth and the storage you use on our cloud. Both the plans come with generous free limits for you to get started - <strong>you only pay if you consume beyond your free tier limits</strong>.
 </p>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
@@ -125,8 +125,8 @@ Mesibo offers you a <strong>pay as you go pricing</strong> for both its On-Premi
 <ul class="list-icons">
 <li><i class="fa fa-server"></i> High-Grade HA Servers</li>
 <li><i class="fa fa-globe"></i> Geographical Redundancy</li>
-<li><i class="fa fa-window-restore"></i> Cross Platform Sync</li>
-<li><i class="fa fa-laptop"></i> Multi Device Sync</li>
+<li><i class="fa fa-window-restore"></i> Cross-Platform Sync</li>
+<li><i class="fa fa-laptop"></i> Multi-Device Sync</li>
 <li><i class="fa fa-reddit-alien"></i> Bot Interface</li>
 <li><i class="fa fa-bullhorn"></i> Broadcast Message / Audio / Video</li>
 <li><i class="fa fa-remove"></i> Block User in Group/Chat Room</li>
@@ -236,32 +236,32 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 <h4><strong>PAYG Credits</strong></h4>
 <p >You can add PAYG credit balance as low as US$50 in your account whenever you need to. Your usage charges will be deducted from the credit balance at the end of a monthly billing cycle and the remaining credit will be carried forward for the next billing cycle. You can check your credit balance in ‘My Account’ section of the <a href="/console/#/login" target="_blank">console</a>.</p>
 
-<h4><strong>Limits, Quotas and Constraints</strong></h4>
+<h4><strong>Limits, Quotas, and Constraints</strong></h4>
 <p >mesibo offers free quota for both free and PAYG subscription. If you exceed these limits, add credit to your account to prevent any interruption of service. We calculate quota as defined below:</p>
 <ul>
 <li class="margin-bottom-10"><strong>MAU</strong>
-<p >MAU is counted when a user connects to mesibo server (cloud or on-premise) within a monthly billing cycle. To further clarify, it will be only counted as one when a unique user connects to mesibo server multiple times within a monthly billing cycle.</p>
+<p >MAU is counted when a user connects to a mesibo server (cloud or on-premise) within a monthly billing cycle. To further clarify, it will be only counted as one when a unique user connects to a mesibo server multiple times within a monthly billing cycle.</p>
 </li>
 <li class="margin-bottom-10"><strong>Concurrent Users (or peak connections or simultaneous connection)</strong>
-<p >There is no-limit on concurrent users in on-premise deployment. In Cloud deployment, the concurrent user limit will be 10% of the MAU. In our experience, simultaneous users are generally less than 5% of MAU and hence you are unlikely to cross that limit. However, in case you cross the 10% limit, it will be compensated by billing you for  MAU = ( concurrent users X 10).</p>
+<p >There is no limit on concurrent users in an on-premise deployment. In Cloud deployment, the concurrent user limit will be 10% of the MAU. In our experience, simultaneous users are generally less than 5% of MAU and hence you are unlikely to cross that limit. However, in case you cross the 10% limit, it will be compensated by billing you for  MAU = ( concurrent users X 10).</p>
 </li>
 
 <li class="margin-bottom-10"><strong>Messages</strong>
-<p class="margin-bottom-10">A message is the unit of data which is sent between two users or multiple users in the case of a group message. Messages are charged by the size of messages (refer below).</p>
+<p class="margin-bottom-10">A message is the unit of data that is sent between two users or multiple users in the case of a group message. Messages are charged by the size of messages (refer below).</p>
 <ul>
 <li class="margin-bottom-10"><strong>Message Delivery and Storage</strong>
-<p >mesibo uses cut-through switching to deliver your messages in real-time with minimum latency. However, if the destination is not online, mesibo stores the messages till the user is online. If you decide not to save the messages in database, you can do so by setting a flag while sending messages using <a href="/documentation/api/real-time-api/" target="_blank">client-side API</a>.</p>
+<p >mesibo uses cut-through switching to deliver your messages in real-time with minimum latency. However, if the destination is not online, mesibo stores the messages till the user is online. If you decide not to save the messages in the database, you can do so by setting a flag while sending messages using <a href="/documentation/api/real-time-api/" target="_blank">client-side API</a>.</p>
 </li>
 <li class="margin-bottom-10"><strong>Message Retention</strong>
-<p >mesibo offers unlimited message retention period, only limited by the storage quota and usage. You can anytime clear storage from the mesibo console or by using <a href="/documentation/api/server-side-api/" target="_blank">server-side API</a>.</p>
+<p >mesibo offers an unlimited message retention period, only limited by the storage quota and usage. You can anytime clear storage from the mesibo console or by using <a href="/documentation/api/server-side-api/" target="_blank">server-side API</a>.</p>
 </li>
 <li class="margin-bottom-10"><strong>Message Charges</strong>
-<p >Instead of message count, mesibo charges for offline messages stored in the database, and the total outbound network traffic at the session layer (layer 5) of the OSI model to deliver messages to your connected/online users. The network traffic includes payload, as well as protocol & encryption overheads (refer below). Note that, mesibo absorbs traffic due to TCP/IP overheads and does not charge you for that. You can view statistic of your traffic and storage usage in mesibo <a href="/console/#/login" target="_blank">console</a>.</p>
+<p >Instead of message count, mesibo charges for offline messages stored in the database, and the total outbound network traffic at the session layer (layer 5) of the OSI model to deliver messages to your connected/online users. The network traffic includes payload, as well as protocol & encryption overheads (refer below). Note that, mesibo absorbs traffic due to TCP/IP overheads and does not charge you for that. You can view statistics of your traffic and storage usage in mesibo <a href="/console/#/login" target="_blank">console</a>.</p>
 </li>
 <li class="margin-bottom-10"><strong>Protocol and Encryption overheads</strong>
 <ul class="margin-top-10 margin-bottom-10">
 <li class="margin-bottom-10"><strong>Protocol overhead:</strong>
-<p >Some additional traffic between the server and clients is necessary to establish and maintain a connection. Depending on the choice of API (client or server-side), this traffic might include: mesibo protocol overhead, or HTTPS header overhead. Each time a connection is established, this overhead, combined with any SSL encryption overhead, contributes to the connection costs. This shouldn't contribute a lot to overall traffic, however it can be a substantial if your client connects frequently for the short duration.</p>
+<p >Some additional traffic between the server and clients is necessary to establish and maintain a connection. Depending on the choice of API (client or server-side), this traffic might include mesibo protocol overhead, or HTTPS header overhead. Each time a connection is established, this overhead, combined with any SSL encryption overhead, contributes to the connection costs. This shouldn't contribute a lot to overall traffic, however it can be a substantial if your client connects frequently for the short duration.</p>
 </li>
 
 <li class="margin-bottom-10"><strong>SSL encryption overhead:</strong>
@@ -273,14 +273,14 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 </li>
 
 <li class="margin-bottom-10"><strong>Connection</strong>
-<p class="margin-bottom-10">A connection is counted every time when your client connects to mesibo server. Your client may connect multiple times in a day because of the way mobile operating systems work. When the screen goes OFF on your mobile device, Android and iOS usually move apps to sleep state within some duration and then disconnect all the network connections to conserve system resources and battery life. Hence, apps will need to reconnect when they come out of sleep state. While mesibo client API takes care of reconnection and your app doesn't have to do anything extra, it is worth knowing why it happens and protocol/encryption overheads associated with it.</p>
+<p class="margin-bottom-10">A connection is counted every time when your client connects to mesibo server. Your client may connect multiple times in a day because of the way mobile operating systems work. When the screen goes OFF on your mobile device, Android and iOS usually move apps to sleep state within some duration and then disconnect all the network connections to conserve system resources and battery life. Hence, apps will need to reconnect when they come out of the sleep state. While mesibo client API takes care of reconnection and your app doesn't have to do anything extra, it is worth knowing why it happens and protocol/encryption overheads associated with it.</p>
 </li>
 
 <li class="margin-bottom-10"><strong>Audio/Video calling</strong>
 <p >Audio and Video calling minutes are unlimited in both free and paid plans. Typically, 5 to 8 messages are exchanged to setup or re-connect a voice or a video call. In addition to that, minimal messages are exchanged from each end every few seconds to keep call alive, exchange quality and control information etc. The bandwidth consumed by those messages will be counted in your billing (approx ~50 Kbytes). There are no other charges for the duration of the call or the bandwidth unless you use our TURN (relay) service.</p>
 </li>
 <li class="margin-bottom-10"><strong>File Transfer, Cloud storage & File size</strong>
-<p >mesibo allows you to use your own file servers or cloud services like Amazon AWS, Amazon S3, Google Cloud Storage, Microsoft Azure etc. for file storage. Hence, mesibo has no restriction on file size. You can send files of unlimited size using mesibo. Also, unlike other services which charge premium for secure/encrypted file transfer, mesibo allows you to encrypt each and every message without any additional charges.</p>
+<p >mesibo allows you to use your own file servers or cloud services like Amazon AWS, Amazon S3, Google Cloud Storage, Microsoft Azure, etc. for file storage. Hence, mesibo has no restriction on file size. You can send files of unlimited size using mesibo. Also, unlike other services which charge premium for secure/encrypted file transfer, mesibo allows you to encrypt each and every message without any additional charges.</p>
 </li>
 <li class="margin-bottom-10"><strong>TURN (relay)</strong>
 <p >You can add TURN (relay) to add reliability to calls by assisting some users that are behind badly behaving OR symmetric firewalls (roughly less than 5% of users). </p>
@@ -331,7 +331,7 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 <div class="separator-2"></div>
 
 <h4>Q: What is Monthly Active Users?</h4>
-<p>Monthly Active User (MAU) is a key performance indicator (KPI) often used by mobile apps, online games and social networking sites. MAU represents the unique monthly active users for a monthly billing cycle. MAU is counted when a user connects to mesibo server within monthly billing cycle. To further clarify, it will be only counted as one when a unique user connects to mesibo server multiple times during the monthly billing cycle. A connection is required to perform any types of communication (sending and receiving messages, calls etc) between users and servers.</p>
+<p>Monthly Active User (MAU) is a key performance indicator (KPI) often used by mobile apps, online games and social networking sites. MAU represents the unique monthly active users for a monthly billing cycle. MAU is counted when a user connects to mesibo server within monthly billing cycle. To further clarify, it will be only counted as one active user when a unique user connects to mesibo server multiple times during the monthly billing cycle. A connection is required to perform any types of communication (sending and receiving messages, calls etc) between users and servers.</p>
 
 
 <h4>Q: What is Concurrent Users (peak connections/simultaneous connection)?</h4>
@@ -340,26 +340,26 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 
 
 <h4>Q: What is Message Rate Limit?</h4>
-<p>Message rate limit (throttling) is refer to as total number of messages that can be send by all your users in any given second. Typically, a message rate/second for an application like WhatsApp is 0.05% of MAU (based on public stats). mesibo assigned much higher rate limit than that so you should encounter rate limit only in rare circumstances.</p>
+<p>Message rate limit (throttling) is referredr to as the total number of messages that can be sent by all your users in any given second. Typically, a message rate/second for an application like WhatsApp is 0.05% of MAU (based on public stats). mesibo has assigned much higher rate limit than that so you should encounter rate limit only in rare circumstances.</p>
 
 
-<h4>Q: Does limit applies to Voice and Video calls?</h4>
-<p>Typically  5 to 8 messages are exchanged to setup or re-connect a voice or video call. In addition to that, minimal messages are exchanged from each end every few seconds to keep call alive, exchange quality and control information etc. All these messages are subject to total messages limit and rate limits.</p>
+<h4>Q: Does limit apply to Voice and Video calls?</h4>
+<p>Typically  5 to 8 messages are exchanged to setup or re-connect a voice or video call. In addition to that, minimal messages are exchanged from each end every few seconds to keep call alive, exchange quality and control information, etc. All these messages are subject to total messages limit and rate limits.</p>
 
 
 <h4>Q: Does Voice and Video calls quality differs in FREE and PAYG Plan?</h4>
-<p>Absolutely not - quality remains the same whether you are in free or a premium plan.</p>
-<p>However, you can add your own TURN servers in PAYG plans. TURN servers adds reliability to calls by assisting some users that are behind badly behaving or symmetric firewalls (roughly 5% of users).</p>
+<p>Absolutely not - quality remains the same whether you are in free or PAYG plan.</p>
+<p>However, you can add your own TURN servers in PAYG plans. TURN servers add reliability to calls by assisting some users that are behind badly behaving or symmetric firewalls (roughly 5% of users).</p>
 
 
-<h4>Q: Are there any features difference between the PAYG and FREE plan?</h4>
+<h4>Q: Are there any feature differences between the PAYG and FREE plan?</h4>
 <p>No, all the features are available in all the plans. Only difference is the capacity.</p>
 
 <h4>Q: What happens if my apps exceed the limits of FREE plan or credits in PAYG plan?</h4>
 <p>We usually do not throttle your app immediately, unless in extreme situations. We will send you an email and also inform your backend using <a href="/documentation/faq/webhooks-and-push-notifications/" target="_blank">webhook</a> when your app usage exceeds 50% and 75% of the free limits in the free plan OR 50% and 75% of available credits in PAYG plan. We will throttle or temporarily disable your app only if you do not take any action after these notifications.</p>
 
 <h4>Q: How do I know, how much I am spending?</h4>
-<p>mesibo console is the best way to keep a tab on your usage and charges. mesibo console is updated at regular interval with the usage and corresponding charges.</p>
+<p>mesibo console is the best way to keep a tab on your usage and charges. mesibo console is updated at regular intervals with the usage and corresponding charges.</p>
 
 
 </div>

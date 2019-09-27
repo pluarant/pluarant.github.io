@@ -15,23 +15,23 @@ Over 79% of all modern apps need some form of communication - whether you are bu
 
 
 {% capture content_rt %}
-Using Mesibo's Messaging, Video and Voice APIs is as simple as to select the destination and send messages or make calls. The destination could be a user or a group. The status of each sent messages is notified in the real-time; for example, sent, delivered, read, call ringing, answered etc. Mesibo also lets you define host of other parameters as required by the app such as time-to-live, the expiry of the message, retention time, delivery type etc. Mesibo supports many platforms (refer below) and APIs are common across the platforms which makes it easier to write cross-platform code using Mesibo APIs. 
+Using Mesibo's Messaging, Video and Voice APIs is as simple as selecting the destination and sending messages or making calls. The destination could be a user or a group. The status of each sent message is notified in real-time; e.g., Sent, Delivered, Read, Call ringing, Answered, etc. Mesibo also lets you define a host of other parameters as required by the app such as time-to-live, expiry of the message, retention time, delivery type, etc. Mesibo supports many platforms (refer below) and APIs are common across various platforms which makes it easier to write cross-platform code using Mesibo APIs.
 {% endcapture %}
 
 {% capture content_chatbot %}
-Chatbots are rapidly becoming a go-to technology for almost all the industries like telemedicine, banking, transport, airlines, online orders, education etc. One end of the chatbots is Messaging and another end is Artificial Intelligence (AI), Natural Language Processing (NLP), Machine learning platforms. Mesibo provides you both, the real-time Messaging interface to implement rich front end and high-performance C++ and Python libraries interface your front-end with various scientific computing and machine learning systems on your backend like TensorFlow, Matlab, Octave, NumPy, DialogFlow etc to create powerful chatbots.
+Chatbots are rapidly becoming a go-to technology for almost all industries like telemedicine, banking, transport, airlines, online orders, education, etc. One end of the chatbots is Messaging, and the other end is Artificial Intelligence (AI), Natural Language Processing (NLP), Machine learning platforms. Mesibo provides you both, real-time Messaging interface to implement rich front-end and high-performance C++ and Python libraries. This interfaces your front-end with various scientific computing and machine learning systems and on your backend like TensorFlow, Matlab, Octave, NumPy, DialogFlow etc. to create powerful chatbots.
 {% endcapture %}
 
 {% capture content_free %}
-Mesibo is completely free to start - not only messaging, but even voice and video calls. You can use all the Mesibo features absolutely free irrespective of free or commercial usage OR the size of enterprise using it. You only pay if you cross Free Tier Limits. Refer to <a href="/pricing/">Pricing</a> page for more details.
+Mesibo is completely free to start - not only messaging but voice and video calls too. You can use all the Mesibo features absolutely free, irrespective of free or commercial usage OR the size of the enterprise using it. You only pay if you cross Free Tier Limits. Refer to <a href="/pricing/">Pricing</a> page for more details.
 {% endcapture %}
 
 {% capture content_wl %}
-Mesibo messaging &amp; calls API and UI modules are designed to be completely customizable and white-labeled. You can completely brand your solution such that no-one may ever know that you are using Mesibo. For example, some of our customers are using Mesibo as their enterprise team communication tool replacing solutions like Slack. We have even released the source code on GitHub which expedites your development and makes it easy for you to white-label the entire solution.
+Mesibo messaging &amp; calls API and UI modules are designed to be completely customizable and white-labeled. You can completely brand your solution such that no-one may ever know that you are using Mesibo. e.g., some of our customers are using Mesibo as their enterprise team communication tool replacing solutions like Slack. We have even released the source code on GitHub, which expedites your development and makes it easy for you to white-label the entire solution.
 {% endcapture %}
 
 {% capture content_carrier %}
-Mesibo does not require any backend infrastructure. We offer state-of-the-art distributed cloud with M+N carrier-grade redundancy. Mesibo cloud is built on a highly resilient globally distributed platform spread across three core sites, Asia, Europe, and the United States. All the core sites run hot-swappable servers with enterprise-grade Linux on latest Intel Xeon processors, to perform a variety of tasks like message routing, call processing, relay agents.  Mesibo's highly redundant design has all the servers in M+N redundancy. This allows the cloud to redistributes traffic if one or more server fails.  In the unlikely event of a failure at the core site, platform's geographical redundancy design routes traffic through the other core ensuring reliable service to all our user.
+Although Mesibo offers state-of-the-art cloud platform, some of our clients who are extremely sensitive about their user data, and would like to host the Mesibo platform and database on their own premises/data centers. There are other reasons too which are for security, regulatory and/or data sovereignty reasons - banks and hospitals are two primary examples of such customers. Mesibo offers on-premise installation for all such customers to meet these stringent needs.
 {% endcapture %}
 
 {% capture content_premise %}
@@ -39,19 +39,19 @@ Although Mesibo offers state-of-the-art cloud platform, some of our clients have
 {% endcapture %}
 
 {% capture content_webrtc %}
-Mesibo is essentially a powerful communication platform that allows you to send any arbitrary binary/raw data to one or more recipients in real-time. For example, a Uber rider sending a cab request is a real-time message sent to a group of cab drivers. One of the cab driver accepting the cab request is also a real-time message back to the rider who requested the cab. Although it's invisible to riders or driver, what flows inside is a set of real-time messages. WebRTC endpoints sending SDP to each other is another example of what all you can do with Mesibo.
+Mesibo is essentially a powerful communication platform that allows you to send any arbitrary binary/raw data to one or more recipients in real-time. e.g., an Uber rider sending a cab request is a real-time message sent to a group of cab drivers. One of the cab drivers accepting the cab request is also a real-time message back to the rider who requested the cab. Although, it's invisible to riders or drivers, what flows inside, is a set of real-time messages. WebRTC endpoints sending SDP to each other is another example of what all you can do with Mesibo.
 {% endcapture %}
 
 {% capture content_scale %}
-Mesibo is mostly written in C++ and rest in C (Linux Kernel part). Unlike traditional servers, Mesibo uses two sophisticated designs - `in-kernel` packet switching and `lockless` contention free architecture. The state-of-the-art in-kernel packet switching offers much higher throughput compared to userspace switching on the same hardware. Also, Mesibo's almost lockless design ensures that the CPU is never locked. This enabled Mesibo to be massively scalable - currently hosting over 120+ million online users from various apps using Mesibo.
+Mesibo is mostly written in C++ and rest in C (Linux Kernel part). Unlike traditional servers, Mesibo uses two sophisticated designs - `in-kernel` packet switching and `lockless` contention-free architecture. The state-of-the-art in-kernel packet switching offers much higher throughput compared to userspace switching on the same hardware. Also, Mesibo's almost lockless design ensures that the CPU is never locked. This enables Mesibo to be massively scalable. 
 {% endcapture %}
 
 {% capture content_security %}
-Mesibo messages and calls are end-to-end encrypted. Mesibo uses various Transport Layer Security (TLS) encryptions like Curve25519, AES-256 to secure the communication. mesibo also provides API for additional custom end-to-end encryption and key exchange on top of the default encryption which allows changing encryption key for every message exchange and even mesibo servers cannot read those communications. You can even add your own encryption and key exchange mechanism, for example, Double Ratchet Algorithm.
+Mesibo messages and calls are end-to-end encrypted. Mesibo uses various Transport Layer Security (TLS) encryptions like Curve25519, AES-256 to secure the communication. mesibo also provides APIs for additional custom end-to-end encryption and key exchange on top of the default encryption which allows changing the encryption key for every message exchange, and even mesibo servers cannot read those communications. You can even add your own encryption and key exchange mechanism, e.g., Double Ratchet Algorithm.
 {% endcapture %}
 
 {% capture content_ui %}
-Mesibo not only provides APIs but also offers ready-to-use UI modules which you can customize to your needs. Some of the UI modules are - one-to-one messaging, group messaging, message list, contacts, group contacts, video calls, voice calls, media picker, media cropper, login etc. Currently the UI modules are available for Android and iOS. We plan to add UI modules for Web soon.
+Mesibo not only provides APIs but also offers ready-to-use UI modules which you can customize to your needs. Some of the UI modules are one-to-one messaging, group messaging, message list, contacts, group contacts, video calls, voice calls, media picker, media cropper, login etc. Currently, the UI modules are available for Android and iOS. We plan to add UI modules for Web soon.
 {% endcapture %}
 
 {% capture content_temp %}
@@ -60,10 +60,10 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
 
 <!-- {% include mesibo-card.html collapsed=false group="left" icon="fa-bold" title="It's Real-time" name="realtime" content=content_rt %} -->
 {% include mesibo-card.html collapsed=false group="left" icon="fa-envelope" title="Easy to use Messaging, Voice, Video APIs" name="realtime" content=content_rt %}
-{% include mesibo-card.html collapsed=true group="left" icon="fa-signal" title="Send Arbitary Binary/Signaling Data" name="binary" content=content_webrtc %}
-{% include mesibo-card.html collapsed=true group="left" icon="fa-cloud" title="Career-grade Cloud Infastructure" name="carrier" content=content_carrier %}
+{% include mesibo-card.html collapsed=true group="left" icon="fa-signal" title="Send Arbitrary Binary/Signaling Data" name="binary" content=content_webrtc %}
+{% include mesibo-card.html collapsed=true group="left" icon="fa-cloud" title="Carrier-grade Cloud Infrastructure" name="carrier" content=content_carrier %}
 {% include mesibo-card.html collapsed=true group="left" icon="fa-server" title="On-premise Hosting" name="premise" content=content_premise %}
-{% include mesibo-card.html collapsed=true group="left" icon="fa-snowflake-o" title="Massively Scalable - 120+ million online users" name="scale" content=content_scale %}
+{% include mesibo-card.html collapsed=true group="left" icon="fa-snowflake-o" title="Massively Scalable - Billion plus online users" name="scale" content=content_scale %}
 </div>
 <!-- accordion end -->
 </div>
@@ -87,7 +87,9 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
 -->
 </div>
 </div>
-<p>Since Mesibo abstracted away the complexity, there should not be any reason to develop your own messaging or telephony solution. With Mesibo, your team can more effectively program and manage your core ideas.</p>
+<p>
+Since Mesibo abstracted away the complexity, there should not be any reason to develop your own messaging or telephony solution. With Mesibo, your team can more effectively program and manage your core ideas.
+</p>
 </div>
 </section>
 <!-- section end -->
