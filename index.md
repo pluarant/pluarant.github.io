@@ -9,7 +9,7 @@ banner: true
 ---
 
 {% include mesibo-what.html %}
-{% include mesibo-why.html %}
+{% include mesibo-glance.html %}
 {% include mesibo-platforms.html %}
 {% include mesibo-demo.html %}
 {% include mesibo-docs.html %}
