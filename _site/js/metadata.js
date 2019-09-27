@@ -73,8 +73,8 @@ var pages = [
 {
 "url":"/about-us/",
 "title":"About Us",
-"description":"mesibo is a cloud communication platform that makes it remarkably simple to add real-time communication to mobile apps, and websites, in just a few hours.",
-"keywords":"mesibo, India"
+"description":"mesibo is a real-time communication platform that makes it remarkably simple to add real-time communication to mobile apps, and websites, in just a few hours.",
+"keywords":"mesibo"
 }
 ,
 {
