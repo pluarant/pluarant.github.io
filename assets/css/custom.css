@@ -31,5 +31,5 @@
 .heading {
   font-size: 28px !important;
   font-weight: 300 !important;
-  text-transform:sentence !important;
+  text-transform:none !important;
 }
