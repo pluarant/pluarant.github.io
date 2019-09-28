@@ -1,0 +1,119 @@
+<!-- Webhooks Content Start -->
+<div class="app-settings-main">
+   <div class="tab-pane margin-top-20">
+      <h3 class="margin-bottom-0">Webhook</h3>
+      <p>{{strings.webhook}}</p>
+      <div class="row">
+         <div class="col-md-12">
+		
+            <!-- <label class="switch switch-success switch-round  pull-right nopadding-right"> -->
+            <label class="switch switch-success switch-round">
+            <input type="checkbox" ng-bits-model="user.app.notify" ng-bits-flag="1" ng-click="toggle_webhooks()">	
+            <span class="switch-label " data-on="ON" data-off="OFF"></span>
+            </label>
+         </div>
+
+         <div class="col-md-12" ng-show="checkFlag(user.app.notify, 1)">
+            <div class="push-webhooks">
+               <div class="heading-title heading-line-single text-left ">
+                  <div id="panel-1" class="col-md-6 nopadding-left panel-default">
+                     <div id="" class="form-group">
+                        <label class="size-16">Webhook URL</label>	
+                        <input type="text" ng-model="user.app.url" name="url" placeholder="Webhook URL on you server. URL must start with https:// or http://." class="form-control required">	
+                     </div>
+					 
+					  <div id="" class="form-group width-250">
+                        <label class="size-16">Secret Token</label>
+                        	<input type="text" ng-model="user.app.secret" name="secret" placeholder="Secret token for webhook to validate POST data" class="form-control required">	
+                     </div>
+					 
+					  <div id="" class="form-group width-250">
+                        <label class="size-16">Interval</label>
+                        		<input type="text" ng-model="user.app.ninterval" name="ninterval" placeholder="Minimum interval between successful webhook invocation for a same user" class="form-control required">	
+                     </div>
+                  </div>
+               </div>
+			   
+               <div class="panel-body fullwidth pull-left nopadding-left">
+                  <div class="panel-default">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="box-border padding-10 pull-left fullwidth">
+                              <div id="" class="col-md-6 nopadding-left">
+                                 <h4 class="nomargin padding-bottom-5">User Status</h4>
+                                 <p class="padding-top-5 nomargin">{{strings.webhookuserstatustext}}</p>
+                              </div>
+                              <div id="" class="col-md-8 nopadding-left padding-top-20">
+                                 <label class="checkbox">
+                                 <input type="checkbox" ng-bits-model="user.app.notify" ng-bits-flag="16" >
+                                 <i></i> Online
+                                 </label>
+                                 <label class="checkbox">
+                                 <input type="checkbox" ng-bits-model="user.app.notify" ng-bits-flag="32" >
+                                 <i></i> Offline
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row margin-top-20">
+                        <div class="col-md-12">
+                           <div class="box-border padding-10 pull-left fullwidth">
+                              <div id="" class="col-md-6 nopadding-left">
+                                 <h4 class="nomargin padding-bottom-5">Messages</h4>
+                                 <p class="padding-top-5 nomargin">{{strings.webhookusermessagestext}}</p>
+                              </div>
+                              <div id="" class="col-md-12 nopadding-left padding-top-20">
+                                 <label class="checkbox">
+                                 <input type="checkbox" ng-bits-model="user.app.notify" ng-bits-flag="256" >
+                                 <i></i> Online
+                                 </label>
+                                 <label class="checkbox">
+                                 <input type="checkbox" ng-bits-model="user.app.notify" ng-bits-flag="512" >
+                                 <i></i> Offline
+                                 </label>
+                                 <label class="checkbox">
+                                 <input type="checkbox" ng-bits-model="user.app.notify" ng-bits-flag="4096" >
+                                 <i></i> Unknown Destination
+                                 </label>
+                                 <label class="checkbox">
+                                 <input type="checkbox" ng-bits-model="user.app.notify" ng-bits-flag="8192" >
+                                 <i></i> Pruned
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row margin-top-20">
+                        <div class="col-md-12">
+                           <div class="box-border padding-10 pull-left fullwidth">
+                              <div id="" class="col-md-6 nopadding-left">
+                                 <h4 class="nomargin padding-bottom-5">Message Status</h4>
+                                 <p class="padding-top-5 nomargin">{{strings.webhookusermessagestatustext}}</p>
+                              </div>
+                              <div id="" class="col-md-12 nopadding-left padding-top-20">
+                                 <label class="checkbox">
+                                 <input type="checkbox" ng-bits-model="user.app.notify" ng-bits-flag="1024" >
+                                 <i></i> Delivered
+                                 </label>
+                                 <label class="checkbox">
+                                 <input type="checkbox" ng-bits-model="user.app.notify" ng-bits-flag="2048" >
+                                 <i></i> Read
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="margin-top-10">
+                        <button ng-click="save_webhooks();" ng-disabled="user.app.url.length < 12 || !validurl()" class="btn btn-info">SAVE</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Webhooks Content End -->
+
+

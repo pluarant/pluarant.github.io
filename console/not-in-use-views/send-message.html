@@ -1,0 +1,45 @@
+<!-- Send Message Content Start -->
+<div class="app-settings-main">
+   <div class="tab-pane margin-top-20">
+      <h3 class="margin-bottom-0">Send Message</h3>
+      <p>Send a message to all users and/or groups of this application. You can also send a message to a particular user or a group from users or groups section.</p>
+      <div class="row">
+         <div class="col-md-12">
+		 
+            <div class="padding-10 pull-left fullwidth">
+               <div class="col-md-6 nopadding-left">
+                  <label class="size-18">To</label>												
+               </div>
+               <div class="col-md-8 nopadding-left padding-top-10">
+                  <label class="checkbox">
+                  <input type="checkbox" value="1" ng-model="appdata.alluser">
+                  <i></i> All Users
+                  </label>
+                  <label class="checkbox">
+                  <input type="checkbox" value="2" ng-model="appdata.allgroup">
+                  <i></i> All Groups
+                  </label>
+               </div>
+               <div class="form-group fullwidth pull-left">
+                  <div class="col-md-6 col-sm-6 margin-top-30 nopadding-left">
+                     <label class="size-18">From *</label>
+                     <input type="text" ng-model="appdata.msgfrom" class="form-control required">
+                  </div>
+               </div>
+               <div class="form-group fullwidth pull-left">
+                  <div class="col-md-6 col-sm-6 margin-top-10 nopadding-left">
+                     <label class="size-18">Message *</label>
+                     <textarea ng-model="appdata.message" rows="4" class="form-control required height-150"></textarea>
+                  </div>
+               </div>
+               <div class="form-group fullwidth pull-left">
+                  <div class="col-md-6 nopadding-left">	
+                     <button ng-click="send_appmessage()" type="submit" class="btn btn-primary opt panel_colapse" ng-disabled="appdata.msgfrom.length < 2 || appdata.message.length < 2">SEND</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Send Message Content End -->

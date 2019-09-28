@@ -1,0 +1,17 @@
+Is mesibo secure?: |
+
+  Mesibo messages and calls are end-to-end encrypted. Mesibo uses various Transport Layer Security (TLS) encryptions like Curve25519, AES-256 to secure the communication. mesibo also provides API for additional custom end-to-end encryption and key exchange on top of the default encryption which allows changing encryption key for every message exchange and even mesibo servers cannot read those communications.
+
+
+
+
+What if I don’t want my customer data goes through your common servers?: |
+
+  Mesibo offers <a href="/custom-solutions/" target="_blank">custom solution</a> and as part the custom solution, we offer dedicated servers exclusive for your users or even install mesibo server in your own datacenter.
+
+
+
+
+I am using my own encryption. Can I disable default security?: |
+
+  Yes, you can disable default encryption by using Mesibo client-side API `setSecureConnection`.

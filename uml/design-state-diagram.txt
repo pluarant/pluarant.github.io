@@ -1,0 +1,24 @@
+
+
+title Sample Authentication & Message Sequence
+participant Alice
+participant Bob
+participant Your Server
+participant Mesibo
+
+Alice->Your Server: Login
+Your Server->Mesibo: Create Access Token for Alice\n(Server-side API)
+	Mesibo->Your Server: Access Token for Alice
+	Your Server->Alice: Access Token
+	Bob->Your Server: Login
+	Your Server->Mesibo: Create Access Token for Bob\n(Server-side API)
+	Mesibo->Your Server: Access Token for Bob
+	Your Server->Bob: Access Token
+	Alice->Mesibo: Real-time connection using Access Token\n(Client-side API)
+	Bob->Mesibo: Real-time connection using Access Token\n(Client-side API)
+	Alice->Mesibo: Message 'Hello' for Bob
+	Mesibo->Bob: Message 'Hello' from Alice
+	Mesibo->Alice: Delivery Status
+	note right of Bob: Bob read message from Alice
+	Mesibo->Alice: Read receipt
+

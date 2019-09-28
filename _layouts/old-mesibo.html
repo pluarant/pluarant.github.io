@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	{% include mesibo-header.html %}
+	<body class="smoothscroll enable-animation {% if page.landing == true %}home-page{% endif %}">
+		
+		<div id="wrapper">
+			{% include mesibo-navigation.html %}
+			
+{{ content }}
+			
+	
+			{% include mesibo-footer.html %}
+		</div>		
+
+	</body>
+</html>

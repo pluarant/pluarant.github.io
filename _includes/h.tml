@@ -1,0 +1,102 @@
+     <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    
+                    <img class="footer-logo width-200" src="/assets/images/footer-logo1.png" alt="Mesibo footer logo" />
+                    
+                    <p>If It's messaging or telephony, It's mesibo!</p>
+                    <p>A cloud communication platform lets you build real time chat, voice and video in your mobile apps, and websites.</p>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="letter-spacing-1">ABOUT</h4>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="/about-us/">mesibo</a></li>
+                        <li><a href="/career/">Careers</a></li>
+						<li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    
+                    <h4 class="letter-spacing-1">EXPLORE</h4>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="/chat-api-features/">Features</a></li>
+						<li><a href="/pricing/">Pricing</a></li>
+						<li><a href="/use-cases/">Use Cases</a></li>
+                        <li><a href="/documentation/support/custom-solutions/" target="_blank">Custom Solution</a></li>
+						<li><a href="/documentation/" target="_blank">Documentation</a></li>
+                    </ul>
+                    
+                </div>
+				<div class="col-md-2">
+                  
+                    <h4 class="letter-spacing-1">HELP</h4>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="/documentation/faq/">FAQ</a></li>
+						<li><a href="/documentation/support/">Support</a></li>
+						<li><a href="https://stackoverflow.com/questions/ask" target="_blank">Community</a></li>
+			        </ul>
+                    
+                </div>
+				
+                <div class="col-md-2">
+                    
+                    <h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
+                    
+					<div class="margin-top-20">
+                        <a href="https://www.facebook.com/mesiboapi" target="_blank" class="social-icon social-icon-border social-facebook pull-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+                            <i class="icon-facebook"></i>
+                            <i class="icon-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/mesiboapi" target="_blank" class="social-icon social-icon-border social-twitter pull-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+                            <i class="icon-twitter"></i>
+                            <i class="icon-twitter"></i>
+                        </a>
+                        <a href="https://plus.google.com/b/107106343719610600541/107106343719610600541" target="_blank" class="social-icon social-icon-border social-gplus pull-left" data-toggle="tooltip" data-placement="top" title="Google plus">
+                            <i class="icon-gplus"></i>
+                            <i class="icon-gplus"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/mesibo" target="_blank" class="social-icon social-icon-border social-linkedin pull-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                            <i class="icon-linkedin"></i>
+                            <i class="icon-linkedin"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ" target="_blank" class="social-icon social-icon-border social-youtube pull-left" data-toggle="tooltip" data-placement="top" title="YouTube">
+                            <i class="fa fa-youtube"></i>
+                            <i class="fa fa-youtube"></i>
+                        </a>
+						<a href="https://github.com/mesibo/" target="_blank" class="social-icon social-icon-border social-github pull-left" data-toggle="tooltip" data-placement="top" title="GitHub">
+                            <i class="fa fa-github"></i>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+				 </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <ul class="pull-right nomargin list-inline mobile-block">
+                    <li><a href="/terms-of-use/#terms">Terms of Service</a></li>
+                    <li>&bull;</li>
+                    <li><a href="/terms-of-use/#privacy">Privacy Policy</a></li>
+                </ul>
+                &copy; 2019 mesibo. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+		<a href="#" id="toTop"></a>
+
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div>
+		
+		<script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
+		<script type="text/javascript" src="/assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="/assets/js/scripts.js"></script>
+		
+		<script type="text/javascript" src="/assets/plugins/slider.swiper/dist/js/swiper.min.js"></script>
+		<script type="text/javascript" src="/assets/js/view/demo.swiper_slider.js"></script>
+		<script src="/assets/js/jquery.liquid-slider.min.js"></script>
+		<script type="text/javascript" src="/assets/js/custom.js"></script>
+

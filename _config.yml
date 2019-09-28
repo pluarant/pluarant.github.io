@@ -1,0 +1,199 @@
+---
+name: Mesibo Documentation
+markdown: kramdown
+kramdown:
+  input: GFM
+  gfm_quirks: [paragraph_end, no_auto_typographic]
+  # html_to_native: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+  toc_levels: 2..3
+#incremental: true
+destination: _site
+#destination: ../../live/mesibo/web/documentation
+permalink: pretty
+safe: false
+lsi: false
+url: "https://mesibo.com/"
+#slogan: "If It's messaging or telephony, It's mesibo!"
+#slogan: "Messaging and beyond!"
+slogan: ""
+
+# Google tag manager and analytics id
+#gtm_id: "GTM-K9BCWFF"
+gtm_id: "GTM-PHFLZ6N"
+ga_id: "UA-97488698-1"
+
+editlinks: true
+#baseurl: /documentation
+# This needs to have all the directories you expect to be in the archives
+# (delivered by docs-base in the Dockerfile)
+keep_files: ["v18.03"]
+include: ["_redirect"]
+#exclude: ["_scripts", "apidocs/layouts", "Gemfile", "hooks"]
+exclude: ["_scripts", "apidocs/layouts", "Gemfile", "html2md", "hooks", "ee", "storage", "network", "swarm", "compliance", "hackathon", "config"]
+
+# Component versions -- address like site.docker_ce_stable_version
+# You can't have - characters in these for non-YAML reasons
+
+latest_stable_docker_engine_api_version: "1.39"
+docker_ce_stable_version: "18.09"
+docker_ce_edge_version: "18.09"
+docker_ee_version: "2.1"
+compose_version: "1.23.1"
+machine_version: "0.16.0"
+distribution_version: "2.6"
+dtr_version: "2.6"
+ucp_version: "3.1"
+
+ucp_versions:
+  - version: "3.1"
+    path: /ee/ucp/
+    latest: true
+  - version: "3.0"
+    path: /datacenter/ucp/3.0/guides/
+
+dtr_versions:
+  - version: "2.6"
+    path: /ee/dtr/
+    latest: true
+  - version: "2.4"
+    path: /datacenter/dtr/2.4/guides/
+
+tablabels:
+  dee-2.0: Docker Enterprise Edition 2.0
+  ucp-3.0: Universal Control Plane 3.0
+  dtr-2.5: Docker Trusted Registry 2.5
+  engine-17.06: Docker EE Engine 17.06
+  engine-17.03: Docker EE Engine 17.03
+  docker-cli-linux: Docker CLI on Mac/Linux
+  docker-cli-win: Docker CLI on Windows
+  kubectl: Kubernetes CLI
+  cli: CLI
+
+collections:
+  samples:
+    output: true
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-relative-links
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: docs
+      toc_min: 2
+      toc_max: 3
+      tree: true
+  - scope:
+      path: "install"
+    values:
+      win_latest_build: "docker-17.06.2-ee-17"
+  - scope:
+      path: "datacenter"
+    values:
+      enterprise: true
+  - scope:
+      path: "ee/dtr"
+    values:
+      dtr_org: "docker"
+      dtr_repo: "dtr"
+      dtr_version: "2.6.0"
+  - scope:
+      path: "datacenter/dtr/2.5"
+    values:
+      hide_from_sitemap: true
+      dtr_org: "docker"
+      dtr_repo: "dtr"
+      dtr_version: "2.5.6"
+  - scope:
+      path: "datacenter/dtr/2.4"
+    values:
+      hide_from_sitemap: true
+      dtr_org: "docker"
+      dtr_repo: "dtr"
+      dtr_version: "2.4.7"
+  - scope:
+      path: "datacenter/dtr/2.3"
+    values:
+      hide_from_sitemap: true
+      dtr_org: "docker"
+      dtr_repo: "dtr"
+      dtr_version: "2.3.9"
+  - scope:
+      path: "datacenter/dtr/2.2"
+    values:
+      ucp_version: "2.1"
+      dtr_version: "2.2"
+      docker_image: "docker/dtr:2.2.12"
+  - scope:
+      path: "datacenter/dtr/2.1"
+    values:
+      ucp_version: "2.0"
+      dtr_version: "2.1"
+  - scope:
+      path: "datacenter/dtr/2.0"
+    values:
+      ucp_version: "1.1"
+      dtr_version: "2.0"
+  - scope:
+      path: "ee/ucp"
+    values:
+      ucp_org: "docker"
+      ucp_repo: "ucp"
+      ucp_version: "3.1.0"
+  - scope: # This is a bit of a hack for the get-support.md topic.
+      path: "ee"
+    values:
+      ucp_org: "docker"
+      ucp_repo: "ucp"
+      dtr_repo: "dtr"
+      ucp_version: "3.1.1"
+      dtr_version: "2.6.0"
+      dtr_latest_image: "docker/dtr:2.6.0"
+  - scope:
+      path: "datacenter/ucp/3.0"
+    values:
+      hide_from_sitemap: true
+      ucp_org: "docker"
+      ucp_repo: "ucp"
+      ucp_version: "3.0.7"
+  - scope:
+      path: "datacenter/ucp/2.2"
+    values:
+      hide_from_sitemap: true
+      ucp_org: "docker"
+      ucp_repo: "ucp"
+      ucp_version: "2.2.14"
+  - scope:
+      path: "datacenter/ucp/2.1"
+    values:
+      hide_from_sitemap: true
+      ucp_version: "2.1"
+      dtr_version: "2.2"
+      docker_image: "docker/ucp:2.1.8"
+  - scope:
+      path: "datacenter/ucp/2.0"
+    values:
+      hide_from_sitemap: true
+      ucp_version: "2.0"
+      dtr_version: "2.1"
+      docker_image: "docker/ucp:2.0.4"
+  - scope:
+      path: "datacenter/ucp/1.1"
+    values:
+      hide_from_sitemap: true
+      ucp_version: "1.1"
+      dtr_version: "2.0"
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir: _scss
+  style: :compressed

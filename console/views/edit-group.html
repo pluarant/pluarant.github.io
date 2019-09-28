@@ -1,0 +1,243 @@
+<!-- Breadcrumb Start -->
+<header id="page-header">
+   <h1>Edit Group</h1>
+   <ol class="breadcrumb">
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#appsettings/{{group.app.name}}">{{user.app.name}}</a></li>
+      <li><a href="#appsettings/{{user.app.name}}">App Settings</a></li>
+      <li><a href="#appsettings/{{user.app.name}}/groups">Groups</a></li>
+      <li class="active"><strong>{{user.group.name}}</strong></li>
+   </ol>
+</header>
+<!-- Breadcrumb End -->
+<!-- Content Main Start -->
+<div id="content" class="padding-20" ng-controller="groupcontroller">
+   <!-- Deactivated Start --> 
+   <div class="pull-right margin-bottom-20">
+   <a class="btn btn-info btn-sm opt panel_colapse" ng-click="group_save()" >SAVE</a>
+     
+      <!-- Delete Group Start -->
+      <div class="modal fade margin-top-50" id="myModal2" role="dialog">
+         <div class="modal-sm" style="margin:auto;">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  <h4 class="modal-title" id="mySmallModalLabel">Delete Group</h4>
+               </div>
+               <div class="modal-body">
+                  Are you sure you want to delete group?
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Delete</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Delete Group End -->	
+   </div>
+   <!-- Deactivated End --> 
+   
+   <!-- Group Name Start --> 
+   <div class="panel-body fullwidth" style="display:inline-block;">
+      <div id="" class="col-md-6 nopadding-left">
+         <label class="size-16">Group Name</label>
+         <input type="text" ng-model="user.group.name" class="form-control required" />
+      </div>
+   </div>
+   <!--Group Name End --> 
+   
+   <!-- Send Start -->
+   <div class="panel-body" style="margin-top:10px;">
+      <div class="panel-default">
+         <div class="row">
+            <div id="" class="col-md-4">
+               <h4 class="nomargin padding-bottom-5">Who can send messages</h4>
+            </div>
+            <div id="" class="col-md-3">
+               <label class="radio">
+               <input type="radio" name="group-sender"  id="membersid" ng-model="group_sender_setter" ng-model-options=" {getterSetter: true }"  value="0">
+               <i></i> Members
+               </label>
+               <label class="radio">
+               <input type="radio" name="group-sender"  id="selectedid" ng-model="group_sender_setter" ng-model-options=" {getterSetter: true }" value="1">
+               <i></i> Selected
+               </label>
+               <label class="radio">
+               <input type="radio" name="group-sender" ng-model="group_sender_setter" ng-model-options=" {getterSetter: true }" value="2">
+               <i></i> Anyone
+               </label>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Send End -->
+   
+   <!-- Receive Start -->
+   <div class="panel-body" style="margin-top:10px;">
+      <div class="panel-default">
+         <div class="row">
+            <div id="" class="col-md-4">
+               <h4 class="nomargin padding-bottom-5">Who can receive messages</h4>
+            </div>
+            <div id="" class="col-md-3">
+               <label class="radio">
+               <input type="radio" name="group-receiver" id="rmembersid" ng-model="group_receiver_setter" ng-model-options=" {getterSetter: true }" value="0">
+               <i></i> Members
+               </label>
+               <label class="radio">
+               <input type="radio" name="group-receiver" id="rselectedid" ng-model="group_receiver_setter" ng-model-options=" {getterSetter: true }" value="1">
+               <i></i> Selected
+               </label>
+               <label class="radio">
+               <input type="radio" name="group-receiver" ng-model="group_receiver_setter" ng-model-options=" {getterSetter: true }" value="2">
+               <i></i> A member (round robin)
+               </label>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Receive End -->
+   
+   <!--Set Expiry Start -->
+   <div class="panel-body" style="margin-top:10px;">
+      <div class="panel-default">
+         <div class="row">
+            <div id="" class="col-md-4">
+               <h4 class="nomargin padding-bottom-5 padding-top-7">Expiry (in seconds from now)</h4>
+            </div>
+            <div class="col-md-3">
+               <input type="text" class="form-control" ng-model="user.group.expinsec" placeholder="seconds"  onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+            </div>
+			<div id="" class="col-md-4">
+               <p class="nomargin padding-bottom-0 padding-top-0">{{strings.groupexpirytext}}</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Set Expiry End -->
+   
+   <!-- Auto Extend Expiry Start -->
+   <div class="panel-body" style="margin-top:10px;">
+      <div class="panel-default">
+         <div class="row">
+            <div id="" class="col-md-4 margin-top-7">
+               <h4 class="nomargin padding-bottom-5">Auto Extend Expiry (in seconds)</h4>
+            </div>
+            <div id="" class="col-md-3">
+               <input placeholder="seconds" type="text" class="form-control" ng-model="user.group.expiryext"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="profileLastName">
+            </div>
+			<div id="" class="col-md-4">
+               <p class="nomargin padding-bottom-0 padding-top-0">{{strings.groupautoextendexpirytext}}</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Auto Extend Expiry End --> 
+   
+   <div id="panel-2" class="panel panel-default margin-top-10">
+      <div class="row">
+         <!-- Message Group Start -->
+         <div class="col-md-6">
+            <form class="panel-body">
+               <h4 class="nomargin padding-bottom-20">Message Group</h4>
+               <div class="form-group">
+                  <label class="control-label" for="profileFirstName">From (must be a valid user)</label>
+                  <div class="">
+					<autocomplete ng-model="appdata.msgfrom" data="fromusers" on-type="update_fromusers"></autocomplete>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label class="control-label" for="profileLastName">Message</label>
+                  <div class="">
+                     <textarea placeholder="Type Message" ng-model="appdata.message" style="height:150px; width:100%; text-align:left; float:left; padding:10px;"></textarea>
+                  </div>
+               </div>
+               <div class="form-group">
+			    <button ng-click="group_message()" class="btn btn-success margin-top-20" ng-disabled="appdata.msgfrom.length < 2 || appdata.message.length < 2">Send</button>               
+               </div>
+            </form>
+         </div>
+         <!-- Message Group End -->
+		 
+         <!-- Members Table Start -->
+         <div class="col-md-6">
+            <form class="panel-body">
+               <div class="col-md-3 nopadding-left">
+                  <h4 class="nomargin padding-bottom-20">Members</h4>
+               </div>
+               <div class="pull-right margin-bottom-20">
+                  <a class="btn btn-primary btn-sm opt panel_colapse" onclick="newUserForm()"><i class="fa fa-plus" aria-hidden="true"></i>New Member</a>
+               </div>
+               <div id="newUserFormDIV" class="fullwidth pull-left text-left" style="display: none;">
+                  <div class="form-group text-left">
+                     <label class="size-16">User Address</label>
+                     <input type="text" ng-model="appdata.newuseraddr" placeholder="" class="form-control required">
+                  </div>
+                  <div class="margin-bottom-20">
+                     <button type="submit" class="btn btn-primary opt panel_colapse" ng-click="group_addmember(); " onclick="newUserForm()" ng-disabled="appdata.newuseraddr.length < 2">Add</button>
+                     <button type="reset" class="btn btn-default opt panel_colapse" onclick="newUserForm()">Cancel</button>
+                  </div>
+               </div>
+               <table style="" class="table table-striped table-hover table-bordered" id="sample_editable_1">
+                  <thead>
+                     <tr>
+                        <th>Members</th>
+						<th>Can Send Message</th>
+						<th>Can Receive Message</th>
+                        <th class="text-center" ng-show="user.members.length">Delete</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr ng-hide="user.members.length">
+                        <td>
+							No members
+                        </td>
+		     </tr>
+                     <tr ng-repeat="m in user.members" ng-show="user.members.length">
+                        <td>
+							{{m.address}}
+                        </td>
+					
+						<td style="text-align:center;">
+						<label class="checkbox" ><input style="position:inherit;" type="checkbox" ng-true-value="'1'" ng-false-value="'0'" ng-click="group_member_setsendrecv(m)" ng-model="m.cansend" ng-disabled="group_selective_send()"><i></i></label>
+						</td>
+						<td style="text-align:center;">
+						<label class="checkbox" ><input style="position:inherit;" type="checkbox" ng-true-value="'1'" ng-false-value="'0'" ng-click="group_member_setsendrecv(m)" ng-model="m.canrecv" ng-disabled="group_selective_recv()"><i></i></label>
+						</td>
+                        <td style="text-align:center;">
+                           <a style="margin:0 5px;" class="delete size-18" title="Delete" href="javascript:;" ng-click="group_delmember(m.address)"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <p>{{strings.groupmemberstext}}</p>
+			   
+               <!-- Delete Member Start -->
+               <div class="modal fade bs-example-modal-sm margin-top-50" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                  <div class="modal-sm" style="margin:auto;">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                           <h4 class="modal-title" id="mySmallModalLabel">Delete Member</h4>
+                        </div>
+                        <div class="modal-body">
+                           Are you sure you want to delete member?
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-primary" data-dismiss="modal">Delete</button>
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Delete Member End --> 
+			   
+            </form>
+         </div>
+         <!-- Members Table End --> 
+		 
+      </div>
+   </div>
+</div>
+<!-- Content Main End -->

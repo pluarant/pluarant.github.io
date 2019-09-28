@@ -1,0 +1,107 @@
+<div class="app-settings-main">
+   <div class="tab-pane margin-top-20">
+      <!-- Push Notification Heading Start -->
+      <h3 class="margin-bottom-0">Push Notification</h3>
+      <p>{{strings.pushnotification}}</p>
+      <!-- Push Notification Heading-End -->
+      <div class="row">
+         <div class="col-md-12">
+            <div id="" class="col-md-6 nopadding-left">
+               <h4 class="nomargin padding-bottom-5">Enable this feature to send push notifications to your app</h4>
+            </div>
+            <div id="" class="col-md-3">
+               <label class="checkbox">
+               <input type="checkbox" value="1">
+               <i></i> Enable
+               </label>
+            </div>
+         </div>
+         <div class="col-md-12">
+            <div class="push-notifications margin-top-20">
+               <div class="col-md-12 nopadding-left">
+                  <!-- Android Start -->	
+                  <div class="box-border padding-10 pull-left fullwidth nopadding-bottom ">
+                     <div class="program-android">
+                        <div class="program">
+                           <ul>
+                              <li class="padding-bottom-10"><i class="fa fa-android" aria-hidden="true"></i>Android</li>
+                           </ul>
+                        </div>
+                        <form class="form-horizontal nomargin-bottom" method="get" style="border-top:1px #ddd solid;">
+                           <fieldset>
+                              <div class="form-group margin-top-20">
+                                 <label class="col-md-2 text-left padding-top-10" for="profileFirstName">GCM/FCM Server Key</label>
+                                 <div class="col-md-4">
+                                    <input type="text" class="form-control" placeholder="GCM/FCM Server Key" id="profileFirstName">
+                                 </div>
+                              </div>
+                           </fieldset>
+                        </form>
+                     </div>
+                  </div>
+                  <!-- Android End -->	
+                  <!-- iOS Start -->
+                  <div class="box-border padding-10 pull-left fullwidth margin-top-50 nopadding-bottom">
+                     <div class="program-ios" >
+                        <div class="program">
+                           <ul>
+                              <li class="padding-bottom-10"><i class="fa fa-apple" aria-hidden="true"></i>iOS</li>
+                           </ul>
+                        </div>
+                        <form class="form-horizontal nomargin-bottom" method="get" style="border-top:1px #ddd solid;">
+                           <div class="form-group nomargin-bottom">
+                              <div class="col-md-6 padding-top-10">
+                                 <label class="col-md-2 text-left margin-top-0 margin-bottom-30 size-16" for="profileFirstName">DISTRIBUTION</label>
+                                 <div class="form-group fullwidth pull-left margin-left-30">
+                                    <label class="col-md-3 text-left padding-top-10" for="profileFirstName">Certificate</label>
+                                    <div class="col-md-6">
+                                       <div class="input-group">
+                                          <span class="input-group-addon"><i class="fa fa-paperclip"></i></span>
+                                          <input class="custom-file-upload custom-file-upload-hidden" type="file" id="file" name="contact[attachment]" data-btn-text="UPLOAD" tabindex="-1" style="position: absolute;left: 0;visibility: visible !important;z-index: 99999;opacity: 0;width: 80px;/* max-width: 110px; */height: 40px;">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="form-group fullwidth pull-left margin-left-30">
+                                    <label class="col-md-3 text-left padding-top-10" for="profileFirstName">Password</label>
+                                    <div class="col-md-6">
+                                       <input type="text" class="form-control" placeholder="Password" id="profileFirstName">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-md-6 padding-top-10" style="border-left:1px #ddd solid;">
+                                 <label class="col-md-2 text-left margin-bottom-30 size-16 margin-top-0" for="profileFirstName">DEVELOPMENT</label>
+                                 <div class="form-group fullwidth pull-left margin-left-30">
+                                    <label class="col-md-3 text-left padding-top-10" for="profileFirstName">Certificate</label>
+                                    <div class="col-md-6">
+                                       <div class="input-group">
+                                          <span class="input-group-addon"><i class="fa fa-paperclip"></i></span>
+                                          <input class="custom-file-upload custom-file-upload-hidden" type="file" id="file" name="contact[attachment]" data-btn-text="UPLOAD" tabindex="-1" style="position: absolute;left: 0;visibility: visible !important;z-index: 99999;opacity: 0;width: 80px;/* max-width: 110px; */height: 40px;">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="form-group fullwidth pull-left margin-left-30">
+                                    <label class="col-md-3 text-left padding-top-10" for="profileFirstName">Password</label>
+                                    <div class="col-md-6">
+                                       <input type="text" class="form-control" placeholder="Password" id="profileFirstName">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <!-- iOS End -->	
+                  <!-- Save Cancel Start -->
+                  <div class="row">
+                     <div class="col-md-9 pull-left margin-top-30">
+                        <button type="submit" class="btn btn-primary">SAVE</button>
+                        <button type="reset" class="btn btn-default">CANCEL</button>
+                     </div>
+                  </div>
+                  <!-- Save Cancel End -->		
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

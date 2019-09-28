@@ -1,0 +1,36 @@
+<!-- Webhooks Content Start -->
+<div class="app-settings-main">
+   <div class="tab-pane margin-top-20">
+      <h3 class="margin-bottom-0">On-Premise Hosting</h3>
+      <p>{{strings.onpremise}}</p>
+      <p>{{strings.onpremisewarning}}</p>
+      <div class="row">
+         <div class="col-md-12">
+		
+            <!-- <label class="switch switch-success switch-round  pull-right nopadding-right"> -->
+            <label class="switch switch-success switch-round">
+            <input type="checkbox" ng-bits-model="user.app.flag" ng-bits-flag="256" ng-click="toggle_onpremise()">	
+            <span class="switch-label " data-on="ON" data-off="OFF"></span>
+            </label>
+         </div>
+
+         <div class="col-md-12" ng-show="checkFlag(user.app.notify, 1)">
+            <div class="push-webhooks">
+               <div class="heading-title heading-line-single text-left ">
+                  <div id="panel-1" class="col-md-6 nopadding-left panel-default">
+                     <div id="" class="form-group">
+                        <label class="size-16">On-Premise Server running on</label>	
+                        <input type="text" ng-model="user.app.server" placeholder="" class="form-control required" readonly>	
+                     </div>
+					 
+                  </div>
+               </div>
+			   
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Webhooks Content End -->
+
+

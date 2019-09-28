@@ -1,0 +1,71 @@
+<div class="header">
+    <div class="fan"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="nav-primary">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                            <a href="/">
+                        <img class="logo" src="{{ '/images/mesibo-logo-white.png' | relative_url }}" alt="Mesibo Docs" title="Mesibo Docs">
+			</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="primary nav navbar-nav">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/pricing/">Pricing</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Mesibo <span class="caret"></span></a>
+                                <ul class="dropdown-menu nav-main">
+                                    <h6 class="dropdown-header">For Mobile Apps</h6>
+                                    <li><a href="{{ '/documentation/install/android/' | relative_url }}">Android</a></li>
+                                    <li><a href="{{ '/documentation/install/ios/' | relative_url }}">iOS</a></li>
+                                    <h6 class="dropdown-header">For Websites</h6>
+                                    <li><a href="{{ '/documentation/install/javascript/' | relative_url }}">Javascript</a></li>
+                                    <h6 class="dropdown-header">For IoT Devices</h6>
+                                    <li><a href="{{ '/documentation/install/raspberrypi/' | relative_url }}">Raspberry Pi</a></li>
+                                    <h6 class="dropdown-header">For Servers / Backend</h6>
+                                    <li><a href="{{ '/documentation/install/linux/' | relative_url }}">Linux</a></li>
+                                    <li><a href="{{ '/documentation/install/mac/' | relative_url }}">Mac</a></li>
+                                    <li><a href="{{ '/documentation/install/windows/' | relative_url }}">Windows</a></li>
+                                    <!-- 
+				    <h6 class="dropdown-header">For Cloud Providers</h6>
+                                    <li><a href="https://docker.com/docker-aws">AWS</a></li>
+                                    <li><a href="https://docker.com/docker-microsoft-azure">Azure</a></li>
+				    -->
+                                </ul>
+                            </li>
+                            <li><a href="{{ '/documentation/' | relative_url }}">Documenattion</a></li>
+                            <li><a href="/help/">Contact Us</a></li>
+                            <li><a href="https://mesibo.com/console/">Sign In</a></li>
+                        </ul>
+                        </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- hero banner text -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="hero-text">
+                <div class="hero-text-centered">
+                    <h1>{{ site.name }}</h1>
+                    <p>Add real-time messaging, voice and video calling into mobile Apps, and Websites.</p>
+                    <ul class="buttons">
+                        <li><a class="button transparent-btn" href="{{ '/documentation/get-started/' | relative_url }}" target="_blank">Get Started</a></li>
+                        <li> <a class="button secondary-btn" href="{{ '/documentation/install/' | relative_url }}" target="_blank">Download Mesibo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav-secondary -->
+    <!-- data-offset-top should calculated as follows: (height of <header> - header of <nav>) -->
+    <nav class="nav-secondary-tabs" data-spy="affix" data-offset-top="385">
+        <div class="container-fluid">
+            <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                {% include navigation.html %}
+            </div>
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,291 @@
+<script type="text/javascript" src="assets/js/countries.js"></script>
+<!-- Breadcrumb Start -->
+<header id="page-header">
+   <h1>Payment</h1>
+   <ol class="breadcrumb">
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#account">My Account</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li class="active">Payment</li>
+   </ol>
+</header>
+<!-- Breadcrumb End -->
+<div id="content" class="dashboard padding-20">
+   <div class="row">
+      <!-- Order Privileges Start -->   
+      <div class="col-md-12">
+         <div id="panel-2" class="panel panel-default">
+            <div class="panel-heading">
+               <span class="title elipsis size-17">
+               <strong>Select Amount</strong>
+               </span>
+            </div>
+            <div class="panel-body">
+               <fieldset>
+                  <div class="toggle-transparent toggle-bordered-full clearfix">
+                     <div class="toggle-content">
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <label>Amount</label>
+                              <div class="row nomargin-bottom">
+                                 <div class="col-lg-3 col-sm-3">
+
+				 <select class="form-control pointer " ng-model="payment.amount" 
+				        ng-options="amount as 'USD ' + amount for amount in payment.amounts" ng-change="amountchanged();" >
+				 </select>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </fieldset>
+            </div>
+         </div>
+      </div>
+      <!-- Order Privileges End -->
+     
+      <!-- Order Summary Start -->
+      <div class="col-md-6">
+        <div id="panel-2" class="panel panel-default">
+            <div class="panel-heading">
+               <span class="title elipsis size-17">
+               <strong>Order Summary</strong>
+               </span>
+            </div>
+            <div class="panel-body">
+               <div>
+                  <table class="table table-striped table-hover table-bordered">
+                     <thead>
+                        <tr>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Amount</td>
+                           <td>$ {{payment.amount}}</td>
+                        </tr>
+                        <tr>
+                           <td>Tax</td>
+                           <td>$ {{payment.taxamount}}</td>
+                        </tr>
+                        <tr>
+                           <th>TOTAL</th>
+                           <td>$ {{payment.totalamount}}</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="row margin-top-20">
+                  
+                  
+                     <div class="col-md-6">
+                        <input id="couponcode" name="couponcode" type="text" placeholder="Enter Coupon Code" class="form-control ">
+                     </div>
+                     <div class="col-md-6">
+                        <button type="button" class="btn btn-primary margin-top-0">APPLY</button>
+                     </div>
+                 
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Order Summary End -->
+      <!-- Payment Method Start -->			
+      <div class="col-md-6">
+         <div id="panel-2" class="panel panel-default">
+            <div class="panel-heading">
+               <span class="title elipsis size-17">
+               <strong>Credit Card Information</strong>
+               </span>
+            </div>
+            <div class="panel-body">
+               <fieldset ng-hide="true">
+                  <div class="toggle-transparent toggle-bordered-full clearfix">
+                     <div class="toggle-content">
+                        <div class="row nomargin-bottom">
+                           <div class="col-lg-12 nomargin clearfix">
+                              <label class="radio pull-left">
+                              <input id="payment_card" name="payment[method]" type="radio" value="1" checked="checked" onclick="paymentMethod('ccPayment');"/>
+                              <i></i> <span class="weight-300">Credit Card</span>
+                              </label>
+                           </div>
+                           <div class="col-lg-12 nomargin clearfix">
+                              <label class="radio pull-left nomargin-top">
+                              <input id="payment_check" name="payment[method]" type="radio" value="2"  onclick="paymentMethod('ppPayment');"/>
+                              <i></i> <span class="weight-300">PAYPAL</span>
+                              </label>
+                           </div>
+                           <div class="col-lg-12 nomargin clearfix">
+                              <label class="radio pull-left nomargin-top">
+                              <input id="payment_check" name="payment[method]" type="radio" value="3"   onclick="paymentMethod('wtPayment');"/>
+                              <i></i> <span class="weight-300">Wire Transfer</span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </fieldset>
+               <fieldset id="ccPayment" class="margin-top-10" style="display:block;">
+                  <div class="toggle-transparent toggle-bordered-full clearfix">
+                     <div class="toggle-content">
+                        <div class="row margin-bottom-20">
+                           <div class="col-lg-12">
+                              <label for="payment:name">Name on Card * <span style="color:red">{{payment.nameerror}}</label>
+                              <input id="payment_name" name="payment[name]" type="text" class="form-control required "  placeholder="Your Name on Card" autocomplete="off" ng-model="payment.name"/>
+                           </div>
+                        </div>
+                      
+                        <div class="row margin-bottom-20">
+                           <div class="col-lg-12">
+                              <label for="payment:cc_number">Credit Card Number * <span style="color:red">{{payment.ccnumerror}}</span></label>
+                              <input id="payment:cc_number" name="payment[cc_number]" type="text" class="form-control required " placeholder="Enter Credit Card Number"  maxlength="16" autocomplete="off" ng-model="payment.ccnum"/>
+                           </div>
+                        </div>
+                        <div class="row margin-bottom-20">
+                           <div class="col-lg-12">
+                              <label for="payment:cc_exp_month">Card Expiration * <span style="color:red">{{payment.dateerror}}</span></label>
+                              <div class="row nomargin-bottom">
+                                 <div class="col-lg-6 col-sm-6">
+                                    <select ng-model="payment.month" class="form-control pointer required">
+                                       <option value="0">Month</option>
+                                       <option value="1">01 - January</option>
+                                       <option value="2">02 - February</option>
+                                       <option value="3">03 - March</option>
+                                       <option value="4">04 - April</option>
+                                       <option value="5">05 - May</option>
+                                       <option value="6">06 - June</option>
+                                       <option value="7">07 - July</option>
+                                       <option value="8">08 - August</option>
+                                       <option value="9">09 - September</option>
+                                       <option value="10">10 - October</option>
+                                       <option value="11">11 - November</option>
+                                       <option value="12">12 - December</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-lg-6 col-sm-6">
+                                    <select ng-model="payment.year" class="form-control pointer required">
+                                       <option value="0">Year</option>
+                                       <option value="2018">2018</option>
+                                       <option value="2019">2019</option>
+                                       <option value="2020">2020</option>
+                                       <option value="2021">2021</option>
+                                       <option value="2022">2022</option>
+                                       <option value="2023">2023</option>
+                                       <option value="2024">2024</option>
+                                       <option value="2025">2025</option>
+									   <option value="2026">2026</option>
+                                       <option value="2027">2027</option>
+                                       <option value="2028">2028</option>
+									   
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row margin-bottom-20">
+                           <div class="col-md-6">
+                              <label for="payment:cc_cvv">CVV2 * <span style="color:red">{{payment.cvverror}}</label>
+                              <input id="payment:cc_cvv" name="payment[cc_cvv]" type="text" class="form-control required" maxlength="4" autocomplete="off" ng-model="payment.cvv"/>
+                           </div>
+                                 <div class="col-lg-6 col-sm-6">
+                              <label>Phone* (as in your bank records) <span style="color:red">{{payment.phoneerror}}</label>
+                              <input type="text" class="form-control required" maxlength="16" autocomplete="off" ng-model="payment.phone"/>
+				 </div>
+                           <div class="col-lg-12 padding-top-20">
+                             
+                              <label class="checkbox size-14 padding-bottom-10">
+                              <input type="checkbox" value="1"  class="form-control required" ng-model="payment.agree1">
+                              <i></i> Yes, I have read and I accept the Mesibo <span>Term and Conditions</span> and <span>Privacy Policy.</span>
+                              </label>
+                           </div>
+                          
+                           <div class="col-lg-12 padding-top-20">
+                              <div class="plan-buy text-center">
+                                 <button class="btn btn-primary btn-lg btn-block size-15" ng-click="paycc();" ng-disabled="checkForm();">PAY NOW</button>
+                              </div>
+                           </div>
+						   
+                        </div>
+						
+                     </div>
+                  </div>
+               </fieldset>
+               <fieldset id="ppPayment" class="margin-top-30" style="display:none;" ng-hide="true">
+                  <div class="toggle-transparent toggle-bordered-full clearfix">
+                     <div class="toggle-content">
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <ul>
+                                 <li class="margin-bottom-10">Click on "Check Out With PAYPAL" to complete the action using PAYPAL.</li>
+                                 <li class="margin-bottom-10">Once you click, you will be redirected to the PAYPAL checkout where you can sign in using your PAYPAL Username and Password to complete the purchase process.</li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <label class="checkbox size-14 padding-bottom-10">
+                              <input type="checkbox" value="1"  class="form-control required">
+                              <i></i> Yes, I can understand that payment process can take upto 72 hours.
+                              </label>
+                              <label class="checkbox size-14 padding-bottom-10">
+                              <input type="checkbox" value="2"  class="form-control required">
+                              <i></i> Yes, I have read and I accept the Mesibo <span>Term and Conditions</span> and <span>Privacy Policy.</span>
+                              </label>
+                           </div>
+                           <div class="col-lg-12 padding-top-20">
+                              <div class="plan-buy text-center">
+                                 <button class="btn btn-primary btn-lg btn-block size-15">Check Out With PAYPAL</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </fieldset>
+               <fieldset id="wtPayment" class="margin-top-30" style="display:none;" ng-hide="true">
+                  <div class="toggle-transparent toggle-bordered-full clearfix">
+                     <div class="toggle-content">
+                        <div class="row padding-20">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc.
+                        </div>
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <table style="" class="table table-striped table-hover table-bordered" id="sample_editable_1">
+                                 <thead>
+                                    <tr>
+                                       <th>Account Name</th>
+                                       <td>MESIBO </td>
+                                    </tr>
+                                    <tr>
+                                       <th>Account Number</th>
+                                       <td>XXXX-XXXX-XXXX-XXXX</td>
+                                    </tr>
+                                    <tr>
+                                       <th>Bank Name</th>
+                                       <td>ICICI Bank</td>
+                                    </tr>
+                                    <tr>
+                                       <th>IFSC Code</th>
+                                       <td>ICIC0000222</td>
+                                    </tr>
+                                    <tr>
+                                       <th>Branch Name</th>
+                                       <td>DRIVE IN BRANCH</td>
+                                    </tr>
+                                 </thead>
+                              </table>
+                              <div class="row padding-20">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </fieldset>
+            </div>
+         </div>
+      </div>
+      <!-- Payment Method End -->
+	  
+   </div>
+</div>

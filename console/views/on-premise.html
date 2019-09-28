@@ -1,0 +1,99 @@
+<!-- Webhooks Content Start -->
+<div class="app-settings-main">
+   <div class="tab-pane margin-top-20">
+      <h3 class="margin-bottom-0">On-Premise Hosting</h3>
+      <p>{{strings.onpremise}}</p>
+      <div class="row">
+         <div class="col-md-12">
+            <div class="push-webhooks">
+			   
+               <div class="panel-body fullwidth pull-left nopadding-left">
+                  <div class="panel-default">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="box-border padding-10 pull-left fullwidth">
+                              <div id="" class="nopadding-left">
+                                 <h4 class="nomargin padding-bottom-5">Enable On-Premise</h4>
+                                 <p class="padding-top-5 nomargin"><strong>READ CAREFULLY: </strong>{{strings.onpremisewarning}}</p>
+				 <p/>
+				 <div id="" class="form-group">
+            				<label class="switch switch-success switch-round">
+				            <input type="checkbox" ng-bits-model="user.app.flag" ng-bits-flag="256" ng-click="toggle_flag(256)">	
+				            <span class="switch-label " data-on="ON" data-off="OFF"></span>
+				            </label>
+                		 </div>
+                     
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row margin-top-20">
+                        <div class="col-md-12">
+                           <div class="box-border padding-10 pull-left fullwidth">
+                              <div id="" class="col-md-6 nopadding-left">
+                                 <h4 class="nomargin padding-bottom-5">On-Premise Configuration</h4>
+                                 <p class="padding-top-5 nomargin">{{strings.onpconfig}}</p>
+				 <p/>
+				 
+				 <div id="" class="form-group">
+	                        	<label class="size-16">Running Status</label>	
+        	                	<input type="text" ng-model="user.app.server" name="" placeholder="Not Running" class="form-control required" readonly>	
+                		 </div>
+				 <div id="" class="form-group">
+	                        	<label class="size-16">Hostname <span style="color:red">{{onp.hosterror}}</span></label>	
+	                        	<label class="size-12"> - all your users will connect using this hostname and hence ensure that it is valid.</label>	
+        	                	<input type="text" ng-model="user.onp.hostname" name="hostname" placeholder="Hostname of the server where you are running mesibo on-premise server" class="form-control required">	
+                		 </div>
+				 
+				 <div id="" class="form-group">
+	                        	<label class="size-16">Database Name</label>	
+        	                	<input type="text" ng-model="user.onp.dbname" name="dbname" placeholder="Database name where mesibo on-premise server will store all your data" class="form-control required">	
+                		 </div>
+				 <div id="" class="form-group">
+	                        	<label class="size-16">Database Username</label>	
+        	                	<input type="text" ng-model="user.onp.dbuser" name="dbuser" placeholder="Your database username" class="form-control required">	
+                		 </div>
+				 <div id="" class="form-group">
+	                        	<label class="size-16">Database Password</label>	
+        	                	<input type="text" ng-model="user.onp.dbpass" name="dbpass" placeholder="Your database password" class="form-control required">	
+                		 </div>
+				 <div id="" class="form-group">
+	                        	<label class="size-16">Database Host <span style="color:red">{{onp.dbhosterror}}</span></label>	
+        	                	<input type="text" ng-model="user.onp.dbhost" name="dbhost" placeholder="Your database hostname" class="form-control required">	
+                		 </div>
+				 <!--
+				 <div id="" class="form-group">
+	                        	<label class="size-16">TLS/SSL Certificate Path</label>	
+        	                	<input type="text" ng-model="user.onp.sslpath" name="sslpath" placeholder="TLS/SSL Certificate Path on your host" class="form-control required">	
+                		 </div>
+				 -->
+				 <div id="" class="form-group">
+	                        	<label>
+                                 	<input type="checkbox" ng-bits-model="user.app.flag" ng-bits-flag="512" ng-click="toggle_flag(512)">
+					<i></i> Privately Hosted (no network check will be performed by Mesibo)
+					</label>
+                		 </div>
+				 <div id="" class="form-group">
+	                        	<label>
+                                 	<input type="checkbox" ng-bits-model="user.app.flag" ng-bits-flag="2048" ng-click="toggle_flag(2048)">
+					<i></i> Auto fallback to cloud if your premise/datacenter having any issues. Any offline messages stored on your premise maynot be delivered. Storage/bandwidth charges will apply.
+					</label>
+                		 </div>
+                     
+                     		<div class="margin-top-10">
+		                        <button ng-click="save_onp();" ng-disabled="!validate_onp()" class="btn btn-info">SAVE</button>
+                		</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Webhooks Content End -->
+
+
