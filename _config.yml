@@ -9,7 +9,7 @@ kramdown:
   syntax_highlighter: rouge
   toc_levels: 2..3
 #incremental: true
-destination: _site
+destination: _sitenew
 #destination: ../../live/mesibo/web/documentation
 permalink: pretty
 safe: false
