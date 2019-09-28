@@ -26,3 +26,10 @@
 .doc-box {
 	min-height: 100px !important;
 }
+
+/*heading H1 for banner*/
+.heading {
+  font-size: 28px;
+  font-weight: 300;
+  text-transform:sentence;
+}
