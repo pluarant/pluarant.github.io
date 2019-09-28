@@ -2,7 +2,7 @@
 description: Home page for Mesibo's documentation
 keywords: Mesibo, documentation, manual, guide, reference, api, samples
 landing: true
-title: Mesibo Documentation
+title: mesibo Documentation
 notoc: true
 notags: true
 ---
