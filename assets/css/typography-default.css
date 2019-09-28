@@ -118,8 +118,9 @@ h6 a {
 }
 
 h1 {
-  font-size: 28px;
-  font-weight: 300;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h1.logo-font {
