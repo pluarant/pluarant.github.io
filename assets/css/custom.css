@@ -29,7 +29,7 @@
 
 /*heading H1 for banner*/
 .heading {
-  font-size: 28px;
-  font-weight: 300;
-  text-transform:sentence;
+  font-size: 28px !important;
+  font-weight: 300 !important;
+  text-transform:sentence !important;
 }
