@@ -296,8 +296,8 @@ var pages = [
 ,
 {
 "url":"/",
-"title":"Chat API and Messaging SDK for Android & iOS Apps and Website",
-"description":"mesibo is a cloud communication platform, provides chat API and messaging SDK to add chat, voice and video in Android & iOS apps and websites. It is Free for all!",
+"title":"Mesibo Chat API, Messaging SDK, Voice and Video SDK for Android & iOS Apps and Websites",
+"description":"mesibo is a real-time communication platform, provides chat API and messaging SDK to add chat, voice and video in Android & iOS apps and websites. It is Free for all!",
 "keywords":"chat api, messaging api, chat sdk, messaging sdk, android chat sdk, iOS chat sdk, chat api for android, chat api for ios, android chat api, ios chat api, android messaging sdk, ios messaging sdk, messaging sdk for android, messaging sdk for ios, chat api for websites, messaging sdk for websites"
 }
 ,

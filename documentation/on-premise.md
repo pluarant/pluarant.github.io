@@ -3,7 +3,7 @@ description: Installing & Running Mesibo On-Premise Platform
 keywords: open, source, on-premise, messaging, chat, voice, video
 title: Installing & Running Mesibo On-Premise Platform
 ---
-Mesibo On-Premise solution allows you to run the entire Mesibo platform in your own premise / data center / private cloud. All the messages and calls go through your own data center and stay in your own database. All you have to do is download Mesibo On-Premise and run it in your own data center. That's it!
+Mesibo On-Premise solution allows you to run the entire Mesibo platform in your own premise OR private cloud. All the messages and calls go through your own data center and stay in your own database. All you have to do is download Mesibo On-Premise and run it in your own data center. That's it!
 
 ### Why On-Premise
 Although our cloud services let you start immediately, there are several reasons why you need On-Premise, and one of the key reasons is to have ultimate control over your data. More than ever before, it has become imperative to protect your data and be more sensitive towards your user data, be it personal data, financial data, medical records, GDPR, HIPPA, unauthorized harvesting of your data, companies selling, misusing your data for advertisement, to name a few. Cambridge Analytica Scandal is an example that your data is most safe when it’s within your control end-to-end.
