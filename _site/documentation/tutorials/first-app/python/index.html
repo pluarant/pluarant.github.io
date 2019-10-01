@@ -1,0 +1,572 @@
+<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+			
+<!-- edit url temporarily disabled Mesibo -->
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/documentation/tutorials/first-app/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/mesibo-favicon.png">
+	<link rel="mesibo-favicon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
+	<!-- metadata -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesibo"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="Write your First mesibo Enabled Application - Python"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="Preparation Anatomy Android iOS Javascript C++ Python File Transfer UI Modules Voice and Video Calls In this part, we will create a simple real-time app using Python. OS requirements CentOS..." />
+	<meta name="twitter:image:src" content="/images/docs@2x.png" />
+	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="mesibo, android, ios, cpp, python">
+	<link rel="stylesheet" href="/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="/css/bootstrap.min.css" >
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css" >
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- SEO stuff -->
+	<title>Write your First mesibo Enabled Application - Python | Mesibo Documentation</title>
+<meta property="og:title" content="Write your First mesibo Enabled Application - Python" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write your First mesibo Enabled Application - Python" />
+<meta property="og:description" content="Write your First mesibo Enabled Application - Python" />
+<link rel="canonical" href="/documentation/tutorials/first-app/python/" />
+<meta property="og:url" content="/documentation/tutorials/first-app/python/" />
+<meta property="og:site_name" content="Mesibo Documentation" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Write your First mesibo Enabled Application - Python","description":"Write your First mesibo Enabled Application - Python","url":"https://docs.docker.com/documentation/tutorials/first-app/python/"}</script>
+	<!-- END SEO STUFF -->
+	
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	</script>
+	<!-- Google Analytic Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-97488698-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytic Code --> 	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '559862854355634'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=559862854355634&ev=PageView
+		&noscript=1"/>
+		</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/mesibo-logo-white.png" alt="Mesibo Docs" title="Mesibo Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" style="visibility: hidden">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <!-- Yusuf
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mesibo latest (current)   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="/v1.0.0/">Mesibo v1.0.0</a></li>
+  </ul>
+</div>
+
+    </div>
+    -->
+</div>
+
+        </div>
+    </div>
+</nav>
+
+	</header>
+
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+							
+							<h1>Write your First mesibo Enabled Application - Python</h1>
+							 
+
+							 <span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    5 minutes
+  
+</span>
+
+							
+							
+							<ul class="pagination">
+  <li><a href="/documentation/tutorials/first-app/">Preparation</a></li>
+  <li><a href="/documentation/tutorials/first-app/anatomy/">Anatomy</a></li>
+  <li><a href="/documentation/tutorials/first-app/android/">Android</a></li>
+  <li><a href="/documentation/tutorials/first-app/ios/">iOS</a></li>
+  <li><a href="/documentation/tutorials/first-app/js/">Javascript</a></li>
+  <li><a href="/documentation/tutorials/first-app/cpp/">C++</a></li>
+  <li class="active"><a href="/documentation/tutorials/first-app/python/">Python</a></li>
+  <li><a href="/documentation/tutorials/first-app/file-transfer/">File Transfer</a></li>
+  <li><a href="/documentation/tutorials/first-app/ui-modules/">UI Modules</a></li>
+  <li><a href="/documentation/tutorials/first-app/voice-video-calls/">Voice and Video Calls</a></li>
+</ul>
+
+<p>In this part, we will create a simple real-time app using Python.</p>
+
+<h3 id="os-requirements">OS requirements</h3>
+<ul>
+  <li>CentOS / RedHat 7.x or above</li>
+  <li>Debian / Ubuntu</li>
+  <li>Mac OS</li>
+  <li>Raspberry Pi</li>
+</ul>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<p>You MUST go through the following prerequisites before you read further.</p>
+
+<ul>
+  <li>Installed the Mesibo Real-Time Python Library. If not, refer installation instructions <a href="/documentation/install/python/">here</a></li>
+  <li>
+    <p>Read the <a href="https://mesibo.com/documentation/tutorials/first-app/">Preparation Guide</a></p>
+  </li>
+  <li>
+    <p>Read the <a href="https://mesibo.com">Anatomy of a Mesibo Application</a> about using the Mesibo API and listener class</p>
+  </li>
+  <li>Basic knowledge of writing and runnning Python code</li>
+</ul>
+
+<h3 id="first-python-app">First Python App</h3>
+
+<p>Now let’s quickly start coding:</p>
+
+<p>From <code class="highlighter-rouge">mesibo</code> python package import the function class <code class="highlighter-rouge">Mesibo</code> and the callback class <code class="highlighter-rouge">mesiboNotify</code></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">mesibo</span> <span class="kn">import</span> <span class="n">Mesibo</span> 
+<span class="kn">from</span> <span class="nn">mesiboNotify.mesiboNotify</span> <span class="kn">import</span> <span class="n">mesiboNotify</span>
+</code></pre></div></div>
+
+<p>Now, initialize mesibo like shown below</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#Create Mesibo Instance</span>
+<span class="n">pymesibo</span> <span class="o">=</span> <span class="n">Mesibo</span><span class="p">()</span>
+
+<span class="n">pynotify</span> <span class="o">=</span> <span class="n">test_mesiboNotify</span><span class="p">()</span> 
+<span class="n">pynotify</span><span class="o">.</span><span class="n">set_api</span><span class="p">(</span><span class="n">pymesibo</span><span class="p">)</span>
+
+<span class="c">#set user authentication token obtained by creating user from console</span>
+<span class="n">pymesibo</span><span class="o">.</span><span class="n">set_accesstoken</span><span class="p">(</span><span class="s">"aea59d3713701704bed9fd5952d9419ba8c4209a335e664ef2g"</span><span class="p">)</span>
+<span class="n">pymesibo</span><span class="o">.</span><span class="n">set_database</span><span class="p">(</span><span class="s">"mesibo.db"</span><span class="p">)</span>
+<span class="n">pymesibo</span><span class="o">.</span><span class="n">set_notify</span><span class="p">(</span><span class="n">test_mesiboNotify</span><span class="p">)</span> <span class="c">#your custom listener class</span>
+<span class="n">pymesibo</span><span class="o">.</span><span class="n">set_device</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">"MyUser"</span><span class="p">,</span> <span class="s">"mypythonapp"</span><span class="p">,</span> <span class="s">"1.0.0"</span><span class="p">)</span>
+
+<span class="c"># Initialisation complete. Start Mesibo ..</span>
+<span class="n">pymesibo</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+<span class="n">pymesibo</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+
+</code></pre></div></div>
+
+<p>As explained in <a href="https://mesibo.com">Anatomy of Mesibo Application</a>, Mesibo invokes a class of Listeners for various events.</p>
+
+<p>Derive from the <code class="highlighter-rouge">mesiboNotify</code> class to implement listeners as shown below.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">class</span> <span class="nc">test_mesiboNotify</span><span class="p">(</span><span class="n">mesiboNotify</span><span class="p">):</span> 
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+    
+    <span class="k">def</span> <span class="nf">set_api</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">mesibo_ref</span><span class="p">):</span>
+        <span class="n">pymesibo</span> <span class="o">=</span> <span class="n">mesibo_ref</span>
+    
+    <span class="k">def</span> <span class="nf">on_status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">status</span><span class="p">,</span> <span class="n">sub_status</span><span class="p">,</span> <span class="n">channel</span><span class="p">,</span> <span class="n">p_from</span><span class="p">):</span>
+        <span class="c">#You will receive the connection status here</span>
+        
+        <span class="k">print</span><span class="p">(</span><span class="s">"===&gt;on_status: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">status</span><span class="p">)</span> <span class="o">+</span> <span class="s">" substatus: "</span> <span class="o">+</span>
+              <span class="nb">str</span><span class="p">(</span><span class="n">sub_status</span><span class="p">)</span> <span class="o">+</span> <span class="s">" channel:"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">channel</span><span class="p">)</span> <span class="o">+</span> <span class="s">"from: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">p_from</span><span class="p">))</span>
+        
+        <span class="k">return</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">on_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message_params_dict</span><span class="p">,</span> <span class="n">p_from</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">p_len</span><span class="p">):</span>
+        <span class="c">#Invoked on receiving a new message or reading database messages</span>
+        <span class="c">#You will receive messages here.</span>
+       
+        <span class="k">print</span><span class="p">(</span><span class="s">"You have recieved a message!"</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">[:</span><span class="n">p_len</span><span class="p">])</span>  <span class="c"># data buffer/Python bytes object</span>
+
+        <span class="k">return</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">on_messagestatus</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>  <span class="n">message_params_dict</span><span class="p">,</span> <span class="n">p_from</span><span class="p">,</span> <span class="n">last</span><span class="p">):</span>
+        <span class="c">#Invoked when the status of outgoing or sent message is changed</span>
+        <span class="c">#You will receive status of sent messages here</span>
+        
+        <span class="k">print</span><span class="p">(</span><span class="s">"===&gt;on_messagestatus: from "</span> <span class="o">+</span>
+              <span class="nb">str</span><span class="p">(</span><span class="n">p_from</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">last</span><span class="p">))</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"with message_parameters"</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">message_params_dict</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="mi">0</span>
+</code></pre></div></div>
+
+<p>That’s it - you are now ready to receive your first real-time message.</p>
+
+<h2 id="testing-your-python-application">Testing your Python application</h2>
+<ol>
+  <li>Run your Python script</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python myfirstapp.py
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p><code class="highlighter-rouge">on_status</code> should cycle through various status information. Finally, you should receive status=1 which indicates that your app is successfully connected to the mesibo real-time server and ready to send and receive real-time messages.</p>
+  </li>
+  <li>
+    <p>Since we do not have any other users right now, we will use <strong>mesibo console</strong> to send a test message. In a later section, we will learn how to send messages from the code itself.</p>
+  </li>
+</ol>
+
+<ul>
+  <li>
+    <p>Go to <strong>Console -&gt;Application-&gt;Users</strong>. You should see the user you have created.</p>
+  </li>
+  <li>
+    <p>Go to user details by clicking the <code class="highlighter-rouge">Edit</code> button. Scroll down, you will see a section to <code class="highlighter-rouge">Message User</code>
+Enter 1000 (or anything) in <code class="highlighter-rouge">From</code> field, check <code class="highlighter-rouge">Create This User</code> checkbox, type message and click on <code class="highlighter-rouge">Send</code>.</p>
+  </li>
+</ul>
+
+<ol>
+  <li>You will instantly receive this message in your console/terminal in <code class="highlighter-rouge">on_message</code> listener.</li>
+</ol>
+
+<h2 id="sending-messages">Sending Messages</h2>
+<p>In the previous section, we have used mesibo console to send a message. Now we will quickly learn how to send messages from the code itself. To send messages, we will use <code class="highlighter-rouge">send_message</code> real-time API for which we will need destination user, message-id and the message itself.</p>
+
+<p>Invoke the following function anywhere from your code to send a text message.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">send_text_message</span><span class="p">(</span><span class="n">pymesibo</span><span class="p">,</span><span class="n">to</span><span class="p">,</span><span class="n">message</span><span class="p">):</span>
+        <span class="c">#pymesibo is the Mesibo Python API instance. </span>
+        <span class="c">#Make sure the instance is initialised before you call API functions </span>
+        <span class="n">msg_params</span> <span class="o">=</span> <span class="p">{</span><span class="s">"id"</span><span class="p">:</span><span class="n">pymesibo</span><span class="o">.</span><span class="n">random</span><span class="p">()}</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+        <span class="n">datalen</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">pymesibo</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="n">msg_params</span><span class="p">,</span><span class="n">to</span><span class="p">,</span><span class="n">data</span><span class="p">,</span><span class="n">datalen</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p>That’s it! Try it out by creating two users and send messages to each other by using the above function.</p>
+
+							<!-- tags -->
+							
+							
+							
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=android">android</a>, <a href="/documentation/glossary/?term=ios">ios</a>, <a href="/documentation/glossary/?term=cpp">cpp</a>, <a href="/documentation/glossary/?term=python">python</a></span>
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/documentation/tutorials/first-app/python/";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+							<!-- removed for mesibo -->
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/documentation/tutorials/first-app/python/#os-requirements" class="nomunge">OS requirements</a>
+    <ul>
+      <li><a href="/documentation/tutorials/first-app/python/#prerequisites" class="nomunge">Prerequisites</a></li>
+      <li><a href="/documentation/tutorials/first-app/python/#first-python-app" class="nomunge">First Python App</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/tutorials/first-app/python/#testing-your-python-application" class="nomunge">Testing your Python application</a></li>
+  <li><a href="/documentation/tutorials/first-app/python/#sending-messages" class="nomunge">Sending Messages</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/">Home</a></li>
+                        <li><a href="https://mesibo.com/pricing/">Pricing</a></li>
+                        <li><a href="https://mesibo.com/use-cases/">Use Cases</a></li>
+                        <li><a href="https://mesibo.com/custom-solutions/">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/documentation/faq/">FAQ</a></li>
+                        <li><a href="https://mesibo.com/help/">Support</a></li>
+                        <li class="break"><a href="https://stackoverflow.com/questions/ask">Community</a></li>
+                        <li><a href="https://mesibo.com/documentation/">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+                        <li><a href="https://mesibo.com/career/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="https://mesibo.com/terms-of-use/#terms">Terms-of-Service</a></li>
+                        <li><a href="https://mesibo.com/terms-of-use/#privacy">Privacy Policy</a></li>
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright &copy; 2019 Mesibo. All rights reserved. </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a target="_blank" href="https://twitter.com/mesiboapi">Twitter</a></li>
+                    <li class="fa fa-youtube"><a target="_blank" href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ">Youtube</a></li>
+                    <li class="fa fa-google-plus"><a target="_blank" href="https://plus.google.com/b/107106343719610600541/107106343719610600541">Google</a></li>
+                    <li class="fa fa-github"><a target="_blank" href="https://github.com/mesibo/samples">Github</a></li>
+                    <li class="fa fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/mesibo">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a target="_blank" href="https://www.facebook.com/mesiboapi">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/documentation/tutorials/first-app/python/';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

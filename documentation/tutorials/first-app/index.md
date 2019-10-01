@@ -17,10 +17,10 @@ Ensure that you have gone through following prerequisites before you read furthe
 
 - Read the [Get Started]({{ '/documentation/get-started/' | relative_url }}) Guide.
 - Read about [Type of APIs]({{ '/documentation/api/' | relative_url }})
-- Read about [Admin API]({{ '/documentation/api/server-side-api/' | relative_url }})
+- Read about [Backend APIs]({{ '/documentation/api/backend-api/' | relative_url }})
 - Signed-up and Logged-in to [Mesibo Console](https://mesibo.com/console) **(It's free)**
 
-You are not required to go through [Real-time API]({{ '/documentation/api/real-time-api/' | relative_url }}) for now.
+You are not required to go through [Real-time APIs]({{ '/documentation/api/real-time-api/' | relative_url }}) for now.
 
 ## Preparation
 

@@ -1,0 +1,498 @@
+<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+			
+<!-- edit url temporarily disabled Mesibo -->
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/documentation/tutorials/open-source-whatsapp-clone/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/mesibo-favicon.png">
+	<link rel="mesibo-favicon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
+	<!-- metadata -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesibo"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="Customize Android and iOS Messenger"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="1: Introduction 2: Android App 3: iOS App 4: Customizing 5: Hosting APIs 6: On-Premise Deployment 7: Conclusion In this part, we will customize the Android and iOS messenger apps..." />
+	<meta name="twitter:image:src" content="/images/docs@2x.png" />
+	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="open, source, whatsapp, mesibo, ios, overview">
+	<link rel="stylesheet" href="/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="/css/bootstrap.min.css" >
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css" >
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- SEO stuff -->
+	<title>Customize Android and iOS Messenger | Mesibo Documentation</title>
+<meta property="og:title" content="Customize Android and iOS Messenger" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Customize Open Source Android and iOS Messenger" />
+<meta property="og:description" content="Customize Open Source Android and iOS Messenger" />
+<link rel="canonical" href="/documentation/tutorials/open-source-whatsapp-clone/customize/" />
+<meta property="og:url" content="/documentation/tutorials/open-source-whatsapp-clone/customize/" />
+<meta property="og:site_name" content="Mesibo Documentation" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Customize Android and iOS Messenger","description":"Customize Open Source Android and iOS Messenger","url":"https://docs.docker.com/documentation/tutorials/open-source-whatsapp-clone/customize/"}</script>
+	<!-- END SEO STUFF -->
+	
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	</script>
+	<!-- Google Analytic Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-97488698-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytic Code --> 	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '559862854355634'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=559862854355634&ev=PageView
+		&noscript=1"/>
+		</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/mesibo-logo-white.png" alt="Mesibo Docs" title="Mesibo Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" style="visibility: hidden">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <!-- Yusuf
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mesibo latest (current)   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="/v1.0.0/">Mesibo v1.0.0</a></li>
+  </ul>
+</div>
+
+    </div>
+    -->
+</div>
+
+        </div>
+    </div>
+</nav>
+
+	</header>
+
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+							
+							<h1>Customize Android and iOS Messenger</h1>
+							 
+
+							 <span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    4 minutes
+  
+</span>
+
+							
+							
+							<ul class="pagination">
+  <li><a href="/documentation/tutorials/open-source-whatsapp-clone/">1: Introduction</a></li>
+  <li><a href="/documentation/tutorials/open-source-whatsapp-clone/android/">2: Android App</a></li>
+  <li><a href="/documentation/tutorials/open-source-whatsapp-clone/ios/">3: iOS App</a></li>
+  <li class="active"><a href="/documentation/tutorials/open-source-whatsapp-clone/customize/">4: Customizing</a></li>
+  <li><a href="/documentation/tutorials/open-source-whatsapp-clone/backend/">5: Hosting APIs</a></li>
+  <li><a href="/documentation/tutorials/open-source-whatsapp-clone/on-premise/">6: On-Premise Deployment</a></li>
+  <li><a href="/documentation/tutorials/open-source-whatsapp-clone/conclusion/">7: Conclusion</a></li>
+</ul>
+
+<p>In this part, we will customize the Android and iOS messenger apps we just built.</p>
+
+<p>Let’s get started.</p>
+
+<h2 id="what-can-be-customized">What can be customized?</h2>
+<p>Everything! that’s true! You can customize each and everything in these apps to suit your requirements and branding. Not only you can customize the look and feel of the app but even how each and every message is rendered (covered in our upcoming chatbot tutorial).</p>
+
+<p>However, we will not cover all the customizations in this tutorial. Instead, we will focus on a few very important ones as follow.</p>
+
+<ul>
+  <li>Account Kit to send your own branded verification SMS</li>
+  <li>Geolocation support by configuring Google Maps and Google Places API key</li>
+  <li>Files/Media handler to store files on your own server(s)/cloud</li>
+  <li>Welcome screen and other miscellaneous customizations</li>
+</ul>
+
+<h2 id="customizations">Customizations</h2>
+<h3 id="facebook-account-kit">Facebook Account Kit</h3>
+<p>The first screen you see in the Mesibo Messenger right after the welcome screen is the login screen. This is the screen which allows the user to enter their phone number and then verifies it by sending an OTP over an SMS or a call.</p>
+
+<p><img src="/images/app/ios/mesibo_account_kit_ios.jpg" alt="" /></p>
+
+<p>The phone verification is usually an expensive process, as it requires sending SMS or making calls to verify phone number, often international numbers. However, thanks to the Facebook Account Kit, this entire process is automated and made available free (well, almost).  Account Kit lets your quickly register for and log in to your app by using just their phone number or email address — no password needed. It’s reliable, easy to use and gives you a choice about how you sign up for apps - by using the phone, email or optionally, your Facebook account.</p>
+
+<blockquote>
+  <p>Facebook has recently discontinued Account Kit. The existing accounts will work till March 9, 2019. However, for the new installations, you need to have your own verification method.</p>
+</blockquote>
+
+<p>To use Account Kit, you need to create an App and generate an Account Kit client token. The entire process takes less than 5 minutes.</p>
+
+<ol>
+  <li>Go to <a href="https://developers.facebook.com/apps/">Facebook App Page</a></li>
+  <li>If you have an existing app, click on it. Otherwise, click on <code class="highlighter-rouge">Add A New App</code> to create a new app and go to its settings.</li>
+  <li>On the left side navigation, you will see <code class="highlighter-rouge">PRODUCTS</code>. If you don’t see <code class="highlighter-rouge">Account Kit</code> there, click on <code class="highlighter-rouge">+</code> icon and add ‘Account Kit’.</li>
+  <li>Now you shall see <code class="highlighter-rouge">Account Kit</code> under <code class="highlighter-rouge">PRODUCTS</code>. Click on <code class="highlighter-rouge">Settings</code> under <code class="highlighter-rouge">Account Kit</code> menu.</li>
+  <li>Make a note of <code class="highlighter-rouge">APP ID</code> and <code class="highlighter-rouge">Account Kit Client Token</code></li>
+</ol>
+
+<p><img src="/images/tuts/accountkit.jpg" alt="" style="margin-top: 30px; margin-bottom: 10px" /></p>
+
+<blockquote>
+  <p>Although Mesibo Messenger shipped with its own Account Kit token, we usually keep changing this token and hence you MUST get your own token as described above.</p>
+</blockquote>
+
+<p>Once you get your own APP ID and Client token, edit following files in Mesibo Messenger source and change the value</p>
+
+<ul>
+  <li>For Android, edit <code class="highlighter-rouge">app/src/main/res/values/strings.xml</code> file and enter your APP ID and Client token in <code class="highlighter-rouge">FACEBOOK_APP_ID</code> and <code class="highlighter-rouge">ACCOUNT_KIT_CLIENT_TOKEN</code> fields respectively.</li>
+  <li>For iOS, click on <code class="highlighter-rouge">Info.plist</code> and enter your APP ID and Client token in <code class="highlighter-rouge">FacebookAppID</code> and <code class="highlighter-rouge">AccountKitClientToken</code> fields respectively. You also need to edit <code class="highlighter-rouge">CFBundleURLSchemes</code> field to reflect your Facebook APP ID after prefixing with ‘fb’.</li>
+</ul>
+
+<h3 id="geolocation---google-maps-and-google-places">Geolocation - Google Maps and Google Places</h3>
+<p>Mesibo Messenger allows you to select and send the location to your friends and family. Mesibo Messenger uses Google Maps and Google Places SDK for this functionality. Hence, you must add Google Maps and Google Places API Key into the project for it to work.</p>
+
+<p>For instructions to get API key and configure it, visit</p>
+<ul>
+  <li>For Android, https://developers.google.com/maps/documentation/android-sdk/signup</li>
+  <li>For iOS, https://developers.google.com/maps/documentation/ios-sdk/get-api-key</li>
+</ul>
+
+<h3 id="mediafile-storage">Media/File Storage</h3>
+<p>Just like text messages, mesibo allows you to send and receive any arbitrary file (image, video, doc, etc) in real-time. Sending and receiving file is no different from sending and receiving text messages. All an application has to do is to first upload the file to a server and then send the URL and thumbnail [optional] using mesibo in real-time. The receiver then downloads it using that URL. This out-of-band mechanism ensures that no real-time messages are blocked waiting for a large file to be uploaded or downloaded.</p>
+
+<p>Mesibo Messenger offers you the flexibility to store all files on your own servers including private servers or cloud services like Amazon Web Services, Google Cloud Storage, Microsoft Azure, etc. All you have to do is to configure the upload and download URL.</p>
+
+<blockquote>
+  <p>Mesibo Messenger source code has been configured with upload and download URLs that only stores your files for a few hours. Also, the quota is limited for demo purpose. Hence, you must provide your own upload and download URLs.</p>
+</blockquote>
+
+<h2 id="conclusion-of-part-four">Conclusion of part four</h2>
+
+<p>In this part, we have learn about customizing Mesibo Messenger. So far, you have used the backend which we already hosted for you so that you can quickly play with the apps. In the next part, we will learn about hosting the backend on your infastructure.</p>
+
+<p><a href="/documentation/tutorials/open-source-whatsapp-clone/backend/" class="button outline-btn" style="margin-bottom: 30px; margin-right: 100%">On to Part 5 &gt;&gt;</a></p>
+
+							<!-- tags -->
+							
+							
+							
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=open">open</a>, <a href="/documentation/glossary/?term=source">source</a>, <a href="/documentation/glossary/?term=whatsapp">whatsapp</a>, <a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=ios">ios</a>, <a href="/documentation/glossary/?term=overview">overview</a></span>
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/documentation/tutorials/open-source-whatsapp-clone/customize/";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+							<!-- removed for mesibo -->
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/documentation/tutorials/open-source-whatsapp-clone/customize/#what-can-be-customized" class="nomunge">What can be customized?</a></li>
+  <li><a href="/documentation/tutorials/open-source-whatsapp-clone/customize/#customizations" class="nomunge">Customizations</a>
+    <ul>
+      <li><a href="/documentation/tutorials/open-source-whatsapp-clone/customize/#facebook-account-kit" class="nomunge">Facebook Account Kit</a></li>
+      <li><a href="/documentation/tutorials/open-source-whatsapp-clone/customize/#geolocation---google-maps-and-google-places" class="nomunge">Geolocation - Google Maps and Google Places</a></li>
+      <li><a href="/documentation/tutorials/open-source-whatsapp-clone/customize/#mediafile-storage" class="nomunge">Media/File Storage</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/tutorials/open-source-whatsapp-clone/customize/#conclusion-of-part-four" class="nomunge">Conclusion of part four</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/">Home</a></li>
+                        <li><a href="https://mesibo.com/pricing/">Pricing</a></li>
+                        <li><a href="https://mesibo.com/use-cases/">Use Cases</a></li>
+                        <li><a href="https://mesibo.com/custom-solutions/">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/documentation/faq/">FAQ</a></li>
+                        <li><a href="https://mesibo.com/help/">Support</a></li>
+                        <li class="break"><a href="https://stackoverflow.com/questions/ask">Community</a></li>
+                        <li><a href="https://mesibo.com/documentation/">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+                        <li><a href="https://mesibo.com/career/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="https://mesibo.com/terms-of-use/#terms">Terms-of-Service</a></li>
+                        <li><a href="https://mesibo.com/terms-of-use/#privacy">Privacy Policy</a></li>
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright &copy; 2019 Mesibo. All rights reserved. </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a target="_blank" href="https://twitter.com/mesiboapi">Twitter</a></li>
+                    <li class="fa fa-youtube"><a target="_blank" href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ">Youtube</a></li>
+                    <li class="fa fa-google-plus"><a target="_blank" href="https://plus.google.com/b/107106343719610600541/107106343719610600541">Google</a></li>
+                    <li class="fa fa-github"><a target="_blank" href="https://github.com/mesibo/samples">Github</a></li>
+                    <li class="fa fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/mesibo">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a target="_blank" href="https://www.facebook.com/mesiboapi">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/documentation/tutorials/open-source-whatsapp-clone/customize/';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

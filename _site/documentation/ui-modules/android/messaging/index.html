@@ -1,0 +1,740 @@
+<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+			
+<!-- edit url temporarily disabled Mesibo -->
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/documentation/ui-modules/android/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/mesibo-favicon.png">
+	<link rel="mesibo-favicon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
+	<!-- metadata -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesibo"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="Using Mesibo UI Modules for Android - Messaging"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="Mesibo offers ready to use UI components which you can quickly add to your applications. Mesibo UI components are completely customizable as per your needs. On Android, Mesibo UI components..." />
+	<meta name="twitter:image:src" content="/images/docs@2x.png" />
+	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="open, source, on-premise, messaging, chat, voice, video">
+	<link rel="stylesheet" href="/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="/css/bootstrap.min.css" >
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css" >
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- SEO stuff -->
+	<title>Using Mesibo UI Modules for Android - Messaging | Mesibo Documentation</title>
+<meta property="og:title" content="Using Mesibo UI Modules for Android - Messaging" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Using Mesibo UI Modules for Android - Messaging" />
+<meta property="og:description" content="Using Mesibo UI Modules for Android - Messaging" />
+<link rel="canonical" href="/documentation/ui-modules/android/messaging/" />
+<meta property="og:url" content="/documentation/ui-modules/android/messaging/" />
+<meta property="og:site_name" content="Mesibo Documentation" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Using Mesibo UI Modules for Android - Messaging","description":"Using Mesibo UI Modules for Android - Messaging","url":"https://docs.docker.com/documentation/ui-modules/android/messaging/"}</script>
+	<!-- END SEO STUFF -->
+	
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	</script>
+	<!-- Google Analytic Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-97488698-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytic Code --> 	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '559862854355634'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=559862854355634&ev=PageView
+		&noscript=1"/>
+		</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/mesibo-logo-white.png" alt="Mesibo Docs" title="Mesibo Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" style="visibility: hidden">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <!-- Yusuf
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mesibo latest (current)   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="/v1.0.0/">Mesibo v1.0.0</a></li>
+  </ul>
+</div>
+
+    </div>
+    -->
+</div>
+
+        </div>
+    </div>
+</nav>
+
+	</header>
+
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+							
+							<h1>Using Mesibo UI Modules for Android - Messaging</h1>
+							 
+
+							 <span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    11 minutes
+  
+</span>
+
+							
+							
+							<p>Mesibo offers ready to use UI components which you can quickly add to your applications. Mesibo UI components are completely customizable as per your needs. On Android, Mesibo UI components are available as <code class="highlighter-rouge">Fragments</code>.</p>
+
+<p>There are primarily two types of Mesibo UI components:</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">MesiboUserListFragment</code>, which displays a list of users in different modes. The modes are explained below.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">MesiboMessagingFragment</code>, which renders all the messages for a particular user or a group</p>
+  </li>
+</ul>
+
+<h2 id="mesibouserlistfragment">MesiboUserListFragment</h2>
+
+<p><code class="highlighter-rouge">MesiboUserListFragment</code> displays a list of users in different modes. You need to pass the desired mode when starting the fragment.</p>
+
+<p>The different modes for <code class="highlighter-rouge">MesiboUserListFragment</code> are:</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">MesiboUserListFragment.MODE_MESSAGELIST</code> shows a list of latest messages, one per user, sorted by time</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">MesiboUserListFragment.MODE_SELECTCONTACT</code> shows Mesibo Contact List - a list of Mesibo Users in the application</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">MesiboUserListFragment.MODE_SELECTCONTACT_FORWARD</code> shows a list of users to whom you can forward message(s)</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">MesiboUserListFragment.MODE_SELECTGROUP</code> shows UI for selecting and creating a group</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">MesiboUserListFragment.MODE_EDITGROUP</code> shows UI for editing different attributes of a group such as - 
+ Group Member List, Group Profile Picture, Group Title or Group Name</p>
+  </li>
+</ul>
+
+<p>Below are some examples showing how to load <code class="highlighter-rouge">MesiboUserListFragment</code> in different modes.</p>
+
+<h3 id="loading-a-message-list">Loading a Message List</h3>
+<p>Loads a list of latest messages, one per user, sorted by the time</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ExampleActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="kd">implements</span> <span class="n">MesiboMessageListFragment</span><span class="o">.</span><span class="na">FragmentListener</span> <span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+	<span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">my_layout</span><span class="o">);</span>
+    
+	<span class="n">MesiboUserListFragment</span> <span class="n">userListFragment</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MesiboUserListFragment</span><span class="o">();</span>
+	<span class="n">userListFragment</span><span class="o">.</span><span class="na">setListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+
+	<span class="n">Bundle</span> <span class="n">bl</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Bundle</span><span class="o">();</span>
+	<span class="n">bl</span><span class="o">.</span><span class="na">putInt</span><span class="o">(</span><span class="n">MesiboUserListFragment</span><span class="o">.</span><span class="na">MESSAGE_LIST_MODE</span><span class="o">,</span> <span class="n">MesiboUserListFragment</span><span class="o">.</span><span class="na">MODE_MESSAGELIST</span><span class="o">);</span>
+	<span class="n">userListFragment</span><span class="o">.</span><span class="na">setArguments</span><span class="o">(</span><span class="n">bl</span><span class="o">);</span>
+
+	<span class="n">FragmentManager</span> <span class="n">fm</span> <span class="o">=</span> <span class="n">getSupportFragmentManager</span><span class="o">();</span>
+	<span class="n">FragmentTransaction</span> <span class="n">ft</span> <span class="o">=</span> <span class="n">fm</span><span class="o">.</span><span class="na">beginTransaction</span><span class="o">();</span>
+	<span class="n">ft</span><span class="o">.</span><span class="na">replace</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">userlist_fragment</span><span class="o">,</span> <span class="n">userListFragment</span><span class="o">,</span> <span class="s">"null"</span><span class="o">);</span>
+	<span class="n">ft</span><span class="o">.</span><span class="na">commit</span><span class="o">();</span>
+
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p><img src="/images/ui-modules/android/message_liist.png" width="320" height="550" /></p>
+
+<h3 id="loading-a-contacts-list">Loading a Contacts list</h3>
+<p>Similar to the above example, load the list of all contacts just by changing the mode, a new chat window will be opened when you click on a user or a group.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Bundle</span> <span class="n">bl</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Bundle</span><span class="o">();</span>
+<span class="n">bl</span><span class="o">.</span><span class="na">putInt</span><span class="o">(</span><span class="n">MesiboUserListFragment</span><span class="o">.</span><span class="na">MESSAGE_LIST_MODE</span><span class="o">,</span> <span class="n">MesiboUserListFragment</span><span class="o">.</span><span class="na">MODE_SELECTCONTACT</span><span class="o">);</span>
+<span class="n">userListFragment</span><span class="o">.</span><span class="na">setArguments</span><span class="o">(</span><span class="n">bl</span><span class="o">);</span>
+
+</code></pre></div></div>
+
+<p><img src="/images/ui-modules/android/new_contact.png" width="320" height="550" /></p>
+
+<h3 id="loading-a-forward-list">Loading a Forward List</h3>
+<p>Loads a list of users to forward one or more messages. It also shows recently contacted users.</p>
+
+<p>Following are the arguments to forward list</p>
+
+<ul>
+  <li><code class="highlighter-rouge">MesiboUI.MESSAGE_ID</code>- MESSAGE_ID is the unique ID of each message to be forwarded.</li>
+  <li><code class="highlighter-rouge">MesiboUI.MESSAGE_IDS</code> - Multiple messages can also be forwarded at a time by putting all the message Ids in an array.</li>
+  <li><code class="highlighter-rouge">MesiboUI.MESSAGE_CONTENT</code>- content of a message.</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Bundle</span> <span class="n">bl</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Bundle</span><span class="o">();</span>
+<span class="n">bl</span><span class="o">.</span><span class="na">putInt</span><span class="o">(</span><span class="n">MesiboUserListFragment</span><span class="o">.</span><span class="na">MESSAGE_LIST_MODE</span><span class="o">,</span> <span class="n">MesiboUserListFragment</span><span class="o">.</span><span class="na">MODE_SELECTCONTACT_FORWARD</span><span class="o">);</span>
+<span class="n">bl</span><span class="o">.</span><span class="na">putString</span><span class="o">(</span><span class="n">MesiboUI</span><span class="o">.</span><span class="na">MESSAGE_CONTENT</span><span class="o">,</span> <span class="s">"This is forward message Test"</span><span class="o">);</span>
+<span class="n">bl</span><span class="o">.</span><span class="na">putBoolean</span><span class="o">(</span><span class="n">MesiboUI</span><span class="o">.</span><span class="na">FORWARD_AND_CLOSE</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+<span class="n">userListFragment</span><span class="o">.</span><span class="na">setArguments</span><span class="o">(</span><span class="n">bl</span><span class="o">);</span>
+
+</code></pre></div></div>
+
+<p><img src="/images/ui-modules/android/forward_mode.png" width="320" height="550" /></p>
+
+<h3 id="loading-editing-a-group">Loading Editing a Group</h3>
+<p>This loads the fragment to edit a group. Group properties such as - Members, group name, etc can be edited from here</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Bundle</span> <span class="n">bl</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Bundle</span><span class="o">();</span>
+<span class="n">bl</span><span class="o">.</span><span class="na">putInt</span><span class="o">(</span><span class="n">MesiboUserListFragment</span><span class="o">.</span><span class="na">MESSAGE_LIST_MODE</span><span class="o">,</span> <span class="n">MesiboUserListFragment</span><span class="o">.</span><span class="na">MODE_EDITGROUP</span><span class="o">);</span>
+
+<span class="n">userListFragment</span><span class="o">.</span><span class="na">setArguments</span><span class="o">(</span><span class="n">bl</span><span class="o">);</span>
+
+</code></pre></div></div>
+
+<h3 id="loading-select-a-group">Loading Select a Group</h3>
+<p>This loads the fragment to select a group.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Bundle</span> <span class="n">bl</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Bundle</span><span class="o">();</span>
+<span class="n">bl</span><span class="o">.</span><span class="na">putInt</span><span class="o">(</span><span class="n">MesiboUserListFragment</span><span class="o">.</span><span class="na">MESSAGE_LIST_MODE</span><span class="o">,</span> <span class="n">MesiboUserListFragment</span><span class="o">.</span><span class="na">MODE_SELECTGROUP</span><span class="o">);</span>
+
+<span class="n">userListFragment</span><span class="o">.</span><span class="na">setArguments</span><span class="o">(</span><span class="n">bl</span><span class="o">);</span>
+
+</code></pre></div></div>
+
+<h2 id="mesibomessagingfragment">MesiboMessagingFragment</h2>
+<p><code class="highlighter-rouge">MesiboMessagingFragment</code> renders all the messages for a particular user or a group. All you have to go is to pass the <code class="highlighter-rouge">user address</code> or the <code class="highlighter-rouge">group ID</code>. It will read all the messages from the database and display them. It will also listen to new real-time messages and display them as and when received.</p>
+
+<h3 id="using-mesibomessagingfragment">Using MesiboMessagingFragment</h3>
+
+<p>Load <code class="highlighter-rouge">MesiboMessagingFragment</code> from your activity by passing <code class="highlighter-rouge">MesiboUI.PEER</code> or <code class="highlighter-rouge">MesiboUI.GROUP_ID</code> in a bundle.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">MesiboUI.PEER</code> - User Address</li>
+  <li><code class="highlighter-rouge">MesiboUI.GROUP_ID</code> - Group id</li>
+</ul>
+
+<p>You can also pass additional arguments if requires:</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">MesiboMessagingFragment.READONLY</code> - This is a boolean argument.  Pass <code class="highlighter-rouge">true</code> to hide the interface to send messages, making the window read-only.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">MesiboMessagingFragment.SHOWMISSEDCALLS</code> - Pass <code class="highlighter-rouge">true</code> if you want to display the alert for missed calls. Default true.</p>
+  </li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">MesiboMessagingFragment</span> <span class="n">mFragment</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MesiboMessagingFragment</span><span class="o">();</span>
+
+<span class="n">Bundle</span> <span class="n">bl</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Bundle</span><span class="o">();</span>
+<span class="n">bl</span><span class="o">.</span><span class="na">putString</span><span class="o">(</span><span class="n">MesiboUI</span><span class="o">.</span><span class="na">PEER</span><span class="o">,</span> <span class="s">"+15675551234"</span><span class="o">);</span>
+<span class="n">bl</span><span class="o">.</span><span class="na">putLong</span><span class="o">(</span><span class="n">MesiboUI</span><span class="o">.</span><span class="na">GROUP_ID</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+<span class="n">mFragment</span><span class="o">.</span><span class="na">setArguments</span><span class="o">(</span><span class="n">bl</span><span class="o">);</span>
+
+<span class="n">getSupportFragmentManager</span><span class="o">().</span><span class="na">beginTransaction</span><span class="o">()</span>
+	<span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">fragment_container</span><span class="o">,</span> <span class="n">mFragment</span><span class="o">).</span><span class="na">commit</span><span class="o">();</span>
+
+</code></pre></div></div>
+
+<p><img src="/images/ui-modules/android/new_message_fragment.png" width="320" height="550" /></p>
+
+<h2 id="customizing-message-rendering">Customizing Message Rendering</h2>
+
+<p>In the above example, <code class="highlighter-rouge">MesiboMessagingFragment</code> renders all the messages using a default layout. Although the default layout beautifully meets the requirements of the most, it also allows you to customize each and every message if requires.</p>
+
+<p>There are essentially three basic elements that form a chat window are</p>
+
+<ul>
+  <li>
+    <p><strong>Incoming chat view</strong>
+Incoming chat view renders all the received messages. By default, it is shown on the left side of the screen.</p>
+  </li>
+  <li>
+    <p><strong>Outgoing chat view</strong>
+Outgoing chat view renders all the outgoing and sent messages. By default, it is shown on the right side of the screen. It is similar to incoming chat view but additinally shows message status.</p>
+  </li>
+  <li>
+    <p><strong>Data view</strong>
+Data view renders non-message data like date, missed calls etc. By default, it is shown in the center of the screen.</p>
+  </li>
+</ul>
+
+<p>By default, <code class="highlighter-rouge">MesiboMessagingFragment</code> renders using a default layout. However, you can instruct <code class="highlighter-rouge">MesiboMessagingFragment</code> to let you ask before rendering the message. So if you decide to take over the rendering of a particular message(s), <code class="highlighter-rouge">MesiboMessagingFragment</code> will let you render them instead of handling itself. And this is very easy, all you have to do is to listen to <code class="highlighter-rouge">MesiboRecycleViewHolder listener</code> as explained below:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MessagingUiFragment</span> <span class="kd">extends</span> <span class="n">MesiboMessagingFragment</span> <span class="kd">implements</span> <span class="n">MesiboRecycleViewHolder</span><span class="o">.</span><span class="na">Listener</span> <span class="o">{</span>
+	
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="kt">int</span> <span class="nf">Mesibo_onGetItemViewType</span><span class="o">(</span><span class="n">Mesibo</span><span class="o">.</span><span class="na">MessageParams</span> <span class="n">messageParams</span><span class="o">,</span> <span class="n">String</span> <span class="n">message</span><span class="o">)</span> <span class="o">{</span>
+
+		<span class="k">return</span> <span class="n">MesiboRecycleViewHolder</span><span class="o">.</span><span class="na">TYPE_NONE</span><span class="o">;</span>
+	<span class="o">}</span>
+
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="n">MesiboRecycleViewHolder</span> <span class="nf">Mesibo_onCreateViewHolder</span><span class="o">(</span><span class="n">ViewGroup</span> <span class="n">viewGroup</span><span class="o">,</span> <span class="kt">int</span> <span class="n">viewType</span><span class="o">)</span> <span class="o">{</span>
+			<span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+	<span class="o">}</span>
+
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Mesibo_onBindViewHolder</span><span class="o">(</span><span class="n">MesiboRecycleViewHolder</span> <span class="n">mesiboRecycleViewHolder</span><span class="o">,</span> <span class="kt">int</span> <span class="n">viewType</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">selected</span><span class="o">,</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">MessageParams</span> <span class="n">messageParams</span><span class="o">,</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">MesiboMessage</span> <span class="n">mesiboMessage</span><span class="o">)</span> <span class="o">{</span>
+
+	<span class="o">}</span>
+
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Mesibo_UpdateViewHolder</span><span class="o">(</span><span class="n">MesiboRecycleViewHolder</span> <span class="n">mesiboRecycleViewHolder</span><span class="o">,</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">MesiboMessage</span> <span class="n">mesiboMessage</span><span class="o">)</span> <span class="o">{</span>
+
+	<span class="o">}</span>
+
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">Mesibo_onViewRecycled</span><span class="o">(</span><span class="n">MesiboRecycleViewHolder</span> <span class="n">mesiboRecycleViewHolder</span><span class="o">)</span> <span class="o">{</span>
+
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>As you can notice, above methods are very similar to RecyclerView adapter methods. Now, we will look into each of these methods.</p>
+
+<h3 id="mesibo_ongetitemviewtype">Mesibo_onGetItemViewType</h3>
+<p>You need to return the type of the message if you are handling the message. return <code class="highlighter-rouge">TYPE_NONE</code> otherwise.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">(</span><span class="n">messageParams</span><span class="o">.</span><span class="na">isIncoming</span><span class="o">())</span> <span class="o">{</span>
+	<span class="k">return</span> <span class="n">MesiboRecycleViewHolder</span><span class="o">.</span><span class="na">TYPE_INCOMING</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="k">return</span> <span class="n">MesiboRecycleViewHolder</span><span class="o">.</span><span class="na">TYPE_OUTGOING</span><span class="o">;</span>
+</code></pre></div></div>
+
+<h3 id="mesibo_oncreateviewholder">Mesibo_onCreateViewHolder</h3>
+<p>Mesibo UI will call this function with each message. If you plan to render that message yourself, you need to return a view holder derived from <code class="highlighter-rouge">MesiboRecycleViewHolder</code>. If not, return <code class="highlighter-rouge">null</code> for the default rendering.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">(</span><span class="n">MesiboRecycleViewHolder</span><span class="o">.</span><span class="na">TYPE_INCOMING</span> <span class="o">==</span> <span class="n">type</span><span class="o">)</span> <span class="o">{</span>
+	<span class="n">View</span> <span class="n">v</span> <span class="o">=</span> <span class="n">LayoutInflater</span><span class="o">.</span><span class="na">from</span><span class="o">(</span><span class="n">viewGroup</span><span class="o">.</span><span class="na">getContext</span><span class="o">()).</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">incoming_chat_layout</span><span class="o">,</span> <span class="n">viewGroup</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+
+	<span class="k">return</span> <span class="k">new</span> <span class="nf">IncomingMessgaeViewHolder</span><span class="o">(</span><span class="n">v</span><span class="o">);</span>
+
+<span class="o">}</span>
+
+<span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+</code></pre></div></div>
+
+<h3 id="mesibo_onbindviewholder">Mesibo_onBindViewHolder()</h3>
+
+<p>This method binds the returned view with the message content.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">(</span><span class="n">MesiboRecycleViewHolder</span><span class="o">.</span><span class="na">TYPE_INCOMING</span> <span class="o">==</span> <span class="n">type</span><span class="o">)</span> <span class="o">{</span>
+
+	<span class="n">IncomingMessgaeViewHolder</span> <span class="n">IncomingView</span> <span class="o">=</span> <span class="o">(</span><span class="n">IncomingMessgaeViewHolder</span><span class="o">)</span> <span class="n">mesiboRecycleViewHolder</span><span class="o">;</span>
+	<span class="n">IncomingView</span><span class="o">.</span><span class="na">mIncomingMessageTV</span><span class="o">.</span><span class="na">setText</span><span class="o">(</span><span class="n">Html</span><span class="o">.</span><span class="na">fromHtml</span><span class="o">(</span><span class="n">mesiboMessage</span><span class="o">.</span><span class="na">message</span><span class="o">));</span>
+
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="creating-the-viewholder">Creating the ViewHolder</h3>
+<p>Below is a sample view holder extending <code class="highlighter-rouge">MesiboRecycleViewHolder</code></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">IncomingMessgaeViewHolder</span> <span class="kd">extends</span> <span class="n">MesiboRecycleViewHolder</span> <span class="o">{</span>
+	<span class="n">View</span> <span class="n">mViewIncomingMessage</span><span class="o">;</span>
+	<span class="o">...</span>
+
+	<span class="kd">public</span> <span class="nf">IncomingMessgaeViewHolder</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+		<span class="kd">super</span><span class="o">(</span><span class="n">v</span><span class="o">);</span>
+		<span class="n">mIncomingMessageTV</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">textview_message</span><span class="o">);</span>
+		<span class="n">mViewIncomingMessage</span> <span class="o">=</span> <span class="n">v</span><span class="o">;</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h2 id="changing-default-texts-and-other-ui-elements">Changing Default Texts and other UI elements</h2>
+<p><code class="highlighter-rouge">MesiboUI.Config</code> allows you to change default texts and other UI elements to suit your need.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">Config</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="n">Bitmap</span> <span class="n">contactPlaceHolder</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="n">Bitmap</span> <span class="n">messagingBackground</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="n">useLetterTitleImage</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="n">enableVoiceCall</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="n">enableVideoCall</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="n">enableForward</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="n">enableSearch</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="n">enableBackButton</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="n">messageListTitle</span> <span class="o">=</span> <span class="s">"Messages"</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="n">userListTitle</span> <span class="o">=</span> <span class="s">"Contacts"</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="n">createGroupTitle</span> <span class="o">=</span> <span class="s">"Create a New Group"</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="n">modifyGroupTitle</span> <span class="o">=</span> <span class="s">"Modify Group details"</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="n">selectContactTitle</span> <span class="o">=</span> <span class="s">"Select a contact"</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="n">selectGroupContactsTitle</span> <span class="o">=</span> <span class="s">"Select group members"</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="n">forwardTitle</span> <span class="o">=</span> <span class="s">"Forward To"</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="n">userOnlineIndicationTitle</span> <span class="o">=</span> <span class="s">"online"</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="n">onlineIndicationTitle</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="n">offlineIndicationTitle</span> <span class="o">=</span> <span class="s">"Not connected"</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="n">connectingIndicationTitle</span> <span class="o">=</span> <span class="s">"Connecting..."</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="n">noNetworkIndicationTitle</span> <span class="o">=</span> <span class="s">"No Network"</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="n">emptyUserListMessage</span> <span class="o">=</span> <span class="s">"No Messages"</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="n">showRecentInForward</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="n">mConvertSmilyToEmoji</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">mLetterTitleColors</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">int</span> <span class="n">mToolbarColor</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">int</span> <span class="n">mStatusbarColor</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">int</span> <span class="n">mToolbarTextColor</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">int</span> <span class="n">mUserListTypingIndicationColor</span> <span class="o">=</span> <span class="o">-</span><span class="mi">11953852</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">int</span> <span class="n">mUserListStatusColor</span> <span class="o">=</span> <span class="o">-</span><span class="mi">7960954</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">long</span> <span class="n">mTypingIndicationTimeMS</span> <span class="o">=</span> <span class="mi">10000L</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">long</span> <span class="n">mMaxImageFileSize</span> <span class="o">=</span> <span class="mi">307200L</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">long</span> <span class="n">mMaxVideoFileSize</span> <span class="o">=</span> <span class="mi">20971520L</span><span class="o">;</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="n">mEnableNotificationBadge</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+
+	<span class="kd">public</span> <span class="nf">Config</span><span class="o">()</span> <span class="o">{</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>All you have to do is to get the config instance and change necessary variable.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MesiboUI</span><span class="o">.</span><span class="na">Config</span> <span class="n">config</span> <span class="o">=</span> <span class="n">MesiboUI</span><span class="o">.</span><span class="na">getConfig</span><span class="o">();</span>
+<span class="n">config</span><span class="o">.</span><span class="na">messageListTitle</span> <span class="o">=</span> <span class="s">"New Messages"</span><span class="o">;</span>
+
+</code></pre></div></div>
+
+
+							<!-- tags -->
+							
+							
+							
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=open">open</a>, <a href="/documentation/glossary/?term=source">source</a>, <a href="/documentation/glossary/?term=on-premise">on-premise</a>, <a href="/documentation/glossary/?term=messaging">messaging</a>, <a href="/documentation/glossary/?term=chat">chat</a>, <a href="/documentation/glossary/?term=voice">voice</a>, <a href="/documentation/glossary/?term=video">video</a></span>
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/documentation/ui-modules/android/messaging/";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+							<!-- removed for mesibo -->
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/documentation/ui-modules/android/messaging/#mesibouserlistfragment" class="nomunge">MesiboUserListFragment</a>
+    <ul>
+      <li><a href="/documentation/ui-modules/android/messaging/#loading-a-message-list" class="nomunge">Loading a Message List</a></li>
+      <li><a href="/documentation/ui-modules/android/messaging/#loading-a-contacts-list" class="nomunge">Loading a Contacts list</a></li>
+      <li><a href="/documentation/ui-modules/android/messaging/#loading-a-forward-list" class="nomunge">Loading a Forward List</a></li>
+      <li><a href="/documentation/ui-modules/android/messaging/#loading-editing-a-group" class="nomunge">Loading Editing a Group</a></li>
+      <li><a href="/documentation/ui-modules/android/messaging/#loading-select-a-group" class="nomunge">Loading Select a Group</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/ui-modules/android/messaging/#mesibomessagingfragment" class="nomunge">MesiboMessagingFragment</a>
+    <ul>
+      <li><a href="/documentation/ui-modules/android/messaging/#using-mesibomessagingfragment" class="nomunge">Using MesiboMessagingFragment</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/ui-modules/android/messaging/#customizing-message-rendering" class="nomunge">Customizing Message Rendering</a>
+    <ul>
+      <li><a href="/documentation/ui-modules/android/messaging/#mesibo_ongetitemviewtype" class="nomunge">Mesibo_onGetItemViewType</a></li>
+      <li><a href="/documentation/ui-modules/android/messaging/#mesibo_oncreateviewholder" class="nomunge">Mesibo_onCreateViewHolder</a></li>
+      <li><a href="/documentation/ui-modules/android/messaging/#mesibo_onbindviewholder" class="nomunge">Mesibo_onBindViewHolder()</a></li>
+      <li><a href="/documentation/ui-modules/android/messaging/#creating-the-viewholder" class="nomunge">Creating the ViewHolder</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/ui-modules/android/messaging/#changing-default-texts-and-other-ui-elements" class="nomunge">Changing Default Texts and other UI elements</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/">Home</a></li>
+                        <li><a href="https://mesibo.com/pricing/">Pricing</a></li>
+                        <li><a href="https://mesibo.com/use-cases/">Use Cases</a></li>
+                        <li><a href="https://mesibo.com/custom-solutions/">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/documentation/faq/">FAQ</a></li>
+                        <li><a href="https://mesibo.com/help/">Support</a></li>
+                        <li class="break"><a href="https://stackoverflow.com/questions/ask">Community</a></li>
+                        <li><a href="https://mesibo.com/documentation/">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+                        <li><a href="https://mesibo.com/career/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="https://mesibo.com/terms-of-use/#terms">Terms-of-Service</a></li>
+                        <li><a href="https://mesibo.com/terms-of-use/#privacy">Privacy Policy</a></li>
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright &copy; 2019 Mesibo. All rights reserved. </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a target="_blank" href="https://twitter.com/mesiboapi">Twitter</a></li>
+                    <li class="fa fa-youtube"><a target="_blank" href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ">Youtube</a></li>
+                    <li class="fa fa-google-plus"><a target="_blank" href="https://plus.google.com/b/107106343719610600541/107106343719610600541">Google</a></li>
+                    <li class="fa fa-github"><a target="_blank" href="https://github.com/mesibo/samples">Github</a></li>
+                    <li class="fa fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/mesibo">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a target="_blank" href="https://www.facebook.com/mesiboapi">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/documentation/ui-modules/android/messaging/';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

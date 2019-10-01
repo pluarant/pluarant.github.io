@@ -1,0 +1,9 @@
+<ul class="pagination">
+  <li {% if include.selected=="introduction"%}class="active"{% endif %}><a href="{{ '/documentation/api/real-time-api/' | relative_url }}">Introduction</a></li>
+  <li {% if include.selected=="init"%}class="active"{% endif %}><a href="{{ '/documentation/api/real-time-api/initialization/' | relative_url }}">Initialization</a></li>
+  <li {% if include.selected=="messaging"%}class="active"{% endif %}><a href="{{ '/documentation/api/real-time-api/messaging/' | relative_url }}">Messaging</a></li>
+  <li {% if include.selected=="file"%}class="active"{% endif %}><a href="{{ '/documentation/api/real-time-api/file-transfer/' | relative_url }}">File Transfer</a></li>
+  <li {% if include.selected=="calls"%}class="active"{% endif %}><a href="{{ '/documentation/api/real-time-api/calls/' | relative_url }}">Voice &amp; Video Calls</a></li>
+  <li {% if include.selected=="profiles"%}class="active"{% endif %}><a href="{{ '/documentation/api/real-time-api/profiles/' | relative_url }}">Profiles</a></li>
+  <li {% if include.selected=="utility"%}class="active"{% endif %}><a href="{{ '/documentation/api/real-time-api/utility/' | relative_url }}">utility</a></li>
+</ul>

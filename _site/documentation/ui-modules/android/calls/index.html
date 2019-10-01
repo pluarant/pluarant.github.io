@@ -1,0 +1,770 @@
+<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+			
+<!-- edit url temporarily disabled Mesibo -->
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/documentation/ui-modules/android/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/mesibo-favicon.png">
+	<link rel="mesibo-favicon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
+	<!-- metadata -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesibo"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="Using Mesibo UI Modules for Android - Voice and Video Calls"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="Mesibo provides inbuilt UI for your audio and video calls. You just need to add dependencies, and you will be ready to make and receive calls using Mesibo. Using Mesibo..." />
+	<meta name="twitter:image:src" content="/images/docs@2x.png" />
+	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="open, source, on-premise, messaging, chat, voice, video">
+	<link rel="stylesheet" href="/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="/css/bootstrap.min.css" >
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css" >
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- SEO stuff -->
+	<title>Using Mesibo UI Modules for Android - Voice and Video Calls | Mesibo Documentation</title>
+<meta property="og:title" content="Using Mesibo UI Modules for Android - Voice and Video Calls" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Using Mesibo UI Modules for Android - Voice and Video Calls" />
+<meta property="og:description" content="Using Mesibo UI Modules for Android - Voice and Video Calls" />
+<link rel="canonical" href="/documentation/ui-modules/android/calls/" />
+<meta property="og:url" content="/documentation/ui-modules/android/calls/" />
+<meta property="og:site_name" content="Mesibo Documentation" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Using Mesibo UI Modules for Android - Voice and Video Calls","description":"Using Mesibo UI Modules for Android - Voice and Video Calls","url":"https://docs.docker.com/documentation/ui-modules/android/calls/"}</script>
+	<!-- END SEO STUFF -->
+	
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	</script>
+	<!-- Google Analytic Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-97488698-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytic Code --> 	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '559862854355634'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=559862854355634&ev=PageView
+		&noscript=1"/>
+		</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/mesibo-logo-white.png" alt="Mesibo Docs" title="Mesibo Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" style="visibility: hidden">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <!-- Yusuf
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mesibo latest (current)   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="/v1.0.0/">Mesibo v1.0.0</a></li>
+  </ul>
+</div>
+
+    </div>
+    -->
+</div>
+
+        </div>
+    </div>
+</nav>
+
+	</header>
+
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+							
+							<h1>Using Mesibo UI Modules for Android - Voice and Video Calls</h1>
+							 
+
+							 <span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    11 minutes
+  
+</span>
+
+							
+							
+							<script src="https://api.mesibo.com/maven_versions.js?refresh"></script>
+
+<script src="/js/api_versions.js"></script>
+
+<p>Mesibo provides inbuilt UI for your audio and video calls. You just need to add dependencies, and you will be ready to make and receive calls using Mesibo.</p>
+
+<h2 id="using-mesibo-calls-fragment">Using Mesibo Calls Fragment</h2>
+
+<h3 id="install-mesibo-calls-api-sdk">Install Mesibo Calls API SDK</h3>
+<p>Include following into dependencies section of your app <code class="highlighter-rouge">build.gradle</code> file, for example:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">implementation</span> <span class="err">'</span><span class="n">com</span><span class="o">.</span><span class="na">mesibo</span><span class="o">.</span><span class="na">api</span><span class="o">:</span><span class="nl">calls:</span><span class="n">version_calls</span><span class="err">'</span>
+
+</code></pre></div></div>
+
+<h3 id="initialize-mesibo-calls">Initialize Mesibo calls</h3>
+<p>Initialize Mesibo Calls by adding the below code. This initializes the complete Mesibo call infrastructure and will automatically show any incoming voice or video calls.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MesiboCall</span> <span class="n">mesiboCall</span> <span class="o">=</span> <span class="n">MesiboCall</span><span class="o">.</span><span class="na">getInstance</span><span class="o">();</span>
+<span class="n">mesiboCall</span><span class="o">.</span><span class="na">init</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+</code></pre></div></div>
+
+<h3 id="runtime-permissions">Runtime Permissions</h3>
+<p>When you make or receive calls with Mesibo, it asks you to grant a few permissions which are required to place the call.</p>
+<blockquote>
+  <p>You need to give access to these permissions as the call functionality may not work without these.</p>
+</blockquote>
+
+<h4 id="record-audio">Record Audio</h4>
+<p>This permission is required to access the microphone and record your voice.</p>
+
+<h4 id="record-video">Record Video</h4>
+<p>This permission is required to access the camera to make video calls.</p>
+
+<h3 id="making-voice-and-video-calls">Making Voice and Video calls</h3>
+
+<p>Making a voice or video calls using Mesibo is as simple as calling a function:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">call</span><span class="o">(</span><span class="n">Context</span> <span class="n">context</span><span class="o">,</span> <span class="kt">long</span> <span class="n">callId</span><span class="o">,</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">UserProfile</span> <span class="n">userProfile</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">IsVideoCall</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>Where,</p>
+<ul>
+  <li><code class="highlighter-rouge">Context</code> of the application</li>
+  <li><code class="highlighter-rouge">callId</code> unique random number which can be generated from <code class="highlighter-rouge">Mesibo.random()</code></li>
+  <li><code class="highlighter-rouge">userProfile</code> profile of the user to who you are making a call</li>
+  <li><code class="highlighter-rouge">IsVideoCall</code> a flag to indicate a video or a voice call. <code class="highlighter-rouge">true</code> if placing a video call, <code class="highlighter-rouge">false</code> otherwise</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Mesibo</span><span class="o">.</span><span class="na">UserProfile</span> <span class="n">userProfile</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">UserProfile</span><span class="o">();</span>
+<span class="n">userProfile</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">"User name"</span><span class="o">;</span>
+<span class="n">userProfile</span><span class="o">.</span><span class="na">address</span> <span class="o">=</span> <span class="s">"User address"</span><span class="o">;</span>
+	
+<span class="c1">// Making audio call</span>
+<span class="n">MesiboCall</span><span class="o">.</span><span class="na">getInstance</span><span class="o">().</span><span class="na">call</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">random</span><span class="o">(),</span> <span class="n">userProfile</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+
+</code></pre></div></div>
+
+<h2 id="customization-of-mesibo-voice-and-video-calls">Customization of Mesibo voice and video calls</h2>
+<p>Mesibo Calls uses fragments to display the call UI and to handle user actions. Mesibo has default calls UI implementation. However, before placing a call or showing incoming calls, <code class="highlighter-rouge">MesiboCall</code> object can request you to supply your own fragments. It does it by invoking a listener which you MUST implemnt if you plan to use your own UI.</p>
+
+<p>You can supply your own UI fragments by implementing <code class="highlighter-rouge">MesiboCall.MesiboCallListener</code> somewhere in your code. For example,</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ExampleActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="kd">implements</span> <span class="n">MesiboCall</span><span class="o">.</span><span class="na">MesiboCallListener</span> <span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+	      <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+	        
+    <span class="o">}</span>
+    
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">MesiboVideoCallFragment</span> <span class="nf">MesiboCall_getVideoCallFragment</span><span class="o">(</span><span class="n">Mesibo</span><span class="o">.</span><span class="na">UserProfile</span> <span class="n">userProfile</span><span class="o">)</span> <span class="o">{</span>
+       <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">MesiboAudioCallFragment</span> <span class="nf">MesiboCall_getAudioCallFragment</span><span class="o">(</span><span class="n">Mesibo</span><span class="o">.</span><span class="na">UserProfile</span> <span class="n">userProfile</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">Fragment</span> <span class="nf">MesiboCall_getIncomingAudioCallFragment</span><span class="o">(</span><span class="n">Mesibo</span><span class="o">.</span><span class="na">UserProfile</span> <span class="n">userProfile</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+
+<p>and let Mesibo know about your listener by,</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mesiboCall</span><span class="o">.</span><span class="na">setListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+        
+</code></pre></div></div>
+
+<p>There are three listener functions which you must implement:</p>
+
+<h3 id="mesibocall_getincomingaudiocallfragment">MesiboCall_getIncomingAudioCallFragment</h3>
+<p>This is called when MesiboCall is about to display the incoming voice call. You should return an instance of <code class="highlighter-rouge">MesiboIncomingAudioCallFragment</code> to show your own incoming voice call UI. You should implement at least two buttons to <code class="highlighter-rouge">Accept</code> and <code class="highlighter-rouge">Decline</code> the call. You may also want to show the User name, address and profile picture of the user who is calling you.</p>
+
+<h3 id="mesibocall_getaudiocallfragment">MesiboCall_getAudioCallFragment</h3>
+<p>This is called when MesiboCall is about to display the call in progress screen (the outgoing call or the screen after incoming call is accepted). You should return an instance of <code class="highlighter-rouge">Fragment</code> to show your own voice call UI.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">MesiboVideoCallFragment</code> - This fragment is loaded when you make or receive a video call.</li>
+</ul>
+
+<h3 id="mesibocall_gevideocallfragment">MesiboCall_geVideoCallFragment</h3>
+<p>This is called when MesiboCall is about to display the incoming or outgoing video call. You should return an instance of <code class="highlighter-rouge">MesiboVideoCallFragment</code> to show your own video call UI.</p>
+
+<p>Below are the samples of how you can implement your own UI.</p>
+
+<h3 id="incoming-audio-call">Incoming Audio call</h3>
+<p>Create a custom fragment that extends <code class="highlighter-rouge">MesiboIncomingAudioCallFragment</code></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">AudioIncomingFragment</span> <span class="kd">extends</span> <span class="n">MesiboIncomingAudioCallFragment</span> <span class="kd">implements</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">CallListener</span> <span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">View</span> <span class="nf">onCreateView</span><span class="o">(</span><span class="n">LayoutInflater</span> <span class="n">inflater</span><span class="o">,</span> <span class="n">ViewGroup</span> <span class="n">container</span><span class="o">,</span> <span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">View</span> <span class="n">view</span> <span class="o">=</span> <span class="n">inflater</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">fragment_audio_custom</span><span class="o">,</span> <span class="n">container</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+	    
+	<span class="c1">// initialize your fragment views, click handlers etc</span>
+        
+	<span class="k">return</span> <span class="n">view</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="c1">// Hangup handler</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">callHangup</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">hangup</span><span class="o">();</span> <span class="c1">// call hangup from the super class</span>
+        <span class="n">getActivity</span><span class="o">().</span><span class="na">finish</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">callAnswer</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">answer</span><span class="o">();</span> <span class="c1">// call answer from the super class</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onResume</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onResume</span><span class="o">();</span>
+        <span class="n">Mesibo</span><span class="o">.</span><span class="na">addListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onPause</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onPause</span><span class="o">();</span>
+        <span class="n">Mesibo</span><span class="o">.</span><span class="na">removeListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">Mesibo_onCall</span><span class="o">(</span><span class="kt">long</span> <span class="n">peerid</span><span class="o">,</span> <span class="kt">long</span> <span class="n">callid</span><span class="o">,</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">UserProfile</span> <span class="n">profile</span><span class="o">,</span> <span class="kt">int</span> <span class="n">flags</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">Mesibo_onCallStatus</span><span class="o">(</span><span class="kt">long</span> <span class="n">peerid</span><span class="o">,</span> <span class="kt">long</span> <span class="n">callid</span><span class="o">,</span> <span class="kt">int</span> <span class="n">status</span><span class="o">,</span> <span class="kt">int</span> <span class="n">flags</span><span class="o">,</span> <span class="n">String</span> <span class="n">desc</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">((</span><span class="n">status</span> <span class="o">&amp;</span> <span class="n">CALLSTATUS_COMPLETE</span><span class="o">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">getActivity</span><span class="o">().</span><span class="na">finish</span><span class="o">();</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">Mesibo_onCallServer</span><span class="o">(</span><span class="kt">int</span> <span class="n">type</span><span class="o">,</span> <span class="n">String</span> <span class="n">url</span><span class="o">,</span> <span class="n">String</span> <span class="n">username</span><span class="o">,</span> <span class="n">String</span> <span class="n">credential</span><span class="o">)</span> <span class="o">{</span>
+
+    <span class="o">}</span>
+<span class="o">}</span>
+
+
+</code></pre></div></div>
+
+<h4 id="return-audioincomingfragment-in-mesibocall_getincomingaudiocallfragment">Return <code class="highlighter-rouge">AudioIncomingFragment</code> in <code class="highlighter-rouge">MesiboCall_getIncomingAudioCallFragment()</code></h4>
+
+<p>In your activity where you have implemented <code class="highlighter-rouge">MesiboCall.MesiboCallListener</code> add below code to return your custom fragment.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">Fragment</span> <span class="nf">MesiboCall_getIncomingAudioCallFragment</span><span class="o">(</span><span class="n">Mesibo</span><span class="o">.</span><span class="na">UserProfile</span> <span class="n">userProfile</span><span class="o">)</span> <span class="o">{</span>
+    
+        <span class="n">AudioIncomingFragment</span> <span class="n">audioIncomingFragment</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AudioIncomingFragment</span><span class="o">();</span>
+        <span class="n">audioIncomingFragment</span><span class="o">.</span><span class="na">setProfile</span><span class="o">(</span><span class="n">userProfile</span><span class="o">);</span>
+
+        <span class="k">return</span> <span class="n">audioIncomingFragment</span><span class="o">;</span>
+    <span class="o">}</span>
+</code></pre></div></div>
+
+<p><img src="/images/ui-modules/android/audio_call.png" width="320" height="550" /></p>
+
+<p>That’s it. Run your app and when you receive a voice call, you will see your custom fragment instead of the default fragment.</p>
+
+<h3 id="video-call">Video call</h3>
+
+<p>Create a custom fragment that extends <code class="highlighter-rouge">MesiboVideoCallFragment</code></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">VideoCallFragment</span> <span class="kd">extends</span> <span class="n">MesiboVideoCallFragment</span> <span class="kd">implements</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">CallListener</span><span class="o">,</span> <span class="n">View</span><span class="o">.</span><span class="na">OnTouchListener</span> <span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">View</span> <span class="nf">onCreateView</span><span class="o">(</span><span class="n">LayoutInflater</span> <span class="n">inflater</span><span class="o">,</span> <span class="n">ViewGroup</span> <span class="n">container</span><span class="o">,</span> <span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="n">View</span> <span class="n">controlView</span> <span class="o">=</span> <span class="n">inflater</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">fragment_videocall_custom</span><span class="o">,</span> <span class="n">container</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+
+	<span class="c1">//Initialize view and click handlers</span>
+
+        <span class="c1">// Add buttons click events.</span>
+        <span class="n">disconnectButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">hangup</span><span class="o">();</span>
+
+
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="n">cameraSwitchButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">switchCamera</span><span class="o">();</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="n">videoScalingButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">scalingType</span> <span class="o">==</span> <span class="n">ScalingType</span><span class="o">.</span><span class="na">SCALE_ASPECT_FILL</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="n">videoScalingButton</span><span class="o">.</span><span class="na">setBackgroundResource</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">ic_fullscreen_white_48dp</span><span class="o">);</span>
+                    <span class="n">scalingType</span> <span class="o">=</span> <span class="n">ScalingType</span><span class="o">.</span><span class="na">SCALE_ASPECT_FIT</span><span class="o">;</span>
+                <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                    <span class="n">videoScalingButton</span><span class="o">.</span><span class="na">setBackgroundResource</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">ic_fullscreen_exit_white_48dp</span><span class="o">);</span>
+                    <span class="n">scalingType</span> <span class="o">=</span> <span class="n">ScalingType</span><span class="o">.</span><span class="na">SCALE_ASPECT_FILL</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="c1">///callEvents.onVideoScalingSwitch(scalingType);</span>
+                <span class="n">scaleVideo</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="n">toggleSpeakerButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">toggleSpeaker</span><span class="o">();</span>
+                <span class="kt">boolean</span> <span class="n">enabled</span> <span class="o">=</span> <span class="n">callEvents</span><span class="o">.</span><span class="na">onToggleSpeaker</span><span class="o">();</span>
+                <span class="n">toggleSpeakerButton</span><span class="o">.</span><span class="na">setAlpha</span><span class="o">(</span><span class="n">enabled</span> <span class="o">?</span> <span class="mf">1.0f</span> <span class="o">:</span> <span class="mf">0.3f</span><span class="o">);</span>
+                <span class="n">callEvents</span><span class="o">.</span><span class="na">onToggleSpeaker</span><span class="o">();</span>
+
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="n">toggleMuteButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">toggleMic</span><span class="o">();</span>
+                <span class="kt">boolean</span> <span class="n">enabled</span> <span class="o">=</span> <span class="n">callEvents</span><span class="o">.</span><span class="na">onToggleMic</span><span class="o">();</span>
+                <span class="n">toggleMuteButton</span><span class="o">.</span><span class="na">setAlpha</span><span class="o">(</span><span class="n">enabled</span> <span class="o">?</span> <span class="mf">1.0f</span> <span class="o">:</span> <span class="mf">0.3f</span><span class="o">);</span>
+                <span class="n">callEvents</span><span class="o">.</span><span class="na">onToggleMic</span><span class="o">();</span>
+
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="n">toggleCameraButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">toggleCamera</span><span class="o">();</span>
+                <span class="kt">boolean</span> <span class="n">enabled</span> <span class="o">=</span> <span class="n">callEvents</span><span class="o">.</span><span class="na">onToggleCamera</span><span class="o">();</span>
+                <span class="c1">//setButton(toggleCameraButton, enabled);</span>
+                <span class="n">toggleCameraButton</span><span class="o">.</span><span class="na">setAlpha</span><span class="o">(</span><span class="n">enabled</span> <span class="o">?</span> <span class="mf">1.0f</span> <span class="o">:</span> <span class="mf">0.3f</span><span class="o">);</span>
+                <span class="n">callEvents</span><span class="o">.</span><span class="na">onToggleCamera</span><span class="o">();</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="n">mDeclineViewButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">hangup</span><span class="o">();</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="n">mAcceptViewButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">answer</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+                <span class="n">setDisplayMode</span><span class="o">();</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="k">return</span> <span class="n">controlView</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onResume</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onResume</span><span class="o">();</span>
+        <span class="n">Mesibo</span><span class="o">.</span><span class="na">addListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onPause</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onPause</span><span class="o">();</span>
+        <span class="n">Mesibo</span><span class="o">.</span><span class="na">removeListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@SuppressWarnings</span><span class="o">(</span><span class="s">"deprecation"</span><span class="o">)</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onAttach</span><span class="o">(</span><span class="n">Activity</span> <span class="n">activity</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onAttach</span><span class="o">(</span><span class="n">activity</span><span class="o">);</span>
+        <span class="n">callEvents</span> <span class="o">=</span> <span class="o">(</span><span class="n">OnCallEvents</span><span class="o">)</span> <span class="n">activity</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">Mesibo_onCall</span><span class="o">(</span><span class="kt">long</span> <span class="n">peerid</span><span class="o">,</span> <span class="kt">long</span> <span class="n">callid</span><span class="o">,</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">UserProfile</span> <span class="n">userProfile</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">Mesibo_onCallStatus</span><span class="o">(</span><span class="kt">long</span> <span class="n">peerid</span><span class="o">,</span> <span class="kt">long</span> <span class="n">callid</span><span class="o">,</span> <span class="kt">int</span> <span class="n">status</span><span class="o">,</span> <span class="kt">int</span> <span class="n">flags</span><span class="o">,</span> <span class="n">String</span> <span class="n">desc</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">Mesibo_onCallServer</span><span class="o">(</span><span class="kt">int</span> <span class="n">type</span><span class="o">,</span> <span class="n">String</span> <span class="n">url</span><span class="o">,</span> <span class="n">String</span> <span class="n">username</span><span class="o">,</span> <span class="n">String</span> <span class="n">credential</span><span class="o">)</span> <span class="o">{</span>
+
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onTouch</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">,</span> <span class="n">MotionEvent</span> <span class="n">motionEvent</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+
+<p>In your code where you have implemented <code class="highlighter-rouge">MesiboCall.MesiboCallListener</code>, add below code to return your custom fragment.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">MesiboVideoCallFragment</span> <span class="nf">MesiboCall_getVideoCallFragment</span><span class="o">(</span><span class="n">Mesibo</span><span class="o">.</span><span class="na">UserProfile</span> <span class="n">userProfile</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="n">VideoCallFragment</span> <span class="n">videoCallFragment</span> <span class="o">=</span> <span class="k">new</span> <span class="n">VideoCallFragment</span><span class="o">();</span>
+        <span class="n">videoCallFragment</span><span class="o">.</span><span class="na">setProfile</span><span class="o">(</span><span class="n">userProfile</span><span class="o">);</span>
+
+        <span class="k">return</span> <span class="n">videoCallFragment</span><span class="o">;</span>
+    <span class="o">}</span>
+
+</code></pre></div></div>
+
+<p><img src="/images/ui-modules/android/video_call.png" width="320" height="550" /></p>
+
+<p>That’s it. Run your app and make Video calls. You will see your custom created fragment for video calls.</p>
+
+
+							<!-- tags -->
+							
+							
+							
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=open">open</a>, <a href="/documentation/glossary/?term=source">source</a>, <a href="/documentation/glossary/?term=on-premise">on-premise</a>, <a href="/documentation/glossary/?term=messaging">messaging</a>, <a href="/documentation/glossary/?term=chat">chat</a>, <a href="/documentation/glossary/?term=voice">voice</a>, <a href="/documentation/glossary/?term=video">video</a></span>
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/documentation/ui-modules/android/calls/";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+							<!-- removed for mesibo -->
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/documentation/ui-modules/android/calls/#using-mesibo-calls-fragment" class="nomunge">Using Mesibo Calls Fragment</a>
+    <ul>
+      <li><a href="/documentation/ui-modules/android/calls/#install-mesibo-calls-api-sdk" class="nomunge">Install Mesibo Calls API SDK</a></li>
+      <li><a href="/documentation/ui-modules/android/calls/#initialize-mesibo-calls" class="nomunge">Initialize Mesibo calls</a></li>
+      <li><a href="/documentation/ui-modules/android/calls/#runtime-permissions" class="nomunge">Runtime Permissions</a></li>
+      <li><a href="/documentation/ui-modules/android/calls/#making-voice-and-video-calls" class="nomunge">Making Voice and Video calls</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/ui-modules/android/calls/#customization-of-mesibo-voice-and-video-calls" class="nomunge">Customization of Mesibo voice and video calls</a>
+    <ul>
+      <li><a href="/documentation/ui-modules/android/calls/#mesibocall_getincomingaudiocallfragment" class="nomunge">MesiboCall_getIncomingAudioCallFragment</a></li>
+      <li><a href="/documentation/ui-modules/android/calls/#mesibocall_getaudiocallfragment" class="nomunge">MesiboCall_getAudioCallFragment</a></li>
+      <li><a href="/documentation/ui-modules/android/calls/#mesibocall_gevideocallfragment" class="nomunge">MesiboCall_geVideoCallFragment</a></li>
+      <li><a href="/documentation/ui-modules/android/calls/#incoming-audio-call" class="nomunge">Incoming Audio call</a></li>
+      <li><a href="/documentation/ui-modules/android/calls/#video-call" class="nomunge">Video call</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/">Home</a></li>
+                        <li><a href="https://mesibo.com/pricing/">Pricing</a></li>
+                        <li><a href="https://mesibo.com/use-cases/">Use Cases</a></li>
+                        <li><a href="https://mesibo.com/custom-solutions/">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/documentation/faq/">FAQ</a></li>
+                        <li><a href="https://mesibo.com/help/">Support</a></li>
+                        <li class="break"><a href="https://stackoverflow.com/questions/ask">Community</a></li>
+                        <li><a href="https://mesibo.com/documentation/">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+                        <li><a href="https://mesibo.com/career/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="https://mesibo.com/terms-of-use/#terms">Terms-of-Service</a></li>
+                        <li><a href="https://mesibo.com/terms-of-use/#privacy">Privacy Policy</a></li>
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright &copy; 2019 Mesibo. All rights reserved. </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a target="_blank" href="https://twitter.com/mesiboapi">Twitter</a></li>
+                    <li class="fa fa-youtube"><a target="_blank" href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ">Youtube</a></li>
+                    <li class="fa fa-google-plus"><a target="_blank" href="https://plus.google.com/b/107106343719610600541/107106343719610600541">Google</a></li>
+                    <li class="fa fa-github"><a target="_blank" href="https://github.com/mesibo/samples">Github</a></li>
+                    <li class="fa fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/mesibo">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a target="_blank" href="https://www.facebook.com/mesiboapi">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/documentation/ui-modules/android/calls/';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

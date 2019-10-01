@@ -1,0 +1,867 @@
+<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+			
+<!-- edit url temporarily disabled Mesibo -->
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/documentation/api/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/mesibo-favicon.png">
+	<link rel="mesibo-favicon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
+	<!-- metadata -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesibo"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="Mesibo HTTP Library"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="Introduction Mesibo HTTP is a light but fast and powerful http client library compliant with RFC 7230-7235, 1738, 2046. It is an extension of mesibo real-time Client APIs. Mesibo HTTP..." />
+	<meta name="twitter:image:src" content="/images/docs@2x.png" />
+	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="mesibo, http, android, ios, linux, mac">
+	<link rel="stylesheet" href="/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="/css/bootstrap.min.css" >
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css" >
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- SEO stuff -->
+	<title>Mesibo HTTP Library | Mesibo Documentation</title>
+<meta property="og:title" content="Mesibo HTTP Library" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Mesibo HTTP Library for Android, iOS, Linux, Mac" />
+<meta property="og:description" content="Mesibo HTTP Library for Android, iOS, Linux, Mac" />
+<link rel="canonical" href="/documentation/api/http-library/" />
+<meta property="og:url" content="/documentation/api/http-library/" />
+<meta property="og:site_name" content="Mesibo Documentation" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo HTTP Library","description":"Mesibo HTTP Library for Android, iOS, Linux, Mac","url":"https://docs.docker.com/documentation/api/http-library/"}</script>
+	<!-- END SEO STUFF -->
+	
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	</script>
+	<!-- Google Analytic Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-97488698-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytic Code --> 	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '559862854355634'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=559862854355634&ev=PageView
+		&noscript=1"/>
+		</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/mesibo-logo-white.png" alt="Mesibo Docs" title="Mesibo Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" style="visibility: hidden">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <!-- Yusuf
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mesibo latest (current)   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="/v1.0.0/">Mesibo v1.0.0</a></li>
+  </ul>
+</div>
+
+    </div>
+    -->
+</div>
+
+        </div>
+    </div>
+</nav>
+
+	</header>
+
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+							
+							<h1>Mesibo HTTP Library</h1>
+							 
+
+							 <span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    13 minutes
+  
+</span>
+
+							
+							
+							<h3 id="introduction">Introduction</h3>
+
+<p>Mesibo HTTP is a light but fast and powerful http client library compliant with RFC 7230-7235, 1738, 2046. It is an extension of mesibo real-time Client APIs.</p>
+
+<p>Mesibo HTTP not only makes networking easier, but also makes it faster, and cross-platform (Android, iOS). It lets you control almost all aspects of the HTTP protocol giving you finer control over HTTP requests.</p>
+
+<p>While there are some good HTTP libraries such as Volley for Android and AFNetworking for iOS, mesibo has the distinct advantage of being cross platform by offering the same APIs across platforms thus eliminating the need to use different libraries for different platforms. mesibo HTTP also performed faster in a benchmark test and has the smaller memory footprint.</p>
+
+<p>Advantages of using mesibo HTTP over other APIs:</p>
+<ul>
+  <li>Unified programming interface across Android and iOS, eliminating the need for using two different libraries for Android and iOS.</li>
+  <li>Very fast - during the lab testing, it was found to perform 50% faster than Volley/URLConnection (Android) and AFNetworking (iOS) for uploading and downloading large files.</li>
+  <li>Ultra small memory footprint - default is 64KB and you can change in configuration (bufferSize).</li>
+  <li>Configurable to the core - almost all aspects of HTTP protocols, security, proxy, cache, content encoding, retries, resume, keep-alive and so on.</li>
+  <li>HTTP Request queuing and throttling</li>
+  <li>HTTP persistent connections and request pipelining</li>
+  <li>Efficient and configurable cache</li>
+  <li>Resuming broken downloads and uploads</li>
+  <li>POST, upload, download - all can be combined in a single request, if required Seamless and automatic support of multi-part requests</li>
+  <li>HTTP Basic Digest authentication</li>
+  <li>Proxy authentication</li>
+  <li>Precise status and progress update of every state of HTTP protocol</li>
+  <li>Settable Timeouts for every state of the protocol (connection, headers, body)</li>
+  <li>Cancelable requests</li>
+  <li>Synchronous and Asynchronous mode of operation</li>
+  <li>Special Content-Size header processing in case of chunked transfer</li>
+  <li>[iOS] PHAsset capable.</li>
+  <li>No additional module dependencies</li>
+</ul>
+
+<p>Creating a network request using mesibo HTTP is as simple as constructing a mesibo Http object, assigning a listener and executing it (or queueing it). When you invoke execute(), mesibo initiates http connection and updates you in real-time about the progress by invoking your listener. You could also use executeAndWait() instead of execute() to wait till the execution is completed or error, if any. Following are two sample codes:</p>
+
+<h3 id="installation">Installation</h3>
+<p>Mesibo HTTP library is bundled with the Mesibo real-time API library. Hence, no separate installation is required. Refer to <a href="/documentation/install/">Installation instructions</a> for detail.</p>
+
+<h4 id="android-sample-code-for-downloading-a-file-with-resume">Android Sample code for downloading a file with resume:</h4>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">Mesibo</span><span class="o">.</span><span class="na">Http</span> <span class="n">http</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">Http</span><span class="o">();</span>
+
+<span class="n">http</span><span class="o">.</span><span class="na">url</span> <span class="o">=</span> <span class="err">“</span><span class="nl">https:</span><span class="c1">//someserver.mesibo.com/file/test.jpg”;</span>
+<span class="n">http</span><span class="o">.</span><span class="na">downloadFile</span> <span class="o">=</span> <span class="err">“</span><span class="o">/</span><span class="n">sdcard</span><span class="o">/</span><span class="n">MyApp</span><span class="o">/</span><span class="n">Files</span><span class="o">/</span><span class="n">test</span><span class="o">.</span><span class="na">jpg</span><span class="err">”</span><span class="o">;</span>
+<span class="n">http</span><span class="o">.</span><span class="na">resume</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+<span class="n">http</span><span class="o">.</span><span class="na">maxRetries</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+<span class="n">http</span><span class="o">.</span><span class="na">other</span> <span class="o">=</span> <span class="n">myObject</span><span class="o">;</span> <span class="c1">// callback data</span>
+
+<span class="n">http</span><span class="o">.</span><span class="na">onMainThread</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span> <span class="c1">// invoke listener in main thread</span>
+<span class="n">http</span><span class="o">.</span><span class="na">listener</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">HttpListener</span><span class="o">()</span> <span class="o">{</span>
+<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">Mesibo_onHttpProgress</span><span class="o">(</span><span class="n">Mesibo</span><span class="o">.</span><span class="na">Http</span> <span class="n">http</span><span class="o">,</span> <span class="kt">int</span> <span class="n">state</span><span class="o">,</span> <span class="kt">int</span> <span class="n">percent</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">if</span><span class="o">(</span><span class="mi">100</span> <span class="o">==</span> <span class="n">percent</span> <span class="o">&amp;&amp;</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">Http</span><span class="o">.</span><span class="na">STATE_DOWNLOAD</span> <span class="o">==</span> <span class="n">state</span><span class="o">)</span> <span class="o">{</span>
+			<span class="c1">// download complete</span>
+		<span class="o">}</span>
+
+		<span class="n">Return</span> <span class="kc">true</span><span class="o">;</span> <span class="c1">// return false to cancel</span>
+	<span class="o">}</span>
+<span class="o">};</span>
+
+<span class="k">if</span><span class="o">(</span><span class="n">http</span><span class="o">.</span><span class="na">execute</span><span class="o">())</span> <span class="o">{</span>
+
+<span class="o">}</span></code></pre></figure>
+
+<h4 id="ios-objective-c-sample-code-for-sending-a-simple-post-request">iOS Objective-C Sample code for sending a simple POST request</h4>
+
+<figure class="highlight"><pre><code class="language-objective_c" data-lang="objective_c"><span class="n">MesiboHttp</span> <span class="o">*</span><span class="n">http</span> <span class="o">=</span> <span class="p">[</span><span class="n">MesiboHttp</span> <span class="nf">new</span><span class="p">];</span>
+<span class="n">http</span><span class="p">.</span><span class="n">url</span> <span class="o">=</span> <span class="err">@“</span><span class="n">https</span><span class="o">:</span><span class="c1">//api.mesibo.com/api.php”;
+</span>
+<span class="c1">//POST Data
+</span><span class="n">http</span><span class="p">.</span><span class="n">postBundle</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSMutableDictionary</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span>
+<span class="p">[</span><span class="n">http</span><span class="p">.</span><span class="n">postBundle</span> <span class="nf">setValue</span><span class="p">:</span><span class="s">@"logout"</span> <span class="nf">forKey</span><span class="p">:</span><span class="s">@"op"</span><span class="p">];</span>
+<span class="p">[</span><span class="n">http</span><span class="p">.</span><span class="n">postBundle</span> <span class="nf">setValue</span><span class="p">:</span><span class="n">mToken</span> <span class="nf">forKey</span><span class="p">:</span><span class="s">@"token"</span><span class="p">];</span>
+
+<span class="n">http</span><span class="p">.</span><span class="n">listener</span> <span class="o">=</span> <span class="o">^</span><span class="n">BOOL</span><span class="p">(</span><span class="n">MesiboHttp</span> <span class="o">*</span><span class="n">http</span><span class="p">,</span> <span class="kt">int</span> <span class="n">state</span><span class="p">,</span> <span class="kt">int</span> <span class="n">progress</span><span class="p">)</span> <span class="p">{</span>
+
+	<span class="k">if</span><span class="p">(</span><span class="mi">100</span> <span class="o">==</span> <span class="n">progress</span> <span class="o">&amp;&amp;</span> <span class="n">state</span> <span class="o">==</span> <span class="n">Mesibo_HTTPSTATE_DOWNLOAD</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">NSString</span> <span class="o">*</span><span class="n">response</span> <span class="o">=</span> <span class="p">[</span><span class="n">http</span> <span class="nf">getDataString</span><span class="p">];</span>
+		<span class="c1">//parse response
+</span>	<span class="p">}</span>
+	<span class="k">return</span> <span class="nb">YES</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">//Synchronous request, use execute instead for async request
+</span><span class="k">if</span><span class="p">([</span><span class="n">http</span> <span class="nf">executeAndWait</span><span class="p">])</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="p">[</span><span class="n">http</span> <span class="nf">getDataString</span><span class="p">];</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="queuing--limiting-simultaneous-connections">Queuing &amp; limiting simultaneous connections</h3>
+
+<p>In above code examples, all the HTTP requests execute immediately and parallelly; however, often it’s desirable to queue the requests to limit the resource utilization and the number of simultaneous connections. This is where queue helps.</p>
+
+<p>Queue lets you control the number of HTTP requests to execute in parallel. You can add your request into the front or the back of a queue, and queue processes one by one from the front. If the number of simultaneous connection limit is not reached, then the queue executes request immediately, else it will wait for the next available slot.</p>
+
+<p>You can have a global request queue or multiple queues per destination as required by your application.</p>
+
+<p>Sending an http request in a queue is almost the same as above examples; however, instead of executing it, you use queue() function as shown below</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">Int</span> <span class="n">maxSimultaneousRequests</span> <span class="o">=</span> <span class="mi">4</span><span class="o">;</span>
+<span class="n">Int</span> <span class="n">maxPendingRequests</span> <span class="o">=</span> <span class="mi">8</span><span class="o">;</span>  <span class="c1">// 0 for unlimited</span>
+
+<span class="c1">// Create a queue</span>
+<span class="n">Mesibo</span><span class="o">.</span><span class="na">HttpQueue</span> <span class="n">mHttpQueue</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HttpQueue</span><span class="o">(</span><span class="n">maxSimultaneousRequests</span><span class="o">,</span>
+		<span class="n">maxPendingRequests</span><span class="o">);</span>
+
+<span class="c1">// initialize http object</span>
+<span class="n">Mesibo</span><span class="o">.</span><span class="na">Http</span> <span class="n">http</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">Http</span><span class="o">();</span>
+<span class="n">http</span><span class="o">.</span><span class="na">url</span> <span class="o">=</span> <span class="err">“</span><span class="nl">https:</span><span class="c1">//someserver.mesibo.com/file/test.jpg”;</span>
+
+<span class="o">...</span>
+
+<span class="c1">// instead of executing it, queue the request</span>
+<span class="n">mHttpQueue</span><span class="o">.</span><span class="na">queue</span><span class="o">(</span><span class="n">http</span><span class="o">);</span></code></pre></figure>
+
+<h3 id="caching">Caching</h3>
+
+<p>Mesibo gives you precise control over the cache. By default, the cache is enabled and the responses are cached adhering to standard and server response. mesibo will not cache if the server has restricted response from being cached. It also re-validates the cached objects as recommended by the server in its cache control response headers.</p>
+
+<p>You can, however, override this default behavior per request using various caching options in HTTP object; for example, forced caching or forced reading from the cache without revalidating. For more details, refer to HTTP object documentation below.</p>
+
+<p>By default, the cache is enabled. Mesibo uses app cache folder to store the cache objects. The size of the cache is limited by the system-recommended cache size. You can, however, override the cache folder and the max size by invoking static method - ‘setCacheFolder’. Note, this is a global change and all the subsequent invocations will use this new folder.</p>
+
+<h4 id="android"><strong>[Android]</strong></h4>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">Mesibo</span><span class="o">.</span><span class="na">http</span><span class="o">.</span><span class="na">setCacheFolder</span><span class="o">(</span><span class="n">path</span><span class="o">,</span> <span class="n">maxSizeInBytes</span><span class="o">);</span></code></pre></figure>
+
+<h4 id="ios"><strong>[iOS]</strong></h4>
+
+<figure class="highlight"><pre><code class="language-objective_c" data-lang="objective_c"><span class="p">[</span><span class="n">MesiboHttp</span> <span class="nf">setCacheFolder</span><span class="p">:</span><span class="n">path</span> <span class="nf">size</span><span class="p">:</span><span class="n">maxSizeInBytes</span><span class="p">];</span></code></pre></figure>
+
+<h3 id="persistent-connections-keep-alive-and-requests-pipelining">Persistent Connections (Keep-Alive) and Requests Pipelining</h3>
+
+<p>By default, Mesibo enables intelligent Keep-Alive and request pipelining for effective resource utilization and to get faster responses. You can, however, turn off this behaviour per request by setting the ‘persistent’ field to false in the HTTP object.</p>
+
+<h3 id="asynchronous-callback-thread">Asynchronous Callback Thread</h3>
+
+<p>By default, Mesibo invokes listener in the main thread and you don’t have to code extra. You can, however, override this behaviour in two ways by:</p>
+
+<ul>
+  <li>disabling it by setting onMainThread field to false in the Http object.</li>
+</ul>
+
+<p>OR</p>
+
+<ul>
+  <li>[For Android] defining your own android.os.handler object and setting it to Http.handler field. Mesibo will then invoke listener using that handler. [For iOS] defining your own dispatch_queue and setting it to Http.handler field. Mesibo will then post listener to that dispatch queue.</li>
+</ul>
+
+<h2 id="mesibo-http-object">Mesibo HTTP Object</h2>
+
+<p>Following is the description of all the parameters of Mesibo Http object for both, Android and iOS.</p>
+
+<p><strong>Android:</strong></p>
+
+<p>Mesibo.Http</p>
+
+<p><strong>iOS:</strong></p>
+
+<p>[Mesibo Http]</p>
+
+<blockquote>
+  <p>All the fields except url are <strong>OPTIONAL</strong> and can be left uninitialized.</p>
+</blockquote>
+
+<h3 id="basic-configuration-fields">Basic Configuration Fields</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>url</td>
+      <td>ServerURL, both http and https url are supported. You can also pass authentication information in url. For example, https://username:password@yourapiurl.com</td>
+    </tr>
+    <tr>
+      <td>proxy</td>
+      <td>Proxy URL. Similar to url field, you can also pass authentication information here.</td>
+    </tr>
+    <tr>
+      <td>post</td>
+      <td>Raw POST data</td>
+    </tr>
+    <tr>
+      <td>postBundle</td>
+      <td>POST key value string pairs.For Android, key value pairs can be passed in a Bundle().For iOS, NSDictionary is used to pass key value pairs.Key and Values will be URL encoded before sending to server. This field is ignored if ‘post’ field is specified.</td>
+    </tr>
+    <tr>
+      <td>contentType</td>
+      <td>Content-Type header to be sent if post or postBundle parameter is specified. Default is application/x-www-form-urlencoded. You typically don’t need to change this field unless you know what you are doing.</td>
+    </tr>
+    <tr>
+      <td>cookie</td>
+      <td>Send HTTP Cookie Header</td>
+    </tr>
+    <tr>
+      <td>downloadFile</td>
+      <td>Path where downloaded file will be saved.</td>
+    </tr>
+    <tr>
+      <td>downloadOffset</td>
+      <td>Offset from where to start download, default 0</td>
+    </tr>
+    <tr>
+      <td>downloadEnd</td>
+      <td>Offset where download to be stopped, default, end of the file</td>
+    </tr>
+    <tr>
+      <td>uploadFile</td>
+      <td>Path of the file to be uploaded</td>
+    </tr>
+    <tr>
+      <td>uploadPhAsset</td>
+      <td>[iOS only] PHAsset Object</td>
+    </tr>
+    <tr>
+      <td>uploadLocalIdentifier</td>
+      <td>[iOS only] PHAsset local identifier</td>
+    </tr>
+    <tr>
+      <td>uploadOffset</td>
+      <td>Offset from where to start upload, default 0</td>
+    </tr>
+    <tr>
+      <td>uploadEnd</td>
+      <td>Offset where upload to be stopped, default, end of the file</td>
+    </tr>
+    <tr>
+      <td>uploadFileField</td>
+      <td>POST field name for file being uploaded. Default file</td>
+    </tr>
+    <tr>
+      <td>uploadFileOffsetField</td>
+      <td>POST field name for upload offset. Your server can use this field to append partially uploaded file. Default file_offset</td>
+    </tr>
+    <tr>
+      <td>uploadFileName</td>
+      <td>File name to be sent to server. If none is specified, actual file name without the path will be sent.</td>
+    </tr>
+    <tr>
+      <td>uploadFileType</td>
+      <td>File Type to be sent</td>
+    </tr>
+    <tr>
+      <td>extraHeaders</td>
+      <td>Any custom headers you like to send</td>
+    </tr>
+    <tr>
+      <td>userAgent</td>
+      <td>User Agent, default mesibo/x.x</td>
+    </tr>
+    <tr>
+      <td>referrer</td>
+      <td>HTTP referrer header</td>
+    </tr>
+    <tr>
+      <td>origin</td>
+      <td>HTTP origin header</td>
+    </tr>
+    <tr>
+      <td>encoding</td>
+      <td>HTTP content encoding header</td>
+    </tr>
+    <tr>
+      <td>cacheControl</td>
+      <td>HTTP Cache Control header</td>
+    </tr>
+    <tr>
+      <td>ims</td>
+      <td>Set If-Modified-SInce header, timestamp</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="connection-control-fields">Connection Control Fields</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>bufferSize</td>
+      <td>Set buffer size for reading/writing files and the network connection. Default 64K, Increasing it may slightly increase the performance.</td>
+    </tr>
+    <tr>
+      <td>caCertificateFile</td>
+      <td>SSL Root CA certificate file path. SSL Host verification will be performed only if a valid CA certificate is specified.</td>
+    </tr>
+    <tr>
+      <td>connectionTimeout</td>
+      <td>Connection Timeout, in milliseconds</td>
+    </tr>
+    <tr>
+      <td>headerTimeout</td>
+      <td>Response Header Timeout, in milliseconds</td>
+    </tr>
+    <tr>
+      <td>bodyTimeout</td>
+      <td>Body packet timeout, in milliseconds.</td>
+    </tr>
+    <tr>
+      <td>headerOnly</td>
+      <td>Don’t download the response body (HEAD request). Useful to query the file info. Default, false.</td>
+    </tr>
+    <tr>
+      <td>resume</td>
+      <td>Download resume mode. If false, the downloaded file will be overwritten instead of appending. Default is true.</td>
+    </tr>
+    <tr>
+      <td>persistent</td>
+      <td>Keep Persistent (Keep-Alive) connection. Default is true.</td>
+    </tr>
+    <tr>
+      <td>sendCacheHeader</td>
+      <td>Send no cache header. Only useful if proxy is used.</td>
+    </tr>
+    <tr>
+      <td>concatData</td>
+      <td>Concatenate as much response data as possible (up to bufferSize) before invoking listener. Default is true if downloadFile is not specified.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="cache-control-fields">Cache Control Fields</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>readCache</td>
+      <td>Enable or disable reading from cache. Default, true</td>
+    </tr>
+    <tr>
+      <td>readCacheForced</td>
+      <td>Do not validate read cache. Default, false</td>
+    </tr>
+    <tr>
+      <td>updateCache</td>
+      <td>Enable or disable updating cache. Default, true</td>
+    </tr>
+    <tr>
+      <td>updateCacheForced</td>
+      <td>Cache response even if server restricted (no-store) from storing it. Default, false</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="listener-and-app-context-fields">Listener and App Context Fields</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>listener</td>
+      <td>Listener to be called. mesibo invokes listener with three parameters&lt;ol&gt;- this object- State - state can be either STATE_UPLOAD (sending header, sending post data and/or uploading file ) or STATE_DOWNLOAD (receiving response data / download file data)- Progress, 0 to 100. In case of error, -1 will be sent and error field will be set.&lt;/ol&gt;Return Value: listener MUST return true to continue or false to abort/cancel.Listener MUST always check the state before interpreting the progress. For example, when sending a POST request, listener will be invoked twice with progress == 100: first time when the post data is sent and the second time when the response is received. In this case, received response is only valid when percent == 100 and the state is STATE_DOWNLOADFor Android, listener is an instance of mesibo.HttpListener().For iOS, it’s a block of type mesibo_HttpListner.</td>
+    </tr>
+    <tr>
+      <td>onMainThread</td>
+      <td>Invoke listener in the main thread. Set this to false if you don’t need to update UI. Default, true</td>
+    </tr>
+    <tr>
+      <td>handler</td>
+      <td>Optional, default null (android) or nil(iOS)[Android] android.os.handler object where listener will be posted[iOS]dispatch_queue where listener will be posted</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>User-defined object (for example, to store app state or context)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="response-fields">Response Fields</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>result</td>
+      <td>Result, 0 for success, error otherwise</td>
+    </tr>
+    <tr>
+      <td>respCode</td>
+      <td>HTTP protocol response code</td>
+    </tr>
+    <tr>
+      <td>errorCode</td>
+      <td>Error Code</td>
+    </tr>
+    <tr>
+      <td>error</td>
+      <td>Error String</td>
+    </tr>
+    <tr>
+      <td>state</td>
+      <td>State, STATE_UPLOAD or STATE_DOWNLOAD</td>
+    </tr>
+    <tr>
+      <td>progress</td>
+      <td>Progress</td>
+    </tr>
+    <tr>
+      <td>contentLength</td>
+      <td>Content Length in bytes.Note: In some cases, the server does not send Content-Length header, especially for chunked transfer (dynamic data). In such cases, you can send a special header, Content-Size, and it will be reflected here if the Content-Length header is not present.</td>
+    </tr>
+    <tr>
+      <td>offset</td>
+      <td>Content Offset (for broken &amp; resumed downloads)</td>
+    </tr>
+    <tr>
+      <td>respEncoding</td>
+      <td>Response encoding</td>
+    </tr>
+    <tr>
+      <td>respCached</td>
+      <td>True if the response came from the cache.</td>
+    </tr>
+    <tr>
+      <td>ts</td>
+      <td>Execution timestamp</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="methods">Methods</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>execute</td>
+      <td>Start execution and return immediately</td>
+    </tr>
+    <tr>
+      <td>executeAndWait</td>
+      <td>Start execution and wait for it to be completed</td>
+    </tr>
+    <tr>
+      <td>cancel</td>
+      <td>Cancel execution</td>
+    </tr>
+    <tr>
+      <td>getData</td>
+      <td>Get response data as byte array.Data will be null (nil on iOS) if downloadFile is specified.</td>
+    </tr>
+    <tr>
+      <td>getDataString</td>
+      <td>Get response data as string.Data will be null (nil on iOS) if downloadFile is specified.</td>
+    </tr>
+    <tr>
+      <td>urlEncode</td>
+      <td>URL encode a string</td>
+    </tr>
+    <tr>
+      <td>setCacheFolder</td>
+      <td>[static method] applies to all subsequent requests  Path, cache pathSize, maximum cache size in bytes</td>
+    </tr>
+  </tbody>
+</table>
+
+
+							<!-- tags -->
+							
+							
+							
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=http">http</a>, <a href="/documentation/glossary/?term=android">android</a>, <a href="/documentation/glossary/?term=ios">ios</a>, <a href="/documentation/glossary/?term=linux">linux</a>, <a href="/documentation/glossary/?term=mac">mac</a></span>
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/documentation/api/http-library/";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+							<!-- removed for mesibo -->
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/documentation/api/http-library/#introduction" class="nomunge">Introduction</a>
+    <ul>
+      <li><a href="/documentation/api/http-library/#installation" class="nomunge">Installation</a></li>
+      <li><a href="/documentation/api/http-library/#queuing--limiting-simultaneous-connections" class="nomunge">Queuing &amp; limiting simultaneous connections</a></li>
+      <li><a href="/documentation/api/http-library/#caching" class="nomunge">Caching</a></li>
+      <li><a href="/documentation/api/http-library/#persistent-connections-keep-alive-and-requests-pipelining" class="nomunge">Persistent Connections (Keep-Alive) and Requests Pipelining</a></li>
+      <li><a href="/documentation/api/http-library/#asynchronous-callback-thread" class="nomunge">Asynchronous Callback Thread</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/api/http-library/#mesibo-http-object" class="nomunge">Mesibo HTTP Object</a>
+    <ul>
+      <li><a href="/documentation/api/http-library/#basic-configuration-fields" class="nomunge">Basic Configuration Fields</a></li>
+      <li><a href="/documentation/api/http-library/#connection-control-fields" class="nomunge">Connection Control Fields</a></li>
+      <li><a href="/documentation/api/http-library/#cache-control-fields" class="nomunge">Cache Control Fields</a></li>
+      <li><a href="/documentation/api/http-library/#listener-and-app-context-fields" class="nomunge">Listener and App Context Fields</a></li>
+      <li><a href="/documentation/api/http-library/#response-fields" class="nomunge">Response Fields</a></li>
+      <li><a href="/documentation/api/http-library/#methods" class="nomunge">Methods</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/">Home</a></li>
+                        <li><a href="https://mesibo.com/pricing/">Pricing</a></li>
+                        <li><a href="https://mesibo.com/use-cases/">Use Cases</a></li>
+                        <li><a href="https://mesibo.com/custom-solutions/">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/documentation/faq/">FAQ</a></li>
+                        <li><a href="https://mesibo.com/help/">Support</a></li>
+                        <li class="break"><a href="https://stackoverflow.com/questions/ask">Community</a></li>
+                        <li><a href="https://mesibo.com/documentation/">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+                        <li><a href="https://mesibo.com/career/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="https://mesibo.com/terms-of-use/#terms">Terms-of-Service</a></li>
+                        <li><a href="https://mesibo.com/terms-of-use/#privacy">Privacy Policy</a></li>
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright &copy; 2019 Mesibo. All rights reserved. </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a target="_blank" href="https://twitter.com/mesiboapi">Twitter</a></li>
+                    <li class="fa fa-youtube"><a target="_blank" href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ">Youtube</a></li>
+                    <li class="fa fa-google-plus"><a target="_blank" href="https://plus.google.com/b/107106343719610600541/107106343719610600541">Google</a></li>
+                    <li class="fa fa-github"><a target="_blank" href="https://github.com/mesibo/samples">Github</a></li>
+                    <li class="fa fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/mesibo">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a target="_blank" href="https://www.facebook.com/mesiboapi">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/documentation/api/http-library/';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

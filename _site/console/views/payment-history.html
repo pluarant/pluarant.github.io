@@ -1,0 +1,77 @@
+<!-- Breadcrumb Start -->
+<header id="page-header">
+   <h1>Payment History</h1>
+   <ol class="breadcrumb">
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#account">My Account</a></li>
+	  <li class="active">Payment History</li>
+   </ol>
+</header>
+<!-- Breadcrumb End -->
+<!-- Content Main Start-->
+<div id="content" class="padding-20" ng-controller="accountController">
+  
+   <div class="row margin-top-10">
+      <!-- Purchase History Start -->
+      <div class="col-md-12">
+         <div id="panel-2" class="panel panel-default">
+            <div class="panel-heading">
+               <span class="title elipsis size-17"><strong>Payment History</strong></span>
+               <span class="pull-right">Current Credit Balance: <strong>${{user.u.b_credits}}</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#payment">
+               <button type="button" class="btn btn-primary btn-xs pull-right nomargin" ng-hide="false">ADD CREDITS</button>
+               </a></span>
+            </div>
+            <div class="panel-body">
+               <div class="tab-content transparent">
+                  <div id="ttab1_nobg" class="tab-pane active">
+                     <div class="table-responsive">
+                        <table class="table table-striped table-hover table-bordered">
+                           <thead>
+                              <tr>
+                                 <th>Date</th>
+                                 <th>Amount in US$</th>
+				 <th>Transaction ID</th>
+				 <th>Payment Mode</th>
+				 <th>Status</th>
+                              </tr>
+                           </thead>
+			<tbody  ng-repeat="purchase in appdata.purchases track by $index">
+                      <tr>
+                        <td>{{purchase.tsstr}}</td>
+                        <td>{{purchase.amount}}</td>
+                        <td>{{purchase.txnid}}</td>
+                        <td>{{(purchase.type == "0")?"Credit Card":"Other"}}</td>
+                        <td>{{(purchase.status == "0")?"Approved":"Pending"}}</td>
+                      </tr>
+                    </tbody>
+                      <tr ng-show="!appdata.purchases.length">
+                        <td class="min-width-200">No Purchase History</td>
+                      </tr>
+
+                        </table>
+			<div ng-show="!appdata.purchases.length" style="display:table; text-align: center;">
+                        <div style="display: table-cell; vertical-align: middle;">
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        </div>
+            </div>
+
+			<p class="pull-right margin-bottom-0"><a href="#account/billingrecords">View Billing Records</p>
+                       
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Purchase History End -->
+      
+   </div>
+</div>
+<!-- Content Main End -->

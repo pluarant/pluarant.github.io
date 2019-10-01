@@ -1,0 +1,513 @@
+<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+			
+<!-- edit url temporarily disabled Mesibo -->
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/documentation/api-backup/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/mesibo-favicon.png">
+	<link rel="mesibo-favicon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
+	<!-- metadata -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesibo"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="Data Structures"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="MessageParams MessageParams is one of the most important data structures of Mesibo real-time API. Android: mesibo.MessageParams iOS: mesiboParams Following are the members of MessageParams mid - Message id, id of..." />
+	<meta name="twitter:image:src" content="/images/docs@2x.png" />
+	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="mesibo, real-time">
+	<link rel="stylesheet" href="/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="/css/bootstrap.min.css" >
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css" >
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- SEO stuff -->
+	<title>Data Structures | Mesibo Documentation</title>
+<meta property="og:title" content="Data Structures" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Mesibo Data Structures" />
+<meta property="og:description" content="Mesibo Data Structures" />
+<link rel="canonical" href="/documentation/api-backup/data-structures/" />
+<meta property="og:url" content="/documentation/api-backup/data-structures/" />
+<meta property="og:site_name" content="Mesibo Documentation" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Data Structures","description":"Mesibo Data Structures","url":"https://docs.docker.com/documentation/api-backup/data-structures/"}</script>
+	<!-- END SEO STUFF -->
+	
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	</script>
+	<!-- Google Analytic Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-97488698-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytic Code --> 	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '559862854355634'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=559862854355634&ev=PageView
+		&noscript=1"/>
+		</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/mesibo-logo-white.png" alt="Mesibo Docs" title="Mesibo Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" style="visibility: hidden">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <!-- Yusuf
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mesibo latest (current)   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="/v1.0.0/">Mesibo v1.0.0</a></li>
+  </ul>
+</div>
+
+    </div>
+    -->
+</div>
+
+        </div>
+    </div>
+</nav>
+
+	</header>
+
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+							
+							<h1>Data Structures</h1>
+							 
+
+							 <span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    3 minutes
+  
+</span>
+
+							
+							
+							<h3 id="messageparams">MessageParams</h3>
+<p>MessageParams is one of the most important data structures of Mesibo real-time API.</p>
+
+<ul>
+  <li><strong>Android</strong>: mesibo.MessageParams</li>
+  <li><strong>iOS</strong>: mesiboParams</li>
+</ul>
+
+<p>Following are the members of MessageParams</p>
+
+<ul>
+  <li><strong>mid</strong> - Message id, id of the incoming message. For outgoing messages, mid should be specified in send_xxx() functions.</li>
+  <li><strong>peer</strong> - Address of sender or receiver of the message. Address can be anything and completely defined by your application logic, for example, phone number or email address. Only requirement is that it should be unique for each user. <strong>peer</strong> should be  empty (null) when sending to a group.</li>
+  <li><strong>groupid</strong> - Group ID, should be specified when sending message to groip, 0 for one-to-one messages. When message is received from the group, both gropupid and peer will be set.</li>
+  <li><strong>expiry</strong> - Message Expiry for outgoing message (time to live), in seconds</li>
+  <li><strong>type</strong> - Message Type, any arbitary user defined types</li>
+  <li><strong>ts</strong>  - Timestamp when the message was received - in milli seconds</li>
+  <li><strong>flag</strong> - Message Flag - can be the combination of one or more flags
+    <ul>
+      <li>FLAG_DELIVERYRECEIPT- delivery receipt is required (default, set)</li>
+      <li>FLAG_READRECEIPT - read receipt is required (default, set)</li>
+      <li>FLAG_TRANSIENT - transient message which should not be stored in the database.</li>
+      <li>FLAG_QUEUE - enqueue this message for sending but don’t really send unless send() is called or the queue is full.</li>
+      <li>FLAG_NONBLOCKING - don’t block while queueing message for sending.</li>
+      <li>FLAG_EOM (incoming only) - no more messages, can be used to update UI.</li>
+      <li>FLAG_FILETRANSFERRED (incoming only) - File was transferred and saved.</li>
+      <li>FLAG_FILEFAILED (incoming only) - File transfer was failed.</li>
+    </ul>
+  </li>
+  <li><strong>origin</strong> - Origin of the message. Can be one of the followings:
+    <ul>
+      <li>ORIGIN_REALTIME - realtime message.</li>
+      <li>ORIGIN_DBMESSAGE - message from the database.</li>
+      <li>ORIGIN_DBSUMMARY - summary message from the database.</li>
+      <li>ORIGIN_FILTER - message for filtering (moderation)</li>
+    </ul>
+  </li>
+  <li><strong>status</strong> - Message Status - Can be one of the followings
+    <ul>
+      <li>MSGSTATUS_OUTBOX - Message is pending to send</li>
+      <li>MSGSTATUS_SENT - Message sent to server</li>
+      <li>MSGSTATUS_DELIVERED - Message delivered to recipient</li>
+      <li>MSGSTATUS_READ - Message was read by the recipient</li>
+      <li>MSGSTATUS_RECEIVEDNEW - Message Received and not read earlier</li>
+      <li>MSGSTATUS_RECEIVEDREAD - Message Received and read earlier</li>
+      <li>MSGSTATUS_FAIL - Message Failed</li>
+      <li>MSGSTATUS_USEROFFLINE - Recipient is not active</li>
+      <li>MSGSTATUS_INBOXFULL - Inbox Full</li>
+      <li>MSGSTATUS_INVALIDDEST - Invalid Destination</li>
+      <li>MSGSTATUS_EXPIRED - Expiry reached before message could be sent</li>
+    </ul>
+  </li>
+  <li><strong>profile</strong> - UserProfile of peer</li>
+</ul>
+
+<h3 id="fileinfo">FileInfo</h3>
+<p>FileInfo is used in file transfer using mesibo real-time API. For more information on file transfer, read section in user guide.</p>
+
+<p>Following are the members of FileInfo</p>
+
+<ul>
+  <li><strong>mode</strong>, File Transfer Mode. It can be one of the followings
+    <ul>
+      <li>MODE_DOWNLOAD</li>
+      <li>MODE_UPLOAD</li>
+    </ul>
+  </li>
+  <li><strong>progress</strong>, File Transfer Progress (in percent)</li>
+  <li><strong>url</strong> File URL - it can be an absolute URL or anything which your file transfer handler can interpret.</li>
+  <li><strong>filePath</strong>, File Path</li>
+  <li><strong>type</strong>, File Type. Can be one of the followings
+    <ul>
+      <li>TYPE_AUTO</li>
+      <li>TYPE_IMAGE</li>
+      <li>TYPE_VIDEO</li>
+      <li>TYPE_AUDIO</li>
+      <li>TYPE_OTHER</li>
+    </ul>
+  </li>
+  <li><strong>size</strong>, File Size, in bytes</li>
+</ul>
+
+<h3 id="userprofile">UserProfile</h3>
+<p>You can create profile for each user to store user specific information. User profile has no bearing on Mesibo real-time API. However, it makes it easier to accociate sender and receiver of the message.</p>
+
+<ul>
+  <li><strong>name</strong>, User or Group Name</li>
+  <li><strong>address</strong>, address of Peer, null for group messaging</li>
+  <li><strong>groupid</strong>, Group ID, 0 for user.</li>
+  <li><strong>status</strong>, Social Status</li>
+  <li><strong>picturePath</strong>, Profile Picture path</li>
+  <li><strong>draft</strong>, Draft message</li>
+  <li><strong>unread</strong>, Count of unread messages</li>
+  <li><strong>other</strong>, Any custom object</li>
+  <li><strong>flag</strong>, Flags. Can be one of the followings
+    <ul>
+      <li>FLAG_ARCHIVE</li>
+      <li>FLAG_MUTE</li>
+      <li>FLAG_SELFPROFILE</li>
+      <li>FLAG_HIDDEN</li>
+      <li>FLAG_TEMPORARY</li>
+      <li>FLAG_DELETED</li>
+    </ul>
+  </li>
+</ul>
+
+
+							<!-- tags -->
+							
+							
+							
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=real-time">real-time</a></span>
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/documentation/api-backup/data-structures/";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+							<!-- removed for mesibo -->
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/documentation/api-backup/data-structures/#messageparams" class="nomunge">MessageParams</a>
+    <ul>
+      <li><a href="/documentation/api-backup/data-structures/#fileinfo" class="nomunge">FileInfo</a></li>
+      <li><a href="/documentation/api-backup/data-structures/#userprofile" class="nomunge">UserProfile</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/">Home</a></li>
+                        <li><a href="https://mesibo.com/pricing/">Pricing</a></li>
+                        <li><a href="https://mesibo.com/use-cases/">Use Cases</a></li>
+                        <li><a href="https://mesibo.com/custom-solutions/">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/documentation/faq/">FAQ</a></li>
+                        <li><a href="https://mesibo.com/help/">Support</a></li>
+                        <li class="break"><a href="https://stackoverflow.com/questions/ask">Community</a></li>
+                        <li><a href="https://mesibo.com/documentation/">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+                        <li><a href="https://mesibo.com/career/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="https://mesibo.com/terms-of-use/#terms">Terms-of-Service</a></li>
+                        <li><a href="https://mesibo.com/terms-of-use/#privacy">Privacy Policy</a></li>
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright &copy; 2019 Mesibo. All rights reserved. </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a target="_blank" href="https://twitter.com/mesiboapi">Twitter</a></li>
+                    <li class="fa fa-youtube"><a target="_blank" href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ">Youtube</a></li>
+                    <li class="fa fa-google-plus"><a target="_blank" href="https://plus.google.com/b/107106343719610600541/107106343719610600541">Google</a></li>
+                    <li class="fa fa-github"><a target="_blank" href="https://github.com/mesibo/samples">Github</a></li>
+                    <li class="fa fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/mesibo">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a target="_blank" href="https://www.facebook.com/mesiboapi">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/documentation/api-backup/data-structures/';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

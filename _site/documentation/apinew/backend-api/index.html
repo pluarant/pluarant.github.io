@@ -1,0 +1,657 @@
+<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+			
+<!-- edit url temporarily disabled Mesibo -->
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/documentation/apinew/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/mesibo-favicon.png">
+	<link rel="mesibo-favicon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
+	<!-- metadata -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesibo"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="Mesibo Backend APIs (Server-side APIs)"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="The Mesibo backend APIs allows you to administer your account, manage apps, manage users and groups etc. Mesibo backend API is a REST based APIs which you can access using..." />
+	<meta name="twitter:image:src" content="/images/docs@2x.png" />
+	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="mesibo, backend, api">
+	<link rel="stylesheet" href="/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="/css/bootstrap.min.css" >
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css" >
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- SEO stuff -->
+	<title>Mesibo Backend APIs (Server-side APIs) | Mesibo Documentation</title>
+<meta property="og:title" content="Mesibo Backend APIs (Server-side APIs)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Mesibo Backend APIs (Server-side APIs)" />
+<meta property="og:description" content="Mesibo Backend APIs (Server-side APIs)" />
+<link rel="canonical" href="/documentation/apinew/backend-api/" />
+<meta property="og:url" content="/documentation/apinew/backend-api/" />
+<meta property="og:site_name" content="Mesibo Documentation" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo Backend APIs (Server-side APIs)","description":"Mesibo Backend APIs (Server-side APIs)","url":"https://docs.docker.com/documentation/apinew/backend-api/"}</script>
+	<!-- END SEO STUFF -->
+	
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	</script>
+	<!-- Google Analytic Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-97488698-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytic Code --> 	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '559862854355634'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=559862854355634&ev=PageView
+		&noscript=1"/>
+		</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/mesibo-logo-white.png" alt="Mesibo Docs" title="Mesibo Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" style="visibility: hidden">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <!-- Yusuf
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mesibo latest (current)   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="/v1.0.0/">Mesibo v1.0.0</a></li>
+  </ul>
+</div>
+
+    </div>
+    -->
+</div>
+
+        </div>
+    </div>
+</nav>
+
+	</header>
+
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+							
+							<h1>Mesibo Backend APIs (Server-side APIs)</h1>
+							 
+
+							 <span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    6 minutes
+  
+</span>
+
+							
+							
+							<p>The Mesibo backend APIs allows you to administer your account, manage apps, manage users and groups etc. Mesibo backend API is a REST based APIs which you can access using any language of your choice.</p>
+
+<h3 id="mesibo-backend-api-url">Mesibo Backend API URL</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> https://api.mesibo.com/api.php
+</code></pre></div></div>
+
+<p>For maintaining privacy and security, the Mesibo REST APIs can only be accessed over HTTPS.</p>
+
+<h3 id="parameters">Parameters</h3>
+
+<p>Every REST request will have minimum two POST parameters</p>
+
+<ol>
+  <li>operation (<strong>op</strong>), identifies the operation requested.</li>
+  <li>Application token (<strong>token</strong>).  Application Token is a unique token for your application which your MUST not share with anyone including your users. You can get and change the app token from the <a href="/console">Mesibo Console</a>.</li>
+</ol>
+
+<p><img src="/api/images/regenerate-app-token.png" alt="" /></p>
+
+<h2 id="sample-api-request-and-response">Sample API Request and Response</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://api.mesibo.com/api.php?op=userdel&amp;token=123434343xxxxxxxxx&amp;uid=456
+</code></pre></div></div>
+
+<p>The response is a JSON object with at least following fields, and other fields depending on the operation.</p>
+<ul>
+  <li><strong>op</strong>, requested operation</li>
+  <li><strong>result</strong>, true if successful, false otherwise</li>
+  <li><strong>error</strong>, error code if request failed</li>
+</ul>
+
+<p>An example of a successful JSON response is as follows:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">{</span><span class="s2">"account"</span><span class="p">:</span>
+<span class="p">{</span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"10"</span><span class="p">,</span><span class="s2">"oid"</span><span class="p">:</span><span class="s2">"9"</span><span class="p">,</span><span class="s2">"msgs"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="s2">"users"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="s2">"groups"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="s2">"conns"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span>
+<span class="s2">"apps"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="s2">"storage"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="s2">"pid"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="s2">"billday"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="s2">"status"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="s2">"flag"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span>
+<span class="s2">"expiry"</span><span class="p">:</span><span class="s2">"2020-09-01 22:38:45"</span><span class="p">,</span><span class="s2">"issuetime"</span><span class="p">:</span><span class="s2">"2017-09-01 22:38:45"</span><span class="p">},</span> 
+<span class="s2">"op"</span><span class="p">:</span><span class="s2">"appadd"</span><span class="p">,</span>
+<span class="s2">"result"</span><span class="p">:</span><span class="kc">true</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>An example of a failed JSON response is as follows:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">{</span><span class="s2">"op"</span><span class="p">:</span><span class="s2">"someop"</span><span class="p">,</span><span class="s2">"result"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="s2">"error"</span><span class="p">:</span><span class="s2">"BADOP"</span><span class="p">}</span></code></pre></figure>
+
+<p>Mesibo backend APIs is broadly categorized into two categories:</p>
+
+<ol>
+  <li>
+    <p><a href="/documentation/api/backend-api/#mesibo-user-management-apis">Mesibo User Management APIs</a></p>
+  </li>
+  <li>
+    <p><a href="/documentation/api/backend-api/#mesibo-group-management-apis">Mesibo Group Management APIs</a></p>
+  </li>
+</ol>
+
+<p>Following are the list of Mesibo REST APIs.</p>
+
+<h2 id="user-management-apis">User Management APIs</h2>
+
+<h3 id="add-a-user--regenerate-a-user-access-token">Add a User / Regenerate a User Access Token</h3>
+<p>To enable real-time communication between your users, you need to let mesibo know about each of your users. Mesibo will create an access token for each user and give it to you which you can send it to your users. Your user can then use this access token in <a href="/documentation/api/real-time-api/">Mesibo Real-time APIs</a> using <code class="highlighter-rouge">setAccessToken</code> function.</p>
+
+<p>To add a user or to re-generate user access token, you need to invoke this API with the following parameters:</p>
+
+<ul>
+  <li><strong>op</strong> = “useradd”</li>
+  <li><strong>token</strong> = Application Token obtained from mesibo console</li>
+  <li><strong>addr</strong> = User Address (e.g phone number, email address, etc.)</li>
+  <li><strong>appid</strong> = Android app id or iOS Bundle id. The generated token will be applicable for the app with this appid only. For any other platform, you can pass a unique string identifying your application.</li>
+  <li><strong>expiry</strong> = in minutes, default 1 year [Optional]</li>
+  <li><strong>active</strong> = enable user, default 1 (active) [Optional]</li>
+  <li><strong>groups</strong> = Maximum Groups [Optional]</li>
+</ul>
+
+<p>Response Fields</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>response[‘user’][‘uid’] = User ID (UID)
+response[‘user’][‘token’] = User Access Token
+</code></pre></div></div>
+
+<blockquote>
+  <p>You should save the created user information (UID, Address, Access Token, etc.) in your own database so that you can access them later.</p>
+</blockquote>
+
+<h3 id="edit-a-user">Edit a User</h3>
+<p>Edit an existing user using the <code class="highlighter-rouge">UID</code> obtained from ‘add user` operation.</p>
+
+<ul>
+  <li><strong>op</strong> = “userset”</li>
+  <li><strong>token</strong> = Application Token obtained from Mesibo console</li>
+  <li><strong>uid</strong> = User ID obtained in add user operation</li>
+  <li><strong>flag</strong> = Flags</li>
+  <li><strong>active</strong> = 1 to enable, 0 to disable</li>
+</ul>
+
+<h3 id="delete-a-user">Delete a User</h3>
+<p>Delete an existing user using UID obtained from <code class="highlighter-rouge">add user</code> operation.</p>
+
+<ul>
+  <li><strong>op</strong> = “userdel”</li>
+  <li><strong>token</strong> = Application Token obtained from mesibo console</li>
+  <li><strong>uid</strong> = User ID obtained in add user operation</li>
+</ul>
+
+<h3 id="delete-a-user-access-token">Delete a User Access Token</h3>
+<p>Delete an existing user access token without deleting a user. User will be logged-out but will continue to receive messages which will be delivered when user logs-in next time with a new token.</p>
+
+<ul>
+  <li><strong>op</strong> = “userdel”</li>
+  <li><strong>token</strong> = Application Token obtained from mesibo console</li>
+  <li><strong>uid</strong> = User ID obtained in add user operation</li>
+</ul>
+
+<h3 id="get-users">Get Users</h3>
+<p>Get users for an application. This API is only for <strong>development purpose</strong> and hence maximum 20 users will be returned. You should store your users locally instead of obtaining from the Mesibo.</p>
+
+<ul>
+  <li><strong>op</strong> = “usersget”</li>
+  <li><strong>token</strong> = Application Token obtained from mesibo console</li>
+  <li><strong>addr</strong> = get users marching address. Wildcard (*) allowed</li>
+  <li><strong>count</strong> = max number of users to get. Max 20</li>
+</ul>
+
+<h2 id="group-management-apis">Group Management APIs</h2>
+
+<h3 id="create-a-group">Create a Group</h3>
+<p>Create a group to enable real-time <strong>group communication</strong> between your users. Mesibo will create a group ID (GID) which you can use to add and remove members. Your users can use GID in various real-time API to send messages to the group.</p>
+
+<p>To create a group, you need to invoke this API with the following parameters:</p>
+
+<ul>
+  <li><strong>op</strong> = “groupadd”</li>
+  <li><strong>token</strong> = Application Token obtained from mesibo console</li>
+  <li><strong>name</strong> = Group Name [Optional]</li>
+  <li><strong>flag</strong> = Group Flags</li>
+  <li><strong>expiry</strong> = Expiry in seconds, default 1 year</li>
+  <li><strong>expiryext</strong> = Auto extend expiry on group activity, in seconds. Default disabled.</li>
+  <li><strong>active</strong> = 1 to enable, 0 to disable</li>
+</ul>
+
+<p>Response Fields</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>response[‘group’][‘gid’] = Group ID (GID)
+</code></pre></div></div>
+
+<blockquote>
+  <p>You should save the created group information (GID, name, etc.) in your own database so that you can access them later.</p>
+</blockquote>
+
+<h3 id="edit-a-group">Edit a Group</h3>
+<p>Edit an existing group using GID obtained in the <code class="highlighter-rouge">group add</code> operation.</p>
+
+<ul>
+  <li><strong>op</strong> = “groupset”</li>
+  <li><strong>token</strong> = Application Token obtained from mesibo console</li>
+  <li><strong>gid</strong> = Group ID (GID)</li>
+  <li><strong>name</strong> = Group Name [Optional]</li>
+  <li><strong>flag</strong> = Group Flags</li>
+  <li><strong>expiry</strong> = Expiry in seconds, default 1 year</li>
+  <li><strong>expiryext</strong> = Auto extend expiry on group activity, in seconds. Default disabled.</li>
+  <li><strong>active</strong> = 1 to enable, 0 to disable</li>
+</ul>
+
+<p>Response Fields</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>response[‘group’][‘gid’] = Group ID (GID)
+</code></pre></div></div>
+
+<h3 id="delete-a-group">Delete a Group</h3>
+<p>Delete an existing group using GID obtained in the <code class="highlighter-rouge">group add</code> operation.</p>
+
+<ul>
+  <li><strong>op</strong> = “groupdel”</li>
+  <li><strong>token</strong> = Application Token obtained from mesibo console</li>
+  <li><strong>gid</strong> = Group ID (GID)</li>
+</ul>
+
+<h3 id="add-or-remove-group-members">Add or Remove Group Members</h3>
+<p>Add or Remove Group Members using GID obtained in the <code class="highlighter-rouge">group add</code> operation.</p>
+
+<ul>
+  <li><strong>op</strong> = “groupeditmembers”</li>
+  <li><strong>token</strong> = Application Token obtained from mesibo console</li>
+  <li><strong>gid</strong> = Group ID (GID)</li>
+  <li><strong>m</strong> = comma-separated list of user addresses to add or remove in the group</li>
+  <li><strong>delete</strong> = 0 to add members, 1 to remove members</li>
+</ul>
+
+<h3 id="get-group-members">Get Group Members</h3>
+<p>Get Group Members using GID obtained in the <code class="highlighter-rouge">group add</code> operation.</p>
+
+<ul>
+  <li><strong>op</strong> = “groupgetmembers”</li>
+  <li><strong>token</strong> = Application Token obtained from mesibo console</li>
+  <li><strong>gid</strong> = Group ID (GID)</li>
+  <li><strong>count</strong> = max number of users to get. Max 20</li>
+</ul>
+
+<p>Response Fields</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>response[‘members’] = Group Members
+</code></pre></div></div>
+
+<h2 id="message-api">Message API</h2>
+<p>While your users can send messages to each-other or groups using Mesibo real-time APIs, you can also send messages to one of your users or group using backend API.</p>
+
+<p>To send a message, you need to invoke this API with the following parameters:</p>
+
+<ul>
+  <li><strong>op</strong> = “message”</li>
+  <li><strong>token</strong> = Application Token obtained from mesibo console</li>
+  <li><strong>from</strong> = From Address [MUST be a valid user]</li>
+  <li><strong>to</strong> = To Address</li>
+  <li><strong>gid</strong> = Group ID [Optional, either this or <code class="highlighter-rouge">to</code> field needs to be present]</li>
+  <li><strong>type</strong> = Message Type</li>
+  <li><strong>expiry</strong> = Expiry in seconds, default 1 year</li>
+  <li><strong>msg</strong> = Message</li>
+</ul>
+
+<p>The response could be <code class="highlighter-rouge">OK</code> or <code class="highlighter-rouge">FAIL</code>.</p>
+
+<h3 id="php-helper-sdk">PHP Helper SDK</h3>
+
+<p>A PHP helper class for mesibo REST API is available <a href="https://github.com/mesibo/samples/tree/master/php">here</a></p>
+
+
+							<!-- tags -->
+							
+							
+							
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=backend">backend</a>, <a href="/documentation/glossary/?term=api">api</a></span>
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/documentation/apinew/backend-api/";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+							<!-- removed for mesibo -->
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/documentation/apinew/backend-api/#mesibo-backend-api-url" class="nomunge">Mesibo Backend API URL</a>
+    <ul>
+      <li><a href="/documentation/apinew/backend-api/#parameters" class="nomunge">Parameters</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/apinew/backend-api/#sample-api-request-and-response" class="nomunge">Sample API Request and Response</a></li>
+  <li><a href="/documentation/apinew/backend-api/#user-management-apis" class="nomunge">User Management APIs</a>
+    <ul>
+      <li><a href="/documentation/apinew/backend-api/#add-a-user--regenerate-a-user-access-token" class="nomunge">Add a User / Regenerate a User Access Token</a></li>
+      <li><a href="/documentation/apinew/backend-api/#edit-a-user" class="nomunge">Edit a User</a></li>
+      <li><a href="/documentation/apinew/backend-api/#delete-a-user" class="nomunge">Delete a User</a></li>
+      <li><a href="/documentation/apinew/backend-api/#delete-a-user-access-token" class="nomunge">Delete a User Access Token</a></li>
+      <li><a href="/documentation/apinew/backend-api/#get-users" class="nomunge">Get Users</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/apinew/backend-api/#group-management-apis" class="nomunge">Group Management APIs</a>
+    <ul>
+      <li><a href="/documentation/apinew/backend-api/#create-a-group" class="nomunge">Create a Group</a></li>
+      <li><a href="/documentation/apinew/backend-api/#edit-a-group" class="nomunge">Edit a Group</a></li>
+      <li><a href="/documentation/apinew/backend-api/#delete-a-group" class="nomunge">Delete a Group</a></li>
+      <li><a href="/documentation/apinew/backend-api/#add-or-remove-group-members" class="nomunge">Add or Remove Group Members</a></li>
+      <li><a href="/documentation/apinew/backend-api/#get-group-members" class="nomunge">Get Group Members</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/apinew/backend-api/#message-api" class="nomunge">Message API</a>
+    <ul>
+      <li><a href="/documentation/apinew/backend-api/#php-helper-sdk" class="nomunge">PHP Helper SDK</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/">Home</a></li>
+                        <li><a href="https://mesibo.com/pricing/">Pricing</a></li>
+                        <li><a href="https://mesibo.com/use-cases/">Use Cases</a></li>
+                        <li><a href="https://mesibo.com/custom-solutions/">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/documentation/faq/">FAQ</a></li>
+                        <li><a href="https://mesibo.com/help/">Support</a></li>
+                        <li class="break"><a href="https://stackoverflow.com/questions/ask">Community</a></li>
+                        <li><a href="https://mesibo.com/documentation/">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+                        <li><a href="https://mesibo.com/career/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="https://mesibo.com/terms-of-use/#terms">Terms-of-Service</a></li>
+                        <li><a href="https://mesibo.com/terms-of-use/#privacy">Privacy Policy</a></li>
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright &copy; 2019 Mesibo. All rights reserved. </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a target="_blank" href="https://twitter.com/mesiboapi">Twitter</a></li>
+                    <li class="fa fa-youtube"><a target="_blank" href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ">Youtube</a></li>
+                    <li class="fa fa-google-plus"><a target="_blank" href="https://plus.google.com/b/107106343719610600541/107106343719610600541">Google</a></li>
+                    <li class="fa fa-github"><a target="_blank" href="https://github.com/mesibo/samples">Github</a></li>
+                    <li class="fa fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/mesibo">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a target="_blank" href="https://www.facebook.com/mesiboapi">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/documentation/apinew/backend-api/';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

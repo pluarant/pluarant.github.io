@@ -18,6 +18,7 @@ Mesibo supports almost all popular platforms and languages for you to quickly bu
     </div>
     <div class="row">
 	{% include content/platform.md url='/documentation/install/raspberrypi/' img='/images/platform/raspberry_96.png' title='Mesibo for Raspberry Pi' content='Instantly add real-time communication on your embedded devices by using Mesibo on Raspberry Pi device.' id='mesibo-for-pi' %}
+	{% include content/platform.md url='/documentation/install/python/' img='/assets/images/languages/python.png' title='Mesibo for Python' content='Instantly add real-time communication on your Python scripts' id='mesibo-for-py' %}
     </div>
 
 	<!-- template

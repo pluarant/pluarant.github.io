@@ -250,10 +250,10 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 <p class="margin-bottom-10">A message is the unit of data that is sent between two users or multiple users in the case of a group message. Messages are charged by the size of messages (refer below).</p>
 <ul>
 <li class="margin-bottom-10"><strong>Message Delivery and Storage</strong>
-<p >mesibo uses cut-through switching to deliver your messages in real-time with minimum latency. However, if the destination is not online, mesibo stores the messages till the user is online. If you decide not to save the messages in the database, you can do so by setting a flag while sending messages using <a href="/documentation/api/real-time-api/" target="_blank">client-side API</a>.</p>
+<p >mesibo uses cut-through switching to deliver your messages in real-time with minimum latency. However, if the destination is not online, mesibo stores the messages till the user is online. If you decide not to save the messages in the database, you can do so by setting a flag while sending messages using <a href="/documentation/api/real-time-api/" target="_blank">Real-time APIs</a>.</p>
 </li>
 <li class="margin-bottom-10"><strong>Message Retention</strong>
-<p >mesibo offers an unlimited message retention period, only limited by the storage quota and usage. You can anytime clear storage from the mesibo console or by using <a href="/documentation/api/server-side-api/" target="_blank">server-side API</a>.</p>
+<p >mesibo offers an unlimited message retention period, only limited by the storage quota and usage. You can anytime clear storage from the mesibo console or by using <a href="/documentation/api/backend-api/" target="_blank">Backend APIs</a>.</p>
 </li>
 <li class="margin-bottom-10"><strong>Message Charges</strong>
 <p >Instead of message count, mesibo charges for offline messages stored in the database, and the total outbound network traffic at the session layer (layer 5) of the OSI model to deliver messages to your connected/online users. The network traffic includes payload, as well as protocol & encryption overheads (refer below). Note that, mesibo absorbs traffic due to TCP/IP overheads and does not charge you for that. You can view statistics of your traffic and storage usage in mesibo <a href="/console/#/login" target="_blank">console</a>.</p>

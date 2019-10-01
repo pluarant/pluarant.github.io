@@ -5,9 +5,11 @@ horizontalnav:
 - title: Downloads
   path: /documentation/install/
   node: install
+  resetnav: yes
 - title: API Reference
   path: /documentation/api/
   node: api
+  resetnav: yes
 - title: Tutorials
   path: /documentation/tutorials/
   node: tutorials
@@ -23,6 +25,7 @@ horizontalnav:
 - title: Support
   path: /help/
   node: support
+  resetnav: yes
 
 guides:
 - sectiontitle: Get started
@@ -119,43 +122,57 @@ tutorials:
 
 api:
 - path: /documentation/api/
-  title: Type of APIs
-- sectiontitle: Real-time (Client) API
+  title: Mesibo APIs 
+- sectiontitle: Real-time APIs
   section:
   - path: /documentation/api/real-time-api/
-    title: Real-time API
-  - path: /documentation/api/data-structures/
+    title: Introduction
+  - path: /documentation/api/real-time-api/initialization/
+    title: Initialization APIs
+  - path: /documentation/api/real-time-api/messaging/
+    title: Messaging APIs
+  - path: /documentation/api/real-time-api/file-transfer/
+    title: File Transfer APIs
+  - path: /documentation/api/real-time-api/calls/
+    title: Voice &amp; Video Calls APIs
+  - path: /documentation/api/real-time-api/profiles/
+    title: User &amp; Group Profiles APIs
+  - path: /documentation/api/real-time-api/utility/
+    title: Utility APIs
+  - path: /documentation/api/real-time-api/data-structures/
     title: Data Structures
-  - path: /documentation/api/listeners/
+  - path: /documentation/api/real-time-api/listeners/
     title: Listeners
-- path: /documentation/api/server-side-api/
-  title: Admin API 
+- path: /documentation/api/backend-api/
+  title: Non-real-time Backend APIs
 - path: /documentation/api/http-library/
-  title: Mesibo HTTP 
+  title: Mesibo HTTP APIs
 
 faq:
-- path: /documentation/faq/
-  title: General
-- path: /documentation/faq/messaging/
-  title: Messaging
-- path: /documentation/faq/group-messaging/
-  title: Group Messaging
-- path: /documentation/faq/file-handling/
-  title: File Handling
-- path: /documentation/faq/platform/
-  title: Platform
-- path: /documentation/faq/webhooks-and-push-notifications/
-  title: Webhooks and Push Notifications
-- path: /documentation/faq/security/
-  title: Security
-- path: /documentation/faq/http-library/
-  title: HTTP Library
-- path: /documentation/faq/pricing/
-  title: Pricing, Customization and Terms
-- path: /documentation/faq/gdpr/
-  title: EU GDPR
-- path: /documentation/faq/other/
-  title: Other
+- sectiontitle: Mesibo FAQs
+  section:
+  - path: /documentation/faq/
+    title: General
+  - path: /documentation/faq/messaging/
+    title: Messaging
+  - path: /documentation/faq/group-messaging/
+    title: Group Messaging
+  - path: /documentation/faq/file-handling/
+    title: File Handling
+  - path: /documentation/faq/platform/
+    title: Platform
+  - path: /documentation/faq/webhooks-and-push-notifications/
+    title: Webhooks and Push Notifications
+  - path: /documentation/faq/security/
+    title: Security
+  - path: /documentation/faq/http-library/
+    title: HTTP Library
+  - path: /documentation/faq/pricing/
+    title: Pricing, Customization and Terms
+  - path: /documentation/faq/gdpr/
+    title: EU GDPR
+  - path: /documentation/faq/other/
+    title: Other
 
 support:
 - path: /documentation/support/
@@ -167,3 +184,8 @@ support:
 - path: /documentation/support/sales/
   title: Sales
 
+homes:
+- path: /
+  title: Home
+- path: /documentation/
+  title: Docs Home

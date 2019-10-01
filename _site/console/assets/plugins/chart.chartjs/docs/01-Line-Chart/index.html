@@ -1,0 +1,571 @@
+<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+			
+<!-- edit url temporarily disabled Mesibo -->
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/console/assets/plugins/chart.chartjs/docs/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/mesibo-favicon.png">
+	<link rel="mesibo-favicon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
+	<!-- metadata -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesibo"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="Line Chart"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="###Introduction A line chart is a way of plotting data points on a line. Often, it is used to show trend data, and the comparison of two data sets. ###Example..." />
+	<meta name="twitter:image:src" content="/images/docs@2x.png" />
+	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="docker, docker open source, docker platform, distributed applications, microservices, containers, docker containers, docker software, docker virtualization">
+	<link rel="stylesheet" href="/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="/css/bootstrap.min.css" >
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css" >
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- SEO stuff -->
+	<title>Line Chart | Mesibo Documentation</title>
+<meta property="og:title" content="Line Chart" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+<link rel="canonical" href="/console/assets/plugins/chart.chartjs/docs/01-Line-Chart/" />
+<meta property="og:url" content="/console/assets/plugins/chart.chartjs/docs/01-Line-Chart/" />
+<meta property="og:site_name" content="Mesibo Documentation" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Line Chart","description":"","url":"https://docs.docker.com/console/assets/plugins/chart.chartjs/docs/01-Line-Chart/"}</script>
+	<!-- END SEO STUFF -->
+	
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	</script>
+	<!-- Google Analytic Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-97488698-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytic Code --> 	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '559862854355634'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=559862854355634&ev=PageView
+		&noscript=1"/>
+		</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/mesibo-logo-white.png" alt="Mesibo Docs" title="Mesibo Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" style="visibility: hidden">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <!-- Yusuf
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mesibo latest (current)   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="/v1.0.0/">Mesibo v1.0.0</a></li>
+  </ul>
+</div>
+
+    </div>
+    -->
+</div>
+
+        </div>
+    </div>
+</nav>
+
+	</header>
+
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+							
+							<h1>Line Chart</h1>
+							 
+
+							 <span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    6 minutes
+  
+</span>
+
+							
+							
+							<p>###Introduction
+A line chart is a way of plotting data points on a line.</p>
+
+<p>Often, it is used to show trend data, and the comparison of two data sets.</p>
+
+<div class="canvas-holder">
+	<canvas width="250" height="125"></canvas>
+</div>
+
+<p>###Example usage</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">myLineChart</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Chart</span><span class="p">(</span><span class="nx">ctx</span><span class="p">).</span><span class="nx">Line</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+</code></pre></div></div>
+<p>###Data structure</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="na">labels</span><span class="p">:</span> <span class="p">[</span><span class="s2">"January"</span><span class="p">,</span> <span class="s2">"February"</span><span class="p">,</span> <span class="s2">"March"</span><span class="p">,</span> <span class="s2">"April"</span><span class="p">,</span> <span class="s2">"May"</span><span class="p">,</span> <span class="s2">"June"</span><span class="p">,</span> <span class="s2">"July"</span><span class="p">],</span>
+	<span class="na">datasets</span><span class="p">:</span> <span class="p">[</span>
+		<span class="p">{</span>
+			<span class="na">label</span><span class="p">:</span> <span class="s2">"My First dataset"</span><span class="p">,</span>
+			<span class="na">fillColor</span><span class="p">:</span> <span class="s2">"rgba(220,220,220,0.2)"</span><span class="p">,</span>
+			<span class="na">strokeColor</span><span class="p">:</span> <span class="s2">"rgba(220,220,220,1)"</span><span class="p">,</span>
+			<span class="na">pointColor</span><span class="p">:</span> <span class="s2">"rgba(220,220,220,1)"</span><span class="p">,</span>
+			<span class="na">pointStrokeColor</span><span class="p">:</span> <span class="s2">"#fff"</span><span class="p">,</span>
+			<span class="na">pointHighlightFill</span><span class="p">:</span> <span class="s2">"#fff"</span><span class="p">,</span>
+			<span class="na">pointHighlightStroke</span><span class="p">:</span> <span class="s2">"rgba(220,220,220,1)"</span><span class="p">,</span>
+			<span class="na">data</span><span class="p">:</span> <span class="p">[</span><span class="mi">65</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
+		<span class="p">},</span>
+		<span class="p">{</span>
+			<span class="na">label</span><span class="p">:</span> <span class="s2">"My Second dataset"</span><span class="p">,</span>
+			<span class="na">fillColor</span><span class="p">:</span> <span class="s2">"rgba(151,187,205,0.2)"</span><span class="p">,</span>
+			<span class="na">strokeColor</span><span class="p">:</span> <span class="s2">"rgba(151,187,205,1)"</span><span class="p">,</span>
+			<span class="na">pointColor</span><span class="p">:</span> <span class="s2">"rgba(151,187,205,1)"</span><span class="p">,</span>
+			<span class="na">pointStrokeColor</span><span class="p">:</span> <span class="s2">"#fff"</span><span class="p">,</span>
+			<span class="na">pointHighlightFill</span><span class="p">:</span> <span class="s2">"#fff"</span><span class="p">,</span>
+			<span class="na">pointHighlightStroke</span><span class="p">:</span> <span class="s2">"rgba(151,187,205,1)"</span><span class="p">,</span>
+			<span class="na">data</span><span class="p">:</span> <span class="p">[</span><span class="mi">28</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">90</span><span class="p">]</span>
+		<span class="p">}</span>
+	<span class="p">]</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>The line chart requires an array of labels for each of the data points. This is shown on the X axis.
+The data for line charts is broken up into an array of datasets. Each dataset has a colour for the fill, a colour for the line and colours for the points and strokes of the points. These colours are strings just like CSS. You can use RGBA, RGB, HEX or HSL notation.</p>
+
+<p>The label key on each dataset is optional, and can be used when generating a scale for the chart.</p>
+
+<h3 id="chart-options">Chart options</h3>
+
+<p>These are the customisation options specific to Line charts. These options are merged with the <a href="#getting-started-global-chart-configuration">global chart configuration options</a>, and form the options of the chart.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+
+	<span class="c1">///Boolean - Whether grid lines are shown across the chart</span>
+	<span class="nl">scaleShowGridLines</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+
+	<span class="c1">//String - Colour of the grid lines</span>
+	<span class="nx">scaleGridLineColor</span> <span class="p">:</span> <span class="s2">"rgba(0,0,0,.05)"</span><span class="p">,</span>
+
+	<span class="c1">//Number - Width of the grid lines</span>
+	<span class="nx">scaleGridLineWidth</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+
+	<span class="c1">//Boolean - Whether to show horizontal lines (except X axis)</span>
+	<span class="nx">scaleShowHorizontalLines</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+
+	<span class="c1">//Boolean - Whether to show vertical lines (except Y axis)</span>
+	<span class="nx">scaleShowVerticalLines</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+
+	<span class="c1">//Boolean - Whether the line is curved between points</span>
+	<span class="nx">bezierCurve</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+
+	<span class="c1">//Number - Tension of the bezier curve between points</span>
+	<span class="nx">bezierCurveTension</span> <span class="p">:</span> <span class="mf">0.4</span><span class="p">,</span>
+
+	<span class="c1">//Boolean - Whether to show a dot for each point</span>
+	<span class="nx">pointDot</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+
+	<span class="c1">//Number - Radius of each point dot in pixels</span>
+	<span class="nx">pointDotRadius</span> <span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+
+	<span class="c1">//Number - Pixel width of point dot stroke</span>
+	<span class="nx">pointDotStrokeWidth</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+
+	<span class="c1">//Number - amount extra to add to the radius to cater for hit detection outside the drawn point</span>
+	<span class="nx">pointHitDetectionRadius</span> <span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+
+	<span class="c1">//Boolean - Whether to show a stroke for datasets</span>
+	<span class="nx">datasetStroke</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+
+	<span class="c1">//Number - Pixel width of dataset stroke</span>
+	<span class="nx">datasetStrokeWidth</span> <span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+
+	<span class="c1">//Boolean - Whether to fill the dataset with a colour</span>
+	<span class="nx">datasetFill</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+	
+	<span class="c1">//String - A legend template</span>
+	<span class="nx">legendTemplate</span> <span class="p">:</span> <span class="s2">"&lt;ul class=</span><span class="se">\"</span><span class="s2">&lt;%=name.toLowerCase()%&gt;-legend</span><span class="se">\"</span><span class="s2">&gt;&lt;% for (var i=0; i&lt;datasets.length; i++){%&gt;&lt;li&gt;&lt;span style=</span><span class="se">\"</span><span class="s2">background-color:&lt;%=datasets[i].strokeColor%&gt;</span><span class="se">\"</span><span class="s2">&gt;&lt;/span&gt;&lt;%if(datasets[i].label){%&gt;&lt;%=datasets[i].label%&gt;&lt;%}%&gt;&lt;/li&gt;&lt;%}%&gt;&lt;/ul&gt;"</span>
+	
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>You can override these for your <code class="highlighter-rouge">Chart</code> instance by passing a second argument into the <code class="highlighter-rouge">Line</code> method as an object with the keys you want to override.</p>
+
+<p>For example, we could have a line chart without bezier curves between points by doing the following:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">new</span> <span class="nx">Chart</span><span class="p">(</span><span class="nx">ctx</span><span class="p">).</span><span class="nx">Line</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="p">{</span>
+	<span class="na">bezierCurve</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">});</span>
+<span class="c1">// This will create a chart with all of the default options, merged from the global config,</span>
+<span class="c1">// and the Line chart defaults, but this particular instance will have `bezierCurve` set to false.</span>
+</code></pre></div></div>
+
+<p>We can also change these defaults values for each Line type that is created, this object is available at <code class="highlighter-rouge">Chart.defaults.Line</code>.</p>
+
+<h3 id="prototype-methods">Prototype methods</h3>
+
+<h4 id="getpointsatevent-event-">.getPointsAtEvent( event )</h4>
+
+<p>Calling <code class="highlighter-rouge">getPointsAtEvent(event)</code> on your Chart instance passing an argument of an event, or jQuery event, will return the point elements that are at that the same position of that event.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">canvas</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">evt</span><span class="p">){</span>
+	<span class="kd">var</span> <span class="nx">activePoints</span> <span class="o">=</span> <span class="nx">myLineChart</span><span class="p">.</span><span class="nx">getPointsAtEvent</span><span class="p">(</span><span class="nx">evt</span><span class="p">);</span>
+	<span class="c1">// =&gt; activePoints is an array of points on the canvas that are at the same position as the click event.</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>This functionality may be useful for implementing DOM based tooltips, or triggering custom behaviour in your application.</p>
+
+<h4 id="update-">.update( )</h4>
+
+<p>Calling <code class="highlighter-rouge">update()</code> on your Chart instance will re-render the chart with any updated values, allowing you to edit the value of multiple existing points, then render those in one animated render loop.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">myLineChart</span><span class="p">.</span><span class="nx">datasets</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">points</span><span class="p">[</span><span class="mi">2</span><span class="p">].</span><span class="nx">value</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="c1">// Would update the first dataset's value of 'March' to be 50</span>
+<span class="nx">myLineChart</span><span class="p">.</span><span class="nx">update</span><span class="p">();</span>
+<span class="c1">// Calling update now animates the position of March from 90 to 50.</span>
+</code></pre></div></div>
+
+<h4 id="adddata-valuesarray-label-">.addData( valuesArray, label )</h4>
+
+<p>Calling <code class="highlighter-rouge">addData(valuesArray, label)</code> on your Chart instance passing an array of values for each dataset, along with a label for those points.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// The values array passed into addData should be one for each dataset in the chart</span>
+<span class="nx">myLineChart</span><span class="p">.</span><span class="nx">addData</span><span class="p">([</span><span class="mi">40</span><span class="p">,</span> <span class="mi">60</span><span class="p">],</span> <span class="s2">"August"</span><span class="p">);</span>
+<span class="c1">// This new data will now animate at the end of the chart.</span>
+</code></pre></div></div>
+
+<h4 id="removedata-">.removeData( )</h4>
+
+<p>Calling <code class="highlighter-rouge">removeData()</code> on your Chart instance will remove the first value for all datasets on the chart.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">myLineChart</span><span class="p">.</span><span class="nx">removeData</span><span class="p">();</span>
+<span class="c1">// The chart will remove the first point and animate other points into place</span>
+</code></pre></div></div>
+
+							<!-- tags -->
+							
+							
+							
+							
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/console/assets/plugins/chart.chartjs/docs/01-Line-Chart/";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+							<!-- removed for mesibo -->
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<!-- toggle mode -->
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/console/assets/plugins/chart.chartjs/docs/01-Line-Chart/#chart-options" class="nomunge">Chart options</a>
+    <ul>
+      <li><a href="/console/assets/plugins/chart.chartjs/docs/01-Line-Chart/#prototype-methods" class="nomunge">Prototype methods</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/">Home</a></li>
+                        <li><a href="https://mesibo.com/pricing/">Pricing</a></li>
+                        <li><a href="https://mesibo.com/use-cases/">Use Cases</a></li>
+                        <li><a href="https://mesibo.com/custom-solutions/">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/documentation/faq/">FAQ</a></li>
+                        <li><a href="https://mesibo.com/help/">Support</a></li>
+                        <li class="break"><a href="https://stackoverflow.com/questions/ask">Community</a></li>
+                        <li><a href="https://mesibo.com/documentation/">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+                        <li><a href="https://mesibo.com/career/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="https://mesibo.com/terms-of-use/#terms">Terms-of-Service</a></li>
+                        <li><a href="https://mesibo.com/terms-of-use/#privacy">Privacy Policy</a></li>
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright &copy; 2019 Mesibo. All rights reserved. </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a target="_blank" href="https://twitter.com/mesiboapi">Twitter</a></li>
+                    <li class="fa fa-youtube"><a target="_blank" href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ">Youtube</a></li>
+                    <li class="fa fa-google-plus"><a target="_blank" href="https://plus.google.com/b/107106343719610600541/107106343719610600541">Google</a></li>
+                    <li class="fa fa-github"><a target="_blank" href="https://github.com/mesibo/samples">Github</a></li>
+                    <li class="fa fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/mesibo">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a target="_blank" href="https://www.facebook.com/mesiboapi">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/console/assets/plugins/chart.chartjs/docs/01-Line-Chart/';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>
