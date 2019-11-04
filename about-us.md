@@ -1,9 +1,10 @@
 ---
 layout: mesibo
-description: mesibo is a real-time communication platform that makes it remarkably simple to add real-time communication to mobile apps, and websites, in just a few hours.
-keywords: mesibo
-title: About Us
+description: mesibo is a real-time communication platform that makes it remarkably simple to add real-time chat, voice and video to mobile apps, and websites, in just a few hours.
+keywords: mesibo, real-time communication platform, messaging, voice, video, chat api
+title: On-Premise Real-time Communication Platform
 subtitle: If it's messaging or telephony, it's mesibo!
+heading: About Us
 banner: false
 ---
 

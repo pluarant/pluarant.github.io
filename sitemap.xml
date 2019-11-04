@@ -4,513 +4,382 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
   <loc>https://mesibo.com/</loc>
-  <lastmod>2019-01-08T09:18:46+00:00</lastmod>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/index.html</loc>
-  <lastmod>2019-01-08T09:18:46+00:00</lastmod>
+  <loc>https://mesibo.com/help/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/chat-api-features.html</loc>
-  <lastmod>2019-01-08T09:17:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/pricing.html</loc>
-  <lastmod>2019-01-08T09:50:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/use-cases.html</loc>
-  <lastmod>2019-01-08T09:18:14+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/on-premise/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mesibo.com/documentation/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/tutorials/first-app/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/tutorials/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/api/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mesibo.com/documentation/source-code/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/install/android/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/install/ios/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/install/linux/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/install/javascript/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/install/raspberrypi/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/install/python/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/install/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mesibo.com/documentation/faq/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/help.html</loc>
-  <lastmod>2019-01-08T09:18:56+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/faq/messaging/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/faq/group-messaging/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/faq/security/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/faq/http-library/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/faq/pricing/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/use-cases/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/pricing/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/technical-support/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/sales/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/custom-solutions/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mesibo.com/console/</loc>
-  <lastmod>2018-11-22T12:56:19+00:00</lastmod>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/about-us.html</loc>
-  <lastmod>2019-01-08T09:17:24+00:00</lastmod>
+  <loc>https://mesibo.com/about-us/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/career.html</loc>
-  <lastmod>2019-01-08T09:17:36+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/get-started/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/contact.html</loc>
-  <lastmod>2019-01-08T09:17:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/support/custom-solutions/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/terms-of-use/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mesibo.com/documentation/support/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/terms-of-use.html</loc>
-  <lastmod>2019-01-08T09:18:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/api/real-time-api/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/api/server-side-api/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/get-started/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/install/android/</loc>
-  <lastmod>2019-01-09T08:01:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/install/ios/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/install/javascript/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/install/linux/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/career/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mesibo.com/documentation/install/mac/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mesibo.com/documentation/install/windows/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/support/technical-support/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/install/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/tutorials/first-app/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://mesibo.com/documentation/tutorials/open-source-whatsapp-clone/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=open</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/tutorials/first-app/anatomy/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=source</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=contributing</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=overview</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=get%20started</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=setup</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=orientation</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=mesibo</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=chat</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=GDPR</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/career/software-engineer-android.html</loc>
-  <lastmod>2018-03-23T13:24:28+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/career/software-engineer-ios.html</loc>
-  <lastmod>2018-03-23T13:24:28+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/career/web-developer.html</loc>
-  <lastmod>2018-03-23T13:24:28+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/career/technical-content-writer.html</loc>
-  <lastmod>2018-03-23T13:24:28+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/career/marketing-communication-executive.html</loc>
-  <lastmod>2018-03-23T13:24:28+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/career/customer-support-executive.html</loc>
-  <lastmod>2018-03-23T13:24:28+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=real-time</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=installation</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=ios</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=address</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=peer</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/get-started/messaging/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/get-started/group-messaging/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/get-started/voice-video-calls/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/get-started/ui-modules/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/get-started/conclusion/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=quickstart</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=intro</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=concepts</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=containers</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=android</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=javascript</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=install</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=linux</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=mac</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=windows</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://mesibo.com/documentation/tutorials/first-app/android/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/tutorials/first-app/ios/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/tutorials/first-app/js/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/tutorials/first-app/cpp/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/tutorials/first-app/python/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/tutorials/first-app/file-transfer/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/tutorials/first-app/ui-modules/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/tutorials/first-app/voice-video-calls/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/api/backend-api/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/api/real-time-api/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/api/http-library/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/faq/webhooks-and-push-notifications/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/get-started/messaging/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/get-started/group-messaging/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/get-started/voice-video-calls/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/get-started/ui-modules/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/get-started/conclusion/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/contact/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mesibo.com/documentation/support/technical-support/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=access%20token</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/career/software-engineer-android/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=api%20key</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/career/software-engineer-ios/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=application%20token</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/career/web-developer/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=Mesibo%20container</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/career/technical-content-writer/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=Mesibo%20for%20Mac</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/career/marketing-communication-executive/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=MAU</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/career/customer-support-executive/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=M+N%20rebundancy</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/tutorials/open-source-whatsapp-clone/android/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=namespace</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/tutorials/open-source-whatsapp-clone/ios/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=node</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/tutorials/open-source-whatsapp-clone/customize/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=On%20premises%20deployment</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/tutorials/open-source-whatsapp-clone/backend/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=1-to-1%20communication</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/tutorials/open-source-whatsapp-clone/on-premise/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=Peer-to-peer%20(P2P)</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/tutorials/open-source-whatsapp-clone/conclusion/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=STUN</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/api/real-time-api/listeners/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=Token</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/api/real-time-api/initialization/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=TURN</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/api/real-time-api/messaging/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=WebRTC</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/api/real-time-api/file-transfer/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=Webhook</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/api/real-time-api/calls/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=x86_64</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/api/real-time-api/profiles/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=glossary</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/api/real-time-api/utility/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://mesibo.com/documentation/glossary/?term=terms</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=definitions</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=message</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
+  <loc>https://mesibo.com/documentation/api/real-time-api/data-structures/</loc>
+  <lastmod>2019-10-25T11:07:37+00:00</lastmod>
   <priority>0.41</priority>
 </url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=destination</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=group%20messaging</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=messages</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=messaging</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=fan-out</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=voice%20calls</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=video%20calls</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=webrtc</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=stun</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=turn</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=sdk</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/tutorials/</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://mesibo.com/documentation/glossary/?term=tutorials</loc>
-  <lastmod>2019-01-09T04:42:19+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-
-
 </urlset>

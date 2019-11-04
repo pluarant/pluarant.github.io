@@ -1,7 +1,8 @@
 ---
-title: Mesibo Real-time APIs - Introduction
-description: Mesibo Real-time APIs - Introduction
-keywords: mesibo, real-time api, messaging API, chat API, voice SDK, video SDK
+title: Mesibo Real-time Chat APIs - Introduction
+heading: Mesibo Real-time APIs - Introduction
+description: Introduction to Mesibo Real-time Chat APIs for Android, iOS and website. It’s easy to use to add 1-to-1 messaging, group chat, voice and video calls in your Mobile Apps & Websites.
+keywords: real-time chat api, messaging API, chat API introduction, document for voice SDK, video SDK, mesibo
 ---
 {% include_relative nav.html selected="introduction" %}
 
@@ -22,7 +23,7 @@ There are three key components of Mesibo real-time APIs
 - **Data Structures**, various data structures used in functions and listeners
 
 ### API Signatures
-All the APIs have exactly the same name and parameters across the platform unless specified. They only differ in the way they are invoked in various platforms like Java (Android), Objective-C (iOS), Swit (iOS), C++, Javascript. For example, the ‘setPath’ API is invoked on the various platform, as shown below:
+All the APIs have exactly the same name and parameters across the platform unless specified. They only differ in the way they are invoked in various platforms like Java (Android), Objective-C (iOS), Swit (iOS), C++, Javascript. For example, the ‘setPath’ API is invoked on various platform, as shown below:
 
 On Android
 ```
@@ -40,7 +41,7 @@ Swift
 ```
 mesibo.getInstance().setPath(path)
 ``` 					
-This makes it easy for you to write cross-platform code across platform. In following sections, we will only describe APIs with name and parameters.
+This makes it easy for you to write cross-platform code across platform. In the following sections, we will describe APIs with name and parameters.
 
 ## Get Started with Mesibo Real-time APIs
 Mesibo Real-time APIs are broadly classified in the following categories:
@@ -55,7 +56,7 @@ Mesibo Real-time APIs are broadly classified in the following categories:
 
 - [User and Group Profile APIs]({{ '/documentation/api/real-time-api/profiles/' | relative_url }}) - APIs to manage user and group profiles.
 
-- [Utility APIs]({{ '/documentation/api/real-time-api/utility/' | relative_url }}) - Various utility APIs to perform auxilary tasks like checking network connections, creating files, etc.
+- [Utility APIs]({{ '/documentation/api/real-time-api/utility/' | relative_url }}) - Various utility APIs to perform auxiliary tasks like checking network connections, creating files, etc.
 
 You can click on individual sections to go through each API category. Although, it is not necessary to go in the order but recommended for the first reading. 
 

@@ -1,59 +1,74 @@
+
 What is Mesibo?: |
-  Most of the apps today require some form of real-time communication; say, if you are developing a dating app and you want your matches to communicate, OR creating a ridesharing app and you want your passengers to send cab request to a group of drivers in real-time, or a chatbot for flight booking or a messaging app like Whatsapp, whatever you do, real-time communication is pervading every part of our daily life and enabling new business models and revenue streams for the apps.
+
+  Most of the apps today require some form of real-time communication; say, if you are developing a dating app and you want your matches to communicate, OR creating a ridesharing app and you want your passengers to send cab request to a group of drivers in real-time, or a chatbot for flight booking or a messaging app like Whatsapp, whatever you do, real-time communication is pervading every part of our daily life and enabling new business models and revenue streams .
   
   Mesibo is a high performance, high-availability, asynchronous real-time messaging platform that allows your users (endpoints) to communicate with each other in real-time. With Mesibo, you can quickly add real-time messaging, voice and video calling (like WhatsApp) in your own app in no time.
 
-
 Why Mesibo?: |
+
   Building your own real-time messaging or chat not only requires expertise, but it's a resource intensive and expensive task, both from development and testing perspective. It becomes more complex, especially when it involves connecting millions of users in real-time.
   
-  Mesibo underpins the entire complexities of messaging, not only by providing client-side API &amp; UI, but a solid, scalable platform which is tested and adaptive to your needs. You can stay focused on your core app and leave the messaging complexities for Mesibo to handle.
+  Mesibo underpins the entire complexity of messaging, not only by providing client-side API &amp; UI, but a solid, scalable platform which is tested and adaptive to your needs. You can stay focused on your core app and let Mesibo handle the complexities of messaging.
 
 What are the key features offered by the Mesibo?: |
 
-  Real-time Messaging - Mesibo offers a complete APIs for real-time communication. It includes not only the API, but also ready-to-use UI modules which you can customize to your needs. Some of the UI modules are - one-to-one messaging, group messaging, message list, contacts, group contacts, video calls, voice calls, media picker, media cropper, login etc. 
-
-  Video and Voice Calls - Mesibo offers a complete stack for voice communications. It includes not only the necessary codecs, but other components necessary for high-quality calls like jitter buffer, packet loss concealment (PLC), acoustic echo cancellation (AEC), automatic gain control (AGC), noise reduction, etc.
-
-  Media and TURN servers - Mesibo also offers media and TURN servers to handle your media traffic. 
+  Real-time Messaging - Mesibo offers a complete package of APIs for real-time communication. It not only includes the API, but also ready-to-use UI modules that you can customize to your needs. Some of the UI modules are - one-to-one messaging, group messaging, message list, contacts, group contacts, video calls, voice calls, media picker, media cropper, log-in, etc. 
+  
+  Video and Voice Calls - Mesibo offers a complete stack for voice communications. Along with the necessary codecs, Mesibo also offers components for high-quality calls like jitter buffer, packet loss concealment (PLC), acoustic echo cancellation (AEC), automatic gain control (AGC), noise reduction, etc.
+  
+  Media and TURN servers - Mesibo also offers media and TURN servers to handle your media traffic.
 
 What platforms does Mesibo support?: |
-  Mesibo API is available for all the popular platforms - Android, iOS (both Objective-C and Swift), Linux, Mac, Web (Javascript) and Raspberry Pi. Mesibo APIs are designed such that all the mesibo API functions and data structures name same across the platforms. You may also use mesibo API within hybrid development platforms like PhoneGap, Unity etc.
-  
-  Mesibo also provides C/C++ API which allows you to integrate Mesibo with virtually any kind of software, for example, web backends, machine learning platforms, Matlab etc.
 
+  Mesibo API is available for all popular platforms - Android, iOS, Linux, Mac, Web (Javascript) and Raspberry Pi. Mesibo APIs are designed such that all the mesibo API functions and data structures name the same across the platforms. You may also use mesibo API within hybrid development platforms like PhoneGap, Unity, etc.
+  
+  Mesibo also provides C/C++ API which allows you to integrate Mesibo with virtually any kind of software, for example, web backends, machine learning platforms, Matlab, etc.
 
 How do I get a Mesibo account?: |
-  Simply sign up with your email and password, and you are ready to use Mesibo in your own app!
 
+  Simply sign up with your email and password, and you are ready to use Mesibo in your apps!
 
 I have multiple applications, do I need a separate Mesibo account for each application?: |
+
   Not at all, you can create multiple applications with a single Mesibo account. We like to keep things as simple as possible.
 
 Do you have any sample/demo app that I can try out?: |
-  Great question! Indeed we do have it. In fact, we have a fully functional WhatsApp like messaging app built using Mesibo on both <a href="https://play.google.com/store/apps/details?id=com.mesibo.mesiboapplication" target="_blank">Google Play Store</a> and <a href="https://itunes.apple.com/us/app/mesibo-realtime-messaging-voice-video/id1222921751" target="_blank">Apple App Store</a> for you to evaluate what mesibo can do for you. Furthermore, we even released source code for both the apps on <a href="/documentation/source-code/" target="_blank">GitHub</a>.
+
+  Great question! Indeed we do have it. We have a fully functional WhatsApp like messaging app built using Mesibo on both <a href="https://play.google.com/store/apps/details?id=com.mesibo.mesiboapplication" target="_blank">Google Play Store</a> and <a href="https://itunes.apple.com/us/app/mesibo-realtime-messaging-voice-video/id1222921751" target="_blank">Apple App Store</a> for you to evaluate what mesibo can do for you. Furthermore, we have even released the entire source code for both the apps on <a href="/documentation/source-code/" target="_blank">GitHub</a>.
+  
+  You can also check out sample apps for flutter, React-Native, JavaScript, etc.
 
 Can I use the source code in my own app?: |
+
   Absolutely, that’s the idea! We have published our entire source code of our Android and iOS apps so that you can reuse and quickly roll-out your own Mesibo based applications.
 
 Can I implement a complete chat, including UI using Mesibo?: |
+
   That’s right, you not only get API but all the necessary UI modules to create messaging UI, login screens, welcome screens, media pickers and more.
+  
   You can selectively integrate only those modules that you need.
 
 We already have our own chat UI, can we use Mesibo?: |
+
   Yes, you only use Mesibo core API to send and receive messages with your own UI.
 
-Can we use Mesibo for signaling, for example, to set up WebRTC sessions? : |
+Can we use Mesibo for signaling, for example, to set up WebRTC sessions?: |
+
   Absolutely, you can exchange WebRTC SDP using Mesibo messages to set up WebRTC sessions.
 
-Does Mesibo supports non-English/Asian/European languages?: |
+Does Mesibo support non-English/Asian/European languages?: |
+
   Yes, Mesibo is based on Unicode and hence supports every language, fonts, and emojis.
 
 Is Mesibo IPv6 Compatible? Does it comply with Apple app store IPv6 requirements?: |
+
   Yes, Mesibo SDKs are IPv6 compatible. It also meets the Apple iOS app  IPv6 requirements.
 
 Is Mesibo HIPAA compliant?: |
-  Yes, Mesibo is HIPAA compliant.
+
+  Yes, Mesibo is HIPAA compliant. You can even download the entire Mesibo platform on your own data center or private cloud so that all the data stays with you.
 
 Does Mesibo meet EU GDPR requirements?: |
-  Yes, Mesibo does. On request, Mesibo can restrict all your data to be stored and pass through EU based servers only.
+
+  Yes, Mesibo is compliant with EU GDPR. On request, Mesibo can restrict all your data to be stored and pass through EU based servers only. You can also download the entire Mesibo platform and host it in your own data center or private cloud.

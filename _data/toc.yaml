@@ -14,6 +14,10 @@ horizontalnav:
   path: /documentation/tutorials/
   node: tutorials
   resetnav: yes
+- title: On-Premise
+  path: /documentation/on-premise/
+  node: onpremise
+  resetnav: yes
 - title: FAQ
   path: /documentation/faq/
   node: faq
@@ -23,7 +27,7 @@ horizontalnav:
   node: glossary
   hide: yes
 - title: Support
-  path: /help/
+  path: /technical-support/
   node: support
   resetnav: yes
 
@@ -59,7 +63,7 @@ guides:
   title: Demo Apps
 - path: /documentation/faq/
   title: FAQ
-- path: /documentation/support/
+- path: /technical-support/
   title: Support
 
 install:
@@ -91,12 +95,18 @@ tutorials:
   section:
   - path: /documentation/tutorials/first-app/
     title: Preparation
+  - path: /documentation/tutorials/first-app/anatomy/
+    title: Anatomy
   - path: /documentation/tutorials/first-app/android/
     title: Android
   - path: /documentation/tutorials/first-app/ios/
     title: iOS
   - path: /documentation/tutorials/first-app/js/
     title: JavaScript
+  - path: /documentation/tutorials/first-app/cpp/
+    title: C/C++
+  - path: /documentation/tutorials/first-app/python/
+    title: Python
   - path: /documentation/tutorials/first-app/file-transfer/
     title: File Transfer
   - path: /documentation/tutorials/first-app/ui-modules/
@@ -174,14 +184,22 @@ faq:
   - path: /documentation/faq/other/
     title: Other
 
+onpremise:
+- sectiontitle: On-Premise Platform
+  section:
+  - path: /documentation/on-premise/
+    title: Introduction &amp; Install
+  - path: /documentation/on-premise/loadable-modules/
+    title: Loadable Modules
+
 support:
-- path: /documentation/support/
+- path: /help/
   title: Mesibo Support
-- path: /documentation/support/technical-support/
+- path: /technical-support/
   title: Technical Support
-- path: /documentation/support/custom-solutions/
+- path: /custom-solutions/
   title: Custom Solutions
-- path: /documentation/support/sales/
+- path: /sales/
   title: Sales
 
 homes:

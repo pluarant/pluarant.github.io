@@ -3,7 +3,7 @@ layout: mesibo
 description: Have a question on how to use mesibo API? We are here to help you
 keywords: help, mesibo
 title: Contact Us
-subtitle: We are here to provide you with more information, answer any questions you may have and create an effective solution for your needs.
+subtitle: Have a question on how to use Mesibo? We are here to help you!
 category: help
 banner: true
 ---
@@ -13,9 +13,14 @@ banner: true
 <div class="container">
 <div class="row justify-content-md-center">
 <div class="col-lg-8">
-<h2 class="text-center mt-4">Reason for <strong>Inquiry</strong></h2>
+<!-- <h2 class="text-center mt-4">Type of <strong>Inquiry</strong></h2>
 <div class="separator"></div>
-<p class="large text-center">Please select the appropriate reason for your inquiry.</p>
+-->
+<!-- 
+<p class="large">We offer 24/7 support via email. All our Support Team members are working from our San Francisco Bay Area and Singapore offices. Depending on the ticket time and your past interactions, one of our teams will answer your queries. 
+</p>
+-->
+<p class="large">Please go through Mesibo <a href="/documentation/get-started/">Getting-Started guide</a>, <a href="/documentation/tutorials/">Tutorials</a>, <a href="/documentation/faq/">FAQs</a>, and <a href="/documentation/pricing/">Pricing</a> pages before sending a support request. You will likely get answers to your questions there itself. </p>
 </div>
 </div>
 <div class="row">

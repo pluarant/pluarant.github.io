@@ -1,4 +1,4 @@
-<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -79,7 +79,7 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
@@ -89,7 +89,7 @@
 	<meta name="twitter:description" property="og:description" itemprop="description" content="1: Introduction 2: Android App 3: iOS App 4: Customizing 5: Hosting APIs 6: On-Premise Deployment 7: Conclusion In this part, we will customize the Android and iOS messenger apps..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="open, source, whatsapp, mesibo, ios, overview">
@@ -220,7 +220,7 @@
   <span class="reading-time-label">Estimated reading time: </span>
   
   
-    4 minutes
+    5 minutes
   
 </span>
 
@@ -246,14 +246,24 @@
 <p>However, we will not cover all the customizations in this tutorial. Instead, we will focus on a few very important ones as follow.</p>
 
 <ul>
-  <li>Account Kit to send your own branded verification SMS</li>
+  <li>User Verification</li>
   <li>Geolocation support by configuring Google Maps and Google Places API key</li>
   <li>Files/Media handler to store files on your own server(s)/cloud</li>
   <li>Welcome screen and other miscellaneous customizations</li>
 </ul>
 
 <h2 id="customizations">Customizations</h2>
-<h3 id="facebook-account-kit">Facebook Account Kit</h3>
+<h3 id="user-verification">User Verification</h3>
+<p>For these demo apps, we have chosen to use a phone number for login. We verify the user by sending an OTP to the user phone number, which the user can enter to confirm the phone number.</p>
+
+<p>It is not necessary to use the phone number; you can use anything you prefer, for example, email address, user account id, your organization id, etc.  You can customize the entire login as you prefer.</p>
+
+<p>You can use any SMS gateway to send OTP and verify a user phone number. We have used free service provided by Facebook in this example.</p>
+
+<blockquote>
+  <p>Facebook has recently discontinued AccountKit, and hence this section is not recommended for new code.  You need to use other means of verification, like SMS or email verification. Note that, mesibo has no dependency on AccountKit, and it is used only for the demo app.</p>
+</blockquote>
+
 <p>The first screen you see in the Mesibo Messenger right after the welcome screen is the login screen. This is the screen which allows the user to enter their phone number and then verifies it by sending an OTP over an SMS or a call.</p>
 
 <p><img src="/images/app/ios/mesibo_account_kit_ios.jpg" alt="" /></p>
@@ -358,7 +368,7 @@
 								<div class="feedback-links">
 									<ul>
 										
-										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
 										<!-- toggle mode -->
 										<li>
 											<div class="toggle-mode">
@@ -385,7 +395,7 @@
   <li><a href="/documentation/tutorials/open-source-whatsapp-clone/customize/#what-can-be-customized" class="nomunge">What can be customized?</a></li>
   <li><a href="/documentation/tutorials/open-source-whatsapp-clone/customize/#customizations" class="nomunge">Customizations</a>
     <ul>
-      <li><a href="/documentation/tutorials/open-source-whatsapp-clone/customize/#facebook-account-kit" class="nomunge">Facebook Account Kit</a></li>
+      <li><a href="/documentation/tutorials/open-source-whatsapp-clone/customize/#user-verification" class="nomunge">User Verification</a></li>
       <li><a href="/documentation/tutorials/open-source-whatsapp-clone/customize/#geolocation---google-maps-and-google-places" class="nomunge">Geolocation - Google Maps and Google Places</a></li>
       <li><a href="/documentation/tutorials/open-source-whatsapp-clone/customize/#mediafile-storage" class="nomunge">Media/File Storage</a></li>
     </ul>

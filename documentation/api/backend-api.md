@@ -1,17 +1,17 @@
 ---
 title: Mesibo Backend APIs (Server-side APIs)
-description: Mesibo Backend APIs (Server-side APIs) 
-keywords: mesibo, backend, api
+description: Mesibo backend APIs allows you to administer your account, manage apps, manage users and groups etc. Mesibo backend API is a REST based API which you can access using any language of your choice. 
+keywords: chat api backend, server-side api guide, chat app backend references, mesibo backend api, php, rest api
 redirect_from:
 - /documentation/backend/
 ---
-The Mesibo backend APIs allows you to administer your account, manage apps, manage users and groups etc. Mesibo backend API is a REST based APIs which you can access using any language of your choice. 
+Mesibo backend APIs allows you to administer your account, manage apps, manage users and groups etc. Mesibo backend API is a REST based API which you can access using any language of your choice. 
 
 ### Mesibo Backend API URL
 
      https://api.mesibo.com/api.php
 
-For maintaining privacy and security, the Mesibo REST APIs can only be accessed over HTTPS.
+For maintaining privacy and security, Mesibo REST APIs can only be accessed over HTTPS.
 
 ### Parameters
 

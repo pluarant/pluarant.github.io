@@ -1,11 +1,11 @@
 ---
 title: Mesibo Real-time APIs - File Transfer
-description: Mesibo Real-time APIs - File Transfer
-keywords: mesibo, android, ios
+description: Just like text messages, mesibo real-time file-transfer API allows you to send and receive any arbitrary file - image, video, doc, etc. 
+keywords: file transfer api, real-time file sending, file transferring, instance file transfer api, file transfer api for android, file transfer api for ios 
 ---
 {% include_relative nav.html selected="file" %}
 
-Just like text messages, mesibo allows you to send and receive any arbitrary file (image, video, doc, etc.) in real-time. Sending and receiving file is no different from sending and receiving text messages. All an application has to do is to upload the file to a server and then send the URL and thumbnail [optional] using mesibo in real-time. The receiver then downloads it using that URL. This out-of-band mechanism ensures that no real-time messages are blocked waiting for large files to be uploaded or downloaded.
+Just like text messages, mesibo allows you to send and receive any arbitrary file (image, video, doc, etc.) in real-time. Sending and receiving files is no different from sending and receiving text messages. All an application has to do is to upload the file to a server and then send the URL and thumbnail [optional] using mesibo in real-time. The receiver then downloads it using that URL. This out-of-band mechanism ensures that no real-time messages are blocked waiting for large files to be uploaded or downloaded.
 
 mesibo offers you the flexibility to store all files on your own servers including private servers or cloud services like Amazon Web Services, Google Cloud Storage, Microsoft Azure, etc.
 

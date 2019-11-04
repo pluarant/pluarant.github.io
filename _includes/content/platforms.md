@@ -10,11 +10,11 @@ Mesibo supports almost all popular platforms and languages for you to quickly bu
     </div>
     
     <div class="row">
-	{% include content/platform.md url='/documentation/install/linux/' img='/images/platform/linux_96.png' title='Mesibo for Linux' content='Install Mesibo on Linux to use it from varities of applications, backend and languages like C++, Python, PHP etc.' id='mesibo-for-linux' %}
+	{% include content/platform.md url='/documentation/install/linux/' img='/images/platform/linux_96.png' title='Mesibo for Linux' content='Install Mesibo on Linux to use it from varieties of applications, backend and languages like C++, Python, PHP etc.' id='mesibo-for-linux' %}
 	
-	{% include content/platform.md url='/documentation/install/mac/' img='/images/platform/macos_96.png' title='Mesibo for Mac OS' content='Install Mesibo on Mac to use it from varities of applications, backend and languages like C++, Python, PHP etc.' id='mesibo-for-mac' %}
+	{% include content/platform.md url='/documentation/install/mac/' img='/images/platform/macos_96.png' title='Mesibo for Mac OS' content='Install Mesibo on Mac to use it from varieties of applications, backend and languages like C++, Python, PHP etc.' id='mesibo-for-mac' %}
 	
-	{% include content/platform.md url='/documentation/install/windows/' img='/images/platform/windows_48.svg' title='Mesibo for Windows' content='Install Mesibo on Windows to use it from varities of applications, backend and languages like C++, Python, PHP etc.' id='mesibo-for-windows' %}
+	{% include content/platform.md url='/documentation/install/windows/' img='/images/platform/windows_48.svg' title='Mesibo for Windows' content='Install Mesibo on Windows to use it from varieties of applications, backend and languages like C++, Python, PHP etc.' id='mesibo-for-windows' %}
     </div>
     <div class="row">
 	{% include content/platform.md url='/documentation/install/raspberrypi/' img='/images/platform/raspberry_96.png' title='Mesibo for Raspberry Pi' content='Instantly add real-time communication on your embedded devices by using Mesibo on Raspberry Pi device.' id='mesibo-for-pi' %}

@@ -1,9 +1,8 @@
 ---
-title: Getting Started with Mesibo Javascript SDK
-description: Getting Started with Mesibo Javascript SDK
-keywords: mesibo, installation, javascript
-redirect_from:
-- /installation/
+title: JavaScript Chat SDK for Website and Mobile App
+heading: Mesibo Javascript Chat SDK
+description: The easiest way to install Javascript Chat SDK for your Websites and Mobile Applications.
+keywords: javascript chat sdk, messaging sdk for javascript, javascript sdk for chat, install sdk through javascript 
 ---
 
 ## Install Mesibo Javascript SDK

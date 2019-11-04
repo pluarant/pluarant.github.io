@@ -1,0 +1,40 @@
+
+What is webhook?: |
+
+  A WebHook is an HTTP(S) URL which will be invoked with POST data in real-time by Mesibo when something happens; for example, an offline message, a user comes online or goes offline etc.
+
+How do I set up webhook URL for an App?: |
+
+  You can set webhook url for an App using <a href="/documentation/api/server-side-api/" target="_blank">server side API</a> or from mesibo console.
+
+What are the webhook parameters?: |
+
+  Webhook is invoked with the following parameters:
+  
+  - secret - secret which you entered in the mesibo console
+  - uid - User Id
+  - aid - APP Id 
+  - from - sender
+  - to - destination 
+  - e - logical OR combination of one of the following events
+      - 0x10 - User is Online
+      - 0x20 - User went offline
+      - 0x100 - Messages
+
+Can I select the events for which I want to receive webhooks?: |
+
+  Yes, you can select the events for which  webhook should be invoked. For example, an offline message, a user comes online or goes offline etc.
+
+Is there any limit on the number of times a webhook is invoked?: |
+
+  There is no hard limit. However, Mesibo automatically optimizes and decides based on your webhook usage if the next webhook call is necessary. For example, an offline message indication for a user may not be invoked again until that user comes online or for a certain duration.
+
+How do I send a push notification to users?: |
+
+  Mesibo will automatically send push notification to offline users if there is a message or a call for them. All you need to do is configure your Firebase Cloud Messaging and Apple Push Notification credentials in Mesibo console and rest will be taken care of by Mesibo.
+
+I am not able to receive push notifications on the app, what should I do?: |
+
+  - Keep your phone on the cellular data and see if you are receiving push notifications.
+   - See if other apps on your phone receive it.
+   - If you don't receive push on cellular data too and receiving push for other apps, then try below script which will bypass mesibo (we give simplified push script from our PHP code)

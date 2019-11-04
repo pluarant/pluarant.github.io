@@ -1,16 +1,7 @@
-<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
 <!-- relative link basehrefs -->
 
 	
-	
-	
-		
-			
-		
-	
-		
-			
-			
 
 
 <!-- Logic for 'edit this button' -->
@@ -45,7 +36,7 @@
 <html lang="en">
 
 <head>
-	<base href="/documentation/" />
+	<base href="/documentation/on-premise/" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<style type="text/css">
 		@charset "UTF-8";
@@ -71,20 +62,20 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
 	<meta name="twitter:site" content="@mesibo"/>
 	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
-	<meta name="twitter:title" itemprop="title name" content="Installing & Running Mesibo On-Premise Platform"/>
+	<meta name="twitter:title" itemprop="title name" content="Mesibo On-Premise - Installing &amp; Running Mesibo on your own premise or private cloud"/>
 	<meta name="twitter:description" property="og:description" itemprop="description" content="Mesibo On-Premise solution allows you to run the entire Mesibo platform in your own premise OR private cloud. All the messages and calls go through your own data center and..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="open, source, on-premise, messaging, chat, voice, video">
+	<meta name="keywords" content="chat system on-premise, messaging platform, chat api platform, voice, video calling on-premise, installing chat platform on private cloud, mesibo communication platform">
 	<link rel="stylesheet" href="/css/font-awesome.min.css" >
 	<link rel="stylesheet" href="/css/bootstrap.min.css" >
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
@@ -93,16 +84,16 @@
 	<!-- Go get "Open Sans" font from Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!-- SEO stuff -->
-	<title>Installing & Running Mesibo On-Premise Platform | Mesibo Documentation</title>
-<meta property="og:title" content="Installing & Running Mesibo On-Premise Platform" />
+	<title>Mesibo On-Premise - Installing &amp; Running Mesibo on your own premise or private cloud | Mesibo Documentation</title>
+<meta property="og:title" content="Mesibo On-Premise - Installing &amp; Running Mesibo on your own premise or private cloud" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Installing & Running Mesibo On-Premise Platform" />
-<meta property="og:description" content="Installing & Running Mesibo On-Premise Platform" />
+<meta name="description" content="Installing and running the entire Mesibo platform on your own premise or private cloud. Benefitting the ultimate control over your sensitive data, unlimited storage & bandwidth etc." />
+<meta property="og:description" content="Installing and running the entire Mesibo platform on your own premise or private cloud. Benefitting the ultimate control over your sensitive data, unlimited storage & bandwidth etc." />
 <link rel="canonical" href="/documentation/on-premise/" />
 <meta property="og:url" content="/documentation/on-premise/" />
 <meta property="og:site_name" content="Mesibo Documentation" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"Installing & Running Mesibo On-Premise Platform","description":"Installing & Running Mesibo On-Premise Platform","url":"https://docs.docker.com/documentation/on-premise/"}</script>
+{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo On-Premise - Installing &amp; Running Mesibo on your own premise or private cloud","description":"Installing and running the entire Mesibo platform on your own premise or private cloud. Benefitting the ultimate control over your sensitive data, unlimited storage & bandwidth etc.","url":"https://docs.docker.com/documentation/on-premise/"}</script>
 	<!-- END SEO STUFF -->
 	
 	<script language="javascript">
@@ -205,7 +196,7 @@
 						<section class="section">
 							
 							
-							<h1>Installing & Running Mesibo On-Premise Platform</h1>
+							<h1>Mesibo On-Premise - Installing &amp; Running Mesibo on your own premise or private cloud</h1>
 							 
 
 							 <span class="reading-time" title="Estimated reading time">
@@ -416,7 +407,12 @@ README  cert.pem  chain.pem  fullchain.pem  privkey.pem
 
 <p>We are now all set to run Mesibo. You will notice that the Running Status field in console showing “Not Running”.</p>
 
-<p>You can now run Mesibo using following command:</p>
+<p>You can now run Mesibo using following command (recommended):</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>docker run <span class="nt">-v</span> /certs:/etc/letsencrypt/live/mesibo.example.com <span class="nt">--net</span><span class="o">=</span>host <span class="se">\</span>
+		<span class="nt">-d</span> mesibo/mesibo &lt;APP_TOKEN&gt;
+</code></pre></div></div>
+
+<p>alternatively, you can also use following command if you have port conflicts:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>docker run <span class="nt">-v</span> /certs:/etc/letsencrypt/live/mesibo.example.com <span class="nt">-p</span> 5222:5222 <span class="nt">-p</span> 5228:5228 <span class="se">\</span>
 		<span class="nt">-p</span> 80:80 <span class="nt">-p</span> 443:443 <span class="nt">-p</span> 4443:4443 <span class="nt">-p</span> 5443:5443 <span class="nt">-p</span> 513:513 <span class="nt">-d</span> mesibo/mesibo <span class="se">\</span>
@@ -429,9 +425,8 @@ README  cert.pem  chain.pem  fullchain.pem  privkey.pem
 
 <p>For example,</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo docker run -v /certs:/etc/letsencrypt/live/mesibo.example.com -p 5222:5222 -p 5228:5228 \
-		-p 80:80 -p 443:443 -p 4443:4443 -p 5443:5443 -p 513:513 -d mesibo/mesibo  \
-		iqmr059ms2yopxhc2sayx05ba2l5cralockbicqjsvv1nsqxs0x1yclfv0qvyg1q 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo docker run -v /certs:/etc/letsencrypt/live/mesibo.example.com --net=host \
+		-d mesibo/mesibo iqmr059ms2yopxhc2sayx05ba2l5cralockbicqjsvv1nsqxs0x1yclfv0qvyg1q 
 </code></pre></div></div>
 
 <p>On sucessfull launch of Mesibo, the output log should look like below:</p>
@@ -611,7 +606,7 @@ I3108-082635-167: Starting mesibo
 							
 							
 							
-							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=open">open</a>, <a href="/documentation/glossary/?term=source">source</a>, <a href="/documentation/glossary/?term=on-premise">on-premise</a>, <a href="/documentation/glossary/?term=messaging">messaging</a>, <a href="/documentation/glossary/?term=chat">chat</a>, <a href="/documentation/glossary/?term=voice">voice</a>, <a href="/documentation/glossary/?term=video">video</a></span>
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=chat system on-premise">chat system on-premise</a>, <a href="/documentation/glossary/?term=messaging platform">messaging platform</a>, <a href="/documentation/glossary/?term=chat api platform">chat api platform</a>, <a href="/documentation/glossary/?term=voice">voice</a>, <a href="/documentation/glossary/?term=video calling on-premise">video calling on-premise</a>, <a href="/documentation/glossary/?term=installing chat platform on private cloud">installing chat platform on private cloud</a>, <a href="/documentation/glossary/?term=mesibo communication platform">mesibo communication platform</a></span>
 							
 							<!-- link corrections -->
               <script language="JavaScript">
@@ -654,7 +649,7 @@ I3108-082635-167: Starting mesibo
 								<div class="feedback-links">
 									<ul>
 										
-										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
 										<!-- toggle mode -->
 										<li>
 											<div class="toggle-mode">

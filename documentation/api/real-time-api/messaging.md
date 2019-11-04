@@ -1,7 +1,7 @@
 ---
-title: Mesibo Real-time APIs - Messaging
-description: Mesibo Real-time APIs - Messaging
-keywords: mesibo, real-time api, messaging API, chat API, voice SDK, video SDK
+title: Mesibo Real-time Chat APIs - Messaging
+description: Get Core Messaging APIs for Android, iOS, Python, C++, Raspberry Pi etc with the examples to build in-app messaging.
+keywords: messaging api, android messaging api, real-time chat api, messaging api for ios, 
 ---
 {% include_relative nav.html selected="messaging" %}
 
@@ -24,7 +24,7 @@ It takes the following parameters:
   - **message**, Message
 
 ### sendFile 
-Send a file. This API is described in more details in the `File Transfer` section below. This API is deprecated and will be soon replaced by a common API.
+Send a file. This API is described in more detail in the [File Transfer API](file-transfer.md). Note that this API is deprecated and will soon be replaced by a common API.
 
 It takes the following parameters:
  
@@ -33,7 +33,7 @@ It takes the following parameters:
   - **file**, `FileInfo` object initialized with file information like path, type, etc.
 
 ### sendLocation 
-Send a location.  This API is deprecated and will be soon replaced by a common API.
+Send a location.  This API is deprecated and will soon be replaced by a common API.
 
 It takes the following parameters:
  
@@ -42,7 +42,7 @@ It takes the following parameters:
   - **location**, `LocationInfo` object initialized with location information like latitude, longitude, address, etc.
 
 ### forwardMessage
-Forward an existing message to a user or a group. A FORWARD flag will be set at recepients end to indicate it as a forwarded message. 
+Forward an existing message to a user or a group. A FORWARD flag will be set at recipient end to indicate it as a forwarded message. 
 
 It takes the following parameters:
  
@@ -84,7 +84,7 @@ It takes the following parameters:
   - **params**, `MessageParams` object initialized with required parameters
 
 ### random
-Returns a new unique message ID which you can use to send messages.  
+Returns a new unique message ID that you can use to send messages.  
 
 It does not take any parameters.
 
@@ -131,7 +131,7 @@ To read stored messages from the database, you need to create a read session and
 There are two modes of operation:
 
    - Read Messages and call logs. This mode is enabled by default
-   - Read Summary, read a latest message from each user and group. This allows you to get a snapshot of all the communicating users and groups. You can then create another read session to read messages for any of those users or groups. 
+   - Read Summary, read the latest message from each user and group. This allows you to get a snapshot of all the communicating users and groups. You can then create another read session to read messages for any of those users or groups. 
 
 ### Reading Order
 Once you set a read session, you can start reading messages by calling `read` API. You can read messages in the first-in-first-out (fifo) mode or the last-in-first-out (lifo) mode. In the first-in-first-out mode, oldest messages are read first. By default, the first-in-first-out mode is disabled. 

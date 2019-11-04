@@ -1,7 +1,7 @@
 ---
 title: Mesibo Real-time APIs - User &amp; Group Profile Management
-description: Mesibo Real-time APIs - User &amp; Group Profile Management
-keywords: mesibo, real-time api, messaging API, chat API, voice SDK, video SDK
+description: Mesibo profile APIs allow you to associate human readable information such as name, picture, status, presence information, etc. with a user or a group.
+keywords: user profile api, chat user profile api, group profile api, profiles management, profile api for android, profile api for iOS 
 ---
 {% include_relative nav.html selected="profiles" %}
 
@@ -9,7 +9,7 @@ A profile allows you to associate human readable information such as name, pictu
 
 Note that:
 
-  - Mesibo does not do anything with profiles other than maintaining registry and setting profile fields in `MessageParams` every time a message is received from a user and a group for which a profile is set. You can create a profile for every users or groups. 
+  - Mesibo does not do anything with profiles other than maintaining a registry and setting profile fields in `MessageParams` every time a message is received from a user and a group for which a profile is set. You can create a profile for every user or group. 
 
   - Mesibo does not know or fetch any users or groups from your servers. You need to do it yourself and let Mesibo know about it using `setProfile` API. 
 
@@ -50,7 +50,7 @@ It takes the following parameters:
   - **address**, User address for user profile, NULL (or nil) otherwise
 
 ### setSelfProfile
-This is special profile to identify the `self` user. 
+This is a special profile to identify the `self` user. 
 
 It takes the following parameters:
 
@@ -73,7 +73,7 @@ Returns all the profiles sorted by name in an array.
 It takes no parameters.
 
 ### getRecentProfiles
-Returns all the recent profiles. Recent profile is the one to whom a message was send or received recently.                          
+Returns all the recent profiles. Recent profile is the one to whom a message was sent or received recently.                          
 It takes no parameters.
 
 ### getUserProfilePicturePath

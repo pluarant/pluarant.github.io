@@ -1,4 +1,4 @@
-<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -75,7 +75,7 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
@@ -85,10 +85,10 @@
 	<meta name="twitter:description" property="og:description" itemprop="description" content="How to send a message? How do I get the status of a message I sent? What happens when I send messages to a user who is not online? What..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="get started, setup, orientation, mesibo, chat, GDPR">
+	<meta name="keywords" content="mesibo, faq, chat, voice, video">
 	<link rel="stylesheet" href="/css/font-awesome.min.css" >
 	<link rel="stylesheet" href="/css/bootstrap.min.css" >
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
@@ -100,13 +100,13 @@
 	<title>Frequently Asked Questions - Messaging | Mesibo Documentation</title>
 <meta property="og:title" content="Frequently Asked Questions - Messaging" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Frequently Asked Questions" />
-<meta property="og:description" content="Frequently Asked Questions" />
+<meta name="description" content="Frequently Asked Questions - Messaging" />
+<meta property="og:description" content="Frequently Asked Questions - Messaging" />
 <link rel="canonical" href="/documentation/faq/messaging/" />
 <meta property="og:url" content="/documentation/faq/messaging/" />
 <meta property="og:site_name" content="Mesibo Documentation" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"Frequently Asked Questions - Messaging","description":"Frequently Asked Questions","url":"https://docs.docker.com/documentation/faq/messaging/"}</script>
+{"@context":"http://schema.org","@type":"WebPage","headline":"Frequently Asked Questions - Messaging","description":"Frequently Asked Questions - Messaging","url":"https://docs.docker.com/documentation/faq/messaging/"}</script>
 	<!-- END SEO STUFF -->
 	
 	<script language="javascript">
@@ -216,7 +216,7 @@
   <span class="reading-time-label">Estimated reading time: </span>
   
   
-    3 minutes
+    4 minutes
   
 </span>
 
@@ -241,10 +241,13 @@
 			<li><a href="/documentation/faq/messaging/#what-is-the-retention-period-of-messages-stored-in-the-database">What is the retention period of messages stored in the database?</a></li>
 		
 			
-			<li><a href="/documentation/faq/messaging/#does-mesibo-supports-typing-indicators">Does Mesibo supports typing indicators?</a></li>
+			<li><a href="/documentation/faq/messaging/#does-mesibo-support-typing-indicators">Does Mesibo support typing indicators?</a></li>
 		
 			
 			<li><a href="/documentation/faq/messaging/#how-do-i-know-online-offline-status-of-a-user">How do I know Online/Offline Status of a user?</a></li>
+		
+			
+			<li><a href="/documentation/faq/messaging/#what-is-expiry">What is expiry?</a></li>
 		
 	</ul>
 
@@ -253,42 +256,54 @@
 		<h3 id="how-to-send-a-message">How to send a message?</h3>
 		
 <p>To send a message, just create an instance of MessageParams, populate with id and message and use sendMessage function to send it to a user or a group.
-That’s it. Mesibo takes care of everything including connection handling, retries, error handling, flow control etc. Mesibo delivers messages instantly if the destination user is online. If not, messages will be delivered as soon as destination user is online. This is automatic and transparent to applications, so applications sending messages need not to worry if the receiving applications are up and running. Conversely, receiving applications need not worry about the status of the sending application.
-Refer <a href="/documentation/get-started/" target="_blank">Basic concepts</a> and <a href="/documentation/api/real-time-api/" target="_blank">client side API reference</a> section in documentation for details.</p>
+That’s it. Mesibo takes care of everything including connection handling, retries, error handling, flow control, etc. Mesibo delivers messages instantly if the destination user is online. If not, messages will be delivered as soon as the destination user is online. This is automatic and transparent to applications, so applications sending messages do not need to worry if the receiving applications are up and running. Conversely, receiving applications need not worry about the status of the sending application.
+Refer <a href="/documentation/get-started/" target="_blank">Basic concepts</a> and <a href="/documentation/api/real-time-api/" target="_blank">client side API reference</a> section in the documentation for details.</p>
 
 	
 		<a name="how-do-i-get-the-status-of-a-message-i-sent"></a>
 		<h3 id="how-do-i-get-the-status-of-a-message-i-sent">How do I get the status of a message I sent?</h3>
 		
-<p>Mesibo informs you in real-time about the status of every message in <code class="highlighter-rouge">Mesibo_onMessageStatus</code> callback. Refer client-side API reference for details.</p>
+<p>Mesibo informs you in real-time about the status of every message sent in <code class="highlighter-rouge">Mesibo_onMessageStatus</code> callback. Refer client-side API reference for details.</p>
 
 	
 		<a name="what-happens-when-i-send-messages-to-a-user-who-is-not-online"></a>
 		<h3 id="what-happens-when-i-send-messages-to-a-user-who-is-not-online">What happens when I send messages to a user who is not online?</h3>
-		<p>Mesibo uses cut-through switching to deliver your messages in real-time with minimum latency. However, if the destination is not online, Mesibo stores the messages until the user is online. If you decide not to save messages in the database, you can do so by setting a flag while sending messages using real-time API.</p>
+		
+<p>Mesibo uses cut-through switching to deliver your messages in real-time with minimum latency. However, if the destination is not online, Mesibo stores the messages until the user is online. If you decide not to save messages in the database, you can do so by setting a flag while sending messages using real-time API.</p>
 
 	
 		<a name="what-is-the-retention-period-of-messages-stored-in-the-database"></a>
 		<h3 id="what-is-the-retention-period-of-messages-stored-in-the-database">What is the retention period of messages stored in the database?</h3>
-		<p>Mesibo offers unlimited message retention period, only limited by the storage quota and usage. You can anytime clear storage from the mesibo console or using server-side API.</p>
+		
+<p>Mesibo offers an unlimited message retention period, only limited by the storage quota and usage. You can at any time, clear storage from the Mesibo console or using the server-side API.</p>
 
 	
-		<a name="does-mesibo-supports-typing-indicators"></a>
-		<h3 id="does-mesibo-supports-typing-indicators">Does Mesibo supports typing indicators?</h3>
+		<a name="does-mesibo-support-typing-indicators"></a>
+		<h3 id="does-mesibo-support-typing-indicators">Does Mesibo support typing indicators?</h3>
 		
-<p>Yes. Also, not only typing indicatiors, Mesibo allows you to send and receive an unlimited number of presence information in 1:1 and group messaging, for example, typing, online, left, joined, etc or any custom presence information specific to your app, like shooting, tapping in a game etc. Refer <a href="/documentation/api/real-time-api/" target="_blank">client side API reference</a> for details.</p>
+<p>Yes. Not only does Mesibo support typing indicators,but also allows you to send and receive an unlimited amount of presence information such as typing,online,left,joined,etc or any custom presence information specific to your app, like shooting, tapping in a game etc. Refer <a href="/documentation/api/real-time-api/" target="_blank">client side API reference</a> for details.</p>
 
 	
 		<a name="how-do-i-know-online-offline-status-of-a-user"></a>
 		<h3 id="how-do-i-know-online-offline-status-of-a-user">How do I know Online/Offline Status of a user?</h3>
 		
-<p>The short answer is, each user has <code class="highlighter-rouge">lastActiveTime</code>. You can use it to determine if that user is <code class="highlighter-rouge">Online</code> or <code class="highlighter-rouge">Offline</code>. You can also use webhook to get an instant notification every time when the user is <code class="highlighter-rouge">Online</code> OR <code class="highlighter-rouge">Offline</code>.</p>
+<p>The short answer is, each user has <code class="highlighter-rouge">lastActiveTime</code>. You can use it to determine if that user is <code class="highlighter-rouge">Online</code> or <code class="highlighter-rouge">Offline</code>. You can also use webhook to get an instant notification whenever the user is <code class="highlighter-rouge">Online</code> OR <code class="highlighter-rouge">Offline</code>.</p>
 
-<p>However, the interpretation of <code class="highlighter-rouge">Online</code> and <code class="highlighter-rouge">Offline</code> status varies from an app to app. For some apps, it’s just the connection status, and for other apps, user is considered <code class="highlighter-rouge">online</code> when actively using the app while being connected. Hence, <code class="highlighter-rouge">Online</code> and <code class="highlighter-rouge">Offline</code> status requires a bit of elaboration.</p>
+<p>However, the interpretation of <code class="highlighter-rouge">Online</code> and <code class="highlighter-rouge">Offline</code> status varies from an app to app. For some apps, it’s just the connection status, and for some , user is considered <code class="highlighter-rouge">online</code> when actively using the app while being connected. Hence, <code class="highlighter-rouge">Online</code> and <code class="highlighter-rouge">Offline</code> status requires a bit of elaboration.</p>
 
-<p>In the past, apps could stay online even when running in the background. However, it’s no longer a case. Both Android and iOS will suspend the app after app moves to the background. Read more about Android and iOS background execution limits <a href="https://developer.android.com/about/versions/oreo/background">here</a> and <a href="https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html">here</a>.</p>
+<p>In the past, apps could stay online even when running in the background. However, it’s no longer the case. Both Android and iOS will suspend the app after app moves to the background. Read more about Android and iOS background execution limits <a href="https://developer.android.com/about/versions/oreo/background">here</a> and <a href="https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html">here</a>.</p>
 
-<p>So technically speaking, most users are offline unless they are actively using the app. When you send a message, a push notification will wake them up, and the app will be online. This still does not mean that the user is actively using the app since the message was delivered when the app was in background. So if your app only considers the connection status as <code class="highlighter-rouge">Online</code> status, the above answer will suffice. However, if you like to extend your app to know <code class="highlighter-rouge">active</code> status, you can send an <code class="highlighter-rouge">Online Activity</code> (see the previous question) which remote app can decide to answer based on their `Online’ status. This is more effective but has <strong>privacy implications</strong>. Hence, based on your app policy, mesibo let you choose the implementation.</p>
+<p>So technically speaking, most users are offline unless they are actively using the app. When you send a message, a push notification will wake them up, and the app will be online. This still does not mean that the user is actively using the app since the message was delivered when the app was in the background. So if your app only considers the connection status as <code class="highlighter-rouge">Online</code> status, the above answer will suffice. However, if you would like to extend your app to know the <code class="highlighter-rouge">active</code> status, you can send an <code class="highlighter-rouge">Online Activity</code> (see the previous question on using Typing Indicators) based on which a remote app can decide to answer based on their `Online’ status. This is more effective but has <strong>privacy implications</strong>. Hence, based on your app policy, mesibo lets you choose the implementation.</p>
+
+	
+		<a name="what-is-expiry"></a>
+		<h3 id="what-is-expiry">What is expiry?</h3>
+		
+<p>expiry represents the time within which a message has to be delivered.Expiry ranges from immediate (zero) to a few days and can be independently specified on per message basis at the time of sending. Mesibo will not deliver messages past its expiry. You can also set the expiry to zero for the messages that need to be delivered in real-time and not later. All messages will be retained by Mesibo until delivered or until their expiry is reached</p>
+
+<p>For example, to set an expiry of 7 days you need to specify it in seconds (7 day * 86400 sec/day)</p>
+
+<p>p.expiry = 604800</p>
 
 	
 </section>
@@ -298,7 +313,7 @@ Refer <a href="/documentation/get-started/" target="_blank">Basic concepts</a> a
 							
 							
 							
-							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=get started">get started</a>, <a href="/documentation/glossary/?term=setup">setup</a>, <a href="/documentation/glossary/?term=orientation">orientation</a>, <a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=chat">chat</a>, <a href="/documentation/glossary/?term=GDPR">GDPR</a></span>
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=faq">faq</a>, <a href="/documentation/glossary/?term=chat">chat</a>, <a href="/documentation/glossary/?term=voice">voice</a>, <a href="/documentation/glossary/?term=video">video</a></span>
 							
 							<!-- link corrections -->
               <script language="JavaScript">
@@ -341,7 +356,7 @@ Refer <a href="/documentation/get-started/" target="_blank">Basic concepts</a> a
 								<div class="feedback-links">
 									<ul>
 										
-										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
 										<!-- toggle mode -->
 										<li>
 											<div class="toggle-mode">
@@ -370,8 +385,9 @@ Refer <a href="/documentation/get-started/" target="_blank">Basic concepts</a> a
       <li><a href="/documentation/faq/messaging/#how-do-i-get-the-status-of-a-message-i-sent" class="nomunge">How do I get the status of a message I sent?</a></li>
       <li><a href="/documentation/faq/messaging/#what-happens-when-i-send-messages-to-a-user-who-is-not-online" class="nomunge">What happens when I send messages to a user who is not online?</a></li>
       <li><a href="/documentation/faq/messaging/#what-is-the-retention-period-of-messages-stored-in-the-database" class="nomunge">What is the retention period of messages stored in the database?</a></li>
-      <li><a href="/documentation/faq/messaging/#does-mesibo-supports-typing-indicators" class="nomunge">Does Mesibo supports typing indicators?</a></li>
+      <li><a href="/documentation/faq/messaging/#does-mesibo-support-typing-indicators" class="nomunge">Does Mesibo support typing indicators?</a></li>
       <li><a href="/documentation/faq/messaging/#how-do-i-know-online-offline-status-of-a-user" class="nomunge">How do I know Online/Offline Status of a user?</a></li>
+      <li><a href="/documentation/faq/messaging/#what-is-expiry" class="nomunge">What is expiry?</a></li>
     </ul>
   </li>
 </ul>

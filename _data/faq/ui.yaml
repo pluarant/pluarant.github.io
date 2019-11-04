@@ -1,0 +1,69 @@
+
+How to remove Mesibo Text appearing in voice and Video call: |
+
+  
+
+Can I display ads in chat view ?: |
+
+  Displaying Ads in chat view can be done. Please write to us with your requirement.
+
+How can I customize ringtones for calls and videos?: |
+
+  Currently, we are supporting the default phone ringtones set for Calls. You will be updated once we add custom ringtone settings in Mesibo.
+
+Is Mesibo UI opensource?: |
+
+  No, it will be eventually be open source.
+
+How can I load custom set of emojis?: |
+
+  Currently its not supported.
+
+How can I customize to load GIF ?: |
+
+  By default Mesibo supports GIF as a video file. You can customize your own view to load GIF as per your requirement.
+
+How to load custom thumbnails for different file types?: |
+
+  If you are using Mesibo custom developed view, you will get "mesiboMessage.file.type" in "Mesibo.MesiboMessage". You can check these file types and load you thumbnail accordingly.
+
+Does Mesibo support languages other than english?: |
+
+  Yes, Mesibo supports Unicode and hence you can customise it as per your language requirement.
+
+How to customise MesiboUI for chat screen and user list?: |
+
+  Please go through the documentation for custom Mesibo UI. "Link"
+
+How to change Share text on Invite Family and Friends?: |
+
+  Use Back end api.
+
+How to customise  Mesibo Chat bubbles ?: |
+
+  While creating your incoming chat view, put your image in background of the parent layout of your incoming chat view. 
+  
+   <FrameLayout
+          android:id="@+id/incoming_layout_bubble"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="60dp"
+          android:layout_alignParentLeft="true"
+          android:layout_marginTop="@dimen/_1sdp"
+          android:background="@drawable/balloon_incoming_normal">
+  
+  
+  // your code
+  .
+  .
+  .
+  </FrameLayout>
+
+Can we use email instead of phone number for registration / identification?: |
+
+  Yes, it comes under costomization.
+
+How can I implement the feature reply to message?: |
+
+  Mesibo has a reply view which can be customised as per your need. Create your custom view for reply and pass  reference ID while replying.

@@ -1,19 +1,20 @@
+
 How can I know if a user is online or offline?: |
 
-  You can check a user’s current online status easily through <a href="/documentation/api/server-side-api/">server side API</a> or the Console. A webhook can be configured to keep you informed real-time about the user's online status.
+  You can check a user’s current online status easily through <a href="/documentation/api/server-side-api/">server side API</a> or the Console. A webhook can be configured to keep you informed in real-time about the user's online status.
   In console, under the Apps-->Users tab, each user has an indicator displaying whether they are currently online and IP address.
 
-How to reconnect to mesibo servers if there's a network issue?: |
+How to reconnect to Mesibo servers if there is  a network issue?: |
 
-  Mesibo Client SDK detects network condition and automatically reconnects to mesibo servers unless you call stop() explicitly. Therefore, you don’t need to worry about network condition and reconnection. mesibo Client SDK also informs your app <code>(mesibo_onConnectionStatus)</code> about the network status which you can use it to take further app specific actions.
+  Mesibo Client SDK detects network conditions and automatically reconnects to mesibo servers unless you call stop() explicitly. Therefore, you don’t need to worry about network condition and reconnection. mesibo Client SDK also informs your app <code>(mesibo_onConnectionStatus)</code> about the network status which you can use it to take further app specific actions.
   However, once you call stop(), mesibo will not reconnect unless you call start() again.
 
 How can my apps receive messages and calls after it goes to the background?: |
 
-  In the past, apps could stay online even when running in the background. However, it's no longer a case. Both Android and iOS will suspend the app after app moves to the background. Read more about Android and iOS background execution limits <a href="https://developer.android.com/about/versions/oreo/background">here</a> and <a href="https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html">here</a>.
-
+  In the past, apps could stay online even when running in the background. However, it's no longer the case. Both Android and iOS will suspend the app after app moves to the background. Read more about Android and iOS background execution limits <a href="https://developer.android.com/about/versions/oreo/background">here</a> and <a href="https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html">here</a>.
+  
   However, Mesibo provides you an easy way to wake up your app from the sleep state when new messages or calls are received. All you need to do is to configure Mesibo to invoke a <a href="/documentation/faq/webhook/">webhook</a> every time a message or a call received while the app is in the sleep state. From the webhook, you can invoke a push notification which will trigger the app to move from the sleep state to the active state. Once the app moves to the active state, Mesibo will automatically connect and start receiving messages and calls. This entire process will be seamless for the user.
-
+  
   You may also refer to Mesibo sample app and backend  <a href="/documentation/source-code/" target="_blank">source code</a> to see how it is implemented there.
 
 What's the maximum file size I can send from clients?: |

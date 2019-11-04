@@ -31,7 +31,7 @@ Mesibo C/C++ library is available as a shared library(libmesibo.so) which can be
 Now let’s quickly start coding:
 
 1. Open a code editor
-2. include `mesibo.h` in your code
+2. Include `mesibo.h` in your code
 3. Create a class derived from the `CMesiboNotify` class to listen to all the message and call events. 
 4. Initialize mesibo using the user token and listener.
 
@@ -43,12 +43,19 @@ Below is Mesibo Event Listener
 
 ```cpp
 class CNotify : public CMesiboNotify {
+	
+	IMesibo *m_api;
 	public:
+	
+	void set_api(IMesibo *api) {
+		m_api = api;
+	}
+
 
 	// You will receive the connection status here
 	int on_status(int status, uint32_t substatus, uint8_t channel,
 			const char *from) {
-		ERRORLOG("===> on_status: %u %u\n", status, substatus);
+		ERRORLOG("===> on_status: %u \n", status);
 		return 0;
 	}
 
@@ -57,13 +64,12 @@ class CNotify : public CMesiboNotify {
 	// You will receive messages here.
 	int on_message(tMessageParams * p, const char *from, const char *data,
 			uint32_t len) {
-		ERRORLOG(
-				
-			"===> test app message received: uid %u status %d channel %d type %u "
-			"id %" PRIx64 " refid %lu groupid %u, when %" PRIu64
-			" from %s, flag: %x len %d: %.*s\n",
-			p->uid, p->status, p->channel, p->type, p->id, p->refid, p->groupid,
-			p->when, from, p->flag, len, printlen, data);
+	
+		int printlen = len;
+	        if (printlen > 64) printlen = 64;
+
+		ERRORLOG("===> message received:from %s,of len %d: %.*s\n",
+			from, len, printlen, data);
 
 		return 0;
 
@@ -73,9 +79,7 @@ class CNotify : public CMesiboNotify {
 	// You will receive the status of sent messages here
 	int on_messagestatus(tMessageParams * p, const char *from, int last) {
 		ERRORLOG(
-			"===> on_messagestatus status %u id %u when %u ms (%u %u) from: %s\n",
-			p->status, p->id, m_api->timestamp() - p->when, m_api->timestamp(),
-			p->when, from ? from : "");
+			"===> on_messagestatus status %u from: %s\n",p->status, from);
 		return 0;
 	}
 };
@@ -85,40 +89,46 @@ class CNotify : public CMesiboNotify {
 Following is the Mesibo Initialization code.
 
 ```cpp
-void mesibo_init(){
+#define AUTH_TOKEN 3e7694e19d192588a4ffcb4eab26b6afb3d5aada54bbd41ed140a
+#define APP_ID "mycppapp"
+
+IMesibo* mesibo_init(){
 	
 	// Create a Mesibo Instance
-	IMesibo *m_api = query_mesibo("/tmp");  
+	m_api = query_mesibo("/tmp");
 
 	// Add Listener
 	CNotify *n = new CNotify();
 	m_api->set_notify(0, n, 1);
 
+  
 	// Set your AUTH_TOKEN obtained from the Mesibo Console
-	m_api->set_credentials("aea59d3713701704bed9fd5952d9419ba8c4209a335e664ef2g");
+	m_api->set_credentials("3e7694e19d192588a4ffcb4eab26b6afb3d5aada54bbd41edd7140a");
+  
+  	// Set  APP_ID which you used to create AUTH_TOKEN 
+	m_api->set_device(1, "cpp", APP_ID, "1.0.0");
 
-	// set the name of the database
+	// Set the name of the database
 	if (0 != m_api->set_database("mesibo.db")) {
 		fprintf(stderr, "Database failed\n");
-		return -1;
+		return NULL;
 	}
-
-	// Set  APP_ID which you used to create AUTH_TOKEN 
-	m_api->set_device(1, "MyDeviceId", appid, "1.0.0");
-
-	// start mesibo
-	m_api->start();
-
-	return 0;
+	
+	return m_api;
 }
 
+
+```
+Now,after initialization is complete you run Mesibo
+```
+m_api->start();
 ```
 
 That’s it - you are now ready to receive your first real-time message.
 
 ## Compiling and Running sample C/C++ application
 
-It is recommended that you use a modern C/C++ compiler such as gcc (GCC 4.x or above) or clang. You can compile your code by linking the Mesibo Library as shown below:
+It is recommended that you use a modern C/C++ compiler such as gcc (GCC-C++ 4.x or above) or clang. You can compile your code by linking the Mesibo Library as shown below:
 
 ```bash
 g++ my_first_app.cpp -o myfirstapp -lmesibo
@@ -147,13 +157,12 @@ In the previous section, we have used mesibo console to send a message. Now we w
 Invoke the following function anywhere from your code to send a text message. 
 
 ```cpp
-int send_text_message(IMesibo* m_api,const char* to,const char * message){
-
-	tMessageParams p = {};
-	p.id = m_api->random32();
+int send_text_message(const char* to,const char * message){
+        tMessageParams p = {};
+        p.id = m_api->random32();
 	p.expiry = 3600;
-
-	m_api->message(&p, to, message, strlen(message));
+	int datalen = strlen(message);
+        m_api->message(&p, to, message, datalen);
 }
 
 ```

@@ -1,0 +1,10 @@
+
+Do you have any sample/demo app that I can try out?: |
+
+  Great question! Indeed we do have it. We have a fully functional WhatsApp like messaging app built using Mesibo on both <a href="https://play.google.com/store/apps/details?id=com.mesibo.mesiboapplication" target="_blank">Google Play Store</a> and <a href="https://itunes.apple.com/us/app/mesibo-realtime-messaging-voice-video/id1222921751" target="_blank">Apple App Store</a> for you to evaluate what mesibo can do for you. Furthermore, we have even released the entire source code for both the apps on <a href="/documentation/source-code/" target="_blank">GitHub</a>.
+  
+  You can also check out sample apps for flutter, React-Native, JavaScript, etc.
+
+Are there any file size limits on the Demo App: |
+
+  Yes. There is a file size limit, on the files you send. Also files that you send (For example, Images)

@@ -1,8 +1,8 @@
 ---
 layout: mesibo
-description: various use cases of mesibo chat api but not limited to communication, gaming, e-commerce, education, healthcare, banking, financial, media, entertainment, sports, travel, tourism, branding, promotion, sales, customer support, hr, team management, dating apps
-keywords: use cases, chat api, messaging sdk, communication, gaming, e-commerce, education, healthcare, banking, financial, media, entertainment, sports, travel, tourism, branding, promotion, sales, customer support, hr, team management, dating
-title: Mesibo API Use Cases
+description: mesibo chat API use cases for communication, gaming, fintech, e-commerce, education, banking, healthcare, dating, travel, customer support, team management apps and more.
+keywords: chat api use cases, messaging sdk usage, communication app, gaming app, e-commerce shopping app, educational app, entertainment, travel apps, sales, customer support app, team management app, dating apps, fintech app, healthcare app, media app, sport app
+title: Mesibo Chat API Use Cases
 subtitle: Here are some examples of Mesibo API Use cases. 
 category: usecases
 banner: true
@@ -26,7 +26,7 @@ banner: true
 <!-- <span class="icon default-bg circle"><i class="fa fa-diamond"></i></span> -->
 <h3>One on One Messaging</h3>
 <div class="separator clearfix"></div>
-<p>Integrate mesibo’s one-on-one messaging APIs to enable your users to start communicating instantly.</p>
+<p>Integrate mesibo’s one-on-one messaging APIs to enable your users to start communicating instantly</p>
 </div>
 </div>
 <div class="col-lg-4">
@@ -57,7 +57,7 @@ banner: true
 <div class="col-lg-8">
 <h2 class="text-center mt-4">Enterprise & Team Communication </h2>
 <div class="separator"></div>
-<p class="large text-center">Branded communication apps for your small-to-large enterprises team using your own enterprise authentication.</p>
+<p class="large text-center">Branded communication apps for your small-to-large enterprises team using your own enterprise authentication</p>
 </div>
 </div>
 <div class="row">
@@ -97,7 +97,7 @@ banner: true
 <div class="col-lg-8">
 <h2 class="text-center mt-4">WebRTC</h2>
 <div class="separator"></div>
-<p class="large text-center">Add WebRTC voice and video calling into your app.</p>
+<p class="large text-center">Add WebRTC voice and video calling into your app</p>
 </div>
 </div>
 <div class="row">
@@ -198,7 +198,7 @@ banner: true
 <!-- <span class="icon default-bg circle"><i class="fa fa-diamond"></i></span> -->
 <h3>Paired/Associative Chat</h3>
 <div class="separator clearfix"></div>
-<p>Allowing communication only if both the parties agree to chat.</p>
+<p>Allowing communication only if both the parties agree to chat</p>
 </div>
 </div>
 <div class="col-lg-4">
@@ -229,7 +229,7 @@ banner: true
 <div class="col-lg-8">
 <h2 class="text-center mt-4">Anonymous Communication</h2>
 <div class="separator"></div>
-<p class="large text-center">Another specialized communication type.</p>
+<p class="large text-center">Another specialized communication type</p>
 </div>
 </div>
 <div class="row">
@@ -262,7 +262,7 @@ banner: true
 <div class="col-lg-8">
 <h2 class="text-center mt-4">Gaming</h2>
 <div class="separator"></div>
-<p class="large text-center">Add interactivity to your games.</p>
+<p class="large text-center">Add interactivity to your games</p>
 </div>
 </div>
 <div class="row">
@@ -377,7 +377,7 @@ banner: true
 <div class="col-lg-8">
 <h2 class="text-center mt-4">Banking & Financial Services </h2>
 <div class="separator"></div>
-<p class="large text-center">Provide a highly secured environment for financial transactions. With on-premise installation, you get full control of your user data and complete security of for every user interaction.
+<p class="large text-center">Provide a highly secured environment for financial transactions. With on-premise installation, you get full control of your user data and complete security of for every user interaction
 </p>
 </div>
 </div>

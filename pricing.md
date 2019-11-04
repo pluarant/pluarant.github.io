@@ -1,8 +1,8 @@
 ---
 layout: mesibo
-description: Free to start and Pay as you grow. Pricing you just can't beat. flexible pricing for all.
-keywords: mesibo pricing
-title: Mesibo Pricing
+description: Mesibo is free to start. You only pay if you consume beyond your free tier limits. Mesibo offers pay as you go pricing for both its On-Premise and Cloud offerings
+keywords: mesibo pricing, chat api pricing, free chat api
+title: Pricing
 subtitle: On-Premise and Cloud Deployment Pricing
 category: pricing
 banner: true
@@ -21,7 +21,7 @@ banner: true
 </div>
 <div class="row">
 <p>
-Mesibo offers you <strong>pay as you go pricing</strong> for both its On-Premise and Cloud offerings. That means you only pay for the services you consume, and once you stop using them, there are no charges or termination fees. Mesibo pricing is easy to understand and completely transparent. If you choose to go with our <strong>On-premise offerings</strong>, you only pay for the number of active users per month. There are absolutely <strong>NO OTHER CHARGES</strong> - no monthly commitment, no bandwidth charges, no storage charges, or any other hidden charges. Our <strong>Cloud offering</strong> charges are also the same. However, you additionally pay for the bandwidth and the storage you use on our cloud. Both the plans come with generous free limits for you to get started - <strong>you only pay if you consume beyond your free tier limits</strong>.
+Mesibo offers you <strong>pay as you go pricing</strong> for both its On-Premise and Cloud offerings. That means you only pay for the services you consume, and once you stop using them, there are no charges or termination fees. Mesibo pricing is easy to understand and completely transparent. If you choose to go with our <strong>On-premise offerings</strong>, you only pay for the number of active users per month. There are absolutely <strong>NO OTHER CHARGES</strong> - no monthly commitment, no bandwidth charges, no storage charges, or any other hidden charges. Our <strong>Cloud offering</strong> charges are also the same. However, you additionally pay for the bandwidth and the storage you use on our cloud. Both the plans come with generous free limits for you to try the service - <strong>you only pay if you consume beyond your free tier limits</strong>.
 </p>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
@@ -185,14 +185,14 @@ Mesibo offers you <strong>pay as you go pricing</strong> for both its On-Premise
 Assume that your application has 10,000 monthly active users (MAU) and sends 120 million messages of average 50 bytes (utilizing about 6 GB bandwidth). Let's calculate what will be the monthly cost for On-premise and Cloud deployment.
 </p>
 <p>
-Since Mesibo offers 1,000 free MAU, the chargeable MAU will be <strong>(10,000-1,000)=9,000</strong>. Hence, the total cost for 9,000 MAU will be <strong>9,000*0.01=$90</strong> per month.
+The total cost for 10,000 MAU will be <strong>10,000*0.01=$100</strong> per month.
 </p>
 <p>
-- For <strong>On-premise</strong> deployment, there are no other charges, and hence, the total cost will be only <strong>$90</strong> per month as calculated above.
+- For <strong>On-premise</strong> deployment, there are no other charges, and hence, the total cost will be only <strong>$100</strong> per month as calculated above.
 </p>
 
 <p>
-- For <strong>Cloud deployment</strong>, there will be an additional cost for bandwidth and storage. In this case, additional $0.9 for (6GB-5GB = 1GB) bandwidth).  Hence, the total cost will be  <strong>$90+0.9=$90.9</strong> per month.
+- For <strong>Cloud deployment</strong>, there will be an additional cost for bandwidth and storage. In this case, additional $0.9 for (6GB-5GB = 1GB) bandwidth).  Hence, the total cost will be  <strong>$100+0.9=$100.9</strong> per month.
 </p>
 
 <p>
@@ -227,14 +227,13 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 <div class="separator-2"></div>
 <!-- page-title end -->
 <h4><strong>Free Plan</strong></h4>
-<p >You can get started with mesibo and use it for free. Upon sign-up, your account will be added with sufficient free quota to get you started and use the service. You can use these free tier limits forever without paying a single penny until your usage grows and you wish to switch to Pay-As-You-Go (PAYG) plan. </p>				
+<p >You can get started with mesibo and use it for free. Upon sign-up, your account will be added with sufficient free quota to get you started and use the service. You can use these free tier limits forever for testing and development without paying a single penny until your usage grows, and you wish to switch to Pay-As-You-Go (PAYG) plan. </p>				
 
 <h4><strong>Pay-As-You-Go (PAYG) Plan</strong></h4>
 <p >You can switch to PAYG plan anytime by adding the credit balance in your <a href="/console/#/login" target="_blank">account</a>.</p>
-<p class="margin-top-20">It is worth noting that you will continue to enjoy your free quota even in PAYG plan.</p>
 
 <h4><strong>PAYG Credits</strong></h4>
-<p >You can add PAYG credit balance as low as US$50 in your account whenever you need to. Your usage charges will be deducted from the credit balance at the end of a monthly billing cycle and the remaining credit will be carried forward for the next billing cycle. You can check your credit balance in ‘My Account’ section of the <a href="/console/#/login" target="_blank">console</a>.</p>
+<p >You can add PAYG credit balance as low as US$ 50 in your account whenever you need to. Your usage charges will be deducted from the credit balance at the end of a monthly billing cycle and the remaining credit will be carried forward for the next billing cycle. You can check your credit balance in ‘My Account’ section of the <a href="/console/#/login" target="_blank">console</a>.</p>
 
 <h4><strong>Limits, Quotas, and Constraints</strong></h4>
 <p >mesibo offers free quota for both free and PAYG subscription. If you exceed these limits, add credit to your account to prevent any interruption of service. We calculate quota as defined below:</p>
@@ -340,7 +339,7 @@ To know more about MAU, message bandwidth and storage, Refer to <a href="#notes"
 
 
 <h4>Q: What is Message Rate Limit?</h4>
-<p>Message rate limit (throttling) is referredr to as the total number of messages that can be sent by all your users in any given second. Typically, a message rate/second for an application like WhatsApp is 0.05% of MAU (based on public stats). mesibo has assigned much higher rate limit than that so you should encounter rate limit only in rare circumstances.</p>
+<p>Message rate limit (throttling) is referred to as the total number of messages that can be sent by all your users in any given second. Typically, a message rate/second for an application like WhatsApp is 0.05% of MAU (based on public stats). mesibo has assigned much higher rate limit than that so you should encounter rate limit only in rare circumstances.</p>
 
 
 <h4>Q: Does limit apply to Voice and Video calls?</h4>

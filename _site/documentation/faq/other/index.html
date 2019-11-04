@@ -1,4 +1,4 @@
-<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -75,20 +75,20 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
 	<meta name="twitter:site" content="@mesibo"/>
 	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
 	<meta name="twitter:title" itemprop="title name" content="Frequently Asked Questions - Other"/>
-	<meta name="twitter:description" property="og:description" itemprop="description" content="How can I know if a user is online or offline? How to reconnect to mesibo servers if there's a network issue? How can my apps receive messages and calls..." />
+	<meta name="twitter:description" property="og:description" itemprop="description" content="How can I know if a user is online or offline? How to reconnect to Mesibo servers if there is a network issue? How can my apps receive messages and..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="get started, setup, orientation, mesibo, chat, GDPR">
+	<meta name="keywords" content="mesibo, faq, chat, voice, video">
 	<link rel="stylesheet" href="/css/font-awesome.min.css" >
 	<link rel="stylesheet" href="/css/bootstrap.min.css" >
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
@@ -100,13 +100,13 @@
 	<title>Frequently Asked Questions - Other | Mesibo Documentation</title>
 <meta property="og:title" content="Frequently Asked Questions - Other" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Frequently Asked Questions" />
-<meta property="og:description" content="Frequently Asked Questions" />
+<meta name="description" content="Frequently Asked Questions - Other" />
+<meta property="og:description" content="Frequently Asked Questions - Other" />
 <link rel="canonical" href="/documentation/faq/other/" />
 <meta property="og:url" content="/documentation/faq/other/" />
 <meta property="og:site_name" content="Mesibo Documentation" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"Frequently Asked Questions - Other","description":"Frequently Asked Questions","url":"https://docs.docker.com/documentation/faq/other/"}</script>
+{"@context":"http://schema.org","@type":"WebPage","headline":"Frequently Asked Questions - Other","description":"Frequently Asked Questions - Other","url":"https://docs.docker.com/documentation/faq/other/"}</script>
 	<!-- END SEO STUFF -->
 	
 	<script language="javascript">
@@ -232,7 +232,7 @@
 			<li><a href="/documentation/faq/other/#how-can-i-know-if-a-user-is-online-or-offline">How can I know if a user is online or offline?</a></li>
 		
 			
-			<li><a href="/documentation/faq/other/#how-to-reconnect-to-mesibo-servers-if-there-s-a-network-issue">How to reconnect to mesibo servers if there's a network issue?</a></li>
+			<li><a href="/documentation/faq/other/#how-to-reconnect-to-mesibo-servers-if-there-is-a-network-issue">How to reconnect to Mesibo servers if there is  a network issue?</a></li>
 		
 			
 			<li><a href="/documentation/faq/other/#how-can-my-apps-receive-messages-and-calls-after-it-goes-to-the-background">How can my apps receive messages and calls after it goes to the background?</a></li>
@@ -255,21 +255,21 @@
 		<a name="how-can-i-know-if-a-user-is-online-or-offline"></a>
 		<h3 id="how-can-i-know-if-a-user-is-online-or-offline">How can I know if a user is online or offline?</h3>
 		
-<p>You can check a user’s current online status easily through <a href="/documentation/api/server-side-api/">server side API</a> or the Console. A webhook can be configured to keep you informed real-time about the user’s online status.
+<p>You can check a user’s current online status easily through <a href="/documentation/api/server-side-api/">server side API</a> or the Console. A webhook can be configured to keep you informed in real-time about the user’s online status.
 In console, under the Apps--&gt;Users tab, each user has an indicator displaying whether they are currently online and IP address.</p>
 
 	
-		<a name="how-to-reconnect-to-mesibo-servers-if-there-s-a-network-issue"></a>
-		<h3 id="how-to-reconnect-to-mesibo-servers-if-there-s-a-network-issue">How to reconnect to mesibo servers if there's a network issue?</h3>
+		<a name="how-to-reconnect-to-mesibo-servers-if-there-is-a-network-issue"></a>
+		<h3 id="how-to-reconnect-to-mesibo-servers-if-there-is-a-network-issue">How to reconnect to Mesibo servers if there is  a network issue?</h3>
 		
-<p>Mesibo Client SDK detects network condition and automatically reconnects to mesibo servers unless you call stop() explicitly. Therefore, you don’t need to worry about network condition and reconnection. mesibo Client SDK also informs your app <code>(mesibo_onConnectionStatus)</code> about the network status which you can use it to take further app specific actions.
+<p>Mesibo Client SDK detects network conditions and automatically reconnects to mesibo servers unless you call stop() explicitly. Therefore, you don’t need to worry about network condition and reconnection. mesibo Client SDK also informs your app <code>(mesibo_onConnectionStatus)</code> about the network status which you can use it to take further app specific actions.
 However, once you call stop(), mesibo will not reconnect unless you call start() again.</p>
 
 	
 		<a name="how-can-my-apps-receive-messages-and-calls-after-it-goes-to-the-background"></a>
 		<h3 id="how-can-my-apps-receive-messages-and-calls-after-it-goes-to-the-background">How can my apps receive messages and calls after it goes to the background?</h3>
 		
-<p>In the past, apps could stay online even when running in the background. However, it’s no longer a case. Both Android and iOS will suspend the app after app moves to the background. Read more about Android and iOS background execution limits <a href="https://developer.android.com/about/versions/oreo/background">here</a> and <a href="https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html">here</a>.</p>
+<p>In the past, apps could stay online even when running in the background. However, it’s no longer the case. Both Android and iOS will suspend the app after app moves to the background. Read more about Android and iOS background execution limits <a href="https://developer.android.com/about/versions/oreo/background">here</a> and <a href="https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html">here</a>.</p>
 
 <p>However, Mesibo provides you an easy way to wake up your app from the sleep state when new messages or calls are received. All you need to do is to configure Mesibo to invoke a <a href="/documentation/faq/webhook/">webhook</a> every time a message or a call received while the app is in the sleep state. From the webhook, you can invoke a push notification which will trigger the app to move from the sleep state to the active state. Once the app moves to the active state, Mesibo will automatically connect and start receiving messages and calls. This entire process will be seamless for the user.</p>
 
@@ -307,7 +307,7 @@ However, once you call stop(), mesibo will not reconnect unless you call start()
 							
 							
 							
-							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=get started">get started</a>, <a href="/documentation/glossary/?term=setup">setup</a>, <a href="/documentation/glossary/?term=orientation">orientation</a>, <a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=chat">chat</a>, <a href="/documentation/glossary/?term=GDPR">GDPR</a></span>
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=faq">faq</a>, <a href="/documentation/glossary/?term=chat">chat</a>, <a href="/documentation/glossary/?term=voice">voice</a>, <a href="/documentation/glossary/?term=video">video</a></span>
 							
 							<!-- link corrections -->
               <script language="JavaScript">
@@ -350,7 +350,7 @@ However, once you call stop(), mesibo will not reconnect unless you call start()
 								<div class="feedback-links">
 									<ul>
 										
-										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
 										<!-- toggle mode -->
 										<li>
 											<div class="toggle-mode">
@@ -376,7 +376,7 @@ However, once you call stop(), mesibo will not reconnect unless you call start()
 <ul id="my_toc" class="inline_toc">
   <li><a href="/documentation/faq/other/#how-can-i-know-if-a-user-is-online-or-offline" class="nomunge">How can I know if a user is online or offline?</a>
     <ul>
-      <li><a href="/documentation/faq/other/#how-to-reconnect-to-mesibo-servers-if-there-s-a-network-issue" class="nomunge">How to reconnect to mesibo servers if there’s a network issue?</a></li>
+      <li><a href="/documentation/faq/other/#how-to-reconnect-to-mesibo-servers-if-there-is-a-network-issue" class="nomunge">How to reconnect to Mesibo servers if there is  a network issue?</a></li>
       <li><a href="/documentation/faq/other/#how-can-my-apps-receive-messages-and-calls-after-it-goes-to-the-background" class="nomunge">How can my apps receive messages and calls after it goes to the background?</a></li>
       <li><a href="/documentation/faq/other/#what-s-the-maximum-file-size-i-can-send-from-clients" class="nomunge">What’s the maximum file size I can send from clients?</a></li>
       <li><a href="/documentation/faq/other/#how-can-i-moderate-messages-filter-profanity" class="nomunge">How can I moderate messages/filter profanity?</a></li>

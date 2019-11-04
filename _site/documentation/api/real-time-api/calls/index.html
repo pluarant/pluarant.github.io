@@ -1,4 +1,4 @@
-<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -79,7 +79,7 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
@@ -89,10 +89,10 @@
 	<meta name="twitter:description" property="og:description" itemprop="description" content="Introduction Initialization Messaging File Transfer Voice &amp; Video Calls Profiles utility Making and receiving voice &amp; video calls with Mesibo is simple. You only need to initialize MesiboCall module, and..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="mesibo, real-time api, messaging API, chat API, voice SDK, video SDK">
+	<meta name="keywords" content="video call api, voice call api, call api for android, video call api iOS, voice chat api for android, video chat api, best video api">
 	<link rel="stylesheet" href="/css/font-awesome.min.css" >
 	<link rel="stylesheet" href="/css/bootstrap.min.css" >
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
@@ -104,13 +104,13 @@
 	<title>Mesibo Real-time APIs - Voice and Video Calls | Mesibo Documentation</title>
 <meta property="og:title" content="Mesibo Real-time APIs - Voice and Video Calls" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Mesibo Real-time APIs - Voice and Video Calls" />
-<meta property="og:description" content="Mesibo Real-time APIs - Voice and Video Calls" />
+<meta name="description" content="It’s simple to add voice and video calls facility in your Android and iOS app using mesibo real-time Voice and Video chat APIs." />
+<meta property="og:description" content="It’s simple to add voice and video calls facility in your Android and iOS app using mesibo real-time Voice and Video chat APIs." />
 <link rel="canonical" href="/documentation/api/real-time-api/calls/" />
 <meta property="og:url" content="/documentation/api/real-time-api/calls/" />
 <meta property="og:site_name" content="Mesibo Documentation" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo Real-time APIs - Voice and Video Calls","description":"Mesibo Real-time APIs - Voice and Video Calls","url":"https://docs.docker.com/documentation/api/real-time-api/calls/"}</script>
+{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo Real-time APIs - Voice and Video Calls","description":"It’s simple to add voice and video calls facility in your Android and iOS app using mesibo real-time Voice and Video chat APIs.","url":"https://docs.docker.com/documentation/api/real-time-api/calls/"}</script>
 	<!-- END SEO STUFF -->
 	
 	<script language="javascript">
@@ -236,7 +236,7 @@
   <li><a href="/documentation/api/real-time-api/utility/">utility</a></li>
 </ul>
 
-<p>Making and receiving voice &amp; video calls with Mesibo is simple. You only need to initialize MesiboCall module, and you will be ready to make and receive calls using Mesibo. You can then invoke <code class="highlighter-rouge">Call</code> API to make voice and video call as needed.</p>
+<p>Making and receiving voice &amp; video calls with Mesibo is simple. You only need to initialize MesiboCall module, and you will be ready to make and receive calls using Mesibo. You can then invoke <code class="highlighter-rouge">Call</code> API to make voice and video calls as needed.</p>
 
 <h3 id="runtime-permissions">Runtime Permissions</h3>
 <p>When you make or receive calls with Mesibo, it asks you to grant a few permissions which are required to place the call.</p>
@@ -269,8 +269,8 @@
 
 <ul>
   <li><strong>context</strong>, Application Context</li>
-  <li><strong>Call-ID</strong>, An unique ID (similar to Message-ID), can be generated using <code class="highlighter-rouge">Mesibo random API</code></li>
-  <li><strong>profile</strong>, <code class="highlighter-rouge">UserProfile</code> object of the user (or group) to who you are making a call</li>
+  <li><strong>Call-ID</strong>, a unique ID (similar to Message-ID), can be generated using <code class="highlighter-rouge">Mesibo random API</code></li>
+  <li><strong>profile</strong>, <code class="highlighter-rouge">UserProfile</code> object of the user to whom you are making a call</li>
   <li><strong>IsVideoCall</strong>, <code class="highlighter-rouge">true</code> if placing a video call, <code class="highlighter-rouge">false</code> otherwise</li>
 </ul>
 
@@ -278,7 +278,7 @@
 <span class="n">userProfile</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">"User name"</span><span class="o">;</span>
 <span class="n">userProfile</span><span class="o">.</span><span class="na">address</span> <span class="o">=</span> <span class="s">"User address"</span><span class="o">;</span>
 	
-<span class="c1">// Making audio call</span>
+<span class="c1">// Place an audio call</span>
 <span class="n">MesiboCall</span><span class="o">.</span><span class="na">getInstance</span><span class="o">().</span><span class="na">call</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="n">Mesibo</span><span class="o">.</span><span class="na">random</span><span class="o">(),</span> <span class="n">userProfile</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
 
 </code></pre></div></div>
@@ -289,7 +289,7 @@
 							
 							
 							
-							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=real-time api">real-time api</a>, <a href="/documentation/glossary/?term=messaging API">messaging API</a>, <a href="/documentation/glossary/?term=chat API">chat API</a>, <a href="/documentation/glossary/?term=voice SDK">voice SDK</a>, <a href="/documentation/glossary/?term=video SDK">video SDK</a></span>
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=video call api">video call api</a>, <a href="/documentation/glossary/?term=voice call api">voice call api</a>, <a href="/documentation/glossary/?term=call api for android">call api for android</a>, <a href="/documentation/glossary/?term=video call api iOS">video call api iOS</a>, <a href="/documentation/glossary/?term=voice chat api for android">voice chat api for android</a>, <a href="/documentation/glossary/?term=video chat api">video chat api</a>, <a href="/documentation/glossary/?term=best video api">best video api</a></span>
 							
 							<!-- link corrections -->
               <script language="JavaScript">
@@ -332,7 +332,7 @@
 								<div class="feedback-links">
 									<ul>
 										
-										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
 										<!-- toggle mode -->
 										<li>
 											<div class="toggle-mode">

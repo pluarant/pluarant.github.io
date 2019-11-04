@@ -1,6 +1,7 @@
 ---
-description: Create Open Source WhatsApp clone using Mesibo
-keywords: open, source, whatsapp, mesibo, overview
+description: Mesibo tutorial for making a chat app for iOS and Android similar to WhatsApp  
+keywords: whatsapp clone tutorial, android chat app tutorial, ios chat app tutorial, tutorials for making whatsapp, open source chat app tutorials
+heading: Create an Open Source WhatsApp clone app using Mesibo
 title: Create an Open Source WhatsApp clone app using Mesibo
 ---
 {% include_relative nav.html selected="prep" %}

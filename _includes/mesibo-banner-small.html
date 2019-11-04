@@ -19,7 +19,12 @@
 <div class="container">
 <div class="row justify-content-lg-center">
 <div class="col-lg-8 text-center pv-20">
+    {% if page.heading %}
+	<h2 class="title">{{ page.heading }}</h2>
+    {% else %}
 	<h2 class="title">{{ page.title }}</h2>
+    {% endif %}
+
 	<div class="separator mt-10"></div>
 	<p class="text-center">{{ page.subtitle }}</p>
 </div>

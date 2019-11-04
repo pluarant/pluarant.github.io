@@ -1,0 +1,44 @@
+
+What is the difference between AUTH TOKEN and APP TOKEN? Where should I use them.: |
+
+  Refer to code example here:
+  
+  APP ID:
+  AUTH TOKEN:
+  
+  Also, where should I use API key?
+  What is API key, AUTH token, APP token,APP id, APP name
+
+How can I update profile picture using admin API.: |
+
+  Refer backend code documentation. Also, here is the github link for backend code.
+
+How to get all active conversations and groups that a user is part of?: |
+
+  Use admin API
+
+Message sent from console but not recieved on the application: |
+
+  Ok refer this Github Issue reported .
+
+Unable to send message to user. Getting error 'Bug:uid zero': |
+
+  Ensure you have create a valid user and user name/peer is valid. Check in console and test if you are able to send message from the console,you are able to receive it.
+
+How can I send a message to online users only?: |
+
+  Set expiry to zero , then messages will be sent only in real time and to users who is online only.
+
+How can I get read receipts?: |
+
+  In message parameters while sending a message, set flag like so:
+  
+  p.flag = MESIBO_FLAG_READRECEIPT
+
+What is Message Expiry?: |
+
+  The expiry represents the time within which a message has to be delivered. Expiry ranges from immediate (zero) to a few days and can be independently specified per-message basis at the time of sending messages. Mesibo will not deliver messages past its expiry. You can also set the expiry to zero for the messages that need to be delivered in real-time and not later. All messages will be retained by Mesibo until delivered or until their expiry is reached
+  
+  For example, to set an expiry of 7 days you need to specify it in seconds (7 days * 86400 sec/day)
+  
+  p.expiry = 604800

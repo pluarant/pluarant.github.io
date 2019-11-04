@@ -1,4 +1,4 @@
-<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -79,20 +79,20 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
 	<meta name="twitter:site" content="@mesibo"/>
 	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
-	<meta name="twitter:title" itemprop="title name" content="Mesibo Real-time APIs - Messaging"/>
+	<meta name="twitter:title" itemprop="title name" content="Mesibo Real-time Chat APIs - Messaging"/>
 	<meta name="twitter:description" property="og:description" itemprop="description" content="Introduction Initialization Messaging File Transfer Voice &amp; Video Calls Profiles utility Sending messages using Mesibo only requires initializing a MesssageParams object with needed parameters and invoke one of the messaging..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="mesibo, real-time api, messaging API, chat API, voice SDK, video SDK">
+	<meta name="keywords" content="messaging api, android messaging api, real-time chat api, messaging api for ios,">
 	<link rel="stylesheet" href="/css/font-awesome.min.css" >
 	<link rel="stylesheet" href="/css/bootstrap.min.css" >
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
@@ -101,16 +101,16 @@
 	<!-- Go get "Open Sans" font from Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!-- SEO stuff -->
-	<title>Mesibo Real-time APIs - Messaging | Mesibo Documentation</title>
-<meta property="og:title" content="Mesibo Real-time APIs - Messaging" />
+	<title>Mesibo Real-time Chat APIs - Messaging | Mesibo Documentation</title>
+<meta property="og:title" content="Mesibo Real-time Chat APIs - Messaging" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Mesibo Real-time APIs - Messaging" />
-<meta property="og:description" content="Mesibo Real-time APIs - Messaging" />
+<meta name="description" content="Get Core Messaging APIs for Android, iOS, Python, C++, Raspberry Pi etc with the examples to build in-app messaging." />
+<meta property="og:description" content="Get Core Messaging APIs for Android, iOS, Python, C++, Raspberry Pi etc with the examples to build in-app messaging." />
 <link rel="canonical" href="/documentation/api/real-time-api/messaging/" />
 <meta property="og:url" content="/documentation/api/real-time-api/messaging/" />
 <meta property="og:site_name" content="Mesibo Documentation" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo Real-time APIs - Messaging","description":"Mesibo Real-time APIs - Messaging","url":"https://docs.docker.com/documentation/api/real-time-api/messaging/"}</script>
+{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo Real-time Chat APIs - Messaging","description":"Get Core Messaging APIs for Android, iOS, Python, C++, Raspberry Pi etc with the examples to build in-app messaging.","url":"https://docs.docker.com/documentation/api/real-time-api/messaging/"}</script>
 	<!-- END SEO STUFF -->
 	
 	<script language="javascript">
@@ -213,7 +213,7 @@
 						<section class="section">
 							
 							
-							<h1>Mesibo Real-time APIs - Messaging</h1>
+							<h1>Mesibo Real-time Chat APIs - Messaging</h1>
 							 
 
 							 <span class="reading-time" title="Estimated reading time">
@@ -261,7 +261,7 @@
 </ul>
 
 <h3 id="sendfile">sendFile</h3>
-<p>Send a file. This API is described in more details in the <code class="highlighter-rouge">File Transfer</code> section below. This API is deprecated and will be soon replaced by a common API.</p>
+<p>Send a file. This API is described in more detail in the <a href="/documentation/api/real-time-api/file-transfer/">File Transfer API</a>. Note that this API is deprecated and will soon be replaced by a common API.</p>
 
 <p>It takes the following parameters:</p>
 
@@ -272,7 +272,7 @@
 </ul>
 
 <h3 id="sendlocation">sendLocation</h3>
-<p>Send a location.  This API is deprecated and will be soon replaced by a common API.</p>
+<p>Send a location.  This API is deprecated and will soon be replaced by a common API.</p>
 
 <p>It takes the following parameters:</p>
 
@@ -283,7 +283,7 @@
 </ul>
 
 <h3 id="forwardmessage">forwardMessage</h3>
-<p>Forward an existing message to a user or a group. A FORWARD flag will be set at recepients end to indicate it as a forwarded message.</p>
+<p>Forward an existing message to a user or a group. A FORWARD flag will be set at recipient end to indicate it as a forwarded message.</p>
 
 <p>It takes the following parameters:</p>
 
@@ -339,7 +339,7 @@
 </ul>
 
 <h3 id="random">random</h3>
-<p>Returns a new unique message ID which you can use to send messages.</p>
+<p>Returns a new unique message ID that you can use to send messages.</p>
 
 <p>It does not take any parameters.</p>
 
@@ -387,7 +387,7 @@
 
 <ul>
   <li>Read Messages and call logs. This mode is enabled by default</li>
-  <li>Read Summary, read a latest message from each user and group. This allows you to get a snapshot of all the communicating users and groups. You can then create another read session to read messages for any of those users or groups.</li>
+  <li>Read Summary, read the latest message from each user and group. This allows you to get a snapshot of all the communicating users and groups. You can then create another read session to read messages for any of those users or groups.</li>
 </ul>
 
 <h3 id="reading-order">Reading Order</h3>
@@ -472,7 +472,7 @@
 							
 							
 							
-							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=real-time api">real-time api</a>, <a href="/documentation/glossary/?term=messaging API">messaging API</a>, <a href="/documentation/glossary/?term=chat API">chat API</a>, <a href="/documentation/glossary/?term=voice SDK">voice SDK</a>, <a href="/documentation/glossary/?term=video SDK">video SDK</a></span>
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=messaging api">messaging api</a>, <a href="/documentation/glossary/?term=android messaging api">android messaging api</a>, <a href="/documentation/glossary/?term=real-time chat api">real-time chat api</a>, <a href="/documentation/glossary/?term=messaging api for ios">messaging api for ios</a></span>
 							
 							<!-- link corrections -->
               <script language="JavaScript">
@@ -515,7 +515,7 @@
 								<div class="feedback-links">
 									<ul>
 										
-										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
 										<!-- toggle mode -->
 										<li>
 											<div class="toggle-mode">

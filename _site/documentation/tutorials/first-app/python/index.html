@@ -1,4 +1,4 @@
-<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -79,17 +79,17 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
 	<meta name="twitter:site" content="@mesibo"/>
 	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
 	<meta name="twitter:title" itemprop="title name" content="Write your First mesibo Enabled Application - Python"/>
-	<meta name="twitter:description" property="og:description" itemprop="description" content="Preparation Anatomy Android iOS Javascript C++ Python File Transfer UI Modules Voice and Video Calls In this part, we will create a simple real-time app using Python. OS requirements CentOS..." />
+	<meta name="twitter:description" property="og:description" itemprop="description" content="Preparation Anatomy Android iOS Javascript C++ Python File Transfer UI Modules Voice and Video Calls In this part, we will create a simple real-time app using Python. Supported Platforms CentOS..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="mesibo, android, ios, cpp, python">
@@ -220,7 +220,7 @@
   <span class="reading-time-label">Estimated reading time: </span>
   
   
-    5 minutes
+    4 minutes
   
 </span>
 
@@ -241,7 +241,7 @@
 
 <p>In this part, we will create a simple real-time app using Python.</p>
 
-<h3 id="os-requirements">OS requirements</h3>
+<h3 id="supported-platforms">Supported Platforms</h3>
 <ul>
   <li>CentOS / RedHat 7.x or above</li>
   <li>Debian / Ubuntu</li>
@@ -261,84 +261,81 @@
   <li>
     <p>Read the <a href="https://mesibo.com">Anatomy of a Mesibo Application</a> about using the Mesibo API and listener class</p>
   </li>
-  <li>Basic knowledge of writing and runnning Python code</li>
+  <li>Basic knowledge of writing and running Python code</li>
 </ul>
 
 <h3 id="first-python-app">First Python App</h3>
 
 <p>Now let’s quickly start coding:</p>
 
-<p>From <code class="highlighter-rouge">mesibo</code> python package import the function class <code class="highlighter-rouge">Mesibo</code> and the callback class <code class="highlighter-rouge">mesiboNotify</code></p>
+<p>From <code class="highlighter-rouge">mesibo</code> python package import the function class <code class="highlighter-rouge">Mesibo</code> and the callback class <code class="highlighter-rouge">MesiboNotify</code></p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">mesibo</span> <span class="kn">import</span> <span class="n">Mesibo</span> 
-<span class="kn">from</span> <span class="nn">mesiboNotify.mesiboNotify</span> <span class="kn">import</span> <span class="n">mesiboNotify</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">mesibo</span> <span class="kn">import</span> <span class="n">Mesibo</span>
+<span class="kn">from</span> <span class="nn">mesibo</span> <span class="kn">import</span> <span class="n">MesiboNotify</span>
 </code></pre></div></div>
 
 <p>Now, initialize mesibo like shown below</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#Create Mesibo Instance</span>
-<span class="n">pymesibo</span> <span class="o">=</span> <span class="n">Mesibo</span><span class="p">()</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#Initialisation code</span>
 
-<span class="n">pynotify</span> <span class="o">=</span> <span class="n">test_mesiboNotify</span><span class="p">()</span> 
-<span class="n">pynotify</span><span class="o">.</span><span class="n">set_api</span><span class="p">(</span><span class="n">pymesibo</span><span class="p">)</span>
+<span class="c">#Get auth token and app id from console </span>
+<span class="n">AUTH_TOKEN</span> <span class="o">=</span> <span class="s">"baad7b35749832539002bbff9936130a42aaadd7b2cb0a3e664eabc"</span>
+<span class="n">APP_ID</span> <span class="o">=</span> <span class="s">"mypythonapp"</span>
 
-<span class="c">#set user authentication token obtained by creating user from console</span>
-<span class="n">pymesibo</span><span class="o">.</span><span class="n">set_accesstoken</span><span class="p">(</span><span class="s">"aea59d3713701704bed9fd5952d9419ba8c4209a335e664ef2g"</span><span class="p">)</span>
-<span class="n">pymesibo</span><span class="o">.</span><span class="n">set_database</span><span class="p">(</span><span class="s">"mesibo.db"</span><span class="p">)</span>
-<span class="n">pymesibo</span><span class="o">.</span><span class="n">set_notify</span><span class="p">(</span><span class="n">test_mesiboNotify</span><span class="p">)</span> <span class="c">#your custom listener class</span>
-<span class="n">pymesibo</span><span class="o">.</span><span class="n">set_device</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">"MyUser"</span><span class="p">,</span> <span class="s">"mypythonapp"</span><span class="p">,</span> <span class="s">"1.0.0"</span><span class="p">)</span>
+<span class="c">#Create a Mesibo Instance</span>
+<span class="n">pymesibo</span> <span class="o">=</span> <span class="n">Mesibo</span><span class="p">()</span> 
 
-<span class="c"># Initialisation complete. Start Mesibo ..</span>
-<span class="n">pymesibo</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
-<span class="n">pymesibo</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+<span class="c">#Set Listener</span>
+<span class="n">pymesibo</span><span class="o">.</span><span class="n">set_listener</span><span class="p">(</span><span class="n">MesiboListener</span><span class="p">)</span>  
+
+<span class="c">#Set your AUTH_TOKEN obtained from the Mesibo Console</span>
+<span class="n">pymesibo</span><span class="o">.</span><span class="n">set_accesstoken</span><span class="p">(</span><span class="n">AUTH_TOKEN</span><span class="p">)</span> 
+
+<span class="c">#Set APP_ID which you used to create AUTH_TOKEN</span>
+<span class="n">pymesibo</span><span class="o">.</span><span class="n">set_appname</span><span class="p">(</span><span class="n">APP_ID</span><span class="p">)</span>
+
+<span class="c">#Set the name of the database</span>
+<span class="n">pymesibo</span><span class="o">.</span><span class="n">set_database</span><span class="p">(</span><span class="s">"mesibo.db"</span><span class="p">)</span> 
+
+<span class="c">#Start mesibo</span>
+<span class="n">pymesibo</span><span class="o">.</span><span class="n">start</span><span class="p">()</span> 
 
 </code></pre></div></div>
 
 <p>As explained in <a href="https://mesibo.com">Anatomy of Mesibo Application</a>, Mesibo invokes a class of Listeners for various events.</p>
 
-<p>Derive from the <code class="highlighter-rouge">mesiboNotify</code> class to implement listeners as shown below.</p>
+<p>Derive from the <code class="highlighter-rouge">MesiboNotify</code> class to implement listeners as shown below.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="k">class</span> <span class="nc">test_mesiboNotify</span><span class="p">(</span><span class="n">mesiboNotify</span><span class="p">):</span> 
+<span class="k">class</span> <span class="nc">MesiboListener</span><span class="p">(</span><span class="n">MesiboNotify</span><span class="p">):</span>
 
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">pass</span>
-    
-    <span class="k">def</span> <span class="nf">set_api</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">mesibo_ref</span><span class="p">):</span>
-        <span class="n">pymesibo</span> <span class="o">=</span> <span class="n">mesibo_ref</span>
-    
-    <span class="k">def</span> <span class="nf">on_status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">status</span><span class="p">,</span> <span class="n">sub_status</span><span class="p">,</span> <span class="n">channel</span><span class="p">,</span> <span class="n">p_from</span><span class="p">):</span>
-        <span class="c">#You will receive the connection status here</span>
-        
-        <span class="k">print</span><span class="p">(</span><span class="s">"===&gt;on_status: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">status</span><span class="p">)</span> <span class="o">+</span> <span class="s">" substatus: "</span> <span class="o">+</span>
-              <span class="nb">str</span><span class="p">(</span><span class="n">sub_status</span><span class="p">)</span> <span class="o">+</span> <span class="s">" channel:"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">channel</span><span class="p">)</span> <span class="o">+</span> <span class="s">"from: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">p_from</span><span class="p">))</span>
-        
-        <span class="k">return</span> <span class="mi">0</span>
 
-    <span class="k">def</span> <span class="nf">on_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message_params_dict</span><span class="p">,</span> <span class="n">p_from</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">p_len</span><span class="p">):</span>
-        <span class="c">#Invoked on receiving a new message or reading database messages</span>
-        <span class="c">#You will receive messages here.</span>
-       
-        <span class="k">print</span><span class="p">(</span><span class="s">"You have recieved a message!"</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">[:</span><span class="n">p_len</span><span class="p">])</span>  <span class="c"># data buffer/Python bytes object</span>
+    <span class="k">def</span> <span class="nf">on_connectionstatus</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">status</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"===&gt;on_connectionstatus: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">status</span><span class="p">))</span>
+        <span class="k">return</span> <span class="mi">1</span>
 
-        <span class="k">return</span> <span class="mi">0</span>
 
-    <span class="k">def</span> <span class="nf">on_messagestatus</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>  <span class="n">message_params_dict</span><span class="p">,</span> <span class="n">p_from</span><span class="p">,</span> <span class="n">last</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">on_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message_params</span><span class="p">,</span><span class="n">data</span><span class="p">):</span>
+        <span class="c">#invoked on receiving a new message or reading database messages</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"===&gt;on_message: from "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">message_params</span><span class="p">[</span><span class="s">'peer'</span><span class="p">]))</span> 
+        <span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> 
+        <span class="k">return</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">on_messagestatus</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message_params</span><span class="p">):</span>
         <span class="c">#Invoked when the status of outgoing or sent message is changed</span>
-        <span class="c">#You will receive status of sent messages here</span>
-        
-        <span class="k">print</span><span class="p">(</span><span class="s">"===&gt;on_messagestatus: from "</span> <span class="o">+</span>
-              <span class="nb">str</span><span class="p">(</span><span class="n">p_from</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">last</span><span class="p">))</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"with message_parameters"</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">message_params_dict</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"===&gt;on_messagestatus: from "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">message_params</span><span class="p">[</span><span class="s">'peer'</span><span class="p">])</span><span class="o">+</span>
+                <span class="s">" status "</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">message_params</span><span class="p">[</span><span class="s">'status'</span><span class="p">]))</span>
+        <span class="k">return</span> <span class="mi">1</span>
 
-        <span class="k">return</span> <span class="mi">0</span>
+
 </code></pre></div></div>
 
 <p>That’s it - you are now ready to receive your first real-time message.</p>
 
-<h2 id="testing-your-python-application">Testing your Python application</h2>
+<h3 id="testing-your-python-application">Testing your Python application</h3>
+
 <ol>
   <li>Run your Python script</li>
 </ol>
@@ -348,7 +345,7 @@
 
 <ol>
   <li>
-    <p><code class="highlighter-rouge">on_status</code> should cycle through various status information. Finally, you should receive status=1 which indicates that your app is successfully connected to the mesibo real-time server and ready to send and receive real-time messages.</p>
+    <p><code class="highlighter-rouge">on_connectionstatus</code> should cycle through various status information. Finally, you should receive status=1 which indicates that your app is successfully connected to the mesibo real-time server and ready to send and receive real-time messages.</p>
   </li>
   <li>
     <p>Since we do not have any other users right now, we will use <strong>mesibo console</strong> to send a test message. In a later section, we will learn how to send messages from the code itself.</p>
@@ -373,14 +370,13 @@ Enter 1000 (or anything) in <code class="highlighter-rouge">From</code> field, c
 <p>In the previous section, we have used mesibo console to send a message. Now we will quickly learn how to send messages from the code itself. To send messages, we will use <code class="highlighter-rouge">send_message</code> real-time API for which we will need destination user, message-id and the message itself.</p>
 
 <p>Invoke the following function anywhere from your code to send a text message.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">send_text_message</span><span class="p">(</span><span class="n">pymesibo</span><span class="p">,</span><span class="n">to</span><span class="p">,</span><span class="n">message</span><span class="p">):</span>
-        <span class="c">#pymesibo is the Mesibo Python API instance. </span>
-        <span class="c">#Make sure the instance is initialised before you call API functions </span>
-        <span class="n">msg_params</span> <span class="o">=</span> <span class="p">{</span><span class="s">"id"</span><span class="p">:</span><span class="n">pymesibo</span><span class="o">.</span><span class="n">random</span><span class="p">()}</span>
-        <span class="n">data</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-        <span class="n">datalen</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-        <span class="n">pymesibo</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="n">msg_params</span><span class="p">,</span><span class="n">to</span><span class="p">,</span><span class="n">data</span><span class="p">,</span><span class="n">datalen</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">send_text_message</span><span class="p">(</span><span class="n">to</span><span class="p">,</span><span class="n">message</span><span class="p">):</span>
+        <span class="c">#api is the Mesibo Python API instance. </span>
+        <span class="c">#Make sure the instance is initialised before you call API functions</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">p</span><span class="p">[</span><span class="s">'peer'</span><span class="p">]</span> <span class="o">=</span> <span class="n">to</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">message</span>
+        <span class="n">api</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">api</span><span class="o">.</span><span class="n">random</span><span class="p">(),</span><span class="n">data</span><span class="p">)</span>
 
 </code></pre></div></div>
 
@@ -433,7 +429,7 @@ Enter 1000 (or anything) in <code class="highlighter-rouge">From</code> field, c
 								<div class="feedback-links">
 									<ul>
 										
-										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
 										<!-- toggle mode -->
 										<li>
 											<div class="toggle-mode">
@@ -457,13 +453,13 @@ Enter 1000 (or anything) in <code class="highlighter-rouge">From</code> field, c
 									<div id="side-toc-title">On this page:</div>
 									
 <ul id="my_toc" class="inline_toc">
-  <li><a href="/documentation/tutorials/first-app/python/#os-requirements" class="nomunge">OS requirements</a>
+  <li><a href="/documentation/tutorials/first-app/python/#supported-platforms" class="nomunge">Supported Platforms</a>
     <ul>
       <li><a href="/documentation/tutorials/first-app/python/#prerequisites" class="nomunge">Prerequisites</a></li>
       <li><a href="/documentation/tutorials/first-app/python/#first-python-app" class="nomunge">First Python App</a></li>
+      <li><a href="/documentation/tutorials/first-app/python/#testing-your-python-application" class="nomunge">Testing your Python application</a></li>
     </ul>
   </li>
-  <li><a href="/documentation/tutorials/first-app/python/#testing-your-python-application" class="nomunge">Testing your Python application</a></li>
   <li><a href="/documentation/tutorials/first-app/python/#sending-messages" class="nomunge">Sending Messages</a></li>
 </ul>
 

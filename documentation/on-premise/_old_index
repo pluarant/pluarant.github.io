@@ -1,0 +1,20 @@
+---
+description: Installing and running the entire Mesibo platform on your own premise or private cloud. Benefitting the ultimate control over your sensitive data, unlimited storage & bandwidth etc. 
+keywords: chat system on-premise, messaging platform, chat api platform, voice, video calling on-premise, installing chat platform on private cloud, mesibo communication platform
+title: Mesibo On-Premise - Running Mesibo on your own premise or private cloud
+---
+Mesibo On-Premise solution allows you to run the entire Mesibo platform in your own premise OR private cloud. All the messages and calls go through your own data center and stay in your own database. All you have to do is download Mesibo On-Premise and run it in your own data center. That's it!
+
+### Introduction and installing on-premise on your own servers
+
+Learn more about Mesibo on-premise platform, advantages and how to install it on you own premise or private cloud.
+
+[Install Mesibo On-Premise]({{ "/documentation/on-premise/install/" | relative_url }}){: class="button outline-btn"}
+
+### Extend Mesibo On-Premise - add your own features and functionalities
+
+Mesibo loadable modules let you expand mesibo by adding your own features and functionalities. You can build powerful chatbots, filters, remotely communicate with hardware for IoT and robotics, integrate with Machine learning and Scientific computing backend such as Tensorflow, Dialogflow, Matlab, etc. and much more, keeping your data secure and private in your own premises or private cloud.
+
+[Loadable Modules]({{ "/documentation/on-premise/loadable-modules/" | relative_url }}){: class="button outline-btn"}
+
+

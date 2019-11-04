@@ -1,0 +1,12 @@
+
+Does Mesibo supports voice and video calling?: |
+
+  Yes, Mesibo supports live voice and video calls.
+
+Does Mesibo supports PSTN calling?: |
+
+  PSTN calling is scheduled to be released on April 25, 2019.
+
+What codecs are supported in Mesibo?: |
+
+  Mesibo supports Opus, G.711, G.722, iLBC, and iSAC for voice and VP8/VP9 are supported for video. The list of supported codecs may change in the future.

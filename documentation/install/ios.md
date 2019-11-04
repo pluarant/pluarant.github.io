@@ -1,9 +1,8 @@
 ---
-title: Getting Started with Mesibo on iOS
-description: Getting Started with Mesibo on iOS
-keywords: mesibo, installation, ios
-redirect_from:
-- /installation/
+title: Chat SDK for iOS 
+heading: Mesibo Chat SDK for iOS 
+description: Install chat SDK for iOS. Latest versions are available as CocoaPods or individual frameworks that can be installed manually.
+keywords: chat sdk for ios, messaging sdk for ios, mesibo ios sdk, manual install on ios, chat app for ios
 ---
 The Mesibo SDKs for iOS are available as CocoaPods pods OR individual frameworks that can be installed manually. 
 

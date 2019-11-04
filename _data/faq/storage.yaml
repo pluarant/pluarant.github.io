@@ -1,0 +1,21 @@
+
+What is the retention period of messages stored in the database?: |
+
+  Mesibo offers an unlimited message retention period, only limited by the storage quota and usage. You can at any time, clear storage from the Mesibo console or using the server-side API.
+
+Where does Mesibo stores all the files?: |
+
+  Mesibo does not store any files on Mesibo servers. Instead, Mesibo let you store all your files (images, videos, documents etc.) on your server(s). This allows you to control your files and protect your sensitive data. 
+  
+  You need to write a small upload and download handler which will be called whenever Mesibo needs to send or receive files. When mesibo needs to send a file, your upload handler will be called with the file path using which you can upload the file and let mesibo know about the location where the file was uploaded. On the remote side, the download handler will be called with that location so that the remote side can download the file. For more information, refer to the mesibo application source code on GitHub and also FileTransferHandler reference document.
+
+Can I store my files on public cloud platforms like Amazon S3, Google etc?: |
+
+  Absolutely, there are two ways
+  
+  - once you upload files on your server, you can then upload them to one of the cloud providers of your choice and send the link back to your upload handler.   
+  - Sign the request from the server and then directly send it. Refer to the documentation of your cloud provider. If you are using Amazon S3, refer [here](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingHTTPPOST.html)
+
+Where is the data stored? On the server or on the device?: |
+
+  Data is stored on Mesibo Servers if you are using cloud hosting option(by default). You can control where you store your data(database) by using the On-Premise option. To store data on device you may use a database service such as sqlite.

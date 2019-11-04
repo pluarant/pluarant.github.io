@@ -120,11 +120,13 @@
     }
     .nav-secondary-tabs,
     .nav-secondary {
-        background-color: $black;
+        background-color: $bg-secondary;
         height: 100px;
     }
     .nav-secondary input[type=search] {
-        background: rgb(78, 77, 77) url($baseurl + "/images/search.png") no-repeat;
+        //background: rgb(78, 77, 77) url($baseurl + "/images/search.png") no-repeat;
+        background: rgba(255, 255, 255, 0.17) url($baseurl + "/images/search.png") no-repeat;
+        //background: url($baseurl + "/images/search.png") no-repeat;
         background-position: 10px 9px;
     }
     .nav-sidebar a {
@@ -241,7 +243,7 @@
         height: 100px;
     }
     .nav-secondary {
-        background: $black;
+        background: $bg-secondary;
         height: 100px;
     }
     .content {
@@ -364,8 +366,8 @@
 
 @media (max-width: 1024px) {
     .nav-secondary-tabs.affix-top {
-        // background-color: $bg-secondary;
-        background-color: rgba(0,0,0,.05);
+        background-color: $bg-secondary;
+        //background-color: rgba(0,0,0,.05);
         position: fixed;
         top: 0;
     }

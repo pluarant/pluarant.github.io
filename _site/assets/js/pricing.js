@@ -5,7 +5,7 @@ var r_db = 2.5;
 var b_minpay = 0;
 
 //quota
-var q_mau = 1000;
+var q_mau = 0;
 var q_db = 1000000000;
 var q_bw = 5000000000;
 

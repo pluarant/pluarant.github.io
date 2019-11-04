@@ -1,13 +1,13 @@
 ---
-title: Mesibo Real-time APIs - Listeners
-description: Mesibo Real-time APIs - Listeners
-keywords: mesibo, real-time api, messaging API, chat API, voice SDK, video SDK
+title: Real-time Chat APIs - Listeners
+description: Mesibo invokes listeners for various events. For example, when you receive a message, receive an incoming call etc. You can implement to these listeners to get real-time notifications of events.
+keywords: listener api, listener api chat, message listener api, listener api for android, listener api for iOS 
 ---
-Mesibo invokes **Listeners** for various events. For example, when you receive a message, receive an incoming call etc. You can implement to these listners to get real-time notifications of events.
+Mesibo invokes **Listeners** for various events. For example, when you receive a message, receive an incoming call etc. You can implement to these listeners to get real-time notifications of events.
 
 To set listener, use setListener API.
 
-Folliwing are various Mesibo Listeners
+Following are various Mesibo Listeners
 
 ### Message Listener
 Message listener is invoked on receiving a message or when a message delivery status changes. 
@@ -48,11 +48,11 @@ It is defined as following:
 
 Following is listener:
 
-- **mesibo_onConnectionStatus**, Invoked when the connection status is changed. It is also invoked when the token is about to be expired.
+- **mesibo_onConnectionStatus**, Invoked when the connection status is changed. It is also invoked when the token is about to expire.
   - status
 
 ### File Transfer Handler
-File Transfer handler is invoked when mesibo need to upload or download a file. Since mesibo allows you to use your own server, mesibo let you do the file transfer.
+File Transfer handler is invoked when mesibo need to upload or download a file. 
 
 It is defined as following:
 

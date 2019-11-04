@@ -14,13 +14,21 @@ Everything! that's true! You can customize each and everything in these apps to 
 
 However, we will not cover all the customizations in this tutorial. Instead, we will focus on a few very important ones as follow.
 
- - Account Kit to send your own branded verification SMS 
+ - User Verification 
  - Geolocation support by configuring Google Maps and Google Places API key
  - Files/Media handler to store files on your own server(s)/cloud
  - Welcome screen and other miscellaneous customizations
 
 ## Customizations
-### Facebook Account Kit
+### User Verification
+For these demo apps, we have chosen to use a phone number for login. We verify the user by sending an OTP to the user phone number, which the user can enter to confirm the phone number.
+
+It is not necessary to use the phone number; you can use anything you prefer, for example, email address, user account id, your organization id, etc.  You can customize the entire login as you prefer.
+
+You can use any SMS gateway to send OTP and verify a user phone number. We have used free service provided by Facebook in this example.
+
+> Facebook has recently discontinued AccountKit, and hence this section is not recommended for new code.  You need to use other means of verification, like SMS or email verification. Note that, mesibo has no dependency on AccountKit, and it is used only for the demo app. 
+
 The first screen you see in the Mesibo Messenger right after the welcome screen is the login screen. This is the screen which allows the user to enter their phone number and then verifies it by sending an OTP over an SMS or a call. 
 
 ![]({{ '/images/app/ios/mesibo_account_kit_ios.jpg' | relative_url }} )

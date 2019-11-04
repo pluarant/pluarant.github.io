@@ -1,6 +1,6 @@
 ---
 layout: mesibo
-description: Terms of service and privacy policy regarding use of Mesibo api.
+description: Terms of service and privacy policy regarding use of Mesibo Chat API
 keywords: Mesibo terms of use, privacy policy
 title: Terms of Service and Privacy Policy
 subtitle: Please read the following terms and conditions of use carefully before using Mesibo!

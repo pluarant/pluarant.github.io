@@ -1,4 +1,4 @@
-<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -75,20 +75,20 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
 	<meta name="twitter:site" content="@mesibo"/>
 	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
-	<meta name="twitter:title" itemprop="title name" content="Mesibo HTTP Library"/>
+	<meta name="twitter:title" itemprop="title name" content="Mesibo HTTP Library for Android, iOS, Linux, Mac"/>
 	<meta name="twitter:description" property="og:description" itemprop="description" content="Introduction Mesibo HTTP is a light but fast and powerful http client library compliant with RFC 7230-7235, 1738, 2046. It is an extension of mesibo real-time Client APIs. Mesibo HTTP..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="mesibo, http, android, ios, linux, mac">
+	<meta name="keywords" content="http library for android, ios, http protocol, http requests, http client library, mesibo http benefits">
 	<link rel="stylesheet" href="/css/font-awesome.min.css" >
 	<link rel="stylesheet" href="/css/bootstrap.min.css" >
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
@@ -97,16 +97,16 @@
 	<!-- Go get "Open Sans" font from Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!-- SEO stuff -->
-	<title>Mesibo HTTP Library | Mesibo Documentation</title>
-<meta property="og:title" content="Mesibo HTTP Library" />
+	<title>Mesibo HTTP Library for Android, iOS, Linux, Mac | Mesibo Documentation</title>
+<meta property="og:title" content="Mesibo HTTP Library for Android, iOS, Linux, Mac" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Mesibo HTTP Library for Android, iOS, Linux, Mac" />
-<meta property="og:description" content="Mesibo HTTP Library for Android, iOS, Linux, Mac" />
+<meta name="description" content="Mesibo HTTP is a light but fast and powerful http client library compliant with RFC 7230-7235, 1738, 2046. It is an extension of mesibo real-time Client APIs." />
+<meta property="og:description" content="Mesibo HTTP is a light but fast and powerful http client library compliant with RFC 7230-7235, 1738, 2046. It is an extension of mesibo real-time Client APIs." />
 <link rel="canonical" href="/documentation/api/http-library/" />
 <meta property="og:url" content="/documentation/api/http-library/" />
 <meta property="og:site_name" content="Mesibo Documentation" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo HTTP Library","description":"Mesibo HTTP Library for Android, iOS, Linux, Mac","url":"https://docs.docker.com/documentation/api/http-library/"}</script>
+{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo HTTP Library for Android, iOS, Linux, Mac","description":"Mesibo HTTP is a light but fast and powerful http client library compliant with RFC 7230-7235, 1738, 2046. It is an extension of mesibo real-time Client APIs.","url":"https://docs.docker.com/documentation/api/http-library/"}</script>
 	<!-- END SEO STUFF -->
 	
 	<script language="javascript">
@@ -240,7 +240,7 @@
   <li>HTTP persistent connections and request pipelining</li>
   <li>Efficient and configurable cache</li>
   <li>Resuming broken downloads and uploads</li>
-  <li>POST, upload, download - all can be combined in a single request, if required Seamless and automatic support of multi-part requests</li>
+  <li>POST, upload, download - all can be combined in a single request, if required Seamless and automatic support of multipart requests</li>
   <li>HTTP Basic Digest authentication</li>
   <li>Proxy authentication</li>
   <li>Precise status and progress update of every state of HTTP protocol</li>
@@ -309,7 +309,7 @@
 
 <h3 id="queuing--limiting-simultaneous-connections">Queuing &amp; limiting simultaneous connections</h3>
 
-<p>In above code examples, all the HTTP requests execute immediately and parallelly; however, often it’s desirable to queue the requests to limit the resource utilization and the number of simultaneous connections. This is where queue helps.</p>
+<p>In the above code examples, all the HTTP requests execute immediately and parallelly; however, often it’s desirable to queue the requests to limit the resource utilization and the number of simultaneous connections. This is where queue helps.</p>
 
 <p>Queue lets you control the number of HTTP requests to execute in parallel. You can add your request into the front or the back of a queue, and queue processes one by one from the front. If the number of simultaneous connection limit is not reached, then the queue executes request immediately, else it will wait for the next available slot.</p>
 
@@ -369,7 +369,7 @@
 
 <h2 id="mesibo-http-object">Mesibo HTTP Object</h2>
 
-<p>Following is the description of all the parameters of Mesibo Http object for both, Android and iOS.</p>
+<p>Following is the description of all the parameters of Mesibo Http object for both Android and iOS.</p>
 
 <p><strong>Android:</strong></p>
 
@@ -469,7 +469,7 @@
     </tr>
     <tr>
       <td>referrer</td>
-      <td>HTTP referrer header</td>
+      <td>HTTP referer header</td>
     </tr>
     <tr>
       <td>origin</td>
@@ -566,7 +566,7 @@
   <tbody>
     <tr>
       <td>listener</td>
-      <td>Listener to be called. mesibo invokes listener with three parameters&lt;ol&gt;- this object- State - state can be either STATE_UPLOAD (sending header, sending post data and/or uploading file ) or STATE_DOWNLOAD (receiving response data / download file data)- Progress, 0 to 100. In case of error, -1 will be sent and error field will be set.&lt;/ol&gt;Return Value: listener MUST return true to continue or false to abort/cancel.Listener MUST always check the state before interpreting the progress. For example, when sending a POST request, listener will be invoked twice with progress == 100: first time when the post data is sent and the second time when the response is received. In this case, received response is only valid when percent == 100 and the state is STATE_DOWNLOADFor Android, listener is an instance of mesibo.HttpListener().For iOS, it’s a block of type mesibo_HttpListner.</td>
+      <td>Listener to be called. mesibo invokes listener with three parameters&lt;ol&gt;- this object- State - state can be either STATE_UPLOAD (sending header, sending post data and/or uploading file ) or STATE_DOWNLOAD (receiving response data / download file data)- Progress, 0 to 100. In case of error, -1 will be sent and error field will be set.&lt;/ol&gt;Return Value: listener MUST return true to continue or false to abort/cancel.Listener MUST always check the state before interpreting the progress. For example, when sending a POST request, the listener will be invoked twice with progress == 100: first time when the post data is sent and the second time when the response is received. In this case, received response is only valid when percent == 100 and the state is STATE_DOWNLOADFor Android, listener is an instance of mesibo.HttpListener().For iOS, it’s a block of type mesibo_HttpListner.</td>
     </tr>
     <tr>
       <td>onMainThread</td>
@@ -674,7 +674,7 @@
 							
 							
 							
-							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=http">http</a>, <a href="/documentation/glossary/?term=android">android</a>, <a href="/documentation/glossary/?term=ios">ios</a>, <a href="/documentation/glossary/?term=linux">linux</a>, <a href="/documentation/glossary/?term=mac">mac</a></span>
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=http library for android">http library for android</a>, <a href="/documentation/glossary/?term=ios">ios</a>, <a href="/documentation/glossary/?term=http protocol">http protocol</a>, <a href="/documentation/glossary/?term=http requests">http requests</a>, <a href="/documentation/glossary/?term=http client library">http client library</a>, <a href="/documentation/glossary/?term=mesibo http benefits">mesibo http benefits</a></span>
 							
 							<!-- link corrections -->
               <script language="JavaScript">
@@ -717,7 +717,7 @@
 								<div class="feedback-links">
 									<ul>
 										
-										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
 										<!-- toggle mode -->
 										<li>
 											<div class="toggle-mode">

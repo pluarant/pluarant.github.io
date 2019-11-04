@@ -1,9 +1,9 @@
 ---
 section: Platform
 title: Frequently Asked Questions - Platform
-keywords: get started, setup, orientation, mesibo, chat, GDPR
-description: Frequently Asked Questions
+keywords: mesibo, faq, chat, voice, video
+description: Frequently Asked Questions - Platform
 ---
 {% assign faq_data = site.data.faq.platform %}
 
-{% include_relative faq-template.md  %}
+{% include_relative template/faq-template.md  %}

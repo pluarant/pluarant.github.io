@@ -1,9 +1,9 @@
 ---
-section: Android and iOS HTTP Library
-title: Frequently Asked Questions - Android and iOS HTTP Library
-keywords: get started, setup, orientation, mesibo, chat, file
-description: Frequently Asked Questions
+section: HTTP Library
+title: Frequently Asked Questions - HTTP Library
+keywords: mesibo, faq, chat, voice, video
+description: Frequently Asked Questions - HTTP Library
 ---
 {% assign faq_data = site.data.faq.http %}
 
-{% include_relative faq-template.md  %}
+{% include_relative template/faq-template.md  %}

@@ -1,4 +1,4 @@
-<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -75,20 +75,20 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
 	<meta name="twitter:site" content="@mesibo"/>
 	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
-	<meta name="twitter:title" itemprop="title name" content="FAQ - Webhooks and Push Notifications"/>
-	<meta name="twitter:description" property="og:description" itemprop="description" content="What is webhook? How do I set up webhook URL for an App? What are the webhook parameters? Can I select events for which I want to receive webhooks? Is..." />
+	<meta name="twitter:title" itemprop="title name" content="Frequently Asked Questions - Webhooks and Push Notifications"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="What is webhook? How do I set up webhook URL for an App? What are the webhook parameters? Can I select the events for which I want to receive webhooks?..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="get started, setup, orientation, mesibo, chat, GDPR">
+	<meta name="keywords" content="mesibo, faq, chat, voice, video">
 	<link rel="stylesheet" href="/css/font-awesome.min.css" >
 	<link rel="stylesheet" href="/css/bootstrap.min.css" >
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
@@ -97,16 +97,16 @@
 	<!-- Go get "Open Sans" font from Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!-- SEO stuff -->
-	<title>FAQ - Webhooks and Push Notifications | Mesibo Documentation</title>
-<meta property="og:title" content="FAQ - Webhooks and Push Notifications" />
+	<title>Frequently Asked Questions - Webhooks and Push Notifications | Mesibo Documentation</title>
+<meta property="og:title" content="Frequently Asked Questions - Webhooks and Push Notifications" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Frequently Asked Questions" />
-<meta property="og:description" content="Frequently Asked Questions" />
+<meta name="description" content="Frequently Asked Questions - Webhooks and Push Notifications" />
+<meta property="og:description" content="Frequently Asked Questions - Webhooks and Push Notifications" />
 <link rel="canonical" href="/documentation/faq/webhooks-and-push-notifications/" />
 <meta property="og:url" content="/documentation/faq/webhooks-and-push-notifications/" />
 <meta property="og:site_name" content="Mesibo Documentation" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"FAQ - Webhooks and Push Notifications","description":"Frequently Asked Questions","url":"https://docs.docker.com/documentation/faq/webhooks-and-push-notifications/"}</script>
+{"@context":"http://schema.org","@type":"WebPage","headline":"Frequently Asked Questions - Webhooks and Push Notifications","description":"Frequently Asked Questions - Webhooks and Push Notifications","url":"https://docs.docker.com/documentation/faq/webhooks-and-push-notifications/"}</script>
 	<!-- END SEO STUFF -->
 	
 	<script language="javascript">
@@ -209,7 +209,7 @@
 						<section class="section">
 							
 							
-							<h1>FAQ - Webhooks and Push Notifications</h1>
+							<h1>Frequently Asked Questions - Webhooks and Push Notifications</h1>
 							 
 
 							 <span class="reading-time" title="Estimated reading time">
@@ -238,13 +238,16 @@
 			<li><a href="/documentation/faq/webhooks-and-push-notifications/#what-are-the-webhook-parameters">What are the webhook parameters?</a></li>
 		
 			
-			<li><a href="/documentation/faq/webhooks-and-push-notifications/#can-i-select-events-for-which-i-want-to-receive-webhooks">Can I select events for which I want to receive webhooks?</a></li>
+			<li><a href="/documentation/faq/webhooks-and-push-notifications/#can-i-select-the-events-for-which-i-want-to-receive-webhooks">Can I select the events for which I want to receive webhooks?</a></li>
 		
 			
 			<li><a href="/documentation/faq/webhooks-and-push-notifications/#is-there-any-limit-on-the-number-of-times-a-webhook-is-invoked">Is there any limit on the number of times a webhook is invoked?</a></li>
 		
 			
 			<li><a href="/documentation/faq/webhooks-and-push-notifications/#how-do-i-send-a-push-notification-to-users">How do I send a push notification to users?</a></li>
+		
+			
+			<li><a href="/documentation/faq/webhooks-and-push-notifications/#i-am-not-able-to-receive-push-notifications-on-the-app-what-should-i-do">I am not able to receive push notifications on the app, what should I do?</a></li>
 		
 	</ul>
 
@@ -282,21 +285,32 @@
 </ul>
 
 	
-		<a name="can-i-select-events-for-which-i-want-to-receive-webhooks"></a>
-		<h3 id="can-i-select-events-for-which-i-want-to-receive-webhooks">Can I select events for which I want to receive webhooks?</h3>
+		<a name="can-i-select-the-events-for-which-i-want-to-receive-webhooks"></a>
+		<h3 id="can-i-select-the-events-for-which-i-want-to-receive-webhooks">Can I select the events for which I want to receive webhooks?</h3>
 		
-<p>Yes, you can select for which events webhook should be invoked. For example, an offline message, a user comes online or goes offline etc.</p>
+<p>Yes, you can select the events for which  webhook should be invoked. For example, an offline message, a user comes online or goes offline etc.</p>
 
 	
 		<a name="is-there-any-limit-on-the-number-of-times-a-webhook-is-invoked"></a>
 		<h3 id="is-there-any-limit-on-the-number-of-times-a-webhook-is-invoked">Is there any limit on the number of times a webhook is invoked?</h3>
 		
-<p>There is no hard limit; however, Mesibo automatically optimizes and decides based on your webhook usage if the next webhook call is necessary. For example, an offline message indication for a user may not be invoked again till that user comes online or for a certain duration.</p>
+<p>There is no hard limit. However, Mesibo automatically optimizes and decides based on your webhook usage if the next webhook call is necessary. For example, an offline message indication for a user may not be invoked again until that user comes online or for a certain duration.</p>
 
 	
 		<a name="how-do-i-send-a-push-notification-to-users"></a>
 		<h3 id="how-do-i-send-a-push-notification-to-users">How do I send a push notification to users?</h3>
-		<p>Mesibo will automatically send push notification to offline users if there a message or a call for them. All you need to configure your Firebase Cloud Messaging and Apple Push Notification credentials in Mesibo console and rest will be taken care by Mesibo.</p>
+		
+<p>Mesibo will automatically send push notification to offline users if there is a message or a call for them. All you need to do is configure your Firebase Cloud Messaging and Apple Push Notification credentials in Mesibo console and rest will be taken care of by Mesibo.</p>
+
+	
+		<a name="i-am-not-able-to-receive-push-notifications-on-the-app-what-should-i-do"></a>
+		<h3 id="i-am-not-able-to-receive-push-notifications-on-the-app-what-should-i-do">I am not able to receive push notifications on the app, what should I do?</h3>
+		
+<ul>
+  <li>Keep your phone on the cellular data and see if you are receiving push notifications.</li>
+  <li>See if other apps on your phone receive it.</li>
+  <li>If you don’t receive push on cellular data too and receiving push for other apps, then try below script which will bypass mesibo (we give simplified push script from our PHP code)</li>
+</ul>
 
 	
 </section>
@@ -306,7 +320,7 @@
 							
 							
 							
-							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=get started">get started</a>, <a href="/documentation/glossary/?term=setup">setup</a>, <a href="/documentation/glossary/?term=orientation">orientation</a>, <a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=chat">chat</a>, <a href="/documentation/glossary/?term=GDPR">GDPR</a></span>
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=faq">faq</a>, <a href="/documentation/glossary/?term=chat">chat</a>, <a href="/documentation/glossary/?term=voice">voice</a>, <a href="/documentation/glossary/?term=video">video</a></span>
 							
 							<!-- link corrections -->
               <script language="JavaScript">
@@ -349,7 +363,7 @@
 								<div class="feedback-links">
 									<ul>
 										
-										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
 										<!-- toggle mode -->
 										<li>
 											<div class="toggle-mode">
@@ -377,9 +391,10 @@
     <ul>
       <li><a href="/documentation/faq/webhooks-and-push-notifications/#how-do-i-set-up-webhook-url-for-an-app" class="nomunge">How do I set up webhook URL for an App?</a></li>
       <li><a href="/documentation/faq/webhooks-and-push-notifications/#what-are-the-webhook-parameters" class="nomunge">What are the webhook parameters?</a></li>
-      <li><a href="/documentation/faq/webhooks-and-push-notifications/#can-i-select-events-for-which-i-want-to-receive-webhooks" class="nomunge">Can I select events for which I want to receive webhooks?</a></li>
+      <li><a href="/documentation/faq/webhooks-and-push-notifications/#can-i-select-the-events-for-which-i-want-to-receive-webhooks" class="nomunge">Can I select the events for which I want to receive webhooks?</a></li>
       <li><a href="/documentation/faq/webhooks-and-push-notifications/#is-there-any-limit-on-the-number-of-times-a-webhook-is-invoked" class="nomunge">Is there any limit on the number of times a webhook is invoked?</a></li>
       <li><a href="/documentation/faq/webhooks-and-push-notifications/#how-do-i-send-a-push-notification-to-users" class="nomunge">How do I send a push notification to users?</a></li>
+      <li><a href="/documentation/faq/webhooks-and-push-notifications/#i-am-not-able-to-receive-push-notifications-on-the-app-what-should-i-do" class="nomunge">I am not able to receive push notifications on the app, what should I do?</a></li>
     </ul>
   </li>
 </ul>

@@ -1,0 +1,69 @@
+
+How do I configure ProGuard to work with mesibo?: |
+
+  Mesibo ships with built-in proguard rules which will be automatically used by Android Studio. Hence, you don’t need to do any special configuration to use mesibo with ProGuard.
+
+Does mesibo support Objective-C?: |
+
+  Yes, mesibo supports Objective-C. In fact, Objective-C source code of an entire WhatsApp like messaging application developed using mesibo is available on mesibo GitHub.
+
+Does mesibo support Swift?: |
+
+  Yes! mesibo supports Swift.  Refer to our <a href="/documentation/install/ios/" target="_blank">iOS installation documentation</a> for instructions on how to integrate the mesibo SDK in your app using Swift. You can also find Swift sample app source code in <a href="https://github.com/mesibo/samples/" target="_blank">mesibo samples GitHub</a>.
+
+Do I need CocoaPods to install Mesibo Framework?: |
+
+  Although recommended, it is NOT mandatory CocoaPods to install mesibo frameworks. Installing Mesibo framework  is as simple as downloading and dragging it to your Xcode project. Refer to our <a href="/documentation/install/ios/" target="_blank">iOS installation documentation</a> for exact instructions.
+
+Can I customize the API or modules to suit my own requirements?: |
+
+  Yes, we do offer customized development and setup service to suit your specific requirements. You can contact us at <a href="/contact.html" target="_blank">https://mesibo.com/contact.html</a> with your requirements.
+
+Can I request custom features not available in Mesibo?: |
+
+  Certainly, please contact us at <a href="mailto:contact@mesibo.com">contact@mesibo.com</a> with your feature requests.
+
+Does Mesibo support running on Windows?: |
+
+  Yes,Mesibo is provided as a shared library(libmesibo.dll) which you can use to build apps on Windows based systems.
+  As of now the windows platform availability is pulled down and will be updated shortly.
+
+Can I develop applications in Python using Mesibo?: |
+
+  Mesibo Python Library allows you to interface with any python library for scientific computing,etc such as numpy,matplotlib,scipy,etc
+  
+  Mesibo Python API is an entirely open-source real-time library which can be built and installed from source. The entire source code and installation details can be found at our [GitHub repo Mesibo Python API](https://github.com/mesibo/python)
+
+Does Mesibo support Julia?: |
+
+  You could use Mesibo C/C++ library to develop custom extensions for Julia or for any language that supports interface with C-extensions for that matter(All major languages such as Python,Julia,Rust,etc support C-extensions)
+
+Does Mesibo support Raspberry Pi?:: |
+
+  Instantly add real-time communication on your embedded devices by using Mesibo.You can control and communicate with your Raspberry Pi based devices from mobile apps, web, Linux, using the same API.
+  
+  Mesibo on Raspberry Pi is available as a shared library(.so) which allows you to use it from any application OR languages of your choice like C, C++, Python, PHP, etc.
+
+Can Mesibo be used with GUI written in Qt(PyQT/Qt C++),GTK,etc ?: |
+
+  Mesibo APIs are provided in platform specific / Native SDK which compile to native code. You can implement your UI in any framework you desire and integrate Mesibo with it- whether it be for mobile apps- React-Native,Swift,Flutter or for desktop Apps Qt,Gtk,etc .
+
+Mesibo does not support the platform that I need What should I do: |
+
+  Mesibo provides API in Native SDK form. So,you can develop your own custom extensions or wrappers on top of it. For example,you can use the Mesibo C/C++ Libraries to develop custom extensions for Python,PHP,etc.
+
+Can I use Mesibo with machine learning frameworks such as TensorFlow and Pytorch?: |
+
+  You can use the Mesibo Python Library to interface with any machine learning framework such as TensorFlow,Pytorch,Keras,Caffe,etc.
+
+How can I develop chatbots with Mesibo?: |
+
+  You could implement the chatbot UI for web/Android and connect with Mesibo Native SDKs availbale for Web/Mobile. For the intelligence part, you can interface Mesibo with numerous machine learning frameworks such as Tensorflow,Keras,Pytorch,etc or chat bot development frameworks such as DialogFlow or Rasa.
+
+How can I use Mesibo to build applications for IoT?: |
+
+  You can use Mesibo Native Libraries for C/C++,Python,Javascript,etc and connect with intelligent devices on Raspberry Pi/Arduino,etc
+
+Can Mesibo be used to build voice based assistants/voicebots?: |
+
+  Yes,you can use the Mesibo APIs for audio calls and interface it with your voice bot.

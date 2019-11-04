@@ -1,9 +1,8 @@
 ---
-title: Getting Started with Mesibo on Android
-description: Getting Started with Mesibo on Android
-keywords: mesibo, installation, android
-redirect_from:
-- /installation/
+title: Chat SDK for Android
+heading: Mesibo Chat SDK for Android
+description: Install the most recent version of mesibo Chat SDK into your Android Studio project just by adding gradle dependency and perform gradle sync.
+keywords: chat sdk for android, messaging sdk for android, mesibo android sdk, installation on android, 
 ---
 <script src="https://api.mesibo.com/maven_versions.js?refresh"></script>
 <script src="{{ '/js/api_versions.js' | relative_url }}"></script>

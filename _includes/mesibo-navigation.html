@@ -245,9 +245,17 @@
                         <li class="nav-item dropdown {% if page.category == "pricing" %}active{% endif %} mega-menu mega-menu--wide">
                           <a href="/pricing/" class="nav-link" >Pricing</a>
                         </li>
+                        <!-- mega-menu start -->
                         <li class="nav-item dropdown {% if page.category == "help" %}active{% endif %} mega-menu mega-menu--wide">
-                          <a href="/help/" class="nav-link" >Help</a>
+                        <li class="nav-item dropdown {% if page.category == "home" %}active{% endif %} ">
+                          <a href="/help/" class="nav-link dropdown-toggle" id="seventh-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help</a>
+                          <ul class="dropdown-menu" aria-labelledby="seventh-dropdown">
+                            <li ><a href="/technical-support/">Technical Support</a></li>
+                            <li ><a href="/sales/">Sales</a></li>
+                            <li ><a href="/custom-solutions/">Custom Solutions</a></li>
+                          </ul>
                         </li>
+                        <!-- mega-menu end -->
                       </ul>
                       <!-- main-menu end -->
                     </div>

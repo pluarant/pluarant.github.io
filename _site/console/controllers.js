@@ -936,6 +936,13 @@ routerApp.controller('creditcardController', ['$rootScope', '$scope', '$window',
 	//insetad of passing null, we can pass array too with additional parameters (like billing address)
 	mesibo_payment_cc(null, p.name, p.ccnum, p.month, p.year, p.cvv, p.coupon, p.totalamount);
     }
+    
+    $scope.paystripe = function() {
+	var p = $scope.payment;
+
+	//insetad of passing null, we can pass array too with additional parameters (like billing address)
+	mesibo_payment_stripe(p.totalamount);
+    }
 
     $scope.amountchanged();
     
@@ -1200,6 +1207,7 @@ routerApp.controller("mainCtrl", ['$scope', '$rootScope', '$window', '$state', '
 		$rootScope.init_state = '';
 		angular.element(document).ready(function() {
 			console.log($state);
+			console.log($location);
 
 			/* We have a tricky situation here, due to bad ui-router implementation, current state 
 			 * is not visible in ready function (only available after some time). 

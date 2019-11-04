@@ -1,7 +1,8 @@
 ---
-description: Mesibo Source Code
-keywords: open, source, contributing, overview
-title: Mesibo Source Code
+description: Mesibo Messenger is an open-source app with real-time messaging, voice and video call features. 
+keywords: chat app, open, source, contributing, overview
+heading: Mesibo Source Code
+title: Chat / Messaging App Source Code for Android and iOS 
 redirect_from:
 - /opensource/code/
 ---

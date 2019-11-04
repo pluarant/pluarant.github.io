@@ -1,7 +1,7 @@
 ---
-description: Instructions for installing Mesibo on Raspberry Pi
-keywords: mesibo, install, raspberry pi, raspberrypi
-title: Instructions for installing Mesibo on Raspberry Pi
+description: Install Chat SDK on Raspberry Pi. Mesibo Chat SDK is available as a shared library (.so) which allows you to use it from any application OR languages of your choice like C, C++, Python, PHP, etc.
+keywords: chat sdk for raspberry pi, raspberry pi chat sdk, raspberry pi sdk for chat, mesibo raspberry pi sdk, open source chat sdk, real-time chat sdk, raspberry pi sdk for messaging apps
+title: Chat SDK for Raspberry Pi 
 ---
 Instantly add real-time communication on your embedded devices by using Mesibo. You can control and communicate with your Raspberry Pi based devices from mobile apps, web, Linux, using the same API. 
 

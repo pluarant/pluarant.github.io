@@ -1,11 +1,12 @@
 ---
-title: Overview
-description: Overview of Mesibo APIs
-keywords: mesibo, api
+title: Real-time Chat APIs and Backend APIs 
+description: Mesibo Real-time Chat APIs and Backend APIs allows you to add messaging, voice, and video calls to your apps and websites in no-time. 
+keywords: chat api, real-time chat api, backend api, chat api documentation, developer guide for chat app, sdk reference, types of api, messaging api user guide, http library
+heading: Overview
 ---
-Mesibo APIs allows you to add **real-time messaging, voice, and video** calls to your apps and website in no-time. Mesibo APIs is easy to learn and master. In an hour, you should be able to start using Mesibo APIs in your code.
+Mesibo APIs allows you to add **real-time messaging, voice, and video** calls to your apps and website in no-time. Mesibo APIs are easy to learn and master. In an hour, you should be able to start using Mesibo APIs in your code.
 
-Mesibo APIs is as simple as creating end-points (users or groups) and start communicating between them. Mesibo APIs remain the same, whether you are using our cloud-based services or our [On-Premise]({{ '/documentation/on-premise/' | relative_url }}) offerings. This allows you to switch anytime without impacting your users.
+Using Mesibo APIs is as simple as creating end-points (users or groups) and start communicating between them. Mesibo APIs remain the same, whether you are using our cloud-based services or our [On-Premise]({{ '/documentation/on-premise/' | relative_url }}) offerings. This allows you to switch anytime without impacting your users.
 
 In this section, we will describe various Mesibo APIs in detail. However, before we move further, ensure that you have read the guides mentioned in the Prerequisites below.
 
@@ -14,7 +15,7 @@ In this section, we will describe various Mesibo APIs in detail. However, before
 - Read the  [Get Started]({{ '/documentation/get-started/' | relative_url }}) guide.
 
 ## Type of APIs
-As previously mentioned, Mesibo APIs is as simple as creating end-points (users or groups) and start communicating between them. You perform two categories of tasks using Mesibo:
+As previously mentioned, using Mesibo APIs is as simple as creating end-points (users or groups) and start communicating between them. You perform two categories of tasks using Mesibo:
 
   - **Non-real-time tasks**, e.g., creating users and groups for your apps. You generally perform these tasks from your backend, and your end-users have no control over it.
 
@@ -22,16 +23,16 @@ As previously mentioned, Mesibo APIs is as simple as creating end-points (users 
 
 Mesibo provides separate APIs for both these tasks.
 
-### Real-time APIs (App or Client Side APIs)
+### Real-time APIs (App or User-side APIs)
 Mesibo real-time APIs allows users to communicate in real-time by providing APIs for
 
 - 1-to-1 messaging
 - group messaging
 - voice and video calls
 
-This is the API which you will integrate with your client-side applications (e.g., Android, iOS, Web, C++, Python, etc.). Once you download and integrate it with your apps, your apps will be able to communicate in real-time.
+This is the API that you will integrate with your user-side applications (e.g., Android, iOS, Web, C++, Python, etc.). Once you download and integrate it with your apps, your apps will be able to communicate in real-time.
 
-### Non real-time Back-end API (Server side API)
+### Non-real-time Back-end API (Server-side API)
 Mesibo backend API allows your backend servers to communicate with Mesibo to perform various administrative tasks such as
 
 - managing users
@@ -44,7 +45,7 @@ Mesibo backend API is a REST based APIs which you can access using any language 
 ## Mesibo HTTP Library
 In addition to core mesibo real-time and backend API, mesibo provides powerful cross-platform HTTP Library for Android, iOS, Linux, MacOS.
 
-Mesibo HTTP is a lightweight but fast and powerful HTTP client library compliant with RFC 7230-7235, 1738, 2046. Unlike other libraries, it is cross-platform and provides unified API across platforms.
+Mesibo HTTP is a lightweight but fast and powerful HTTP client library compliant with RFC 7230-7235, 1738, 2046. Unlike other libraries, it is cross-platform and provides a unified API across platforms.
 
 ## Get Started with APIs
 Now let's get started with each type of APIs in detail:

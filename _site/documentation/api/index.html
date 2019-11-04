@@ -1,4 +1,4 @@
-<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -62,20 +62,20 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
 	<meta name="twitter:site" content="@mesibo"/>
 	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
-	<meta name="twitter:title" itemprop="title name" content="Overview"/>
-	<meta name="twitter:description" property="og:description" itemprop="description" content="Mesibo APIs allows you to add real-time messaging, voice, and video calls to your apps and website in no-time. Mesibo APIs is easy to learn and master. In an hour,..." />
+	<meta name="twitter:title" itemprop="title name" content="Real-time Chat APIs and Backend APIs"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="Mesibo APIs allows you to add real-time messaging, voice, and video calls to your apps and website in no-time. Mesibo APIs are easy to learn and master. In an hour,..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="mesibo, api">
+	<meta name="keywords" content="chat api, real-time chat api, backend api, chat api documentation, developer guide for chat app, sdk reference, types of api, messaging api user guide, http library">
 	<link rel="stylesheet" href="/css/font-awesome.min.css" >
 	<link rel="stylesheet" href="/css/bootstrap.min.css" >
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
@@ -84,16 +84,16 @@
 	<!-- Go get "Open Sans" font from Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!-- SEO stuff -->
-	<title>Overview | Mesibo Documentation</title>
-<meta property="og:title" content="Overview" />
+	<title>Real-time Chat APIs and Backend APIs | Mesibo Documentation</title>
+<meta property="og:title" content="Real-time Chat APIs and Backend APIs" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Overview of Mesibo APIs" />
-<meta property="og:description" content="Overview of Mesibo APIs" />
+<meta name="description" content="Mesibo Real-time Chat APIs and Backend APIs allows you to add messaging, voice, and video calls to your apps and websites in no-time." />
+<meta property="og:description" content="Mesibo Real-time Chat APIs and Backend APIs allows you to add messaging, voice, and video calls to your apps and websites in no-time." />
 <link rel="canonical" href="/documentation/api/" />
 <meta property="og:url" content="/documentation/api/" />
 <meta property="og:site_name" content="Mesibo Documentation" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"Overview","description":"Overview of Mesibo APIs","url":"https://docs.docker.com/documentation/api/"}</script>
+{"@context":"http://schema.org","@type":"WebPage","headline":"Real-time Chat APIs and Backend APIs","description":"Mesibo Real-time Chat APIs and Backend APIs allows you to add messaging, voice, and video calls to your apps and websites in no-time.","url":"https://docs.docker.com/documentation/api/"}</script>
 	<!-- END SEO STUFF -->
 	
 	<script language="javascript">
@@ -209,9 +209,9 @@
 
 							
 							
-							<p>Mesibo APIs allows you to add <strong>real-time messaging, voice, and video</strong> calls to your apps and website in no-time. Mesibo APIs is easy to learn and master. In an hour, you should be able to start using Mesibo APIs in your code.</p>
+							<p>Mesibo APIs allows you to add <strong>real-time messaging, voice, and video</strong> calls to your apps and website in no-time. Mesibo APIs are easy to learn and master. In an hour, you should be able to start using Mesibo APIs in your code.</p>
 
-<p>Mesibo APIs is as simple as creating end-points (users or groups) and start communicating between them. Mesibo APIs remain the same, whether you are using our cloud-based services or our <a href="/documentation/on-premise/">On-Premise</a> offerings. This allows you to switch anytime without impacting your users.</p>
+<p>Using Mesibo APIs is as simple as creating end-points (users or groups) and start communicating between them. Mesibo APIs remain the same, whether you are using our cloud-based services or our <a href="/documentation/on-premise/">On-Premise</a> offerings. This allows you to switch anytime without impacting your users.</p>
 
 <p>In this section, we will describe various Mesibo APIs in detail. However, before we move further, ensure that you have read the guides mentioned in the Prerequisites below.</p>
 
@@ -222,7 +222,7 @@
 </ul>
 
 <h2 id="type-of-apis">Type of APIs</h2>
-<p>As previously mentioned, Mesibo APIs is as simple as creating end-points (users or groups) and start communicating between them. You perform two categories of tasks using Mesibo:</p>
+<p>As previously mentioned, using Mesibo APIs is as simple as creating end-points (users or groups) and start communicating between them. You perform two categories of tasks using Mesibo:</p>
 
 <ul>
   <li>
@@ -235,7 +235,7 @@
 
 <p>Mesibo provides separate APIs for both these tasks.</p>
 
-<h3 id="real-time-apis-app-or-client-side-apis">Real-time APIs (App or Client Side APIs)</h3>
+<h3 id="real-time-apis-app-or-user-side-apis">Real-time APIs (App or User-side APIs)</h3>
 <p>Mesibo real-time APIs allows users to communicate in real-time by providing APIs for</p>
 
 <ul>
@@ -244,9 +244,9 @@
   <li>voice and video calls</li>
 </ul>
 
-<p>This is the API which you will integrate with your client-side applications (e.g., Android, iOS, Web, C++, Python, etc.). Once you download and integrate it with your apps, your apps will be able to communicate in real-time.</p>
+<p>This is the API that you will integrate with your user-side applications (e.g., Android, iOS, Web, C++, Python, etc.). Once you download and integrate it with your apps, your apps will be able to communicate in real-time.</p>
 
-<h3 id="non-real-time-back-end-api-server-side-api">Non real-time Back-end API (Server side API)</h3>
+<h3 id="non-real-time-back-end-api-server-side-api">Non-real-time Back-end API (Server-side API)</h3>
 <p>Mesibo backend API allows your backend servers to communicate with Mesibo to perform various administrative tasks such as</p>
 
 <ul>
@@ -261,7 +261,7 @@
 <h2 id="mesibo-http-library">Mesibo HTTP Library</h2>
 <p>In addition to core mesibo real-time and backend API, mesibo provides powerful cross-platform HTTP Library for Android, iOS, Linux, MacOS.</p>
 
-<p>Mesibo HTTP is a lightweight but fast and powerful HTTP client library compliant with RFC 7230-7235, 1738, 2046. Unlike other libraries, it is cross-platform and provides unified API across platforms.</p>
+<p>Mesibo HTTP is a lightweight but fast and powerful HTTP client library compliant with RFC 7230-7235, 1738, 2046. Unlike other libraries, it is cross-platform and provides a unified API across platforms.</p>
 
 <h2 id="get-started-with-apis">Get Started with APIs</h2>
 <p>Now let’s get started with each type of APIs in detail:</p>
@@ -283,7 +283,7 @@
 							
 							
 							
-							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=api">api</a></span>
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=chat api">chat api</a>, <a href="/documentation/glossary/?term=real-time chat api">real-time chat api</a>, <a href="/documentation/glossary/?term=backend api">backend api</a>, <a href="/documentation/glossary/?term=chat api documentation">chat api documentation</a>, <a href="/documentation/glossary/?term=developer guide for chat app">developer guide for chat app</a>, <a href="/documentation/glossary/?term=sdk reference">sdk reference</a>, <a href="/documentation/glossary/?term=types of api">types of api</a>, <a href="/documentation/glossary/?term=messaging api user guide">messaging api user guide</a>, <a href="/documentation/glossary/?term=http library">http library</a></span>
 							
 							<!-- link corrections -->
               <script language="JavaScript">
@@ -326,7 +326,7 @@
 								<div class="feedback-links">
 									<ul>
 										
-										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
 										<!-- toggle mode -->
 										<li>
 											<div class="toggle-mode">
@@ -353,8 +353,8 @@
   <li><a href="/documentation/api/#prerequisites" class="nomunge">Prerequisites</a></li>
   <li><a href="/documentation/api/#type-of-apis" class="nomunge">Type of APIs</a>
     <ul>
-      <li><a href="/documentation/api/#real-time-apis-app-or-client-side-apis" class="nomunge">Real-time APIs (App or Client Side APIs)</a></li>
-      <li><a href="/documentation/api/#non-real-time-back-end-api-server-side-api" class="nomunge">Non real-time Back-end API (Server side API)</a></li>
+      <li><a href="/documentation/api/#real-time-apis-app-or-user-side-apis" class="nomunge">Real-time APIs (App or User-side APIs)</a></li>
+      <li><a href="/documentation/api/#non-real-time-back-end-api-server-side-api" class="nomunge">Non-real-time Back-end API (Server-side API)</a></li>
     </ul>
   </li>
   <li><a href="/documentation/api/#mesibo-http-library" class="nomunge">Mesibo HTTP Library</a></li>

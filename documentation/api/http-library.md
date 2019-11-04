@@ -1,7 +1,8 @@
 ---
-title: Mesibo HTTP Library
-description: Mesibo HTTP Library for Android, iOS, Linux, Mac
-keywords: mesibo, http, android, ios, linux, mac
+title: Mesibo HTTP Library for Android, iOS, Linux, Mac
+heading: Mesibo HTTP Library 
+description: Mesibo HTTP is a light but fast and powerful http client library compliant with RFC 7230-7235, 1738, 2046. It is an extension of mesibo real-time Client APIs.
+keywords: http library for android, ios, http protocol, http requests, http client library, mesibo http benefits
 ---
 ### Introduction
 
@@ -20,7 +21,7 @@ Advantages of using mesibo HTTP over other APIs:
 - HTTP persistent connections and request pipelining
 - Efficient and configurable cache
 - Resuming broken downloads and uploads
-- POST, upload, download - all can be combined in a single request, if required Seamless and automatic support of multi-part requests
+- POST, upload, download - all can be combined in a single request, if required Seamless and automatic support of multipart requests
 - HTTP Basic Digest authentication
 - Proxy authentication
 - Precise status and progress update of every state of HTTP protocol
@@ -93,7 +94,7 @@ if([http executeAndWait]) {
 
 ### Queuing &amp; limiting simultaneous connections
 
-In above code examples, all the HTTP requests execute immediately and parallelly; however, often it’s desirable to queue the requests to limit the resource utilization and the number of simultaneous connections. This is where queue helps.
+In the above code examples, all the HTTP requests execute immediately and parallelly; however, often it’s desirable to queue the requests to limit the resource utilization and the number of simultaneous connections. This is where queue helps.
 
 Queue lets you control the number of HTTP requests to execute in parallel. You can add your request into the front or the back of a queue, and queue processes one by one from the front. If the number of simultaneous connection limit is not reached, then the queue executes request immediately, else it will wait for the next available slot.
 
@@ -158,7 +159,7 @@ OR
 
 ## Mesibo HTTP Object
 
-Following is the description of all the parameters of Mesibo Http object for both, Android and iOS.
+Following is the description of all the parameters of Mesibo Http object for both Android and iOS.
 
 **Android:**
 
@@ -192,7 +193,7 @@ Mesibo.Http
 |uploadFileType|File Type to be sent|
 |extraHeaders|Any custom headers you like to send|
 |userAgent|User Agent, default mesibo/x.x|
-|referrer|HTTP referrer header|
+|referrer|HTTP referer header|
 |origin|HTTP origin header|
 |encoding|HTTP content encoding header|
 |cacheControl|HTTP Cache Control header|
@@ -220,7 +221,7 @@ Mesibo.Http
 
 ### Listener and App Context Fields
 
-|listener|Listener to be called. mesibo invokes listener with three parameters<ol>- this object- State - state can be either STATE_UPLOAD (sending header, sending post data and/or uploading file ) or STATE_DOWNLOAD (receiving response data / download file data)- Progress, 0 to 100. In case of error, -1 will be sent and error field will be set.</ol>Return Value: listener MUST return true to continue or false to abort/cancel.Listener MUST always check the state before interpreting the progress. For example, when sending a POST request, listener will be invoked twice with progress == 100: first time when the post data is sent and the second time when the response is received. In this case, received response is only valid when percent == 100 and the state is STATE_DOWNLOADFor Android, listener is an instance of mesibo.HttpListener().For iOS, it’s a block of type mesibo_HttpListner.|
+|listener|Listener to be called. mesibo invokes listener with three parameters<ol>- this object- State - state can be either STATE_UPLOAD (sending header, sending post data and/or uploading file ) or STATE_DOWNLOAD (receiving response data / download file data)- Progress, 0 to 100. In case of error, -1 will be sent and error field will be set.</ol>Return Value: listener MUST return true to continue or false to abort/cancel.Listener MUST always check the state before interpreting the progress. For example, when sending a POST request, the listener will be invoked twice with progress == 100: first time when the post data is sent and the second time when the response is received. In this case, received response is only valid when percent == 100 and the state is STATE_DOWNLOADFor Android, listener is an instance of mesibo.HttpListener().For iOS, it’s a block of type mesibo_HttpListner.|
 |onMainThread|Invoke listener in the main thread. Set this to false if you don’t need to update UI. Default, true|
 |handler|Optional, default null (android) or nil(iOS)[Android] android.os.handler object where listener will be posted[iOS]dispatch_queue where listener will be posted|
 |other|User-defined object (for example, to store app state or context)|

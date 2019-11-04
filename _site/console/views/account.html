@@ -102,13 +102,13 @@
                            <tbody>
 								<tr>
                                  <td>Monthly Active Users</td>
-                                 <td>{{(user['q'].q_mau > 0)?user['q'].q_mau:'Unlimited'}}</td>
+                                 <td>{{(user['q'].q_mau < 100000000)?user['q'].q_mau:'Unlimited'}}</td>
 								 <td>{{user['account'].u_mau}}</td>
 								</tr>
 								<tr>
                                  <td>Concurrent Users</td>
-                                 <td>{{(user['q'].q_conn > 0)?user['q'].q_conn + '% of MAU':'Unlimited'}}</td>
-								 <td>{{user['account'].u_conn}}</td>
+                                 <td>{{(user['q'].q_conn < 100000000)?user['q'].q_conn + '% of MAU':'Unlimited'}}</td>
+								 <td>{{user['account'].u_connpeak_disp}}</td>
 								</tr>
 								<tr>
                                  <td>Real-time Bandwidth</td>
@@ -203,7 +203,7 @@
 								
                            </tbody>
                         </table>
-						<p class="margin-bottom-0"><strong>*</strong> Pay as you go rates will be applied only when you cross the free tier limit during each billing period. For more information, see the pricing <a href="../pricing.html#pricing-notes" target="_blank"><strong>Notes</strong></a> and <a href="../pricing.html#pricing-faq" target="_blank"><strong>FAQs</strong></a></p>
+						<p class="margin-bottom-0"><strong>*</strong> Pay as you go rates will be applied only when you cross the free tier limit during each billing period. For more information, see the pricing <a href="../pricing/#pricing-notes" target="_blank"><strong>Notes</strong></a> and <a href="../pricing/#pricing-faq" target="_blank"><strong>FAQs</strong></a></p>
 						<p class="margin-bottom-0"><strong>**</strong> Concurrent users limit will be 10% of MAU (unlimited in On-Premise). However, in case you cross the limit, it will be compensated by billing you for MAU = ( concurrent users X 10).</p>
 						
 						<p><a href="#payment"><button type="button" class="btn btn-primary btn-sm pull-right" ng-hide="false">ADD CREDITS</button></a></p>

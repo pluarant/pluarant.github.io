@@ -1,0 +1,1535 @@
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
+<!-- relative link basehrefs -->
+
+	
+	
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+			
+
+
+<!-- Logic for 'edit this button' -->
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+			
+<!-- edit url temporarily disabled Mesibo -->
+
+
+<!-- End of logic for 'edit this button' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/documentation/on-premise/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta name="msapplication-TileImage" content="/favicons/mesibo-favicon.png">
+	<link rel="mesibo-favicon" type="image/png" href="/favicons/mesibo-favicon.png" sizes="129x128">
+	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
+	<!-- metadata -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesibo"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="Loadable Modules - add your own custom features to Mesibo"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="Imagine, if you could have the ability to process every message between your users, or could add custom features and functionalities. For example, create chatbots, filter profanity, translate messages between..." />
+	<meta name="twitter:image:src" content="/images/docs@2x.png" />
+	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="open, source, on-premise, messaging, chat, voice, video, loadable modules">
+	<link rel="stylesheet" href="/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="/css/bootstrap.min.css" >
+	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
+	<link id="pagestyle" rel="stylesheet" href="/css/style.css" >
+
+	<!-- Go get "Open Sans" font from Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- SEO stuff -->
+	<title>Loadable Modules - add your own custom features to Mesibo | Mesibo Documentation</title>
+<meta property="og:title" content="Loadable Modules - add your own custom features to Mesibo" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Loadable Modules - add your own custom features to Mesibo" />
+<meta property="og:description" content="Loadable Modules - add your own custom features to Mesibo" />
+<link rel="canonical" href="/documentation/on-premise/loadable-modules/" />
+<meta property="og:url" content="/documentation/on-premise/loadable-modules/" />
+<meta property="og:site_name" content="Mesibo Documentation" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Loadable Modules - add your own custom features to Mesibo","description":"Loadable Modules - add your own custom features to Mesibo","url":"https://docs.docker.com/documentation/on-premise/loadable-modules/"}</script>
+	<!-- END SEO STUFF -->
+	
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	</script>
+	<!-- Google Analytic Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  
+		ga('create', 'UA-97488698-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytic Code --> 	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '559862854355634'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=559862854355634&ev=PageView
+		&noscript=1"/>
+		</noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body ng-app="Docker" ng-controller="DockerController" class="colums">
+	<header>
+		 <nav class="nav-secondary navbar navbar-fixed-top">
+    <!-- <div class="fan"></div> -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/"><img class="logo" src="/images/mesibo-logo-white.png" alt="Mesibo Docs" title="Mesibo Docs"></a>
+        </div>
+        <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <div class="search-form" id="search-div" style="visibility: hidden">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <!-- Yusuf
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="btn-group" style="visibility: hidden">
+  <button type="button" class="btn btn-default dropdown-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mesibo latest (current)   <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="/v1.0.0/">Mesibo v1.0.0</a></li>
+  </ul>
+</div>
+
+    </div>
+    -->
+</div>
+
+        </div>
+    </div>
+</nav>
+
+	</header>
+
+	<div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							
+							
+							<h1>Loadable Modules - add your own custom features to Mesibo</h1>
+							 
+
+							 <span class="reading-time" title="Estimated reading time">
+  <span class="reading-time-label">Estimated reading time: </span>
+  
+  
+    44 minutes
+  
+</span>
+
+							
+							
+							<p>Imagine, if you could have the ability to process every message between your users, or could add custom features and functionalities. For example, create chatbots, filter profanity, translate messages between sender and recipient, analyze messages with machine learning and AI tools, and more. This can open up a plethora of creative possibilities for your apps.  Now with mesibo modules, all of this is possible!.</p>
+
+<p>Mesibo is designed “<strong>by Developers for Developers</strong>!”. As developers, we understand that a platform is very limited unless it allows its users to build more features and functionalities on it. This is how Mesibo loadable modules come in.</p>
+
+<p>Mesibo loadable modules let you expand mesibo by adding your own features and functionalities. You can build powerful chatbots, filters, remotely communicate with hardware for IoT and robotics, integrate with Machine learning and Scientific computing backend such as Tensorflow, Dialogflow, Matlab, etc. and much more, keeping your data secure and private in your own premises or private cloud.</p>
+
+<p>This makes mesibo the most compelling real-time communication platform existing today. In this document, we will describe how you can build and use mesibo modules to unlock new possibilities and innovative solutions.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+  <li><a href="/documentation/on-premise/">Running Mesibo On-Premise</a></li>
+  <li>Knowledge of Building and deploying C/C++ shared libraries</li>
+</ul>
+
+<h2 id="what-is-a-mesibo-module">What is a Mesibo Module?</h2>
+
+<p>Mesibo module is essentially a message processor that allows you to intercept each message and decide whether to pass the message to the destination as it is, drop it or process it before sending it to the destination.</p>
+
+<p>For example,</p>
+
+<ul>
+  <li>a <strong>profanity filter module</strong> can drop messages containing profanity</li>
+  <li>a <strong>translator module</strong> can translate each message before sending it to the destination</li>
+  <li>a <strong>chatbot module</strong> can analyze messages using various AI and machine learning tools like Tensorflow, Dialogflow, etc. and send an automatic reply</li>
+</ul>
+
+<p>The functionality of each module is programmed by you, and its capability is limited only by your imagination.  Mesibo modules make Mesibo a powerful communication platform.</p>
+
+<p>You can build a mesibo module on top of the core platform, as a shared library (a <code class="highlighter-rouge">.so</code> file) and load it to extend the functionality of the mesibo platform.</p>
+
+<p><img src="Mesibo_Loadable_Modules.jpg" alt="Module Architecture" /></p>
+
+<h3 id="how-do-mesibo-modules-work">How do Mesibo Modules work?</h3>
+<p>A Mesibo module is a shared library (<code class="highlighter-rouge">.so</code> file) that can be loaded at runtime by the Mesibo on-premise server. Mesibo then invokes various callback functions that you have defined in the shared library whenever it receives messages from your users. Your module can then decide what to do with those messages, for example:</p>
+
+<ul>
+  <li>Pass the message as it is</li>
+  <li>Drop it</li>
+  <li>Process it further before sending it to the destination</li>
+  <li>Reply to the sender</li>
+</ul>
+
+<p><img src="module_flow_chart.jpg" alt="Module Flowchart" /></p>
+
+<p>You can load multiple modules, each having their own features and functionalities. It is also possible to load the same module multiple times with different configurations. You can specify all the modules and the loading order in the Mesibo configuration file, <code class="highlighter-rouge">/etc/mesibo/mesibo.conf</code>. Mesibo will pass the data to each module in the order in which modules were loaded.</p>
+
+<p><img src="module_chain_process.jpg" alt="Module Chain" /></p>
+
+<p>Creating a mesibo module is extremely easy. For example, you can implement a simple profanity filter module as follows.</p>
+
+<h3 id="building-a-profanity-filter">Building a profanity filter</h3>
+
+<ul>
+  <li>Implement a callback function to process all the incoming messages and pass it to mesibo - we will call it <code class="highlighter-rouge">on_message</code> function</li>
+  <li>When any user sends a message, Mesibo will invoke <code class="highlighter-rouge">on_message</code> callback function of your module with the message data, and its associated message parameters such as sender, expiry, flags, etc.</li>
+  <li>Your module can analyze the message to find any profanity or objectionable content and return whether the message is safe or not.</li>
+  <li>If no profanity is found, you can <code class="highlighter-rouge">PASS</code> the message and safely send it to the recipient; else you can <code class="highlighter-rouge">CONSUME</code> the unsafe message and prevent the message from reaching the receiver.</li>
+</ul>
+
+<p>Now that you understand the basic functionality of a Mesibo module, let’s dive deeper into the technical details of what forms a mesibo module.</p>
+
+<h2 id="anatomy-of-a-mesibo-module">Anatomy of a Mesibo Module</h2>
+
+<p>A Mesibo module has three components:</p>
+
+<ol>
+  <li>An initialization function which will be called once by Mesibo after loading the module</li>
+  <li>A set of callback functions that will be defined by the module. These functions are called by Mesibo as and when required</li>
+  <li>A module definition structure which declares above-mentioned functions and other configuration information</li>
+</ol>
+
+<p><img src="module_process_diagram.jpg" alt="Anatomy of Module" /></p>
+
+<h2 id="module-definition">Module Definition</h2>
+<p>A mesibo module is described by <code class="highlighter-rouge">mesibo_module_t</code> structure as defined below. This is one of the most important data structures used in the Mesibo module.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span> <span class="n">mesibo_module_s</span> <span class="p">{</span>
+    <span class="n">mesibo_uint_t</span>    <span class="n">version</span><span class="p">;</span>     <span class="cm">/* mesibo module API version */</span>
+    <span class="n">mesibo_uint_t</span>    <span class="n">flags</span><span class="p">;</span>        <span class="cm">/* module flags */</span>
+
+    <span class="k">const</span> <span class="kt">char</span>         <span class="o">*</span><span class="n">name</span><span class="p">;</span>        <span class="cm">/* module name */</span>    
+    <span class="k">const</span> <span class="kt">char</span>         <span class="o">*</span><span class="n">description</span><span class="p">;</span>    <span class="cm">/* module description */</span>    
+    <span class="kt">void</span>        <span class="o">*</span><span class="n">ctx</span><span class="p">;</span>        <span class="cm">/* module context */</span>
+    <span class="n">module_config_t</span> <span class="o">*</span><span class="n">config</span><span class="p">;</span>    <span class="cm">/* module configuration */</span>
+
+    <span class="n">mesibo_int_t</span>    <span class="p">(</span><span class="o">*</span><span class="n">on_cleanup</span><span class="p">)(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">);</span>
+
+    <span class="n">mesibo_int_t</span>    <span class="p">(</span><span class="o">*</span><span class="n">on_message</span><span class="p">)(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">,</span> <span class="n">mesibo_message_params_t</span> <span class="o">*</span><span class="n">params</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">message</span><span class="p">,</span> <span class="n">mesibo_uint_t</span> <span class="n">len</span><span class="p">);</span>
+    <span class="n">mesibo_int_t</span>    <span class="p">(</span><span class="o">*</span><span class="n">on_message_status</span><span class="p">)(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">,</span> <span class="n">mesibo_message_params_t</span> <span class="o">*</span><span class="n">params</span><span class="p">,</span> <span class="n">mesibo_uint_t</span>  <span class="n">status</span><span class="p">);</span>
+    
+    <span class="n">mesibo_int_t</span>    <span class="p">(</span><span class="o">*</span><span class="n">on_call</span><span class="p">)(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">);</span>
+    <span class="n">mesibo_int_t</span>    <span class="p">(</span><span class="o">*</span><span class="n">on_call_status</span><span class="p">)(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">);</span>
+
+    <span class="n">mesibo_int_t</span>    <span class="p">(</span><span class="o">*</span><span class="n">on_login</span><span class="p">)(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">,</span> <span class="n">mesibo_user_t</span> <span class="o">*</span><span class="n">user</span><span class="p">);</span>
+
+    <span class="n">mesibo_uint_t</span>    <span class="n">signature</span><span class="p">;</span>    <span class="cm">/* module signature */</span>
+
+    <span class="kt">uintptr_t</span>    <span class="n">reserved_0</span><span class="p">;</span>
+    <span class="kt">uintptr_t</span>    <span class="n">reserved_1</span><span class="p">;</span>
+    <span class="kt">uintptr_t</span>    <span class="n">reserved_2</span><span class="p">;</span>
+    <span class="kt">uintptr_t</span>    <span class="n">reserved_3</span><span class="p">;</span>
+    <span class="kt">uintptr_t</span>    <span class="n">reserved_4</span><span class="p">;</span>
+    <span class="kt">uintptr_t</span>    <span class="n">reserved_5</span><span class="p">;</span>
+    <span class="kt">uintptr_t</span>    <span class="n">reserved_6</span><span class="p">;</span>
+    <span class="kt">uintptr_t</span>    <span class="n">reserved_7</span><span class="p">;</span>
+    
+    <span class="c1">//this function will be initialized by Mesibo
+</span>    <span class="n">mesibo_int_t</span>    <span class="p">(</span><span class="o">*</span><span class="n">invoke</span><span class="p">)(</span><span class="n">mesibo_int_t</span> <span class="n">id</span><span class="p">,</span> <span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">,</span> <span class="p">...);</span>
+<span class="p">}</span> <span class="n">mesibo_module_t</span><span class="p">;</span>
+
+</code></pre></div></div>
+
+<p>In the next section, we will learn how to initialize the module definition structure. Before that, it is essential to know how Mesibo knows about your module and loads it into the memory.</p>
+
+<h3 id="loading-a-module">Loading a module</h3>
+<p>To load a module, you need to tell mesibo where to find your module, the directory path where your module shared library (<code class="highlighter-rouge">.so</code> file) is located, and the name of the module. You need to specify these details in the configuration file <code class="highlighter-rouge">/etc/mesibo/mesibo.conf</code>. You can also pass any other configuration that your module requires in the configuration files.</p>
+
+<p>By default, mesibo looks for the file <code class="highlighter-rouge">mesibo_mod_&lt;module name&gt;.so</code> in <code class="highlighter-rouge">/usr/lib64/mesibo/</code> directory. For example, if your module name is <code class="highlighter-rouge">chatbot</code>, mesibo will try to load the file <code class="highlighter-rouge">/usr/lib64/mesibo/mesibo_mod_chatbot.so</code></p>
+
+<p>Since mesibo on-premise runs in a docker container, you can keep modules in any directory and map the directory path by using the <code class="highlighter-rouge">-v</code> option when you run the Mesibo container. You also need to mount the directory <code class="highlighter-rouge">/etc/mesibo/</code> which contains your mesibo configuration file <code class="highlighter-rouge">mesibo.conf</code> where you need to specify the name of the module and configuration. For example,</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>docker run  <span class="nt">-v</span> /certs:/certs <span class="nt">-v</span> /usr/lib64/mesibo/:/usr/lib64/mesibo/ <span class="se">\</span>
+         <span class="nt">-v</span> /etc/mesibo:/etc/mesibo <span class="nt">-net</span> host <span class="nt">-d</span> mesibo/mesibo &lt;app token&gt; 
+</code></pre></div></div>
+
+<h3 id="mesibo-configuration-file">Mesibo Configuration file</h3>
+
+<p>To load a module, you need to specify the module name in the configuration file <strong>mesibo.conf</strong>. For example,</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> module &lt;module name&gt;
+</code></pre></div></div>
+
+<p>Each module can have its own configuration. You can specify the module configuration consisting of <code class="highlighter-rouge">name</code> and the corresponding <code class="highlighter-rouge">value</code>, as shown below.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module &lt;module name&gt; {
+  &lt;config name&gt; = &lt;config value&gt;
+  &lt;config name&gt; = &lt;config value&gt;
+  .
+  .
+  .
+}
+</code></pre></div></div>
+
+<p>For example, for a module named <code class="highlighter-rouge">skeleton</code>, you can provide the configuration details as follows.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module skeleton {
+  file_name = xyz
+  auth_key = abc
+}
+
+</code></pre></div></div>
+
+<p>To load multiple modules and their respective configuration :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module &lt;module_1 name&gt; {
+  /**Configuration for module-1 **/
+  }
+
+module &lt;module_2 name&gt; {
+  /**Configuration for module-2 **/
+  }
+ .
+ .
+ .
+module &lt;module_N name&gt; {
+  /**Configuration for module-N **/
+  }
+  
+</code></pre></div></div>
+
+<p>The configuration items that you specify in the module configuration file will be available during module initialization as key-value pairs.</p>
+
+<p>Refer to the code example in the next section to see how configuration details are passed during the initialization.</p>
+
+<h2 id="module-initialization">Module initialization</h2>
+<p>Mesibo initializes each module by calling a module initialization function.  The naming convention for this function is <code class="highlighter-rouge">mesibo_module_&lt;module name&gt;_init</code>. For example, if your module name is <code class="highlighter-rouge">chatbot</code>, the name of your initialization function MUST be <code class="highlighter-rouge">mesibo_module_chatbot_init</code>.</p>
+
+<p>Your module MUST define this function. If not, mesibo will not be able to load the module, and the error message will be shown during the mesibo initialization. The prototype for which can be found in the file <a href="https://github.com/mesibo/onpremise-loadable-modules/tree/master/include/module.h">module.h</a>.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">mesibo_module_</span><span class="o">&lt;</span><span class="n">module</span> <span class="n">name</span><span class="o">&gt;</span><span class="n">_init</span><span class="p">(</span><span class="n">mesibo_int_t</span> <span class="n">version</span><span class="p">,</span> <span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">,</span> <span class="n">mesibo_int_t</span> <span class="n">len</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>The initialization function takes the following parameters:</p>
+<ol>
+  <li><code class="highlighter-rouge">version</code> of type <code class="highlighter-rouge">mesibo_int_t</code>, Version of mesibo module. You must check that the <code class="highlighter-rouge">version</code> matches <code class="highlighter-rouge">MESIBO_MODULE_VERSION</code> to ensure that the on-premise mesibo server is using the same module version as the module.</li>
+  <li><code class="highlighter-rouge">mod</code> of type <code class="highlighter-rouge">mesibo_module_t*</code>, pointer to mesibo module configuration structure. Mesibo allocates this structure and passes it to module. The module must initialize this structure with the callback function pointer and the module description.</li>
+  <li><code class="highlighter-rouge">len</code> of type <code class="highlighter-rouge">mesibo_uint_t</code>, size of module definition structure. You must check that the <code class="highlighter-rouge">len</code> matches <code class="highlighter-rouge">sizeof(mesibo_module_t)</code> to ensure that the on-premise mesibo server is using the same module definition structure as the module.</li>
+</ol>
+
+<blockquote>
+  <p>Mesibo provides a macro <code class="highlighter-rouge">MESIBO_MODULE_SANITY_CHECK</code> which does all the above checks and more. You should use it as the first line in your initialization code.</p>
+</blockquote>
+
+<p>The configuration items that you specified in the <a href="#module-configuration-file">Module Configuration file</a> is available as a list of items in the structure <code class="highlighter-rouge">module_config_t</code> where each item is a name-value pair of the type <code class="highlighter-rouge">module_config_item_t</code></p>
+
+<p>For example, for a module named <code class="highlighter-rouge">skeleton</code>, you may define configuration as below</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module skeleton {
+  file_name = xyz
+  auth_key = abc
+}
+</code></pre></div></div>
+
+<p>the initialization function looks like as follows:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">mesibo_module_skeleton_init</span><span class="p">(</span><span class="n">mesibo_int_t</span> <span class="n">version</span><span class="p">,</span> <span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">m</span><span class="p">,</span> <span class="n">mesibo_uint_t</span> <span class="n">len</span><span class="p">)</span> <span class="p">{</span>
+    
+    	<span class="n">MESIBO_MODULE_SANITY_CHECK</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">version</span><span class="p">.</span> <span class="n">len</span><span class="p">);</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="n">m</span><span class="o">-&gt;</span><span class="n">config</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">mesibo_log</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">"Following configuration item(s) were passed to the module</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+                <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">m</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">mesibo_log</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"module config item: name: %s value: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> 
+                        <span class="n">m</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="n">items</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span><span class="p">,</span> 
+                        <span class="n">m</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="n">items</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">value</span><span class="p">);</span>
+                <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="n">m</span><span class="o">-&gt;</span><span class="n">flags</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="n">m</span><span class="o">-&gt;</span><span class="n">description</span> <span class="o">=</span> <span class="n">strdup</span><span class="p">(</span><span class="s">"Sample Module"</span><span class="p">);</span>
+
+	<span class="c1">// initialize callback functions 
+</span>    	<span class="n">m</span><span class="o">-&gt;</span><span class="n">on_cleanup</span> <span class="o">=</span> <span class="n">skeleton_on_cleanup</span><span class="p">;</span>
+        <span class="n">m</span><span class="o">-&gt;</span><span class="n">on_message</span> <span class="o">=</span> <span class="n">skeleton_on_message</span><span class="p">;</span>
+        <span class="n">m</span><span class="o">-&gt;</span><span class="n">on_message_status</span> <span class="o">=</span> <span class="n">skeleton_on_message_status</span><span class="p">;</span>
+        <span class="n">m</span><span class="o">-&gt;</span><span class="n">on_login</span> <span class="o">=</span> <span class="n">skeleton_on_login</span><span class="p">;</span>
+        <span class="n">mesibo_log</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">"================&gt; %s init called</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">m</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">);</span>
+
+        <span class="k">return</span> <span class="n">MESIBO_RESULT_OK</span><span class="p">;</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Above code will print the configuration details for the example module <code class="highlighter-rouge">skeleton</code> in logs:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Following configuration item(s) were passed to the module
+module config item: name: file_name value: abc
+module config item: name: auth_key value: xyz
+</code></pre></div></div>
+
+<h2 id="module-callback-functions">Module Callback Functions</h2>
+<p>There is a set of callback functions that need to be defined by the module. These callback functions are called by Mesibo based on different events. For example,</p>
+
+<ul>
+  <li>When users send a message</li>
+  <li>When there is a status update for the messages sent by the module</li>
+  <li>When users make a call</li>
+  <li>When users logs-in or logs-out</li>
+  <li>When the module is unloaded, to reclaim memory/ perform the cleanup</li>
+</ul>
+
+<p>The module needs to initialize the module definition structure with callback function pointers during the initialization, as shown in the above example. In above initialization example, <code class="highlighter-rouge">skeleton_cleanup</code>, <code class="highlighter-rouge">skeleton_on_message</code>, <code class="highlighter-rouge">skeleton_on_message_status</code>, <code class="highlighter-rouge">skeleton_on_login</code> are callback functions.</p>
+
+<p>It is not mandatory to define all the callbacks. A module can define only those callbacks that the module is interested in. The function prototypes for all the callback functions are found in the file <a href="https://github.com/mesibo/onpremise-loadable-modules/tree/master/include/module.h">module.h</a>.</p>
+
+<blockquote>
+  <p>You MUST not block any callback functions. If your processing requires time, you MUST process them in a separate thread.</p>
+</blockquote>
+
+<p>Let’s look in detail at the different callback functions and their prototypes:</p>
+
+<h3 id="on_message">on_message</h3>
+<p>This function is called whenever a user sends a message. The module can process messages or can ignore as appropriate. The module can then indicate Mesibo whether to pass the message to the next module/recipient OR drop it by returning an appropriate value.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">mesibo_int_t</span> <span class="p">(</span><span class="o">*</span><span class="n">on_message</span><span class="p">)(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">,</span>
+                             <span class="n">mesibo_message_params_t</span> <span class="o">*</span><span class="n">params</span><span class="p">,</span>
+                             <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">message</span><span class="p">,</span> <span class="n">mesibo_uint_t</span> <span class="n">len</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Parameters:</p>
+<ol>
+  <li><code class="highlighter-rouge">mod</code>, pointer to mesibo module structure</li>
+  <li><code class="highlighter-rouge">params</code>, pointer to message parameters structure. It contains message parameters such as <code class="highlighter-rouge">id</code>, <code class="highlighter-rouge">from</code>-  sender of the message, <code class="highlighter-rouge">to</code>-  message recipient, etc. For more details, refer <a href="#module-data-structures">Module Data Structures</a>.</li>
+  <li><code class="highlighter-rouge">message</code>, buffer containing the message data bytes</li>
+  <li><code class="highlighter-rouge">len</code>, length of the message in bytes</li>
+</ol>
+
+<p>Returns:</p>
+<ul>
+  <li><code class="highlighter-rouge">MESIBO_RESULT_PASS</code> to pass the message data and parameters as it is to the next module or the recipient</li>
+  <li><code class="highlighter-rouge">MESIBO_RESULT_CONSUMED</code> message is consumed by the module and will not be passed to the next module or the recipient</li>
+</ul>
+
+<p>Your processing MUST not block this function since it will block other messages. If your processing requires time or you are invoking REST APIs, you should copy data and process it in a separate thread.</p>
+
+<h3 id="on_message_status">on_message_status</h3>
+<p>This function is called whenever there is a status update for the messages sent from the module</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mesibo_int_t</span> <span class="p">(</span><span class="o">*</span><span class="n">on_message_status</span><span class="p">)(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">,</span>
+                                    <span class="n">mesibo_message_params_t</span> <span class="o">*</span><span class="n">params</span><span class="p">,</span>
+                                    <span class="n">mesibo_uint_t</span> <span class="n">status</span><span class="p">);</span>
+</code></pre></div></div>
+<p>Parameters:</p>
+<ol>
+  <li><code class="highlighter-rouge">mod</code>, pointer to mesibo module structure</li>
+  <li><code class="highlighter-rouge">params</code>, pointer to message parameters structure. It contains message parameters such as <code class="highlighter-rouge">id</code>, <code class="highlighter-rouge">from</code>-  sender of the message, <code class="highlighter-rouge">to</code>-  message recipient, etc. For more details, refer <a href="#module-data-structures">Module Data Structures</a>.</li>
+  <li><code class="highlighter-rouge">status</code> containing the status of the sent message which corresponds to different <a href="https://mesibo.com/documentation/api/real-time-api/data-structures/#messageparams">status codes</a> such as <code class="highlighter-rouge">MSGSTATUS_SENT</code>, <code class="highlighter-rouge">MSGSTATUS_DELIVERED</code>, <code class="highlighter-rouge">MSGSTATUS_READ</code>, etc</li>
+</ol>
+
+<p>Returns:</p>
+
+<p><code class="highlighter-rouge">MESIBO_RESULT_OK</code></p>
+
+<h3 id="on_call">on_call</h3>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mesibo_int_t</span> <span class="p">(</span><span class="o">*</span><span class="n">on_call</span><span class="p">)(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="on_call_status">on_call_status</h3>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mesibo_int_t</span> <span class="p">(</span><span class="o">*</span><span class="n">on_call_status</span><span class="p">)(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="on_login">on_login</h3>
+<p>This function is called whenever a user logs-in or logs-out.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mesibo_int_t</span> <span class="p">(</span><span class="o">*</span><span class="n">on_login</span><span class="p">)(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">,</span> <span class="n">mesibo_user_t</span> <span class="o">*</span><span class="n">user</span><span class="p">);</span>
+</code></pre></div></div>
+<p>Parameters:</p>
+<ol>
+  <li><code class="highlighter-rouge">mod</code>, pointer to mesibo module structure</li>
+  <li><code class="highlighter-rouge">user</code>, pointer to mesibo user structure. Refer <a href="#module-data-structures">Module Data Structures</a>. Contains user parmeters flag, user address and online status.</li>
+</ol>
+
+<p>Returns:</p>
+
+<p><code class="highlighter-rouge">MESIBO_RESULT_OK</code></p>
+
+<h3 id="on_cleanup">on_cleanup</h3>
+<p>This function is called when the module process is complete and to clean up.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mesibo_int_t</span> <span class="p">(</span><span class="o">*</span><span class="n">on_cleanup</span><span class="p">)(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="module-helper-functions">Module Helper Functions</h2>
+<p>Mesibo provides various helper functions for tasks like <a href="#mesibo_message">send a message</a>, <a href="#mesibo_http">send an HTTP request</a>, <a href="#mesibo_log">print logs</a>, etc.</p>
+
+<h3 id="mesibo_message">mesibo_message</h3>
+<p>This function can be used to send messages from the module to users and groups.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">mesibo_int_t</span> <span class="n">mesibo_message</span><span class="p">(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">,</span> <span class="n">mesibo_message_params_t</span> <span class="o">*</span><span class="n">params</span><span class="p">,</span>
+                      <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">message</span><span class="p">,</span> <span class="n">mesibo_uint_t</span> <span class="n">len</span><span class="p">);</span>
+</code></pre></div></div>
+<p>Parameters:</p>
+<ol>
+  <li><code class="highlighter-rouge">mod</code>, pointer to mesibo module structure</li>
+  <li><code class="highlighter-rouge">params</code>, pointer to message parameters structure. It contains message parameters such as <code class="highlighter-rouge">id</code>, <code class="highlighter-rouge">from</code>-  sender of the message, <code class="highlighter-rouge">to</code>-  message recipient, etc. For more details, refer <a href="#module-data-structures">Module Data Structures</a>.</li>
+  <li><code class="highlighter-rouge">message</code>, buffer containing the message data bytes</li>
+  <li><code class="highlighter-rouge">len</code>, length of the message in bytes</li>
+</ol>
+
+<p>Returns:
+Integer : 0 on success , -1 on failure</p>
+
+<p>For example,</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mesibo_message_params_t</span> <span class="n">p</span><span class="p">;</span>
+<span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">p</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">p</span><span class="p">));</span>
+
+<span class="n">p</span><span class="p">.</span><span class="n">to</span> <span class="o">=</span> <span class="err">'</span><span class="n">user_source</span><span class="err">'</span><span class="p">;</span>
+<span class="n">p</span><span class="p">.</span><span class="n">from</span> <span class="o">=</span> <span class="err">'</span><span class="n">user_destination</span><span class="err">'</span><span class="p">;</span>
+<span class="n">p</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">rand</span><span class="p">();</span>
+
+<span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">message</span> <span class="o">=</span> <span class="s">"Hello from Module"</span><span class="p">;</span>
+
+<span class="n">mesibo_uint_t</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
+<span class="n">mesibo_message</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">p</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="mesibo_http">mesibo_http</h3>
+<p>This function can be used to make an HTTP request. It is especially useful to invoke services like DialogFlow, etc.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mesibo_int_t</span> <span class="n">mesibo_http</span><span class="p">(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">url</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">post</span><span class="p">,</span>
+              <span class="n">mesibo_module_http_data_callback_t</span> <span class="n">cb</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span><span class="n">cbdata</span><span class="p">,</span>
+              <span class="n">module_http_option_t</span> <span class="o">*</span><span class="n">opt</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Parameters:</p>
+<ol>
+  <li><code class="highlighter-rouge">mod</code>, pointer to mesibo module structure</li>
+  <li><code class="highlighter-rouge">url</code>, both http and https URL are supported. You can also pass authentication information in URL. For example, https://username:password@yourapiurl.com</li>
+  <li><code class="highlighter-rouge">post</code>, is a string that contains raw POST data. For example, “authtoken=xyz&amp;user=abc”</li>
+  <li><code class="highlighter-rouge">cb</code>, is the call back function pointer whose prototype should match <code class="highlighter-rouge">mesibo_module_http_data_callback_t</code>. You will get the response of your http request, asynchronously through this callback function. Refer the example <a href="#http-callback-function">HTTP Callback Function</a> provided.</li>
+  <li><code class="highlighter-rouge">cbdata</code> is a pointer to data of arbitrary user-defined type. This callback data is passed on to the callback function that you have passed in the previous argument. You can store data of any arbitrary type such as a C/C++ struct and pass it as callback data to your call back function. For more details, refer to the <a href="">sample code</a></li>
+  <li><code class="highlighter-rouge">opt</code> is the structure that contains <code class="highlighter-rouge">options</code> or additional parameters that you can pass in your HTTP request such as extra_header, content_type, etc. For more details about the <code class="highlighter-rouge">module_http_option_t</code> structure, refer <a href="#module-data-structures">Module Data Structures</a>.</li>
+</ol>
+
+<p>Returns:
+Integer : 0 on success , -1 on failure</p>
+
+<p>For example,</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">url</span> <span class="o">=</span> <span class="s">"https://example.com/api.php"</span><span class="p">;</span> <span class="c1">//API endpoint
+</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">post</span> <span class="o">=</span> <span class="s">"op=userdel&amp;token=123434343xxxxxxxxx&amp;uid=456"</span><span class="p">;</span> <span class="c1">// POST Request Data
+</span><span class="n">mesibo_http</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">post</span><span class="p">,</span> <span class="n">mesibo_http_callback</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="http-callback-function">HTTP Callback Function</h4>
+<p>The callback function reference, <code class="highlighter-rouge">cb</code> that you pass as a parameter should be defined as per the function prototype <code class="highlighter-rouge">mesibo_module_http_data_callback_t</code> in <code class="highlighter-rouge">module.h</code>.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="kt">int</span> <span class="p">(</span><span class="o">*</span><span class="n">mesibo_module_http_data_callback_t</span><span class="p">)(</span><span class="kt">void</span> <span class="o">*</span><span class="n">cbdata</span><span class="p">,</span>
+                                                  <span class="n">mesibo_int_t</span> <span class="n">state</span><span class="p">,</span>
+                                                  <span class="n">mesibo_int_t</span> <span class="n">progress</span><span class="p">,</span>
+                                                  <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">buffer</span><span class="p">,</span>
+                                                  <span class="n">mesibo_int_t</span> <span class="n">size</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>The callback function takes the following parameters:</p>
+<ol>
+  <li><code class="highlighter-rouge">cbdata</code>, Pointer to arbitrary data, which the response callback function may need. You pass this while calling the request function <a href="#http">http</a></li>
+  <li><code class="highlighter-rouge">state</code>, An integer indicating the state of the response data being passed</li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">enum</span> <span class="p">{</span>
+  <span class="n">MODULE_HTTP_STATE_REQUEST</span><span class="p">,</span>
+  <span class="n">MODULE_HTTP_STATE_REQBODY</span><span class="p">,</span>
+  <span class="n">MODULE_HTTP_STATE_RESPHEADER</span><span class="p">,</span>
+  <span class="n">MODULE_HTTP_STATE_RESPBODY</span><span class="p">,</span>
+  <span class="n">MODULE_HTTP_STATE_DONE</span>
+<span class="p">}</span> <span class="n">module_http_state_t</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ol>
+  <li><code class="highlighter-rouge">progress</code>, progress from 0 to 100. Progress is negative (&lt; 0) for error</li>
+  <li><code class="highlighter-rouge">buffer</code>, response data</li>
+  <li><code class="highlighter-rouge">size</code>, size of data in the buffer, in bytes</li>
+</ol>
+
+<p>For example,</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="kt">int</span> <span class="nf">mesibo_http_callback</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="n">cbdata</span><span class="p">,</span> <span class="n">mesibo_int_t</span> <span class="n">state</span><span class="p">,</span>
+        <span class="n">mesibo_int_t</span> <span class="n">progress</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">buffer</span><span class="p">,</span>
+        <span class="n">mesibo_int_t</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="n">tMessageContext</span> <span class="o">*</span><span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="n">tMessageContext</span> <span class="o">*</span><span class="p">)</span><span class="n">cbdata</span><span class="p">;</span>
+    <span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span> <span class="o">=</span> <span class="n">b</span><span class="o">-&gt;</span><span class="n">mod</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">progress</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">mesibo_log</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s">" Error in http callback </span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        
+        <span class="c1">// cleanup
+</span>        
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">state</span> <span class="o">!=</span> <span class="n">MODULE_HTTP_STATE_RESPBODY</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">memcpy</span><span class="p">(</span><span class="n">b</span><span class="o">-&gt;</span><span class="n">buffer</span> <span class="o">+</span> <span class="n">b</span><span class="o">-&gt;</span><span class="n">datalen</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">size</span><span class="p">);</span>
+    <span class="n">b</span><span class="o">-&gt;</span><span class="n">datalen</span> <span class="o">+=</span> <span class="n">size</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">progress</span> <span class="o">==</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// process it ...
+</span>    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h3 id="mesibo_log">mesibo_log</h3>
+<p>This function can be used to print to mesibo container logs.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mesibo_int_t</span> <span class="n">mesibo_log</span><span class="p">(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">,</span> <span class="n">mesibo_uint_t</span> <span class="n">level</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">format</span><span class="p">,</span>
+        <span class="p">...);</span>
+
+</code></pre></div></div>
+
+<p>Parameters:</p>
+<ol>
+  <li><code class="highlighter-rouge">mod</code>, Pointer to mesibo module structure</li>
+  <li><code class="highlighter-rouge">level</code>, log level. The logs with level 0 will always be printed. 
+If level &gt; 0, logs will be printed only if the level is enabled in the configuration file</li>
+  <li><code class="highlighter-rouge">format</code>, string for printing data which is similar to that of <code class="highlighter-rouge">printf</code> followed by the data to print.</li>
+</ol>
+
+<p>Returns:
+Integer : 0 on success , -1 on failure</p>
+
+<p>For example,</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mesibo_log</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"%s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="s">"Hello, from Mesibo Module!"</span><span class="p">);</span>
+</code></pre></div></div>
+<h3 id="mesibo_util_getconfig">mesibo_util_getconfig</h3>
+<p>This function can be used to get the value of a configuration item from the name-value configuration list passed in <code class="highlighter-rouge">/etc/mesibo/mesibo.conf</code></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">char</span><span class="o">*</span> <span class="n">mesibo_util_getconfig</span><span class="p">(</span><span class="n">mesibo_module_t</span><span class="o">*</span> <span class="n">mod</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">item_name</span><span class="p">);</span>
+</code></pre></div></div>
+<p>Parameters:</p>
+<ol>
+  <li><code class="highlighter-rouge">mod</code>, Pointer to mesibo module structure</li>
+  <li><code class="highlighter-rouge">item_name</code>, Name of the configuration item</li>
+</ol>
+
+<p>Returns:
+String: Configuration item value</p>
+
+<p>For example,
+If the configuration is provided as</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module skeleton {
+file = abc
+auth_token = xyz
+}
+</code></pre></div></div>
+<p>Then,</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">char</span><span class="o">*</span> <span class="n">item_val</span> <span class="o">=</span>  <span class="n">mesibo_util_getconfig</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="s">"file"</span><span class="p">);</span>
+</code></pre></div></div>
+<p><code class="highlighter-rouge">item_val</code> will contain the string <code class="highlighter-rouge">abc</code>.</p>
+
+<h3 id="mesibo_util_json_extract">mesibo_util_json_extract</h3>
+<p>This function can be used to get the value of a key in a JSON string.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">char</span><span class="o">*</span> <span class="n">mesibo_util_json_extract</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">src</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">key</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">next</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Parameters:</p>
+<ol>
+  <li><code class="highlighter-rouge">src</code>, JSON string source</li>
+  <li><code class="highlighter-rouge">key</code>, Key string</li>
+  <li><code class="highlighter-rouge">next</code>, Pointer to the next byte after the searched item</li>
+</ol>
+
+<p>Returns: String: Value Matching the Key in the JSON string.</p>
+
+<p>For example,</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">char</span><span class="o">*</span> <span class="n">test_json</span> <span class="o">=</span> <span class="n">strdup</span><span class="p">(</span><span class="s">"{ </span><span class="se">\"</span><span class="s">name</span><span class="se">\"</span><span class="s">:</span><span class="se">\"</span><span class="s">apple</span><span class="se">\"</span><span class="s">, </span><span class="se">\"</span><span class="s">game</span><span class="se">\"</span><span class="s"> : </span><span class="se">\"</span><span class="s">ball</span><span class="se">\"</span><span class="s"> }"</span><span class="p">);</span>
+<span class="kt">char</span><span class="o">*</span> <span class="n">value</span> <span class="o">=</span> <span class="n">mesibo_util_json_extract</span><span class="p">(</span><span class="n">test_json</span><span class="p">,</span> <span class="s">"name"</span> <span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+</code></pre></div></div>
+<p><code class="highlighter-rouge">value</code> will contain the string <code class="highlighter-rouge">apple</code></p>
+
+<h2 id="module-data-structures">Module Data Structures</h2>
+
+<h3 id="message-parameters-structure">Message Parameters Structure</h3>
+<p>The C/C++ structure <code class="highlighter-rouge">mesibo_message_params_t</code> is used to define the various parameters of an incoming or an outgoing message. Message params is used as argument to functions such as <code class="highlighter-rouge">on_message</code>, <code class="highlighter-rouge">on_message_status</code>, <code class="highlighter-rouge">send_message</code>, etc.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span> <span class="n">mesibo_message_params_s</span> <span class="p">{</span>
+    <span class="n">mesibo_uint_t</span> <span class="n">aid</span><span class="p">;</span>
+    <span class="n">mesibo_uint_t</span> <span class="n">id</span><span class="p">;</span>  
+    <span class="n">mesibo_uint_t</span> <span class="n">refid</span><span class="p">;</span>
+    <span class="n">mesibo_uint_t</span> <span class="n">groupid</span><span class="p">;</span>
+    <span class="n">mesibo_uint_t</span> <span class="n">flags</span><span class="p">;</span>
+    <span class="n">mesibo_uint_t</span> <span class="n">type</span><span class="p">;</span>
+    <span class="n">mesibo_uint_t</span> <span class="n">expiry</span><span class="p">;</span>
+    <span class="n">mesibo_uint_t</span> <span class="n">to_online</span><span class="p">;</span>
+
+    <span class="kt">char</span> <span class="o">*</span><span class="n">to</span><span class="p">,</span> <span class="o">*</span><span class="n">from</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">mesibo_message_params_t</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="highlighter-rouge">aid</code> - Application ID.</li>
+  <li><code class="highlighter-rouge">id</code>  - ID of the incoming message. For outgoing messages, id should be specified in <code class="highlighter-rouge">send_message</code> function.</li>
+  <li><code class="highlighter-rouge">refid</code> - Reference id (id of another message) to which the current message can be linked against.</li>
+  <li><code class="highlighter-rouge">groupid</code> - Group ID should be specified when sending a message to a group, 0 for one-to-one messages.</li>
+  <li><code class="highlighter-rouge">flags</code>- Message Flags</li>
+  <li><code class="highlighter-rouge">type</code> - Message Type, any arbitrary user-defined types</li>
+  <li><code class="highlighter-rouge">expiry</code> - Message Expiry for an outgoing message (time to live), in seconds</li>
+  <li><code class="highlighter-rouge">to_online</code> - Send the message only if the recipient is online</li>
+</ul>
+
+<h3 id="mesibo-user">Mesibo User</h3>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span>  <span class="n">mesibo_user_s</span> <span class="p">{</span>
+    <span class="n">mesibo_uint_t</span> <span class="n">flags</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">address</span><span class="p">;</span>
+    <span class="n">mesibo_int_t</span> <span class="n">online</span><span class="p">;</span>
+
+<span class="p">}</span><span class="n">mesibo_user_t</span><span class="p">;</span>
+</code></pre></div></div>
+<ul>
+  <li><code class="highlighter-rouge">flags</code> - User flags</li>
+  <li><code class="highlighter-rouge">address</code>- User Address. Can be any sequence of characters that identifies a user</li>
+  <li><code class="highlighter-rouge">online</code> - Online Status of user</li>
+</ul>
+
+<h3 id="http-options-structure">HTTP Options Structure</h3>
+<p>To pass<code class="highlighter-rouge">options</code> parameter of a HTTP request in the function <a href="#mesibo_http">mesibo_http()</a> you use the C/C++ structure <code class="highlighter-rouge">module_http_option_t</code></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span> <span class="n">_module_http_option_t</span> <span class="p">{</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">proxy</span><span class="p">;</span>
+
+    <span class="c1">// body or post data
+</span>    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">content_type</span><span class="p">;</span>  <span class="c1">// body content type
+</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">extra_header</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">user_agent</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">referrer</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">origin</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">cookie</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">encoding</span><span class="p">;</span>  <span class="c1">// could be gzip, deflate, identity, br (do not use
+</span>    <span class="c1">// 'compress' which is obsolete)
+</span>    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">cache_control</span><span class="p">;</span>  <span class="c1">// cache control and expiry
+</span>    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">accept</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">etag</span><span class="p">;</span>
+    <span class="n">mesibo_uint_t</span> <span class="n">ims</span><span class="p">;</span>  <span class="c1">// if modified since, gmt time
+</span>
+    <span class="n">mesibo_uint_t</span> <span class="n">maxredirects</span><span class="p">;</span>
+
+    <span class="n">mesibo_uint_t</span> <span class="n">conn_timeout</span><span class="p">,</span> <span class="n">header_timeout</span><span class="p">,</span> <span class="n">body_timeout</span><span class="p">,</span> <span class="n">total_timeout</span><span class="p">;</span>
+
+    <span class="n">mesibo_uint_t</span> <span class="n">retries</span><span class="p">;</span>
+
+<span class="p">}</span> <span class="n">module_http_option_t</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="options-fields">Options Fields</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">proxy</code> Proxy URL, if any.</li>
+  <li><code class="highlighter-rouge">content_type</code> Content-Type header. For example “application/json”.</li>
+  <li><code class="highlighter-rouge">extra_header</code> Any custom headers you like to send, such as contain Authorisation header, etc</li>
+  <li><code class="highlighter-rouge">user_agent</code> User Agent, default mesibo/x.x</li>
+  <li><code class="highlighter-rouge">referrer</code> HTTP referer header</li>
+  <li><code class="highlighter-rouge">origin</code> HTTP origin header</li>
+  <li><code class="highlighter-rouge">cookie</code> Send HTTP Cookie Header</li>
+  <li><code class="highlighter-rouge">encoding</code> HTTP content encoding header</li>
+  <li><code class="highlighter-rouge">cache_control</code> HTTP content encoding header</li>
+  <li><code class="highlighter-rouge">accept</code></li>
+  <li><code class="highlighter-rouge">etag</code></li>
+  <li><code class="highlighter-rouge">ims</code> Set If-Modified-SInce header, timestamp</li>
+  <li><code class="highlighter-rouge">maxredirects</code></li>
+  <li><code class="highlighter-rouge">conn_timeout</code>, <code class="highlighter-rouge">header_timeout</code>, <code class="highlighter-rouge">body_timeout</code>, <code class="highlighter-rouge">total_timeout</code> are Settable Timeouts for every state of the protocol (connection, headers, body)</li>
+  <li><code class="highlighter-rouge">retries</code> Retry broken downloads and uploads</li>
+</ul>
+
+<h3 id="module-configuration-structure">Module Configuration Structure</h3>
+<p>The configuration attributes for a module can be provided as a configuration list which shall be made available in the mesibo module initialization function, through the following structures</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span> <span class="n">module_config_item_s</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">value</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">module_config_item_t</span><span class="p">;</span>
+</code></pre></div></div>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span> <span class="n">module_configs_s</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+    <span class="n">module_config_item_t</span> <span class="n">items</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="p">}</span> <span class="n">module_config_t</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">module_config_t</code> contains <code class="highlighter-rouge">count</code>- the number of items in the configuration list &amp;  a list of items of type  <code class="highlighter-rouge">module_config_item_t</code> - a structure containing a name-value pair.</p>
+
+<h2 id="memory-management">Memory Management</h2>
+<p>Since Mesibo is capable of handling millions of messages and users, your module callback functions can be invoked millions of times. Hence, you should avoid allocating memory dynamically. Instead, you should try to allocate required memory and complex operations during initialization.</p>
+
+<h4 id="module-definition-structures">Module Definition Structures</h4>
+<p>Module definition structure is allocated by Mesibo, and you MUST not free it.</p>
+
+<h4 id="config-items-structures">Config Items Structures</h4>
+<p>Configuration items structure is allocated by Mesibo and can be freed if required. However, configuration key-value pairs are statically allocated. You can freely use those pointers but should never free them.</p>
+
+<h2 id="writing-and-compiling-mesibo-modules">Writing and Compiling Mesibo Modules</h2>
+<p>We have published source code of various useful modules like a chatbot, translation, filter, etc. on <a href="https://github.com/mesibo/onpremise-loadable-modules">GitHub</a>. It is recommended that you start by downloading the repository.</p>
+
+<p>The repository also contains the source code of a skeleton module and other necessary files like a module header file and a Makefile to compile a base module quickly. You can then modify it to suit your needs.</p>
+
+<h3 id="downloading-the-sample-modules-repository">Downloading the Sample Modules Repository</h3>
+
+<h4 id="clone-the-repository-recommended">Clone the Repository (Recommended)</h4>
+<p>If you have git installed, this is a recommended approach as you can quickly sync and stay up to date with the latest version. This is also a preferred way of downloading the code if you decide to contribute to the project.</p>
+
+<p>To download, open a terminal and issue following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mkdir mesibo-modules
+$ cd mesibo-modules
+$ git clone https://github.com/mesibo/onpremise-loadable-modules.git
+</code></pre></div></div>
+
+<h4 id="download-the-code-as-a-zip-file">Download the code as a zip file</h4>
+<p>You can also download the complete modules repository as a zip file. Although simple, the downside of this approach is that you will have to download the full source code every time it is updated on the repository.</p>
+
+<p>Click on the <code class="highlighter-rouge">Download</code> button to start downloading.</p>
+
+<p><a href="https://github.com/mesibo/onpremise-loadable-modules/archive/master.zip" class="button outline-btn" style="margin-bottom: 10px; margin-right: 100%">Download</a></p>
+
+<p>Once the download completes,</p>
+
+<ol>
+  <li>Compile all the sample modules to ensure that modules compile successfully on your machine.</li>
+  <li>Make a copy of <code class="highlighter-rouge">skeleton</code> module</li>
+  <li>Modify <code class="highlighter-rouge">skeleton</code> module by changing the module name, callback functions, etc. For a detailed example, refer to the <a href="#building-a-chat-bot">Building a chat-bot</a> below</li>
+  <li>Edit <code class="highlighter-rouge">MakeFile</code> and modify the <code class="highlighter-rouge">MODULE</code> field to reflect module name in the output file correctly</li>
+</ol>
+
+<div class="language-cmake highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Sample MakeFile to build mesibo module </span>
+MODULE=skeleton
+
+include ../make.inc/make.inc
+</code></pre></div></div>
+
+<h2 id="code-references-and-examples">Code references and Examples</h2>
+
+<h3 id="building-a-chat-bot">Building a chat-bot</h3>
+<p>Now since we have learned about how the module works, we will build a simple but capable chatbot, which can integrate powerful analytical abilities in speech, image recognition, Natural Language processing, etc. in your backend using loadable modules. You can interface with any tool or library of your choice, such as Dialogflow, IBM Watson, Tensorflow, etc.</p>
+
+<p><img src="module_chat_bot.jpg" alt="Module Chatbot Sample" /></p>
+
+<p>Let’s look at how you can build a chatbot using mesibo modules:</p>
+
+<ul>
+  <li>Create a dedicated user (destination) for the chatbot, so that when a user sends a message to this destination, chatbot functionality can be invoked.</li>
+  <li>When a user sends a message, your module will get the message text via the callback function <code class="highlighter-rouge">on_message</code> along with message parameters.</li>
+  <li>Check <code class="highlighter-rouge">'to'</code> field (destination) in message parameters to check if it was sent to the chatbot. If it’s not the chatbot destination, return PASS as explained in <code class="highlighter-rouge">on_message</code> callback function description so that the message can be sent to the requested destination.</li>
+  <li>Send the message to your message processing model which could be a local function or a remote service like Dialogflow, IBM Watson, Tensorflow, etc. Your messaging processing model will process the message and send the appropriate response.</li>
+  <li>You can send the response back to the user (sender) using <code class="highlighter-rouge">mesibo_message</code> function.</li>
+</ul>
+
+<p>Refer to the <a href="https://github.com/mesibo/onpremise-loadable-modules/tree/master/chatbot">Sample Chatbot Module</a> source code which demonstrates building your module with a Dialogflow chatbot.</p>
+
+<p>For this chatbot example, We will be using DiaglogFlow to process messages. Hence, before we dive into the code, let us quickly understand how Dialogflow works. You can skip this section if you are already familiar with Dialogflow.</p>
+
+<h3 id="basics-of-dialogflow">Basics of Dialogflow</h3>
+<p>Dialogflow is an AI powered Google service to build interactive conversational interfaces, such as chatbots. Once you train DialogFlow using data of your interest like emails, FAQs, etc., it can answer questions from your users in natural language.</p>
+
+<p>Dialogflow service is available through a REST interface. For more details on using Dialogflow , refer <a href="https://cloud.google.com/dialogflow/docs/quick/api">DialogFlow Documentation</a></p>
+
+<h4 id="configuring-dialogflow-api-v2">Configuring Dialogflow API (V2)</h4>
+<p>To use Dialogflow API, you will need two parameters which you can obtain from the Google Cloud Console.</p>
+
+<ul>
+  <li>GCP project ID</li>
+  <li>Access Token</li>
+</ul>
+
+<p>Following are the the steps:</p>
+
+<ol>
+  <li>Set up a <a href="https://console.cloud.google.com">GCP Console</a> project.
+    <ul>
+      <li>Create or select a project and note the project ID</li>
+      <li>Create a service account</li>
+      <li>Download a private service account key as JSON</li>
+    </ul>
+  </li>
+  <li>Set the environment variable <code class="highlighter-rouge">GOOGLE_APPLICATION_CREDENTIALS</code> pointing to the JSON file downloaded in the Step 1.</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/service-account-file.json"
+</code></pre></div></div>
+
+<ol>
+  <li><a href="https://cloud.google.com/sdk/docs/">Install and initialize the Cloud SDK</a></li>
+  <li>Print your access token by using the following command</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo $(gcloud auth application-default print-access-token)
+</code></pre></div></div>
+
+<p>which should output something like</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ya29.c.Kl6iB-r90Gjj4o--m7k7wr4dN4b84U4TLEtPqdEZ2xvfsj01awmUObMDEFwJIJ1lkZPym5dsAw44MbZDSaksLH3xKbsSHGLgWeEXqIPSDmFO6
+</code></pre></div></div>
+<p>This is the access token, save it for later use.</p>
+
+<h4 id="invoking-dialogflow-api">Invoking Dialogflow API</h4>
+<p>Once we have project ID and the access token, invoking DialogFlow API is as simple as invoking following URL with access token and the data:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://dialogflow.googleapis.com/v21/projects/&lt;Project ID&gt;/agent/sessions/&lt;Session ID&gt;
+</code></pre></div></div>
+
+<p>where <code class="highlighter-rouge">Project ID</code> is the GCP Project ID obtained earlier. <code class="highlighter-rouge">Session ID</code> can be a random number or some type of user and session identifiers (preferably hashed).</p>
+
+<p>For example, a sample dialogflow REST URL looks like</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://dialogflow.googleapis.com/v2/mesibo-dialogflow/agent/sessions/123456789
+</code></pre></div></div>
+
+<p>Now, you can send a POST request to the above URL in the following format.</p>
+
+<p>Pass the authentication information in the request header.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Authorization: Bearer &lt;YOUR_ACCESS_TOKEN&gt;
+Content-Type: application/json
+</code></pre></div></div>
+
+<p>and your text/message in the POST data in a JSON string as shown below:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "queryInput": {
+ 	{
+	"text": {
+		"text": &lt;message text&gt;}
+        	"languageCode" : &lt;source language&gt;
+	}   
+    }
+}
+</code></pre></div></div>
+
+<p>That’s it!</p>
+
+<p>Now since we know how to use mesibo-modules and the DialogFlow REST API, following is a step-by-step tutorial for building a chat-bot using mesibo module with Dialogflow:</p>
+
+<h3 id="1-create-the-cc-source-file">1. Create The C/C++ Source file</h3>
+
+<p>Since we will be building a chatbot , let our module name be <code class="highlighter-rouge">chatbot</code>. Create a C/C++ Source file named <code class="highlighter-rouge">chatbot.c</code> and 
+include the header file <code class="highlighter-rouge">module.h</code> in your code.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include "module.h"
+</span></code></pre></div></div>
+
+<h3 id="2configuration-for-the-chatbot-module">2.Configuration for the chatbot module</h3>
+<p>The chatbot module uses DialogFlow. It would be nice if we can define some configuration entities to configure chatbot parameters and DialogFlow parameters.</p>
+
+<p>We will define the following configurable items for The chatbot module:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module chatbot{
+	project = &lt;Project ID&gt;
+	endpoint = &lt;Dialogflow REST Endpoint&gt;
+	access_token = &lt;Service Account key&gt;
+	language = &lt;Source Language&gt;
+	address = &lt;Chatbot User Address&gt;
+	log = &lt;log level&gt;
+}
+</code></pre></div></div>
+
+<p>For example,</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module chatbot{
+	project = mesibo-chatbot
+	endpoint = https://dialogflow.googleapis.com/v2
+	access_token = xxxxxx.Kl6iBzVH7dvV2XywzpnehLJwczdClfMoAHHOeTVNFkmTjqVX7VagKHH1-xxxxxxx
+	language = en
+	address = my_chatbot
+	log = 1
+}
+</code></pre></div></div>
+
+<h3 id="3-initialize-the-module">3. Initialize the module</h3>
+<p>Now, we need to provide the initialization function for our module. Since we chose the name for the module as <code class="highlighter-rouge">chatbot</code>, the name of the initialization function will be <code class="highlighter-rouge">mesibo_module_chatbot_init</code>, as defined below.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">mesibo_module_chatbot_init</span><span class="p">(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">m</span><span class="p">,</span> <span class="n">mesibo_uint_t</span> <span class="n">len</span><span class="p">)</span> <span class="p">{</span>
+    
+	<span class="n">MESIBO_MODULE_SANITY_CHECK</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">version</span><span class="p">.</span> <span class="n">len</span><span class="p">);</span>
+    
+	<span class="n">m</span><span class="o">-&gt;</span><span class="n">flags</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="n">m</span><span class="o">-&gt;</span><span class="n">description</span> <span class="o">=</span> <span class="n">strdup</span><span class="p">(</span><span class="s">"Sample Chatbot Module"</span><span class="p">);</span>
+	<span class="n">m</span><span class="o">-&gt;</span><span class="n">on_message</span> <span class="o">=</span> <span class="n">chatbot_on_message</span><span class="p">;</span>
+    
+	<span class="c1">//Read configuration
+</span>	<span class="k">if</span><span class="p">(</span><span class="n">m</span><span class="o">-&gt;</span><span class="n">config</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">chatbot_config_t</span><span class="o">*</span> <span class="n">cbc</span> <span class="o">=</span> <span class="n">get_config_dialogflow</span><span class="p">(</span><span class="n">m</span><span class="p">);</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">cbc</span>  <span class="o">==</span> <span class="nb">NULL</span><span class="p">){</span>
+                        <span class="n">mesibo_log</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">MODULE_LOG_LEVEL_0VERRIDE</span><span class="p">,</span> <span class="s">"%s : Missing Configuration</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">m</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">);</span>
+                        <span class="k">return</span> <span class="n">MESIBO_RESULT_FAIL</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="n">m</span><span class="o">-&gt;</span><span class="n">ctx</span> <span class="o">=</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="p">)</span><span class="n">cbc</span><span class="p">;</span>
+
+                <span class="kt">int</span> <span class="n">init_status</span> <span class="o">=</span> <span class="n">chatbot_init_dialogflow</span><span class="p">(</span><span class="n">m</span><span class="p">);</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">init_status</span> <span class="o">!=</span> <span class="n">MESIBO_RESULT_OK</span><span class="p">){</span>
+                        <span class="n">mesibo_log</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">MODULE_LOG_LEVEL_0VERRIDE</span><span class="p">,</span> <span class="s">"%s : Bad Configuration</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">m</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">);</span>
+                        <span class="k">return</span> <span class="n">MESIBO_RESULT_FAIL</span><span class="p">;</span>
+                <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="n">MESIBO_RESULT_FAIL</span><span class="p">;</span>
+        <span class="p">}</span>
+
+    	<span class="k">return</span> <span class="n">MESIBO_RESULT_OK</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Here, We are first checking the sanity using <code class="highlighter-rouge">MESIBO_MODULE_SANITY_CHECK</code> and then retrieving the configuration and storing it in the module context <code class="highlighter-rouge">m-&gt;ctx</code> so that it is available whenever module callbacks are invoked.</p>
+
+<p>We will use the following configuration structure <code class="highlighter-rouge">chatbot_config_t</code> to store the configuration:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span> <span class="n">chatbot_config_s</span> <span class="p">{</span>
+        <span class="cm">/* To be configured in module configuration file */</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">project</span><span class="p">;</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">endpoint</span><span class="p">;</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">access_token</span><span class="p">;</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">address</span><span class="p">;</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">language</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">log</span><span class="p">;</span>
+
+        <span class="cm">/* To be configured by dialogflow init function */</span>
+        <span class="kt">char</span><span class="o">*</span> <span class="n">post_url</span><span class="p">;</span>
+        <span class="kt">char</span><span class="o">*</span> <span class="n">auth_bearer</span><span class="p">;</span>
+        <span class="n">module_http_option_t</span><span class="o">*</span> <span class="n">chatbot_http_opt</span><span class="p">;</span>
+
+<span class="p">}</span> <span class="n">chatbot_config_t</span><span class="p">;</span>
+
+</code></pre></div></div>
+
+<p>A helper function, <code class="highlighter-rouge">mesibo_util_getconfig</code> can be used to get the configuation information, as shown below:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="n">chatbot_config_t</span><span class="o">*</span>  <span class="n">get_config_dialogflow</span><span class="p">(</span><span class="n">mesibo_module_t</span><span class="o">*</span> <span class="n">mod</span><span class="p">){</span>
+        <span class="n">chatbot_config_t</span><span class="o">*</span> <span class="n">cbc</span> <span class="o">=</span> <span class="p">(</span><span class="n">chatbot_config_t</span><span class="o">*</span><span class="p">)</span><span class="n">calloc</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">chatbot_config_t</span><span class="p">));</span>
+        <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">project</span> <span class="o">=</span> <span class="n">mesibo_util_getconfig</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="s">"project"</span><span class="p">);</span>
+        <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">endpoint</span> <span class="o">=</span> <span class="n">mesibo_util_getconfig</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="s">"endpoint"</span><span class="p">);</span>
+        <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">access_token</span> <span class="o">=</span> <span class="n">mesibo_util_getconfig</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="s">"access_token"</span><span class="p">);</span>
+        <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">address</span> <span class="o">=</span> <span class="n">mesibo_util_getconfig</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="s">"address"</span><span class="p">);</span>
+        <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">language</span> <span class="o">=</span> <span class="n">mesibo_util_getconfig</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="s">"language"</span><span class="p">);</span>
+        <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">log</span> <span class="o">=</span> <span class="n">atoi</span><span class="p">(</span><span class="n">mesibo_util_getconfig</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="s">"log"</span><span class="p">));</span>
+
+        <span class="k">return</span> <span class="n">cbc</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h4 id="initialize-rest-api-parameters">Initialize REST API parameters</h4>
+<p>Once we obtain the configuration, we can construct REST API parameters (URL and header) so that we can use it when required, rather than constructing them at runtime.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="kt">int</span> <span class="n">chatbot_init_dialogflow</span><span class="p">(</span><span class="n">mesibo_module_t</span><span class="o">*</span> <span class="n">mod</span><span class="p">){</span>
+        <span class="n">chatbot_config_t</span><span class="o">*</span> <span class="n">cbc</span> <span class="o">=</span> <span class="p">(</span><span class="n">chatbot_config_t</span><span class="o">*</span><span class="p">)</span><span class="n">mod</span><span class="o">-&gt;</span><span class="n">ctx</span><span class="p">;</span>
+
+        <span class="n">asprintf</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cbc</span><span class="o">-&gt;</span><span class="n">post_url</span><span class="p">,</span><span class="s">"%s/projects/%s/agent/sessions"</span><span class="p">,</span>
+                        <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">project</span><span class="p">);</span>
+        <span class="n">mesibo_log</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">log</span><span class="p">,</span> <span class="s">"Configured post URL for HTTP requests: %s </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">post_url</span><span class="p">);</span>
+
+        <span class="n">asprintf</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cbc</span><span class="o">-&gt;</span><span class="n">auth_bearer</span><span class="p">,</span><span class="s">"Authorization: Bearer %s"</span><span class="p">,</span> <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">access_token</span><span class="p">);</span>
+        <span class="n">mesibo_log</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">log</span><span class="p">,</span> <span class="s">"Configured auth bearer for HTTP requests with token: %s </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">auth_bearer</span> <span class="p">);</span>
+
+        <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">chatbot_http_opt</span> <span class="o">=</span> <span class="n">mesibo_chatbot_get_http_opt</span><span class="p">(</span><span class="n">cbc</span><span class="p">);</span>
+
+	<span class="k">return</span> <span class="n">MESIBO_RESULT_OK</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="3chatbot_on_message">3.<code class="highlighter-rouge">chatbot_on_message</code></h3>
+<p>We only need to process messages addressed to the configured <code class="highlighter-rouge">address</code> of the chatbot. For all other messages, we PASS the message as it is.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="n">mesibo_int_t</span> <span class="nf">chatbot_on_message</span><span class="p">(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">,</span> <span class="n">mesibo_message_params_t</span> <span class="o">*</span><span class="n">p</span><span class="p">,</span>
+                <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">message</span><span class="p">,</span> <span class="n">mesibo_uint_t</span> <span class="n">len</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="n">chatbot_config_t</span><span class="o">*</span> <span class="n">cbc</span> <span class="o">=</span> <span class="p">(</span><span class="n">chatbot_config_t</span><span class="o">*</span><span class="p">)</span><span class="n">mod</span><span class="o">-&gt;</span><span class="n">ctx</span><span class="p">;</span>
+        
+	<span class="k">if</span><span class="p">(</span><span class="mi">0</span> <span class="o">==</span> <span class="n">strcmp</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">to</span><span class="p">,</span> <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">address</span><span class="p">)){</span>
+                <span class="c1">// Don't modify original as other module will use it
+</span>                <span class="n">mesibo_message_params_t</span><span class="o">*</span> <span class="n">np</span> <span class="o">=</span> <span class="p">(</span><span class="n">mesibo_message_params_t</span><span class="o">*</span><span class="p">)</span><span class="n">calloc</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">mesibo_message_params_t</span><span class="p">));</span>
+                <span class="n">memcpy</span><span class="p">(</span><span class="n">np</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">mesibo_message_params_t</span><span class="p">));</span>
+                <span class="n">chatbot_process_message</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">np</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
+
+                <span class="k">return</span> <span class="n">MESIBO_RESULT_CONSUMED</span><span class="p">;</span>  <span class="c1">// Process the message and CONSUME original
+</span>        <span class="p">}</span>
+        
+	<span class="k">return</span> <span class="n">MESIBO_RESULT_PASS</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="4-processing-the-incoming-message-using-dialogflow">4. Processing the incoming message using DialogFlow</h3>
+<p>To process the incoming messages, we need to send them to DialogFlow and send the response back to the user.</p>
+
+<p>To invoke Dialogflow API, we will be using the helper function <code class="highlighter-rouge">mesibo_http</code>. DialogFlow expects the request data in JSON format. Ideally, we could have used a JSON library to encode the request.  However, JSON libraries are typically slow and are an overkill for this simple project. Hence, we directly construct the raw post data string.</p>
+
+<p>Once the response is received from DialogFlow, we need to send it to to the user who made the request. Hence, we store the context of the received message ie; message parameters, the sender of the message, the receiver of the message in the following structure and pass it as callback data in the http request.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span> <span class="n">message_context_s</span> <span class="p">{</span>
+        <span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">;</span>
+        <span class="n">mesibo_message_params_t</span> <span class="o">*</span><span class="n">params</span><span class="p">;</span>
+        <span class="kt">char</span> <span class="o">*</span><span class="n">from</span><span class="p">;</span>
+        <span class="kt">char</span> <span class="o">*</span><span class="n">to</span><span class="p">;</span>
+        <span class="c1">// To copy data in response
+</span>        <span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="n">HTTP_BUFFER_LEN</span><span class="p">];</span>
+        <span class="kt">int</span> <span class="n">datalen</span><span class="p">;</span>
+
+        <span class="kt">char</span><span class="o">*</span> <span class="n">post_data</span><span class="p">;</span> <span class="c1">//For cleanup after HTTP request is complete   
+</span><span class="p">}</span> <span class="n">message_context_t</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>The function to process the message and send an HTTP request to Dialogflow is as follows:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="kt">int</span> <span class="nf">chatbot_process_message</span><span class="p">(</span><span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span><span class="p">,</span> <span class="n">mesibo_message_params_t</span> <span class="o">*</span><span class="n">p</span><span class="p">,</span>
+                <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">message</span><span class="p">,</span> <span class="n">mesibo_uint_t</span> <span class="n">len</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="n">chatbot_config_t</span><span class="o">*</span> <span class="n">cbc</span> <span class="o">=</span> <span class="p">(</span><span class="n">chatbot_config_t</span><span class="o">*</span><span class="p">)</span><span class="n">mod</span><span class="o">-&gt;</span><span class="n">ctx</span><span class="p">;</span>
+
+        <span class="kt">char</span> <span class="n">post_url</span><span class="p">[</span><span class="n">HTTP_POST_URL_LEN_MAX</span><span class="p">];</span>
+        <span class="n">sprintf</span><span class="p">(</span><span class="n">post_url</span><span class="p">,</span> <span class="s">"%s/%lu:detectIntent"</span><span class="p">,</span><span class="n">cbc</span><span class="o">-&gt;</span><span class="n">post_url</span><span class="p">,</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">);</span> <span class="c1">//Pass Message ID as Session ID
+</span>        <span class="kt">char</span><span class="o">*</span> <span class="n">raw_post_data</span><span class="p">;</span> 
+        <span class="n">asprintf</span><span class="p">(</span><span class="o">&amp;</span><span class="n">raw_post_data</span><span class="p">,</span> <span class="s">"{</span><span class="se">\"</span><span class="s">queryInput</span><span class="se">\"</span><span class="s">:{</span><span class="se">\"</span><span class="s">text</span><span class="se">\"</span><span class="s">:{</span><span class="se">\"</span><span class="s">text</span><span class="se">\"</span><span class="s">:</span><span class="se">\"</span><span class="s">%.*s</span><span class="se">\"</span><span class="s">,</span><span class="se">\"</span><span class="s">languageCode</span><span class="se">\"</span><span class="s">:</span><span class="se">\"</span><span class="s">%s</span><span class="se">\"</span><span class="s">}}}"</span><span class="p">,</span>
+                        <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">len</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">language</span><span class="p">);</span>
+
+        <span class="n">message_context_t</span> <span class="o">*</span><span class="n">message_context</span> <span class="o">=</span>
+                <span class="p">(</span><span class="n">message_context_t</span> <span class="o">*</span><span class="p">)</span><span class="n">calloc</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">message_context_t</span><span class="p">));</span>
+        <span class="n">message_context</span><span class="o">-&gt;</span><span class="n">mod</span> <span class="o">=</span> <span class="n">mod</span><span class="p">;</span>
+        <span class="n">message_context</span><span class="o">-&gt;</span><span class="n">params</span> <span class="o">=</span> <span class="n">p</span><span class="p">;</span>
+        <span class="n">message_context</span><span class="o">-&gt;</span><span class="n">from</span> <span class="o">=</span> <span class="n">strdup</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">from</span><span class="p">);</span>
+        <span class="n">message_context</span><span class="o">-&gt;</span><span class="n">to</span> <span class="o">=</span> <span class="n">strdup</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">to</span><span class="p">);</span>
+        <span class="n">message_context</span><span class="o">-&gt;</span><span class="n">post_data</span> <span class="o">=</span> <span class="n">raw_post_data</span><span class="p">;</span>
+
+        <span class="n">mesibo_http</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">post_url</span><span class="p">,</span> <span class="n">raw_post_data</span><span class="p">,</span> <span class="n">chatbot_http_callback</span><span class="p">,</span>
+                        <span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="p">)</span><span class="n">message_context</span><span class="p">,</span> <span class="n">cbc</span><span class="o">-&gt;</span><span class="n">chatbot_http_opt</span><span class="p">);</span>
+                        
+        <span class="k">return</span> <span class="n">MESIBO_RESULT_OK</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="5-define-the-callback-function-to-receive-the-response-from-your-bot">5. Define the Callback function to receive the response from your bot</h3>
+
+<p>We will get the response for the POST request in the HTTP callback function passed to <code class="highlighter-rouge">mesibo_http</code>. You may get the response in multiple chunks. Hence you need to store the response data into a buffer untill the complete response is received.</p>
+
+<p>Dialogflow sends the response as a JSON string with the response text encoded in the field <code class="highlighter-rouge">fulfillmentText</code>. Hence, we first extract the response from the JSON string before we can send it back to the user. We will use a helper functon <code class="highlighter-rouge">mesibo_util_json_extract</code> to extract textual response from the JSON response.</p>
+
+<p>You can pass the message-id of the query message as reference-id for the response message. This way the client who sent the message will be able to match the response received with the query sent.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="kt">int</span> <span class="nf">chatbot_http_callback</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="n">cbdata</span><span class="p">,</span> <span class="n">mesibo_int_t</span> <span class="n">state</span><span class="p">,</span>
+                <span class="n">mesibo_int_t</span> <span class="n">progress</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">buffer</span><span class="p">,</span>
+                <span class="n">mesibo_int_t</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">message_context_t</span> <span class="o">*</span><span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="n">message_context_t</span> <span class="o">*</span><span class="p">)</span><span class="n">cbdata</span><span class="p">;</span>
+        <span class="n">mesibo_module_t</span> <span class="o">*</span><span class="n">mod</span> <span class="o">=</span> <span class="n">b</span><span class="o">-&gt;</span><span class="n">mod</span><span class="p">;</span>
+        <span class="n">chatbot_config_t</span><span class="o">*</span> <span class="n">cbc</span> <span class="o">=</span> <span class="p">(</span><span class="n">chatbot_config_t</span><span class="o">*</span><span class="p">)</span><span class="n">mod</span><span class="o">-&gt;</span><span class="n">ctx</span><span class="p">;</span>
+
+        <span class="n">mesibo_message_params_t</span> <span class="o">*</span><span class="n">params</span> <span class="o">=</span> <span class="n">b</span><span class="o">-&gt;</span><span class="n">params</span><span class="p">;</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">progress</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">mesibo_chatbot_destroy_message_context</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+                <span class="k">return</span> <span class="n">MESIBO_RESULT_FAIL</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">state</span> <span class="o">!=</span> <span class="n">MODULE_HTTP_STATE_RESPBODY</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="n">MESIBO_RESULT_OK</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">if</span> <span class="p">((</span><span class="n">progress</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">state</span> <span class="o">==</span> <span class="n">MODULE_HTTP_STATE_RESPBODY</span><span class="p">))</span> <span class="p">{</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="o">-&gt;</span><span class="n">datalen</span> <span class="o">+</span> <span class="n">size</span> <span class="o">&gt;</span> <span class="n">HTTP_BUFFER_LEN</span><span class="p">){</span>
+                                        <span class="s">"Error in http callback : Buffer overflow detected </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">mod</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">);</span>
+                        <span class="k">return</span> <span class="n">MESIBO_RESULT_FAIL</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="n">memcpy</span><span class="p">(</span><span class="n">b</span><span class="o">-&gt;</span><span class="n">buffer</span> <span class="o">+</span> <span class="n">b</span><span class="o">-&gt;</span><span class="n">datalen</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">size</span><span class="p">);</span>
+                <span class="n">b</span><span class="o">-&gt;</span><span class="n">datalen</span> <span class="o">+=</span> <span class="n">size</span><span class="p">;</span>
+        <span class="p">}</span>
+
+	<span class="k">if</span> <span class="p">(</span><span class="n">progress</span> <span class="o">==</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+
+                <span class="kt">char</span><span class="o">*</span> <span class="n">extracted_response</span> <span class="o">=</span> <span class="n">mesibo_util_json_extract</span><span class="p">(</span><span class="n">b</span><span class="o">-&gt;</span><span class="n">buffer</span> <span class="p">,</span> <span class="s">"fulfillmentText"</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+
+		<span class="n">mesibo_message_params_t</span> <span class="n">p</span><span class="p">;</span>
+                <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">p</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">mesibo_message_params_t</span><span class="p">));</span>
+                <span class="n">p</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">rand</span><span class="p">();</span>
+                <span class="n">p</span><span class="p">.</span><span class="n">refid</span> <span class="o">=</span> <span class="n">params</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">;</span>
+                <span class="n">p</span><span class="p">.</span><span class="n">aid</span> <span class="o">=</span> <span class="n">params</span><span class="o">-&gt;</span><span class="n">aid</span><span class="p">;</span>
+                <span class="n">p</span><span class="p">.</span><span class="n">from</span> <span class="o">=</span> <span class="n">params</span><span class="o">-&gt;</span><span class="n">to</span><span class="p">;</span>
+                <span class="n">p</span><span class="p">.</span><span class="n">to</span> <span class="o">=</span> <span class="n">params</span><span class="o">-&gt;</span><span class="n">from</span><span class="p">;</span> <span class="c1">// User adress who sent the query is the recipient
+</span>                <span class="n">p</span><span class="p">.</span><span class="n">expiry</span> <span class="o">=</span> <span class="mi">3600</span><span class="p">;</span>
+
+		<span class="n">mesibo_message</span><span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">p</span><span class="p">,</span> <span class="n">extracted_response</span> <span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">extracted_response</span><span class="p">));</span>
+
+                <span class="n">mesibo_chatbot_destroy_message_context</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="n">MESIBO_RESULT_OK</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h3 id="6-compile-the-chatbot-module">6. Compile the chatbot module</h3>
+<p>To compile your module, open the sample <code class="highlighter-rouge">MakeFile</code> provided. Change the <code class="highlighter-rouge">MODULE</code> to <code class="highlighter-rouge">chatbot</code>.</p>
+
+<p>For example.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MODULE = chatbot
+</code></pre></div></div>
+
+<p>Run <code class="highlighter-rouge">make</code> from your source directory.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo make
+</code></pre></div></div>
+
+<p>On successful build of your module, verify that the target path should contain your shared library <code class="highlighter-rouge">/usr/lib64/mesibo/mesibo_mod_chatbot.so</code></p>
+
+<h3 id="7-load-the-chatbot-module">7. Load the chatbot module</h3>
+<p>To load your chatbot module provide the configuration in <code class="highlighter-rouge">/etc/mesibo/mesibo.conf</code>. You can copy the configuration from <code class="highlighter-rouge">sample.conf</code> into <code class="highlighter-rouge">/etc/mesibo/mesibo.conf</code>and modify values accordingly. Change the value of <code class="highlighter-rouge">project</code> to match the Google Project you are using. Change the value of <a href="#getting-access-token"><code class="highlighter-rouge">access_token</code></a> to your <code class="highlighter-rouge">SERVICE_ACCOUNT_KEY</code>.</p>
+
+<p>Mount the directory containing your library which in this case is <code class="highlighter-rouge">/usr/lib64/mesibo/</code>, while running the mesibo container
+as follows. You also need to mount the directory containing the mesibo configuration file which in this case is <code class="highlighter-rouge">/etc/mesibo</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker run  -v /certs:/certs -v  /usr/lib64/mesibo/:/usr/lib64/mesibo/ \
+         -v /etc/mesibo:/etc/mesibo -net host -d mesibo/mesibo &lt;app token&gt; 
+</code></pre></div></div>
+
+							<!-- tags -->
+							
+							
+							
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=open">open</a>, <a href="/documentation/glossary/?term=source">source</a>, <a href="/documentation/glossary/?term=on-premise">on-premise</a>, <a href="/documentation/glossary/?term=messaging">messaging</a>, <a href="/documentation/glossary/?term=chat">chat</a>, <a href="/documentation/glossary/?term=voice">voice</a>, <a href="/documentation/glossary/?term=video">video</a>, <a href="/documentation/glossary/?term=loadable modules">loadable modules</a></span>
+							
+							<!-- link corrections -->
+              <script language="JavaScript">
+							var x = document.links.length;
+							var baseHref = document.getElementsByTagName('base')[0].href
+							for (i = 0; i < x; i++) {
+							  var munged = false;
+							  var thisHREF = document.links[i].href;
+							  var originalURL = "/documentation/on-premise/loadable-modules/";
+							  if (thisHREF.indexOf(baseHref + "#") > -1) {
+							    // hash fix
+							    //console.log('BEFORE: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							    thisHREF = originalURL + thisHREF.replace(baseHref, "");
+							    //console.log('AFTER: base:',baseHref,'thisHREF:',thisHREF,'originalURL:',originalURL);
+							  }
+							  if ((thisHREF.indexOf(window.location.hostname) > -1 || thisHREF.indexOf('http') == -1) && document.links[i].className.indexOf("nomunge") < 0) {
+							    munged = true;
+							    thisHREF = thisHREF.replace(".md", "/").replace("/index/", "/");
+							    document.links[i].setAttribute('href', thisHREF);
+							  }
+							}
+							</script>
+							
+							<!-- removed for mesibo -->
+							
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+							<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
+										<!-- toggle mode -->
+										<li>
+											<div class="toggle-mode">
+												<div class="icon">
+													<i class="fa fa-sun-o" aria-hidden="true"></i>
+												</div>
+												<div class="toggle-switch">
+													<label class="switch">
+														<input type="checkbox" id="switch-style">
+														<div class="slider round"></div>
+												</label>
+												</div>
+												<div class="icon">
+													<i class="fa fa-moon-o" aria-hidden="true"></i>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="/documentation/on-premise/loadable-modules/#prerequisites" class="nomunge">Prerequisites</a></li>
+  <li><a href="/documentation/on-premise/loadable-modules/#what-is-a-mesibo-module" class="nomunge">What is a Mesibo Module?</a>
+    <ul>
+      <li><a href="/documentation/on-premise/loadable-modules/#how-do-mesibo-modules-work" class="nomunge">How do Mesibo Modules work?</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#building-a-profanity-filter" class="nomunge">Building a profanity filter</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/on-premise/loadable-modules/#anatomy-of-a-mesibo-module" class="nomunge">Anatomy of a Mesibo Module</a></li>
+  <li><a href="/documentation/on-premise/loadable-modules/#module-definition" class="nomunge">Module Definition</a>
+    <ul>
+      <li><a href="/documentation/on-premise/loadable-modules/#loading-a-module" class="nomunge">Loading a module</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#mesibo-configuration-file" class="nomunge">Mesibo Configuration file</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/on-premise/loadable-modules/#module-initialization" class="nomunge">Module initialization</a></li>
+  <li><a href="/documentation/on-premise/loadable-modules/#module-callback-functions" class="nomunge">Module Callback Functions</a>
+    <ul>
+      <li><a href="/documentation/on-premise/loadable-modules/#on_message" class="nomunge">on_message</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#on_message_status" class="nomunge">on_message_status</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#on_call" class="nomunge">on_call</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#on_call_status" class="nomunge">on_call_status</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#on_login" class="nomunge">on_login</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#on_cleanup" class="nomunge">on_cleanup</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/on-premise/loadable-modules/#module-helper-functions" class="nomunge">Module Helper Functions</a>
+    <ul>
+      <li><a href="/documentation/on-premise/loadable-modules/#mesibo_message" class="nomunge">mesibo_message</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#mesibo_http" class="nomunge">mesibo_http</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#mesibo_log" class="nomunge">mesibo_log</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#mesibo_util_getconfig" class="nomunge">mesibo_util_getconfig</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#mesibo_util_json_extract" class="nomunge">mesibo_util_json_extract</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/on-premise/loadable-modules/#module-data-structures" class="nomunge">Module Data Structures</a>
+    <ul>
+      <li><a href="/documentation/on-premise/loadable-modules/#message-parameters-structure" class="nomunge">Message Parameters Structure</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#mesibo-user" class="nomunge">Mesibo User</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#http-options-structure" class="nomunge">HTTP Options Structure</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#options-fields" class="nomunge">Options Fields</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#module-configuration-structure" class="nomunge">Module Configuration Structure</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/on-premise/loadable-modules/#memory-management" class="nomunge">Memory Management</a></li>
+  <li><a href="/documentation/on-premise/loadable-modules/#writing-and-compiling-mesibo-modules" class="nomunge">Writing and Compiling Mesibo Modules</a>
+    <ul>
+      <li><a href="/documentation/on-premise/loadable-modules/#downloading-the-sample-modules-repository" class="nomunge">Downloading the Sample Modules Repository</a></li>
+    </ul>
+  </li>
+  <li><a href="/documentation/on-premise/loadable-modules/#code-references-and-examples" class="nomunge">Code references and Examples</a>
+    <ul>
+      <li><a href="/documentation/on-premise/loadable-modules/#building-a-chat-bot" class="nomunge">Building a chat-bot</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#basics-of-dialogflow" class="nomunge">Basics of Dialogflow</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#1-create-the-cc-source-file" class="nomunge">1. Create The C/C++ Source file</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#2configuration-for-the-chatbot-module" class="nomunge">2.Configuration for the chatbot module</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#3-initialize-the-module" class="nomunge">3. Initialize the module</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#3chatbot_on_message" class="nomunge">3.chatbot_on_message</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#4-processing-the-incoming-message-using-dialogflow" class="nomunge">4. Processing the incoming message using DialogFlow</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#5-define-the-callback-function-to-receive-the-response-from-your-bot" class="nomunge">5. Define the Callback function to receive the response from your bot</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#6-compile-the-chatbot-module" class="nomunge">6. Compile the chatbot module</a></li>
+      <li><a href="/documentation/on-premise/loadable-modules/#7-load-the-chatbot-module" class="nomunge">7. Load the chatbot module</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		  
+    <div class="container">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/">Home</a></li>
+                        <li><a href="https://mesibo.com/pricing/">Pricing</a></li>
+                        <li><a href="https://mesibo.com/use-cases/">Use Cases</a></li>
+                        <li><a href="https://mesibo.com/custom-solutions/">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/documentation/faq/">FAQ</a></li>
+                        <li><a href="https://mesibo.com/help/">Support</a></li>
+                        <li class="break"><a href="https://stackoverflow.com/questions/ask">Community</a></li>
+                        <li><a href="https://mesibo.com/documentation/">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <ul class="footer_links">
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+                        <li><a href="https://mesibo.com/career/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="footer_sub_nav">
+                    <ul class="menu">
+                        <li><a href="https://mesibo.com/terms-of-use/#terms">Terms-of-Service</a></li>
+                        <li><a href="https://mesibo.com/terms-of-use/#privacy">Privacy Policy</a></li>
+                        <li><a href="https://mesibo.com/help/">Contact</a></li>
+					 </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="footer-copyright col-xs-12 col-md-8">
+                <p class="copyright">
+                    Copyright &copy; 2019 Mesibo. All rights reserved. </p>
+            </div>
+            <div class="footer_social_nav">
+                <ul class="nav-social">
+                    <li class="fa fa-twitter"><a target="_blank" href="https://twitter.com/mesiboapi">Twitter</a></li>
+                    <li class="fa fa-youtube"><a target="_blank" href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ">Youtube</a></li>
+                    <li class="fa fa-google-plus"><a target="_blank" href="https://plus.google.com/b/107106343719610600541/107106343719610600541">Google</a></li>
+                    <li class="fa fa-github"><a target="_blank" href="https://github.com/mesibo/samples">Github</a></li>
+                    <li class="fa fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/mesibo">Linkedin</a></li>
+                    <li class="fa fa-facebook"><a target="_blank" href="https://www.facebook.com/mesiboapi">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	</footer>
+	<link rel="stylesheet" href="/css/github.css">
+	
+	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
+	<script language="javascript">
+	// Default to assuming this is an archive and hiding some stuff
+	// See js/archive.js and js/docs.js for logic relating to this
+	var isArchive = true;
+	var dockerVersion = 'v18.09';
+	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
+	var jekyllEnv = 'development';
+	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
+	if (jekyllEnv == 'development') {
+		jekyllEnv = '';
+	}
+	var pageURL = jekyllEnv + '/documentation/on-premise/loadable-modules/';
+	</script>
+	<script src="/js/archive.js"></script>
+	<script src="/js/stickyfill.min.js"></script>
+	<script defer src="/js/metadata.js"></script>
+	<script src="/js/glossary.js"></script>
+	<script src="/js/collections_tocs.js"></script>
+	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
+	<script language="javascript">
+	jQuery(document).ready(function(){
+				hookupTOCEvents();
+			});
+	</script>
+</body>
+
+</html>

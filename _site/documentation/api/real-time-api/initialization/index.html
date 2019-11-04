@@ -1,4 +1,4 @@
-<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -79,20 +79,20 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
 	<meta name="twitter:site" content="@mesibo"/>
 	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
-	<meta name="twitter:title" itemprop="title name" content="Mesibo Real-time APIs - Initialization"/>
+	<meta name="twitter:title" itemprop="title name" content="Mesibo Real-time Chat APIs - Initialization"/>
 	<meta name="twitter:description" property="og:description" itemprop="description" content="Introduction Initialization Messaging File Transfer Voice &amp; Video Calls Profiles utility You need to call one or more initialization APIs before using any other mesibo APIs. Following are the various..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="mesibo, real-time api, messaging API, chat API, voice SDK, video SDK">
+	<meta name="keywords" content="real-time chat api, start with chat api, initialize guide for api">
 	<link rel="stylesheet" href="/css/font-awesome.min.css" >
 	<link rel="stylesheet" href="/css/bootstrap.min.css" >
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
@@ -101,16 +101,16 @@
 	<!-- Go get "Open Sans" font from Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!-- SEO stuff -->
-	<title>Mesibo Real-time APIs - Initialization | Mesibo Documentation</title>
-<meta property="og:title" content="Mesibo Real-time APIs - Initialization" />
+	<title>Mesibo Real-time Chat APIs - Initialization | Mesibo Documentation</title>
+<meta property="og:title" content="Mesibo Real-time Chat APIs - Initialization" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Mesibo Real-time APIs - Initialization" />
-<meta property="og:description" content="Mesibo Real-time APIs - Initialization" />
+<meta name="description" content="Initializing Mesibo Chat API" />
+<meta property="og:description" content="Initializing Mesibo Chat API" />
 <link rel="canonical" href="/documentation/api/real-time-api/initialization/" />
 <meta property="og:url" content="/documentation/api/real-time-api/initialization/" />
 <meta property="og:site_name" content="Mesibo Documentation" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo Real-time APIs - Initialization","description":"Mesibo Real-time APIs - Initialization","url":"https://docs.docker.com/documentation/api/real-time-api/initialization/"}</script>
+{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo Real-time Chat APIs - Initialization","description":"Initializing Mesibo Chat API","url":"https://docs.docker.com/documentation/api/real-time-api/initialization/"}</script>
 	<!-- END SEO STUFF -->
 	
 	<script language="javascript">
@@ -213,7 +213,7 @@
 						<section class="section">
 							
 							
-							<h1>Mesibo Real-time APIs - Initialization</h1>
+							<h1>Mesibo Real-time Chat APIs - Initialization</h1>
 							 
 
 							 <span class="reading-time" title="Estimated reading time">
@@ -268,7 +268,7 @@
 </ul>
 
 <h3 id="setdatabase-optional">setDatabase [Optional]</h3>
-<p>Enable local database to store all the incoming &amp; outgoing messages and other information. If this API is not called, Mesibo will not use any local database to store messages.</p>
+<p>Enable local database to store all incoming &amp; outgoing messages and other information. If this API is not called, Mesibo will not use any local database to store messages.</p>
 
 <p>It is recommended to call ‘setDatabase’ after setting user access token using <code class="highlighter-rouge">setAccessToken</code> API. It ensures a unique local database for each user. If <code class="highlighter-rouge">setDatabase</code> is called before <code class="highlighter-rouge">setAccessToken</code> API function, the same local database will be used for all the users.</p>
 
@@ -282,21 +282,21 @@
 <h3 id="addlistener">addListener</h3>
 <p>Mesibo invokes <a href="/documentation/api/real-time-api/listeners/"><strong>Listeners</strong></a> for various events. For example, when you receive a message, receive an incoming call, etc. You can implement these listeners to get real-time event notifications. Refer to <a href="/documentation/api/real-time-api/listeners/">Listeners</a> section for more details on listeners.</p>
 
-<p>You can add a listener using ‘addListener’ API.  You can add multiple listeners if requires.</p>
+<p>You can add a listener using ‘addListener’ API.  You can add multiple listeners if required.</p>
 
 <p>It takes the following parameters:</p>
 
 <ul>
-  <li><strong>listner</strong>, listener object</li>
+  <li><strong>listener</strong>, listener object</li>
 </ul>
 
 <h3 id="removelistener-optional">removeListener [Optional]</h3>
-<p>Remove a listener previously added using <code class="highlighter-rouge">addListner</code> API.</p>
+<p>Remove a listener previously added using <code class="highlighter-rouge">addListener</code> API.</p>
 
 <p>It takes the following parameters:</p>
 
 <ul>
-  <li><strong>listner</strong>, listener object</li>
+  <li><strong>listener</strong>, listener object</li>
 </ul>
 
 <h3 id="setsecureconnection-optional">setSecureConnection [Optional]</h3>
@@ -309,7 +309,7 @@
 </ul>
 
 <h3 id="start">start</h3>
-<p>Start Mesibo. Mesibo will start connection establishment with Mesibo cloud servers OR your on-premise Mesibo server. Note that, <strong>Mesibo will not establish network connection till the <code class="highlighter-rouge">start</code> is called</strong>. However, once the <code class="highlighter-rouge">start</code> is called, Mesibo will automatically manage any future reconnections till stop() is called</p>
+<p>Start Mesibo. Mesibo will start connection establishment with Mesibo cloud servers OR your on-premise Mesibo server. Note that, <strong>Mesibo will not establish a network connection till <code class="highlighter-rouge">start</code> API is called</strong>. However, once the <code class="highlighter-rouge">start</code> is called, Mesibo will automatically manage any future reconnections till stop() is called</p>
 
 <p>It does not take any parameters.</p>
 
@@ -364,7 +364,7 @@
 							
 							
 							
-							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=real-time api">real-time api</a>, <a href="/documentation/glossary/?term=messaging API">messaging API</a>, <a href="/documentation/glossary/?term=chat API">chat API</a>, <a href="/documentation/glossary/?term=voice SDK">voice SDK</a>, <a href="/documentation/glossary/?term=video SDK">video SDK</a></span>
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=real-time chat api">real-time chat api</a>, <a href="/documentation/glossary/?term=start with chat api">start with chat api</a>, <a href="/documentation/glossary/?term=initialize guide for api">initialize guide for api</a></span>
 							
 							<!-- link corrections -->
               <script language="JavaScript">
@@ -407,7 +407,7 @@
 								<div class="feedback-links">
 									<ul>
 										
-										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
 										<!-- toggle mode -->
 										<li>
 											<div class="toggle-mode">

@@ -1249,6 +1249,7 @@ routerApp.controller("mainCtrl", ['$scope', '$rootScope', '$window', '$state', '
 		$rootScope.init_state = '';
 		angular.element(document).ready(function() {
 			console.log($state);
+			console.log($location);
 
 			/* We have a tricky situation here, due to bad ui-router implementation, current state 
 			 * is not visible in ready function (only available after some time). 

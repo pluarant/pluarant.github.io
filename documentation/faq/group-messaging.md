@@ -1,9 +1,9 @@
 ---
 section: Group Messaging
 title: Frequently Asked Questions - Group Messaging
-keywords: get started, setup, orientation, mesibo, chat, GDPR
-description: Frequently Asked Questions
+keywords: mesibo, faq, chat, voice, video
+description: Frequently Asked Questions - Group Messaging
 ---
-{% assign faq_data = site.data.faq.groupmessaging %}
+{% assign faq_data = site.data.faq.group %}
 
-{% include_relative faq-template.md  %}
+{% include_relative template/faq-template.md  %}

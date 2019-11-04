@@ -1,4 +1,4 @@
-<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -79,20 +79,20 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
 	<meta name="twitter:site" content="@mesibo"/>
 	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
-	<meta name="twitter:title" itemprop="title name" content="Mesibo Real-time APIs - Data Structures"/>
+	<meta name="twitter:title" itemprop="title name" content="Real-time Chat APIs - Data Structures"/>
 	<meta name="twitter:description" property="og:description" itemprop="description" content="MessageParams MessageParams is one of the most important data structures of Mesibo real-time API. Android: mesibo.MessageParams iOS: MesiboParams Following are the members of MessageParams mid - Message id, id of..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="mesibo, real-time api, messaging API, chat API, voice SDK, video SDK">
+	<meta name="keywords" content="chat api data structures, data structure for android, data structure for iOS, mesibo data structure, guide on data structure">
 	<link rel="stylesheet" href="/css/font-awesome.min.css" >
 	<link rel="stylesheet" href="/css/bootstrap.min.css" >
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
@@ -101,16 +101,16 @@
 	<!-- Go get "Open Sans" font from Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!-- SEO stuff -->
-	<title>Mesibo Real-time APIs - Data Structures | Mesibo Documentation</title>
-<meta property="og:title" content="Mesibo Real-time APIs - Data Structures" />
+	<title>Real-time Chat APIs - Data Structures | Mesibo Documentation</title>
+<meta property="og:title" content="Real-time Chat APIs - Data Structures" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Mesibo Real-time APIs - Data Structures" />
-<meta property="og:description" content="Mesibo Real-time APIs - Data Structures" />
+<meta name="description" content="Understanding data structures of mesibo real-time chat API for Android and iOS" />
+<meta property="og:description" content="Understanding data structures of mesibo real-time chat API for Android and iOS" />
 <link rel="canonical" href="/documentation/api/real-time-api/data-structures/" />
 <meta property="og:url" content="/documentation/api/real-time-api/data-structures/" />
 <meta property="og:site_name" content="Mesibo Documentation" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo Real-time APIs - Data Structures","description":"Mesibo Real-time APIs - Data Structures","url":"https://docs.docker.com/documentation/api/real-time-api/data-structures/"}</script>
+{"@context":"http://schema.org","@type":"WebPage","headline":"Real-time Chat APIs - Data Structures","description":"Understanding data structures of mesibo real-time chat API for Android and iOS","url":"https://docs.docker.com/documentation/api/real-time-api/data-structures/"}</script>
 	<!-- END SEO STUFF -->
 	
 	<script language="javascript">
@@ -213,7 +213,7 @@
 						<section class="section">
 							
 							
-							<h1>Mesibo Real-time APIs - Data Structures</h1>
+							<h1>Real-time Chat APIs - Data Structures</h1>
 							 
 
 							 <span class="reading-time" title="Estimated reading time">
@@ -239,27 +239,27 @@
 <ul>
   <li><strong>mid</strong> - Message id, id of the incoming message. For outgoing messages, mid should be specified in sendxxx() functions.</li>
   <li><strong>peer</strong> - Address of sender or receiver of the message. Address can be anything and completely defined by your application logic, for example, phone number or email address. The only requirement is that it should be unique for each user. <strong>peer</strong> should be  empty (null) when sending to a group.</li>
-  <li><strong>groupid</strong> - Group ID, should be specified when sending message to groip, 0 for one-to-one messages. When message is received from the group, both gropupid and peer will be set.</li>
+  <li><strong>groupid</strong> - Group ID, should be specified when sending message to group, 0 for one-to-one messages. When a message is received from the group, both groupid and peer will be set.</li>
   <li><strong>profile</strong> - sender profile in the incoming message</li>
   <li><strong>groupProfile</strong> - group profile if the incoming message is for a group</li>
   <li><strong>expiry</strong> - Message Expiry for outgoing message (time to live), in seconds</li>
-  <li><strong>type</strong> - Message Type, any arbitary user defined types</li>
-  <li><strong>ts</strong>  - Timestamp when the message was received - in milli seconds</li>
+  <li><strong>type</strong> - Message Type, any arbitrary user defined types</li>
+  <li><strong>ts</strong>  - Timestamp when the message was received - in milliseconds</li>
   <li>
-    <p><strong>flag</strong> - Message Flag - can be the combination of one or more flags</p>
+    <p><strong>flag</strong> - Message Flag - can be the a combination of one or more flags</p>
 
     <ul>
       <li>FLAG_DELIVERYRECEIPT- delivery receipt is required (default, set)</li>
       <li>FLAG_READRECEIPT - read receipt is required (default, set)</li>
       <li>FLAG_TRANSIENT - transient message which should not be stored in the database.</li>
-      <li>FLAG_QUEUE - enqueue this message for sending but don’t really send unless send() is called or the queue is full.</li>
-      <li>FLAG_NONBLOCKING - don’t block while queueing message for sending.</li>
+      <li>FLAG_QUEUE - enqueue this message for sending but don’t send unless <code class="highlighter-rouge">send</code> is called or the queue is full.</li>
+      <li>FLAG_NONBLOCKING - don’t block while queueing the message for sending.</li>
       <li>FLAG_EOM (incoming only) - no more messages, can be used to update UI.</li>
       <li>FLAG_FILETRANSFERRED (incoming only) - File was transferred and saved.</li>
-      <li>FLAG_FILEFAILED (incoming only) - File transfer was failed.</li>
+      <li>FLAG_FILEFAILED (incoming only) - File transfer failed.</li>
     </ul>
   </li>
-  <li><strong>origin</strong> - Origin of the message. Can be one of the followings:
+  <li><strong>origin</strong> - Origin of the message. Can be one of the following:
     <ul>
       <li>ORIGIN_REALTIME - realtime message.</li>
       <li>ORIGIN_DBMESSAGE - message from the database.</li>
@@ -267,7 +267,7 @@
       <li>ORIGIN_FILTER - message for filtering (moderation)</li>
     </ul>
   </li>
-  <li><strong>status</strong> - Message Status - Can be one of the followings
+  <li><strong>status</strong> - Message Status - Can be one of the following:
     <ul>
       <li>MSGSTATUS_OUTBOX - Message is pending to send</li>
       <li>MSGSTATUS_SENT - Message sent to server</li>
@@ -290,7 +290,7 @@
 <p>Following are the members of FileInfo</p>
 
 <ul>
-  <li><strong>mode</strong>, File Transfer Mode. It can be one of the followings
+  <li><strong>mode</strong>, File Transfer Mode. It can be one of the following:
     <ul>
       <li>MODE_DOWNLOAD</li>
       <li>MODE_UPLOAD</li>
@@ -312,7 +312,7 @@
 </ul>
 
 <h3 id="userprofile">UserProfile</h3>
-<p>You can create profile for each user to store user specific information. User profile has no bearing on Mesibo real-time API. However, it makes it easier to accociate sender and receiver of the message.</p>
+<p>You can create a profile for each user to store user specific information. User profile has no bearing on Mesibo real-time API. However, it makes it easier to associate the sender and receiver of the message.</p>
 
 <ul>
   <li><strong>name</strong>, User or Group Name</li>
@@ -340,7 +340,7 @@
 							
 							
 							
-							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=real-time api">real-time api</a>, <a href="/documentation/glossary/?term=messaging API">messaging API</a>, <a href="/documentation/glossary/?term=chat API">chat API</a>, <a href="/documentation/glossary/?term=voice SDK">voice SDK</a>, <a href="/documentation/glossary/?term=video SDK">video SDK</a></span>
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=chat api data structures">chat api data structures</a>, <a href="/documentation/glossary/?term=data structure for android">data structure for android</a>, <a href="/documentation/glossary/?term=data structure for iOS">data structure for iOS</a>, <a href="/documentation/glossary/?term=mesibo data structure">mesibo data structure</a>, <a href="/documentation/glossary/?term=guide on data structure">guide on data structure</a></span>
 							
 							<!-- link corrections -->
               <script language="JavaScript">
@@ -383,7 +383,7 @@
 								<div class="feedback-links">
 									<ul>
 										
-										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
 										<!-- toggle mode -->
 										<li>
 											<div class="toggle-mode">

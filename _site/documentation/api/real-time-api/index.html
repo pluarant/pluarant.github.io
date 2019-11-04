@@ -1,4 +1,4 @@
-<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -62,20 +62,20 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
 	<meta name="twitter:site" content="@mesibo"/>
 	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
-	<meta name="twitter:title" itemprop="title name" content="Mesibo Real-time APIs - Introduction"/>
+	<meta name="twitter:title" itemprop="title name" content="Mesibo Real-time Chat APIs - Introduction"/>
 	<meta name="twitter:description" property="og:description" itemprop="description" content="Introduction Initialization Messaging File Transfer Voice &amp; Video Calls Profiles utility Mesibo real-time API allows users to communicate in real-time by providing APIs for 1-to-1 messaging group messaging voice and..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="mesibo, real-time api, messaging API, chat API, voice SDK, video SDK">
+	<meta name="keywords" content="real-time chat api, messaging API, chat API introduction, document for voice SDK, video SDK, mesibo">
 	<link rel="stylesheet" href="/css/font-awesome.min.css" >
 	<link rel="stylesheet" href="/css/bootstrap.min.css" >
 	<link id="pygments" rel="stylesheet" href="/css/pygments/perldoc.css" >
@@ -84,16 +84,16 @@
 	<!-- Go get "Open Sans" font from Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!-- SEO stuff -->
-	<title>Mesibo Real-time APIs - Introduction | Mesibo Documentation</title>
-<meta property="og:title" content="Mesibo Real-time APIs - Introduction" />
+	<title>Mesibo Real-time Chat APIs - Introduction | Mesibo Documentation</title>
+<meta property="og:title" content="Mesibo Real-time Chat APIs - Introduction" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Mesibo Real-time APIs - Introduction" />
-<meta property="og:description" content="Mesibo Real-time APIs - Introduction" />
+<meta name="description" content="Introduction to Mesibo Real-time Chat APIs for Android, iOS and website. It’s easy to use to add 1-to-1 messaging, group chat, voice and video calls in your Mobile Apps & Websites." />
+<meta property="og:description" content="Introduction to Mesibo Real-time Chat APIs for Android, iOS and website. It’s easy to use to add 1-to-1 messaging, group chat, voice and video calls in your Mobile Apps & Websites." />
 <link rel="canonical" href="/documentation/api/real-time-api/" />
 <meta property="og:url" content="/documentation/api/real-time-api/" />
 <meta property="og:site_name" content="Mesibo Documentation" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo Real-time APIs - Introduction","description":"Mesibo Real-time APIs - Introduction","url":"https://docs.docker.com/documentation/api/real-time-api/"}</script>
+{"@context":"http://schema.org","@type":"WebPage","headline":"Mesibo Real-time Chat APIs - Introduction","description":"Introduction to Mesibo Real-time Chat APIs for Android, iOS and website. It’s easy to use to add 1-to-1 messaging, group chat, voice and video calls in your Mobile Apps & Websites.","url":"https://docs.docker.com/documentation/api/real-time-api/"}</script>
 	<!-- END SEO STUFF -->
 	
 	<script language="javascript">
@@ -244,7 +244,7 @@
 </ul>
 
 <h3 id="api-signatures">API Signatures</h3>
-<p>All the APIs have exactly the same name and parameters across the platform unless specified. They only differ in the way they are invoked in various platforms like Java (Android), Objective-C (iOS), Swit (iOS), C++, Javascript. For example, the ‘setPath’ API is invoked on the various platform, as shown below:</p>
+<p>All the APIs have exactly the same name and parameters across the platform unless specified. They only differ in the way they are invoked in various platforms like Java (Android), Objective-C (iOS), Swit (iOS), C++, Javascript. For example, the ‘setPath’ API is invoked on various platform, as shown below:</p>
 
 <p>On Android</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mesibo.setPath(path)
@@ -259,7 +259,7 @@
 <p>Swift</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mesibo.getInstance().setPath(path)
 </code></pre></div></div>
-<p>This makes it easy for you to write cross-platform code across platform. In following sections, we will only describe APIs with name and parameters.</p>
+<p>This makes it easy for you to write cross-platform code across platform. In the following sections, we will describe APIs with name and parameters.</p>
 
 <h2 id="get-started-with-mesibo-real-time-apis">Get Started with Mesibo Real-time APIs</h2>
 <p>Mesibo Real-time APIs are broadly classified in the following categories:</p>
@@ -281,7 +281,7 @@
     <p><a href="/documentation/api/real-time-api/profiles/">User and Group Profile APIs</a> - APIs to manage user and group profiles.</p>
   </li>
   <li>
-    <p><a href="/documentation/api/real-time-api/utility/">Utility APIs</a> - Various utility APIs to perform auxilary tasks like checking network connections, creating files, etc.</p>
+    <p><a href="/documentation/api/real-time-api/utility/">Utility APIs</a> - Various utility APIs to perform auxiliary tasks like checking network connections, creating files, etc.</p>
   </li>
 </ul>
 
@@ -293,7 +293,7 @@
 							
 							
 							
-							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=mesibo">mesibo</a>, <a href="/documentation/glossary/?term=real-time api">real-time api</a>, <a href="/documentation/glossary/?term=messaging API">messaging API</a>, <a href="/documentation/glossary/?term=chat API">chat API</a>, <a href="/documentation/glossary/?term=voice SDK">voice SDK</a>, <a href="/documentation/glossary/?term=video SDK">video SDK</a></span>
+							<span class="glyphicon glyphicon-tags" style="padding-right: 10px"></span><span style="vertical-align: 2px"><a href="/documentation/glossary/?term=real-time chat api">real-time chat api</a>, <a href="/documentation/glossary/?term=messaging API">messaging API</a>, <a href="/documentation/glossary/?term=chat API introduction">chat API introduction</a>, <a href="/documentation/glossary/?term=document for voice SDK">document for voice SDK</a>, <a href="/documentation/glossary/?term=video SDK">video SDK</a>, <a href="/documentation/glossary/?term=mesibo">mesibo</a></span>
 							
 							<!-- link corrections -->
               <script language="JavaScript">
@@ -336,7 +336,7 @@
 								<div class="feedback-links">
 									<ul>
 										
-										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
 										<!-- toggle mode -->
 										<li>
 											<div class="toggle-mode">

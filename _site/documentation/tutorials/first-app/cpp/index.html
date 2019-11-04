@@ -1,4 +1,4 @@
-<!-- Page generated 2019-10-01 19:19:15 +0800 -->
+<!-- Page generated 2019-11-04 09:47:55 +0530 -->
 <!-- relative link basehrefs -->
 
 	
@@ -79,7 +79,7 @@
 	<meta property="og:image" content="/favicons/mesibo-favicon.png"/>
 	<!-- metadata -->
 	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="og:updated_time" itemprop="dateUpdated" content="2019-11-04T09:47:55+05:30"/>
 	<meta property="og:image" itemprop="image primaryImageOfPage" content="/images/docs@2x.png"/>
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:domain" content="mesibo.com"/>
@@ -89,7 +89,7 @@
 	<meta name="twitter:description" property="og:description" itemprop="description" content="Preparation Anatomy Android iOS Javascript C++ Python File Transfer UI Modules Voice and Video Calls In this part, we will create a simple real-time app using Mesibo C/C++ API. The..." />
 	<meta name="twitter:image:src" content="/images/docs@2x.png" />
 	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="2019-10-01T19:19:15+08:00"/>
+	<meta property="article:published_time" itemprop="datePublished" content="2019-11-04T09:47:55+05:30"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="mesibo, android, ios, cpp, c++, c">
@@ -274,7 +274,7 @@
 
 <ol>
   <li>Open a code editor</li>
-  <li>include <code class="highlighter-rouge">mesibo.h</code> in your code</li>
+  <li>Include <code class="highlighter-rouge">mesibo.h</code> in your code</li>
   <li>Create a class derived from the <code class="highlighter-rouge">CMesiboNotify</code> class to listen to all the message and call events.</li>
   <li>Initialize mesibo using the user token and listener.</li>
 </ol>
@@ -285,12 +285,19 @@
 <p>Below is Mesibo Event Listener</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">CNotify</span> <span class="o">:</span> <span class="k">public</span> <span class="n">CMesiboNotify</span> <span class="p">{</span>
+	
+	<span class="n">IMesibo</span> <span class="o">*</span><span class="n">m_api</span><span class="p">;</span>
 	<span class="k">public</span><span class="o">:</span>
+	
+	<span class="kt">void</span> <span class="n">set_api</span><span class="p">(</span><span class="n">IMesibo</span> <span class="o">*</span><span class="n">api</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">m_api</span> <span class="o">=</span> <span class="n">api</span><span class="p">;</span>
+	<span class="p">}</span>
+
 
 	<span class="c1">// You will receive the connection status here
 </span>	<span class="kt">int</span> <span class="n">on_status</span><span class="p">(</span><span class="kt">int</span> <span class="n">status</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">substatus</span><span class="p">,</span> <span class="kt">uint8_t</span> <span class="n">channel</span><span class="p">,</span>
 			<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">from</span><span class="p">)</span> <span class="p">{</span>
-		<span class="n">ERRORLOG</span><span class="p">(</span><span class="s">"===&gt; on_status: %u %u</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">status</span><span class="p">,</span> <span class="n">substatus</span><span class="p">);</span>
+		<span class="n">ERRORLOG</span><span class="p">(</span><span class="s">"===&gt; on_status: %u </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">status</span><span class="p">);</span>
 		<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 	<span class="p">}</span>
 
@@ -299,13 +306,12 @@
 </span>	<span class="c1">// You will receive messages here.
 </span>	<span class="kt">int</span> <span class="n">on_message</span><span class="p">(</span><span class="n">tMessageParams</span> <span class="o">*</span> <span class="n">p</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">from</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span>
 			<span class="kt">uint32_t</span> <span class="n">len</span><span class="p">)</span> <span class="p">{</span>
-		<span class="n">ERRORLOG</span><span class="p">(</span>
-				
-			<span class="s">"===&gt; test app message received: uid %u status %d channel %d type %u "</span>
-			<span class="s">"id %"</span> <span class="n">PRIx64</span> <span class="s">" refid %lu groupid %u, when %"</span> <span class="n">PRIu64</span>
-			<span class="s">" from %s, flag: %x len %d: %.*s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span>
-			<span class="n">p</span><span class="o">-&gt;</span><span class="n">uid</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">status</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">channel</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">refid</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">groupid</span><span class="p">,</span>
-			<span class="n">p</span><span class="o">-&gt;</span><span class="n">when</span><span class="p">,</span> <span class="n">from</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">flag</span><span class="p">,</span> <span class="n">len</span><span class="p">,</span> <span class="n">printlen</span><span class="p">,</span> <span class="n">data</span><span class="p">);</span>
+	
+		<span class="kt">int</span> <span class="n">printlen</span> <span class="o">=</span> <span class="n">len</span><span class="p">;</span>
+	        <span class="k">if</span> <span class="p">(</span><span class="n">printlen</span> <span class="o">&gt;</span> <span class="mi">64</span><span class="p">)</span> <span class="n">printlen</span> <span class="o">=</span> <span class="mi">64</span><span class="p">;</span>
+
+		<span class="n">ERRORLOG</span><span class="p">(</span><span class="s">"===&gt; message received:from %s,of len %d: %.*s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span>
+			<span class="n">from</span><span class="p">,</span> <span class="n">len</span><span class="p">,</span> <span class="n">printlen</span><span class="p">,</span> <span class="n">data</span><span class="p">);</span>
 
 		<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 
@@ -315,9 +321,7 @@
 </span>	<span class="c1">// You will receive the status of sent messages here
 </span>	<span class="kt">int</span> <span class="n">on_messagestatus</span><span class="p">(</span><span class="n">tMessageParams</span> <span class="o">*</span> <span class="n">p</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">from</span><span class="p">,</span> <span class="kt">int</span> <span class="n">last</span><span class="p">)</span> <span class="p">{</span>
 		<span class="n">ERRORLOG</span><span class="p">(</span>
-			<span class="s">"===&gt; on_messagestatus status %u id %u when %u ms (%u %u) from: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span>
-			<span class="n">p</span><span class="o">-&gt;</span><span class="n">status</span><span class="p">,</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">,</span> <span class="n">m_api</span><span class="o">-&gt;</span><span class="n">timestamp</span><span class="p">()</span> <span class="o">-</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">when</span><span class="p">,</span> <span class="n">m_api</span><span class="o">-&gt;</span><span class="n">timestamp</span><span class="p">(),</span>
-			<span class="n">p</span><span class="o">-&gt;</span><span class="n">when</span><span class="p">,</span> <span class="n">from</span> <span class="o">?</span> <span class="n">from</span> <span class="o">:</span> <span class="s">""</span><span class="p">);</span>
+			<span class="s">"===&gt; on_messagestatus status %u from: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">status</span><span class="p">,</span> <span class="n">from</span><span class="p">);</span>
 		<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 	<span class="p">}</span>
 <span class="p">};</span>
@@ -326,40 +330,45 @@
 
 <p>Following is the Mesibo Initialization code.</p>
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">mesibo_init</span><span class="p">(){</span>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#define AUTH_TOKEN 3e7694e19d192588a4ffcb4eab26b6afb3d5aada54bbd41ed140a
+#define APP_ID "mycppapp"
+</span>
+<span class="n">IMesibo</span><span class="o">*</span> <span class="n">mesibo_init</span><span class="p">(){</span>
 	
 	<span class="c1">// Create a Mesibo Instance
-</span>	<span class="n">IMesibo</span> <span class="o">*</span><span class="n">m_api</span> <span class="o">=</span> <span class="n">query_mesibo</span><span class="p">(</span><span class="s">"/tmp"</span><span class="p">);</span>  
+</span>	<span class="n">m_api</span> <span class="o">=</span> <span class="n">query_mesibo</span><span class="p">(</span><span class="s">"/tmp"</span><span class="p">);</span>
 
 	<span class="c1">// Add Listener
 </span>	<span class="n">CNotify</span> <span class="o">*</span><span class="n">n</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CNotify</span><span class="p">();</span>
 	<span class="n">m_api</span><span class="o">-&gt;</span><span class="n">set_notify</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
 
+  
 	<span class="c1">// Set your AUTH_TOKEN obtained from the Mesibo Console
-</span>	<span class="n">m_api</span><span class="o">-&gt;</span><span class="n">set_credentials</span><span class="p">(</span><span class="s">"aea59d3713701704bed9fd5952d9419ba8c4209a335e664ef2g"</span><span class="p">);</span>
+</span>	<span class="n">m_api</span><span class="o">-&gt;</span><span class="n">set_credentials</span><span class="p">(</span><span class="s">"3e7694e19d192588a4ffcb4eab26b6afb3d5aada54bbd41edd7140a"</span><span class="p">);</span>
+  
+  	<span class="c1">// Set  APP_ID which you used to create AUTH_TOKEN 
+</span>	<span class="n">m_api</span><span class="o">-&gt;</span><span class="n">set_device</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">"cpp"</span><span class="p">,</span> <span class="n">APP_ID</span><span class="p">,</span> <span class="s">"1.0.0"</span><span class="p">);</span>
 
-	<span class="c1">// set the name of the database
+	<span class="c1">// Set the name of the database
 </span>	<span class="k">if</span> <span class="p">(</span><span class="mi">0</span> <span class="o">!=</span> <span class="n">m_api</span><span class="o">-&gt;</span><span class="n">set_database</span><span class="p">(</span><span class="s">"mesibo.db"</span><span class="p">))</span> <span class="p">{</span>
 		<span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"Database failed</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-		<span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+		<span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
 	<span class="p">}</span>
-
-	<span class="c1">// Set  APP_ID which you used to create AUTH_TOKEN 
-</span>	<span class="n">m_api</span><span class="o">-&gt;</span><span class="n">set_device</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">"MyDeviceId"</span><span class="p">,</span> <span class="n">appid</span><span class="p">,</span> <span class="s">"1.0.0"</span><span class="p">);</span>
-
-	<span class="c1">// start mesibo
-</span>	<span class="n">m_api</span><span class="o">-&gt;</span><span class="n">start</span><span class="p">();</span>
-
-	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+	
+	<span class="k">return</span> <span class="n">m_api</span><span class="p">;</span>
 <span class="p">}</span>
 
+
+</code></pre></div></div>
+<p>Now,after initialization is complete you run Mesibo</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>m_api-&gt;start();
 </code></pre></div></div>
 
 <p>That’s it - you are now ready to receive your first real-time message.</p>
 
 <h2 id="compiling-and-running-sample-cc-application">Compiling and Running sample C/C++ application</h2>
 
-<p>It is recommended that you use a modern C/C++ compiler such as gcc (GCC 4.x or above) or clang. You can compile your code by linking the Mesibo Library as shown below:</p>
+<p>It is recommended that you use a modern C/C++ compiler such as gcc (GCC-C++ 4.x or above) or clang. You can compile your code by linking the Mesibo Library as shown below:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ my_first_app.cpp <span class="nt">-o</span> myfirstapp <span class="nt">-lmesibo</span>
 </code></pre></div></div>
@@ -397,13 +406,12 @@ Enter 1000 (or anything) in <code class="highlighter-rouge">From</code> field, c
 
 <p>Invoke the following function anywhere from your code to send a text message.</p>
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">send_text_message</span><span class="p">(</span><span class="n">IMesibo</span><span class="o">*</span> <span class="n">m_api</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">to</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">message</span><span class="p">){</span>
-
-	<span class="n">tMessageParams</span> <span class="n">p</span> <span class="o">=</span> <span class="p">{};</span>
-	<span class="n">p</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">m_api</span><span class="o">-&gt;</span><span class="n">random32</span><span class="p">();</span>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">send_text_message</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">to</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">message</span><span class="p">){</span>
+        <span class="n">tMessageParams</span> <span class="n">p</span> <span class="o">=</span> <span class="p">{};</span>
+        <span class="n">p</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">m_api</span><span class="o">-&gt;</span><span class="n">random32</span><span class="p">();</span>
 	<span class="n">p</span><span class="p">.</span><span class="n">expiry</span> <span class="o">=</span> <span class="mi">3600</span><span class="p">;</span>
-
-	<span class="n">m_api</span><span class="o">-&gt;</span><span class="n">message</span><span class="p">(</span><span class="o">&amp;</span><span class="n">p</span><span class="p">,</span> <span class="n">to</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">message</span><span class="p">));</span>
+	<span class="kt">int</span> <span class="n">datalen</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
+        <span class="n">m_api</span><span class="o">-&gt;</span><span class="n">message</span><span class="p">(</span><span class="o">&amp;</span><span class="n">p</span><span class="p">,</span> <span class="n">to</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">datalen</span><span class="p">);</span>
 <span class="p">}</span>
 
 </code></pre></div></div>
@@ -457,7 +465,7 @@ Enter 1000 (or anything) in <code class="highlighter-rouge">From</code> field, c
 								<div class="feedback-links">
 									<ul>
 										
-										<li><a href="/documentation/support/"><i class="fa fa-question" aria-hidden="true"></i> Get support</a></li>
+										<li><a href="/help/"><i class="fa fa-question" aria-hidden="true"></i> Need Help?</a></li>
 										<!-- toggle mode -->
 										<li>
 											<div class="toggle-mode">

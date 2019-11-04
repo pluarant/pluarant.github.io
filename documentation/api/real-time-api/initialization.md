@@ -1,7 +1,7 @@
 ---
-title: Mesibo Real-time APIs - Initialization
-description: Mesibo Real-time APIs - Initialization
-keywords: mesibo, real-time api, messaging API, chat API, voice SDK, video SDK
+title: Mesibo Real-time Chat APIs - Initialization
+description: Initializing Mesibo Chat API 
+keywords: real-time chat api, start with chat api, initialize guide for api
 ---
 {% include_relative nav.html selected="init" %}
 
@@ -32,7 +32,7 @@ It takes the following parameters:
   - **token**, User Access Token Obtained using [Backend API - Add User Operation](/documentation/api/backend-api/) 
 
 ### setDatabase [Optional]
-Enable local database to store all the incoming &amp; outgoing messages and other information. If this API is not called, Mesibo will not use any local database to store messages. 
+Enable local database to store all incoming &amp; outgoing messages and other information. If this API is not called, Mesibo will not use any local database to store messages. 
 
 It is recommended to call 'setDatabase' after setting user access token using `setAccessToken` API. It ensures a unique local database for each user. If `setDatabase` is called before `setAccessToken` API function, the same local database will be used for all the users. 
 
@@ -45,18 +45,18 @@ It takes the following parameters:
 ### addListener
 Mesibo invokes [**Listeners**](/documentation/api/real-time-api/listeners/) for various events. For example, when you receive a message, receive an incoming call, etc. You can implement these listeners to get real-time event notifications. Refer to [Listeners](/documentation/api/real-time-api/listeners/) section for more details on listeners.
 
-You can add a listener using 'addListener' API.  You can add multiple listeners if requires. 
+You can add a listener using 'addListener' API.  You can add multiple listeners if required. 
 
 It takes the following parameters:
  
-  - **listner**, listener object
+  - **listener**, listener object
 
 ### removeListener [Optional]
-Remove a listener previously added using `addListner` API.                           
+Remove a listener previously added using `addListener` API.                           
 
 It takes the following parameters:
  
-  - **listner**, listener object
+  - **listener**, listener object
 
 ### setSecureConnection [Optional]
 Enable encrypted connection. Encryption is enabled by default. This is an optional API. However, if invoked, should be invoked before the `start' API. 
@@ -66,7 +66,7 @@ It takes the following parameters:
   - **enable**, enable or disable encryption
 
 ### start 
-Start Mesibo. Mesibo will start connection establishment with Mesibo cloud servers OR your on-premise Mesibo server. Note that, **Mesibo will not establish network connection till the `start` is called**. However, once the `start` is called, Mesibo will automatically manage any future reconnections till stop() is called
+Start Mesibo. Mesibo will start connection establishment with Mesibo cloud servers OR your on-premise Mesibo server. Note that, **Mesibo will not establish a network connection till `start` API is called**. However, once the `start` is called, Mesibo will automatically manage any future reconnections till stop() is called
 
 It does not take any parameters.
 

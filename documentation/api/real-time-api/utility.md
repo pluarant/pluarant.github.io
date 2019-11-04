@@ -1,11 +1,11 @@
 ---
-title: Mesibo Real-time APIs - Utility 
-description: Mesibo Real-time APIs - Utility
-keywords: mesibo, real-time api, messaging API, chat API, voice SDK, video SDK
+title: Real-time Chat APIs - Utility 
+description: Mesibo utility APIs for various networking, timings, sharing, accessing and other utilities for Android and iOS Apps
+keywords: app utility api, chat Utility api, utility api for networking, utility api for messaging, utility api for android, utility api for iOS 
 ---
 {% include_relative nav.html selected="utility" %}
 
-Following are some of the utility APIs which you can use in your apps. Ensure that you have ncessary permissions from the app users to use these APIs.
+Following are some of the utility APIs which you can use in your apps. Ensure that you have the necessary permissions from the app users to use these APIs.
 
 ## Networking, Timings and other Utility APIs
 
@@ -40,7 +40,7 @@ Returns a new unique Message-ID (pseudo-random number) which you can use to send
 It does not take any parameters.
 
 ### isUiThread [Android and iOS only]
-Returns `true` if current thread is an UI thread.
+Returns `true` if the current thread is a UI thread.
 
 It does not take any parameters.
 
