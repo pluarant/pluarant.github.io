@@ -18,23 +18,23 @@
 /** code formatting **/
 
 pre {
-    background-color: #F5F8FA!important;
     display: block;
-    padding: 20.5px!important;
+    padding: 20px!important;
     margin: 0 0 10px;
     font-size: 13px;
     line-height: 1.42857143;
     color: #333;
-    word-break: normal !important;
+    word-break: normal!important;
     word-wrap: break-word;
+    background-color: #F0F3F6!important;
     border: 0!important;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 code {
-    background-color: #F5F8FA!important;
+    background-color: #F0F3F6!important;
     border-radius: 2px;
-    color: #0c5176 !important;
+    color: #0054a9 !important;
     font-size: 90%;
     padding: 3px 7px;
     overflow-x: scroll;
@@ -124,24 +124,4 @@ a.anchorLink {
     margin: 15px 0;
 }
 
-code {
-    padding: 3px 7px;
-    font-size: 90%;
-    color: #0c5176!important;
-    background-color: rgba(12, 81, 118, 0.1);
-    border-radius: 2px;
-}
 
-pre {
-    display: block;
-    padding: 9.5px;
-    margin: 0 0 10px;
-    font-size: 13px;
-    line-height: 1.42857143;
-    color: #333;
-    word-break: normal!important;
-    word-wrap: break-word;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
