@@ -24,10 +24,11 @@ Let's quickly learn about some of the key features of both these apps which we a
 - Online status (presence) and real-time profile update
 - Push notifications
 
-Excited? It won't take much before you build your own Android and iOS app with all these features yourself. But if you can't wait, you can also try them from [Google Play Store](https://play.google.com/store/apps/details?id=com.mesibo.mesiboapplication) OR [Apple AppStore](https://itunes.apple.com/us/app/mesibo-realtime-messaging-voice-video/id1222921751)
+Excited? It won't take much before you build your own Android and iOS app with all these features yourself. But if you can't wait, you can also try them from [Google Play Store](https://play.google.com/store/apps/details?id=com.mesibo.mesiboapplication){:target="_blank"}
+OR [Apple AppStore](https://apps.apple.com/us/app/mesibo-realtime-messaging-voice-video/id1222921751){:target="_blank"}
 
-<a href="https://itunes.apple.com/us/app/mesibo-realtime-messaging-voice-video/id1222921751"><img src="{{ '/images/iphone-app.png' | relative_url }}" align="left" hspace="20"/></a>
-<a href="https://play.google.com/store/apps/details?id=com.mesibo.mesiboapplication"><img src="{{ '/images/android-app.png' | relative_url }}" align="left" hspace="20"/></a>
+<a href="https://apps.apple.com/us/app/mesibo-realtime-messaging-voice-video/id1222921751" target="_blank"><img src="{{ '/images/iphone-app.png' | relative_url }}" align="left" hspace="20"/></a>
+<a href="https://play.google.com/store/apps/details?id=com.mesibo.mesiboapplication" target="_blank"><img src="{{ '/images/android-app.png' | relative_url }}" align="left" hspace="20"/></a>
 <br/><br/>
 <p>
 &nbsp;
@@ -36,7 +37,7 @@ Excited? It won't take much before you build your own Android and iOS app with a
 Alright, let's get going!
 
 ## Prerequisites
-Before we dive into building and running a fully featured Messenger for Android and iOS, ensure that you've read the followings.
+Before we dive into building and running a fully featured Messenger for Android and iOS, ensure that you've read the following.
 
 - [Get Started Guide]({{ '/documentation/get-started/' | relative_url }}).
 - Tutorial on [Writing your First mesibo Enabled Application]({{ '/documentation/tutorials/first-app/' | relative_url }}).
@@ -66,8 +67,8 @@ These apps use the following Mesibo SDKs.
 
 These apps also use the following third-party libraries/services.
 
-- [Facebook AccountKit](https://www.accountkit.com/) for the Phone Verification
-- [Google Maps](https://developers.google.com/maps/documentation/) and [Google Places](https://cloud.google.com/maps-platform/places/) SDKs for Geolocation integration 
+- [Facebook AccountKit](https://www.accountkit.com/){:target="_blank"} for the Phone Verification
+- [Google Maps](https://developers.google.com/maps/documentation/){:target="_blank"} and [Google Places](https://cloud.google.com/maps-platform/places/){:target="_blank"} SDKs for Geolocation integration 
 
 In a later section, we will discuss how to configure your own API keys for both these services.
 

@@ -19,7 +19,7 @@ Before we dive into building and running a fully featured Messenger for Android,
 - An Android Device
 
 ## Downloading the Source Code
-The latest code for the Android Messenger is always updated and pushed on [messenger-app-android repository](https://github.com/mesibo/messenger-app-android).
+The latest code for the Android Messenger is always updated and pushed on [messenger-app-android repository](https://github.com/mesibo/messenger-app-android){:target="_blank"}.
 
 There are multiple ways of "downloading" code from GitHub.
 
@@ -37,14 +37,14 @@ You can also download the complete Android Messenger source code as a zip file. 
 
 Click on the `Download` button to start downloading.
 
-[Download](https://github.com/mesibo/messenger-app-android/archive/master.zip){: class="button outline-btn" style="margin-bottom: 10px; margin-right: 100%"}
+[Download](https://github.com/mesibo/messenger-app-android/archive/master.zip){: target="_blank" class="button outline-btn" style="margin-bottom: 10px; margin-right: 100%"}
 
 Once the download completes, unzip into a folder. 
 
 ### Stay Up-to-date
 Whatever approach you take to download the code, it is important to stay up-to-date with the latest changes, new features, fixes etc. Ensure to **Star(*)** the project on GitHub to get notified whenever the source code is updated. 
 
-<a class="github-button" href="https://github.com/mesibo/messenger-app-android" data-icon="octicon-star" data-size="large" aria-label="Star mesibo/messenger-app-android on GitHub">Star</a>
+<a class="github-button" href="https://github.com/mesibo/messenger-app-android" target="_blank" data-icon="octicon-star" data-size="large" aria-label="Star mesibo/messenger-app-android on GitHub">Star</a>
 
 ## Build and Run
 In this part, we will build the code as it is and run the app. In the next section, we will learn about customizing applications.

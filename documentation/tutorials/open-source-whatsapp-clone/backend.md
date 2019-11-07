@@ -29,7 +29,7 @@ Before we dive into setting up the backend for the Messenger apps, please ensure
 We will also need Facebook Account Kit and Google Maps keys which we registered in the [previous part](/documentation/tutorials/open-source-whatsapp-clone/customize/).
 
 ## Downloading the Backend Source Code
-The latest code for the backend is always updated and pushed on [messenger-app-backend repository](https://github.com/mesibo/messenger-app-backend).
+The latest code for the backend is always updated and pushed on [messenger-app-backend repository](https://github.com/mesibo/messenger-app-backend){:target="_blank"}.
 
 There are multiple ways of "downloading" code from GitHub.
 
@@ -45,14 +45,14 @@ You can also download the full backend source code as a zip file. Although simpl
 
 Click on the `Download` button to start downloading.
 
-[Download](https://github.com/mesibo/messenger-app-backend/archive/master.zip){: class="button outline-btn" style="margin-bottom: 10px; margin-right: 100%"}
+[Download](https://github.com/mesibo/messenger-app-backend/archive/master.zip){: target="_blank class="button outline-btn" style="margin-bottom: 10px; margin-right: 100%"}
 
 Once the download completes, unzip into a folder. 
 
 ### Stay Up-to-date
 Whatever approach you take to download the code, it is important to stay up-to-date with the latest changes, new features, fixes etc. Ensure to **Star(*)** the project on GitHub to get notified whenever the source code is updated. 
 
-<a class="github-button" href="https://github.com/mesibo/messenger-app-backend" data-icon="octicon-star" data-size="large" aria-label="Star mesibo/messenger-app-backend on GitHub">Star</a>
+<a class="github-button" href="https://github.com/mesibo/messenger-app-backend" target="_blank" data-icon="octicon-star" data-size="large" aria-label="Star mesibo/messenger-app-backend on GitHub">Star</a>
 
 ## Setting up the Database
 You will need to set up a database so that backend can store various information:
@@ -62,7 +62,7 @@ You will need to set up a database so that backend can store various information
 - Users contacts for contact synchronizations.
 - Google and Apple push notification tokens
 
-The backend uses MySQL as the database. We will not go into details of setting up MySQL server; there are plenty of tutorials on the web if you are not familiar. Once you’ve set up the MySQL server, create a database and the credentials. These credential will be needed by the backend code to access the database.
+The backend uses MySQL as the database. We will not go into details of setting up MySQL server; there are plenty of tutorials on the web if you are not familiar. Once you’ve set up the MySQL server, create a database and the credentials. These credentials will be needed by the backend code to access the database.
 
 The next step is to create the database schema using the supplied SQL file `mysql-schema.sql`. Run following to create the database schema for the backend.
 
@@ -120,11 +120,11 @@ Edit the following files in the Messenger apps to use the new backend.
 
 That’s it. Recompile both the apps and start using it!
 
-You can now see any new user and groups you create in the Mesibo console along with statistics.
+You can now see any new user and group you create in the Mesibo console along with statistics.
 
 ## Conclusion of part five
 
 In this part, we have learnt about hosting backend API on your own infrastructure. In the next part, we will learn about how to host Mesibo real-time server on your own premise. 
 
 
-[On to Part 6 >>](conclusion.md){: class="button outline-btn" style="margin-bottom: 30px; margin-right: 100%"}
+[On to Part 6 >>](on-premise.md){: class="button outline-btn" style="margin-bottom: 30px; margin-right: 100%"}
