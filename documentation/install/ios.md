@@ -6,7 +6,7 @@ keywords: chat sdk for ios, messaging sdk for ios, mesibo ios sdk, manual instal
 ---
 The Mesibo SDKs for iOS are available as CocoaPods pods OR individual frameworks that can be installed manually. 
 
-[CocoaPods](http://cocoapods.org) is an open source dependency manager for Swift and Objective-C Cocoa projects, which automates the process of using 3rd-party libraries like Mesibo in your projects. For details, see the [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+[CocoaPods](https://cocoapods.org/){:target="_blank"} is an open source dependency manager for Swift and Objective-C Cocoa projects, which automates the process of using 3rd-party libraries like Mesibo in your projects. For details, see the [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html){:target="_blank"}.
 
 If you prefer to install manually, you can click [here](#install-manually).
 
@@ -15,7 +15,7 @@ If you already have the CocoaPods tool, skip to Step 2.
 
 ### Step 1: Install CocoaPods
 
-[CocoaPods](http://cocoapods.org) is an open source dependency manager for Swift and Objective-C Cocoa projects, which automates the process of using 3rd-party libraries like Mesibo in your projects. For details, see the [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+[CocoaPods](https://cocoapods.org/){:target="_blank"} is an open source dependency manager for Swift and Objective-C Cocoa projects, which automates the process of using 3rd-party libraries like Mesibo in your projects. For details, see the [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html){:target="_blank"}.
 
 You can install CocoaPods by running the following commands in Terminal.app:
 
@@ -67,12 +67,12 @@ At this point, everything's in place for you to start using Mesibo. Just `#impor
 ## Install Manually
 You can add mesibo frameworks manually to your project.
 
-You can download all the Mesibo frameworks for iOS from [GitHub](https://github.com/mesibo/mesiboframeworks) OR by by running the following commands in Terminal.app:
+You can download all the Mesibo frameworks for iOS from [GitHub](https://github.com/mesibo/mesiboframeworks){:target="_blank"} OR by by running the following commands in Terminal.app:
 
     $ git lfs install
     $ git clone https://github.com/mesibo/mesiboframeworks.git
 
-If you are using, Mesibo Call framework, you also need to download Mesibo WebRTC framework by downloading from [GitHub](https://github.com/mesibo/mesibowebrtcframework) OR by by running the following commands in Terminal.app:
+If you are using, Mesibo Call framework, you also need to download Mesibo WebRTC framework by downloading from [GitHub](https://github.com/mesibo/mesibowebrtcframework){:target="_blank"} OR by by running the following commands in Terminal.app:
 
     $ git lfs install
     $ git clone https://github.com/mesibo/mesibowebrtcframework.git

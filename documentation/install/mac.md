@@ -1,6 +1,6 @@
 ---
 description: Install Chat SDK on Mac OS. Mesibo Chat SDK is available as a shared library (.so) which allows you to use it from any application OR languages of your choice like C, C++, Python, PHP, etc.
-keywords: Install Chat SDK on Mac OS. Available as a dynamic library (.dylib) which allows you to use it from any application OR languages of your choice like C, C++, Python, PHP, Matlab etc.
+keywords: chat sdk for mac, messaging sdk for mac, macos chat sdk, chat installation on macos, messaging app for mac
 title: Chat SDK for Mac OS 
 toc_max: 4
 ---

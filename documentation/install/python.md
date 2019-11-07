@@ -1,10 +1,10 @@
 ---
-title: Chat SDK for Python - Real-time Messaging API for Python
+title: Chat SDK for Python 
 description: Install real-time chat SDK for Python. The entire module is built and installed automatically by copying files from the generated build folder into the lib directory path.
 keywords: chat sdk for python, messaging sdk for python, mesibo python sdk, open source messaging sdk, chat app sdk, python chat sdk
 toc_max: 4
 ---
-Mesibo Python API is an entirely open-source real-time library which can be built and installed from source. The entire source code and installation details can be found at our GitHub repo [Mesibo Python API](https://github.com/mesibo/python)
+Mesibo Python API is an entirely open-source real-time library which can be built and installed from source. The entire source code and installation details can be found at our GitHub repo [Mesibo Python API](https://github.com/mesibo/python){:target="_blank"}
 
 ### Platforms Supported 
 Currently the Mesibo Real-Time Python library is under-development and supports Linux,Mac and Raspberry Pi.
@@ -30,13 +30,13 @@ sudo yum install libffi-devel python python-devel
 
 **2. Compiler**
 
-Mesibo Python Library uses [Mesibo C/C++ SDK](https://mesibo.com/documentation/install/linux/). Hence, it has to compiled before installing the package. GCC-C++ 4.x (and later)are recommended. 
+Mesibo Python Library uses [Mesibo C/C++ SDK](https://mesibo.com/documentation/install/linux/){:target="_blank"}. Hence, it has to compiled before installing the package. GCC-C++ 4.x (and later)are recommended. 
 
 
 ## Installing Mesibo Python Library
 
 
-Download the Mesibo Python library source code from the [Mesibo Python repo on GitHub](https://github.com/mesibo/python).
+Download the Mesibo Python library source code from the [Mesibo Python repo on GitHub](https://github.com/mesibo/python){:target="_blank"}.
 ```
 git clone https://github.com/mesibo/python.git
 ```

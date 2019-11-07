@@ -1,6 +1,6 @@
 ---
 description: Install Chat SDK on Linux. Mesibo Chat SDK is available as a shared library (.so) which allows you to use it from any application OR languages of your choice like C, C++, Python, PHP, etc.
-keywords: Install Chat SDK on Linux. Available as a shared library (.so) which allows you to use it from any application OR languages of your choice like C, C++, Python, PHP, Matlab etc.
+keywords: chat sdk for linux, messaging sdk for linux, mesibo linux sdk, chat installation on linux, messaging app for linux
 title: Chat SDK for Linux 
 toc_max: 4
 ---

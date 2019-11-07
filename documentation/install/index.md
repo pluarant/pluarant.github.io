@@ -39,7 +39,7 @@ Below is links to installation instructions for each platforms:
 
 ### Versioning
 
-Mesibo follows [Semantic Versioning](https://semver.org/).
+Mesibo follows [Semantic Versioning](https://semver.org/){:target="_blank"}.
 
 Each mesibo module has a version number defined as MAJOR.MINOR.PATCH, for example 1.2.21, in which the major version is 1, minor version is 2 and the patch version 21.
 
