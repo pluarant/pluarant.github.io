@@ -22,7 +22,7 @@ We welcome your participation to help make the documentation better!
 ## How to contribute to the docs
 
 The documentation for Docker is published at
-[docs.docker.com](https://docs.docker.com/).
+[docs.docker.com](https://docs.docker.com/){:target="_blank"}.
 
 There are many ways to contribute:
 
@@ -33,7 +33,7 @@ at [docs.docker.com](/).
   ![Docs feedback links](images/docs-site-feedback.png)
 
 - File a documentation issue on GitHub at
-[https://github.com/docker/docker.github.io/issues](https://github.com/docker/docker.github.io/issues).
+[https://github.com/docker/docker.github.io/issues](https://github.com/docker/docker.github.io/issues){:target="_blank"}.
 
   This is similar to clicking **Request doc changes** on a published docs
   page, but if you manually file an issue you need to fill in links to
@@ -65,7 +65,7 @@ are reporting on.
 
 To learn more about working on the documentation, see these topics:
 
-- [README on docker/docker.github.io](https://github.com/docker/docker.github.io/blob/master/README.md)
+- [README on docker/docker.github.io](https://github.com/docker/docker.github.io/blob/master/README.md){:target="_blank"}
 
 - [Docs Test page](/test.md) - This is on the
 published site. It explains how to use Docs components, resources, and
