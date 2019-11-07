@@ -14,7 +14,6 @@
 		{% endif %}
 	{% endfor %}
 {% endif %}
-
 <!-- Logic for 'edit this button' -->
 {% assign edit_url = "https://github.com/mesibo/mesibo.github.io/edit/master/" | append: page.path %}
 {% for entry in site.data.not_edited_here.overrides %}
@@ -27,17 +26,18 @@
 	{% break %}
 	{% endif %}
 {% endfor %}
-			
 <!-- edit url temporarily disabled Mesibo -->
 {% assign edit_url = "" %}
-
 <!-- End of logic for 'edit this button' -->
-
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+	<title>{{ page.title }} | Mesibo Documentation</title>
+	<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}docker platform, distributed applications, microservices, containers, docker containers, docker software, docker virtualization{% endif %}" />
+	<meta name="description" content="{{ page.description }}" />
+	<meta name="publisher" content="{% if page.author %}{{ page.author }}{% else %}https://mesibo.com{% endif %}" />
+
 	<base href="{{ basehref }}" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<style type="text/css">
@@ -57,28 +57,29 @@
 		}
 	</style>
 	{% if site.GH_ENV == "gh_pages" %}
-	<meta name="robots" content="noindex">{% endif %}
+	<meta name="robots" content="index,follow">{% endif %}
+	<!-- metadata -->
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" itemprop="image primaryImageOfPage" content="{{ '/images/docs@2x.png' | relative_url }}"/>
+	<meta property="og:description" content="{{ page.description }}" />
+	<meta property="og:locale" content="en_US" />
+	<meta name="twitter:domain" content="mesibo.com"/>
+	<meta name="twitter:site" content="@mesiboapi"/>
+	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
+	<meta name="twitter:title" itemprop="title name" content="{{ page.title }}"/>
+	<meta name="twitter:description" property="og:description" itemprop="description" content="{{ content | strip_html | truncatewords: 30}}" />
+	<meta name="twitter:image:src" content="{{ '/images/docs@2x.png' | relative_url }}" />
+	<meta property="article:published_time" itemprop="datePublished" content="{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- favicon -->
 	<link rel="icon" type="image/png" href="{{ '/favicons/mesibo-favicon.png' | relative_url }}" sizes="129x128">
 	<meta name="msapplication-TileImage" content="{{ '/favicons/mesibo-favicon.png' | relative_url }}">
 	<link rel="mesibo-favicon" type="image/png" href="{{ '/favicons/mesibo-favicon.png' | relative_url }}" sizes="129x128">
 	<meta property="og:image" content="{{ '/favicons/mesibo-favicon.png' | relative_url }}"/>
-	<!-- metadata -->
-	<meta property="og:type" content="website"/>
-	<meta property="og:updated_time" itemprop="dateUpdated" content="{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}"/>
-	<meta property="og:image" itemprop="image primaryImageOfPage" content="{{ '/images/docs@2x.png' | relative_url }}"/>
-	<meta name="twitter:card" content="summary"/>
-	<meta name="twitter:domain" content="mesibo.com"/>
-	<meta name="twitter:site" content="@mesibo"/>
-	<meta name="twitter:url" content="https://twitter.com/mesiboapi"/>
-	<meta name="twitter:title" itemprop="title name" content="{{ page.title }}"/>
-	<meta name="twitter:description" property="og:description" itemprop="description" content="{{ content | strip_html | truncatewords: 30}}" />
-	<meta name="twitter:image:src" content="{{ '/images/docs@2x.png' | relative_url }}" />
-	<meta name="twitter:image:alt" content="Mesibo Documentation"/>
-	<meta property="article:published_time" itemprop="datePublished" content="{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}"/>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}docker, docker open source, docker platform, distributed applications, microservices, containers, docker containers, docker software, docker virtualization{% endif %}">
 	<link rel="stylesheet" href="{{ '/css/font-awesome.min.css' | relative_url }}" >
 	<link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | relative_url }}" >
 	<link id="pygments" rel="stylesheet" href="{{ '/css/pygments/perldoc.css' | relative_url }}" >
@@ -87,14 +88,7 @@
 	<!-- Go get "Open Sans" font from Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!-- SEO stuff -->
-	<title>{{ page.title }} | Mesibo Documentation</title>
-<meta property="og:title" content="{{ page.title }}" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="{{ page.description }}" />
-<meta property="og:description" content="{{ page.description }}" />
-<link rel="canonical" href="{{ page.url }}" />
-<meta property="og:url" content="{{ page.url }}" />
-<meta property="og:site_name" content="Mesibo Documentation" />
+<link rel="canonical" href="https://mesibo.com{{ page.url }}" />
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebPage","headline":"{{ page.title }}","description":"{{ page.description }}","url":"https://docs.docker.com{{ page.url }}"}</script>
 	<!-- END SEO STUFF -->
