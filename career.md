@@ -91,22 +91,18 @@ title: Careers
 <h2 class="size-20">Stay Connected </h2>
 </div>
 <div class=''>
-<a href="https://www.facebook.com/mesiboapi" class="social-icon social-icon-round social-facebook about-social" data-toggle="tooltip" data-placement="top" title="Facebook">
+<a href="https://www.facebook.com/mesiboapi" target="_blank" class="social-icon social-icon-round social-facebook about-social" data-toggle="tooltip" data-placement="top" title="Facebook">
 <i class="icon-facebook"></i>
 <i class="icon-facebook"></i>
-<a href="https://twitter.com/mesiboapi" class="social-icon social-icon-round social-twitter about-social" data-toggle="tooltip" data-placement="top" title="Twitter">
+<a href="https://twitter.com/mesiboapi" target="_blank" class="social-icon social-icon-round social-twitter about-social" data-toggle="tooltip" data-placement="top" title="Twitter">
 <i class="icon-twitter"></i>
 <i class="icon-twitter"></i>
 </a>
-<a href="https://plus.google.com/107106343719610600541" class="social-icon social-icon-round social-gplus about-social" data-toggle="tooltip" data-placement="top" title="Google+">
-<i class="icon-gplus"></i>
-<i class="icon-gplus"></i>
-</a>
-<a href="https://www.linkedin.com/company/mesibo" class="social-icon social-icon-round social-linkedin about-social" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+<a href="https://www.linkedin.com/company/mesibo" target="_blank" class="social-icon social-icon-round social-linkedin about-social" data-toggle="tooltip" data-placement="top" title="LinkedIn">
 <i class="icon-linkedin"></i>
 <i class="icon-linkedin"></i>
 </a>
-<a href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ" class="social-icon social-icon-round social-youtube about-social" data-toggle="tooltip" data-placement="top" title="Youtube">
+<a href="https://www.youtube.com/channel/UCxpcg-RSf2-lK4uyysWSsKQ" target="_blank" class="social-icon social-icon-round social-youtube about-social" data-toggle="tooltip" data-placement="top" title="Youtube">
 <i class="icon-youtube"></i>
 <i class="icon-youtube"></i>
 </a>

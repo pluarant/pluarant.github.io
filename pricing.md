@@ -87,7 +87,7 @@ Mesibo offers you <strong>pay as you go pricing</strong> for both its On-Premise
 </div>
 </div>
 <div class="row">
-<p>Both Free and Pay-As-You-Go plan include all the features. However, there are some features which are exclusive to On-Premise offering since they cannot be deployed in the Cloud, for example, dynamically loadable modules, scripting, etc. If you require custom features, visit <a href="/documentation/support/custom-solutions/" title="Custom Solutions for Chat API">custom solutions</a>.</p>
+<p>Both Free and Pay-As-You-Go plan include all the features. However, there are some features which are exclusive to On-Premise offering since they cannot be deployed in the Cloud, for example, dynamically loadable modules, scripting, etc. If you require custom features, visit <a href="/documentation/support/custom-solutions/" title="Custom Solutions for Chat API" target="_blank">custom solutions</a>.</p>
 <div class="col-lg-4 px-0 mx-0">
 <div class="pv-30 ph-20 hc-item-box border-right hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
 <ul class="list-icons">

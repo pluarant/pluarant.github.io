@@ -20,7 +20,7 @@ banner: true
 <p class="large">We offer 24/7 support via email. All our Support Team members are working from our San Francisco Bay Area and Singapore offices. Depending on the ticket time and your past interactions, one of our teams will answer your queries. 
 </p>
 -->
-<p class="large">Please go through Mesibo <a href="/documentation/get-started/">Getting-Started guide</a>, <a href="/documentation/tutorials/">Tutorials</a>, <a href="/documentation/faq/">FAQs</a>, and <a href="/documentation/pricing/">Pricing</a> pages before sending a support request. You will likely get answers to your questions there itself. </p>
+<p class="large">Please go through Mesibo <a href="/documentation/get-started/" target="_blank">Getting-Started guide</a>, <a href="/documentation/tutorials/" target="_blank">Tutorials</a>, <a href="/documentation/faq/" target="_blank">FAQs</a>, and <a href="/documentation/pricing/" target="_blank">Pricing</a> pages before sending a support request. You will likely get answers to your questions there itself. </p>
 </div>
 </div>
 <div class="row">

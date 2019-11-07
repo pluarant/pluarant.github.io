@@ -4,12 +4,12 @@ title: Components
 hide_from_sitemap: true
 ---
 
-For components and controls we are using [Bootstrap](http://getbootstrap.com/)
+For components and controls we are using [Bootstrap](http://getbootstrap.com/){: target="_blank" }
 
 
 <!-- ### Dropdowns
 <div class="dropdown">
-  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+  <a id="dLabel" data-target="#" target="_blank" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
     Dropdown trigger
     <span class="caret"></span>
   </a>
@@ -52,7 +52,7 @@ For components and controls we are using [Bootstrap](http://getbootstrap.com/)
 
 
 ### Accordion
-[Bootstrap docs](http://getbootstrap.com/javascript/#collapse)
+[Bootstrap docs](http://getbootstrap.com/javascript/#collapse){: target="_blank" }
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">

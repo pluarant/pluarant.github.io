@@ -1,6 +1,6 @@
 # Mesibo Website
 
-This is the source for [https://mesibo.com/](https://mesibo.com/).
+This is the source for [https://mesibo.com/](https://mesibo.com/){: target="_blank"}.
 
 Feel free to send us pull requests and file issues. Our docs are completely
 open source and we deeply appreciate contributions from our community!
@@ -9,7 +9,7 @@ open source and we deeply appreciate contributions from our community!
 
 We really want your feedback, and we've made it easy.  You can edit a page or
 request changes in the right column of every page on
-[mesibo.com](https://mesibo.com/).  You can also rate each page by
+[mesibo.com](https://mesibo.com/){: target="_blank"}.  You can also rate each page by
 clicking a link at the footer.
 
 **Only file issues about the documentation in this repository.** One way
@@ -18,7 +18,7 @@ don't see something that should be in the docs, or you see something incorrect
 or confusing in the docs.
 
 - If your problem is a general question about how to use Mesibo,
-  visit [https://mesibo.com/help/](https://mesibo.com/help/) instead.
+  visit [https://mesibo.com/help/](https://mesibo.com/help/){: target="_blank"} instead.
 
 - If you have an idea for a new feature or behavior change in a specific aspect
   of Mesibo, or have found a bug in part of Mesibo, file that issue in
@@ -55,7 +55,7 @@ You have two options:
        git clone --recursive https://github.com/mesibo/website.git
        ```
 
-    b. Install Ruby 2.3 or later as described in [Installing Ruby](https://www.ruby-lang.org/en/documentation/installation/).
+    b. Install Ruby 2.3 or later as described in [Installing Ruby](https://www.ruby-lang.org/en/documentation/installation/){: target="_blank"}.
 
     c. Install Bundler:
 
@@ -91,7 +91,7 @@ You have two options:
 
 To read the docs offline, you can use either a standalone container or a swarm service.
 To see all available tags, go to
-[Docker Hub](https://hub.docker.com/r/docs/docker.github.io/tags/).
+[Docker Hub](https://hub.docker.com/r/docs/docker.github.io/tags/){: target="_blank"}.
 The following examples use the `latest` tag:
 
 - Run a single container:
@@ -121,7 +121,7 @@ Either way, you can now access the docs at port 4000 on your Docker host.
 
 Feel free to link to `../foo.md` so that the docs are readable in GitHub, but keep in mind that Jekyll templating notation
 `{% such as this %}` will render in raw text and not be processed. In general it's best to assume the docs are being read
-directly on [https://docs.docker.com/](https://docs.docker.com/).
+directly on [https://docs.docker.com/](https://docs.docker.com/){: target="_blank"}.
 
 ### Testing changes and practical guidance
 
@@ -168,7 +168,7 @@ no_ratings: true
 
 ### Creating tabs
 
-The use of tabs, as on pages like [https://docs.docker.com/engine/api/](/engine/api/), requires
+The use of tabs, as on pages like [https://docs.docker.com/engine/api/](/engine/api/){: target="_blank"}, requires
 the use of HTML. The tabs use Bootstrap CSS/JS, so refer to those docs for more
 advanced usage. For a basic horizontal tab set, copy/paste starting from this
 code and implement from there. Keep an eye on those `href="#id"` and `id="id"`
@@ -238,17 +238,17 @@ still optimizes the bandwidth during browsing).
 All the images described below are automatically built using Docker Hub. To
 build the site manually, from scratch, including all utility and archive images,
 see the [README in the publish-tools
-branch](https://github.com/docker/docker.github.io/blob/publish-tools/README.md).
+branch](https://github.com/docker/docker.github.io/blob/publish-tools/README.md){: target="_blank"}.
 
 - Some utility images are built from Dockerfiles in the `publish-tools` branch.
-  See its [README](https://github.com/docker/docker.github.io/blob/publish-tools/README.md)
+  See its [README](https://github.com/docker/docker.github.io/blob/publish-tools/README.md){: target="_blank"}
   for details.
 - Each archive branch automatically builds an image tagged
   `docs/docker.github.io:v<VERSION>` when a change is merged into that branch.
 - The `master` branch has a Dockerfile which uses the static HTML from each
   archive image, in combination with the Markdown
   files in `master` and some upstream resources which are fetched at build-time,
-  to create the full site at [https://docs.docker.com/](/). All
+  to create the full site at [https://docs.docker.com/](/){: target="_blank"}. All
   of the long-running branches, such as `vnext-engine`, `vnext-compose`, etc,
   use the same logic.
 

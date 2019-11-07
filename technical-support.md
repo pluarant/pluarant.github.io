@@ -44,7 +44,7 @@ banner: true
 <div class="separator"></div>
 -->
 <!-- <p class="large text-center">If you didn’t find answers in our FAQ, you can contact us with your questions in one of the three ways below. Please include as much information as possible so that we can precisely answer your question.</p> -->
-<p class="large">Please go through Mesibo <a href="/documentation/get-started/">Getting-Started guide</a>, <a href="/documentation/tutorials/">Tutorials</a>, <a href="/documentation/faq/">FAQs</a>, and <a href="/documentation/pricing/">Pricing</a> pages before sending a support request. You will likely get answers to your questions there itself. </p>
+<p class="large">Please go through Mesibo <a href="/documentation/get-started/" target="_blank" >Getting-Started guide</a>, <a href="/documentation/tutorials/"  target="_blank" >Tutorials</a>, <a href="/documentation/faq/" target="_blank" >FAQs</a>, and <a href="/documentation/pricing/" target="_blank" >Pricing</a> pages before sending a support request. You will likely get answers to your questions there itself. </p>
 </div>
 </div>
 <div class="row">
@@ -56,7 +56,7 @@ banner: true
 <p class="techsupport-box">
 You can ask your questions on StackOverflow and tag `mesibo`. We shall revert to you on StackOverflow at the earliest.
 </p>
-<a href="https://stackoverflow.com/questions/ask" class="btn btn-animated btn-default-transparent radius-50">Ask on StackOverflow <i class="fa fa-chevron-right"></i></a>
+<a href="https://stackoverflow.com/questions/ask" target="_blank" class="btn btn-animated btn-default-transparent radius-50">Ask on StackOverflow <i class="fa fa-chevron-right"></i></a>
 </div>
 </div>
 <div class="col-lg-4">
@@ -67,7 +67,7 @@ You can ask your questions on StackOverflow and tag `mesibo`. We shall revert to
 <p class="techsupport-box">
 Any issues or feature requests on our source code, on GitHub? Report it on our GitHub repository itself.
 </p>
-<a href="https://github.com/mesibo/" class="btn btn-animated btn-default-transparent radius-50">Create GitHub Issue <i class="fa fa-chevron-right"></i></a>
+<a href="https://github.com/mesibo/" target="_blank" class="btn btn-animated btn-default-transparent radius-50">Create GitHub Issue <i class="fa fa-chevron-right"></i></a>
 </div>
 </div>
 <div class="col-lg-4">
