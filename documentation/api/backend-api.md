@@ -193,5 +193,5 @@ The response could be `OK` or `FAIL`.
 
 ### PHP Helper SDK
 
-A PHP helper class for mesibo REST API is available [here](https://github.com/mesibo/samples/tree/master/php)
+A PHP helper class for mesibo REST API is available [here](https://github.com/mesibo/samples/tree/master/php){:target="_blank"}
 
