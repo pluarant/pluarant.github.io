@@ -3,6 +3,8 @@ title: Real-time Chat APIs - Listeners
 description: Mesibo invokes listeners for various events. For example, when you receive a message, receive an incoming call etc. You can implement to these listeners to get real-time notifications of events.
 keywords: listener api, listener api chat, message listener api, listener api for android, listener api for iOS 
 ---
+{% include_relative nav.html selected="listener" %}
+
 Mesibo invokes **Listeners** for various events. For example, when you receive a message, receive an incoming call etc. You can implement to these listeners to get real-time notifications of events.
 
 To set listener, use setListener API.

@@ -3,6 +3,8 @@ title: Real-time Chat APIs - Data Structures
 description: Understanding data structures of mesibo real-time chat API for Android and iOS
 keywords: chat api data structures, data structure for android, data structure for iOS, mesibo data structure, guide on data structure
 ---
+{% include_relative nav.html selected="datastr" %}
+
 ### MessageParams
 MessageParams is one of the most important data structures of Mesibo real-time API.
 

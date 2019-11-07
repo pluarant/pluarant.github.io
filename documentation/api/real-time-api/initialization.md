@@ -1,6 +1,6 @@
 ---
 title: Mesibo Real-time Chat APIs - Initialization
-description: Initializing Mesibo Chat API 
+description: Initializing Mesibo Real-time Chat API 
 keywords: real-time chat api, start with chat api, initialize guide for api
 ---
 {% include_relative nav.html selected="init" %}
