@@ -2,6 +2,7 @@
 title: Chat SDK for Python 
 description: Install real-time chat SDK for Python. The entire module is built and installed automatically by copying files from the generated build folder into the lib directory path.
 keywords: chat sdk for python, messaging sdk for python, mesibo python sdk, open source messaging sdk, chat app sdk, python chat sdk
+heading: Chat / Messaging SDK for Python
 toc_max: 4
 ---
 Mesibo Python API is an entirely open-source real-time library which can be built and installed from source. The entire source code and installation details can be found at our GitHub repo [Mesibo Python API](https://github.com/mesibo/python){:target="_blank"}

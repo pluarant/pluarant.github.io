@@ -1,7 +1,8 @@
 ---
-title: Download and Install Mesibo
-description: Download and Install Mesibo
-keywords: mesibo, installation
+title: Download and Install Mesibo Chat SDK
+description: Download and install mesibo chat SDK which supports almost all popular platforms and languages - Android, iOS, Javascript, Python, Raspberry Pi, Linux, Windows, Mac etc to build your communication applications quickly.
+keywords: chat sdk, download mesibo sdk, chat sdk installation, installing video chat in-app, install messaging sdk 
+heading: Download and Install Mesibo Chat SDK
 ---
 
 Mesibo supports almost all popular platforms and languages for you to quickly build your applications. Whether you are developing mobile apps (Android, iOS, Java, Objective-C, C++), web apps (Javascript), integrating with backend (Linux, MacOS, Windows, Python, C++) or creating cool devices using Raspberry PI, mesibo has APIs for you.
