@@ -138,7 +138,7 @@ How to decode JSON data?: |
       } catch (Exception e) {}
    
   
-  [Complete Code on GitHub](https://github.com/Mesibo/messenger-app-android/blob/master/app/src/main/java/org/Mesibo/messenger/MesiboFileTransferHelper.java)
+  [Complete Code on GitHub](https://github.com/mesibo/messenger-app-android/blob/master/app/src/main/java/org/mesibo/messenger/MesiboFileTransferHelper.java){:target="_blank"}
   
   iOS Example
       NSError *jsonerror = nil;
@@ -147,7 +147,7 @@ How to decode JSON data?: |
       id jsonObject = [NSJSONSerialization JSONObjectWithData:data 
                                  options:NSJSONReadingAllowFragments error:&jsonerror];
   
-  [Complete Code on GitHub](https://github.com/Mesibo/messenger-app-ios/blob/master/MesiboApplication/SampleAppFileTransferHandler.m)
+  [Complete Code on GitHub](https://github.com/mesibo/messenger-app-ios/blob/master/MesiboApplication/SampleAppFileTransferHandler.m){:target="_blank"}
 
 How to make a synchronous request?: |
 
