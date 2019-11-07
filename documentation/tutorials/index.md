@@ -1,7 +1,8 @@
 ---
-description: Mesibo Tutorials
-keywords: mesibo, open, source, tutorials, overview
-title: Mesibo Tutorials
+description: Mesibo tutorials for making a chat app for iOS and Android similar to WhatsApp Chat app.
+keywords: whatsapp clone tutorial, android chat app tutorial, ios chat app tutorial, tutorials for making whatsapp, open source chat app tutorials
+title: Tutorials to make Chat App
+heading: Mesibo Tutorials
 ---
 
 We have some good tutorials for you to quickly get started with Mesibo. 
