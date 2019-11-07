@@ -1,7 +1,8 @@
 ---
-title: Mesibo UI Modules
-description: Mesibo offers ready to use UI components which you can quickly add to your applications. 
-keywords: mesibo, ui-modules, ui, messaging, voice, video, call
+title: Real-time Chat App UI Components
+description: Mesibo offers ready to use UI components for messaging, voice and video calls which you can quickly add to your Android and iOS chat application. Our real-time chat UI components are optional and provided only to aid in the software development process.
+keywords: mesibo, ui-modules, chat ui components, messaging app ui, voice, video call ui
+heading: Mesibo Chat UI Modules
 ---
 Mesibo offers ready to use UI components which you can quickly add to your applications. Mesibo UI components are optional and provided only to aid in the software development process. You can completely design your own UI components using Mesibo Core API. 
 
