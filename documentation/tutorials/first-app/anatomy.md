@@ -36,7 +36,7 @@ Since your app can receive messages or calls anytime, you instruct Mesibo to let
 Following are some of the callbacks. For entire list and more details, refer [listener API documentation](https://mesibo.com/documentation/api/listeners/):
 
 ### mesibo_onConnectionStatus 
-Invoked when the connection status is changed. There are different connection status codes corresponding to which you can get to know you whether your app is online/offline. 
+Invoked when the connection status is changed. There are different connection status codes corresponding to which you can get to know whether your app is online/offline. 
 
 ### mesibo_onMessageStatus
 Invoked when the status of the outgoing or sent message is changed. For example, 

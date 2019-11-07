@@ -168,3 +168,5 @@ int send_text_message(const char* to,const char * message){
 ```
 
 That’s it! Try it out by creating two users and send messages to each other by using the above function.
+
+[On to Part 7 >>](python.md){: class="button outline-btn" style="margin-bottom: 30px; margin-right: 100%"}

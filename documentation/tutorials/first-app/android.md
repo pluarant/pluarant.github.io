@@ -18,7 +18,7 @@ Now let's quickly start coding:
 
 1. Start Android Studio.
 2. Create a new project with minimum SDK version 16 or higher.
-3. Android Studio starts Gradle and builds your project. This may take a few seconds. For more information about creating a project in Android Studio, see the Android Studio documentation. [https://developer.android.com/training/basics/firstapp/creating-project.html](https://developer.android.com/training/basics/firstapp/creating-project.html)
+3. Android Studio starts Gradle and builds your project. This may take a few seconds. For more information about creating a project in Android Studio, see the Android Studio documentation. [https://developer.android.com/training/basics/firstapp/creating-project.html](https://developer.android.com/training/basics/firstapp/creating-project.html){:target="_blank"}
 4. Add mesibo SDK to your project by adding gradle dependency and performing gradle sync as explained in [installation instructions]({{ '/documentation/install/android/' | relative_url }}).
 5. Import mesibo API and add mesibo initialization code in your onCreate method
 
@@ -101,6 +101,6 @@ That's it! Try it out by creating two instances of the app and send message to e
 
 ## Download Sample Application
 
-You can download the entire sample application from **[GitHub](https://github.com/mesibo/samples)**
+You can download the entire sample application from **[GitHub](https://github.com/mesibo/samples){:target="_blank"}**
 
 [On to Part 4 >>](ios.md){: class="button outline-btn" style="margin-bottom: 30px; margin-right: 100%"}

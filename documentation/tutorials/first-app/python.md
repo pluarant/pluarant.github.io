@@ -20,7 +20,7 @@ You MUST go through the following prerequisites before you read further.
 - Installed the Mesibo Real-Time Python Library. If not, refer installation instructions [here](/documentation/install/python/) 
 - Read the [Preparation Guide](https://mesibo.com/documentation/tutorials/first-app/)
 
-- Read the [Anatomy of a Mesibo Application](https://mesibo.com) about using the Mesibo API and listener class
+- Read the [Anatomy of a Mesibo Application](https://mesibo.com){:target="_blank"} about using the Mesibo API and listener class
 
 - Basic knowledge of writing and running Python code
 
@@ -65,7 +65,7 @@ pymesibo.start()
 
 ```
 
-As explained in [Anatomy of Mesibo Application](https://mesibo.com), Mesibo invokes a class of Listeners for various events. 
+As explained in [Anatomy of Mesibo Application](https://mesibo.com){:target="_blank"}, Mesibo invokes a class of Listeners for various events. 
 
 Derive from the `MesiboNotify` class to implement listeners as shown below.
 
@@ -134,3 +134,5 @@ def send_text_message(to,message):
 ```
 
 That’s it! Try it out by creating two users and send messages to each other by using the above function.
+
+[On to Part 8 >>](file-transfer.md){: class="button outline-btn" style="margin-bottom: 30px; margin-right: 100%"}

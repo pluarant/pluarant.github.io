@@ -86,5 +86,6 @@ That's it! Try it out by creating two instances of the app and send message to e
 
 ## Download Sample Application
 
-You can download entire sample application from **[GitHub](https://github.com/mesibo/samples)**
+You can download entire sample application from **[GitHub](https://github.com/mesibo/samples){:target="_blank"}**
 
+[On to Part 6 >>](cpp.md){: class="button outline-btn" style="margin-bottom: 30px; margin-right: 100%"}

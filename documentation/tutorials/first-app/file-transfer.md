@@ -3,9 +3,9 @@ title: Write your First mesibo Enabled Application
 description: Write your First mesibo Enabled Application
 keywords: mesibo, android, ios
 ---
-{% include_relative nav.html selected="file" %}
+{% include_relative nav.html selected="files" %}
 
-In this part, we will create a simple real-time app for Android.
+In this part, we will create a file transfer feature in our real-time app.
 
 ## Prerequisites
 You MUST go through following prerequisites before you read further.
@@ -25,6 +25,6 @@ However, Mesibo does not know or mandate how and where you store your files. Hen
 
 ![]({{ '/api/images/file-handler.png' | relative_url }})
 
-> Refer to `FileTransferHandler.java` (Android) or `FileTransfer.m` (iOS) in Sample app code on [GitHub](https://github.com/mesibo/samples/)to learn how to create a file handler.
+> Refer to `FileTransferHandler.java` (Android) or `FileTransfer.m` (iOS) in Sample app code on [GitHub](https://github.com/mesibo/samples/){:target="_blank"} to learn how to create a file handler.
 
-
+[On to Part 9 >>](ui-modules.md){: class="button outline-btn" style="margin-bottom: 30px; margin-right: 100%"}

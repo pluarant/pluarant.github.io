@@ -18,7 +18,7 @@ Ensure that you have gone through following prerequisites before you read furthe
 - Read the [Get Started]({{ '/documentation/get-started/' | relative_url }}) Guide.
 - Read about [Type of APIs]({{ '/documentation/api/' | relative_url }})
 - Read about [Backend APIs]({{ '/documentation/api/backend-api/' | relative_url }})
-- Signed-up and Logged-in to [Mesibo Console](https://mesibo.com/console) **(It's free)**
+- Signed-up and Logged-in to [Mesibo Console](https://mesibo.com/console){:target="_blank"} **(It's free)**
 
 You are not required to go through [Real-time APIs]({{ '/documentation/api/real-time-api/' | relative_url }}) for now.
 
@@ -26,7 +26,7 @@ You are not required to go through [Real-time APIs]({{ '/documentation/api/real-
 
 Before we start coding our first Mesibo Application, we need to perform a few steps that are common across platforms. You need to be logged-in to Mesibo console to perform these steps. 
 
-Let’s say you are creating a new app **BingoMessage** for Android, iOS, and web. You first need to create a `Mesibo Application` which will contain of your **BingoMessage**  users, groups, setting, etc. You can create a new Application from the [Mesibo console](https://mesibo.com/console). 
+Let’s say you are creating a new app **BingoMessage** for Android, iOS, and web. You first need to create a `Mesibo Application` which will contain of your **BingoMessage**  users, groups, setting, etc. You can create a new Application from the [Mesibo console](https://mesibo.com/console){:target="_blank"}. 
 
 ![mesibo-api-key](images/app-token.jpg)
 
@@ -51,8 +51,9 @@ Now we will create two users by using Mesibo Admin API and the app token obtaine
 Note that, you also need to pass the Android app id (bundle id in iOS), for example, com.mesibo.demoapp while creating users. This is a security feature that restricts your users from using the user access token on intended platforms only. 
 
 **User Creation Request**
-
+{% highlight javascript %}
 https://api.mesibo.com/api.php?token=cn9cvk6gnm15e7lrjb2k7ggggax5h90n5x7dp4sam6kwitl2hmg4cmwabet4zgdw&op=useradd&appid=com.mesibo.demoapp&addr=18005550001
+{% endhighlight %}
 
 Where  
 - **token** = Application Token
@@ -77,4 +78,4 @@ We are now all set to create our first mobile app which can send and receive rea
 
 In the next section, we will learn to create a basic Android application. 
 
-[On to Part 2 >>](android.md){: class="button outline-btn" style="margin-bottom: 30px; margin-right: 100%"}
+[On to Part 2 >>](anatomy.md){: class="button outline-btn" style="margin-bottom: 30px; margin-right: 100%"}
