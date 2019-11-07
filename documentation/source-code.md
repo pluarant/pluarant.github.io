@@ -20,19 +20,19 @@ Mesibo Messenger is an open-source app with real-time messaging, voice and video
 
 If you prefer to try Mesibo apps without building it, you can quickly download it from the Apple or Google app store. 
 
-<a href="https://itunes.apple.com/us/app/mesibo-realtime-messaging-voice-video/id1222921751"><img src="{{ '/images/iphone-app.png' | relative_url }}" align="left" hspace="20"/></a>
-<a href="https://play.google.com/store/apps/details?id=com.mesibo.mesiboapplication"><img src="{{ '/images/android-app.png' | relative_url }}" align="left" hspace="20"/></a>
+<a href="https://apps.apple.com/us/app/mesibo-realtime-messaging-voice-video/id1222921751" target="_blank"><img src="{{ '/images/iphone-app.png' | relative_url }}" align="left" hspace="20"/></a>
+<a href="https://play.google.com/store/apps/details?id=com.mesibo.mesiboapplication" target="_blank"><img src="{{ '/images/android-app.png' | relative_url }}" align="left" hspace="20"/></a>
 <br/><br/>
 <p>
 &nbsp;
 </p>
 
 ### Mesibo Android App Source Code
-[https://github.com/mesibo/messenger-app-android/](https://github.com/mesibo/messenger-app-android/).
+[https://github.com/mesibo/messenger-app-android/](https://github.com/mesibo/messenger-app-android/){:target="_blank"}.
 
 ### Mesibo iOS App Source Code
 
-[https://github.com/mesibo/messenger-app-ios/](https://github.com/mesibo/messenger-app-ios/).
+[https://github.com/mesibo/messenger-app-ios/](https://github.com/mesibo/messenger-app-ios/){:target="_blank"}.
 
 You may
 - Re-use source code in parts, OR 
@@ -62,7 +62,7 @@ We also welcome your participation to help make the documentation better!
 There are many ways to contribute:
 
 - File a code or documentation issue on GitHub at
-[https://github.com/mesibo/samples/issues](https://github.com/mesibo/samples/issues).
+[https://github.com/mesibo/samples/issues](https://github.com/mesibo/samples/issues){:target="_blank"}.
 
 - Fork the repository, make changes or add new content on your local
 branch, and submit a pull request (PR) to the master branch for the samples.

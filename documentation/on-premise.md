@@ -37,7 +37,7 @@ Before we dive into installing and running Mesibo On-Premise Platform on your se
 
 - Familiar with setting up a Linux server and MySQL database. If not, refer to online tutorials for the Linux distribution of your choice. 
 
-- Although not essential, basic knowledge of setting up Docker and using Docker containers would be helpful. You can refer to [Docker documentation](https://docs.docker.com) and various online tutorials on Docker. 
+- Although not essential, basic knowledge of setting up Docker and using Docker containers would be helpful. You can refer to [Docker documentation](https://docs.docker.com){:target="_blank"} and various online tutorials on Docker. 
 
 
 ### Requirements
@@ -148,7 +148,7 @@ Mesibo uses the latest Transport Layer Security (TLS) which is the successor to 
 
 > Although Mesibo can automatically generate a self-signed certificate for you, it is recommended that you configure a valid CA-signed certificate. This is especially required for JavaScript code since all the major web browsers will throw a warning when using a self-signed certificate.
 
-You can use any existing certificate which you are using with your web server, OR purchase it from any provider of your choice, OR use [Letsencrypt](https://letsencrypt.org/) which is a free service (recommended) to get a secure certificate. 
+You can use any existing certificate which you are using with your web server, OR purchase it from any provider of your choice, OR use [Letsencrypt](https://letsencrypt.org/){:target="_blank"} which is a free service (recommended) to get a secure certificate. 
 
 To configure TLS/SSL certificate, you only need to provide the folder path containing your certificate (cert.pem), key (privkey.pem) and CA chain (chain.pem) files. For example,
 
@@ -263,11 +263,11 @@ Depending on your Linux distribution, there are different ways to configure fire
 ## Deploying with a Cloud Service Provider
 All major cloud service providers support running docker containers. To create an on-demand instance of Mesibo in the cloud, refer to respective documentation on running Docker containers :
 
-- [AWS](https://aws.amazon.com/getting-started/tutorials/deploy-docker-containers/) 
+- [AWS](https://aws.amazon.com/getting-started/tutorials/deploy-docker-containers/){:target="_blank"} 
 
-- [Azure](https://azure.microsoft.com/en-us/services/container-instances/) 
+- [Azure](https://azure.microsoft.com/en-us/services/container-instances/){:target="_blank"} 
 
-- [Google Cloud](https://cloud.google.com/run/docs/deploying)
+- [Google Cloud](https://cloud.google.com/run/docs/deploying){:target="_blank"}
 
 ## Group Management
 Since, the complete database is hosted on your server, you need to provision all group configuration. Mesibo will create two tables `groups` and `members` in the database. 
@@ -338,7 +338,7 @@ $ sudo docker stop <CONTAINER_ID>
 ```
 
 ### Can I run Mesibo on a Cloud Service Provider?
-All major cloud service providers support running docker containers. Please refer to respective documentation for different providers such as [AWS](https://aws.amazon.com/getting-started/tutorials/deploy-docker-containers/), [Azure](https://azure.microsoft.com/en-us/services/container-instances/), [Google Cloud](https://cloud.google.com/run/docs/deploying), etc. 
+All major cloud service providers support running docker containers. Please refer to respective documentation for different providers such as [AWS](https://aws.amazon.com/getting-started/tutorials/deploy-docker-containers/){:target="_blank"}, [Azure](https://azure.microsoft.com/en-us/services/container-instances/){:target="_blank"}, [Google Cloud](https://cloud.google.com/run/docs/deploying){:target="_blank"}, etc. 
 
 ### I am confused between On-Premise Vs. Cloud offering, which one is better?
 You can't go wrong with either model. While our Cloud service let you start immediately without installing anything, the On-Premise model offers ultimate flexibility, control of your data, loadable modules, interface with machine learning and AI tools and much more. The pricing is same, however, On-Premise model can work out more cost-effective as there are no charges other than per active user charges. On another hand, you pay for bandwidth and storage charges in our cloud offering.
