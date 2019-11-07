@@ -1,7 +1,8 @@
 ---
-title: "Get Started, Part 2: Messaging"
+title: "Get Started | Messaging"
 keywords: chat, message, destination, group messaging 
 description: Learn about real-time messaging and it's properties.
+heading: "Get Started, Part 2: Messaging"
 ---
 
 {% include_relative nav.html selected="msg" %}

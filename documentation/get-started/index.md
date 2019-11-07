@@ -1,7 +1,8 @@
 ---
-title: "Get Started, Part 1: How Mesibo Works?"
-keywords: get started, setup, orientation, quickstart, intro, concepts, containers
-description: Get oriented on some basics of Mesibo before diving into the walkthrough.
+title: Get Started | How Mesibo Works?
+keywords: communication platform, chat api, chat sdk, concepts, how chat api works, get started, setup, orientation, containers, messaging, group chat, audio call, video call, chat app, chat app ui
+description: Get started with knowing concepts and how Mesibo works
+heading: "Get Started, Part 1: How Mesibo Works?"
 redirect_from:
 - /get-started/introduction.html
 - /getstarted/
