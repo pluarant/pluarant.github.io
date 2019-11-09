@@ -259,20 +259,19 @@ footer {
     float: right;
     padding: 0 15px 0 0;
 }
-
+.footer_social_nav .nav-social {
+   color: #fff;
+}
 .footer_social_nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 .footer_social_nav ul li {
     float: left;
     position: relative;
 }
-
-.footer_social_nav ul li:before {
-    color: $white;
+.footer_social_nav ul li:before { 
     position: absolute;
     top: 10px;
     left: 10px;
@@ -289,6 +288,51 @@ footer {
     border-radius: 50px;
     color: $white;
     display: block;
-    text-indent: 9999px;
-    overflow: hidden;
+    text-indent: 50px;
+    overflow: hidden; 
+}
+.footer_social_nav ul li { 
+    opacity: 1;
+}
+.footer_social_nav ul li a:hover { 
+    color: $white;
+    background-color: #00868b;
+    opacity: 1;
+}
+.footer_social_nav ul li.fa-twitter a:hover {
+    background-color: #55acee;
+    color: $white;
+}
+.footer_social_nav ul li.fa-linkedin a:hover {
+    background-color: #0976b4;
+    color: $white;
+}
+.footer_social_nav ul li.fa-youtube a:hover {
+    background-color: #b31217;
+    color: $white;
+}
+.footer_social_nav ul li.fa-facebook a:hover {
+    background-color: #3b5998;
+    color: $white;
+}
+
+
+.separator-2, .separator-3 {
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+.nav-link {
+  display: inline-block;
+  text-align:left;
+}
+.footer_links > li > a i.fa {
+  width: 32px;
+  text-align: center;
+}
+.footer_links > li > a i.fa.fa-question {
+   font-size: 100%;
+   margin: 0;
 }
