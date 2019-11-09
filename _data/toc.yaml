@@ -30,6 +30,10 @@ horizontalnav:
   path: /technical-support/
   node: support
   resetnav: yes
+- title: Sign In
+  path: /console/
+  node: support
+  resetnav: yes
 
 guides:
 - sectiontitle: Get started
@@ -78,7 +82,7 @@ guides:
 - sectiontitle: API Reference Manual 
   section:
   - path: /documentation/api/
-    title: Mesibo API Overview
+    title: Overview
   - sectiontitle: Real-time APIs
     section:
     - path: /documentation/api/real-time-api/
@@ -109,10 +113,10 @@ guides:
 - path: /documentation/ui-modules/
   title: UI Modules
 
-- sectiontitle: Mesibo Tutorials
+- sectiontitle: Tutorials
   section:
   - path: /documentation/tutorials/
-    title: Tutorials Overview
+    title: Overview
   - sectiontitle: First Mesibo App
     section:
     - path: /documentation/tutorials/first-app/
@@ -230,7 +234,7 @@ install:
 - sectiontitle: API Reference Manual 
   section:
   - path: /documentation/api/
-    title: Mesibo API Overview
+    title: Overview
   - sectiontitle: Real-time APIs
     section:
     - path: /documentation/api/real-time-api/
@@ -261,10 +265,10 @@ install:
 - path: /documentation/ui-modules/
   title: UI Modules
 
-- sectiontitle: Mesibo Tutorials
+- sectiontitle: Tutorials
   section:
   - path: /documentation/tutorials/
-    title: Tutorials Overview
+    title: Overview
   - sectiontitle: First Mesibo App
     section:
     - path: /documentation/tutorials/first-app/
@@ -382,7 +386,7 @@ tutorials:
 - sectiontitle: API Reference Manual 
   section:
   - path: /documentation/api/
-    title: Mesibo API Overview
+    title: Overview
   - sectiontitle: Real-time APIs
     section:
     - path: /documentation/api/real-time-api/
@@ -413,10 +417,10 @@ tutorials:
 - path: /documentation/ui-modules/
   title: UI Modules
 
-- sectiontitle: Mesibo Tutorials
+- sectiontitle: Tutorials
   section:
   - path: /documentation/tutorials/
-    title: Tutorials Overview
+    title: Overview
   - sectiontitle: First Mesibo App
     section:
     - path: /documentation/tutorials/first-app/
@@ -534,7 +538,7 @@ api:
 - sectiontitle: API Reference Manual 
   section:
   - path: /documentation/api/
-    title: Mesibo API Overview
+    title: Overview
   - sectiontitle: Real-time APIs
     section:
     - path: /documentation/api/real-time-api/
@@ -565,10 +569,10 @@ api:
 - path: /documentation/ui-modules/
   title: UI Modules
 
-- sectiontitle: Mesibo Tutorials
+- sectiontitle: Tutorials
   section:
   - path: /documentation/tutorials/
-    title: Tutorials Overview
+    title: Overview
   - sectiontitle: First Mesibo App
     section:
     - path: /documentation/tutorials/first-app/
@@ -686,7 +690,7 @@ faq:
 - sectiontitle: API Reference Manual 
   section:
   - path: /documentation/api/
-    title: Mesibo API Overview
+    title: Overview
   - sectiontitle: Real-time APIs
     section:
     - path: /documentation/api/real-time-api/
@@ -717,10 +721,10 @@ faq:
 - path: /documentation/ui-modules/
   title: UI Modules
 
-- sectiontitle: Mesibo Tutorials
+- sectiontitle: Tutorials
   section:
   - path: /documentation/tutorials/
-    title: Tutorials Overview
+    title: Overview
   - sectiontitle: First Mesibo App
     section:
     - path: /documentation/tutorials/first-app/
@@ -838,7 +842,7 @@ onpremise:
 - sectiontitle: API Reference Manual 
   section:
   - path: /documentation/api/
-    title: Mesibo API Overview
+    title: Overview
   - sectiontitle: Real-time APIs
     section:
     - path: /documentation/api/real-time-api/
@@ -869,10 +873,10 @@ onpremise:
 - path: /documentation/ui-modules/
   title: UI Modules
 
-- sectiontitle: Mesibo Tutorials
+- sectiontitle: Tutorials
   section:
   - path: /documentation/tutorials/
-    title: Tutorials Overview
+    title: Overview
   - sectiontitle: First Mesibo App
     section:
     - path: /documentation/tutorials/first-app/
