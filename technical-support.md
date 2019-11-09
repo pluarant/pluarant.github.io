@@ -44,7 +44,7 @@ banner: true
 <div class="separator"></div>
 -->
 <!-- <p class="large text-center">If you didn’t find answers in our FAQ, you can contact us with your questions in one of the three ways below. Please include as much information as possible so that we can precisely answer your question.</p> -->
-<p class="large">Please go through Mesibo <a href="/documentation/get-started/" target="_blank" >Getting-Started guide</a>, <a href="/documentation/tutorials/"  target="_blank" >Tutorials</a>, <a href="/documentation/faq/" target="_blank" >FAQs</a>, and <a href="/documentation/pricing/" target="_blank" >Pricing</a> pages before sending a support request. You will likely get answers to your questions there itself. </p>
+<p class="large">Please go through Mesibo <a href="/documentation/get-started/" target="_blank" >Getting-Started guide</a>, <a href="/documentation/tutorials/"  target="_blank" >Tutorials</a>, <a href="/documentation/faq/" target="_blank" >FAQs</a>, and <a href="/pricing/" target="_blank" >Pricing</a> pages before sending a support request. You will likely get answers to your questions there itself. </p>
 </div>
 </div>
 <div class="row">
