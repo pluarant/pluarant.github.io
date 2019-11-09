@@ -1,8 +1,9 @@
 ---
-description: Home page for Mesibo's documentation
-keywords: Mesibo, documentation, manual, guide, reference, api, samples
+description: Mesibo documentation for developers that includes get-started guide, tutorial, source code, sample code, chat API reference, SDK and libraries to add messaging, voice and video calls in your mobile app and website.
+keywords: mesibo documentation, developer documentation, chat api, guide to integrate chat, sdk reference, api reference, sample code, open source chat api, messaging api user guide, developer guide for messaging app, chat app source code, how to guide, tutorials
 landing: true
-title: Mesibo Documentation
+title: Developer Documentation
+heading: Mesibo Documentation
 notoc: true
 notags: true
 ---

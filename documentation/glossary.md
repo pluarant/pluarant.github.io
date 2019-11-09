@@ -1,7 +1,8 @@
 ---
-title: "Mesibo glossary"
+title: "Glossary"
 description: "Glossary of terms used around Mesibo"
 keywords: "glossary, mesibo, terms, definitions"
+heading: Mesibo Glossary
 notoc: true
 noratings: true
 redirect_from:
