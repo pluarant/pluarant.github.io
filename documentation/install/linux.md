@@ -40,6 +40,6 @@ Please note the following points:
 
 ## Next steps
 
-- Continue to [Writing App for Linux]('/documentation/tutorials/first-app/cpp/')
+- Continue to [Writing App for Linux]({{'/documentation/tutorials/first-app/cpp/' | relative_url }})
 
 - Continue with the [User Guide]({{ '/documentation/get-started/' | relative_url }}).
