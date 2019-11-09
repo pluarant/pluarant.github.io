@@ -61,8 +61,11 @@
     </div>
     <!-- nav-secondary -->
     <!-- data-offset-top should calculated as follows: (height of <header> - header of <nav>) -->
-    <nav class="nav-secondary-tabs" data-spy="affix" data-offset-top="385">
+    <nav class="nav-secondary-tabs" data-spy="affix" data-offset-top="210">
         <div class="container-fluid">
+			<div class="navbar-header">
+               <a href="/"><img class="logo" src="{{ '/images/mesibo-logo-white.png' | relative_url }}" alt="Mesibo Docs" title="Mesibo Docs"></a>
+			</div>
             <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
                 {% include navigation.html %}
             </div>
