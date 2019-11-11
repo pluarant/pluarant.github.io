@@ -14,6 +14,7 @@
 		{% endif %}
 	{% endfor %}
 {% endif %}
+
 <!-- Logic for 'edit this button' -->
 {% assign edit_url = "https://github.com/mesibo/mesibo.github.io/edit/master/" | append: page.path %}
 {% for entry in site.data.not_edited_here.overrides %}
@@ -26,15 +27,19 @@
 	{% break %}
 	{% endif %}
 {% endfor %}
+			
 <!-- edit url temporarily disabled Mesibo -->
 {% assign edit_url = "" %}
+
 <!-- End of logic for 'edit this button' -->
+
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>{{ page.title }} | Mesibo Documentation</title>
-	<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}docker platform, distributed applications, microservices, containers, docker containers, docker software, docker virtualization{% endif %}" />
+	<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}mesibo platform, chat, messaging, voice, video chat api, on-premise{% endif %}" />
 	<meta name="description" content="{{ page.description }}" />
 	<meta name="publisher" content="{% if page.author %}{{ page.author }}{% else %}https://mesibo.com{% endif %}" />
 
@@ -57,7 +62,12 @@
 		}
 	</style>
 	{% if site.GH_ENV == "gh_pages" %}
-	<meta name="robots" content="index,follow">{% endif %}
+	<meta name="robots" content="noindex">{% endif %}
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="{{ '/favicons/mesibo-favicon.png' | relative_url }}" sizes="129x128">
+	<meta name="msapplication-TileImage" content="{{ '/favicons/mesibo-favicon.png' | relative_url }}">
+	<link rel="mesibo-favicon" type="image/png" href="{{ '/favicons/mesibo-favicon.png' | relative_url }}" sizes="129x128">
+	<meta property="og:image" content="{{ '/favicons/mesibo-favicon.png' | relative_url }}"/>
 	<!-- metadata -->
 	<meta property="og:title" content="{{ page.title }}" />
 	<meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
