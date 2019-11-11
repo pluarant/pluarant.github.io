@@ -62,7 +62,7 @@ You will need to set up a database so that backend can store various information
 - Users contacts for contact synchronizations.
 - Google and Apple push notification tokens
 
-The backend uses MySQL as the database. We will not go into details of setting up MySQL server; there are plenty of tutorials on the web if you are not familiar. Once you’ve set up the MySQL server, create a database and the credentials. These credentials will be needed by the backend code to access the database.
+The backend uses MySQL as the database. We will not go into details of setting up MySQL server; there are plenty of tutorials on the web if you are not familiar. Once you’ve set up the MySQL server, create a database and the credentials. These credential will be needed by the backend code to access the database.
 
 The next step is to create the database schema using the supplied SQL file `mysql-schema.sql`. Run following to create the database schema for the backend.
 

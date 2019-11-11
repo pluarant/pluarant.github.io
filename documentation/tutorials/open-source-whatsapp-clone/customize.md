@@ -33,7 +33,7 @@ The first screen you see in the Mesibo Messenger right after the welcome screen 
 
 ![]({{ '/images/app/ios/mesibo_account_kit_ios.jpg' | relative_url }} )
 
-The phone verification is usually an expensive process, as it requires sending SMS or making calls to verify phone number, often international numbers. However, thanks to the Facebook Account Kit, this entire process is automated and made available free (well, almost).  Account Kit lets you quickly register for and log in to your app by using just their phone number or email address — no password needed. It's reliable, easy to use and gives you a choice about how you sign up for apps - by using the phone, email or optionally, your Facebook account.
+The phone verification is usually an expensive process, as it requires sending SMS or making calls to verify phone number, often international numbers. However, thanks to the Facebook Account Kit, this entire process is automated and made available free (well, almost).  Account Kit lets your quickly register for and log in to your app by using just their phone number or email address — no password needed. It's reliable, easy to use and gives you a choice about how you sign up for apps - by using the phone, email or optionally, your Facebook account.
 
 > Facebook has recently discontinued Account Kit. The existing accounts will work till March 9, 2019. However, for the new installations, you need to have your own verification method.
 
@@ -62,7 +62,7 @@ For instructions to get API key and configure it, visit
  - For iOS, https://developers.google.com/maps/documentation/ios-sdk/get-api-key
 
 ### Media/File Storage
-Just like text messages, mesibo allows you to send and receive any arbitrary file (image, video, doc, etc) in real-time. Sending and receiving file is no different from sending and receiving text message. All an application has to do is to first upload the file to a server and then send the URL and thumbnail [optional] using mesibo in real-time. The receiver then downloads it using that URL. This out-of-band mechanism ensures that no real-time messages are blocked waiting for a large file to be uploaded or downloaded.
+Just like text messages, mesibo allows you to send and receive any arbitrary file (image, video, doc, etc) in real-time. Sending and receiving file is no different from sending and receiving text messages. All an application has to do is to first upload the file to a server and then send the URL and thumbnail [optional] using mesibo in real-time. The receiver then downloads it using that URL. This out-of-band mechanism ensures that no real-time messages are blocked waiting for a large file to be uploaded or downloaded.
 
 Mesibo Messenger offers you the flexibility to store all files on your own servers including private servers or cloud services like Amazon Web Services, Google Cloud Storage, Microsoft Azure, etc. All you have to do is to configure the upload and download URL. 
 
