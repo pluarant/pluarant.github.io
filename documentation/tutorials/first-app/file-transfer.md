@@ -5,7 +5,7 @@ keywords: mesibo, android, ios
 ---
 {% include_relative nav.html selected="files" %}
 
-In this part, we will create a file transfer feature in our real-time app.
+In this part, we will describe file transfer.
 
 ## Prerequisites
 You MUST go through following prerequisites before you read further.
