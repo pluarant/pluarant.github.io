@@ -259,19 +259,20 @@ footer {
     float: right;
     padding: 0 15px 0 0;
 }
-.footer_social_nav .nav-social {
-   color: #fff;
-}
+
 .footer_social_nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .footer_social_nav ul li {
     float: left;
     position: relative;
 }
-.footer_social_nav ul li:before { 
+
+.footer_social_nav ul li:before {
+    color: $white;
     position: absolute;
     top: 10px;
     left: 10px;
