@@ -36,3 +36,10 @@
 h1.title {
 	font-weight: 400;
 }
+
+@media (min-width: 992px) {
+  .header-first .logo {
+    margin-top:7px;
+	margin-bottom:7px;
+  }
+}
