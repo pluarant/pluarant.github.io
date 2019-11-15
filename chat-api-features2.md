@@ -8,7 +8,7 @@ category: home
 banner: false
 ---
 
-{% include mesibo-banner-features3.html title="Quick Glance at mesibo Chat API Features" subtitle="Refer to our developer documentation for in-depth details on how to quickly add any or all of these features in your own software, either by using our APIs or ready to use UI components"  %}
+{% include mesibo-banner-features2.html title="Quick Glance at mesibo Chat API Features" subtitle="Refer to our developer documentation for in-depth details on how to quickly add any or all of these features in your own software, either by using our APIs or ready to use UI components"  %}
 
 
 <!-- messaging section -->
