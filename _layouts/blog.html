@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zxx">
+	{% include mesibo-header.html %}
+  <!-- body classes:  -->
+  <!-- "boxed": boxed layout mode e.g. <body class="boxed"> -->
+  <!-- "pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1"> -->
+  <!-- "transparent-header": makes the header transparent and pulls the banner to top -->
+  <!-- "gradient-background-header": applies gradient background to header -->
+  <!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
+  <body class="front-page ">
+
+    {% include google-tagmanager-body.html %}
+		
+    <!-- scrollToTop -->
+    <!-- ================ -->
+    <div class="scrollToTop circle"><i class="fa fa-angle-up"></i></div>
+
+    <!-- page wrapper start -->
+    <!-- ================ -->
+    <div class="page-wrapper">
+		
+		{% include mesibo-navigation.html %}
+		{% include mesibo-banner-small.html %}
+      
+		<div id="page-start"></div>
+		<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-md-9 mt-3">
+					{{ content }}
+				</div>
+				<div class="col-lg-3 col-md-3 mt-3">
+				{% include mesibo-blog-sidebar.html %}
+				</div>
+			</div><!-- main row end -->
+		</div><!-- main container end -->
+		</section>
+		{% include mesibo-blog-footer.html %}
+   </div>		
+	
+	{% include mesibo-js.html %}
+
+	</body>
+</html>
