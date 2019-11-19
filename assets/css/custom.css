@@ -42,4 +42,102 @@ h1.title {
     margin-top:7px;
 	margin-bottom:7px;
   }
+  div#fbanner.slideshow { height:470px; overflow:hidden;}
+}
+
+
+.blogpost footer {
+   border-top: 0;
+   border-bottom: 1px solid #eaeaea;
+}
+
+.blogpost .footer-top {
+   display:none;
+}
+
+/*style-2*/
+@media (min-width: 768px) {
+.nav .hc-item-box-3{display:inline-block;}
+
+.hc-item-box-3 {
+  position: relative;
+}
+.hc-item-box-3.right {
+  text-align: right;
+  margin-right: 10px;
+}
+.hc-item-box-3 i.fa {
+  position: relative; 
+  float: left;
+  width:25px;
+  height:25px;
+  font-size:20px;
+  color:#333;
+}
+.hc-item-box-3.right i.fa {
+  position: relative;
+  float: right;
+  width:25px;
+  height:25px;
+  color:#333;
+}
+.hc-item-box-3:hover i, .hc-item-box-3:active i, .hc-item-box-3.right:hover i, .hc-item-box-3.right:active i{
+  color:#00868b;
+}
+.hc-item-box-3 h4.title {
+	font-weight: 550;
+	font-size:15px;
+	color:#00868b;
+}
+.hc-item-box-3 h4.title:hover, .hc-item-box-3 h4.title:active {
+	color:#00868b;
+}
+
+.hc-item-box-3 a:hover, .hc-item-box-3 a:active {
+	color:#00868b;
+	text-decoration:none;
+}
+
+.tab-pane {display:none;}
+.tab-pane.active {display:inline-block;}
+.nav-tabs {border:0 !important;}
+.tab-stacked{padding-top:0 !important;}
+
+}
+
+@media (max-width: 767px) {
+
+.hc-item-box-3, .hc-item-box-3.right {
+  position: relative; 
+}
+.hc-item-box-3 i.fa, .hc-item-box-3.right i.fa {
+  position: relative; 
+  float: left;
+  width:25px;
+  height:25px;
+  font-size:20px;
+  color:#333;
+}
+
+.hc-item-box-3:hover i, .hc-item-box-3:active i, .hc-item-box-3.right:hover i, .hc-item-box-3.right:active i{
+  color:#00868b;
+}
+.hc-item-box-3 h4.title {
+	font-weight: 550;
+	font-size:15px;
+	color:#00868b;
+}
+.hc-item-box-3 h4.title:hover, .hc-item-box-3 h4.title:active {
+	color:#00868b;
+}
+
+.hc-item-box-3 a:hover, .hc-item-box-3 a:active {
+	color:#00868b;
+	text-decoration:none;
+}
+
+.tab-pane {display:none;}
+.tab-pane.active {display:inline-block;}
+.nav-tabs {border:0 !important; background-color: #eaeaea !important;}
+.tab-stacked{padding-top:0 !important;}
 }
